@@ -1,0 +1,2234 @@
+{
+  "questionnaire_id": "multi-nist-csf-2-0-pr",
+  "questionnaire_type": "multi_framework",
+  "framework_id": "10341856-c5a4-582a-91fd-5d35a94fa8a7",
+  "name": "NIST CSF 2.0 (Protect)",
+  "framework_names": [
+    "NIST CSF 2.0"
+  ],
+  "framework_summary": "NIST CSF 2.0",
+  "version": "1.0",
+  "source_format": "multi_framework_merged",
+  "question_count": 18,
+  "part1_checklist": [
+    {
+      "number": 1,
+      "question_id": "f47ac10b-58cc-4372-a567-0e02b2c3d479",
+      "question_text": "Is MFA enforced?",
+      "sub_topic": "Protect",
+      "domain_name": "Protect",
+      "framework_name": "NIST CSF 2.0",
+      "control_id": "PR.PS-01, PR.AA-01, PR.AA-02, PR.AA-03, PR.AA-05, PR.AT-01, PR.DS-01, PR.DS-02, PR.IR-01",
+      "answer_format": "yes_no_with_detail",
+      "response_options": "Yes / No / Partial",
+      "detail_prompt": "If yes or partial, specify the tool or technology in use."
+    }
+  ],
+  "question_groups": [
+    {
+      "framework_id": "d048b355-a19a-52eb-bf3d-3e2133c57d1e",
+      "framework_key": "nist-csf-2-0",
+      "framework_name": "NIST CSF 2.0",
+      "domain_id": "PR",
+      "domain_name": "Protect",
+      "domain_description": "",
+      "question_count": 9,
+      "questions": [
+        {
+          "item_id": "1d1d288c-2177-5337-bbab-56921b3a24f5",
+          "question_id": "1d1d288c-2177-5337-bbab-56921b3a24f5",
+          "question_text": "Is the organization implementing and operating the control: Identities and credentials for authorized users, services, and hardware are managed by the organization?",
+          "question_type": "merged",
+          "answer_formats": [
+            "yes_no",
+            "evidence_upload"
+          ],
+          "framework_name": "NIST CSF 2.0",
+          "framework_key": "nist-csf-2-0",
+          "domain_id": "PR",
+          "domain_name": "Protect",
+          "control_id": "PR.AA-01",
+          "control_statement": "Identities and credentials for authorized users, services, and hardware are managed by the organization.",
+          "expected_evidence": "iam_policy, user_account_audit, provisioning_records",
+          "maturity_level": "Initial",
+          "merge_reason": "Merged by control fallback because LLM output was unavailable or invalid.",
+          "source_item_ids": [
+            "f6dc13c6-4c90-5d34-a77e-e8de568b92fa",
+            "2dcb5fba-7828-5937-8cb1-4862661d8f9c"
+          ],
+          "source_questions": [
+            {
+              "question_id": "1a8e4e50-8893-5458-a4b1-d73e4c8a5aeb",
+              "question_text": "Is the organization implementing and operating the control: Identities and credentials for authorized users, services, and hardware are managed by the organization?",
+              "question_type": "yes_no",
+              "framework_name": "NIST CSF 2.0",
+              "framework_key": "nist-csf-2-0",
+              "domain_id": "PR",
+              "domain_name": "Protect",
+              "control_id": "PR.AA-01",
+              "cross_references": [
+                {
+                  "other_framework_id": "nist-sp-800-53",
+                  "other_control_id": "IA-2"
+                },
+                {
+                  "other_framework_id": "iso-27001-2022",
+                  "other_control_id": "A.5.16"
+                }
+              ],
+              "expected_evidence": "iam_policy, user_account_audit, provisioning_records"
+            },
+            {
+              "question_id": "43d2884d-ef56-5d90-8ce6-6bf146024512",
+              "question_text": "Upload evidence such as iam_policy, user_account_audit, provisioning_records that demonstrates: Identities and credentials for authorized users, services, and hardware are managed by the organization.",
+              "question_type": "evidence_upload",
+              "framework_name": "NIST CSF 2.0",
+              "framework_key": "nist-csf-2-0",
+              "domain_id": "PR",
+              "domain_name": "Protect",
+              "control_id": "PR.AA-01",
+              "cross_references": [
+                {
+                  "other_framework_id": "nist-sp-800-53",
+                  "other_control_id": "IA-2"
+                },
+                {
+                  "other_framework_id": "iso-27001-2022",
+                  "other_control_id": "A.5.16"
+                }
+              ],
+              "expected_evidence": "iam_policy, user_account_audit, provisioning_records"
+            }
+          ],
+          "cross_references": [
+            {
+              "other_framework_id": "nist-sp-800-53",
+              "other_control_id": "IA-2"
+            },
+            {
+              "other_framework_id": "iso-27001-2022",
+              "other_control_id": "A.5.16"
+            }
+          ]
+        },
+        {
+          "item_id": "03a03389-8629-55cb-8609-aace2a8d456b",
+          "question_id": "03a03389-8629-55cb-8609-aace2a8d456b",
+          "question_text": "Is the organization implementing and operating the control: Identities are proofed and bound to credentials based on the context of interactions?",
+          "question_type": "merged",
+          "answer_formats": [
+            "yes_no",
+            "evidence_upload"
+          ],
+          "framework_name": "NIST CSF 2.0",
+          "framework_key": "nist-csf-2-0",
+          "domain_id": "PR",
+          "domain_name": "Protect",
+          "control_id": "PR.AA-02",
+          "control_statement": "Identities are proofed and bound to credentials based on the context of interactions.",
+          "expected_evidence": "identity_proofing_procedure, mfa_config, sso_config",
+          "maturity_level": "Initial",
+          "merge_reason": "Merged by control fallback because LLM output was unavailable or invalid.",
+          "source_item_ids": [
+            "e7752702-62bb-5412-8875-62d9612539cb",
+            "04a517ef-22bd-5975-9b37-9bc72d06735b"
+          ],
+          "source_questions": [
+            {
+              "question_id": "6b872077-ae1f-5fb5-8704-ef80373e0c66",
+              "question_text": "Is the organization implementing and operating the control: Identities are proofed and bound to credentials based on the context of interactions?",
+              "question_type": "yes_no",
+              "framework_name": "NIST CSF 2.0",
+              "framework_key": "nist-csf-2-0",
+              "domain_id": "PR",
+              "domain_name": "Protect",
+              "control_id": "PR.AA-02",
+              "cross_references": [
+                {
+                  "other_framework_id": "nist-sp-800-63",
+                  "other_control_id": ""
+                },
+                {
+                  "other_framework_id": "iso-27001-2022",
+                  "other_control_id": "A.5.17"
+                }
+              ],
+              "expected_evidence": "identity_proofing_procedure, mfa_config, sso_config"
+            },
+            {
+              "question_id": "f02949ce-db25-5023-82b2-9d1eabca4d26",
+              "question_text": "Upload evidence such as identity_proofing_procedure, mfa_config, sso_config that demonstrates: Identities are proofed and bound to credentials based on the context of interactions.",
+              "question_type": "evidence_upload",
+              "framework_name": "NIST CSF 2.0",
+              "framework_key": "nist-csf-2-0",
+              "domain_id": "PR",
+              "domain_name": "Protect",
+              "control_id": "PR.AA-02",
+              "cross_references": [
+                {
+                  "other_framework_id": "nist-sp-800-63",
+                  "other_control_id": ""
+                },
+                {
+                  "other_framework_id": "iso-27001-2022",
+                  "other_control_id": "A.5.17"
+                }
+              ],
+              "expected_evidence": "identity_proofing_procedure, mfa_config, sso_config"
+            }
+          ],
+          "cross_references": [
+            {
+              "other_framework_id": "nist-sp-800-63",
+              "other_control_id": ""
+            },
+            {
+              "other_framework_id": "iso-27001-2022",
+              "other_control_id": "A.5.17"
+            }
+          ]
+        },
+        {
+          "item_id": "fdb29db1-2c95-5be7-b17c-8e7394bc3910",
+          "question_id": "fdb29db1-2c95-5be7-b17c-8e7394bc3910",
+          "question_text": "Is the organization implementing and operating the control: Users, services, and hardware are authenticated?",
+          "question_type": "merged",
+          "answer_formats": [
+            "yes_no",
+            "evidence_upload"
+          ],
+          "framework_name": "NIST CSF 2.0",
+          "framework_key": "nist-csf-2-0",
+          "domain_id": "PR",
+          "domain_name": "Protect",
+          "control_id": "PR.AA-03",
+          "control_statement": "Users, services, and hardware are authenticated.",
+          "expected_evidence": "auth_logs, mfa_enforcement_report, certificate_inventory",
+          "maturity_level": "Initial",
+          "merge_reason": "Merged by control fallback because LLM output was unavailable or invalid.",
+          "source_item_ids": [
+            "30e61fb6-6eb6-5ed7-b749-682d157818cc",
+            "35adec88-1802-5897-9cae-2241d6ca4556"
+          ],
+          "source_questions": [
+            {
+              "question_id": "dadb05d2-e02e-5dac-a40b-f3dee15cdd3e",
+              "question_text": "Is the organization implementing and operating the control: Users, services, and hardware are authenticated?",
+              "question_type": "yes_no",
+              "framework_name": "NIST CSF 2.0",
+              "framework_key": "nist-csf-2-0",
+              "domain_id": "PR",
+              "domain_name": "Protect",
+              "control_id": "PR.AA-03",
+              "cross_references": [
+                {
+                  "other_framework_id": "nist-sp-800-53",
+                  "other_control_id": "IA-3"
+                },
+                {
+                  "other_framework_id": "iso-27001-2022",
+                  "other_control_id": "A.8.5"
+                }
+              ],
+              "expected_evidence": "auth_logs, mfa_enforcement_report, certificate_inventory"
+            },
+            {
+              "question_id": "e1a6c2ec-81ac-52e8-93cf-f52142eca37b",
+              "question_text": "Upload evidence such as auth_logs, mfa_enforcement_report, certificate_inventory that demonstrates: Users, services, and hardware are authenticated.",
+              "question_type": "evidence_upload",
+              "framework_name": "NIST CSF 2.0",
+              "framework_key": "nist-csf-2-0",
+              "domain_id": "PR",
+              "domain_name": "Protect",
+              "control_id": "PR.AA-03",
+              "cross_references": [
+                {
+                  "other_framework_id": "nist-sp-800-53",
+                  "other_control_id": "IA-3"
+                },
+                {
+                  "other_framework_id": "iso-27001-2022",
+                  "other_control_id": "A.8.5"
+                }
+              ],
+              "expected_evidence": "auth_logs, mfa_enforcement_report, certificate_inventory"
+            }
+          ],
+          "cross_references": [
+            {
+              "other_framework_id": "nist-sp-800-53",
+              "other_control_id": "IA-3"
+            },
+            {
+              "other_framework_id": "iso-27001-2022",
+              "other_control_id": "A.8.5"
+            }
+          ]
+        },
+        {
+          "item_id": "033f740c-78d3-5d1e-98c9-7eb428e74d1a",
+          "question_id": "033f740c-78d3-5d1e-98c9-7eb428e74d1a",
+          "question_text": "Is the organization implementing and operating the control: Access permissions, entitlements, and authorizations are defined in a policy, managed, enforced, and reviewed?",
+          "question_type": "merged",
+          "answer_formats": [
+            "yes_no",
+            "evidence_upload"
+          ],
+          "framework_name": "NIST CSF 2.0",
+          "framework_key": "nist-csf-2-0",
+          "domain_id": "PR",
+          "domain_name": "Protect",
+          "control_id": "PR.AA-05",
+          "control_statement": "Access permissions, entitlements, and authorizations are defined in a policy, managed, enforced, and reviewed.",
+          "expected_evidence": "access_control_policy, rbac_matrix, access_review_report",
+          "maturity_level": "Initial",
+          "merge_reason": "Merged by control fallback because LLM output was unavailable or invalid.",
+          "source_item_ids": [
+            "155ec9bc-d33f-5c97-894d-2cb0a4d5da4a",
+            "ca91715c-4def-5ed5-b659-9b25473eef1c"
+          ],
+          "source_questions": [
+            {
+              "question_id": "e17f1643-841e-54c5-acda-d683b37e0b19",
+              "question_text": "Is the organization implementing and operating the control: Access permissions, entitlements, and authorizations are defined in a policy, managed, enforced, and reviewed?",
+              "question_type": "yes_no",
+              "framework_name": "NIST CSF 2.0",
+              "framework_key": "nist-csf-2-0",
+              "domain_id": "PR",
+              "domain_name": "Protect",
+              "control_id": "PR.AA-05",
+              "cross_references": [
+                {
+                  "other_framework_id": "nist-sp-800-53",
+                  "other_control_id": "AC-2"
+                },
+                {
+                  "other_framework_id": "iso-27001-2022",
+                  "other_control_id": "A.5.18"
+                }
+              ],
+              "expected_evidence": "access_control_policy, rbac_matrix, access_review_report"
+            },
+            {
+              "question_id": "3eaabda6-0709-578a-b396-7f2051a047e2",
+              "question_text": "Upload evidence such as access_control_policy, rbac_matrix, access_review_report that demonstrates: Access permissions, entitlements, and authorizations are defined in a policy, managed, enforced, and reviewed.",
+              "question_type": "evidence_upload",
+              "framework_name": "NIST CSF 2.0",
+              "framework_key": "nist-csf-2-0",
+              "domain_id": "PR",
+              "domain_name": "Protect",
+              "control_id": "PR.AA-05",
+              "cross_references": [
+                {
+                  "other_framework_id": "nist-sp-800-53",
+                  "other_control_id": "AC-2"
+                },
+                {
+                  "other_framework_id": "iso-27001-2022",
+                  "other_control_id": "A.5.18"
+                }
+              ],
+              "expected_evidence": "access_control_policy, rbac_matrix, access_review_report"
+            }
+          ],
+          "cross_references": [
+            {
+              "other_framework_id": "nist-sp-800-53",
+              "other_control_id": "AC-2"
+            },
+            {
+              "other_framework_id": "iso-27001-2022",
+              "other_control_id": "A.5.18"
+            }
+          ]
+        },
+        {
+          "item_id": "640431db-b655-55a9-8a73-a0295c5b3641",
+          "question_id": "640431db-b655-55a9-8a73-a0295c5b3641",
+          "question_text": "Is the organization implementing and operating the control: Personnel are provided with awareness and training so that they possess the knowledge and skills to perform general tasks with cybersecurity risks in mind?",
+          "question_type": "merged",
+          "answer_formats": [
+            "yes_no",
+            "evidence_upload"
+          ],
+          "framework_name": "NIST CSF 2.0",
+          "framework_key": "nist-csf-2-0",
+          "domain_id": "PR",
+          "domain_name": "Protect",
+          "control_id": "PR.AT-01",
+          "control_statement": "Personnel are provided with awareness and training so that they possess the knowledge and skills to perform general tasks with cybersecurity risks in mind.",
+          "expected_evidence": "training_records, security_awareness_program, quiz_results",
+          "maturity_level": "Initial",
+          "merge_reason": "Merged by control fallback because LLM output was unavailable or invalid.",
+          "source_item_ids": [
+            "f6601ebe-89b0-5993-b56c-4ed21e30f9a6",
+            "502d7ba1-b8a8-5a63-af3c-de52441a8635"
+          ],
+          "source_questions": [
+            {
+              "question_id": "f44b9cff-b03b-58f8-bbbc-eba86ce055e8",
+              "question_text": "Is the organization implementing and operating the control: Personnel are provided with awareness and training so that they possess the knowledge and skills to perform general tasks with cybersecurity risks in mind?",
+              "question_type": "yes_no",
+              "framework_name": "NIST CSF 2.0",
+              "framework_key": "nist-csf-2-0",
+              "domain_id": "PR",
+              "domain_name": "Protect",
+              "control_id": "PR.AT-01",
+              "cross_references": [
+                {
+                  "other_framework_id": "nist-sp-800-53",
+                  "other_control_id": "AT-2"
+                },
+                {
+                  "other_framework_id": "iso-27001-2022",
+                  "other_control_id": "A.6.3"
+                }
+              ],
+              "expected_evidence": "training_records, security_awareness_program, quiz_results"
+            },
+            {
+              "question_id": "9417e42e-6c63-500a-b858-0afe27ec3c20",
+              "question_text": "Upload evidence such as training_records, security_awareness_program, quiz_results that demonstrates: Personnel are provided with awareness and training so that they possess the knowledge and skills to perform general tasks with cybersecurity risks in mind.",
+              "question_type": "evidence_upload",
+              "framework_name": "NIST CSF 2.0",
+              "framework_key": "nist-csf-2-0",
+              "domain_id": "PR",
+              "domain_name": "Protect",
+              "control_id": "PR.AT-01",
+              "cross_references": [
+                {
+                  "other_framework_id": "nist-sp-800-53",
+                  "other_control_id": "AT-2"
+                },
+                {
+                  "other_framework_id": "iso-27001-2022",
+                  "other_control_id": "A.6.3"
+                }
+              ],
+              "expected_evidence": "training_records, security_awareness_program, quiz_results"
+            }
+          ],
+          "cross_references": [
+            {
+              "other_framework_id": "nist-sp-800-53",
+              "other_control_id": "AT-2"
+            },
+            {
+              "other_framework_id": "iso-27001-2022",
+              "other_control_id": "A.6.3"
+            }
+          ]
+        },
+        {
+          "item_id": "0c312bee-6e05-56eb-a1f0-6eba030847c6",
+          "question_id": "0c312bee-6e05-56eb-a1f0-6eba030847c6",
+          "question_text": "Is the organization implementing and operating the control: The confidentiality, integrity, and availability of data-at-rest are protected?",
+          "question_type": "merged",
+          "answer_formats": [
+            "yes_no",
+            "evidence_upload"
+          ],
+          "framework_name": "NIST CSF 2.0",
+          "framework_key": "nist-csf-2-0",
+          "domain_id": "PR",
+          "domain_name": "Protect",
+          "control_id": "PR.DS-01",
+          "control_statement": "The confidentiality, integrity, and availability of data-at-rest are protected.",
+          "expected_evidence": "encryption_policy, data_classification, storage_audit",
+          "maturity_level": "Initial",
+          "merge_reason": "Merged by control fallback because LLM output was unavailable or invalid.",
+          "source_item_ids": [
+            "aa1f1390-6695-5beb-ac5f-358ff9584575",
+            "684044f4-51f8-5d2e-ae77-7f7067f4a498"
+          ],
+          "source_questions": [
+            {
+              "question_id": "aaf46b2e-b1ef-5550-8dac-7b9bfb040ab9",
+              "question_text": "Is the organization implementing and operating the control: The confidentiality, integrity, and availability of data-at-rest are protected?",
+              "question_type": "yes_no",
+              "framework_name": "NIST CSF 2.0",
+              "framework_key": "nist-csf-2-0",
+              "domain_id": "PR",
+              "domain_name": "Protect",
+              "control_id": "PR.DS-01",
+              "cross_references": [
+                {
+                  "other_framework_id": "nist-sp-800-53",
+                  "other_control_id": "SC-28"
+                },
+                {
+                  "other_framework_id": "iso-27001-2022",
+                  "other_control_id": "A.8.24"
+                }
+              ],
+              "expected_evidence": "encryption_policy, data_classification, storage_audit"
+            },
+            {
+              "question_id": "906a83d7-ff96-5d38-b240-6ed09b71f339",
+              "question_text": "Upload evidence such as encryption_policy, data_classification, storage_audit that demonstrates: The confidentiality, integrity, and availability of data-at-rest are protected.",
+              "question_type": "evidence_upload",
+              "framework_name": "NIST CSF 2.0",
+              "framework_key": "nist-csf-2-0",
+              "domain_id": "PR",
+              "domain_name": "Protect",
+              "control_id": "PR.DS-01",
+              "cross_references": [
+                {
+                  "other_framework_id": "nist-sp-800-53",
+                  "other_control_id": "SC-28"
+                },
+                {
+                  "other_framework_id": "iso-27001-2022",
+                  "other_control_id": "A.8.24"
+                }
+              ],
+              "expected_evidence": "encryption_policy, data_classification, storage_audit"
+            }
+          ],
+          "cross_references": [
+            {
+              "other_framework_id": "nist-sp-800-53",
+              "other_control_id": "SC-28"
+            },
+            {
+              "other_framework_id": "iso-27001-2022",
+              "other_control_id": "A.8.24"
+            }
+          ]
+        },
+        {
+          "item_id": "a153d54b-0f78-5dd7-8fb1-725042ce43d1",
+          "question_id": "a153d54b-0f78-5dd7-8fb1-725042ce43d1",
+          "question_text": "Is the organization implementing and operating the control: The confidentiality, integrity, and availability of data-in-transit are protected?",
+          "question_type": "merged",
+          "answer_formats": [
+            "yes_no",
+            "evidence_upload"
+          ],
+          "framework_name": "NIST CSF 2.0",
+          "framework_key": "nist-csf-2-0",
+          "domain_id": "PR",
+          "domain_name": "Protect",
+          "control_id": "PR.DS-02",
+          "control_statement": "The confidentiality, integrity, and availability of data-in-transit are protected.",
+          "expected_evidence": "tls_config, network_diagram, pen_test_report",
+          "maturity_level": "Initial",
+          "merge_reason": "Merged by control fallback because LLM output was unavailable or invalid.",
+          "source_item_ids": [
+            "98e43e8d-6314-55c7-ba0a-b2821150e13b",
+            "a698cace-65a2-5b61-b390-d5b51733d866"
+          ],
+          "source_questions": [
+            {
+              "question_id": "2883e02e-3d36-5f15-8372-318dffa92bde",
+              "question_text": "Is the organization implementing and operating the control: The confidentiality, integrity, and availability of data-in-transit are protected?",
+              "question_type": "yes_no",
+              "framework_name": "NIST CSF 2.0",
+              "framework_key": "nist-csf-2-0",
+              "domain_id": "PR",
+              "domain_name": "Protect",
+              "control_id": "PR.DS-02",
+              "cross_references": [
+                {
+                  "other_framework_id": "nist-sp-800-53",
+                  "other_control_id": "SC-8"
+                },
+                {
+                  "other_framework_id": "iso-27001-2022",
+                  "other_control_id": "A.8.24"
+                }
+              ],
+              "expected_evidence": "tls_config, network_diagram, pen_test_report"
+            },
+            {
+              "question_id": "fe83a9f2-80ec-5a72-85c9-0f7aca15a0f2",
+              "question_text": "Upload evidence such as tls_config, network_diagram, pen_test_report that demonstrates: The confidentiality, integrity, and availability of data-in-transit are protected.",
+              "question_type": "evidence_upload",
+              "framework_name": "NIST CSF 2.0",
+              "framework_key": "nist-csf-2-0",
+              "domain_id": "PR",
+              "domain_name": "Protect",
+              "control_id": "PR.DS-02",
+              "cross_references": [
+                {
+                  "other_framework_id": "nist-sp-800-53",
+                  "other_control_id": "SC-8"
+                },
+                {
+                  "other_framework_id": "iso-27001-2022",
+                  "other_control_id": "A.8.24"
+                }
+              ],
+              "expected_evidence": "tls_config, network_diagram, pen_test_report"
+            }
+          ],
+          "cross_references": [
+            {
+              "other_framework_id": "nist-sp-800-53",
+              "other_control_id": "SC-8"
+            },
+            {
+              "other_framework_id": "iso-27001-2022",
+              "other_control_id": "A.8.24"
+            }
+          ]
+        },
+        {
+          "item_id": "febca688-a855-540c-b6d2-60d12b99b566",
+          "question_id": "febca688-a855-540c-b6d2-60d12b99b566",
+          "question_text": "Is the organization implementing and operating the control: Networks and environments are protected from unauthorized logical access and usage?",
+          "question_type": "merged",
+          "answer_formats": [
+            "yes_no",
+            "evidence_upload"
+          ],
+          "framework_name": "NIST CSF 2.0",
+          "framework_key": "nist-csf-2-0",
+          "domain_id": "PR",
+          "domain_name": "Protect",
+          "control_id": "PR.IR-01",
+          "control_statement": "Networks and environments are protected from unauthorized logical access and usage.",
+          "expected_evidence": "firewall_rules, network_segmentation_diagram, access_logs",
+          "maturity_level": "Initial",
+          "merge_reason": "Merged by control fallback because LLM output was unavailable or invalid.",
+          "source_item_ids": [
+            "7d260857-75b0-5631-aa8e-c8bddce37796",
+            "f9789184-49ef-552e-bfab-15bb597cde66"
+          ],
+          "source_questions": [
+            {
+              "question_id": "1e816326-5e21-5654-877a-cedd39a7f17b",
+              "question_text": "Is the organization implementing and operating the control: Networks and environments are protected from unauthorized logical access and usage?",
+              "question_type": "yes_no",
+              "framework_name": "NIST CSF 2.0",
+              "framework_key": "nist-csf-2-0",
+              "domain_id": "PR",
+              "domain_name": "Protect",
+              "control_id": "PR.IR-01",
+              "cross_references": [
+                {
+                  "other_framework_id": "nist-sp-800-53",
+                  "other_control_id": "SC-7"
+                },
+                {
+                  "other_framework_id": "iso-27001-2022",
+                  "other_control_id": "A.8.22"
+                }
+              ],
+              "expected_evidence": "firewall_rules, network_segmentation_diagram, access_logs"
+            },
+            {
+              "question_id": "8fd315c6-8ffa-5897-a340-554f495df7f0",
+              "question_text": "Upload evidence such as firewall_rules, network_segmentation_diagram, access_logs that demonstrates: Networks and environments are protected from unauthorized logical access and usage.",
+              "question_type": "evidence_upload",
+              "framework_name": "NIST CSF 2.0",
+              "framework_key": "nist-csf-2-0",
+              "domain_id": "PR",
+              "domain_name": "Protect",
+              "control_id": "PR.IR-01",
+              "cross_references": [
+                {
+                  "other_framework_id": "nist-sp-800-53",
+                  "other_control_id": "SC-7"
+                },
+                {
+                  "other_framework_id": "iso-27001-2022",
+                  "other_control_id": "A.8.22"
+                }
+              ],
+              "expected_evidence": "firewall_rules, network_segmentation_diagram, access_logs"
+            }
+          ],
+          "cross_references": [
+            {
+              "other_framework_id": "nist-sp-800-53",
+              "other_control_id": "SC-7"
+            },
+            {
+              "other_framework_id": "iso-27001-2022",
+              "other_control_id": "A.8.22"
+            }
+          ]
+        },
+        {
+          "item_id": "640ae1dc-dd81-5f53-bc24-3a4ecb4c7230",
+          "question_id": "640ae1dc-dd81-5f53-bc24-3a4ecb4c7230",
+          "question_text": "Is the organization implementing and operating the control: Configuration management practices are established and applied?",
+          "question_type": "merged",
+          "answer_formats": [
+            "yes_no",
+            "evidence_upload"
+          ],
+          "framework_name": "NIST CSF 2.0",
+          "framework_key": "nist-csf-2-0",
+          "domain_id": "PR",
+          "domain_name": "Protect",
+          "control_id": "PR.PS-01",
+          "control_statement": "Configuration management practices are established and applied.",
+          "expected_evidence": "config_management_policy, baseline_configs, change_log",
+          "maturity_level": "Initial",
+          "merge_reason": "Merged by control fallback because LLM output was unavailable or invalid.",
+          "source_item_ids": [
+            "95550d72-1aaa-5998-8872-831fcb9c9f89",
+            "6a04468b-f01e-5c02-aabd-174993a96f94"
+          ],
+          "source_questions": [
+            {
+              "question_id": "f4c4ecdb-73ba-5839-89e2-c22110527e38",
+              "question_text": "Is the organization implementing and operating the control: Configuration management practices are established and applied?",
+              "question_type": "yes_no",
+              "framework_name": "NIST CSF 2.0",
+              "framework_key": "nist-csf-2-0",
+              "domain_id": "PR",
+              "domain_name": "Protect",
+              "control_id": "PR.PS-01",
+              "cross_references": [
+                {
+                  "other_framework_id": "nist-sp-800-53",
+                  "other_control_id": "CM-2"
+                },
+                {
+                  "other_framework_id": "iso-27001-2022",
+                  "other_control_id": "A.8.9"
+                }
+              ],
+              "expected_evidence": "config_management_policy, baseline_configs, change_log"
+            },
+            {
+              "question_id": "631b1b4e-90c8-54f1-a2df-621d2ea1e58a",
+              "question_text": "Upload evidence such as config_management_policy, baseline_configs, change_log that demonstrates: Configuration management practices are established and applied.",
+              "question_type": "evidence_upload",
+              "framework_name": "NIST CSF 2.0",
+              "framework_key": "nist-csf-2-0",
+              "domain_id": "PR",
+              "domain_name": "Protect",
+              "control_id": "PR.PS-01",
+              "cross_references": [
+                {
+                  "other_framework_id": "nist-sp-800-53",
+                  "other_control_id": "CM-2"
+                },
+                {
+                  "other_framework_id": "iso-27001-2022",
+                  "other_control_id": "A.8.9"
+                }
+              ],
+              "expected_evidence": "config_management_policy, baseline_configs, change_log"
+            }
+          ],
+          "cross_references": [
+            {
+              "other_framework_id": "nist-sp-800-53",
+              "other_control_id": "CM-2"
+            },
+            {
+              "other_framework_id": "iso-27001-2022",
+              "other_control_id": "A.8.9"
+            }
+          ]
+        }
+      ],
+      "sub_topics": [
+        {
+          "sub_topic": "Protect",
+          "control_ids": [
+            "PR.PS-01",
+            "PR.AA-01",
+            "PR.AA-02",
+            "PR.AA-03",
+            "PR.AA-05",
+            "PR.AT-01",
+            "PR.DS-01",
+            "PR.DS-02",
+            "PR.IR-01"
+          ],
+          "part1_question": {
+            "question_id": "f47ac10b-58cc-4372-a567-0e02b2c3d479",
+            "question_text": "Is MFA enforced?",
+            "question_type": "yes_no_with_detail",
+            "response_options": "Yes / No / Partial",
+            "detail_prompt": "If yes or partial, specify the tool or technology in use."
+          },
+          "questions": [
+            {
+              "question_id": "4b6d4a8f-6a4e-4f6a-9f6a-5f4a6f4a6f4a",
+              "text": "How frequently are access permissions reviewed?",
+              "help_text": "Provide review schedule",
+              "question_type": "FREE_TEXT",
+              "weight": 4,
+              "maturity_level": 4,
+              "expected_evidence_types": [
+                "access_review_report",
+                "rbac_matrix"
+              ]
+            },
+            {
+              "question_id": "2a5a2a5a-2a5a-2a5a-2a5a-2a5a2a5a2a5a",
+              "text": "What process triggers immediate credential revocation?",
+              "help_text": "Describe termination procedure",
+              "question_type": "FREE_TEXT",
+              "weight": 5,
+              "maturity_level": 5,
+              "expected_evidence_types": [
+                "provisioning_records",
+                "user_account_audit"
+              ]
+            },
+            {
+              "question_id": "9a9a9a9a-9a9a-9a9a-9a9a-9a9a9a9a9a9a",
+              "text": "How are identities proofed and bound to credentials?",
+              "help_text": "Explain identity proofing procedure",
+              "question_type": "FREE_TEXT",
+              "weight": 4,
+              "maturity_level": 4,
+              "expected_evidence_types": [
+                "identity_proofing_procedure",
+                "mfa_config"
+              ]
+            },
+            {
+              "question_id": "1a1a1a1a-1a1a-1a1a-1a1a-1a1a1a1a1a1a",
+              "text": "What training is provided to personnel on cybersecurity risks?",
+              "help_text": "Describe security awareness program",
+              "question_type": "FREE_TEXT",
+              "weight": 3,
+              "maturity_level": 3,
+              "expected_evidence_types": [
+                "security_awareness_program",
+                "quiz_results"
+              ]
+            },
+            {
+              "question_id": "3a3a3a3a-3a3a-3a3a-3a3a-3a3a3a3a3a3a",
+              "text": "How are data-at-rest and data-in-transit protected?",
+              "help_text": "Explain encryption and access control measures",
+              "question_type": "FREE_TEXT",
+              "weight": 5,
+              "maturity_level": 5,
+              "expected_evidence_types": [
+                "encryption_policy",
+                "data_classification",
+                "tls_config"
+              ]
+            },
+            {
+              "question_id": "6a6a6a6a-6a6a-6a6a-6a6a-6a6a6a6a6a6a",
+              "text": "What measures are in place to protect networks from unauthorized access?",
+              "help_text": "Describe network segmentation and firewall rules",
+              "question_type": "FREE_TEXT",
+              "weight": 5,
+              "maturity_level": 5,
+              "expected_evidence_types": [
+                "network_diagram",
+                "firewall_rules",
+                "pen_test_report"
+              ]
+            }
+          ],
+          "maturity_guide": {
+            "mature": "Configuration management practices are well-established, and access permissions are regularly reviewed and updated. Identities are properly proofed and bound to credentials, and data-at-rest and data-in-transit are protected through encryption and access control measures. Personnel are provided with regular security awareness training, and networks are protected through segmentation and firewall rules.",
+            "partial": "Configuration management practices are partially established, and access permissions are occasionally reviewed. Identities are partially proofed and bound to credentials, and data-at-rest and data-in-transit are partially protected. Personnel may receive some security awareness training, but it is not regular or comprehensive.",
+            "critical_gap": "The absence of configuration management practices, identity proofing, and data protection measures leaves the organization vulnerable to unauthorized access, data breaches, and other cyber threats."
+          },
+          "evidence_to_request": [
+            "config_management_policy",
+            "access_review_report",
+            "identity_proofing_procedure",
+            "mfa_config",
+            "encryption_policy",
+            "network_diagram",
+            "firewall_rules"
+          ],
+          "red_flags": [
+            {
+              "critical_gap": "Lack of regular security awareness training for personnel",
+              "recommended_action": "Develop and implement a comprehensive security awareness program for all personnel"
+            },
+            {
+              "critical_gap": "Inadequate protection of data-at-rest and data-in-transit",
+              "recommended_action": "Implement encryption and access control measures to protect sensitive data"
+            },
+            {
+              "critical_gap": "Insufficient network segmentation and firewall rules",
+              "recommended_action": "Conduct a network segmentation and firewall rule review to ensure adequate protection"
+            },
+            {
+              "critical_gap": "Inadequate identity proofing and binding to credentials",
+              "recommended_action": "Develop and implement an identity proofing procedure to ensure proper binding of identities to credentials"
+            }
+          ]
+        }
+      ],
+      "interview_questions": [],
+      "evidence_to_request": [
+        "config_management_policy",
+        "access_review_report",
+        "identity_proofing_procedure",
+        "mfa_config",
+        "encryption_policy",
+        "network_diagram",
+        "firewall_rules"
+      ],
+      "red_flags": [
+        {
+          "critical_gap": "Lack of regular security awareness training for personnel",
+          "recommended_action": "Develop and implement a comprehensive security awareness program for all personnel"
+        },
+        {
+          "critical_gap": "Inadequate protection of data-at-rest and data-in-transit",
+          "recommended_action": "Implement encryption and access control measures to protect sensitive data"
+        },
+        {
+          "critical_gap": "Insufficient network segmentation and firewall rules",
+          "recommended_action": "Conduct a network segmentation and firewall rule review to ensure adequate protection"
+        },
+        {
+          "critical_gap": "Inadequate identity proofing and binding to credentials",
+          "recommended_action": "Develop and implement an identity proofing procedure to ensure proper binding of identities to credentials"
+        }
+      ],
+      "maturity_guide": {
+        "mature": "Configuration management practices are well-established, and access permissions are regularly reviewed and updated. Identities are properly proofed and bound to credentials, and data-at-rest and data-in-transit are protected through encryption and access control measures. Personnel are provided with regular security awareness training, and networks are protected through segmentation and firewall rules.",
+        "partial": "Configuration management practices are partially established, and access permissions are occasionally reviewed. Identities are partially proofed and bound to credentials, and data-at-rest and data-in-transit are partially protected. Personnel may receive some security awareness training, but it is not regular or comprehensive.",
+        "critical_gap": "The absence of configuration management practices, identity proofing, and data protection measures leaves the organization vulnerable to unauthorized access, data breaches, and other cyber threats."
+      }
+    }
+  ],
+  "questions": [
+    {
+      "question_id": "1a8e4e50-8893-5458-a4b1-d73e4c8a5aeb",
+      "question_text": "Is the organization implementing and operating the control: Identities and credentials for authorized users, services, and hardware are managed by the organization?",
+      "question_type": "yes_no",
+      "framework_name": "NIST CSF 2.0",
+      "framework_key": "nist-csf-2-0",
+      "domain_id": "PR",
+      "domain_name": "Protect",
+      "control_id": "PR.AA-01",
+      "cross_references": [
+        {
+          "other_framework_id": "nist-sp-800-53",
+          "other_control_id": "IA-2"
+        },
+        {
+          "other_framework_id": "iso-27001-2022",
+          "other_control_id": "A.5.16"
+        }
+      ],
+      "expected_evidence": "iam_policy, user_account_audit, provisioning_records"
+    },
+    {
+      "question_id": "43d2884d-ef56-5d90-8ce6-6bf146024512",
+      "question_text": "Upload evidence such as iam_policy, user_account_audit, provisioning_records that demonstrates: Identities and credentials for authorized users, services, and hardware are managed by the organization.",
+      "question_type": "evidence_upload",
+      "framework_name": "NIST CSF 2.0",
+      "framework_key": "nist-csf-2-0",
+      "domain_id": "PR",
+      "domain_name": "Protect",
+      "control_id": "PR.AA-01",
+      "cross_references": [
+        {
+          "other_framework_id": "nist-sp-800-53",
+          "other_control_id": "IA-2"
+        },
+        {
+          "other_framework_id": "iso-27001-2022",
+          "other_control_id": "A.5.16"
+        }
+      ],
+      "expected_evidence": "iam_policy, user_account_audit, provisioning_records"
+    },
+    {
+      "question_id": "6b872077-ae1f-5fb5-8704-ef80373e0c66",
+      "question_text": "Is the organization implementing and operating the control: Identities are proofed and bound to credentials based on the context of interactions?",
+      "question_type": "yes_no",
+      "framework_name": "NIST CSF 2.0",
+      "framework_key": "nist-csf-2-0",
+      "domain_id": "PR",
+      "domain_name": "Protect",
+      "control_id": "PR.AA-02",
+      "cross_references": [
+        {
+          "other_framework_id": "nist-sp-800-63",
+          "other_control_id": ""
+        },
+        {
+          "other_framework_id": "iso-27001-2022",
+          "other_control_id": "A.5.17"
+        }
+      ],
+      "expected_evidence": "identity_proofing_procedure, mfa_config, sso_config"
+    },
+    {
+      "question_id": "f02949ce-db25-5023-82b2-9d1eabca4d26",
+      "question_text": "Upload evidence such as identity_proofing_procedure, mfa_config, sso_config that demonstrates: Identities are proofed and bound to credentials based on the context of interactions.",
+      "question_type": "evidence_upload",
+      "framework_name": "NIST CSF 2.0",
+      "framework_key": "nist-csf-2-0",
+      "domain_id": "PR",
+      "domain_name": "Protect",
+      "control_id": "PR.AA-02",
+      "cross_references": [
+        {
+          "other_framework_id": "nist-sp-800-63",
+          "other_control_id": ""
+        },
+        {
+          "other_framework_id": "iso-27001-2022",
+          "other_control_id": "A.5.17"
+        }
+      ],
+      "expected_evidence": "identity_proofing_procedure, mfa_config, sso_config"
+    },
+    {
+      "question_id": "dadb05d2-e02e-5dac-a40b-f3dee15cdd3e",
+      "question_text": "Is the organization implementing and operating the control: Users, services, and hardware are authenticated?",
+      "question_type": "yes_no",
+      "framework_name": "NIST CSF 2.0",
+      "framework_key": "nist-csf-2-0",
+      "domain_id": "PR",
+      "domain_name": "Protect",
+      "control_id": "PR.AA-03",
+      "cross_references": [
+        {
+          "other_framework_id": "nist-sp-800-53",
+          "other_control_id": "IA-3"
+        },
+        {
+          "other_framework_id": "iso-27001-2022",
+          "other_control_id": "A.8.5"
+        }
+      ],
+      "expected_evidence": "auth_logs, mfa_enforcement_report, certificate_inventory"
+    },
+    {
+      "question_id": "e1a6c2ec-81ac-52e8-93cf-f52142eca37b",
+      "question_text": "Upload evidence such as auth_logs, mfa_enforcement_report, certificate_inventory that demonstrates: Users, services, and hardware are authenticated.",
+      "question_type": "evidence_upload",
+      "framework_name": "NIST CSF 2.0",
+      "framework_key": "nist-csf-2-0",
+      "domain_id": "PR",
+      "domain_name": "Protect",
+      "control_id": "PR.AA-03",
+      "cross_references": [
+        {
+          "other_framework_id": "nist-sp-800-53",
+          "other_control_id": "IA-3"
+        },
+        {
+          "other_framework_id": "iso-27001-2022",
+          "other_control_id": "A.8.5"
+        }
+      ],
+      "expected_evidence": "auth_logs, mfa_enforcement_report, certificate_inventory"
+    },
+    {
+      "question_id": "e17f1643-841e-54c5-acda-d683b37e0b19",
+      "question_text": "Is the organization implementing and operating the control: Access permissions, entitlements, and authorizations are defined in a policy, managed, enforced, and reviewed?",
+      "question_type": "yes_no",
+      "framework_name": "NIST CSF 2.0",
+      "framework_key": "nist-csf-2-0",
+      "domain_id": "PR",
+      "domain_name": "Protect",
+      "control_id": "PR.AA-05",
+      "cross_references": [
+        {
+          "other_framework_id": "nist-sp-800-53",
+          "other_control_id": "AC-2"
+        },
+        {
+          "other_framework_id": "iso-27001-2022",
+          "other_control_id": "A.5.18"
+        }
+      ],
+      "expected_evidence": "access_control_policy, rbac_matrix, access_review_report"
+    },
+    {
+      "question_id": "3eaabda6-0709-578a-b396-7f2051a047e2",
+      "question_text": "Upload evidence such as access_control_policy, rbac_matrix, access_review_report that demonstrates: Access permissions, entitlements, and authorizations are defined in a policy, managed, enforced, and reviewed.",
+      "question_type": "evidence_upload",
+      "framework_name": "NIST CSF 2.0",
+      "framework_key": "nist-csf-2-0",
+      "domain_id": "PR",
+      "domain_name": "Protect",
+      "control_id": "PR.AA-05",
+      "cross_references": [
+        {
+          "other_framework_id": "nist-sp-800-53",
+          "other_control_id": "AC-2"
+        },
+        {
+          "other_framework_id": "iso-27001-2022",
+          "other_control_id": "A.5.18"
+        }
+      ],
+      "expected_evidence": "access_control_policy, rbac_matrix, access_review_report"
+    },
+    {
+      "question_id": "f44b9cff-b03b-58f8-bbbc-eba86ce055e8",
+      "question_text": "Is the organization implementing and operating the control: Personnel are provided with awareness and training so that they possess the knowledge and skills to perform general tasks with cybersecurity risks in mind?",
+      "question_type": "yes_no",
+      "framework_name": "NIST CSF 2.0",
+      "framework_key": "nist-csf-2-0",
+      "domain_id": "PR",
+      "domain_name": "Protect",
+      "control_id": "PR.AT-01",
+      "cross_references": [
+        {
+          "other_framework_id": "nist-sp-800-53",
+          "other_control_id": "AT-2"
+        },
+        {
+          "other_framework_id": "iso-27001-2022",
+          "other_control_id": "A.6.3"
+        }
+      ],
+      "expected_evidence": "training_records, security_awareness_program, quiz_results"
+    },
+    {
+      "question_id": "9417e42e-6c63-500a-b858-0afe27ec3c20",
+      "question_text": "Upload evidence such as training_records, security_awareness_program, quiz_results that demonstrates: Personnel are provided with awareness and training so that they possess the knowledge and skills to perform general tasks with cybersecurity risks in mind.",
+      "question_type": "evidence_upload",
+      "framework_name": "NIST CSF 2.0",
+      "framework_key": "nist-csf-2-0",
+      "domain_id": "PR",
+      "domain_name": "Protect",
+      "control_id": "PR.AT-01",
+      "cross_references": [
+        {
+          "other_framework_id": "nist-sp-800-53",
+          "other_control_id": "AT-2"
+        },
+        {
+          "other_framework_id": "iso-27001-2022",
+          "other_control_id": "A.6.3"
+        }
+      ],
+      "expected_evidence": "training_records, security_awareness_program, quiz_results"
+    },
+    {
+      "question_id": "aaf46b2e-b1ef-5550-8dac-7b9bfb040ab9",
+      "question_text": "Is the organization implementing and operating the control: The confidentiality, integrity, and availability of data-at-rest are protected?",
+      "question_type": "yes_no",
+      "framework_name": "NIST CSF 2.0",
+      "framework_key": "nist-csf-2-0",
+      "domain_id": "PR",
+      "domain_name": "Protect",
+      "control_id": "PR.DS-01",
+      "cross_references": [
+        {
+          "other_framework_id": "nist-sp-800-53",
+          "other_control_id": "SC-28"
+        },
+        {
+          "other_framework_id": "iso-27001-2022",
+          "other_control_id": "A.8.24"
+        }
+      ],
+      "expected_evidence": "encryption_policy, data_classification, storage_audit"
+    },
+    {
+      "question_id": "906a83d7-ff96-5d38-b240-6ed09b71f339",
+      "question_text": "Upload evidence such as encryption_policy, data_classification, storage_audit that demonstrates: The confidentiality, integrity, and availability of data-at-rest are protected.",
+      "question_type": "evidence_upload",
+      "framework_name": "NIST CSF 2.0",
+      "framework_key": "nist-csf-2-0",
+      "domain_id": "PR",
+      "domain_name": "Protect",
+      "control_id": "PR.DS-01",
+      "cross_references": [
+        {
+          "other_framework_id": "nist-sp-800-53",
+          "other_control_id": "SC-28"
+        },
+        {
+          "other_framework_id": "iso-27001-2022",
+          "other_control_id": "A.8.24"
+        }
+      ],
+      "expected_evidence": "encryption_policy, data_classification, storage_audit"
+    },
+    {
+      "question_id": "2883e02e-3d36-5f15-8372-318dffa92bde",
+      "question_text": "Is the organization implementing and operating the control: The confidentiality, integrity, and availability of data-in-transit are protected?",
+      "question_type": "yes_no",
+      "framework_name": "NIST CSF 2.0",
+      "framework_key": "nist-csf-2-0",
+      "domain_id": "PR",
+      "domain_name": "Protect",
+      "control_id": "PR.DS-02",
+      "cross_references": [
+        {
+          "other_framework_id": "nist-sp-800-53",
+          "other_control_id": "SC-8"
+        },
+        {
+          "other_framework_id": "iso-27001-2022",
+          "other_control_id": "A.8.24"
+        }
+      ],
+      "expected_evidence": "tls_config, network_diagram, pen_test_report"
+    },
+    {
+      "question_id": "fe83a9f2-80ec-5a72-85c9-0f7aca15a0f2",
+      "question_text": "Upload evidence such as tls_config, network_diagram, pen_test_report that demonstrates: The confidentiality, integrity, and availability of data-in-transit are protected.",
+      "question_type": "evidence_upload",
+      "framework_name": "NIST CSF 2.0",
+      "framework_key": "nist-csf-2-0",
+      "domain_id": "PR",
+      "domain_name": "Protect",
+      "control_id": "PR.DS-02",
+      "cross_references": [
+        {
+          "other_framework_id": "nist-sp-800-53",
+          "other_control_id": "SC-8"
+        },
+        {
+          "other_framework_id": "iso-27001-2022",
+          "other_control_id": "A.8.24"
+        }
+      ],
+      "expected_evidence": "tls_config, network_diagram, pen_test_report"
+    },
+    {
+      "question_id": "1e816326-5e21-5654-877a-cedd39a7f17b",
+      "question_text": "Is the organization implementing and operating the control: Networks and environments are protected from unauthorized logical access and usage?",
+      "question_type": "yes_no",
+      "framework_name": "NIST CSF 2.0",
+      "framework_key": "nist-csf-2-0",
+      "domain_id": "PR",
+      "domain_name": "Protect",
+      "control_id": "PR.IR-01",
+      "cross_references": [
+        {
+          "other_framework_id": "nist-sp-800-53",
+          "other_control_id": "SC-7"
+        },
+        {
+          "other_framework_id": "iso-27001-2022",
+          "other_control_id": "A.8.22"
+        }
+      ],
+      "expected_evidence": "firewall_rules, network_segmentation_diagram, access_logs"
+    },
+    {
+      "question_id": "8fd315c6-8ffa-5897-a340-554f495df7f0",
+      "question_text": "Upload evidence such as firewall_rules, network_segmentation_diagram, access_logs that demonstrates: Networks and environments are protected from unauthorized logical access and usage.",
+      "question_type": "evidence_upload",
+      "framework_name": "NIST CSF 2.0",
+      "framework_key": "nist-csf-2-0",
+      "domain_id": "PR",
+      "domain_name": "Protect",
+      "control_id": "PR.IR-01",
+      "cross_references": [
+        {
+          "other_framework_id": "nist-sp-800-53",
+          "other_control_id": "SC-7"
+        },
+        {
+          "other_framework_id": "iso-27001-2022",
+          "other_control_id": "A.8.22"
+        }
+      ],
+      "expected_evidence": "firewall_rules, network_segmentation_diagram, access_logs"
+    },
+    {
+      "question_id": "f4c4ecdb-73ba-5839-89e2-c22110527e38",
+      "question_text": "Is the organization implementing and operating the control: Configuration management practices are established and applied?",
+      "question_type": "yes_no",
+      "framework_name": "NIST CSF 2.0",
+      "framework_key": "nist-csf-2-0",
+      "domain_id": "PR",
+      "domain_name": "Protect",
+      "control_id": "PR.PS-01",
+      "cross_references": [
+        {
+          "other_framework_id": "nist-sp-800-53",
+          "other_control_id": "CM-2"
+        },
+        {
+          "other_framework_id": "iso-27001-2022",
+          "other_control_id": "A.8.9"
+        }
+      ],
+      "expected_evidence": "config_management_policy, baseline_configs, change_log"
+    },
+    {
+      "question_id": "631b1b4e-90c8-54f1-a2df-621d2ea1e58a",
+      "question_text": "Upload evidence such as config_management_policy, baseline_configs, change_log that demonstrates: Configuration management practices are established and applied.",
+      "question_type": "evidence_upload",
+      "framework_name": "NIST CSF 2.0",
+      "framework_key": "nist-csf-2-0",
+      "domain_id": "PR",
+      "domain_name": "Protect",
+      "control_id": "PR.PS-01",
+      "cross_references": [
+        {
+          "other_framework_id": "nist-sp-800-53",
+          "other_control_id": "CM-2"
+        },
+        {
+          "other_framework_id": "iso-27001-2022",
+          "other_control_id": "A.8.9"
+        }
+      ],
+      "expected_evidence": "config_management_policy, baseline_configs, change_log"
+    }
+  ],
+  "part3_tracker": [
+    {
+      "framework": "NIST CSF 2.0",
+      "domain": "Protect",
+      "sub_topic": "Protect",
+      "control_id": "PR.PS-01, PR.AA-01, PR.AA-02, PR.AA-03, PR.AA-05, PR.AT-01, PR.DS-01, PR.DS-02, PR.IR-01",
+      "evidence_request": "config_management_policy",
+      "answer_format": "status_text",
+      "status": ""
+    },
+    {
+      "framework": "NIST CSF 2.0",
+      "domain": "Protect",
+      "sub_topic": "Protect",
+      "control_id": "PR.PS-01, PR.AA-01, PR.AA-02, PR.AA-03, PR.AA-05, PR.AT-01, PR.DS-01, PR.DS-02, PR.IR-01",
+      "evidence_request": "access_review_report",
+      "answer_format": "status_text",
+      "status": ""
+    },
+    {
+      "framework": "NIST CSF 2.0",
+      "domain": "Protect",
+      "sub_topic": "Protect",
+      "control_id": "PR.PS-01, PR.AA-01, PR.AA-02, PR.AA-03, PR.AA-05, PR.AT-01, PR.DS-01, PR.DS-02, PR.IR-01",
+      "evidence_request": "identity_proofing_procedure",
+      "answer_format": "status_text",
+      "status": ""
+    },
+    {
+      "framework": "NIST CSF 2.0",
+      "domain": "Protect",
+      "sub_topic": "Protect",
+      "control_id": "PR.PS-01, PR.AA-01, PR.AA-02, PR.AA-03, PR.AA-05, PR.AT-01, PR.DS-01, PR.DS-02, PR.IR-01",
+      "evidence_request": "mfa_config",
+      "answer_format": "status_text",
+      "status": ""
+    },
+    {
+      "framework": "NIST CSF 2.0",
+      "domain": "Protect",
+      "sub_topic": "Protect",
+      "control_id": "PR.PS-01, PR.AA-01, PR.AA-02, PR.AA-03, PR.AA-05, PR.AT-01, PR.DS-01, PR.DS-02, PR.IR-01",
+      "evidence_request": "encryption_policy",
+      "answer_format": "status_text",
+      "status": ""
+    },
+    {
+      "framework": "NIST CSF 2.0",
+      "domain": "Protect",
+      "sub_topic": "Protect",
+      "control_id": "PR.PS-01, PR.AA-01, PR.AA-02, PR.AA-03, PR.AA-05, PR.AT-01, PR.DS-01, PR.DS-02, PR.IR-01",
+      "evidence_request": "network_diagram",
+      "answer_format": "status_text",
+      "status": ""
+    },
+    {
+      "framework": "NIST CSF 2.0",
+      "domain": "Protect",
+      "sub_topic": "Protect",
+      "control_id": "PR.PS-01, PR.AA-01, PR.AA-02, PR.AA-03, PR.AA-05, PR.AT-01, PR.DS-01, PR.DS-02, PR.IR-01",
+      "evidence_request": "firewall_rules",
+      "answer_format": "status_text",
+      "status": ""
+    }
+  ],
+  "red_flags_by_domain": [
+    {
+      "domain_name": "Protect",
+      "framework_name": "NIST CSF 2.0",
+      "red_flags": [
+        {
+          "critical_gap": "Lack of regular security awareness training for personnel",
+          "recommended_action": "Develop and implement a comprehensive security awareness program for all personnel"
+        },
+        {
+          "critical_gap": "Inadequate protection of data-at-rest and data-in-transit",
+          "recommended_action": "Implement encryption and access control measures to protect sensitive data"
+        },
+        {
+          "critical_gap": "Insufficient network segmentation and firewall rules",
+          "recommended_action": "Conduct a network segmentation and firewall rule review to ensure adequate protection"
+        },
+        {
+          "critical_gap": "Inadequate identity proofing and binding to credentials",
+          "recommended_action": "Develop and implement an identity proofing procedure to ensure proper binding of identities to credentials"
+        }
+      ]
+    }
+  ],
+  "selected_domain_keys": [
+    "nist-csf-2-0:PR"
+  ],
+  "ingested_at": "2026-06-10T06:18:32.125681+00:00",
+  "maturity_levels": [
+    {
+      "level": 1,
+      "code": "INITIAL",
+      "name": "Initial",
+      "description": "Ad hoc and undocumented."
+    },
+    {
+      "level": 2,
+      "code": "REPEATABLE",
+      "name": "Repeatable",
+      "description": "Basic processes established and repeated."
+    },
+    {
+      "level": 3,
+      "code": "DEFINED",
+      "name": "Defined",
+      "description": "Processes documented, standardised, and communicated."
+    },
+    {
+      "level": 4,
+      "code": "MANAGED",
+      "name": "Managed",
+      "description": "Processes measured and controlled with quantitative data."
+    },
+    {
+      "level": 5,
+      "code": "OPTIMIZING",
+      "name": "Optimizing",
+      "description": "Continuous improvement driven by metrics and feedback."
+    }
+  ],
+  "domains": [
+    {
+      "code": "PR",
+      "name": "Protect",
+      "categories": [
+        {
+          "code": "PR.AA",
+          "name": "PR.AA",
+          "controls": [
+            {
+              "code": "PR.AA-01",
+              "statement": "Identities and credentials for authorized users, services, and hardware are managed by the organization.",
+              "cross_refs": [
+                {
+                  "framework": "nist-sp-800-53",
+                  "version": "",
+                  "code": "IA-2"
+                },
+                {
+                  "framework": "iso-27001-2022",
+                  "version": "",
+                  "code": "A.5.16"
+                }
+              ],
+              "questions": [
+                {
+                  "question_id": "4b6d4a8f-6a4e-4f6a-9f6a-5f4a6f4a6f4a",
+                  "text": "How frequently are access permissions reviewed?",
+                  "question_type": "FREE_TEXT",
+                  "weight": 4,
+                  "maturity_level": 4,
+                  "help_text": "Provide review schedule",
+                  "choices": []
+                },
+                {
+                  "question_id": "2a5a2a5a-2a5a-2a5a-2a5a-2a5a2a5a2a5a",
+                  "text": "What process triggers immediate credential revocation?",
+                  "question_type": "FREE_TEXT",
+                  "weight": 5,
+                  "maturity_level": 5,
+                  "help_text": "Describe termination procedure",
+                  "choices": []
+                },
+                {
+                  "question_id": "9a9a9a9a-9a9a-9a9a-9a9a-9a9a9a9a9a9a",
+                  "text": "How are identities proofed and bound to credentials?",
+                  "question_type": "FREE_TEXT",
+                  "weight": 4,
+                  "maturity_level": 4,
+                  "help_text": "Explain identity proofing procedure",
+                  "choices": []
+                },
+                {
+                  "question_id": "1a1a1a1a-1a1a-1a1a-1a1a-1a1a1a1a1a1a",
+                  "text": "What training is provided to personnel on cybersecurity risks?",
+                  "question_type": "FREE_TEXT",
+                  "weight": 3,
+                  "maturity_level": 3,
+                  "help_text": "Describe security awareness program",
+                  "choices": []
+                },
+                {
+                  "question_id": "3a3a3a3a-3a3a-3a3a-3a3a-3a3a3a3a3a3a",
+                  "text": "How are data-at-rest and data-in-transit protected?",
+                  "question_type": "FREE_TEXT",
+                  "weight": 5,
+                  "maturity_level": 5,
+                  "help_text": "Explain encryption and access control measures",
+                  "choices": []
+                },
+                {
+                  "question_id": "6a6a6a6a-6a6a-6a6a-6a6a-6a6a6a6a6a6a",
+                  "text": "What measures are in place to protect networks from unauthorized access?",
+                  "question_type": "FREE_TEXT",
+                  "weight": 5,
+                  "maturity_level": 5,
+                  "help_text": "Describe network segmentation and firewall rules",
+                  "choices": []
+                }
+              ]
+            },
+            {
+              "code": "PR.AA-02",
+              "statement": "Identities are proofed and bound to credentials based on the context of interactions.",
+              "cross_refs": [
+                {
+                  "framework": "nist-sp-800-63",
+                  "version": "",
+                  "code": ""
+                },
+                {
+                  "framework": "iso-27001-2022",
+                  "version": "",
+                  "code": "A.5.17"
+                }
+              ],
+              "questions": [
+                {
+                  "question_id": "4b6d4a8f-6a4e-4f6a-9f6a-5f4a6f4a6f4a",
+                  "text": "How frequently are access permissions reviewed?",
+                  "question_type": "FREE_TEXT",
+                  "weight": 4,
+                  "maturity_level": 4,
+                  "help_text": "Provide review schedule",
+                  "choices": []
+                },
+                {
+                  "question_id": "2a5a2a5a-2a5a-2a5a-2a5a-2a5a2a5a2a5a",
+                  "text": "What process triggers immediate credential revocation?",
+                  "question_type": "FREE_TEXT",
+                  "weight": 5,
+                  "maturity_level": 5,
+                  "help_text": "Describe termination procedure",
+                  "choices": []
+                },
+                {
+                  "question_id": "9a9a9a9a-9a9a-9a9a-9a9a-9a9a9a9a9a9a",
+                  "text": "How are identities proofed and bound to credentials?",
+                  "question_type": "FREE_TEXT",
+                  "weight": 4,
+                  "maturity_level": 4,
+                  "help_text": "Explain identity proofing procedure",
+                  "choices": []
+                },
+                {
+                  "question_id": "1a1a1a1a-1a1a-1a1a-1a1a-1a1a1a1a1a1a",
+                  "text": "What training is provided to personnel on cybersecurity risks?",
+                  "question_type": "FREE_TEXT",
+                  "weight": 3,
+                  "maturity_level": 3,
+                  "help_text": "Describe security awareness program",
+                  "choices": []
+                },
+                {
+                  "question_id": "3a3a3a3a-3a3a-3a3a-3a3a-3a3a3a3a3a3a",
+                  "text": "How are data-at-rest and data-in-transit protected?",
+                  "question_type": "FREE_TEXT",
+                  "weight": 5,
+                  "maturity_level": 5,
+                  "help_text": "Explain encryption and access control measures",
+                  "choices": []
+                },
+                {
+                  "question_id": "6a6a6a6a-6a6a-6a6a-6a6a-6a6a6a6a6a6a",
+                  "text": "What measures are in place to protect networks from unauthorized access?",
+                  "question_type": "FREE_TEXT",
+                  "weight": 5,
+                  "maturity_level": 5,
+                  "help_text": "Describe network segmentation and firewall rules",
+                  "choices": []
+                }
+              ]
+            },
+            {
+              "code": "PR.AA-03",
+              "statement": "Users, services, and hardware are authenticated.",
+              "cross_refs": [
+                {
+                  "framework": "nist-sp-800-53",
+                  "version": "",
+                  "code": "IA-3"
+                },
+                {
+                  "framework": "iso-27001-2022",
+                  "version": "",
+                  "code": "A.8.5"
+                }
+              ],
+              "questions": [
+                {
+                  "question_id": "4b6d4a8f-6a4e-4f6a-9f6a-5f4a6f4a6f4a",
+                  "text": "How frequently are access permissions reviewed?",
+                  "question_type": "FREE_TEXT",
+                  "weight": 4,
+                  "maturity_level": 4,
+                  "help_text": "Provide review schedule",
+                  "choices": []
+                },
+                {
+                  "question_id": "2a5a2a5a-2a5a-2a5a-2a5a-2a5a2a5a2a5a",
+                  "text": "What process triggers immediate credential revocation?",
+                  "question_type": "FREE_TEXT",
+                  "weight": 5,
+                  "maturity_level": 5,
+                  "help_text": "Describe termination procedure",
+                  "choices": []
+                },
+                {
+                  "question_id": "9a9a9a9a-9a9a-9a9a-9a9a-9a9a9a9a9a9a",
+                  "text": "How are identities proofed and bound to credentials?",
+                  "question_type": "FREE_TEXT",
+                  "weight": 4,
+                  "maturity_level": 4,
+                  "help_text": "Explain identity proofing procedure",
+                  "choices": []
+                },
+                {
+                  "question_id": "1a1a1a1a-1a1a-1a1a-1a1a-1a1a1a1a1a1a",
+                  "text": "What training is provided to personnel on cybersecurity risks?",
+                  "question_type": "FREE_TEXT",
+                  "weight": 3,
+                  "maturity_level": 3,
+                  "help_text": "Describe security awareness program",
+                  "choices": []
+                },
+                {
+                  "question_id": "3a3a3a3a-3a3a-3a3a-3a3a-3a3a3a3a3a3a",
+                  "text": "How are data-at-rest and data-in-transit protected?",
+                  "question_type": "FREE_TEXT",
+                  "weight": 5,
+                  "maturity_level": 5,
+                  "help_text": "Explain encryption and access control measures",
+                  "choices": []
+                },
+                {
+                  "question_id": "6a6a6a6a-6a6a-6a6a-6a6a-6a6a6a6a6a6a",
+                  "text": "What measures are in place to protect networks from unauthorized access?",
+                  "question_type": "FREE_TEXT",
+                  "weight": 5,
+                  "maturity_level": 5,
+                  "help_text": "Describe network segmentation and firewall rules",
+                  "choices": []
+                }
+              ]
+            },
+            {
+              "code": "PR.AA-05",
+              "statement": "Access permissions, entitlements, and authorizations are defined in a policy, managed, enforced, and reviewed.",
+              "cross_refs": [
+                {
+                  "framework": "nist-sp-800-53",
+                  "version": "",
+                  "code": "AC-2"
+                },
+                {
+                  "framework": "iso-27001-2022",
+                  "version": "",
+                  "code": "A.5.18"
+                }
+              ],
+              "questions": [
+                {
+                  "question_id": "4b6d4a8f-6a4e-4f6a-9f6a-5f4a6f4a6f4a",
+                  "text": "How frequently are access permissions reviewed?",
+                  "question_type": "FREE_TEXT",
+                  "weight": 4,
+                  "maturity_level": 4,
+                  "help_text": "Provide review schedule",
+                  "choices": []
+                },
+                {
+                  "question_id": "2a5a2a5a-2a5a-2a5a-2a5a-2a5a2a5a2a5a",
+                  "text": "What process triggers immediate credential revocation?",
+                  "question_type": "FREE_TEXT",
+                  "weight": 5,
+                  "maturity_level": 5,
+                  "help_text": "Describe termination procedure",
+                  "choices": []
+                },
+                {
+                  "question_id": "9a9a9a9a-9a9a-9a9a-9a9a-9a9a9a9a9a9a",
+                  "text": "How are identities proofed and bound to credentials?",
+                  "question_type": "FREE_TEXT",
+                  "weight": 4,
+                  "maturity_level": 4,
+                  "help_text": "Explain identity proofing procedure",
+                  "choices": []
+                },
+                {
+                  "question_id": "1a1a1a1a-1a1a-1a1a-1a1a-1a1a1a1a1a1a",
+                  "text": "What training is provided to personnel on cybersecurity risks?",
+                  "question_type": "FREE_TEXT",
+                  "weight": 3,
+                  "maturity_level": 3,
+                  "help_text": "Describe security awareness program",
+                  "choices": []
+                },
+                {
+                  "question_id": "3a3a3a3a-3a3a-3a3a-3a3a-3a3a3a3a3a3a",
+                  "text": "How are data-at-rest and data-in-transit protected?",
+                  "question_type": "FREE_TEXT",
+                  "weight": 5,
+                  "maturity_level": 5,
+                  "help_text": "Explain encryption and access control measures",
+                  "choices": []
+                },
+                {
+                  "question_id": "6a6a6a6a-6a6a-6a6a-6a6a-6a6a6a6a6a6a",
+                  "text": "What measures are in place to protect networks from unauthorized access?",
+                  "question_type": "FREE_TEXT",
+                  "weight": 5,
+                  "maturity_level": 5,
+                  "help_text": "Describe network segmentation and firewall rules",
+                  "choices": []
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "code": "PR.AT",
+          "name": "PR.AT",
+          "controls": [
+            {
+              "code": "PR.AT-01",
+              "statement": "Personnel are provided with awareness and training so that they possess the knowledge and skills to perform general tasks with cybersecurity risks in mind.",
+              "cross_refs": [
+                {
+                  "framework": "nist-sp-800-53",
+                  "version": "",
+                  "code": "AT-2"
+                },
+                {
+                  "framework": "iso-27001-2022",
+                  "version": "",
+                  "code": "A.6.3"
+                }
+              ],
+              "questions": [
+                {
+                  "question_id": "4b6d4a8f-6a4e-4f6a-9f6a-5f4a6f4a6f4a",
+                  "text": "How frequently are access permissions reviewed?",
+                  "question_type": "FREE_TEXT",
+                  "weight": 4,
+                  "maturity_level": 4,
+                  "help_text": "Provide review schedule",
+                  "choices": []
+                },
+                {
+                  "question_id": "2a5a2a5a-2a5a-2a5a-2a5a-2a5a2a5a2a5a",
+                  "text": "What process triggers immediate credential revocation?",
+                  "question_type": "FREE_TEXT",
+                  "weight": 5,
+                  "maturity_level": 5,
+                  "help_text": "Describe termination procedure",
+                  "choices": []
+                },
+                {
+                  "question_id": "9a9a9a9a-9a9a-9a9a-9a9a-9a9a9a9a9a9a",
+                  "text": "How are identities proofed and bound to credentials?",
+                  "question_type": "FREE_TEXT",
+                  "weight": 4,
+                  "maturity_level": 4,
+                  "help_text": "Explain identity proofing procedure",
+                  "choices": []
+                },
+                {
+                  "question_id": "1a1a1a1a-1a1a-1a1a-1a1a-1a1a1a1a1a1a",
+                  "text": "What training is provided to personnel on cybersecurity risks?",
+                  "question_type": "FREE_TEXT",
+                  "weight": 3,
+                  "maturity_level": 3,
+                  "help_text": "Describe security awareness program",
+                  "choices": []
+                },
+                {
+                  "question_id": "3a3a3a3a-3a3a-3a3a-3a3a-3a3a3a3a3a3a",
+                  "text": "How are data-at-rest and data-in-transit protected?",
+                  "question_type": "FREE_TEXT",
+                  "weight": 5,
+                  "maturity_level": 5,
+                  "help_text": "Explain encryption and access control measures",
+                  "choices": []
+                },
+                {
+                  "question_id": "6a6a6a6a-6a6a-6a6a-6a6a-6a6a6a6a6a6a",
+                  "text": "What measures are in place to protect networks from unauthorized access?",
+                  "question_type": "FREE_TEXT",
+                  "weight": 5,
+                  "maturity_level": 5,
+                  "help_text": "Describe network segmentation and firewall rules",
+                  "choices": []
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "code": "PR.DS",
+          "name": "PR.DS",
+          "controls": [
+            {
+              "code": "PR.DS-01",
+              "statement": "The confidentiality, integrity, and availability of data-at-rest are protected.",
+              "cross_refs": [
+                {
+                  "framework": "nist-sp-800-53",
+                  "version": "",
+                  "code": "SC-28"
+                },
+                {
+                  "framework": "iso-27001-2022",
+                  "version": "",
+                  "code": "A.8.24"
+                }
+              ],
+              "questions": [
+                {
+                  "question_id": "4b6d4a8f-6a4e-4f6a-9f6a-5f4a6f4a6f4a",
+                  "text": "How frequently are access permissions reviewed?",
+                  "question_type": "FREE_TEXT",
+                  "weight": 4,
+                  "maturity_level": 4,
+                  "help_text": "Provide review schedule",
+                  "choices": []
+                },
+                {
+                  "question_id": "2a5a2a5a-2a5a-2a5a-2a5a-2a5a2a5a2a5a",
+                  "text": "What process triggers immediate credential revocation?",
+                  "question_type": "FREE_TEXT",
+                  "weight": 5,
+                  "maturity_level": 5,
+                  "help_text": "Describe termination procedure",
+                  "choices": []
+                },
+                {
+                  "question_id": "9a9a9a9a-9a9a-9a9a-9a9a-9a9a9a9a9a9a",
+                  "text": "How are identities proofed and bound to credentials?",
+                  "question_type": "FREE_TEXT",
+                  "weight": 4,
+                  "maturity_level": 4,
+                  "help_text": "Explain identity proofing procedure",
+                  "choices": []
+                },
+                {
+                  "question_id": "1a1a1a1a-1a1a-1a1a-1a1a-1a1a1a1a1a1a",
+                  "text": "What training is provided to personnel on cybersecurity risks?",
+                  "question_type": "FREE_TEXT",
+                  "weight": 3,
+                  "maturity_level": 3,
+                  "help_text": "Describe security awareness program",
+                  "choices": []
+                },
+                {
+                  "question_id": "3a3a3a3a-3a3a-3a3a-3a3a-3a3a3a3a3a3a",
+                  "text": "How are data-at-rest and data-in-transit protected?",
+                  "question_type": "FREE_TEXT",
+                  "weight": 5,
+                  "maturity_level": 5,
+                  "help_text": "Explain encryption and access control measures",
+                  "choices": []
+                },
+                {
+                  "question_id": "6a6a6a6a-6a6a-6a6a-6a6a-6a6a6a6a6a6a",
+                  "text": "What measures are in place to protect networks from unauthorized access?",
+                  "question_type": "FREE_TEXT",
+                  "weight": 5,
+                  "maturity_level": 5,
+                  "help_text": "Describe network segmentation and firewall rules",
+                  "choices": []
+                }
+              ]
+            },
+            {
+              "code": "PR.DS-02",
+              "statement": "The confidentiality, integrity, and availability of data-in-transit are protected.",
+              "cross_refs": [
+                {
+                  "framework": "nist-sp-800-53",
+                  "version": "",
+                  "code": "SC-8"
+                },
+                {
+                  "framework": "iso-27001-2022",
+                  "version": "",
+                  "code": "A.8.24"
+                }
+              ],
+              "questions": [
+                {
+                  "question_id": "4b6d4a8f-6a4e-4f6a-9f6a-5f4a6f4a6f4a",
+                  "text": "How frequently are access permissions reviewed?",
+                  "question_type": "FREE_TEXT",
+                  "weight": 4,
+                  "maturity_level": 4,
+                  "help_text": "Provide review schedule",
+                  "choices": []
+                },
+                {
+                  "question_id": "2a5a2a5a-2a5a-2a5a-2a5a-2a5a2a5a2a5a",
+                  "text": "What process triggers immediate credential revocation?",
+                  "question_type": "FREE_TEXT",
+                  "weight": 5,
+                  "maturity_level": 5,
+                  "help_text": "Describe termination procedure",
+                  "choices": []
+                },
+                {
+                  "question_id": "9a9a9a9a-9a9a-9a9a-9a9a-9a9a9a9a9a9a",
+                  "text": "How are identities proofed and bound to credentials?",
+                  "question_type": "FREE_TEXT",
+                  "weight": 4,
+                  "maturity_level": 4,
+                  "help_text": "Explain identity proofing procedure",
+                  "choices": []
+                },
+                {
+                  "question_id": "1a1a1a1a-1a1a-1a1a-1a1a-1a1a1a1a1a1a",
+                  "text": "What training is provided to personnel on cybersecurity risks?",
+                  "question_type": "FREE_TEXT",
+                  "weight": 3,
+                  "maturity_level": 3,
+                  "help_text": "Describe security awareness program",
+                  "choices": []
+                },
+                {
+                  "question_id": "3a3a3a3a-3a3a-3a3a-3a3a-3a3a3a3a3a3a",
+                  "text": "How are data-at-rest and data-in-transit protected?",
+                  "question_type": "FREE_TEXT",
+                  "weight": 5,
+                  "maturity_level": 5,
+                  "help_text": "Explain encryption and access control measures",
+                  "choices": []
+                },
+                {
+                  "question_id": "6a6a6a6a-6a6a-6a6a-6a6a-6a6a6a6a6a6a",
+                  "text": "What measures are in place to protect networks from unauthorized access?",
+                  "question_type": "FREE_TEXT",
+                  "weight": 5,
+                  "maturity_level": 5,
+                  "help_text": "Describe network segmentation and firewall rules",
+                  "choices": []
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "code": "PR.IR",
+          "name": "PR.IR",
+          "controls": [
+            {
+              "code": "PR.IR-01",
+              "statement": "Networks and environments are protected from unauthorized logical access and usage.",
+              "cross_refs": [
+                {
+                  "framework": "nist-sp-800-53",
+                  "version": "",
+                  "code": "SC-7"
+                },
+                {
+                  "framework": "iso-27001-2022",
+                  "version": "",
+                  "code": "A.8.22"
+                }
+              ],
+              "questions": [
+                {
+                  "question_id": "4b6d4a8f-6a4e-4f6a-9f6a-5f4a6f4a6f4a",
+                  "text": "How frequently are access permissions reviewed?",
+                  "question_type": "FREE_TEXT",
+                  "weight": 4,
+                  "maturity_level": 4,
+                  "help_text": "Provide review schedule",
+                  "choices": []
+                },
+                {
+                  "question_id": "2a5a2a5a-2a5a-2a5a-2a5a-2a5a2a5a2a5a",
+                  "text": "What process triggers immediate credential revocation?",
+                  "question_type": "FREE_TEXT",
+                  "weight": 5,
+                  "maturity_level": 5,
+                  "help_text": "Describe termination procedure",
+                  "choices": []
+                },
+                {
+                  "question_id": "9a9a9a9a-9a9a-9a9a-9a9a-9a9a9a9a9a9a",
+                  "text": "How are identities proofed and bound to credentials?",
+                  "question_type": "FREE_TEXT",
+                  "weight": 4,
+                  "maturity_level": 4,
+                  "help_text": "Explain identity proofing procedure",
+                  "choices": []
+                },
+                {
+                  "question_id": "1a1a1a1a-1a1a-1a1a-1a1a-1a1a1a1a1a1a",
+                  "text": "What training is provided to personnel on cybersecurity risks?",
+                  "question_type": "FREE_TEXT",
+                  "weight": 3,
+                  "maturity_level": 3,
+                  "help_text": "Describe security awareness program",
+                  "choices": []
+                },
+                {
+                  "question_id": "3a3a3a3a-3a3a-3a3a-3a3a-3a3a3a3a3a3a",
+                  "text": "How are data-at-rest and data-in-transit protected?",
+                  "question_type": "FREE_TEXT",
+                  "weight": 5,
+                  "maturity_level": 5,
+                  "help_text": "Explain encryption and access control measures",
+                  "choices": []
+                },
+                {
+                  "question_id": "6a6a6a6a-6a6a-6a6a-6a6a-6a6a6a6a6a6a",
+                  "text": "What measures are in place to protect networks from unauthorized access?",
+                  "question_type": "FREE_TEXT",
+                  "weight": 5,
+                  "maturity_level": 5,
+                  "help_text": "Describe network segmentation and firewall rules",
+                  "choices": []
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "code": "PR.PS",
+          "name": "PR.PS",
+          "controls": [
+            {
+              "code": "PR.PS-01",
+              "statement": "Configuration management practices are established and applied.",
+              "cross_refs": [
+                {
+                  "framework": "nist-sp-800-53",
+                  "version": "",
+                  "code": "CM-2"
+                },
+                {
+                  "framework": "iso-27001-2022",
+                  "version": "",
+                  "code": "A.8.9"
+                }
+              ],
+              "questions": [
+                {
+                  "question_id": "4b6d4a8f-6a4e-4f6a-9f6a-5f4a6f4a6f4a",
+                  "text": "How frequently are access permissions reviewed?",
+                  "question_type": "FREE_TEXT",
+                  "weight": 4,
+                  "maturity_level": 4,
+                  "help_text": "Provide review schedule",
+                  "choices": []
+                },
+                {
+                  "question_id": "2a5a2a5a-2a5a-2a5a-2a5a-2a5a2a5a2a5a",
+                  "text": "What process triggers immediate credential revocation?",
+                  "question_type": "FREE_TEXT",
+                  "weight": 5,
+                  "maturity_level": 5,
+                  "help_text": "Describe termination procedure",
+                  "choices": []
+                },
+                {
+                  "question_id": "9a9a9a9a-9a9a-9a9a-9a9a-9a9a9a9a9a9a",
+                  "text": "How are identities proofed and bound to credentials?",
+                  "question_type": "FREE_TEXT",
+                  "weight": 4,
+                  "maturity_level": 4,
+                  "help_text": "Explain identity proofing procedure",
+                  "choices": []
+                },
+                {
+                  "question_id": "1a1a1a1a-1a1a-1a1a-1a1a-1a1a1a1a1a1a",
+                  "text": "What training is provided to personnel on cybersecurity risks?",
+                  "question_type": "FREE_TEXT",
+                  "weight": 3,
+                  "maturity_level": 3,
+                  "help_text": "Describe security awareness program",
+                  "choices": []
+                },
+                {
+                  "question_id": "3a3a3a3a-3a3a-3a3a-3a3a-3a3a3a3a3a3a",
+                  "text": "How are data-at-rest and data-in-transit protected?",
+                  "question_type": "FREE_TEXT",
+                  "weight": 5,
+                  "maturity_level": 5,
+                  "help_text": "Explain encryption and access control measures",
+                  "choices": []
+                },
+                {
+                  "question_id": "6a6a6a6a-6a6a-6a6a-6a6a-6a6a6a6a6a6a",
+                  "text": "What measures are in place to protect networks from unauthorized access?",
+                  "question_type": "FREE_TEXT",
+                  "weight": 5,
+                  "maturity_level": 5,
+                  "help_text": "Describe network segmentation and firewall rules",
+                  "choices": []
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    }
+  ],
+  "mappings": [
+    {
+      "source_control": "PR.AA-01",
+      "target_framework": "nist-sp-800-53",
+      "target_framework_version": "",
+      "target_control": "IA-2",
+      "relationship": "RELATED",
+      "notes": ""
+    },
+    {
+      "source_control": "PR.AA-01",
+      "target_framework": "iso-27001-2022",
+      "target_framework_version": "",
+      "target_control": "A.5.16",
+      "relationship": "RELATED",
+      "notes": ""
+    },
+    {
+      "source_control": "PR.AA-02",
+      "target_framework": "nist-sp-800-63",
+      "target_framework_version": "",
+      "target_control": "",
+      "relationship": "RELATED",
+      "notes": ""
+    },
+    {
+      "source_control": "PR.AA-02",
+      "target_framework": "iso-27001-2022",
+      "target_framework_version": "",
+      "target_control": "A.5.17",
+      "relationship": "RELATED",
+      "notes": ""
+    },
+    {
+      "source_control": "PR.AA-03",
+      "target_framework": "nist-sp-800-53",
+      "target_framework_version": "",
+      "target_control": "IA-3",
+      "relationship": "RELATED",
+      "notes": ""
+    },
+    {
+      "source_control": "PR.AA-03",
+      "target_framework": "iso-27001-2022",
+      "target_framework_version": "",
+      "target_control": "A.8.5",
+      "relationship": "RELATED",
+      "notes": ""
+    },
+    {
+      "source_control": "PR.AA-05",
+      "target_framework": "nist-sp-800-53",
+      "target_framework_version": "",
+      "target_control": "AC-2",
+      "relationship": "RELATED",
+      "notes": ""
+    },
+    {
+      "source_control": "PR.AA-05",
+      "target_framework": "iso-27001-2022",
+      "target_framework_version": "",
+      "target_control": "A.5.18",
+      "relationship": "RELATED",
+      "notes": ""
+    },
+    {
+      "source_control": "PR.AT-01",
+      "target_framework": "nist-sp-800-53",
+      "target_framework_version": "",
+      "target_control": "AT-2",
+      "relationship": "RELATED",
+      "notes": ""
+    },
+    {
+      "source_control": "PR.AT-01",
+      "target_framework": "iso-27001-2022",
+      "target_framework_version": "",
+      "target_control": "A.6.3",
+      "relationship": "RELATED",
+      "notes": ""
+    },
+    {
+      "source_control": "PR.DS-01",
+      "target_framework": "nist-sp-800-53",
+      "target_framework_version": "",
+      "target_control": "SC-28",
+      "relationship": "RELATED",
+      "notes": ""
+    },
+    {
+      "source_control": "PR.DS-01",
+      "target_framework": "iso-27001-2022",
+      "target_framework_version": "",
+      "target_control": "A.8.24",
+      "relationship": "RELATED",
+      "notes": ""
+    },
+    {
+      "source_control": "PR.DS-02",
+      "target_framework": "nist-sp-800-53",
+      "target_framework_version": "",
+      "target_control": "SC-8",
+      "relationship": "RELATED",
+      "notes": ""
+    },
+    {
+      "source_control": "PR.DS-02",
+      "target_framework": "iso-27001-2022",
+      "target_framework_version": "",
+      "target_control": "A.8.24",
+      "relationship": "RELATED",
+      "notes": ""
+    },
+    {
+      "source_control": "PR.IR-01",
+      "target_framework": "nist-sp-800-53",
+      "target_framework_version": "",
+      "target_control": "SC-7",
+      "relationship": "RELATED",
+      "notes": ""
+    },
+    {
+      "source_control": "PR.IR-01",
+      "target_framework": "iso-27001-2022",
+      "target_framework_version": "",
+      "target_control": "A.8.22",
+      "relationship": "RELATED",
+      "notes": ""
+    },
+    {
+      "source_control": "PR.PS-01",
+      "target_framework": "nist-sp-800-53",
+      "target_framework_version": "",
+      "target_control": "CM-2",
+      "relationship": "RELATED",
+      "notes": ""
+    },
+    {
+      "source_control": "PR.PS-01",
+      "target_framework": "iso-27001-2022",
+      "target_framework_version": "",
+      "target_control": "A.8.9",
+      "relationship": "RELATED",
+      "notes": ""
+    }
+  ]
+}

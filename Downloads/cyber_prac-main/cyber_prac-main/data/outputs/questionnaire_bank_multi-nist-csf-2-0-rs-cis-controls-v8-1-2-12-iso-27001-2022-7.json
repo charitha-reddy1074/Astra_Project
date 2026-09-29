@@ -1,0 +1,2928 @@
+{
+  "questionnaire_type": "multi_framework",
+  "questionnaire_id": "multi-nist-csf-2-0-rs-cis-controls-v8-1-2-12-iso-27001-2022-7",
+  "questionnaire_name": "NIST CSF 2.0 (Respond) + CIS Controls v8.1.2 (Network Infrastructure Management) + ISO/IEC 27001:2022 (Physical controls)",
+  "framework_ids": [
+    "d048b355-a19a-52eb-bf3d-3e2133c57d1e",
+    "8ac1d180-5b22-5cf6-8a0b-df10e87ebad8",
+    "iso-iec-27001-2022"
+  ],
+  "framework_keys": [
+    "nist-csf-2-0",
+    "cis-controls-v8-1-2",
+    "iso-27001-2022"
+  ],
+  "framework_names": [
+    "NIST CSF 2.0",
+    "CIS Controls v8.1.2",
+    "ISO/IEC 27001:2022"
+  ],
+  "framework_summary": "NIST CSF 2.0 + CIS Controls v8.1.2 + ISO/IEC 27001:2022",
+  "selected_domain_keys": [
+    "nist-csf-2-0:RS",
+    "cis-controls-v8-1-2:12",
+    "iso-27001-2022:7"
+  ],
+  "selected_domains": [
+    "NIST CSF 2.0 / Respond",
+    "CIS Controls v8.1.2 / Network Infrastructure Management",
+    "ISO/IEC 27001:2022 / Physical controls"
+  ],
+  "question_count": 24,
+  "question_groups": [
+    {
+      "group_id": "grp-277df480-f0f3-548d-959c-cf603bbf74cc-8a1af6a1-3b62-5d1c-ad56-38c954836012",
+      "group_label": "Analysis is performed to establish what has taken place during an incident and the root cause of the incident",
+      "question_count": 2,
+      "control_ids": [
+        "RS.AN-03"
+      ],
+      "framework_keys": [
+        "nist-csf-2-0"
+      ],
+      "questions": [
+        {
+          "question_id": "277df480-f0f3-548d-959c-cf603bbf74cc",
+          "question_text": "Is the organization implementing and operating the control: Analysis is performed to establish what has taken place during an incident and the root cause of the incident?",
+          "question_type": "yes_no",
+          "framework_name": "NIST CSF 2.0",
+          "framework_key": "nist-csf-2-0",
+          "domain_id": "RS",
+          "domain_name": "Respond",
+          "control_id": "RS.AN-03",
+          "cross_references": [
+            {
+              "other_framework_id": "nist-sp-800-53",
+              "other_control_id": "IR-4"
+            },
+            {
+              "other_framework_id": "iso-27001-2022",
+              "other_control_id": "A.5.28"
+            }
+          ],
+          "expected_evidence": "forensic_report, rca_document, timeline_analysis"
+        },
+        {
+          "question_id": "8a1af6a1-3b62-5d1c-ad56-38c954836012",
+          "question_text": "Upload evidence such as forensic_report, rca_document, timeline_analysis that demonstrates: Analysis is performed to establish what has taken place during an incident and the root cause of the incident.",
+          "question_type": "evidence_upload",
+          "framework_name": "NIST CSF 2.0",
+          "framework_key": "nist-csf-2-0",
+          "domain_id": "RS",
+          "domain_name": "Respond",
+          "control_id": "RS.AN-03",
+          "cross_references": [
+            {
+              "other_framework_id": "nist-sp-800-53",
+              "other_control_id": "IR-4"
+            },
+            {
+              "other_framework_id": "iso-27001-2022",
+              "other_control_id": "A.5.28"
+            }
+          ],
+          "expected_evidence": "forensic_report, rca_document, timeline_analysis"
+        }
+      ]
+    },
+    {
+      "group_id": "grp-9976586e-2037-5852-a901-5f2d9b492e45-f070f0f9-46ca-511d-9c77-565e77bb1d1e",
+      "group_label": "Cabling security Control: Cables carrying power, data or supporting information services shall be protected from interception, interference or damage",
+      "question_count": 2,
+      "control_ids": [
+        "7.12"
+      ],
+      "framework_keys": [
+        "iso-27001-2022"
+      ],
+      "questions": [
+        {
+          "question_id": "f070f0f9-46ca-511d-9c77-565e77bb1d1e",
+          "question_text": "Is the organization implementing and operating the control: Cabling security Control: Cables carrying power, data or supporting information services shall be protected from interception, interference or damage?",
+          "question_type": "yes_no",
+          "framework_name": "ISO/IEC 27001:2022",
+          "framework_key": "iso-27001-2022",
+          "domain_id": "7",
+          "domain_name": "Physical controls",
+          "control_id": "7.12",
+          "cross_references": [],
+          "expected_evidence": "facility_record, access_log, maintenance_log"
+        },
+        {
+          "question_id": "9976586e-2037-5852-a901-5f2d9b492e45",
+          "question_text": "Upload evidence such as facility_record, access_log, maintenance_log that demonstrates: Cabling security Control: Cables carrying power, data or supporting information services shall be protected from interception, interference or damage.",
+          "question_type": "evidence_upload",
+          "framework_name": "ISO/IEC 27001:2022",
+          "framework_key": "iso-27001-2022",
+          "domain_id": "7",
+          "domain_name": "Physical controls",
+          "control_id": "7.12",
+          "cross_references": [],
+          "expected_evidence": "facility_record, access_log, maintenance_log"
+        }
+      ]
+    },
+    {
+      "group_id": "grp-17e96491-4b92-5e4d-95ae-7367abc246da-613eb154-008a-59f8-8450-cabe5ac5f94a",
+      "group_label": "Centralize Network Authentication, Authorization, and Auditing (AAA): Centralize network AAA",
+      "question_count": 2,
+      "control_ids": [
+        "12.5"
+      ],
+      "framework_keys": [
+        "cis-controls-v8-1-2"
+      ],
+      "questions": [
+        {
+          "question_id": "17e96491-4b92-5e4d-95ae-7367abc246da",
+          "question_text": "Is the organization implementing and operating the control: Centralize Network Authentication, Authorization, and Auditing (AAA): Centralize network AAA?",
+          "question_type": "yes_no",
+          "framework_name": "CIS Controls v8.1.2",
+          "framework_key": "cis-controls-v8-1-2",
+          "domain_id": "12",
+          "domain_name": "Network Infrastructure Management",
+          "control_id": "12.5",
+          "cross_references": [],
+          "expected_evidence": "access_policy, access_review, iam_log"
+        },
+        {
+          "question_id": "613eb154-008a-59f8-8450-cabe5ac5f94a",
+          "question_text": "Upload evidence such as access_policy, access_review, iam_log that demonstrates: Centralize Network Authentication, Authorization, and Auditing (AAA): Centralize network AAA.",
+          "question_type": "evidence_upload",
+          "framework_name": "CIS Controls v8.1.2",
+          "framework_key": "cis-controls-v8-1-2",
+          "domain_id": "12",
+          "domain_name": "Network Infrastructure Management",
+          "control_id": "12.5",
+          "cross_references": [],
+          "expected_evidence": "access_policy, access_review, iam_log"
+        }
+      ]
+    },
+    {
+      "group_id": "grp-7f6db657-9cfd-5bd3-b233-759b43d24afb-b3d5dbae-ba1a-5c35-8cfd-6ac5671f0552",
+      "group_label": "Clear desk and clear screen Control: Clear desk rules for papers and removable storage media and clear screen rules for information processing facilities shall be defined and appropriately enforced",
+      "question_count": 2,
+      "control_ids": [
+        "7.7"
+      ],
+      "framework_keys": [
+        "iso-27001-2022"
+      ],
+      "questions": [
+        {
+          "question_id": "7f6db657-9cfd-5bd3-b233-759b43d24afb",
+          "question_text": "Is the organization implementing and operating the control: Clear desk and clear screen Control: Clear desk rules for papers and removable storage media and clear screen rules for information processing facilities shall be defined and appropriately enforced?",
+          "question_type": "yes_no",
+          "framework_name": "ISO/IEC 27001:2022",
+          "framework_key": "iso-27001-2022",
+          "domain_id": "7",
+          "domain_name": "Physical controls",
+          "control_id": "7.7",
+          "cross_references": [],
+          "expected_evidence": "facility_record, access_log, maintenance_log"
+        },
+        {
+          "question_id": "b3d5dbae-ba1a-5c35-8cfd-6ac5671f0552",
+          "question_text": "Upload evidence such as facility_record, access_log, maintenance_log that demonstrates: Clear desk and clear screen Control: Clear desk rules for papers and removable storage media and clear screen rules for information processing facilities shall be defined and appropriately enforced.",
+          "question_type": "evidence_upload",
+          "framework_name": "ISO/IEC 27001:2022",
+          "framework_key": "iso-27001-2022",
+          "domain_id": "7",
+          "domain_name": "Physical controls",
+          "control_id": "7.7",
+          "cross_references": [],
+          "expected_evidence": "facility_record, access_log, maintenance_log"
+        }
+      ]
+    },
+    {
+      "group_id": "grp-3faf3f36-c619-500d-80d5-ecae461c04bd-94971a94-c9d4-5f96-bddf-2d8ef2279b6a",
+      "group_label": "Ensure Network Infrastructure is Up-to-Date: Ensure network infrastructure is kept up-to-date. Example implementations include running the latest stable release of software and/or using currently supported network as a service (NaaS) offerings. Review software versions monthly, or more frequently, to verify software support",
+      "question_count": 2,
+      "control_ids": [
+        "12.1"
+      ],
+      "framework_keys": [
+        "cis-controls-v8-1-2"
+      ],
+      "questions": [
+        {
+          "question_id": "94971a94-c9d4-5f96-bddf-2d8ef2279b6a",
+          "question_text": "Is the organization implementing and operating the control: Ensure Network Infrastructure is Up-to-Date: Ensure network infrastructure is kept up-to-date. Example implementations include running the latest stable release of software and/or using currently supported network as a service (NaaS) offerings. Review software versions monthly, or more frequently, to verify software support?",
+          "question_type": "yes_no",
+          "framework_name": "CIS Controls v8.1.2",
+          "framework_key": "cis-controls-v8-1-2",
+          "domain_id": "12",
+          "domain_name": "Network Infrastructure Management",
+          "control_id": "12.1",
+          "cross_references": [],
+          "expected_evidence": "project_record, change_ticket, engineering_standard"
+        },
+        {
+          "question_id": "3faf3f36-c619-500d-80d5-ecae461c04bd",
+          "question_text": "Upload evidence such as project_record, change_ticket, engineering_standard that demonstrates: Ensure Network Infrastructure is Up-to-Date: Ensure network infrastructure is kept up-to-date. Example implementations include running the latest stable release of software and/or using currently supported network as a service (NaaS) offerings. Review software versions monthly, or more frequently, to verify software support.",
+          "question_type": "evidence_upload",
+          "framework_name": "CIS Controls v8.1.2",
+          "framework_key": "cis-controls-v8-1-2",
+          "domain_id": "12",
+          "domain_name": "Network Infrastructure Management",
+          "control_id": "12.1",
+          "cross_references": [],
+          "expected_evidence": "project_record, change_ticket, engineering_standard"
+        }
+      ]
+    },
+    {
+      "group_id": "grp-08077209-db1b-556f-8bed-f46e55f9f94a-2a9acaa6-d324-5a9b-8062-45d4f24f2be8",
+      "group_label": "Ensure Remote Devices Utilize a VPN and are Connecting to an Enterprise's AAA Infrastructure: Require users to authenticate to enterprise-managed VPN and authentication services prior to accessing enterprise resources on end-user devices",
+      "question_count": 2,
+      "control_ids": [
+        "12.7"
+      ],
+      "framework_keys": [
+        "cis-controls-v8-1-2"
+      ],
+      "questions": [
+        {
+          "question_id": "2a9acaa6-d324-5a9b-8062-45d4f24f2be8",
+          "question_text": "Is the organization implementing and operating the control: Ensure Remote Devices Utilize a VPN and are Connecting to an Enterprise's AAA Infrastructure: Require users to authenticate to enterprise-managed VPN and authentication services prior to accessing enterprise resources on end-user devices?",
+          "question_type": "yes_no",
+          "framework_name": "CIS Controls v8.1.2",
+          "framework_key": "cis-controls-v8-1-2",
+          "domain_id": "12",
+          "domain_name": "Network Infrastructure Management",
+          "control_id": "12.7",
+          "cross_references": [],
+          "expected_evidence": "access_policy, access_review, iam_log"
+        },
+        {
+          "question_id": "08077209-db1b-556f-8bed-f46e55f9f94a",
+          "question_text": "Upload evidence such as access_policy, access_review, iam_log that demonstrates: Ensure Remote Devices Utilize a VPN and are Connecting to an Enterprise's AAA Infrastructure: Require users to authenticate to enterprise-managed VPN and authentication services prior to accessing enterprise resources on end-user devices.",
+          "question_type": "evidence_upload",
+          "framework_name": "CIS Controls v8.1.2",
+          "framework_key": "cis-controls-v8-1-2",
+          "domain_id": "12",
+          "domain_name": "Network Infrastructure Management",
+          "control_id": "12.7",
+          "cross_references": [],
+          "expected_evidence": "access_policy, access_review, iam_log"
+        }
+      ]
+    },
+    {
+      "group_id": "grp-09f965d0-92ec-5eb7-834b-c8cfad6497a5-1354c600-d5a8-5b5b-b8be-2fbde1e1fefe",
+      "group_label": "Equipment maintenance Control: Equipment shall be maintained correctly to ensure availability, integrity and confidentiality of information",
+      "question_count": 2,
+      "control_ids": [
+        "7.13"
+      ],
+      "framework_keys": [
+        "iso-27001-2022"
+      ],
+      "questions": [
+        {
+          "question_id": "1354c600-d5a8-5b5b-b8be-2fbde1e1fefe",
+          "question_text": "Is the organization implementing and operating the control: Equipment maintenance Control: Equipment shall be maintained correctly to ensure availability, integrity and confidentiality of information?",
+          "question_type": "yes_no",
+          "framework_name": "ISO/IEC 27001:2022",
+          "framework_key": "iso-27001-2022",
+          "domain_id": "7",
+          "domain_name": "Physical controls",
+          "control_id": "7.13",
+          "cross_references": [],
+          "expected_evidence": "facility_record, access_log, maintenance_log"
+        },
+        {
+          "question_id": "09f965d0-92ec-5eb7-834b-c8cfad6497a5",
+          "question_text": "Upload evidence such as facility_record, access_log, maintenance_log that demonstrates: Equipment maintenance Control: Equipment shall be maintained correctly to ensure availability, integrity and confidentiality of information.",
+          "question_type": "evidence_upload",
+          "framework_name": "ISO/IEC 27001:2022",
+          "framework_key": "iso-27001-2022",
+          "domain_id": "7",
+          "domain_name": "Physical controls",
+          "control_id": "7.13",
+          "cross_references": [],
+          "expected_evidence": "facility_record, access_log, maintenance_log"
+        }
+      ]
+    },
+    {
+      "group_id": "grp-ba802b24-24f8-5678-b9c3-8ab882cd3c6d-f104cd42-1986-552f-b0ce-30e3fb46a230",
+      "group_label": "Equipment siting and protection Control: Equipment shall be sited securely and protected",
+      "question_count": 2,
+      "control_ids": [
+        "7.8"
+      ],
+      "framework_keys": [
+        "iso-27001-2022"
+      ],
+      "questions": [
+        {
+          "question_id": "f104cd42-1986-552f-b0ce-30e3fb46a230",
+          "question_text": "Is the organization implementing and operating the control: Equipment siting and protection Control: Equipment shall be sited securely and protected?",
+          "question_type": "yes_no",
+          "framework_name": "ISO/IEC 27001:2022",
+          "framework_key": "iso-27001-2022",
+          "domain_id": "7",
+          "domain_name": "Physical controls",
+          "control_id": "7.8",
+          "cross_references": [],
+          "expected_evidence": "facility_record, access_log, maintenance_log"
+        },
+        {
+          "question_id": "ba802b24-24f8-5678-b9c3-8ab882cd3c6d",
+          "question_text": "Upload evidence such as facility_record, access_log, maintenance_log that demonstrates: Equipment siting and protection Control: Equipment shall be sited securely and protected.",
+          "question_type": "evidence_upload",
+          "framework_name": "ISO/IEC 27001:2022",
+          "framework_key": "iso-27001-2022",
+          "domain_id": "7",
+          "domain_name": "Physical controls",
+          "control_id": "7.8",
+          "cross_references": [],
+          "expected_evidence": "facility_record, access_log, maintenance_log"
+        }
+      ]
+    },
+    {
+      "group_id": "grp-5328b194-777a-57fc-9b43-ca7338c256aa-d22a88dd-f21b-53c4-85c7-193f3c496f0d",
+      "group_label": "Establish and Maintain Architecture Diagram(s): Establish and maintain architecture diagram(s) and/or other network system documentation. Review and update documentation annually, or when significant enterprise changes occur that could impact this Safeguard",
+      "question_count": 2,
+      "control_ids": [
+        "12.4"
+      ],
+      "framework_keys": [
+        "cis-controls-v8-1-2"
+      ],
+      "questions": [
+        {
+          "question_id": "d22a88dd-f21b-53c4-85c7-193f3c496f0d",
+          "question_text": "Is the organization implementing and operating the control: Establish and Maintain Architecture Diagram(s): Establish and maintain architecture diagram(s) and/or other network system documentation. Review and update documentation annually, or when significant enterprise changes occur that could impact this Safeguard?",
+          "question_type": "yes_no",
+          "framework_name": "CIS Controls v8.1.2",
+          "framework_key": "cis-controls-v8-1-2",
+          "domain_id": "12",
+          "domain_name": "Network Infrastructure Management",
+          "control_id": "12.4",
+          "cross_references": [],
+          "expected_evidence": "project_record, change_ticket, engineering_standard"
+        },
+        {
+          "question_id": "5328b194-777a-57fc-9b43-ca7338c256aa",
+          "question_text": "Upload evidence such as project_record, change_ticket, engineering_standard that demonstrates: Establish and Maintain Architecture Diagram(s): Establish and maintain architecture diagram(s) and/or other network system documentation. Review and update documentation annually, or when significant enterprise changes occur that could impact this Safeguard.",
+          "question_type": "evidence_upload",
+          "framework_name": "CIS Controls v8.1.2",
+          "framework_key": "cis-controls-v8-1-2",
+          "domain_id": "12",
+          "domain_name": "Network Infrastructure Management",
+          "control_id": "12.4",
+          "cross_references": [],
+          "expected_evidence": "project_record, change_ticket, engineering_standard"
+        }
+      ]
+    },
+    {
+      "group_id": "grp-1ef2df8c-d59b-5cc0-b74f-68abb958efde-4605f329-e013-5599-a123-d38c091ccb79",
+      "group_label": "Establish and Maintain Dedicated Computing Resources for All Administrative Work: Establish and maintain dedicated computing resources, either physically or logically separated, for all administrative tasks or tasks requiring administrative access. The computing resources should be segmented from the enterprise's primary network and not be allowed internet access",
+      "question_count": 2,
+      "control_ids": [
+        "12.8"
+      ],
+      "framework_keys": [
+        "cis-controls-v8-1-2"
+      ],
+      "questions": [
+        {
+          "question_id": "1ef2df8c-d59b-5cc0-b74f-68abb958efde",
+          "question_text": "Is the organization implementing and operating the control: Establish and Maintain Dedicated Computing Resources for All Administrative Work: Establish and maintain dedicated computing resources, either physically or logically separated, for all administrative tasks or tasks requiring administrative access. The computing resources should be segmented from the enterprise's primary network and not be allowed internet access?",
+          "question_type": "yes_no",
+          "framework_name": "CIS Controls v8.1.2",
+          "framework_key": "cis-controls-v8-1-2",
+          "domain_id": "12",
+          "domain_name": "Network Infrastructure Management",
+          "control_id": "12.8",
+          "cross_references": [],
+          "expected_evidence": "facility_record, access_log, maintenance_log"
+        },
+        {
+          "question_id": "4605f329-e013-5599-a123-d38c091ccb79",
+          "question_text": "Upload evidence such as facility_record, access_log, maintenance_log that demonstrates: Establish and Maintain Dedicated Computing Resources for All Administrative Work: Establish and maintain dedicated computing resources, either physically or logically separated, for all administrative tasks or tasks requiring administrative access. The computing resources should be segmented from the enterprise's primary network and not be allowed internet access.",
+          "question_type": "evidence_upload",
+          "framework_name": "CIS Controls v8.1.2",
+          "framework_key": "cis-controls-v8-1-2",
+          "domain_id": "12",
+          "domain_name": "Network Infrastructure Management",
+          "control_id": "12.8",
+          "cross_references": [],
+          "expected_evidence": "facility_record, access_log, maintenance_log"
+        }
+      ]
+    },
+    {
+      "group_id": "grp-31f98b30-4b55-5d63-a712-8aee4198eab5-c46bb0bc-7e4c-5784-86bb-51dc86627fd9",
+      "group_label": "Establish and Maintain a Secure Network Architecture: Design and maintain a secure network architecture. A secure network architecture must address segmentation, least privilege, and availability, at a minimum. Example implementations may include documentation, policy, and design components",
+      "question_count": 2,
+      "control_ids": [
+        "12.2"
+      ],
+      "framework_keys": [
+        "cis-controls-v8-1-2"
+      ],
+      "questions": [
+        {
+          "question_id": "31f98b30-4b55-5d63-a712-8aee4198eab5",
+          "question_text": "Is the organization implementing and operating the control: Establish and Maintain a Secure Network Architecture: Design and maintain a secure network architecture. A secure network architecture must address segmentation, least privilege, and availability, at a minimum. Example implementations may include documentation, policy, and design components?",
+          "question_type": "yes_no",
+          "framework_name": "CIS Controls v8.1.2",
+          "framework_key": "cis-controls-v8-1-2",
+          "domain_id": "12",
+          "domain_name": "Network Infrastructure Management",
+          "control_id": "12.2",
+          "cross_references": [
+            {
+              "other_framework_id": "nist-csf-2-0",
+              "other_control_id": "PR.IR-01",
+              "relationship": "Subset",
+              "description": "Networks and environments are protected from unauthorized logical access and usage"
+            }
+          ],
+          "expected_evidence": "policy, procedure, approval_record"
+        },
+        {
+          "question_id": "c46bb0bc-7e4c-5784-86bb-51dc86627fd9",
+          "question_text": "Upload evidence such as policy, procedure, approval_record that demonstrates: Establish and Maintain a Secure Network Architecture: Design and maintain a secure network architecture. A secure network architecture must address segmentation, least privilege, and availability, at a minimum. Example implementations may include documentation, policy, and design components.",
+          "question_type": "evidence_upload",
+          "framework_name": "CIS Controls v8.1.2",
+          "framework_key": "cis-controls-v8-1-2",
+          "domain_id": "12",
+          "domain_name": "Network Infrastructure Management",
+          "control_id": "12.2",
+          "cross_references": [
+            {
+              "other_framework_id": "nist-csf-2-0",
+              "other_control_id": "PR.IR-01",
+              "relationship": "Subset",
+              "description": "Networks and environments are protected from unauthorized logical access and usage"
+            }
+          ],
+          "expected_evidence": "policy, procedure, approval_record"
+        }
+      ]
+    },
+    {
+      "group_id": "grp-1a6d3ab3-51ad-519c-92a0-c0f5ad3a64cc-250df41f-4e8f-520d-9769-84f73f9be4a5",
+      "group_label": "Incidents are mitigated",
+      "question_count": 2,
+      "control_ids": [
+        "RS.MI-02"
+      ],
+      "framework_keys": [
+        "nist-csf-2-0"
+      ],
+      "questions": [
+        {
+          "question_id": "1a6d3ab3-51ad-519c-92a0-c0f5ad3a64cc",
+          "question_text": "Is the organization implementing and operating the control: Incidents are mitigated?",
+          "question_type": "yes_no",
+          "framework_name": "NIST CSF 2.0",
+          "framework_key": "nist-csf-2-0",
+          "domain_id": "RS",
+          "domain_name": "Respond",
+          "control_id": "RS.MI-02",
+          "cross_references": [
+            {
+              "other_framework_id": "nist-sp-800-61",
+              "other_control_id": ""
+            },
+            {
+              "other_framework_id": "iso-27001-2022",
+              "other_control_id": "A.5.26"
+            }
+          ],
+          "expected_evidence": "containment_evidence, patch_records, system_restore_log"
+        },
+        {
+          "question_id": "250df41f-4e8f-520d-9769-84f73f9be4a5",
+          "question_text": "Upload evidence such as containment_evidence, patch_records, system_restore_log that demonstrates: Incidents are mitigated.",
+          "question_type": "evidence_upload",
+          "framework_name": "NIST CSF 2.0",
+          "framework_key": "nist-csf-2-0",
+          "domain_id": "RS",
+          "domain_name": "Respond",
+          "control_id": "RS.MI-02",
+          "cross_references": [
+            {
+              "other_framework_id": "nist-sp-800-61",
+              "other_control_id": ""
+            },
+            {
+              "other_framework_id": "iso-27001-2022",
+              "other_control_id": "A.5.26"
+            }
+          ],
+          "expected_evidence": "containment_evidence, patch_records, system_restore_log"
+        }
+      ]
+    },
+    {
+      "group_id": "grp-7d2ae7d9-482c-5447-a806-63664df85e25-e4245fb8-33f2-575f-8a5c-a8d106aaba9d",
+      "group_label": "Internal and external stakeholders are notified of incidents",
+      "question_count": 2,
+      "control_ids": [
+        "RS.CO-02"
+      ],
+      "framework_keys": [
+        "nist-csf-2-0"
+      ],
+      "questions": [
+        {
+          "question_id": "e4245fb8-33f2-575f-8a5c-a8d106aaba9d",
+          "question_text": "Is the organization implementing and operating the control: Internal and external stakeholders are notified of incidents?",
+          "question_type": "yes_no",
+          "framework_name": "NIST CSF 2.0",
+          "framework_key": "nist-csf-2-0",
+          "domain_id": "RS",
+          "domain_name": "Respond",
+          "control_id": "RS.CO-02",
+          "cross_references": [
+            {
+              "other_framework_id": "gdpr",
+              "other_control_id": "33"
+            },
+            {
+              "other_framework_id": "iso-27001-2022",
+              "other_control_id": "A.5.26"
+            }
+          ],
+          "expected_evidence": "notification_templates, breach_notification_log, regulatory_reports"
+        },
+        {
+          "question_id": "7d2ae7d9-482c-5447-a806-63664df85e25",
+          "question_text": "Upload evidence such as notification_templates, breach_notification_log, regulatory_reports that demonstrates: Internal and external stakeholders are notified of incidents.",
+          "question_type": "evidence_upload",
+          "framework_name": "NIST CSF 2.0",
+          "framework_key": "nist-csf-2-0",
+          "domain_id": "RS",
+          "domain_name": "Respond",
+          "control_id": "RS.CO-02",
+          "cross_references": [
+            {
+              "other_framework_id": "gdpr",
+              "other_control_id": "33"
+            },
+            {
+              "other_framework_id": "iso-27001-2022",
+              "other_control_id": "A.5.26"
+            }
+          ],
+          "expected_evidence": "notification_templates, breach_notification_log, regulatory_reports"
+        }
+      ]
+    },
+    {
+      "group_id": "grp-86261cf8-0586-5763-9bc4-aa12c92e2f10-c996350e-9c59-556d-9d7d-4aebe54917d7",
+      "group_label": "Physical entry Control Secure areas shall be protected by appropriate entry controls and access points. 7. 3 Securing offices, rooms and fa cilities: Physical security for offices, rooms and facilities shall be designed and implemented",
+      "question_count": 2,
+      "control_ids": [
+        "7.2"
+      ],
+      "framework_keys": [
+        "iso-27001-2022"
+      ],
+      "questions": [
+        {
+          "question_id": "c996350e-9c59-556d-9d7d-4aebe54917d7",
+          "question_text": "Is the organization implementing and operating the control: Physical entry Control Secure areas shall be protected by appropriate entry controls and access points. 7. 3 Securing offices, rooms and fa cilities: Physical security for offices, rooms and facilities shall be designed and implemented?",
+          "question_type": "yes_no",
+          "framework_name": "ISO/IEC 27001:2022",
+          "framework_key": "iso-27001-2022",
+          "domain_id": "7",
+          "domain_name": "Physical controls",
+          "control_id": "7.2",
+          "cross_references": [],
+          "expected_evidence": "facility_record, access_log, maintenance_log"
+        },
+        {
+          "question_id": "86261cf8-0586-5763-9bc4-aa12c92e2f10",
+          "question_text": "Upload evidence such as facility_record, access_log, maintenance_log that demonstrates: Physical entry Control Secure areas shall be protected by appropriate entry controls and access points. 7. 3 Securing offices, rooms and fa cilities: Physical security for offices, rooms and facilities shall be designed and implemented.",
+          "question_type": "evidence_upload",
+          "framework_name": "ISO/IEC 27001:2022",
+          "framework_key": "iso-27001-2022",
+          "domain_id": "7",
+          "domain_name": "Physical controls",
+          "control_id": "7.2",
+          "cross_references": [],
+          "expected_evidence": "facility_record, access_log, maintenance_log"
+        }
+      ]
+    },
+    {
+      "group_id": "grp-2f7ffd75-9b65-59d8-af60-2b725b199088-3dbd1e4a-6f50-50fc-b609-5ace54e9b7ce",
+      "group_label": "Physical security monitoring Control Premises shall be continuously monitored for unauthorized physical access. © ISO/IEC 2022 - All rights reserved 7. 5 Protecting against physical and environmental threats: Protection against physical and environmental threats, such as natural disasters and other intentional or unintentional physical threats to infrastructure shall be designed and implemented",
+      "question_count": 2,
+      "control_ids": [
+        "7.4"
+      ],
+      "framework_keys": [
+        "iso-27001-2022"
+      ],
+      "questions": [
+        {
+          "question_id": "3dbd1e4a-6f50-50fc-b609-5ace54e9b7ce",
+          "question_text": "Is the organization implementing and operating the control: Physical security monitoring Control Premises shall be continuously monitored for unauthorized physical access. © ISO/IEC 2022 - All rights reserved 7. 5 Protecting against physical and environmental threats: Protection against physical and environmental threats, such as natural disasters and other intentional or unintentional physical threats to infrastructure shall be designed and implemented?",
+          "question_type": "yes_no",
+          "framework_name": "ISO/IEC 27001:2022",
+          "framework_key": "iso-27001-2022",
+          "domain_id": "7",
+          "domain_name": "Physical controls",
+          "control_id": "7.4",
+          "cross_references": [],
+          "expected_evidence": "threat_report, intel_feed, analysis_note"
+        },
+        {
+          "question_id": "2f7ffd75-9b65-59d8-af60-2b725b199088",
+          "question_text": "Upload evidence such as threat_report, intel_feed, analysis_note that demonstrates: Physical security monitoring Control Premises shall be continuously monitored for unauthorized physical access. © ISO/IEC 2022 - All rights reserved 7. 5 Protecting against physical and environmental threats: Protection against physical and environmental threats, such as natural disasters and other intentional or unintentional physical threats to infrastructure shall be designed and implemented.",
+          "question_type": "evidence_upload",
+          "framework_name": "ISO/IEC 27001:2022",
+          "framework_key": "iso-27001-2022",
+          "domain_id": "7",
+          "domain_name": "Physical controls",
+          "control_id": "7.4",
+          "cross_references": [],
+          "expected_evidence": "threat_report, intel_feed, analysis_note"
+        }
+      ]
+    },
+    {
+      "group_id": "grp-02eeb767-46ff-5a31-9814-bcf34b785056-0fff8c2f-486c-5b75-bb75-59d029f759e0",
+      "group_label": "Physical security perimeters Control: Security perimeters shall be defined and used to protect areas that contain information and other associated assets",
+      "question_count": 2,
+      "control_ids": [
+        "7.1"
+      ],
+      "framework_keys": [
+        "iso-27001-2022"
+      ],
+      "questions": [
+        {
+          "question_id": "02eeb767-46ff-5a31-9814-bcf34b785056",
+          "question_text": "Is the organization implementing and operating the control: Physical security perimeters Control: Security perimeters shall be defined and used to protect areas that contain information and other associated assets?",
+          "question_type": "yes_no",
+          "framework_name": "ISO/IEC 27001:2022",
+          "framework_key": "iso-27001-2022",
+          "domain_id": "7",
+          "domain_name": "Physical controls",
+          "control_id": "7.1",
+          "cross_references": [],
+          "expected_evidence": "inventory, asset_register, owner_register"
+        },
+        {
+          "question_id": "0fff8c2f-486c-5b75-bb75-59d029f759e0",
+          "question_text": "Upload evidence such as inventory, asset_register, owner_register that demonstrates: Physical security perimeters Control: Security perimeters shall be defined and used to protect areas that contain information and other associated assets.",
+          "question_type": "evidence_upload",
+          "framework_name": "ISO/IEC 27001:2022",
+          "framework_key": "iso-27001-2022",
+          "domain_id": "7",
+          "domain_name": "Physical controls",
+          "control_id": "7.1",
+          "cross_references": [],
+          "expected_evidence": "inventory, asset_register, owner_register"
+        }
+      ]
+    },
+    {
+      "group_id": "grp-8bae8ab1-4d00-5497-ba51-ee4f48471bd3-fd7e72f3-f34a-5398-a005-746db84eeac7",
+      "group_label": "Secure disposal or re-use of equipment: Items of equipment containing storage media shall be verified to en sure that any sensitive data and licensed software has been removed or securely overwritten prior to disposal or re-use",
+      "question_count": 2,
+      "control_ids": [
+        "7.14"
+      ],
+      "framework_keys": [
+        "iso-27001-2022"
+      ],
+      "questions": [
+        {
+          "question_id": "8bae8ab1-4d00-5497-ba51-ee4f48471bd3",
+          "question_text": "Is the organization implementing and operating the control: Secure disposal or re-use of equipment: Items of equipment containing storage media shall be verified to en sure that any sensitive data and licensed software has been removed or securely overwritten prior to disposal or re-use?",
+          "question_type": "yes_no",
+          "framework_name": "ISO/IEC 27001:2022",
+          "framework_key": "iso-27001-2022",
+          "domain_id": "7",
+          "domain_name": "Physical controls",
+          "control_id": "7.14",
+          "cross_references": [],
+          "expected_evidence": "project_record, change_ticket, engineering_standard"
+        },
+        {
+          "question_id": "fd7e72f3-f34a-5398-a005-746db84eeac7",
+          "question_text": "Upload evidence such as project_record, change_ticket, engineering_standard that demonstrates: Secure disposal or re-use of equipment: Items of equipment containing storage media shall be verified to en sure that any sensitive data and licensed software has been removed or securely overwritten prior to disposal or re-use.",
+          "question_type": "evidence_upload",
+          "framework_name": "ISO/IEC 27001:2022",
+          "framework_key": "iso-27001-2022",
+          "domain_id": "7",
+          "domain_name": "Physical controls",
+          "control_id": "7.14",
+          "cross_references": [],
+          "expected_evidence": "project_record, change_ticket, engineering_standard"
+        }
+      ]
+    },
+    {
+      "group_id": "grp-14f86e75-b6e1-5818-b94a-f8ae4152a5e7-64c3cda4-1af0-5c3c-addd-bbd42b70d666",
+      "group_label": "Securely Manage Network Infrastructure: Securely manage network infrastructure. Example implementations include version-controlled Infrastructure-as-Code (IaC), and the use of secure network protocols, such as SSH and HTTPS",
+      "question_count": 2,
+      "control_ids": [
+        "12.3"
+      ],
+      "framework_keys": [
+        "cis-controls-v8-1-2"
+      ],
+      "questions": [
+        {
+          "question_id": "64c3cda4-1af0-5c3c-addd-bbd42b70d666",
+          "question_text": "Is the organization implementing and operating the control: Securely Manage Network Infrastructure: Securely manage network infrastructure. Example implementations include version-controlled Infrastructure-as-Code (IaC), and the use of secure network protocols, such as SSH and HTTPS?",
+          "question_type": "yes_no",
+          "framework_name": "CIS Controls v8.1.2",
+          "framework_key": "cis-controls-v8-1-2",
+          "domain_id": "12",
+          "domain_name": "Network Infrastructure Management",
+          "control_id": "12.3",
+          "cross_references": [],
+          "expected_evidence": "acceptable_use_policy, user_acknowledgement, procedure"
+        },
+        {
+          "question_id": "14f86e75-b6e1-5818-b94a-f8ae4152a5e7",
+          "question_text": "Upload evidence such as acceptable_use_policy, user_acknowledgement, procedure that demonstrates: Securely Manage Network Infrastructure: Securely manage network infrastructure. Example implementations include version-controlled Infrastructure-as-Code (IaC), and the use of secure network protocols, such as SSH and HTTPS.",
+          "question_type": "evidence_upload",
+          "framework_name": "CIS Controls v8.1.2",
+          "framework_key": "cis-controls-v8-1-2",
+          "domain_id": "12",
+          "domain_name": "Network Infrastructure Management",
+          "control_id": "12.3",
+          "cross_references": [],
+          "expected_evidence": "acceptable_use_policy, user_acknowledgement, procedure"
+        }
+      ]
+    },
+    {
+      "group_id": "grp-4144a4fe-5069-5c49-8241-710a99127a7f-cfda481a-7377-5b11-964b-253e2e7594e5",
+      "group_label": "Security of assets off-premises Control: Off-site assets shall be protected",
+      "question_count": 2,
+      "control_ids": [
+        "7.9"
+      ],
+      "framework_keys": [
+        "iso-27001-2022"
+      ],
+      "questions": [
+        {
+          "question_id": "4144a4fe-5069-5c49-8241-710a99127a7f",
+          "question_text": "Is the organization implementing and operating the control: Security of assets off-premises Control: Off-site assets shall be protected?",
+          "question_type": "yes_no",
+          "framework_name": "ISO/IEC 27001:2022",
+          "framework_key": "iso-27001-2022",
+          "domain_id": "7",
+          "domain_name": "Physical controls",
+          "control_id": "7.9",
+          "cross_references": [],
+          "expected_evidence": "inventory, asset_register, owner_register"
+        },
+        {
+          "question_id": "cfda481a-7377-5b11-964b-253e2e7594e5",
+          "question_text": "Upload evidence such as inventory, asset_register, owner_register that demonstrates: Security of assets off-premises Control: Off-site assets shall be protected.",
+          "question_type": "evidence_upload",
+          "framework_name": "ISO/IEC 27001:2022",
+          "framework_key": "iso-27001-2022",
+          "domain_id": "7",
+          "domain_name": "Physical controls",
+          "control_id": "7.9",
+          "cross_references": [],
+          "expected_evidence": "inventory, asset_register, owner_register"
+        }
+      ]
+    },
+    {
+      "group_id": "grp-57b06179-ce5a-532a-a992-fa0f1af05767-ed1e3836-c0ee-5d68-9d64-ee112bfc581c",
+      "group_label": "Storage media Control: Storage media shall be managed through their life cycle of acquisition, use, transportation and disposal in accordance with the organization's classification scheme and handling requirements",
+      "question_count": 2,
+      "control_ids": [
+        "7.10"
+      ],
+      "framework_keys": [
+        "iso-27001-2022"
+      ],
+      "questions": [
+        {
+          "question_id": "ed1e3836-c0ee-5d68-9d64-ee112bfc581c",
+          "question_text": "Is the organization implementing and operating the control: Storage media Control: Storage media shall be managed through their life cycle of acquisition, use, transportation and disposal in accordance with the organization's classification scheme and handling requirements?",
+          "question_type": "yes_no",
+          "framework_name": "ISO/IEC 27001:2022",
+          "framework_key": "iso-27001-2022",
+          "domain_id": "7",
+          "domain_name": "Physical controls",
+          "control_id": "7.10",
+          "cross_references": [],
+          "expected_evidence": "acceptable_use_policy, user_acknowledgement, procedure"
+        },
+        {
+          "question_id": "57b06179-ce5a-532a-a992-fa0f1af05767",
+          "question_text": "Upload evidence such as acceptable_use_policy, user_acknowledgement, procedure that demonstrates: Storage media Control: Storage media shall be managed through their life cycle of acquisition, use, transportation and disposal in accordance with the organization's classification scheme and handling requirements.",
+          "question_type": "evidence_upload",
+          "framework_name": "ISO/IEC 27001:2022",
+          "framework_key": "iso-27001-2022",
+          "domain_id": "7",
+          "domain_name": "Physical controls",
+          "control_id": "7.10",
+          "cross_references": [],
+          "expected_evidence": "acceptable_use_policy, user_acknowledgement, procedure"
+        }
+      ]
+    },
+    {
+      "group_id": "grp-67214cd5-e456-5ae5-a948-d7a58edc0ce8-97629836-2f93-5360-a6ca-02eac707182a",
+      "group_label": "Supporting utilities Control: Information processing facilities shall be protected from power failures and other disruptions caused by failures in supporting utilities",
+      "question_count": 2,
+      "control_ids": [
+        "7.11"
+      ],
+      "framework_keys": [
+        "iso-27001-2022"
+      ],
+      "questions": [
+        {
+          "question_id": "97629836-2f93-5360-a6ca-02eac707182a",
+          "question_text": "Is the organization implementing and operating the control: Supporting utilities Control: Information processing facilities shall be protected from power failures and other disruptions caused by failures in supporting utilities?",
+          "question_type": "yes_no",
+          "framework_name": "ISO/IEC 27001:2022",
+          "framework_key": "iso-27001-2022",
+          "domain_id": "7",
+          "domain_name": "Physical controls",
+          "control_id": "7.11",
+          "cross_references": [],
+          "expected_evidence": "backup_test, continuity_plan, recovery_test"
+        },
+        {
+          "question_id": "67214cd5-e456-5ae5-a948-d7a58edc0ce8",
+          "question_text": "Upload evidence such as backup_test, continuity_plan, recovery_test that demonstrates: Supporting utilities Control: Information processing facilities shall be protected from power failures and other disruptions caused by failures in supporting utilities.",
+          "question_type": "evidence_upload",
+          "framework_name": "ISO/IEC 27001:2022",
+          "framework_key": "iso-27001-2022",
+          "domain_id": "7",
+          "domain_name": "Physical controls",
+          "control_id": "7.11",
+          "cross_references": [],
+          "expected_evidence": "backup_test, continuity_plan, recovery_test"
+        }
+      ]
+    },
+    {
+      "group_id": "grp-7597c8e8-4289-5ddf-80dc-467d17897781-930828a6-46d8-5570-b63d-fbda9cd0cd91",
+      "group_label": "The incident response plan is executed in coordination with relevant third parties once an incident is declared",
+      "question_count": 2,
+      "control_ids": [
+        "RS.MA-01"
+      ],
+      "framework_keys": [
+        "nist-csf-2-0"
+      ],
+      "questions": [
+        {
+          "question_id": "930828a6-46d8-5570-b63d-fbda9cd0cd91",
+          "question_text": "Is the organization implementing and operating the control: The incident response plan is executed in coordination with relevant third parties once an incident is declared?",
+          "question_type": "yes_no",
+          "framework_name": "NIST CSF 2.0",
+          "framework_key": "nist-csf-2-0",
+          "domain_id": "RS",
+          "domain_name": "Respond",
+          "control_id": "RS.MA-01",
+          "cross_references": [
+            {
+              "other_framework_id": "nist-sp-800-61",
+              "other_control_id": ""
+            },
+            {
+              "other_framework_id": "iso-27001-2022",
+              "other_control_id": "A.5.26"
+            }
+          ],
+          "expected_evidence": "incident_response_plan, incident_tickets, communication_log"
+        },
+        {
+          "question_id": "7597c8e8-4289-5ddf-80dc-467d17897781",
+          "question_text": "Upload evidence such as incident_response_plan, incident_tickets, communication_log that demonstrates: The incident response plan is executed in coordination with relevant third parties once an incident is declared.",
+          "question_type": "evidence_upload",
+          "framework_name": "NIST CSF 2.0",
+          "framework_key": "nist-csf-2-0",
+          "domain_id": "RS",
+          "domain_name": "Respond",
+          "control_id": "RS.MA-01",
+          "cross_references": [
+            {
+              "other_framework_id": "nist-sp-800-61",
+              "other_control_id": ""
+            },
+            {
+              "other_framework_id": "iso-27001-2022",
+              "other_control_id": "A.5.26"
+            }
+          ],
+          "expected_evidence": "incident_response_plan, incident_tickets, communication_log"
+        }
+      ]
+    },
+    {
+      "group_id": "grp-11857508-27a5-506c-82ab-806697d8cd1b-6f71913c-9bb1-54e6-8807-24ec6bb20989",
+      "group_label": "Use of Secure Network Management and Communication Protocols: Adopt secure network management protocols (e.g., 802.1X) and secure communication protocols (e.g., Wi-Fi Protected Access 2 (WPA2) Enterprise or more secure alternatives)",
+      "question_count": 2,
+      "control_ids": [
+        "12.6"
+      ],
+      "framework_keys": [
+        "cis-controls-v8-1-2"
+      ],
+      "questions": [
+        {
+          "question_id": "6f71913c-9bb1-54e6-8807-24ec6bb20989",
+          "question_text": "Is the organization implementing and operating the control: Use of Secure Network Management and Communication Protocols: Adopt secure network management protocols (e.g., 802.1X) and secure communication protocols (e.g., Wi-Fi Protected Access 2 (WPA2) Enterprise or more secure alternatives)?",
+          "question_type": "yes_no",
+          "framework_name": "CIS Controls v8.1.2",
+          "framework_key": "cis-controls-v8-1-2",
+          "domain_id": "12",
+          "domain_name": "Network Infrastructure Management",
+          "control_id": "12.6",
+          "cross_references": [],
+          "expected_evidence": "role_matrix, org_chart, responsibility_assignment"
+        },
+        {
+          "question_id": "11857508-27a5-506c-82ab-806697d8cd1b",
+          "question_text": "Upload evidence such as role_matrix, org_chart, responsibility_assignment that demonstrates: Use of Secure Network Management and Communication Protocols: Adopt secure network management protocols (e.g., 802.1X) and secure communication protocols (e.g., Wi-Fi Protected Access 2 (WPA2) Enterprise or more secure alternatives).",
+          "question_type": "evidence_upload",
+          "framework_name": "CIS Controls v8.1.2",
+          "framework_key": "cis-controls-v8-1-2",
+          "domain_id": "12",
+          "domain_name": "Network Infrastructure Management",
+          "control_id": "12.6",
+          "cross_references": [],
+          "expected_evidence": "role_matrix, org_chart, responsibility_assignment"
+        }
+      ]
+    },
+    {
+      "group_id": "grp-85434b5e-f576-56a3-804c-9f85086f9155-88951a5f-de2d-5d04-ae75-c95a1b140f59",
+      "group_label": "Working in secure areas Control: Security measures for working in secure areas shall be designed and implemented",
+      "question_count": 2,
+      "control_ids": [
+        "7.6"
+      ],
+      "framework_keys": [
+        "iso-27001-2022"
+      ],
+      "questions": [
+        {
+          "question_id": "88951a5f-de2d-5d04-ae75-c95a1b140f59",
+          "question_text": "Is the organization implementing and operating the control: Working in secure areas Control: Security measures for working in secure areas shall be designed and implemented?",
+          "question_type": "yes_no",
+          "framework_name": "ISO/IEC 27001:2022",
+          "framework_key": "iso-27001-2022",
+          "domain_id": "7",
+          "domain_name": "Physical controls",
+          "control_id": "7.6",
+          "cross_references": [],
+          "expected_evidence": "implementation_evidence, operational_record"
+        },
+        {
+          "question_id": "85434b5e-f576-56a3-804c-9f85086f9155",
+          "question_text": "Upload evidence such as implementation_evidence, operational_record that demonstrates: Working in secure areas Control: Security measures for working in secure areas shall be designed and implemented.",
+          "question_type": "evidence_upload",
+          "framework_name": "ISO/IEC 27001:2022",
+          "framework_key": "iso-27001-2022",
+          "domain_id": "7",
+          "domain_name": "Physical controls",
+          "control_id": "7.6",
+          "cross_references": [],
+          "expected_evidence": "implementation_evidence, operational_record"
+        }
+      ]
+    }
+  ],
+  "questions": [
+    {
+      "item_id": "4180eb23-9317-5bad-977d-aa2ce358ca42",
+      "question_id": "4180eb23-9317-5bad-977d-aa2ce358ca42",
+      "question_text": "Is the organization implementing and operating the control: Ensure Network Infrastructure is Up-to-Date: Ensure network infrastructure is kept up-to-date. Example implementations include running the latest stable release of software and/or using currently supported network as a service (NaaS) offerings. Review software versions monthly, or more frequently, to verify software support?",
+      "question_type": "merged",
+      "answer_formats": [
+        "yes_no",
+        "evidence_upload"
+      ],
+      "framework_name": "CIS Controls v8.1.2",
+      "framework_key": "cis-controls-v8-1-2",
+      "domain_id": "12",
+      "domain_name": "Network Infrastructure Management",
+      "control_id": "12.1",
+      "control_statement": "Ensure Network Infrastructure is Up-to-Date: Ensure network infrastructure is kept up-to-date. Example implementations include running the latest stable release of software and/or using currently supported network as a service (NaaS) offerings. Review software versions monthly, or more frequently, to verify software support.",
+      "expected_evidence": "project_record, change_ticket, engineering_standard",
+      "maturity_level": "Defined",
+      "merge_reason": "Merged by control fallback because LLM output was unavailable or invalid.",
+      "source_item_ids": [
+        "f1fcc90a-175e-5d31-b9ff-7558b1fac777",
+        "8832cce7-21ff-54bd-bfe1-7a26a7c60088"
+      ],
+      "source_questions": [
+        {
+          "question_id": "94971a94-c9d4-5f96-bddf-2d8ef2279b6a",
+          "question_text": "Is the organization implementing and operating the control: Ensure Network Infrastructure is Up-to-Date: Ensure network infrastructure is kept up-to-date. Example implementations include running the latest stable release of software and/or using currently supported network as a service (NaaS) offerings. Review software versions monthly, or more frequently, to verify software support?",
+          "question_type": "yes_no",
+          "framework_name": "CIS Controls v8.1.2",
+          "framework_key": "cis-controls-v8-1-2",
+          "domain_id": "12",
+          "domain_name": "Network Infrastructure Management",
+          "control_id": "12.1",
+          "cross_references": [],
+          "expected_evidence": "project_record, change_ticket, engineering_standard"
+        },
+        {
+          "question_id": "3faf3f36-c619-500d-80d5-ecae461c04bd",
+          "question_text": "Upload evidence such as project_record, change_ticket, engineering_standard that demonstrates: Ensure Network Infrastructure is Up-to-Date: Ensure network infrastructure is kept up-to-date. Example implementations include running the latest stable release of software and/or using currently supported network as a service (NaaS) offerings. Review software versions monthly, or more frequently, to verify software support.",
+          "question_type": "evidence_upload",
+          "framework_name": "CIS Controls v8.1.2",
+          "framework_key": "cis-controls-v8-1-2",
+          "domain_id": "12",
+          "domain_name": "Network Infrastructure Management",
+          "control_id": "12.1",
+          "cross_references": [],
+          "expected_evidence": "project_record, change_ticket, engineering_standard"
+        }
+      ],
+      "cross_references": []
+    },
+    {
+      "item_id": "0cb12b32-0842-5c72-b15a-da258e005c0f",
+      "question_id": "0cb12b32-0842-5c72-b15a-da258e005c0f",
+      "question_text": "Is the organization implementing and operating the control: Establish and Maintain a Secure Network Architecture: Design and maintain a secure network architecture. A secure network architecture must address segmentation, least privilege, and availability, at a minimum. Example implementations may include documentation, policy, and design components?",
+      "question_type": "merged",
+      "answer_formats": [
+        "yes_no",
+        "evidence_upload"
+      ],
+      "framework_name": "CIS Controls v8.1.2",
+      "framework_key": "cis-controls-v8-1-2",
+      "domain_id": "12",
+      "domain_name": "Network Infrastructure Management",
+      "control_id": "12.2",
+      "control_statement": "Establish and Maintain a Secure Network Architecture: Design and maintain a secure network architecture. A secure network architecture must address segmentation, least privilege, and availability, at a minimum. Example implementations may include documentation, policy, and design components.",
+      "expected_evidence": "policy, procedure, approval_record",
+      "maturity_level": "Defined",
+      "merge_reason": "Merged by control fallback because LLM output was unavailable or invalid.",
+      "source_item_ids": [
+        "3f8e26e6-8882-5679-8de8-69e75e31b9bb",
+        "943d8436-5206-52ce-add7-3f95c73a9615"
+      ],
+      "source_questions": [
+        {
+          "question_id": "31f98b30-4b55-5d63-a712-8aee4198eab5",
+          "question_text": "Is the organization implementing and operating the control: Establish and Maintain a Secure Network Architecture: Design and maintain a secure network architecture. A secure network architecture must address segmentation, least privilege, and availability, at a minimum. Example implementations may include documentation, policy, and design components?",
+          "question_type": "yes_no",
+          "framework_name": "CIS Controls v8.1.2",
+          "framework_key": "cis-controls-v8-1-2",
+          "domain_id": "12",
+          "domain_name": "Network Infrastructure Management",
+          "control_id": "12.2",
+          "cross_references": [
+            {
+              "other_framework_id": "nist-csf-2-0",
+              "other_control_id": "PR.IR-01",
+              "relationship": "Subset",
+              "description": "Networks and environments are protected from unauthorized logical access and usage"
+            }
+          ],
+          "expected_evidence": "policy, procedure, approval_record"
+        },
+        {
+          "question_id": "c46bb0bc-7e4c-5784-86bb-51dc86627fd9",
+          "question_text": "Upload evidence such as policy, procedure, approval_record that demonstrates: Establish and Maintain a Secure Network Architecture: Design and maintain a secure network architecture. A secure network architecture must address segmentation, least privilege, and availability, at a minimum. Example implementations may include documentation, policy, and design components.",
+          "question_type": "evidence_upload",
+          "framework_name": "CIS Controls v8.1.2",
+          "framework_key": "cis-controls-v8-1-2",
+          "domain_id": "12",
+          "domain_name": "Network Infrastructure Management",
+          "control_id": "12.2",
+          "cross_references": [
+            {
+              "other_framework_id": "nist-csf-2-0",
+              "other_control_id": "PR.IR-01",
+              "relationship": "Subset",
+              "description": "Networks and environments are protected from unauthorized logical access and usage"
+            }
+          ],
+          "expected_evidence": "policy, procedure, approval_record"
+        }
+      ],
+      "cross_references": [
+        {
+          "other_framework_id": "nist-csf-2-0",
+          "other_control_id": "PR.IR-01"
+        }
+      ]
+    },
+    {
+      "item_id": "f6758869-a32f-5ad7-ba91-1e9b39ed21ef",
+      "question_id": "f6758869-a32f-5ad7-ba91-1e9b39ed21ef",
+      "question_text": "Is the organization implementing and operating the control: Securely Manage Network Infrastructure: Securely manage network infrastructure. Example implementations include version-controlled Infrastructure-as-Code (IaC), and the use of secure network protocols, such as SSH and HTTPS?",
+      "question_type": "merged",
+      "answer_formats": [
+        "yes_no",
+        "evidence_upload"
+      ],
+      "framework_name": "CIS Controls v8.1.2",
+      "framework_key": "cis-controls-v8-1-2",
+      "domain_id": "12",
+      "domain_name": "Network Infrastructure Management",
+      "control_id": "12.3",
+      "control_statement": "Securely Manage Network Infrastructure: Securely manage network infrastructure. Example implementations include version-controlled Infrastructure-as-Code (IaC), and the use of secure network protocols, such as SSH and HTTPS.",
+      "expected_evidence": "acceptable_use_policy, user_acknowledgement, procedure",
+      "maturity_level": "Defined",
+      "merge_reason": "Merged by control fallback because LLM output was unavailable or invalid.",
+      "source_item_ids": [
+        "6950afa5-4409-5ef7-a546-74953dfff883",
+        "a7037769-2453-5fee-9dd8-e7dfccf448b4"
+      ],
+      "source_questions": [
+        {
+          "question_id": "64c3cda4-1af0-5c3c-addd-bbd42b70d666",
+          "question_text": "Is the organization implementing and operating the control: Securely Manage Network Infrastructure: Securely manage network infrastructure. Example implementations include version-controlled Infrastructure-as-Code (IaC), and the use of secure network protocols, such as SSH and HTTPS?",
+          "question_type": "yes_no",
+          "framework_name": "CIS Controls v8.1.2",
+          "framework_key": "cis-controls-v8-1-2",
+          "domain_id": "12",
+          "domain_name": "Network Infrastructure Management",
+          "control_id": "12.3",
+          "cross_references": [],
+          "expected_evidence": "acceptable_use_policy, user_acknowledgement, procedure"
+        },
+        {
+          "question_id": "14f86e75-b6e1-5818-b94a-f8ae4152a5e7",
+          "question_text": "Upload evidence such as acceptable_use_policy, user_acknowledgement, procedure that demonstrates: Securely Manage Network Infrastructure: Securely manage network infrastructure. Example implementations include version-controlled Infrastructure-as-Code (IaC), and the use of secure network protocols, such as SSH and HTTPS.",
+          "question_type": "evidence_upload",
+          "framework_name": "CIS Controls v8.1.2",
+          "framework_key": "cis-controls-v8-1-2",
+          "domain_id": "12",
+          "domain_name": "Network Infrastructure Management",
+          "control_id": "12.3",
+          "cross_references": [],
+          "expected_evidence": "acceptable_use_policy, user_acknowledgement, procedure"
+        }
+      ],
+      "cross_references": []
+    },
+    {
+      "item_id": "f190a416-a139-5067-aa4b-a4944b122645",
+      "question_id": "f190a416-a139-5067-aa4b-a4944b122645",
+      "question_text": "Is the organization implementing and operating the control: Establish and Maintain Architecture Diagram(s): Establish and maintain architecture diagram(s) and/or other network system documentation. Review and update documentation annually, or when significant enterprise changes occur that could impact this Safeguard?",
+      "question_type": "merged",
+      "answer_formats": [
+        "yes_no",
+        "evidence_upload"
+      ],
+      "framework_name": "CIS Controls v8.1.2",
+      "framework_key": "cis-controls-v8-1-2",
+      "domain_id": "12",
+      "domain_name": "Network Infrastructure Management",
+      "control_id": "12.4",
+      "control_statement": "Establish and Maintain Architecture Diagram(s): Establish and maintain architecture diagram(s) and/or other network system documentation. Review and update documentation annually, or when significant enterprise changes occur that could impact this Safeguard.",
+      "expected_evidence": "project_record, change_ticket, engineering_standard",
+      "maturity_level": "Defined",
+      "merge_reason": "Merged by control fallback because LLM output was unavailable or invalid.",
+      "source_item_ids": [
+        "00558ce5-2e63-5579-9454-9e12a254902e",
+        "6ca9876f-b74b-51d1-909a-d3b1596fa337"
+      ],
+      "source_questions": [
+        {
+          "question_id": "d22a88dd-f21b-53c4-85c7-193f3c496f0d",
+          "question_text": "Is the organization implementing and operating the control: Establish and Maintain Architecture Diagram(s): Establish and maintain architecture diagram(s) and/or other network system documentation. Review and update documentation annually, or when significant enterprise changes occur that could impact this Safeguard?",
+          "question_type": "yes_no",
+          "framework_name": "CIS Controls v8.1.2",
+          "framework_key": "cis-controls-v8-1-2",
+          "domain_id": "12",
+          "domain_name": "Network Infrastructure Management",
+          "control_id": "12.4",
+          "cross_references": [],
+          "expected_evidence": "project_record, change_ticket, engineering_standard"
+        },
+        {
+          "question_id": "5328b194-777a-57fc-9b43-ca7338c256aa",
+          "question_text": "Upload evidence such as project_record, change_ticket, engineering_standard that demonstrates: Establish and Maintain Architecture Diagram(s): Establish and maintain architecture diagram(s) and/or other network system documentation. Review and update documentation annually, or when significant enterprise changes occur that could impact this Safeguard.",
+          "question_type": "evidence_upload",
+          "framework_name": "CIS Controls v8.1.2",
+          "framework_key": "cis-controls-v8-1-2",
+          "domain_id": "12",
+          "domain_name": "Network Infrastructure Management",
+          "control_id": "12.4",
+          "cross_references": [],
+          "expected_evidence": "project_record, change_ticket, engineering_standard"
+        }
+      ],
+      "cross_references": []
+    },
+    {
+      "item_id": "cc8adcfd-ac15-5cab-b64e-73a37f34e02f",
+      "question_id": "cc8adcfd-ac15-5cab-b64e-73a37f34e02f",
+      "question_text": "Is the organization implementing and operating the control: Centralize Network Authentication, Authorization, and Auditing (AAA): Centralize network AAA?",
+      "question_type": "merged",
+      "answer_formats": [
+        "yes_no",
+        "evidence_upload"
+      ],
+      "framework_name": "CIS Controls v8.1.2",
+      "framework_key": "cis-controls-v8-1-2",
+      "domain_id": "12",
+      "domain_name": "Network Infrastructure Management",
+      "control_id": "12.5",
+      "control_statement": "Centralize Network Authentication, Authorization, and Auditing (AAA): Centralize network AAA.",
+      "expected_evidence": "access_policy, access_review, iam_log",
+      "maturity_level": "Defined",
+      "merge_reason": "Merged by control fallback because LLM output was unavailable or invalid.",
+      "source_item_ids": [
+        "d7e20bac-4964-5c8e-b9d0-98ad2905164e",
+        "81ccbdf4-a90e-5e6c-9ea6-66559785a214"
+      ],
+      "source_questions": [
+        {
+          "question_id": "17e96491-4b92-5e4d-95ae-7367abc246da",
+          "question_text": "Is the organization implementing and operating the control: Centralize Network Authentication, Authorization, and Auditing (AAA): Centralize network AAA?",
+          "question_type": "yes_no",
+          "framework_name": "CIS Controls v8.1.2",
+          "framework_key": "cis-controls-v8-1-2",
+          "domain_id": "12",
+          "domain_name": "Network Infrastructure Management",
+          "control_id": "12.5",
+          "cross_references": [],
+          "expected_evidence": "access_policy, access_review, iam_log"
+        },
+        {
+          "question_id": "613eb154-008a-59f8-8450-cabe5ac5f94a",
+          "question_text": "Upload evidence such as access_policy, access_review, iam_log that demonstrates: Centralize Network Authentication, Authorization, and Auditing (AAA): Centralize network AAA.",
+          "question_type": "evidence_upload",
+          "framework_name": "CIS Controls v8.1.2",
+          "framework_key": "cis-controls-v8-1-2",
+          "domain_id": "12",
+          "domain_name": "Network Infrastructure Management",
+          "control_id": "12.5",
+          "cross_references": [],
+          "expected_evidence": "access_policy, access_review, iam_log"
+        }
+      ],
+      "cross_references": []
+    },
+    {
+      "item_id": "d35ef322-838f-52b4-ac3b-65087c9a6a87",
+      "question_id": "d35ef322-838f-52b4-ac3b-65087c9a6a87",
+      "question_text": "Is the organization implementing and operating the control: Use of Secure Network Management and Communication Protocols: Adopt secure network management protocols (e.g., 802.1X) and secure communication protocols (e.g., Wi-Fi Protected Access 2 (WPA2) Enterprise or more secure alternatives)?",
+      "question_type": "merged",
+      "answer_formats": [
+        "yes_no",
+        "evidence_upload"
+      ],
+      "framework_name": "CIS Controls v8.1.2",
+      "framework_key": "cis-controls-v8-1-2",
+      "domain_id": "12",
+      "domain_name": "Network Infrastructure Management",
+      "control_id": "12.6",
+      "control_statement": "Use of Secure Network Management and Communication Protocols: Adopt secure network management protocols (e.g., 802.1X) and secure communication protocols (e.g., Wi-Fi Protected Access 2 (WPA2) Enterprise or more secure alternatives).",
+      "expected_evidence": "role_matrix, org_chart, responsibility_assignment",
+      "maturity_level": "Defined",
+      "merge_reason": "Merged by control fallback because LLM output was unavailable or invalid.",
+      "source_item_ids": [
+        "7f1c2cfd-0da1-5ca1-acc7-48da9d23c071",
+        "2347ec5f-abc7-50f1-aa3d-6e4eee365064"
+      ],
+      "source_questions": [
+        {
+          "question_id": "6f71913c-9bb1-54e6-8807-24ec6bb20989",
+          "question_text": "Is the organization implementing and operating the control: Use of Secure Network Management and Communication Protocols: Adopt secure network management protocols (e.g., 802.1X) and secure communication protocols (e.g., Wi-Fi Protected Access 2 (WPA2) Enterprise or more secure alternatives)?",
+          "question_type": "yes_no",
+          "framework_name": "CIS Controls v8.1.2",
+          "framework_key": "cis-controls-v8-1-2",
+          "domain_id": "12",
+          "domain_name": "Network Infrastructure Management",
+          "control_id": "12.6",
+          "cross_references": [],
+          "expected_evidence": "role_matrix, org_chart, responsibility_assignment"
+        },
+        {
+          "question_id": "11857508-27a5-506c-82ab-806697d8cd1b",
+          "question_text": "Upload evidence such as role_matrix, org_chart, responsibility_assignment that demonstrates: Use of Secure Network Management and Communication Protocols: Adopt secure network management protocols (e.g., 802.1X) and secure communication protocols (e.g., Wi-Fi Protected Access 2 (WPA2) Enterprise or more secure alternatives).",
+          "question_type": "evidence_upload",
+          "framework_name": "CIS Controls v8.1.2",
+          "framework_key": "cis-controls-v8-1-2",
+          "domain_id": "12",
+          "domain_name": "Network Infrastructure Management",
+          "control_id": "12.6",
+          "cross_references": [],
+          "expected_evidence": "role_matrix, org_chart, responsibility_assignment"
+        }
+      ],
+      "cross_references": []
+    },
+    {
+      "item_id": "5f17b7cb-0233-5f35-a326-71900fd7a318",
+      "question_id": "5f17b7cb-0233-5f35-a326-71900fd7a318",
+      "question_text": "Is the organization implementing and operating the control: Ensure Remote Devices Utilize a VPN and are Connecting to an Enterprise's AAA Infrastructure: Require users to authenticate to enterprise-managed VPN and authentication services prior to accessing enterprise resources on end-user devices?",
+      "question_type": "merged",
+      "answer_formats": [
+        "yes_no",
+        "evidence_upload"
+      ],
+      "framework_name": "CIS Controls v8.1.2",
+      "framework_key": "cis-controls-v8-1-2",
+      "domain_id": "12",
+      "domain_name": "Network Infrastructure Management",
+      "control_id": "12.7",
+      "control_statement": "Ensure Remote Devices Utilize a VPN and are Connecting to an Enterprise's AAA Infrastructure: Require users to authenticate to enterprise-managed VPN and authentication services prior to accessing enterprise resources on end-user devices.",
+      "expected_evidence": "access_policy, access_review, iam_log",
+      "maturity_level": "Defined",
+      "merge_reason": "Merged by control fallback because LLM output was unavailable or invalid.",
+      "source_item_ids": [
+        "9d0aafee-241e-51a5-aabb-4c5e02731ffd",
+        "08fee892-6a07-5fa3-abce-487cea46a2d4"
+      ],
+      "source_questions": [
+        {
+          "question_id": "2a9acaa6-d324-5a9b-8062-45d4f24f2be8",
+          "question_text": "Is the organization implementing and operating the control: Ensure Remote Devices Utilize a VPN and are Connecting to an Enterprise's AAA Infrastructure: Require users to authenticate to enterprise-managed VPN and authentication services prior to accessing enterprise resources on end-user devices?",
+          "question_type": "yes_no",
+          "framework_name": "CIS Controls v8.1.2",
+          "framework_key": "cis-controls-v8-1-2",
+          "domain_id": "12",
+          "domain_name": "Network Infrastructure Management",
+          "control_id": "12.7",
+          "cross_references": [],
+          "expected_evidence": "access_policy, access_review, iam_log"
+        },
+        {
+          "question_id": "08077209-db1b-556f-8bed-f46e55f9f94a",
+          "question_text": "Upload evidence such as access_policy, access_review, iam_log that demonstrates: Ensure Remote Devices Utilize a VPN and are Connecting to an Enterprise's AAA Infrastructure: Require users to authenticate to enterprise-managed VPN and authentication services prior to accessing enterprise resources on end-user devices.",
+          "question_type": "evidence_upload",
+          "framework_name": "CIS Controls v8.1.2",
+          "framework_key": "cis-controls-v8-1-2",
+          "domain_id": "12",
+          "domain_name": "Network Infrastructure Management",
+          "control_id": "12.7",
+          "cross_references": [],
+          "expected_evidence": "access_policy, access_review, iam_log"
+        }
+      ],
+      "cross_references": []
+    },
+    {
+      "item_id": "5a5b36c3-9edd-54ec-bd75-74866b8b8a8c",
+      "question_id": "5a5b36c3-9edd-54ec-bd75-74866b8b8a8c",
+      "question_text": "Is the organization implementing and operating the control: Establish and Maintain Dedicated Computing Resources for All Administrative Work: Establish and maintain dedicated computing resources, either physically or logically separated, for all administrative tasks or tasks requiring administrative access. The computing resources should be segmented from the enterprise's primary network and not be allowed internet access?",
+      "question_type": "merged",
+      "answer_formats": [
+        "yes_no",
+        "evidence_upload"
+      ],
+      "framework_name": "CIS Controls v8.1.2",
+      "framework_key": "cis-controls-v8-1-2",
+      "domain_id": "12",
+      "domain_name": "Network Infrastructure Management",
+      "control_id": "12.8",
+      "control_statement": "Establish and Maintain Dedicated Computing Resources for All Administrative Work: Establish and maintain dedicated computing resources, either physically or logically separated, for all administrative tasks or tasks requiring administrative access. The computing resources should be segmented from the enterprise's primary network and not be allowed internet access.",
+      "expected_evidence": "facility_record, access_log, maintenance_log",
+      "maturity_level": "Defined",
+      "merge_reason": "Merged by control fallback because LLM output was unavailable or invalid.",
+      "source_item_ids": [
+        "ccc60cfa-5f85-5249-82fe-a90a7badaf44",
+        "74306e20-5a85-5f0d-b173-4899d0aa21ab"
+      ],
+      "source_questions": [
+        {
+          "question_id": "1ef2df8c-d59b-5cc0-b74f-68abb958efde",
+          "question_text": "Is the organization implementing and operating the control: Establish and Maintain Dedicated Computing Resources for All Administrative Work: Establish and maintain dedicated computing resources, either physically or logically separated, for all administrative tasks or tasks requiring administrative access. The computing resources should be segmented from the enterprise's primary network and not be allowed internet access?",
+          "question_type": "yes_no",
+          "framework_name": "CIS Controls v8.1.2",
+          "framework_key": "cis-controls-v8-1-2",
+          "domain_id": "12",
+          "domain_name": "Network Infrastructure Management",
+          "control_id": "12.8",
+          "cross_references": [],
+          "expected_evidence": "facility_record, access_log, maintenance_log"
+        },
+        {
+          "question_id": "4605f329-e013-5599-a123-d38c091ccb79",
+          "question_text": "Upload evidence such as facility_record, access_log, maintenance_log that demonstrates: Establish and Maintain Dedicated Computing Resources for All Administrative Work: Establish and maintain dedicated computing resources, either physically or logically separated, for all administrative tasks or tasks requiring administrative access. The computing resources should be segmented from the enterprise's primary network and not be allowed internet access.",
+          "question_type": "evidence_upload",
+          "framework_name": "CIS Controls v8.1.2",
+          "framework_key": "cis-controls-v8-1-2",
+          "domain_id": "12",
+          "domain_name": "Network Infrastructure Management",
+          "control_id": "12.8",
+          "cross_references": [],
+          "expected_evidence": "facility_record, access_log, maintenance_log"
+        }
+      ],
+      "cross_references": []
+    },
+    {
+      "item_id": "f414002a-86f5-5f7b-ad0e-d1b986a7b8f6",
+      "question_id": "f414002a-86f5-5f7b-ad0e-d1b986a7b8f6",
+      "question_text": "Is the organization implementing and operating the control: Physical security perimeters Control: Security perimeters shall be defined and used to protect areas that contain information and other associated assets?",
+      "question_type": "merged",
+      "answer_formats": [
+        "yes_no",
+        "evidence_upload"
+      ],
+      "framework_name": "ISO/IEC 27001:2022",
+      "framework_key": "iso-27001-2022",
+      "domain_id": "7",
+      "domain_name": "Physical controls",
+      "control_id": "7.1",
+      "control_statement": "Physical security perimeters Control: Security perimeters shall be defined and used to protect areas that contain information and other associated assets.",
+      "expected_evidence": "inventory, asset_register, owner_register",
+      "maturity_level": "Initial",
+      "merge_reason": "Merged by control fallback because LLM output was unavailable or invalid.",
+      "source_item_ids": [
+        "46601521-425a-57bb-973e-46ebf24dac08",
+        "95b433a4-1294-5228-8367-5069a5b40b5e"
+      ],
+      "source_questions": [
+        {
+          "question_id": "02eeb767-46ff-5a31-9814-bcf34b785056",
+          "question_text": "Is the organization implementing and operating the control: Physical security perimeters Control: Security perimeters shall be defined and used to protect areas that contain information and other associated assets?",
+          "question_type": "yes_no",
+          "framework_name": "ISO/IEC 27001:2022",
+          "framework_key": "iso-27001-2022",
+          "domain_id": "7",
+          "domain_name": "Physical controls",
+          "control_id": "7.1",
+          "cross_references": [],
+          "expected_evidence": "inventory, asset_register, owner_register"
+        },
+        {
+          "question_id": "0fff8c2f-486c-5b75-bb75-59d029f759e0",
+          "question_text": "Upload evidence such as inventory, asset_register, owner_register that demonstrates: Physical security perimeters Control: Security perimeters shall be defined and used to protect areas that contain information and other associated assets.",
+          "question_type": "evidence_upload",
+          "framework_name": "ISO/IEC 27001:2022",
+          "framework_key": "iso-27001-2022",
+          "domain_id": "7",
+          "domain_name": "Physical controls",
+          "control_id": "7.1",
+          "cross_references": [],
+          "expected_evidence": "inventory, asset_register, owner_register"
+        }
+      ],
+      "cross_references": []
+    },
+    {
+      "item_id": "d5806357-f7ac-5018-ac0d-91c0d8d62ad2",
+      "question_id": "d5806357-f7ac-5018-ac0d-91c0d8d62ad2",
+      "question_text": "Is the organization implementing and operating the control: Storage media Control: Storage media shall be managed through their life cycle of acquisition, use, transportation and disposal in accordance with the organization's classification scheme and handling requirements?",
+      "question_type": "merged",
+      "answer_formats": [
+        "yes_no",
+        "evidence_upload"
+      ],
+      "framework_name": "ISO/IEC 27001:2022",
+      "framework_key": "iso-27001-2022",
+      "domain_id": "7",
+      "domain_name": "Physical controls",
+      "control_id": "7.10",
+      "control_statement": "Storage media Control: Storage media shall be managed through their life cycle of acquisition, use, transportation and disposal in accordance with the organization's classification scheme and handling requirements.",
+      "expected_evidence": "acceptable_use_policy, user_acknowledgement, procedure",
+      "maturity_level": "Initial",
+      "merge_reason": "Merged by control fallback because LLM output was unavailable or invalid.",
+      "source_item_ids": [
+        "98e2f370-a524-5ddc-99b4-4a11b6379cb1",
+        "bb5ae202-1b2f-551f-97ae-6d1fee82c36c"
+      ],
+      "source_questions": [
+        {
+          "question_id": "ed1e3836-c0ee-5d68-9d64-ee112bfc581c",
+          "question_text": "Is the organization implementing and operating the control: Storage media Control: Storage media shall be managed through their life cycle of acquisition, use, transportation and disposal in accordance with the organization's classification scheme and handling requirements?",
+          "question_type": "yes_no",
+          "framework_name": "ISO/IEC 27001:2022",
+          "framework_key": "iso-27001-2022",
+          "domain_id": "7",
+          "domain_name": "Physical controls",
+          "control_id": "7.10",
+          "cross_references": [],
+          "expected_evidence": "acceptable_use_policy, user_acknowledgement, procedure"
+        },
+        {
+          "question_id": "57b06179-ce5a-532a-a992-fa0f1af05767",
+          "question_text": "Upload evidence such as acceptable_use_policy, user_acknowledgement, procedure that demonstrates: Storage media Control: Storage media shall be managed through their life cycle of acquisition, use, transportation and disposal in accordance with the organization's classification scheme and handling requirements.",
+          "question_type": "evidence_upload",
+          "framework_name": "ISO/IEC 27001:2022",
+          "framework_key": "iso-27001-2022",
+          "domain_id": "7",
+          "domain_name": "Physical controls",
+          "control_id": "7.10",
+          "cross_references": [],
+          "expected_evidence": "acceptable_use_policy, user_acknowledgement, procedure"
+        }
+      ],
+      "cross_references": []
+    },
+    {
+      "item_id": "01e6f7cc-b6c6-5d2f-9278-b148279269c6",
+      "question_id": "01e6f7cc-b6c6-5d2f-9278-b148279269c6",
+      "question_text": "Is the organization implementing and operating the control: Supporting utilities Control: Information processing facilities shall be protected from power failures and other disruptions caused by failures in supporting utilities?",
+      "question_type": "merged",
+      "answer_formats": [
+        "yes_no",
+        "evidence_upload"
+      ],
+      "framework_name": "ISO/IEC 27001:2022",
+      "framework_key": "iso-27001-2022",
+      "domain_id": "7",
+      "domain_name": "Physical controls",
+      "control_id": "7.11",
+      "control_statement": "Supporting utilities Control: Information processing facilities shall be protected from power failures and other disruptions caused by failures in supporting utilities.",
+      "expected_evidence": "backup_test, continuity_plan, recovery_test",
+      "maturity_level": "Initial",
+      "merge_reason": "Merged by control fallback because LLM output was unavailable or invalid.",
+      "source_item_ids": [
+        "2c674664-22c9-528a-a54f-7827e0e677fc",
+        "db977711-aa8c-5d8c-ad22-318ce42d27ec"
+      ],
+      "source_questions": [
+        {
+          "question_id": "97629836-2f93-5360-a6ca-02eac707182a",
+          "question_text": "Is the organization implementing and operating the control: Supporting utilities Control: Information processing facilities shall be protected from power failures and other disruptions caused by failures in supporting utilities?",
+          "question_type": "yes_no",
+          "framework_name": "ISO/IEC 27001:2022",
+          "framework_key": "iso-27001-2022",
+          "domain_id": "7",
+          "domain_name": "Physical controls",
+          "control_id": "7.11",
+          "cross_references": [],
+          "expected_evidence": "backup_test, continuity_plan, recovery_test"
+        },
+        {
+          "question_id": "67214cd5-e456-5ae5-a948-d7a58edc0ce8",
+          "question_text": "Upload evidence such as backup_test, continuity_plan, recovery_test that demonstrates: Supporting utilities Control: Information processing facilities shall be protected from power failures and other disruptions caused by failures in supporting utilities.",
+          "question_type": "evidence_upload",
+          "framework_name": "ISO/IEC 27001:2022",
+          "framework_key": "iso-27001-2022",
+          "domain_id": "7",
+          "domain_name": "Physical controls",
+          "control_id": "7.11",
+          "cross_references": [],
+          "expected_evidence": "backup_test, continuity_plan, recovery_test"
+        }
+      ],
+      "cross_references": []
+    },
+    {
+      "item_id": "89d1a235-0356-5b1b-ae72-91794b947bf7",
+      "question_id": "89d1a235-0356-5b1b-ae72-91794b947bf7",
+      "question_text": "Is the organization implementing and operating the control: Cabling security Control: Cables carrying power, data or supporting information services shall be protected from interception, interference or damage?",
+      "question_type": "merged",
+      "answer_formats": [
+        "yes_no",
+        "evidence_upload"
+      ],
+      "framework_name": "ISO/IEC 27001:2022",
+      "framework_key": "iso-27001-2022",
+      "domain_id": "7",
+      "domain_name": "Physical controls",
+      "control_id": "7.12",
+      "control_statement": "Cabling security Control: Cables carrying power, data or supporting information services shall be protected from interception, interference or damage.",
+      "expected_evidence": "facility_record, access_log, maintenance_log",
+      "maturity_level": "Initial",
+      "merge_reason": "Merged by control fallback because LLM output was unavailable or invalid.",
+      "source_item_ids": [
+        "10f10ca5-3efd-5e07-9977-b90dda552c9b",
+        "6dde0163-23da-53a1-aaf7-ac5728c6b4e7"
+      ],
+      "source_questions": [
+        {
+          "question_id": "f070f0f9-46ca-511d-9c77-565e77bb1d1e",
+          "question_text": "Is the organization implementing and operating the control: Cabling security Control: Cables carrying power, data or supporting information services shall be protected from interception, interference or damage?",
+          "question_type": "yes_no",
+          "framework_name": "ISO/IEC 27001:2022",
+          "framework_key": "iso-27001-2022",
+          "domain_id": "7",
+          "domain_name": "Physical controls",
+          "control_id": "7.12",
+          "cross_references": [],
+          "expected_evidence": "facility_record, access_log, maintenance_log"
+        },
+        {
+          "question_id": "9976586e-2037-5852-a901-5f2d9b492e45",
+          "question_text": "Upload evidence such as facility_record, access_log, maintenance_log that demonstrates: Cabling security Control: Cables carrying power, data or supporting information services shall be protected from interception, interference or damage.",
+          "question_type": "evidence_upload",
+          "framework_name": "ISO/IEC 27001:2022",
+          "framework_key": "iso-27001-2022",
+          "domain_id": "7",
+          "domain_name": "Physical controls",
+          "control_id": "7.12",
+          "cross_references": [],
+          "expected_evidence": "facility_record, access_log, maintenance_log"
+        }
+      ],
+      "cross_references": []
+    },
+    {
+      "item_id": "e8f60d60-ce78-55da-aad1-ea155d538ac8",
+      "question_id": "e8f60d60-ce78-55da-aad1-ea155d538ac8",
+      "question_text": "Is the organization implementing and operating the control: Equipment maintenance Control: Equipment shall be maintained correctly to ensure availability, integrity and confidentiality of information?",
+      "question_type": "merged",
+      "answer_formats": [
+        "yes_no",
+        "evidence_upload"
+      ],
+      "framework_name": "ISO/IEC 27001:2022",
+      "framework_key": "iso-27001-2022",
+      "domain_id": "7",
+      "domain_name": "Physical controls",
+      "control_id": "7.13",
+      "control_statement": "Equipment maintenance Control: Equipment shall be maintained correctly to ensure availability, integrity and confidentiality of information.",
+      "expected_evidence": "facility_record, access_log, maintenance_log",
+      "maturity_level": "Initial",
+      "merge_reason": "Merged by control fallback because LLM output was unavailable or invalid.",
+      "source_item_ids": [
+        "3abb74ca-57ce-58a6-b001-639cbbd66156",
+        "0314a28f-a7c4-547e-bf13-46fd3781938c"
+      ],
+      "source_questions": [
+        {
+          "question_id": "1354c600-d5a8-5b5b-b8be-2fbde1e1fefe",
+          "question_text": "Is the organization implementing and operating the control: Equipment maintenance Control: Equipment shall be maintained correctly to ensure availability, integrity and confidentiality of information?",
+          "question_type": "yes_no",
+          "framework_name": "ISO/IEC 27001:2022",
+          "framework_key": "iso-27001-2022",
+          "domain_id": "7",
+          "domain_name": "Physical controls",
+          "control_id": "7.13",
+          "cross_references": [],
+          "expected_evidence": "facility_record, access_log, maintenance_log"
+        },
+        {
+          "question_id": "09f965d0-92ec-5eb7-834b-c8cfad6497a5",
+          "question_text": "Upload evidence such as facility_record, access_log, maintenance_log that demonstrates: Equipment maintenance Control: Equipment shall be maintained correctly to ensure availability, integrity and confidentiality of information.",
+          "question_type": "evidence_upload",
+          "framework_name": "ISO/IEC 27001:2022",
+          "framework_key": "iso-27001-2022",
+          "domain_id": "7",
+          "domain_name": "Physical controls",
+          "control_id": "7.13",
+          "cross_references": [],
+          "expected_evidence": "facility_record, access_log, maintenance_log"
+        }
+      ],
+      "cross_references": []
+    },
+    {
+      "item_id": "308ad3b4-b8da-51a4-a9a1-633f430ade7b",
+      "question_id": "308ad3b4-b8da-51a4-a9a1-633f430ade7b",
+      "question_text": "Is the organization implementing and operating the control: Secure disposal or re-use of equipment: Items of equipment containing storage media shall be verified to en sure that any sensitive data and licensed software has been removed or securely overwritten prior to disposal or re-use?",
+      "question_type": "merged",
+      "answer_formats": [
+        "yes_no",
+        "evidence_upload"
+      ],
+      "framework_name": "ISO/IEC 27001:2022",
+      "framework_key": "iso-27001-2022",
+      "domain_id": "7",
+      "domain_name": "Physical controls",
+      "control_id": "7.14",
+      "control_statement": "Secure disposal or re-use of equipment: Items of equipment containing storage media shall be verified to en sure that any sensitive data and licensed software has been removed or securely overwritten prior to disposal or re-use.",
+      "expected_evidence": "project_record, change_ticket, engineering_standard",
+      "maturity_level": "Initial",
+      "merge_reason": "Merged by control fallback because LLM output was unavailable or invalid.",
+      "source_item_ids": [
+        "af800426-b56a-5e23-ac61-6a08a53bb4cd",
+        "29f9574d-ad72-5355-aae3-9067598253dd"
+      ],
+      "source_questions": [
+        {
+          "question_id": "8bae8ab1-4d00-5497-ba51-ee4f48471bd3",
+          "question_text": "Is the organization implementing and operating the control: Secure disposal or re-use of equipment: Items of equipment containing storage media shall be verified to en sure that any sensitive data and licensed software has been removed or securely overwritten prior to disposal or re-use?",
+          "question_type": "yes_no",
+          "framework_name": "ISO/IEC 27001:2022",
+          "framework_key": "iso-27001-2022",
+          "domain_id": "7",
+          "domain_name": "Physical controls",
+          "control_id": "7.14",
+          "cross_references": [],
+          "expected_evidence": "project_record, change_ticket, engineering_standard"
+        },
+        {
+          "question_id": "fd7e72f3-f34a-5398-a005-746db84eeac7",
+          "question_text": "Upload evidence such as project_record, change_ticket, engineering_standard that demonstrates: Secure disposal or re-use of equipment: Items of equipment containing storage media shall be verified to en sure that any sensitive data and licensed software has been removed or securely overwritten prior to disposal or re-use.",
+          "question_type": "evidence_upload",
+          "framework_name": "ISO/IEC 27001:2022",
+          "framework_key": "iso-27001-2022",
+          "domain_id": "7",
+          "domain_name": "Physical controls",
+          "control_id": "7.14",
+          "cross_references": [],
+          "expected_evidence": "project_record, change_ticket, engineering_standard"
+        }
+      ],
+      "cross_references": []
+    },
+    {
+      "item_id": "6f835884-83d9-54bd-9c96-23ce2c2e1133",
+      "question_id": "6f835884-83d9-54bd-9c96-23ce2c2e1133",
+      "question_text": "Is the organization implementing and operating the control: Physical entry Control Secure areas shall be protected by appropriate entry controls and access points. 7. 3 Securing offices, rooms and fa cilities: Physical security for offices, rooms and facilities shall be designed and implemented?",
+      "question_type": "merged",
+      "answer_formats": [
+        "yes_no",
+        "evidence_upload"
+      ],
+      "framework_name": "ISO/IEC 27001:2022",
+      "framework_key": "iso-27001-2022",
+      "domain_id": "7",
+      "domain_name": "Physical controls",
+      "control_id": "7.2",
+      "control_statement": "Physical entry Control Secure areas shall be protected by appropriate entry controls and access points. 7. 3 Securing offices, rooms and fa cilities: Physical security for offices, rooms and facilities shall be designed and implemented.",
+      "expected_evidence": "facility_record, access_log, maintenance_log",
+      "maturity_level": "Initial",
+      "merge_reason": "Merged by control fallback because LLM output was unavailable or invalid.",
+      "source_item_ids": [
+        "8cbcccbc-5e38-5bb6-ba8e-a1aa9f2d7cf7",
+        "807e2c43-8701-5753-87dd-9abf7a580bb2"
+      ],
+      "source_questions": [
+        {
+          "question_id": "c996350e-9c59-556d-9d7d-4aebe54917d7",
+          "question_text": "Is the organization implementing and operating the control: Physical entry Control Secure areas shall be protected by appropriate entry controls and access points. 7. 3 Securing offices, rooms and fa cilities: Physical security for offices, rooms and facilities shall be designed and implemented?",
+          "question_type": "yes_no",
+          "framework_name": "ISO/IEC 27001:2022",
+          "framework_key": "iso-27001-2022",
+          "domain_id": "7",
+          "domain_name": "Physical controls",
+          "control_id": "7.2",
+          "cross_references": [],
+          "expected_evidence": "facility_record, access_log, maintenance_log"
+        },
+        {
+          "question_id": "86261cf8-0586-5763-9bc4-aa12c92e2f10",
+          "question_text": "Upload evidence such as facility_record, access_log, maintenance_log that demonstrates: Physical entry Control Secure areas shall be protected by appropriate entry controls and access points. 7. 3 Securing offices, rooms and fa cilities: Physical security for offices, rooms and facilities shall be designed and implemented.",
+          "question_type": "evidence_upload",
+          "framework_name": "ISO/IEC 27001:2022",
+          "framework_key": "iso-27001-2022",
+          "domain_id": "7",
+          "domain_name": "Physical controls",
+          "control_id": "7.2",
+          "cross_references": [],
+          "expected_evidence": "facility_record, access_log, maintenance_log"
+        }
+      ],
+      "cross_references": []
+    },
+    {
+      "item_id": "06d87acb-419f-535c-b3a5-6074d7084ad4",
+      "question_id": "06d87acb-419f-535c-b3a5-6074d7084ad4",
+      "question_text": "Is the organization implementing and operating the control: Physical security monitoring Control Premises shall be continuously monitored for unauthorized physical access. © ISO/IEC 2022 - All rights reserved 7. 5 Protecting against physical and environmental threats: Protection against physical and environmental threats, such as natural disasters and other intentional or unintentional physical threats to infrastructure shall be designed and implemented?",
+      "question_type": "merged",
+      "answer_formats": [
+        "yes_no",
+        "evidence_upload"
+      ],
+      "framework_name": "ISO/IEC 27001:2022",
+      "framework_key": "iso-27001-2022",
+      "domain_id": "7",
+      "domain_name": "Physical controls",
+      "control_id": "7.4",
+      "control_statement": "Physical security monitoring Control Premises shall be continuously monitored for unauthorized physical access. © ISO/IEC 2022 - All rights reserved 7. 5 Protecting against physical and environmental threats: Protection against physical and environmental threats, such as natural disasters and other intentional or unintentional physical threats to infrastructure shall be designed and implemented.",
+      "expected_evidence": "threat_report, intel_feed, analysis_note",
+      "maturity_level": "Initial",
+      "merge_reason": "Merged by control fallback because LLM output was unavailable or invalid.",
+      "source_item_ids": [
+        "a135074e-e066-587d-8adb-71a210a89820",
+        "b68b3ebf-1a47-5e7b-ac86-430fb541844c"
+      ],
+      "source_questions": [
+        {
+          "question_id": "3dbd1e4a-6f50-50fc-b609-5ace54e9b7ce",
+          "question_text": "Is the organization implementing and operating the control: Physical security monitoring Control Premises shall be continuously monitored for unauthorized physical access. © ISO/IEC 2022 - All rights reserved 7. 5 Protecting against physical and environmental threats: Protection against physical and environmental threats, such as natural disasters and other intentional or unintentional physical threats to infrastructure shall be designed and implemented?",
+          "question_type": "yes_no",
+          "framework_name": "ISO/IEC 27001:2022",
+          "framework_key": "iso-27001-2022",
+          "domain_id": "7",
+          "domain_name": "Physical controls",
+          "control_id": "7.4",
+          "cross_references": [],
+          "expected_evidence": "threat_report, intel_feed, analysis_note"
+        },
+        {
+          "question_id": "2f7ffd75-9b65-59d8-af60-2b725b199088",
+          "question_text": "Upload evidence such as threat_report, intel_feed, analysis_note that demonstrates: Physical security monitoring Control Premises shall be continuously monitored for unauthorized physical access. © ISO/IEC 2022 - All rights reserved 7. 5 Protecting against physical and environmental threats: Protection against physical and environmental threats, such as natural disasters and other intentional or unintentional physical threats to infrastructure shall be designed and implemented.",
+          "question_type": "evidence_upload",
+          "framework_name": "ISO/IEC 27001:2022",
+          "framework_key": "iso-27001-2022",
+          "domain_id": "7",
+          "domain_name": "Physical controls",
+          "control_id": "7.4",
+          "cross_references": [],
+          "expected_evidence": "threat_report, intel_feed, analysis_note"
+        }
+      ],
+      "cross_references": []
+    },
+    {
+      "item_id": "f2160087-6736-5d24-8157-1c3df0e7f5c5",
+      "question_id": "f2160087-6736-5d24-8157-1c3df0e7f5c5",
+      "question_text": "Is the organization implementing and operating the control: Working in secure areas Control: Security measures for working in secure areas shall be designed and implemented?",
+      "question_type": "merged",
+      "answer_formats": [
+        "yes_no",
+        "evidence_upload"
+      ],
+      "framework_name": "ISO/IEC 27001:2022",
+      "framework_key": "iso-27001-2022",
+      "domain_id": "7",
+      "domain_name": "Physical controls",
+      "control_id": "7.6",
+      "control_statement": "Working in secure areas Control: Security measures for working in secure areas shall be designed and implemented.",
+      "expected_evidence": "implementation_evidence, operational_record",
+      "maturity_level": "Initial",
+      "merge_reason": "Merged by control fallback because LLM output was unavailable or invalid.",
+      "source_item_ids": [
+        "82cd04a1-7e3e-577b-ba75-23952bee78f9",
+        "ddfb3427-445c-5e23-9bfa-e0d16a35c93a"
+      ],
+      "source_questions": [
+        {
+          "question_id": "88951a5f-de2d-5d04-ae75-c95a1b140f59",
+          "question_text": "Is the organization implementing and operating the control: Working in secure areas Control: Security measures for working in secure areas shall be designed and implemented?",
+          "question_type": "yes_no",
+          "framework_name": "ISO/IEC 27001:2022",
+          "framework_key": "iso-27001-2022",
+          "domain_id": "7",
+          "domain_name": "Physical controls",
+          "control_id": "7.6",
+          "cross_references": [],
+          "expected_evidence": "implementation_evidence, operational_record"
+        },
+        {
+          "question_id": "85434b5e-f576-56a3-804c-9f85086f9155",
+          "question_text": "Upload evidence such as implementation_evidence, operational_record that demonstrates: Working in secure areas Control: Security measures for working in secure areas shall be designed and implemented.",
+          "question_type": "evidence_upload",
+          "framework_name": "ISO/IEC 27001:2022",
+          "framework_key": "iso-27001-2022",
+          "domain_id": "7",
+          "domain_name": "Physical controls",
+          "control_id": "7.6",
+          "cross_references": [],
+          "expected_evidence": "implementation_evidence, operational_record"
+        }
+      ],
+      "cross_references": []
+    },
+    {
+      "item_id": "e7822088-36bf-5fb9-88e3-d799911561f0",
+      "question_id": "e7822088-36bf-5fb9-88e3-d799911561f0",
+      "question_text": "Is the organization implementing and operating the control: Clear desk and clear screen Control: Clear desk rules for papers and removable storage media and clear screen rules for information processing facilities shall be defined and appropriately enforced?",
+      "question_type": "merged",
+      "answer_formats": [
+        "yes_no",
+        "evidence_upload"
+      ],
+      "framework_name": "ISO/IEC 27001:2022",
+      "framework_key": "iso-27001-2022",
+      "domain_id": "7",
+      "domain_name": "Physical controls",
+      "control_id": "7.7",
+      "control_statement": "Clear desk and clear screen Control: Clear desk rules for papers and removable storage media and clear screen rules for information processing facilities shall be defined and appropriately enforced.",
+      "expected_evidence": "facility_record, access_log, maintenance_log",
+      "maturity_level": "Initial",
+      "merge_reason": "Merged by control fallback because LLM output was unavailable or invalid.",
+      "source_item_ids": [
+        "25811f8d-c1ca-5bd9-a8f8-8643f1dbb2a2",
+        "78f322d4-0464-50c3-b6cb-4108b407f925"
+      ],
+      "source_questions": [
+        {
+          "question_id": "7f6db657-9cfd-5bd3-b233-759b43d24afb",
+          "question_text": "Is the organization implementing and operating the control: Clear desk and clear screen Control: Clear desk rules for papers and removable storage media and clear screen rules for information processing facilities shall be defined and appropriately enforced?",
+          "question_type": "yes_no",
+          "framework_name": "ISO/IEC 27001:2022",
+          "framework_key": "iso-27001-2022",
+          "domain_id": "7",
+          "domain_name": "Physical controls",
+          "control_id": "7.7",
+          "cross_references": [],
+          "expected_evidence": "facility_record, access_log, maintenance_log"
+        },
+        {
+          "question_id": "b3d5dbae-ba1a-5c35-8cfd-6ac5671f0552",
+          "question_text": "Upload evidence such as facility_record, access_log, maintenance_log that demonstrates: Clear desk and clear screen Control: Clear desk rules for papers and removable storage media and clear screen rules for information processing facilities shall be defined and appropriately enforced.",
+          "question_type": "evidence_upload",
+          "framework_name": "ISO/IEC 27001:2022",
+          "framework_key": "iso-27001-2022",
+          "domain_id": "7",
+          "domain_name": "Physical controls",
+          "control_id": "7.7",
+          "cross_references": [],
+          "expected_evidence": "facility_record, access_log, maintenance_log"
+        }
+      ],
+      "cross_references": []
+    },
+    {
+      "item_id": "e2dcf852-74ed-5f6b-b4cf-5ccb22874214",
+      "question_id": "e2dcf852-74ed-5f6b-b4cf-5ccb22874214",
+      "question_text": "Is the organization implementing and operating the control: Equipment siting and protection Control: Equipment shall be sited securely and protected?",
+      "question_type": "merged",
+      "answer_formats": [
+        "yes_no",
+        "evidence_upload"
+      ],
+      "framework_name": "ISO/IEC 27001:2022",
+      "framework_key": "iso-27001-2022",
+      "domain_id": "7",
+      "domain_name": "Physical controls",
+      "control_id": "7.8",
+      "control_statement": "Equipment siting and protection Control: Equipment shall be sited securely and protected.",
+      "expected_evidence": "facility_record, access_log, maintenance_log",
+      "maturity_level": "Initial",
+      "merge_reason": "Merged by control fallback because LLM output was unavailable or invalid.",
+      "source_item_ids": [
+        "3a6e66f2-f20d-5a0c-9d9d-d770fe890015",
+        "f3c9ce4f-2967-5cf9-9d81-ce99d346a9b3"
+      ],
+      "source_questions": [
+        {
+          "question_id": "f104cd42-1986-552f-b0ce-30e3fb46a230",
+          "question_text": "Is the organization implementing and operating the control: Equipment siting and protection Control: Equipment shall be sited securely and protected?",
+          "question_type": "yes_no",
+          "framework_name": "ISO/IEC 27001:2022",
+          "framework_key": "iso-27001-2022",
+          "domain_id": "7",
+          "domain_name": "Physical controls",
+          "control_id": "7.8",
+          "cross_references": [],
+          "expected_evidence": "facility_record, access_log, maintenance_log"
+        },
+        {
+          "question_id": "ba802b24-24f8-5678-b9c3-8ab882cd3c6d",
+          "question_text": "Upload evidence such as facility_record, access_log, maintenance_log that demonstrates: Equipment siting and protection Control: Equipment shall be sited securely and protected.",
+          "question_type": "evidence_upload",
+          "framework_name": "ISO/IEC 27001:2022",
+          "framework_key": "iso-27001-2022",
+          "domain_id": "7",
+          "domain_name": "Physical controls",
+          "control_id": "7.8",
+          "cross_references": [],
+          "expected_evidence": "facility_record, access_log, maintenance_log"
+        }
+      ],
+      "cross_references": []
+    },
+    {
+      "item_id": "2cc9a9e7-86db-558f-89a7-0a8067eafd68",
+      "question_id": "2cc9a9e7-86db-558f-89a7-0a8067eafd68",
+      "question_text": "Is the organization implementing and operating the control: Security of assets off-premises Control: Off-site assets shall be protected?",
+      "question_type": "merged",
+      "answer_formats": [
+        "yes_no",
+        "evidence_upload"
+      ],
+      "framework_name": "ISO/IEC 27001:2022",
+      "framework_key": "iso-27001-2022",
+      "domain_id": "7",
+      "domain_name": "Physical controls",
+      "control_id": "7.9",
+      "control_statement": "Security of assets off-premises Control: Off-site assets shall be protected.",
+      "expected_evidence": "inventory, asset_register, owner_register",
+      "maturity_level": "Initial",
+      "merge_reason": "Merged by control fallback because LLM output was unavailable or invalid.",
+      "source_item_ids": [
+        "7f124334-bc22-5fb9-8a6d-5c71d9180379",
+        "fb5d5e6b-d9b2-5c51-beaa-466d99449578"
+      ],
+      "source_questions": [
+        {
+          "question_id": "4144a4fe-5069-5c49-8241-710a99127a7f",
+          "question_text": "Is the organization implementing and operating the control: Security of assets off-premises Control: Off-site assets shall be protected?",
+          "question_type": "yes_no",
+          "framework_name": "ISO/IEC 27001:2022",
+          "framework_key": "iso-27001-2022",
+          "domain_id": "7",
+          "domain_name": "Physical controls",
+          "control_id": "7.9",
+          "cross_references": [],
+          "expected_evidence": "inventory, asset_register, owner_register"
+        },
+        {
+          "question_id": "cfda481a-7377-5b11-964b-253e2e7594e5",
+          "question_text": "Upload evidence such as inventory, asset_register, owner_register that demonstrates: Security of assets off-premises Control: Off-site assets shall be protected.",
+          "question_type": "evidence_upload",
+          "framework_name": "ISO/IEC 27001:2022",
+          "framework_key": "iso-27001-2022",
+          "domain_id": "7",
+          "domain_name": "Physical controls",
+          "control_id": "7.9",
+          "cross_references": [],
+          "expected_evidence": "inventory, asset_register, owner_register"
+        }
+      ],
+      "cross_references": []
+    },
+    {
+      "item_id": "5eabc033-8ca4-559c-9429-15b2bb84094f",
+      "question_id": "5eabc033-8ca4-559c-9429-15b2bb84094f",
+      "question_text": "Is the organization implementing and operating the control: Analysis is performed to establish what has taken place during an incident and the root cause of the incident?",
+      "question_type": "merged",
+      "answer_formats": [
+        "yes_no",
+        "evidence_upload"
+      ],
+      "framework_name": "NIST CSF 2.0",
+      "framework_key": "nist-csf-2-0",
+      "domain_id": "RS",
+      "domain_name": "Respond",
+      "control_id": "RS.AN-03",
+      "control_statement": "Analysis is performed to establish what has taken place during an incident and the root cause of the incident.",
+      "expected_evidence": "forensic_report, rca_document, timeline_analysis",
+      "maturity_level": "Initial",
+      "merge_reason": "Merged by control fallback because LLM output was unavailable or invalid.",
+      "source_item_ids": [
+        "48e51f9e-001d-5c2a-9eb6-c02df86d5ac5",
+        "b8a6b0fe-b4e2-55c6-8459-ac3772d0208d"
+      ],
+      "source_questions": [
+        {
+          "question_id": "277df480-f0f3-548d-959c-cf603bbf74cc",
+          "question_text": "Is the organization implementing and operating the control: Analysis is performed to establish what has taken place during an incident and the root cause of the incident?",
+          "question_type": "yes_no",
+          "framework_name": "NIST CSF 2.0",
+          "framework_key": "nist-csf-2-0",
+          "domain_id": "RS",
+          "domain_name": "Respond",
+          "control_id": "RS.AN-03",
+          "cross_references": [
+            {
+              "other_framework_id": "nist-sp-800-53",
+              "other_control_id": "IR-4"
+            },
+            {
+              "other_framework_id": "iso-27001-2022",
+              "other_control_id": "A.5.28"
+            }
+          ],
+          "expected_evidence": "forensic_report, rca_document, timeline_analysis"
+        },
+        {
+          "question_id": "8a1af6a1-3b62-5d1c-ad56-38c954836012",
+          "question_text": "Upload evidence such as forensic_report, rca_document, timeline_analysis that demonstrates: Analysis is performed to establish what has taken place during an incident and the root cause of the incident.",
+          "question_type": "evidence_upload",
+          "framework_name": "NIST CSF 2.0",
+          "framework_key": "nist-csf-2-0",
+          "domain_id": "RS",
+          "domain_name": "Respond",
+          "control_id": "RS.AN-03",
+          "cross_references": [
+            {
+              "other_framework_id": "nist-sp-800-53",
+              "other_control_id": "IR-4"
+            },
+            {
+              "other_framework_id": "iso-27001-2022",
+              "other_control_id": "A.5.28"
+            }
+          ],
+          "expected_evidence": "forensic_report, rca_document, timeline_analysis"
+        }
+      ],
+      "cross_references": [
+        {
+          "other_framework_id": "nist-sp-800-53",
+          "other_control_id": "IR-4"
+        },
+        {
+          "other_framework_id": "iso-27001-2022",
+          "other_control_id": "A.5.28"
+        }
+      ]
+    },
+    {
+      "item_id": "3f621552-0620-5876-a4d8-59a1d13bb3d5",
+      "question_id": "3f621552-0620-5876-a4d8-59a1d13bb3d5",
+      "question_text": "Is the organization implementing and operating the control: Internal and external stakeholders are notified of incidents?",
+      "question_type": "merged",
+      "answer_formats": [
+        "yes_no",
+        "evidence_upload"
+      ],
+      "framework_name": "NIST CSF 2.0",
+      "framework_key": "nist-csf-2-0",
+      "domain_id": "RS",
+      "domain_name": "Respond",
+      "control_id": "RS.CO-02",
+      "control_statement": "Internal and external stakeholders are notified of incidents.",
+      "expected_evidence": "notification_templates, breach_notification_log, regulatory_reports",
+      "maturity_level": "Initial",
+      "merge_reason": "Merged by control fallback because LLM output was unavailable or invalid.",
+      "source_item_ids": [
+        "a1831976-6a08-5d8e-be79-abcdcbef48d7",
+        "9d672f38-5593-5ef1-add0-7e642e160bc6"
+      ],
+      "source_questions": [
+        {
+          "question_id": "e4245fb8-33f2-575f-8a5c-a8d106aaba9d",
+          "question_text": "Is the organization implementing and operating the control: Internal and external stakeholders are notified of incidents?",
+          "question_type": "yes_no",
+          "framework_name": "NIST CSF 2.0",
+          "framework_key": "nist-csf-2-0",
+          "domain_id": "RS",
+          "domain_name": "Respond",
+          "control_id": "RS.CO-02",
+          "cross_references": [
+            {
+              "other_framework_id": "gdpr",
+              "other_control_id": "33"
+            },
+            {
+              "other_framework_id": "iso-27001-2022",
+              "other_control_id": "A.5.26"
+            }
+          ],
+          "expected_evidence": "notification_templates, breach_notification_log, regulatory_reports"
+        },
+        {
+          "question_id": "7d2ae7d9-482c-5447-a806-63664df85e25",
+          "question_text": "Upload evidence such as notification_templates, breach_notification_log, regulatory_reports that demonstrates: Internal and external stakeholders are notified of incidents.",
+          "question_type": "evidence_upload",
+          "framework_name": "NIST CSF 2.0",
+          "framework_key": "nist-csf-2-0",
+          "domain_id": "RS",
+          "domain_name": "Respond",
+          "control_id": "RS.CO-02",
+          "cross_references": [
+            {
+              "other_framework_id": "gdpr",
+              "other_control_id": "33"
+            },
+            {
+              "other_framework_id": "iso-27001-2022",
+              "other_control_id": "A.5.26"
+            }
+          ],
+          "expected_evidence": "notification_templates, breach_notification_log, regulatory_reports"
+        }
+      ],
+      "cross_references": [
+        {
+          "other_framework_id": "gdpr",
+          "other_control_id": "33"
+        },
+        {
+          "other_framework_id": "iso-27001-2022",
+          "other_control_id": "A.5.26"
+        }
+      ]
+    },
+    {
+      "item_id": "46aa538d-6edf-568f-b6a9-aea4ffadc10a",
+      "question_id": "46aa538d-6edf-568f-b6a9-aea4ffadc10a",
+      "question_text": "Is the organization implementing and operating the control: The incident response plan is executed in coordination with relevant third parties once an incident is declared?",
+      "question_type": "merged",
+      "answer_formats": [
+        "yes_no",
+        "evidence_upload"
+      ],
+      "framework_name": "NIST CSF 2.0",
+      "framework_key": "nist-csf-2-0",
+      "domain_id": "RS",
+      "domain_name": "Respond",
+      "control_id": "RS.MA-01",
+      "control_statement": "The incident response plan is executed in coordination with relevant third parties once an incident is declared.",
+      "expected_evidence": "incident_response_plan, incident_tickets, communication_log",
+      "maturity_level": "Initial",
+      "merge_reason": "Merged by control fallback because LLM output was unavailable or invalid.",
+      "source_item_ids": [
+        "abcc7b2a-f351-5b72-9008-9939d1f870d0",
+        "9c6b6e57-ee2a-5d9c-b0ae-7a7afae552ac"
+      ],
+      "source_questions": [
+        {
+          "question_id": "930828a6-46d8-5570-b63d-fbda9cd0cd91",
+          "question_text": "Is the organization implementing and operating the control: The incident response plan is executed in coordination with relevant third parties once an incident is declared?",
+          "question_type": "yes_no",
+          "framework_name": "NIST CSF 2.0",
+          "framework_key": "nist-csf-2-0",
+          "domain_id": "RS",
+          "domain_name": "Respond",
+          "control_id": "RS.MA-01",
+          "cross_references": [
+            {
+              "other_framework_id": "nist-sp-800-61",
+              "other_control_id": ""
+            },
+            {
+              "other_framework_id": "iso-27001-2022",
+              "other_control_id": "A.5.26"
+            }
+          ],
+          "expected_evidence": "incident_response_plan, incident_tickets, communication_log"
+        },
+        {
+          "question_id": "7597c8e8-4289-5ddf-80dc-467d17897781",
+          "question_text": "Upload evidence such as incident_response_plan, incident_tickets, communication_log that demonstrates: The incident response plan is executed in coordination with relevant third parties once an incident is declared.",
+          "question_type": "evidence_upload",
+          "framework_name": "NIST CSF 2.0",
+          "framework_key": "nist-csf-2-0",
+          "domain_id": "RS",
+          "domain_name": "Respond",
+          "control_id": "RS.MA-01",
+          "cross_references": [
+            {
+              "other_framework_id": "nist-sp-800-61",
+              "other_control_id": ""
+            },
+            {
+              "other_framework_id": "iso-27001-2022",
+              "other_control_id": "A.5.26"
+            }
+          ],
+          "expected_evidence": "incident_response_plan, incident_tickets, communication_log"
+        }
+      ],
+      "cross_references": [
+        {
+          "other_framework_id": "nist-sp-800-61",
+          "other_control_id": ""
+        },
+        {
+          "other_framework_id": "iso-27001-2022",
+          "other_control_id": "A.5.26"
+        }
+      ]
+    },
+    {
+      "item_id": "0643004d-ebb3-5b15-8160-a30e7697aed9",
+      "question_id": "0643004d-ebb3-5b15-8160-a30e7697aed9",
+      "question_text": "Is the organization implementing and operating the control: Incidents are mitigated?",
+      "question_type": "merged",
+      "answer_formats": [
+        "yes_no",
+        "evidence_upload"
+      ],
+      "framework_name": "NIST CSF 2.0",
+      "framework_key": "nist-csf-2-0",
+      "domain_id": "RS",
+      "domain_name": "Respond",
+      "control_id": "RS.MI-02",
+      "control_statement": "Incidents are mitigated.",
+      "expected_evidence": "containment_evidence, patch_records, system_restore_log",
+      "maturity_level": "Initial",
+      "merge_reason": "Merged by control fallback because LLM output was unavailable or invalid.",
+      "source_item_ids": [
+        "8b6dac58-cd69-5809-80c3-03b177770760",
+        "3da3bea2-3dbf-5d20-bf0e-88ade0faec63"
+      ],
+      "source_questions": [
+        {
+          "question_id": "1a6d3ab3-51ad-519c-92a0-c0f5ad3a64cc",
+          "question_text": "Is the organization implementing and operating the control: Incidents are mitigated?",
+          "question_type": "yes_no",
+          "framework_name": "NIST CSF 2.0",
+          "framework_key": "nist-csf-2-0",
+          "domain_id": "RS",
+          "domain_name": "Respond",
+          "control_id": "RS.MI-02",
+          "cross_references": [
+            {
+              "other_framework_id": "nist-sp-800-61",
+              "other_control_id": ""
+            },
+            {
+              "other_framework_id": "iso-27001-2022",
+              "other_control_id": "A.5.26"
+            }
+          ],
+          "expected_evidence": "containment_evidence, patch_records, system_restore_log"
+        },
+        {
+          "question_id": "250df41f-4e8f-520d-9769-84f73f9be4a5",
+          "question_text": "Upload evidence such as containment_evidence, patch_records, system_restore_log that demonstrates: Incidents are mitigated.",
+          "question_type": "evidence_upload",
+          "framework_name": "NIST CSF 2.0",
+          "framework_key": "nist-csf-2-0",
+          "domain_id": "RS",
+          "domain_name": "Respond",
+          "control_id": "RS.MI-02",
+          "cross_references": [
+            {
+              "other_framework_id": "nist-sp-800-61",
+              "other_control_id": ""
+            },
+            {
+              "other_framework_id": "iso-27001-2022",
+              "other_control_id": "A.5.26"
+            }
+          ],
+          "expected_evidence": "containment_evidence, patch_records, system_restore_log"
+        }
+      ],
+      "cross_references": [
+        {
+          "other_framework_id": "nist-sp-800-61",
+          "other_control_id": ""
+        },
+        {
+          "other_framework_id": "iso-27001-2022",
+          "other_control_id": "A.5.26"
+        }
+      ]
+    }
+  ],
+  "overall_risk_rating": "Medium",
+  "assessment_notes": "Multi-framework questionnaire generated with LLM-based context merging and TryChroma retrieval from selected framework collections.",
+  "generated_at": "2026-06-03T09:38:56.128838+00:00",
+  "merged_controls": [
+    {
+      "control_ids": [
+        "12.1"
+      ],
+      "framework_keys": [
+        "cis-controls-v8-1-2"
+      ],
+      "source_item_ids": [
+        "94971a94-c9d4-5f96-bddf-2d8ef2279b6a",
+        "3faf3f36-c619-500d-80d5-ecae461c04bd"
+      ],
+      "question_count": 2,
+      "merge_reason": "Merged by control fallback because LLM output was unavailable or invalid.",
+      "merged_question_text": "Is the organization implementing and operating the control: Ensure Network Infrastructure is Up-to-Date: Ensure network infrastructure is kept up-to-date. Example implementations include running the latest stable release of software and/or using currently supported network as a service (NaaS) offerings. Review software versions monthly, or more frequently, to verify software support?",
+      "frameworks": [
+        "CIS Controls v8.1.2"
+      ],
+      "domain_names": [
+        "Network Infrastructure Management"
+      ],
+      "cross_references": []
+    },
+    {
+      "control_ids": [
+        "12.2"
+      ],
+      "framework_keys": [
+        "cis-controls-v8-1-2"
+      ],
+      "source_item_ids": [
+        "31f98b30-4b55-5d63-a712-8aee4198eab5",
+        "c46bb0bc-7e4c-5784-86bb-51dc86627fd9"
+      ],
+      "question_count": 2,
+      "merge_reason": "Merged by control fallback because LLM output was unavailable or invalid.",
+      "merged_question_text": "Is the organization implementing and operating the control: Establish and Maintain a Secure Network Architecture: Design and maintain a secure network architecture. A secure network architecture must address segmentation, least privilege, and availability, at a minimum. Example implementations may include documentation, policy, and design components?",
+      "frameworks": [
+        "CIS Controls v8.1.2"
+      ],
+      "domain_names": [
+        "Network Infrastructure Management"
+      ],
+      "cross_references": [
+        {
+          "other_framework_id": "nist-csf-2-0",
+          "other_control_id": "PR.IR-01"
+        }
+      ]
+    },
+    {
+      "control_ids": [
+        "12.3"
+      ],
+      "framework_keys": [
+        "cis-controls-v8-1-2"
+      ],
+      "source_item_ids": [
+        "64c3cda4-1af0-5c3c-addd-bbd42b70d666",
+        "14f86e75-b6e1-5818-b94a-f8ae4152a5e7"
+      ],
+      "question_count": 2,
+      "merge_reason": "Merged by control fallback because LLM output was unavailable or invalid.",
+      "merged_question_text": "Is the organization implementing and operating the control: Securely Manage Network Infrastructure: Securely manage network infrastructure. Example implementations include version-controlled Infrastructure-as-Code (IaC), and the use of secure network protocols, such as SSH and HTTPS?",
+      "frameworks": [
+        "CIS Controls v8.1.2"
+      ],
+      "domain_names": [
+        "Network Infrastructure Management"
+      ],
+      "cross_references": []
+    },
+    {
+      "control_ids": [
+        "12.4"
+      ],
+      "framework_keys": [
+        "cis-controls-v8-1-2"
+      ],
+      "source_item_ids": [
+        "d22a88dd-f21b-53c4-85c7-193f3c496f0d",
+        "5328b194-777a-57fc-9b43-ca7338c256aa"
+      ],
+      "question_count": 2,
+      "merge_reason": "Merged by control fallback because LLM output was unavailable or invalid.",
+      "merged_question_text": "Is the organization implementing and operating the control: Establish and Maintain Architecture Diagram(s): Establish and maintain architecture diagram(s) and/or other network system documentation. Review and update documentation annually, or when significant enterprise changes occur that could impact this Safeguard?",
+      "frameworks": [
+        "CIS Controls v8.1.2"
+      ],
+      "domain_names": [
+        "Network Infrastructure Management"
+      ],
+      "cross_references": []
+    },
+    {
+      "control_ids": [
+        "12.5"
+      ],
+      "framework_keys": [
+        "cis-controls-v8-1-2"
+      ],
+      "source_item_ids": [
+        "17e96491-4b92-5e4d-95ae-7367abc246da",
+        "613eb154-008a-59f8-8450-cabe5ac5f94a"
+      ],
+      "question_count": 2,
+      "merge_reason": "Merged by control fallback because LLM output was unavailable or invalid.",
+      "merged_question_text": "Is the organization implementing and operating the control: Centralize Network Authentication, Authorization, and Auditing (AAA): Centralize network AAA?",
+      "frameworks": [
+        "CIS Controls v8.1.2"
+      ],
+      "domain_names": [
+        "Network Infrastructure Management"
+      ],
+      "cross_references": []
+    },
+    {
+      "control_ids": [
+        "12.6"
+      ],
+      "framework_keys": [
+        "cis-controls-v8-1-2"
+      ],
+      "source_item_ids": [
+        "6f71913c-9bb1-54e6-8807-24ec6bb20989",
+        "11857508-27a5-506c-82ab-806697d8cd1b"
+      ],
+      "question_count": 2,
+      "merge_reason": "Merged by control fallback because LLM output was unavailable or invalid.",
+      "merged_question_text": "Is the organization implementing and operating the control: Use of Secure Network Management and Communication Protocols: Adopt secure network management protocols (e.g., 802.1X) and secure communication protocols (e.g., Wi-Fi Protected Access 2 (WPA2) Enterprise or more secure alternatives)?",
+      "frameworks": [
+        "CIS Controls v8.1.2"
+      ],
+      "domain_names": [
+        "Network Infrastructure Management"
+      ],
+      "cross_references": []
+    },
+    {
+      "control_ids": [
+        "12.7"
+      ],
+      "framework_keys": [
+        "cis-controls-v8-1-2"
+      ],
+      "source_item_ids": [
+        "2a9acaa6-d324-5a9b-8062-45d4f24f2be8",
+        "08077209-db1b-556f-8bed-f46e55f9f94a"
+      ],
+      "question_count": 2,
+      "merge_reason": "Merged by control fallback because LLM output was unavailable or invalid.",
+      "merged_question_text": "Is the organization implementing and operating the control: Ensure Remote Devices Utilize a VPN and are Connecting to an Enterprise's AAA Infrastructure: Require users to authenticate to enterprise-managed VPN and authentication services prior to accessing enterprise resources on end-user devices?",
+      "frameworks": [
+        "CIS Controls v8.1.2"
+      ],
+      "domain_names": [
+        "Network Infrastructure Management"
+      ],
+      "cross_references": []
+    },
+    {
+      "control_ids": [
+        "12.8"
+      ],
+      "framework_keys": [
+        "cis-controls-v8-1-2"
+      ],
+      "source_item_ids": [
+        "1ef2df8c-d59b-5cc0-b74f-68abb958efde",
+        "4605f329-e013-5599-a123-d38c091ccb79"
+      ],
+      "question_count": 2,
+      "merge_reason": "Merged by control fallback because LLM output was unavailable or invalid.",
+      "merged_question_text": "Is the organization implementing and operating the control: Establish and Maintain Dedicated Computing Resources for All Administrative Work: Establish and maintain dedicated computing resources, either physically or logically separated, for all administrative tasks or tasks requiring administrative access. The computing resources should be segmented from the enterprise's primary network and not be allowed internet access?",
+      "frameworks": [
+        "CIS Controls v8.1.2"
+      ],
+      "domain_names": [
+        "Network Infrastructure Management"
+      ],
+      "cross_references": []
+    },
+    {
+      "control_ids": [
+        "7.1"
+      ],
+      "framework_keys": [
+        "iso-27001-2022"
+      ],
+      "source_item_ids": [
+        "02eeb767-46ff-5a31-9814-bcf34b785056",
+        "0fff8c2f-486c-5b75-bb75-59d029f759e0"
+      ],
+      "question_count": 2,
+      "merge_reason": "Merged by control fallback because LLM output was unavailable or invalid.",
+      "merged_question_text": "Is the organization implementing and operating the control: Physical security perimeters Control: Security perimeters shall be defined and used to protect areas that contain information and other associated assets?",
+      "frameworks": [
+        "ISO/IEC 27001:2022"
+      ],
+      "domain_names": [
+        "Physical controls"
+      ],
+      "cross_references": []
+    },
+    {
+      "control_ids": [
+        "7.10"
+      ],
+      "framework_keys": [
+        "iso-27001-2022"
+      ],
+      "source_item_ids": [
+        "ed1e3836-c0ee-5d68-9d64-ee112bfc581c",
+        "57b06179-ce5a-532a-a992-fa0f1af05767"
+      ],
+      "question_count": 2,
+      "merge_reason": "Merged by control fallback because LLM output was unavailable or invalid.",
+      "merged_question_text": "Is the organization implementing and operating the control: Storage media Control: Storage media shall be managed through their life cycle of acquisition, use, transportation and disposal in accordance with the organization's classification scheme and handling requirements?",
+      "frameworks": [
+        "ISO/IEC 27001:2022"
+      ],
+      "domain_names": [
+        "Physical controls"
+      ],
+      "cross_references": []
+    },
+    {
+      "control_ids": [
+        "7.11"
+      ],
+      "framework_keys": [
+        "iso-27001-2022"
+      ],
+      "source_item_ids": [
+        "97629836-2f93-5360-a6ca-02eac707182a",
+        "67214cd5-e456-5ae5-a948-d7a58edc0ce8"
+      ],
+      "question_count": 2,
+      "merge_reason": "Merged by control fallback because LLM output was unavailable or invalid.",
+      "merged_question_text": "Is the organization implementing and operating the control: Supporting utilities Control: Information processing facilities shall be protected from power failures and other disruptions caused by failures in supporting utilities?",
+      "frameworks": [
+        "ISO/IEC 27001:2022"
+      ],
+      "domain_names": [
+        "Physical controls"
+      ],
+      "cross_references": []
+    },
+    {
+      "control_ids": [
+        "7.12"
+      ],
+      "framework_keys": [
+        "iso-27001-2022"
+      ],
+      "source_item_ids": [
+        "f070f0f9-46ca-511d-9c77-565e77bb1d1e",
+        "9976586e-2037-5852-a901-5f2d9b492e45"
+      ],
+      "question_count": 2,
+      "merge_reason": "Merged by control fallback because LLM output was unavailable or invalid.",
+      "merged_question_text": "Is the organization implementing and operating the control: Cabling security Control: Cables carrying power, data or supporting information services shall be protected from interception, interference or damage?",
+      "frameworks": [
+        "ISO/IEC 27001:2022"
+      ],
+      "domain_names": [
+        "Physical controls"
+      ],
+      "cross_references": []
+    },
+    {
+      "control_ids": [
+        "7.13"
+      ],
+      "framework_keys": [
+        "iso-27001-2022"
+      ],
+      "source_item_ids": [
+        "1354c600-d5a8-5b5b-b8be-2fbde1e1fefe",
+        "09f965d0-92ec-5eb7-834b-c8cfad6497a5"
+      ],
+      "question_count": 2,
+      "merge_reason": "Merged by control fallback because LLM output was unavailable or invalid.",
+      "merged_question_text": "Is the organization implementing and operating the control: Equipment maintenance Control: Equipment shall be maintained correctly to ensure availability, integrity and confidentiality of information?",
+      "frameworks": [
+        "ISO/IEC 27001:2022"
+      ],
+      "domain_names": [
+        "Physical controls"
+      ],
+      "cross_references": []
+    },
+    {
+      "control_ids": [
+        "7.14"
+      ],
+      "framework_keys": [
+        "iso-27001-2022"
+      ],
+      "source_item_ids": [
+        "8bae8ab1-4d00-5497-ba51-ee4f48471bd3",
+        "fd7e72f3-f34a-5398-a005-746db84eeac7"
+      ],
+      "question_count": 2,
+      "merge_reason": "Merged by control fallback because LLM output was unavailable or invalid.",
+      "merged_question_text": "Is the organization implementing and operating the control: Secure disposal or re-use of equipment: Items of equipment containing storage media shall be verified to en sure that any sensitive data and licensed software has been removed or securely overwritten prior to disposal or re-use?",
+      "frameworks": [
+        "ISO/IEC 27001:2022"
+      ],
+      "domain_names": [
+        "Physical controls"
+      ],
+      "cross_references": []
+    },
+    {
+      "control_ids": [
+        "7.2"
+      ],
+      "framework_keys": [
+        "iso-27001-2022"
+      ],
+      "source_item_ids": [
+        "c996350e-9c59-556d-9d7d-4aebe54917d7",
+        "86261cf8-0586-5763-9bc4-aa12c92e2f10"
+      ],
+      "question_count": 2,
+      "merge_reason": "Merged by control fallback because LLM output was unavailable or invalid.",
+      "merged_question_text": "Is the organization implementing and operating the control: Physical entry Control Secure areas shall be protected by appropriate entry controls and access points. 7. 3 Securing offices, rooms and fa cilities: Physical security for offices, rooms and facilities shall be designed and implemented?",
+      "frameworks": [
+        "ISO/IEC 27001:2022"
+      ],
+      "domain_names": [
+        "Physical controls"
+      ],
+      "cross_references": []
+    },
+    {
+      "control_ids": [
+        "7.4"
+      ],
+      "framework_keys": [
+        "iso-27001-2022"
+      ],
+      "source_item_ids": [
+        "3dbd1e4a-6f50-50fc-b609-5ace54e9b7ce",
+        "2f7ffd75-9b65-59d8-af60-2b725b199088"
+      ],
+      "question_count": 2,
+      "merge_reason": "Merged by control fallback because LLM output was unavailable or invalid.",
+      "merged_question_text": "Is the organization implementing and operating the control: Physical security monitoring Control Premises shall be continuously monitored for unauthorized physical access. © ISO/IEC 2022 - All rights reserved 7. 5 Protecting against physical and environmental threats: Protection against physical and environmental threats, such as natural disasters and other intentional or unintentional physical threats to infrastructure shall be designed and implemented?",
+      "frameworks": [
+        "ISO/IEC 27001:2022"
+      ],
+      "domain_names": [
+        "Physical controls"
+      ],
+      "cross_references": []
+    },
+    {
+      "control_ids": [
+        "7.6"
+      ],
+      "framework_keys": [
+        "iso-27001-2022"
+      ],
+      "source_item_ids": [
+        "88951a5f-de2d-5d04-ae75-c95a1b140f59",
+        "85434b5e-f576-56a3-804c-9f85086f9155"
+      ],
+      "question_count": 2,
+      "merge_reason": "Merged by control fallback because LLM output was unavailable or invalid.",
+      "merged_question_text": "Is the organization implementing and operating the control: Working in secure areas Control: Security measures for working in secure areas shall be designed and implemented?",
+      "frameworks": [
+        "ISO/IEC 27001:2022"
+      ],
+      "domain_names": [
+        "Physical controls"
+      ],
+      "cross_references": []
+    },
+    {
+      "control_ids": [
+        "7.7"
+      ],
+      "framework_keys": [
+        "iso-27001-2022"
+      ],
+      "source_item_ids": [
+        "7f6db657-9cfd-5bd3-b233-759b43d24afb",
+        "b3d5dbae-ba1a-5c35-8cfd-6ac5671f0552"
+      ],
+      "question_count": 2,
+      "merge_reason": "Merged by control fallback because LLM output was unavailable or invalid.",
+      "merged_question_text": "Is the organization implementing and operating the control: Clear desk and clear screen Control: Clear desk rules for papers and removable storage media and clear screen rules for information processing facilities shall be defined and appropriately enforced?",
+      "frameworks": [
+        "ISO/IEC 27001:2022"
+      ],
+      "domain_names": [
+        "Physical controls"
+      ],
+      "cross_references": []
+    },
+    {
+      "control_ids": [
+        "7.8"
+      ],
+      "framework_keys": [
+        "iso-27001-2022"
+      ],
+      "source_item_ids": [
+        "f104cd42-1986-552f-b0ce-30e3fb46a230",
+        "ba802b24-24f8-5678-b9c3-8ab882cd3c6d"
+      ],
+      "question_count": 2,
+      "merge_reason": "Merged by control fallback because LLM output was unavailable or invalid.",
+      "merged_question_text": "Is the organization implementing and operating the control: Equipment siting and protection Control: Equipment shall be sited securely and protected?",
+      "frameworks": [
+        "ISO/IEC 27001:2022"
+      ],
+      "domain_names": [
+        "Physical controls"
+      ],
+      "cross_references": []
+    },
+    {
+      "control_ids": [
+        "7.9"
+      ],
+      "framework_keys": [
+        "iso-27001-2022"
+      ],
+      "source_item_ids": [
+        "4144a4fe-5069-5c49-8241-710a99127a7f",
+        "cfda481a-7377-5b11-964b-253e2e7594e5"
+      ],
+      "question_count": 2,
+      "merge_reason": "Merged by control fallback because LLM output was unavailable or invalid.",
+      "merged_question_text": "Is the organization implementing and operating the control: Security of assets off-premises Control: Off-site assets shall be protected?",
+      "frameworks": [
+        "ISO/IEC 27001:2022"
+      ],
+      "domain_names": [
+        "Physical controls"
+      ],
+      "cross_references": []
+    },
+    {
+      "control_ids": [
+        "RS.AN-03"
+      ],
+      "framework_keys": [
+        "nist-csf-2-0"
+      ],
+      "source_item_ids": [
+        "277df480-f0f3-548d-959c-cf603bbf74cc",
+        "8a1af6a1-3b62-5d1c-ad56-38c954836012"
+      ],
+      "question_count": 2,
+      "merge_reason": "Merged by control fallback because LLM output was unavailable or invalid.",
+      "merged_question_text": "Is the organization implementing and operating the control: Analysis is performed to establish what has taken place during an incident and the root cause of the incident?",
+      "frameworks": [
+        "NIST CSF 2.0"
+      ],
+      "domain_names": [
+        "Respond"
+      ],
+      "cross_references": [
+        {
+          "other_framework_id": "nist-sp-800-53",
+          "other_control_id": "IR-4"
+        },
+        {
+          "other_framework_id": "iso-27001-2022",
+          "other_control_id": "A.5.28"
+        }
+      ]
+    },
+    {
+      "control_ids": [
+        "RS.CO-02"
+      ],
+      "framework_keys": [
+        "nist-csf-2-0"
+      ],
+      "source_item_ids": [
+        "e4245fb8-33f2-575f-8a5c-a8d106aaba9d",
+        "7d2ae7d9-482c-5447-a806-63664df85e25"
+      ],
+      "question_count": 2,
+      "merge_reason": "Merged by control fallback because LLM output was unavailable or invalid.",
+      "merged_question_text": "Is the organization implementing and operating the control: Internal and external stakeholders are notified of incidents?",
+      "frameworks": [
+        "NIST CSF 2.0"
+      ],
+      "domain_names": [
+        "Respond"
+      ],
+      "cross_references": [
+        {
+          "other_framework_id": "gdpr",
+          "other_control_id": "33"
+        },
+        {
+          "other_framework_id": "iso-27001-2022",
+          "other_control_id": "A.5.26"
+        }
+      ]
+    },
+    {
+      "control_ids": [
+        "RS.MA-01"
+      ],
+      "framework_keys": [
+        "nist-csf-2-0"
+      ],
+      "source_item_ids": [
+        "930828a6-46d8-5570-b63d-fbda9cd0cd91",
+        "7597c8e8-4289-5ddf-80dc-467d17897781"
+      ],
+      "question_count": 2,
+      "merge_reason": "Merged by control fallback because LLM output was unavailable or invalid.",
+      "merged_question_text": "Is the organization implementing and operating the control: The incident response plan is executed in coordination with relevant third parties once an incident is declared?",
+      "frameworks": [
+        "NIST CSF 2.0"
+      ],
+      "domain_names": [
+        "Respond"
+      ],
+      "cross_references": [
+        {
+          "other_framework_id": "nist-sp-800-61",
+          "other_control_id": ""
+        },
+        {
+          "other_framework_id": "iso-27001-2022",
+          "other_control_id": "A.5.26"
+        }
+      ]
+    },
+    {
+      "control_ids": [
+        "RS.MI-02"
+      ],
+      "framework_keys": [
+        "nist-csf-2-0"
+      ],
+      "source_item_ids": [
+        "1a6d3ab3-51ad-519c-92a0-c0f5ad3a64cc",
+        "250df41f-4e8f-520d-9769-84f73f9be4a5"
+      ],
+      "question_count": 2,
+      "merge_reason": "Merged by control fallback because LLM output was unavailable or invalid.",
+      "merged_question_text": "Is the organization implementing and operating the control: Incidents are mitigated?",
+      "frameworks": [
+        "NIST CSF 2.0"
+      ],
+      "domain_names": [
+        "Respond"
+      ],
+      "cross_references": [
+        {
+          "other_framework_id": "nist-sp-800-61",
+          "other_control_id": ""
+        },
+        {
+          "other_framework_id": "iso-27001-2022",
+          "other_control_id": "A.5.26"
+        }
+      ]
+    }
+  ],
+  "embedding_context": {
+    "provider": "trychroma_default",
+    "collections": [
+      {
+        "framework_key": "nist",
+        "collection_name": "framework_nist_csf_2_0"
+      },
+      {
+        "framework_key": "cis",
+        "collection_name": "framework_cis_controls_v8_1_2"
+      },
+      {
+        "framework_key": "nist_cis",
+        "collection_name": "framework_nist_cis_merged"
+      }
+    ]
+  }
+}

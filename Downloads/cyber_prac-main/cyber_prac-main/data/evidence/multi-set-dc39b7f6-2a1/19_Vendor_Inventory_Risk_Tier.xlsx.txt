@@ -1,0 +1,7 @@
+Vendor ID	Vendor Name	Category	Service Description	Data Access	System Access	Data Classification	Risk Tier	Onboarded Date	Last Assessed	Next Assessment Due	Contract Expiry	Primary Contact	Status	Notes
+VND-001	Salesforce	CRM	Customer relationship management platform	PII, Sales Data	CRM System	Confidential	Tier 1 (Critical)	2019-03-01	2024-06-01	2025-06-01	2026-03-01	vendor@salesforce.com	Active	SOC 2 Type II reviewed annually
+VND-002	AWS	Cloud IaaS	Primary cloud infrastructure provider	All data types	Core Infrastructure	Restricted	Tier 1 (Critical)	2018-01-15	2024-07-01	2025-07-01	Ongoing	aws-enterprise@amazon.com	Active	ISO 27001 + SOC 2 on file
+VND-003	Okta	IAM	Identity and access management / SSO	User credentials	Identity Platform	Confidential	Tier 1 (Critical)	2020-05-20	2024-08-15	2025-08-15	2025-05-20	security@okta.com	Active	Pen test results reviewed
+VND-004	SecureTest Ltd	Security Testing	Penetration testing services	Limited (test env)	Scoped test access	Internal	Tier 2 (High)	2022-09-01	2024-09-10	2025-09-10	2025-09-01	contact@securetest.com	Active	NDA + security clauses in contract
+VND-005	Catering Co	Facilities	Office catering services	None	None	None	Tier 4 (Low)	2021-01-01	2023-01-01	2025-01-01	2025-01-01	admin@cateringco.com	Active	No data or system access
+VND-006	DataFlow Analytics	Analytics	Third-party analytics processing	PII, Behavioral Data	Data Pipeline	Confidential	Tier 2 (High)	2023-06-01	2024-06-10	2025-06-10	2025-06-01	privacy@dataflow.com	Active	DPA signed; GDPR compliant

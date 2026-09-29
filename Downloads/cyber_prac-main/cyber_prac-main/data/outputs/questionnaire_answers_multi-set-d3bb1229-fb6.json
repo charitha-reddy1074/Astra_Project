@@ -1,0 +1,730 @@
+{
+  "questionnaire_id": "multi-set-d3bb1229-fb6",
+  "framework_names": [
+    "NIST CSF 2.0",
+    "CIS Controls v8.1.2"
+  ],
+  "selected_domain_keys": [
+    "nist-csf-2-0:PR",
+    "cis-controls-v8-1-2:6"
+  ],
+  "control_id": null,
+  "domain_id": null,
+  "domain_name": null,
+  "domain_description": null,
+  "control_statement": null,
+  "part1_answers": [
+    {
+      "question_id": "p1-001",
+      "number": 1,
+      "cluster": "Identity & Access Management (IAM)",
+      "sub_topic": "Identity Lifecycle & Directory",
+      "question_text": "Do you manage user identities separate from corporate platform? If so, what is used?",
+      "answer_format": "yes_no_with_detail",
+      "response": "",
+      "detail": ""
+    },
+    {
+      "question_id": "p1-002",
+      "number": 2,
+      "cluster": "Identity & Access Management (IAM)",
+      "sub_topic": "Identity Lifecycle & Directory",
+      "question_text": "Is any part of the joiner/mover/leaver process automated? (i.e., IGA tool in place)",
+      "answer_format": "yes_no_partial_with_detail",
+      "response": "",
+      "detail": ""
+    },
+    {
+      "question_id": "p1-003",
+      "number": 3,
+      "cluster": "Identity & Access Management (IAM)",
+      "sub_topic": "Authentication & MFA",
+      "question_text": "Is Multi-Factor Authentication (MFA) enforced for all users?",
+      "answer_format": "yes_no_partial_with_detail",
+      "response": "",
+      "detail": ""
+    },
+    {
+      "question_id": "p1-004",
+      "number": 4,
+      "cluster": "Identity & Access Management (IAM)",
+      "sub_topic": "Authentication & MFA",
+      "question_text": "Is Single Sign-On (SSO) implemented?",
+      "answer_format": "yes_no_with_detail",
+      "response": "",
+      "detail": ""
+    },
+    {
+      "question_id": "p1-005",
+      "number": 5,
+      "cluster": "Identity & Access Management (IAM)",
+      "sub_topic": "Privileged Access Management",
+      "question_text": "Is a Privileged Access Management (PAM) tool in use?",
+      "answer_format": "yes_no_with_detail",
+      "response": "",
+      "detail": ""
+    },
+    {
+      "question_id": "p1-006",
+      "number": 6,
+      "cluster": "Identity & Access Management (IAM)",
+      "sub_topic": "Access Control & Least Privilege",
+      "question_text": "Is there a process in place to periodically review access requests?",
+      "answer_format": "yes_no",
+      "response": "",
+      "detail": ""
+    },
+    {
+      "question_id": "p1-007",
+      "number": 7,
+      "cluster": "Network Security",
+      "sub_topic": "Network Architecture & Perimeter",
+      "question_text": "Is a next-generation firewall (NGFW) in use?",
+      "answer_format": "yes_no_with_detail",
+      "response": "",
+      "detail": ""
+    },
+    {
+      "question_id": "p1-008",
+      "number": 8,
+      "cluster": "Network Security",
+      "sub_topic": "Network Segmentation",
+      "question_text": "Is your network divided into separate zones to limit what systems can communicate with each other?",
+      "answer_format": "yes_no_partial",
+      "response": "",
+      "detail": ""
+    },
+    {
+      "question_id": "p1-009",
+      "number": 9,
+      "cluster": "Network Security",
+      "sub_topic": "Remote Access",
+      "question_text": "Is a VPN or Zero Trust Network Access (ZTNA) solution in use for remote access?",
+      "answer_format": "yes_no_with_detail",
+      "response": "",
+      "detail": ""
+    },
+    {
+      "question_id": "p1-010",
+      "number": 10,
+      "cluster": "Network Security",
+      "sub_topic": "Wireless & Physical Network",
+      "question_text": "Is the corporate wireless network separate from guest and IoT networks?",
+      "answer_format": "yes_no_partial",
+      "response": "",
+      "detail": ""
+    },
+    {
+      "question_id": "p1-011",
+      "number": 11,
+      "cluster": "Network Security",
+      "sub_topic": "Network Monitoring & Threat Detection",
+      "question_text": "Is a DNS filtering or web gateway tool in use to block malicious sites?",
+      "answer_format": "yes_no_with_detail",
+      "response": "",
+      "detail": ""
+    },
+    {
+      "question_id": "p1-012",
+      "number": 12,
+      "cluster": "Network Security",
+      "sub_topic": "Network Monitoring & Threat Detection",
+      "question_text": "Is there a tool in place to monitor network traffic for suspicious activity?",
+      "answer_format": "yes_no_with_detail",
+      "response": "",
+      "detail": ""
+    },
+    {
+      "question_id": "p1-013",
+      "number": 13,
+      "cluster": "Hosting & Cloud Security",
+      "sub_topic": "Cloud Adoption & Architecture",
+      "question_text": "What cloud providers are in use?",
+      "answer_format": "multi_select_or_text",
+      "response": "",
+      "detail": ""
+    },
+    {
+      "question_id": "p1-014",
+      "number": 14,
+      "cluster": "Hosting & Cloud Security",
+      "sub_topic": "Cloud Adoption & Architecture",
+      "question_text": "Is any data hosted outside of the primary cloud? If so, is it stored on a local server or private cloud?",
+      "answer_format": "yes_no_with_detail",
+      "response": "",
+      "detail": ""
+    },
+    {
+      "question_id": "p1-015",
+      "number": 15,
+      "cluster": "M365 & Email Security",
+      "sub_topic": "M365 Configuration & Governance",
+      "question_text": "Is Microsoft 365 in use?",
+      "answer_format": "yes_no",
+      "response": "",
+      "detail": ""
+    },
+    {
+      "question_id": "p1-016",
+      "number": 16,
+      "cluster": "M365 & Email Security",
+      "sub_topic": "Email Security",
+      "question_text": "Is email security filtering in place beyond native M365 controls?",
+      "answer_format": "yes_no_with_detail",
+      "response": "",
+      "detail": ""
+    },
+    {
+      "question_id": "p1-017",
+      "number": 17,
+      "cluster": "Endpoint Security",
+      "sub_topic": "Endpoint Protection",
+      "question_text": "Is SentinelOne or another Endpoint Detection and Response (EDR) solution deployed?",
+      "answer_format": "yes_no_with_detail",
+      "response": "",
+      "detail": ""
+    },
+    {
+      "question_id": "p1-018",
+      "number": 18,
+      "cluster": "Endpoint Security",
+      "sub_topic": "Device Management",
+      "question_text": "Is Tanium, Tenable and/or another formal vulnerability and patch management tool in place?",
+      "answer_format": "yes_no_partial_with_detail",
+      "response": "",
+      "detail": ""
+    },
+    {
+      "question_id": "p1-019",
+      "number": 19,
+      "cluster": "Data & Storage Security",
+      "sub_topic": "Data Classification & Governance",
+      "question_text": "Has sensitive data and crown jewels been identified and documented?",
+      "answer_format": "yes_no_partial",
+      "response": "",
+      "detail": ""
+    },
+    {
+      "question_id": "p1-020",
+      "number": 20,
+      "cluster": "Data & Storage Security",
+      "sub_topic": "Data Classification & Governance",
+      "question_text": "Is sensitive data encrypted at rest and in transit?",
+      "answer_format": "yes_no_partial",
+      "response": "",
+      "detail": ""
+    },
+    {
+      "question_id": "p1-021",
+      "number": 21,
+      "cluster": "Data & Storage Security",
+      "sub_topic": "Data Classification & Governance",
+      "question_text": "Is a Data Loss Prevention (DLP) solution in use?",
+      "answer_format": "yes_no_with_detail",
+      "response": "",
+      "detail": ""
+    },
+    {
+      "question_id": "p1-022",
+      "number": 22,
+      "cluster": "Defense & Response",
+      "sub_topic": "Log Management",
+      "question_text": "Are logs ingested into the Global SOC?",
+      "answer_format": "yes_no_partial",
+      "response": "",
+      "detail": ""
+    },
+    {
+      "question_id": "p1-023",
+      "number": 23,
+      "cluster": "Defense & Response",
+      "sub_topic": "Incident Response",
+      "question_text": "Is there a documented Incident Response plan?",
+      "answer_format": "yes_no",
+      "response": "",
+      "detail": ""
+    },
+    {
+      "question_id": "p1-024",
+      "number": 24,
+      "cluster": "Defense & Response",
+      "sub_topic": "Incident Response",
+      "question_text": "Has a security incident or data breach occurred in the past 24 months?",
+      "answer_format": "yes_no_prefer_not_to_say_with_detail",
+      "response": "",
+      "detail": ""
+    },
+    {
+      "question_id": "p1-025",
+      "number": 25,
+      "cluster": "Application Inventory & Security",
+      "sub_topic": "Application Inventory",
+      "question_text": "Do you maintain a list of all applications in use across the organization?",
+      "answer_format": "yes_no_partial",
+      "response": "",
+      "detail": ""
+    },
+    {
+      "question_id": "p1-026",
+      "number": 26,
+      "cluster": "Application Inventory & Security",
+      "sub_topic": "Application Security",
+      "question_text": "Is application security testing (SAST/DAST) performed as part of the development lifecycle?",
+      "answer_format": "yes_no_with_detail",
+      "response": "",
+      "detail": ""
+    },
+    {
+      "question_id": "p1-027",
+      "number": 27,
+      "cluster": "AI Security",
+      "sub_topic": "AI Usage & Governance",
+      "question_text": "Is AI or generative AI tooling in use across the organization?",
+      "answer_format": "yes_no_with_detail",
+      "response": "",
+      "detail": ""
+    },
+    {
+      "question_id": "p1-028",
+      "number": 28,
+      "cluster": "Third Party & Vendor Risk",
+      "sub_topic": "TPRM Program",
+      "question_text": "Do you maintain and update an inventory of third parties?",
+      "answer_format": "yes_no_partial",
+      "response": "",
+      "detail": ""
+    },
+    {
+      "question_id": "p1-029",
+      "number": 29,
+      "cluster": "General",
+      "sub_topic": "Known Gaps",
+      "question_text": "Are there known gaps or active security initiatives underway that we should be aware of before the sessions?",
+      "answer_format": "free_text",
+      "response": "",
+      "detail": ""
+    }
+  ],
+  "answers": [
+    {
+      "question_id": "4b6c10b-ee9c-43e4-9f9d-3b5c12f6e2a2",
+      "question_text": "How frequently are user account audits performed?",
+      "question_type": "free_text",
+      "response": "User account audits are performed twice per year for critical systems. Some business applications are reviewed annually, depending on system ownership and risk level.",
+      "note": ""
+    },
+    {
+      "question_id": "1a2b10b-ee9c-43e4-9f9d-3b5c12f6e2a3",
+      "question_text": "What identity proofing procedure is used?",
+      "question_type": "free_text",
+      "response": "New employees provide government-issued identification and employment documentation during onboarding. Identity verification is performed by HR before account creation, although the process is primarily manual.",
+      "note": ""
+    },
+    {
+      "question_id": "3c4d10b-ee9c-43e4-9f9d-3b5c12f6e2a4",
+      "question_text": "How are personnel trained on cybersecurity risks?",
+      "question_type": "free_text",
+      "response": "Employees receive cybersecurity awareness training during onboarding and annual refresher training. Periodic security awareness emails and phishing simulations are conducted for selected departments.",
+      "note": ""
+    },
+    {
+      "question_id": "5e6f10b-ee9c-43e4-9f9d-3b5c12f6e2a5",
+      "question_text": "What data-at-rest protection measures are in place?",
+      "question_type": "free_text",
+      "response": "Full-disk encryption is enabled on most corporate laptops using BitLocker. Sensitive databases use encryption features provided by the database platform, although encryption is not consistently implemented across all legacy systems.",
+      "note": ""
+    },
+    {
+      "question_id": "7g8h10b-ee9c-43e4-9f9d-3b5c12f6e2a6",
+      "question_text": "How is data-in-transit protected?",
+      "question_type": "free_text",
+      "response": "Data transmitted over public networks is protected using HTTPS with TLS 1.2 or higher. VPN connections are used for remote access, but some older internal systems still support legacy encryption protocols.",
+      "note": ""
+    },
+    {
+      "question_id": "9i0j10b-ee9c-43e4-9f9d-3b5c12f6e2a7",
+      "question_text": "What network segmentation is in place?",
+      "question_type": "free_text",
+      "response": "The network is segmented into separate VLANs for users, servers, and management systems. Firewall rules restrict communication between major network zones, although segmentation is not implemented consistently across all environments.",
+      "note": ""
+    },
+    {
+      "question_id": "2k3l10b-ee9c-43e4-9f9d-3b5c12f6e2a8",
+      "question_text": "How often are access logs reviewed?",
+      "question_type": "scale_1_5",
+      "response": "3",
+      "note": "Access logs are reviewed monthly for critical systems and during security investigations. Automated monitoring exists for some systems but is not organization-wide."
+    },
+    {
+      "question_id": "6m5n10b-ee9c-43e4-9f9d-3b5c12f6e2a9",
+      "question_text": "What configuration management practices are used?",
+      "question_type": "free_text",
+      "response": "Standard baseline configurations are documented for servers and workstations. Configuration changes follow a change management process, although compliance verification is performed periodically rather than continuously.",
+      "note": ""
+    },
+    {
+      "question_id": "8p7q10b-ee9c-43e4-9f9d-3b5c12f6e2b0",
+      "question_text": "How are changes to baseline configurations tracked?",
+      "question_type": "free_text",
+      "response": "Configuration changes are documented through change requests and ticketing systems. Approved changes are recorded, but automated configuration drift monitoring is only implemented for selected systems.",
+      "note": ""
+    },
+    {
+      "question_id": "0r9s10b-ee9c-43e4-9f9d-3b5c12f6e2b1",
+      "question_text": "What is the primary method of authentication?",
+      "question_type": "multi_choice",
+      "response": "mfa",
+      "note": ""
+    },
+    {
+      "question_id": "4b6b6f6d-4c4e-4f4f-4d4d-454f4f4f",
+      "question_text": "How frequently are access rights reviewed?",
+      "question_type": "free_text",
+      "response": "Access rights are reviewed semi-annually by department managers and the IT team. Reviews are conducted for critical systems, but some lower-risk applications are reviewed less consistently.",
+      "note": ""
+    },
+    {
+      "question_id": "2c2c2c2c-2d2d-2e2e-2f2f-30303030",
+      "question_text": "What process triggers immediate credential revocation?",
+      "question_type": "free_text",
+      "response": "Access rights are reviewed semi-annually by department managers and the IT team. Reviews are conducted for critical systems, but some lower-risk applications are reviewed less consistently.",
+      "note": ""
+    },
+    {
+      "question_id": "6a6a6a6a-6b6b-6c6c-6d6d-6e6e6e6e",
+      "question_text": "Are all externally-exposed applications using MFA?",
+      "question_type": "yes_no",
+      "response": "partial",
+      "note": "MFA is enabled for VPN access, email, and major cloud applications. However, a few legacy externally accessible applications do not currently support MFA."
+    },
+    {
+      "question_id": "1a1a1a1a-1b1b-1c1c-1d1d-1e1e1e1e",
+      "question_text": "How is role-based access control defined and maintained?",
+      "question_type": "free_text",
+      "response": "RBAC roles are defined based on job functions and department requirements. Access roles are documented for major systems, but role reviews and updates are not always performed after organizational changes.",
+      "note": ""
+    },
+    {
+      "question_id": "8c8c8c8c-8d8d-8e8e-8f8f-90909090",
+      "question_text": "What is the process for granting access to new hires?",
+      "question_type": "free_text",
+      "response": "Managers submit access requests during onboarding. IT provisions accounts based on approved requests and standard role templates. Additional access requires separate approval from system owners.",
+      "note": ""
+    },
+    {
+      "question_id": "3f3f3f3f-3g3g-3h3h-3i3i-3j3j3j3j",
+      "question_text": "Is access control centralized through a directory service?",
+      "question_type": "yes_no",
+      "response": "partial",
+      "note": "Most enterprise systems are integrated with Microsoft Entra ID (Azure AD), but several legacy applications maintain separate local user accounts."
+    },
+    {
+      "question_id": "9i9i9i9i-9j9j-9k9k-9l9l-9m9m9m9m",
+      "question_text": "How often is the inventory of authentication and authorization systems reviewed?",
+      "question_type": "scale_1_5",
+      "response": "3",
+      "note": "The inventory is reviewed annually or when significant infrastructure changes occur. Reviews are documented but not always comprehensive across all systems."
+    },
+    {
+      "question_id": "7d7d7d7d-7e7e-7f7f-7g7g-7h7h7h7h",
+      "question_text": "What is the process for revoking access upon termination?",
+      "question_type": "free_text",
+      "response": "HR notifies IT of employee departures. User accounts are disabled, VPN access is removed, and access to critical applications is revoked. Removal from some non-integrated systems may be completed manually over the following days",
+      "note": ""
+    },
+    {
+      "question_id": "5e5e5e5e-5f5f-5g5g-5h5h-5i5i5i5i",
+      "question_text": "How is MFA enforced for administrative access?",
+      "question_type": "multi_choice",
+      "response": "through_a_directory_service",
+      "note": ""
+    },
+    {
+      "question_id": "0a0a0a0a-0b0b-0c0c-0d0d-0e0e0e0e",
+      "question_text": "Is there a defined process for granting access to enterprise assets?",
+      "question_type": "yes_no",
+      "response": "yes",
+      "note": "A documented access request and approval process exists for enterprise assets. Access requests require manager approval and are provisioned by IT according to role requirements."
+    }
+  ],
+  "answered_at": null,
+  "auditor": "web-auditor",
+  "scoring": {
+    "control_score_percent": 78.95,
+    "overall_risk_rating": "Medium",
+    "maturity_level": "IG2",
+    "summary": "Deterministic score computed from submitted answers.",
+    "strengths": [],
+    "gaps": [
+      "Majority of yes/no controls not confirmed as implemented (2/3)."
+    ],
+    "question_reviews": [
+      {
+        "question_id": "4b6c10b-ee9c-43e4-9f9d-3b5c12f6e2a2",
+        "question_text": "How frequently are user account audits performed?",
+        "question_type": "free_text",
+        "control_id": "",
+        "domain_id": "PR",
+        "response": "User account audits are performed twice per year for critical systems. Some business applications are reviewed annually, depending on system ownership and risk level.",
+        "verdict": "partial",
+        "score": 90.0,
+        "comment": "Free-text answer scored by word count (24 words \u2192 90%).",
+        "evidence_alignment": "partial",
+        "weight": 4
+      },
+      {
+        "question_id": "1a2b10b-ee9c-43e4-9f9d-3b5c12f6e2a3",
+        "question_text": "What identity proofing procedure is used?",
+        "question_type": "free_text",
+        "control_id": "",
+        "domain_id": "PR",
+        "response": "New employees provide government-issued identification and employment documentation during onboarding. Identity verification is performed by HR before account creation, although the process is primarily manual.",
+        "verdict": "partial",
+        "score": 92.5,
+        "comment": "Free-text answer scored by word count (25 words \u2192 92%).",
+        "evidence_alignment": "partial",
+        "weight": 5
+      },
+      {
+        "question_id": "3c4d10b-ee9c-43e4-9f9d-3b5c12f6e2a4",
+        "question_text": "How are personnel trained on cybersecurity risks?",
+        "question_type": "free_text",
+        "control_id": "",
+        "domain_id": "PR",
+        "response": "Employees receive cybersecurity awareness training during onboarding and annual refresher training. Periodic security awareness emails and phishing simulations are conducted for selected departments.",
+        "verdict": "partial",
+        "score": 87.5,
+        "comment": "Free-text answer scored by word count (23 words \u2192 88%).",
+        "evidence_alignment": "partial",
+        "weight": 3
+      },
+      {
+        "question_id": "5e6f10b-ee9c-43e4-9f9d-3b5c12f6e2a5",
+        "question_text": "What data-at-rest protection measures are in place?",
+        "question_type": "free_text",
+        "control_id": "",
+        "domain_id": "PR",
+        "response": "Full-disk encryption is enabled on most corporate laptops using BitLocker. Sensitive databases use encryption features provided by the database platform, although encryption is not consistently implemented across all legacy systems.",
+        "verdict": "partial",
+        "score": 100.0,
+        "comment": "Free-text answer scored by word count (30 words \u2192 100%).",
+        "evidence_alignment": "partial",
+        "weight": 5
+      },
+      {
+        "question_id": "7g8h10b-ee9c-43e4-9f9d-3b5c12f6e2a6",
+        "question_text": "How is data-in-transit protected?",
+        "question_type": "free_text",
+        "control_id": "",
+        "domain_id": "PR",
+        "response": "Data transmitted over public networks is protected using HTTPS with TLS 1.2 or higher. VPN connections are used for remote access, but some older internal systems still support legacy encryption protocols.",
+        "verdict": "partial",
+        "score": 100.0,
+        "comment": "Free-text answer scored by word count (31 words \u2192 100%).",
+        "evidence_alignment": "partial",
+        "weight": 5
+      },
+      {
+        "question_id": "9i0j10b-ee9c-43e4-9f9d-3b5c12f6e2a7",
+        "question_text": "What network segmentation is in place?",
+        "question_type": "free_text",
+        "control_id": "",
+        "domain_id": "PR",
+        "response": "The network is segmented into separate VLANs for users, servers, and management systems. Firewall rules restrict communication between major network zones, although segmentation is not implemented consistently across all environments.",
+        "verdict": "partial",
+        "score": 100.0,
+        "comment": "Free-text answer scored by word count (30 words \u2192 100%).",
+        "evidence_alignment": "partial",
+        "weight": 4
+      },
+      {
+        "question_id": "2k3l10b-ee9c-43e4-9f9d-3b5c12f6e2a8",
+        "question_text": "How often are access logs reviewed?",
+        "question_type": "scale_1_5",
+        "control_id": "",
+        "domain_id": "PR",
+        "response": "3",
+        "verdict": "partial",
+        "score": 50.0,
+        "comment": "Scale answer 3/5 \u2192 50%.",
+        "evidence_alignment": "partial",
+        "weight": 3
+      },
+      {
+        "question_id": "6m5n10b-ee9c-43e4-9f9d-3b5c12f6e2a9",
+        "question_text": "What configuration management practices are used?",
+        "question_type": "free_text",
+        "control_id": "",
+        "domain_id": "PR",
+        "response": "Standard baseline configurations are documented for servers and workstations. Configuration changes follow a change management process, although compliance verification is performed periodically rather than continuously.",
+        "verdict": "partial",
+        "score": 92.5,
+        "comment": "Free-text answer scored by word count (25 words \u2192 92%).",
+        "evidence_alignment": "partial",
+        "weight": 4
+      },
+      {
+        "question_id": "8p7q10b-ee9c-43e4-9f9d-3b5c12f6e2b0",
+        "question_text": "How are changes to baseline configurations tracked?",
+        "question_type": "free_text",
+        "control_id": "",
+        "domain_id": "PR",
+        "response": "Configuration changes are documented through change requests and ticketing systems. Approved changes are recorded, but automated configuration drift monitoring is only implemented for selected systems.",
+        "verdict": "partial",
+        "score": 92.5,
+        "comment": "Free-text answer scored by word count (25 words \u2192 92%).",
+        "evidence_alignment": "partial",
+        "weight": 3
+      },
+      {
+        "question_id": "0r9s10b-ee9c-43e4-9f9d-3b5c12f6e2b1",
+        "question_text": "What is the primary method of authentication?",
+        "question_type": "multi_choice",
+        "control_id": "",
+        "domain_id": "PR",
+        "response": "mfa",
+        "verdict": "partial",
+        "score": 70.0,
+        "comment": "Multiple-choice answer scored 70% for any selection, 0% if unanswered.",
+        "evidence_alignment": "partial",
+        "weight": 5
+      },
+      {
+        "question_id": "4b6b6f6d-4c4e-4f4f-4d4d-454f4f4f",
+        "question_text": "How frequently are access rights reviewed?",
+        "question_type": "free_text",
+        "control_id": "",
+        "domain_id": "6",
+        "response": "Access rights are reviewed semi-annually by department managers and the IT team. Reviews are conducted for critical systems, but some lower-risk applications are reviewed less consistently.",
+        "verdict": "partial",
+        "score": 95.0,
+        "comment": "Free-text answer scored by word count (26 words \u2192 95%).",
+        "evidence_alignment": "partial",
+        "weight": 4
+      },
+      {
+        "question_id": "2c2c2c2c-2d2d-2e2e-2f2f-30303030",
+        "question_text": "What process triggers immediate credential revocation?",
+        "question_type": "free_text",
+        "control_id": "",
+        "domain_id": "6",
+        "response": "Access rights are reviewed semi-annually by department managers and the IT team. Reviews are conducted for critical systems, but some lower-risk applications are reviewed less consistently.",
+        "verdict": "partial",
+        "score": 95.0,
+        "comment": "Free-text answer scored by word count (26 words \u2192 95%).",
+        "evidence_alignment": "partial",
+        "weight": 5
+      },
+      {
+        "question_id": "6a6a6a6a-6b6b-6c6c-6d6d-6e6e6e6e",
+        "question_text": "Are all externally-exposed applications using MFA?",
+        "question_type": "yes_no",
+        "control_id": "",
+        "domain_id": "6",
+        "response": "partial",
+        "verdict": "weak",
+        "score": 0.0,
+        "comment": "Yes/No answer scored: Yes=100, No=0.",
+        "evidence_alignment": "none",
+        "weight": 3
+      },
+      {
+        "question_id": "1a1a1a1a-1b1b-1c1c-1d1d-1e1e1e1e",
+        "question_text": "How is role-based access control defined and maintained?",
+        "question_type": "free_text",
+        "control_id": "",
+        "domain_id": "6",
+        "response": "RBAC roles are defined based on job functions and department requirements. Access roles are documented for major systems, but role reviews and updates are not always performed after organizational changes.",
+        "verdict": "partial",
+        "score": 100.0,
+        "comment": "Free-text answer scored by word count (30 words \u2192 100%).",
+        "evidence_alignment": "partial",
+        "weight": 4
+      },
+      {
+        "question_id": "8c8c8c8c-8d8d-8e8e-8f8f-90909090",
+        "question_text": "What is the process for granting access to new hires?",
+        "question_type": "free_text",
+        "control_id": "",
+        "domain_id": "6",
+        "response": "Managers submit access requests during onboarding. IT provisions accounts based on approved requests and standard role templates. Additional access requires separate approval from system owners.",
+        "verdict": "partial",
+        "score": 92.5,
+        "comment": "Free-text answer scored by word count (25 words \u2192 92%).",
+        "evidence_alignment": "partial",
+        "weight": 3
+      },
+      {
+        "question_id": "3f3f3f3f-3g3g-3h3h-3i3i-3j3j3j3j",
+        "question_text": "Is access control centralized through a directory service?",
+        "question_type": "yes_no",
+        "control_id": "",
+        "domain_id": "6",
+        "response": "partial",
+        "verdict": "weak",
+        "score": 0.0,
+        "comment": "Yes/No answer scored: Yes=100, No=0.",
+        "evidence_alignment": "none",
+        "weight": 4
+      },
+      {
+        "question_id": "9i9i9i9i-9j9j-9k9k-9l9l-9m9m9m9m",
+        "question_text": "How often is the inventory of authentication and authorization systems reviewed?",
+        "question_type": "scale_1_5",
+        "control_id": "",
+        "domain_id": "6",
+        "response": "3",
+        "verdict": "partial",
+        "score": 50.0,
+        "comment": "Scale answer 3/5 \u2192 50%.",
+        "evidence_alignment": "partial",
+        "weight": 3
+      },
+      {
+        "question_id": "7d7d7d7d-7e7e-7f7f-7g7g-7h7h7h7h",
+        "question_text": "What is the process for revoking access upon termination?",
+        "question_type": "free_text",
+        "control_id": "",
+        "domain_id": "6",
+        "response": "HR notifies IT of employee departures. User accounts are disabled, VPN access is removed, and access to critical applications is revoked. Removal from some non-integrated systems may be completed manually over the following days",
+        "verdict": "partial",
+        "score": 100.0,
+        "comment": "Free-text answer scored by word count (34 words \u2192 100%).",
+        "evidence_alignment": "partial",
+        "weight": 5
+      },
+      {
+        "question_id": "5e5e5e5e-5f5f-5g5g-5h5h-5i5i5i5i",
+        "question_text": "How is MFA enforced for administrative access?",
+        "question_type": "multi_choice",
+        "control_id": "",
+        "domain_id": "6",
+        "response": "through_a_directory_service",
+        "verdict": "partial",
+        "score": 70.0,
+        "comment": "Multiple-choice answer scored 70% for any selection, 0% if unanswered.",
+        "evidence_alignment": "partial",
+        "weight": 4
+      },
+      {
+        "question_id": "0a0a0a0a-0b0b-0c0c-0d0d-0e0e0e0e",
+        "question_text": "Is there a defined process for granting access to enterprise assets?",
+        "question_type": "yes_no",
+        "control_id": "",
+        "domain_id": "6",
+        "response": "yes",
+        "verdict": "strong",
+        "score": 100.0,
+        "comment": "Yes/No answer scored: Yes=100, No=0.",
+        "evidence_alignment": "direct",
+        "weight": 3
+      }
+    ],
+    "scoring_mode": "fallback-deterministic",
+    "framework_key": "cis-controls-v8-1-2"
+  },
+  "scoring_mode": "fallback-deterministic",
+  "control_score_percent": 78.95,
+  "overall_risk_rating": "Medium",
+  "maturity_level": "IG2"
+}

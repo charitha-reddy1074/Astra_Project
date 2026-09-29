@@ -1,0 +1,783 @@
+Student Academic Management System
+AI-Powered NCERT RAG Academic Platform
+Detailed Technical & Functional Documentation
+1. Introduction
+The Student Academic Management System is an AI-powered educational platform designed to modernize
+academic learning and school management using:
+RAG (Retrieval-Augmented Generation)
+AI-generated quizzes
+AI-generated flashcards
+Gamified learning
+Academic analytics
+Multi-role school management
+The platform primarily uses NCERT textbooks and custom educational content uploaded by schools to
+create intelligent learning experiences for students.
+The system transforms static educational materials into:
+Interactive quizzes
+Flashcards
+Performance analytics
+Personalized learning experiences
+Gamified learning journeys
+2. Main Objective of the Project
+The main goal of the project is to:
+Digitize academic management
+Reduce teacher workload using AI
+Improve student engagement
+Provide personalized learning
+Automatically generate educational content
+Track student progress continuously
+Create a scalable academic ecosystem for schools
+• 
+• 
+• 
+• 
+• 
+• 
+• 
+• 
+• 
+• 
+• 
+• 
+• 
+• 
+• 
+• 
+• 
+• 
+1
+3. Problems Solved by the System
+Traditional school systems face several issues:
+Existing Problem Solution in This Project
+Manual quiz preparationAI-generated quizzes
+Static learning material Interactive flashcards & quizzes
+Low student engagementGamified learning system
+Difficult progress trackingAnalytics dashboards
+Large syllabus managementAI-powered retrieval system
+Repetitive teacher workAutomated educational content generation
+No personalized learningStudent-wise performance recommendations
+4. User Personas
+4.1 Super Admin (Platform Provider)
+Who Are They?
+The organization/service provider managing the entire platform.
+Responsibilities
+Manage all schools
+Monitor platform activity
+Manage subscriptions
+View analytics
+Monitor AI usage
+Configure platform settings
+Main Goal
+Ensure the entire platform works efficiently across multiple schools.
+• 
+• 
+• 
+• 
+• 
+• 
+2
+4.2 School Admin
+Who Are They?
+School-level administrators.
+Responsibilities
+Add teachers
+Add students
+Manage classes and subjects
+Assign teachers to classes
+Monitor school performance
+Main Goal
+Digitally manage the school’s academic structure and provide centralized learning resources for students.
+School-Level Global Learning System
+The platform includes a centralized school-level learning repository.
+School admins can publish:
+Global quizzes
+Global flashcards
+Global practice materials
+These resources are accessible to all students within the school for self-learning and practice.
+Global Learning Features
+Global Flashcards
+Students can:
+Access school-wide flashcards
+Practice by subject/chapter
+Revise concepts independently
+Bookmark important flashcards
+• 
+• 
+• 
+• 
+• 
+• 
+• 
+• 
+• 
+• 
+• 
+• 
+3
+Global Quizzes
+Students can:
+Attend self-practice quizzes
+Practice unlimited attempts (configurable)
+View instant reports
+Improve weak subjects
+Difference Between Global & Personalized
+Learning
+Type Created By Accessible To Purpose
+Global Flashcards/
+Quizzes
+School Admin /
+School
+Entire school
+students Self-learning & practice
+Personalized
+Assignments Teacher Specific class/
+students
+Classroom learning &
+evaluation
+4.3 Teacher
+Who Are They?
+Subject teachers who manage learning activities.
+Responsibilities
+Upload study materials
+Generate personalized quizzes
+Generate personalized flashcards
+Assign assessments
+Monitor student progress
+Analyze student performance
+Main Goal
+Teach efficiently with AI assistance.
+• 
+• 
+• 
+• 
+• 
+• 
+• 
+• 
+• 
+• 
+4
+4.4 Student
+Who Are They?
+Learners using the platform.
+Responsibilities
+Attend quizzes
+Learn using flashcards
+Complete assignments
+Track performance
+Participate in leaderboards
+Main Goal
+Learn interactively and improve academic performance.
+5. System Modules Overview
+The platform consists of multiple interconnected modules.
+Module Purpose
+Authentication Module Secure login & RBAC
+School Management ModuleManage schools/classes/users
+File Ingestion Module Upload and process documents
+RAG Pipeline Retrieve educational knowledge
+Flashcard Generation ModuleAI-generated flashcards
+Quiz Generation ModuleAI-generated quizzes
+Assignment Module Quiz assignment workflows
+Analytics Module Performance tracking
+Gamification Module XP , badges, streaks
+Dashboard Module User-specific dashboards
+• 
+• 
+• 
+• 
+• 
+5
+6. High-Level System Architecture
+Frontend (Next.js)
+       ↓
+Backend API Layer (FastAPI)
+       ↓
+Business Logic Layer
+       ↓
+AI Services Layer
+       ↓
+RAG Pipeline
+       ↓
+Vector Database (ChromaDB)
+       ↓
+PostgreSQL Database
+       ↓
+Cloud/File Storage
+7. Technology Stack
+7.1 Frontend Technologies
+Technology Purpose
+Next.js Frontend framework
+React.js UI development
+Tailwind CSS Styling
+ShadCN UI UI components
+Framer MotionAnimations
+Recharts Analytics charts
+7.2 Backend Technologies
+Technology Purpose
+FastAPI Backend APIs
+6
+Technology Purpose
+Python AI & backend logic
+SQLAlchemyORM
+JWT Authentication
+Pydantic Data validation
+7.3 Database Technologies
+TechnologyPurpose
+PostgreSQLMain relational database
+ChromaDB Vector database
+7.4 AI Technologies
+Technology Purpose
+LangChain RAG orchestration
+LlamaIndex Document indexing
+Qwen/Llama/MistralLLMs
+BGE Embeddings Embedding generation
+7.5 Cloud & Storage
+TechnologyPurpose
+AWS S3 File storage
+Docker Containerization
+Nginx Reverse proxy
+Redis Caching/session management
+7
+8. Authentication & Authorization Workflow
+Purpose
+Securely authenticate users and provide role-based access.
+Login Workflow
+User enters email/password
+        ↓
+Backend validates credentials
+        ↓
+JWT token generated
+        ↓
+Role assigned
+        ↓
+User redirected to dashboard
+Roles
+Role Access Scope
+Super AdminEntire platform
+School AdminSchool-specific data
+Teacher Assigned classes/students
+Student Personal academic data
+9. School Management Workflow
+Workflow
+School Admin creates:
+- Classes
+- Sections
+8
+- Subjects
+        ↓
+Adds teachers
+        ↓
+Adds students
+        ↓
+Maps teachers to subjects/classes
+        ↓
+Maps students to sections
+10. Academic Content Ingestion Module
+Purpose
+Convert educational documents into AI-searchable knowledge.
+Supported File Types
+PDF
+DOCX
+TXT
+Upload Workflow
+Teacher uploads document
+        ↓
+File parser extracts text
+        ↓
+Text cleaning performed
+        ↓
+Content chunked
+        ↓
+Embeddings generated
+        ↓
+Embeddings stored in vector DB
+        ↓
+Metadata stored in PostgreSQL
+• 
+• 
+• 
+9
+11. Document Processing Pipeline
+Step 1 — File Upload
+The teacher uploads:
+NCERT textbooks
+Notes
+Worksheets
+Custom material
+Step 2 — Text Extraction
+Libraries used:
+File Type Library
+PDF PyMuPDF/pdfplumber
+DOCX python-docx
+TXT Native parser
+Step 3 — Text Cleaning
+Processing includes:
+Removing special characters
+Removing unwanted spaces
+Header/footer removal
+OCR cleanup
+Step 4 — Chunking
+Why Chunking?
+Large documents cannot be directly sent to LLMs.
+• 
+• 
+• 
+• 
+• 
+• 
+• 
+• 
+10
+So documents are divided into smaller meaningful chunks.
+Recommended Chunk Strategy
+ParameterValue
+Chunk Size300–500 tokens
+Overlap 50–100 tokens
+Strategy Chapter/topic-wise
+Step 5 — Embedding Generation
+Embeddings convert text into vectors.
+Example:
+"Pressure is force per unit area"
+↓
+[0.234, 0.893, 0.112, ...]
+Step 6 — Vector Database Storage
+Stored Data:
+Embedding vectors
+Original chunks
+Metadata
+12. RAG Pipeline Architecture
+What is RAG?
+RAG stands for Retrieval-Augmented Generation.
+It helps AI generate accurate educational content using uploaded textbooks.
+• 
+• 
+• 
+11
+RAG Workflow
+User requests quiz generation
+        ↓
+Relevant chunks retrieved from vector DB
+        ↓
+Chunks added as context
+        ↓
+LLM receives context
+        ↓
+LLM generates accurate educational content
+Why RAG?
+Without RAG:
+AI hallucinates
+Generates generic answers
+With RAG:
+AI uses actual textbook content
+Generates syllabus-based output
+Improves accuracy
+13. Flashcard Generation Workflow
+Workflow
+Teacher selects:
+- Subject
+- Chapter
+- Difficulty
+        ↓
+Backend retrieves relevant chunks
+        ↓
+LLM generates flashcards
+        ↓
+• 
+• 
+• 
+• 
+• 
+12
+Flashcards validated
+        ↓
+Stored in database
+Flashcard Types
+Concept flashcards
+Definition flashcards
+Formula flashcards
+Revision cards
+Flashcard Example
+Front Back
+What is pressure?Force applied per unit area
+14. Quiz Generation Workflow
+Workflow
+Teacher selects:
+- Subject
+- Chapter
+- Question count
+- Difficulty
+        ↓
+RAG retrieves educational chunks
+        ↓
+LLM generates questions
+        ↓
+Backend validates structure
+        ↓
+Quiz saved to database
+• 
+• 
+• 
+• 
+13
+Quiz Types
+MCQs
+True/False
+Fill in blanks
+Quiz Validation
+Validation checks:
+Correct answer existence
+Duplicate removal
+Option validation
+Formatting consistency
+15. Quiz Assignment Workflow
+Personalized Teacher Assignments
+Teachers can create and assign personalized academic content.
+These assignments are:
+Class-specific
+Section-specific
+Student-specific
+Workflow
+Teacher creates/generates quiz
+        ↓
+Teacher assigns quiz to class
+        ↓
+Sets duration and deadline
+        ↓
+Students receive notification
+        ↓
+Students attend quiz
+• 
+• 
+• 
+• 
+• 
+• 
+• 
+• 
+• 
+• 
+14
+16. Student Quiz Attempt Workflow
+Workflow
+Student opens assigned quiz
+        ↓
+Quiz timer starts
+        ↓
+Student answers questions
+        ↓
+Student submits quiz
+        ↓
+Auto evaluation performed
+        ↓
+Performance report generated
+17. Auto Evaluation System
+Features
+The backend automatically:
+Compares answers
+Calculates score
+Generates accuracy percentage
+Generates reports
+Example
+Correct AnswersScore
+8/10 80%
+• 
+• 
+• 
+• 
+15
+18. Gamification Module
+Purpose
+Increase student engagement and consistency.
+Components
+Feature Purpose
+XP System Reward learning
+Levels Learning progression
+Streaks Consistency tracking
+Badges Achievement system
+LeaderboardsCompetitive learning
+XP Workflow
+Student completes activity
+        ↓
+XP calculated
+        ↓
+XP added to profile
+        ↓
+Leaderboard updated
+        ↓
+Level recalculated
+Example XP Rules
+Activity XP
+Daily login 5
+Quiz completion20
+16
+Activity XP
+90% score 40
+Flashcard review10
+19. Student Dashboard Architecture
+Dashboard Sections
+Hero Section
+Student level
+XP
+Rank
+Streak
+Learning Section
+Pending teacher-assigned quizzes
+Global practice quizzes
+Global flashcards
+Continue learning
+Recent activities
+Analytics Section
+Subject performance
+Weekly progress
+Accuracy graph
+Leaderboard Section
+Rank
+Top students
+Quiz rankings
+• 
+• 
+• 
+• 
+• 
+• 
+• 
+• 
+• 
+• 
+• 
+• 
+• 
+• 
+• 
+17
+20. Teacher Dashboard
+Features
+Academic Controls
+Generate personalized quizzes
+Generate personalized flashcards
+Assign quizzes
+Assign flashcards
+Create remedial practice
+Analytics
+Student performance
+Weak topics
+Quiz completion rate
+Average class score
+21. School Admin Dashboard
+Features
+School Statistics
+Total students
+Total teachers
+Active quizzes
+Engagement rate
+Monitoring
+Academic performance
+Student activity
+Teacher activity
+• 
+• 
+• 
+• 
+• 
+• 
+• 
+• 
+• 
+• 
+• 
+• 
+• 
+• 
+• 
+• 
+18
+22. Database Design
+Main Tables
+Authentication
+users
+roles
+schools
+Academic Structure
+classes
+sections
+subjects
+teacher_mappings
+student_mappings
+AI Content
+uploaded_documents
+document_chunks
+flashcards
+quizzes
+quiz_questions
+Student Activities
+assignments
+quiz_attempts
+student_answers
+Gamification
+student_xp
+streaks
+badges
+leaderboard_entries
+• 
+• 
+• 
+• 
+• 
+• 
+• 
+• 
+• 
+• 
+• 
+• 
+• 
+• 
+• 
+• 
+• 
+• 
+• 
+• 
+19
+23. Backend API Architecture
+Authentication APIs
+Method Endpoint Purpose
+POST /login User login
+POST /register User registration
+POST /reset-passwordReset password
+Document APIs
+Method Endpoint
+POST /upload-document
+GET /documents
+Flashcard APIs
+Method Endpoint
+POST /generate-flashcards
+GET /flashcards
+Quiz APIs
+Method Endpoint
+POST /generate-quiz
+POST /assign-quiz
+GET /quiz/{id}
+20
+Student APIs
+Method Endpoint
+POST /submit-quiz
+GET /student-report
+GET /leaderboard
+24. Recommended Project Folder Structure
+backend/
+│
+├── app/
+│   ├── api/
+│   ├── auth/
+│   ├── models/
+│   ├── services/
+│   ├── rag/
+│   ├── embeddings/
+│   ├── quiz_generation/
+│   ├── flashcards/
+│   ├── analytics/
+│   ├── gamification/
+│   └── database/
+│
+frontend/
+│
+├── app/
+├── components/
+├── dashboard/
+├── teacher/
+├── student/
+├── admin/
+└── services/
+21
+25. Security Architecture
+Security Features
+JWT authentication
+Password hashing
+RBAC validation
+Secure APIs
+File validation
+School-wise data isolation
+Protected routes
+26. Scalability Considerations
+Future Scalability
+The architecture should support:
+Multiple schools
+Thousands of students
+Large document ingestion
+Horizontal backend scaling
+Cloud deployment
+27. Future Enhancements
+Phase 2 Features
+AI tutor chatbot
+Voice-based learning
+Multilingual support
+Adaptive learning engine
+Parent portal
+Real-time competitions
+AI-generated study plans
+Personalized recommendations
+• 
+• 
+• 
+• 
+• 
+• 
+• 
+• 
+• 
+• 
+• 
+• 
+• 
+• 
+• 
+• 
+• 
+• 
+• 
+• 
+22
+28. Complete End-to-End Workflow
+School Admin creates school structure
+        ↓
+Teachers upload NCERT/custom content
+        ↓
+System processes documents
+        ↓
+Chunks converted into embeddings
+        ↓
+Embeddings stored in vector DB
+        ↓
+Teacher generates flashcards/quizzes
+        ↓
+AI uses RAG for contextual generation
+        ↓
+Teacher assigns quizzes
+        ↓
+Students attend quizzes
+        ↓
+Auto evaluation performed
+        ↓
+XP/streaks updated
+        ↓
+Analytics dashboards updated
+29. Final Project Vision
+The Student Academic Management System is designed as a modern AI-powered academic ecosystem that
+combines:
+Academic management
+AI learning assistance
+RAG-based content generation
+Gamified learning
+Educational analytics
+Personalized learning experiences
+into one scalable platform for schools.
+The system reduces manual academic workload while improving student engagement and educational
+quality using artificial intelligence.
+• 
+• 
+• 
+• 
+• 
+• 
+23

@@ -1,0 +1,5 @@
+Asset ID	Asset Name	Owner	Environment	Last Scan
+SRV-001	DC01	IT Ops	Production	2026-06-07
+SRV-002	APP01	IT Ops	Production	2026-06-07
+WS-101	Finance-Laptop	Finance	User	2026-06-06
+VM-550	AWS-App	Cloud Team	Production	2026-06-07

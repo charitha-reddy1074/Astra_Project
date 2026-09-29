@@ -1,0 +1,5 @@
+Provider	Account / Subscription ID	Account Name	Region(s)	Environment	Workload Name	Workload Type	Owner (Team)	Owner (Email)	Criticality	Data Classification	Status	Notes
+AWS	123456789012	prod-aws-us	us-east-1, us-west-2	Production	E-Commerce Platform	EC2 / EKS	Platform Engineering	platform@mcd.com	High	Confidential	Active	Primary customer-facing app
+Azure	sub-0987abcd	azure-dev	eastus	Development	Dev/Test Env	Azure App Service	DevOps	devops@mcd.com	Low	Internal	Active	Non-prod workloads
+GCP	gcp-proj-321	analytics-gcp	us-central1	Production	Data Analytics	GKE / BigQuery	Data Engineering	data@mcd.com	High	Restricted	Active	BI and reporting pipeline
+AWS	234567890123	corp-aws-infra	eu-west-1	Corporate	Identity Services	EC2	IT Security	itsec@mcd.com	High	Confidential	Active	AD and SSO services

@@ -1,0 +1,28 @@
+Role Definition Document
+Identity & Access Management Program  |  IAM-POL-2026-002  |  Version 2.1
+
+1. Document Control
+
+2. Purpose & Scope
+
+This document defines all access roles within the enterprise identity management framework, including role descriptions, entitlements, assignment criteria, and review requirements. All roles must be formally assigned through the Access Granting Procedure (IAM-PROC-2026-003).
+Scope: All employees, contractors, service accounts, and privileged users accessing corporate systems, cloud platforms, and data assets.
+
+3. Role Definitions
+
+3.1 Standard User Roles
+
+3.2 Privileged Roles
+
+3.3 Service Account Roles
+
+4. Role Assignment Principles
+
+Least Privilege: Users are granted only the minimum access required for their job function
+Need to Know: Access to sensitive data requires documented business justification
+Separation of Duties: Conflicting roles (e.g. Finance Analyst + Finance Approver) may not be held by the same individual
+Role-Based Assignment: Access is granted to roles, not individuals, wherever technically feasible
+Privileged Access: All privileged roles require just-in-time access via Azure PIM and phishing-resistant MFA
+Service Accounts: Must be approved by a named human owner and reviewed monthly
+
+5. Prohibited Role Combinations (Segregation of Duties)

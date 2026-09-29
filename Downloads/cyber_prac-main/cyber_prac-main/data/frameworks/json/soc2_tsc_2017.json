@@ -1,0 +1,1950 @@
+{
+  "knowledge_base_document": {
+    "title": "AICPA SOC 2 Compliance Guide on AWS",
+    "publisher": "Amazon Web Services (AWS Security Assurance Services)",
+    "version_date": "July 2025 (initial version, July 21, 2025)",
+    "source_url": "https://d1.awsstatic.com/whitepapers/compliance/AICPA_SOC2_Compliance_Guide_on_AWS.pdf",
+    "hierarchy": "framework > domain > sub_domain > control > metadata",
+    "summary": {
+      "total_domains": 5,
+      "total_sub_domains": 20,
+      "total_controls": 61
+    }
+  },
+  "framework": {
+    "framework_id": "SOC2_TSC_2017",
+    "framework_name": "AICPA SOC 2 - Trust Services Criteria (TSC 2017)",
+    "issuing_body": "American Institute of Certified Public Accountants (AICPA)",
+    "based_on": "COSO Internal Control Framework",
+    "report_types": {
+      "Type 1": "Examines the design of controls at a point in time",
+      "Type 2": "Examines both the design and operating effectiveness of controls over a review period (for example, 6-12 months)"
+    },
+    "structure": {
+      "common_criteria": "CC1-CC9 (Security) apply to all SOC 2 audits",
+      "category_specific_criteria": [
+        "PI1 (Processing Integrity)",
+        "A1 (Availability)",
+        "C1 (Confidentiality)",
+        "P1-P8 (Privacy)"
+      ]
+    },
+    "shared_responsibility_note": "AWS is responsible for security OF the cloud (data centers, hardware, network infrastructure); customers are responsible for security IN the cloud (identity management, data encryption, logging, network controls). AWS SOC reports do not include Processing Integrity in scope.",
+    "domains": [
+      {
+        "domain_id": "SECURITY",
+        "domain_name": "Security (Common Criteria)",
+        "description": "Common criteria CC1-CC9 apply to all SOC 2 audits regardless of which Trust Services Categories are in scope.",
+        "criteria_range": "CC1-CC9",
+        "sub_domains": [
+          {
+            "sub_domain_id": "CC1",
+            "sub_domain_name": "Control Environment",
+            "description": "Establishes the foundation for internal control: commitment to integrity and ethical values, governance and oversight, structures and reporting lines, competence, and accountability. Governance, people management, policies and accountability are entirely owned by the customer; AWS provides tools that support enforcement, monitoring and auditing.",
+            "controls": [
+              {
+                "control_id": "CC1.1",
+                "control_objective": "The entity demonstrates a commitment to integrity and ethical values.",
+                "metadata": {
+                  "points_of_focus": [
+                    "Considers contractors and vendor employees in demonstrating its commitment"
+                  ],
+                  "aws_implementation_guidance": [
+                    "To demonstrate AWS commitment, obtain third-party attestation reports from AWS Artifact"
+                  ],
+                  "aws_services": [
+                    "AWS Artifact"
+                  ],
+                  "responsibility": "Customer",
+                  "source_page_section": "CC1 series"
+                }
+              },
+              {
+                "control_id": "CC1.2",
+                "control_objective": "The board of directors demonstrates independence from management and exercises oversight of the development and performance of internal control.",
+                "metadata": {
+                  "points_of_focus": [],
+                  "aws_implementation_guidance": [
+                    "No AWS specific implementation"
+                  ],
+                  "aws_services": [],
+                  "responsibility": "Customer",
+                  "source_page_section": "CC1 series"
+                }
+              },
+              {
+                "control_id": "CC1.3",
+                "control_objective": "Management establishes, with board oversight, structures, reporting lines, and appropriate authorities and responsibilities in the pursuit of objectives.",
+                "metadata": {
+                  "points_of_focus": [
+                    "Defines, assigns, and limits authorities and responsibilities"
+                  ],
+                  "aws_implementation_guidance": [
+                    "To address strict segregation of duties, implement IAM and AWS IAM Identity Center role-based access control (RBAC) and resource access controls"
+                  ],
+                  "aws_services": [
+                    "AWS IAM",
+                    "AWS IAM Identity Center"
+                  ],
+                  "responsibility": "Customer",
+                  "source_page_section": "CC1 series"
+                }
+              },
+              {
+                "control_id": "CC1.4",
+                "control_objective": "The entity demonstrates a commitment to attract, develop, and retain competent individuals in alignment with objectives.",
+                "metadata": {
+                  "points_of_focus": [
+                    "Provides training to maintain technical competencies"
+                  ],
+                  "aws_implementation_guidance": [
+                    "To assess individual technical competency, use the AWS Certification and Training program"
+                  ],
+                  "aws_services": [
+                    "AWS Certification and Training"
+                  ],
+                  "responsibility": "Customer",
+                  "source_page_section": "CC1 series"
+                }
+              },
+              {
+                "control_id": "CC1.5",
+                "control_objective": "The entity holds individuals accountable for their internal control responsibilities in the pursuit of objectives.",
+                "metadata": {
+                  "points_of_focus": [
+                    "Enforces accountability through structures, authorities, and responsibilities"
+                  ],
+                  "aws_implementation_guidance": [
+                    "To enforce individual accountability, enable logging with CloudTrail and user activity monitoring with Amazon CloudWatch"
+                  ],
+                  "aws_services": [
+                    "AWS CloudTrail",
+                    "Amazon CloudWatch"
+                  ],
+                  "responsibility": "Customer",
+                  "source_page_section": "CC1 series"
+                }
+              }
+            ],
+            "non_aws_implemented_controls": [
+              "Make sure that the members of the board have the necessary AWS expertise.",
+              "Formalize an official organization chart that encompasses AWS operations.",
+              "Establish a process for annual performance reviews that incorporate AWS knowledge."
+            ],
+            "notes": []
+          },
+          {
+            "sub_domain_id": "CC2",
+            "sub_domain_name": "Communication and Information",
+            "description": "Requires the entity to obtain, generate, use and communicate relevant, quality information internally and externally to enable effective control operations, including logs, metrics and event data from cloud workloads.",
+            "controls": [
+              {
+                "control_id": "CC2.1",
+                "control_objective": "The entity obtains or generates and uses relevant, quality information to support the functioning of internal control.",
+                "metadata": {
+                  "points_of_focus": [
+                    "Captures internal and external sources of data",
+                    "Processes relevant data into information",
+                    "Maintains quality throughput processing"
+                  ],
+                  "aws_implementation_guidance": [
+                    "To capture system and user activities, enable CloudTrail and AWS service level logging",
+                    "To capture and log AWS configuration states, enable the AWS Config Recorder",
+                    "To obtain actionable information, establish relevant metrics in CloudWatch for alerting and enable AWS Config Conformance Packs",
+                    "To maintain the source data quality, enable CloudTrail log file validation and log file encryption, in addition to Amazon S3 bucket encryption"
+                  ],
+                  "aws_services": [
+                    "AWS CloudTrail",
+                    "AWS Config",
+                    "Amazon CloudWatch",
+                    "Amazon S3"
+                  ],
+                  "responsibility": "Customer",
+                  "source_page_section": "CC2 series"
+                }
+              },
+              {
+                "control_id": "CC2.2",
+                "control_objective": "The entity internally communicates information, including objectives and responsibilities for internal control, necessary to support the functioning of internal control.",
+                "metadata": {
+                  "points_of_focus": [
+                    "Communicates internal control information",
+                    "Communicates system changes"
+                  ],
+                  "aws_implementation_guidance": [
+                    "To properly notify personnel of actionable CloudWatch alarms or system changes, create specific Amazon SNS topics for information distribution using different communication channels"
+                  ],
+                  "aws_services": [
+                    "Amazon SNS",
+                    "Amazon CloudWatch"
+                  ],
+                  "responsibility": "Customer",
+                  "source_page_section": "CC2 series"
+                }
+              },
+              {
+                "control_id": "CC2.3",
+                "control_objective": "The entity communicates with external parties regarding matters affecting the functioning of internal control.",
+                "metadata": {
+                  "points_of_focus": [],
+                  "aws_implementation_guidance": [
+                    "No AWS specific implementation"
+                  ],
+                  "aws_services": [],
+                  "responsibility": "Customer",
+                  "source_page_section": "CC2 series"
+                }
+              }
+            ],
+            "non_aws_implemented_controls": [
+              "Monitor system logs and events from AWS services and integrate into centralized monitoring tools (for example, SIEM).",
+              "Establish information requirements for control operations, incident response, and risk management over AWS operations.",
+              "Define and communicate job responsibilities and control objectives in AWS to relevant individuals in a timely manner."
+            ],
+            "notes": [
+              "The customer organization must define responsibility for communication strategies, incident escalation paths, and customer notifications so that system objectives and changes are communicated internally and externally."
+            ]
+          },
+          {
+            "sub_domain_id": "CC3",
+            "sub_domain_name": "Risk Assessment",
+            "description": "Requires processes for identifying, analyzing and responding to risks (including fraud risk and significant changes) that may affect achievement of system objectives across security, availability, processing integrity, confidentiality and privacy.",
+            "controls": [
+              {
+                "control_id": "CC3.1",
+                "control_objective": "The entity specifies objectives with sufficient clarity to enable the identification and assessment of risks relating to objectives.",
+                "metadata": {
+                  "points_of_focus": [
+                    "Aligns with externally established frameworks"
+                  ],
+                  "aws_implementation_guidance": [
+                    "To use pre-built control evaluations in compliance frameworks, enable AWS Config conformance packs and AWS Security Hub"
+                  ],
+                  "aws_services": [
+                    "AWS Config",
+                    "AWS Security Hub"
+                  ],
+                  "responsibility": "Customer",
+                  "source_page_section": "CC3 series"
+                }
+              },
+              {
+                "control_id": "CC3.2",
+                "control_objective": "The entity identifies risks to the achievement of its objectives across the entity and analyzes risks as a basis for determining how the risks should be managed.",
+                "metadata": {
+                  "points_of_focus": [
+                    "Identifies and assesses criticality of information assets and identifies threats and vulnerabilities"
+                  ],
+                  "aws_implementation_guidance": [
+                    "To identify system vulnerabilities, enable Amazon Inspector to scan for vulnerabilities in Amazon EC2, Amazon ECR, and AWS Lambda",
+                    "For threat detection, enable Amazon GuardDuty to monitor AWS accounts and workloads for malicious activities"
+                  ],
+                  "aws_services": [
+                    "Amazon Inspector",
+                    "Amazon EC2",
+                    "Amazon ECR",
+                    "AWS Lambda",
+                    "Amazon GuardDuty"
+                  ],
+                  "responsibility": "Customer",
+                  "source_page_section": "CC3 series"
+                }
+              },
+              {
+                "control_id": "CC3.3",
+                "control_objective": "The entity considers the potential for fraud in assessing risks to the achievement of objectives.",
+                "metadata": {
+                  "points_of_focus": [
+                    "Considers the risks related to the use of IT and access to information"
+                  ],
+                  "aws_implementation_guidance": [
+                    "To evaluate least-privilege access to information, enable AWS IAM Access Analyzer to track unused access and permissions in AWS accounts"
+                  ],
+                  "aws_services": [
+                    "AWS IAM Access Analyzer"
+                  ],
+                  "responsibility": "Customer",
+                  "source_page_section": "CC3 series"
+                }
+              },
+              {
+                "control_id": "CC3.4",
+                "control_objective": "The entity identifies and assesses changes that could significantly impact the system of internal control.",
+                "metadata": {
+                  "points_of_focus": [
+                    "Assesses changes in systems and technology"
+                  ],
+                  "aws_implementation_guidance": [
+                    "To accurately track changes, enable AWS CloudFormation drift detection for infrastructure as code (IaC), AWS Config rules for AWS configuration, and CloudTrail for API-initiated changes"
+                  ],
+                  "aws_services": [
+                    "AWS CloudFormation",
+                    "AWS Config",
+                    "AWS CloudTrail"
+                  ],
+                  "responsibility": "Customer",
+                  "source_page_section": "CC3 series"
+                }
+              }
+            ],
+            "non_aws_implemented_controls": [
+              "Define system objectives for AWS workloads aligned with contracts, regulatory obligations, and organizational strategy.",
+              "Subscribe threat intelligence on all services used on AWS.",
+              "Evaluate risk impacts and risk opportunities specific to operations in AWS."
+            ],
+            "notes": [
+              "The customer organization must define ownership of the risk management framework, methodology, prioritization, and risk treatment."
+            ]
+          },
+          {
+            "sub_domain_id": "CC4",
+            "sub_domain_name": "Monitoring Activities",
+            "description": "Requires ongoing and/or separate evaluations to determine whether internal control components are present and functioning, and timely evaluation and communication of deficiencies.",
+            "controls": [
+              {
+                "control_id": "CC4.1",
+                "control_objective": "The entity selects, develops, and performs ongoing and/or separate evaluations to ascertain whether the components of internal control are present and functioning.",
+                "metadata": {
+                  "points_of_focus": [
+                    "Mix of ongoing and separate evaluations",
+                    "Establishes baseline understanding"
+                  ],
+                  "aws_implementation_guidance": [
+                    "To identify system vulnerabilities, enable Amazon Inspector to scan for vulnerabilities in Amazon EC2, Amazon ECR, and Lambda",
+                    "To continuously evaluate AWS resource configuration against a baseline, enable AWS Config conformance packs"
+                  ],
+                  "aws_services": [
+                    "Amazon Inspector",
+                    "Amazon EC2",
+                    "Amazon ECR",
+                    "AWS Lambda",
+                    "AWS Config"
+                  ],
+                  "responsibility": "Customer",
+                  "source_page_section": "CC4 series"
+                }
+              },
+              {
+                "control_id": "CC4.2",
+                "control_objective": "The entity evaluates and communicates internal control deficiencies in a timely manner to those parties responsible for taking corrective action, including senior management and the board of directors, as appropriate.",
+                "metadata": {
+                  "points_of_focus": [
+                    "Communicates deficiencies",
+                    "Monitors corrective action"
+                  ],
+                  "aws_implementation_guidance": [
+                    "To properly notify personnel of security findings, create specific Amazon SNS topics for information distribution using different communication channels",
+                    "To centralize, monitor, and track security issues and resolutions, enable Security Hub to accept findings from both AWS and non-AWS security tools"
+                  ],
+                  "aws_services": [
+                    "Amazon SNS",
+                    "AWS Security Hub"
+                  ],
+                  "responsibility": "Customer",
+                  "source_page_section": "CC4 series"
+                }
+              }
+            ],
+            "non_aws_implemented_controls": [
+              "Establish security baselines for different AWS workloads.",
+              "Define evaluation scope and frequency for AWS workloads and operations based on identified risks.",
+              "Formalize ownership of AWS accounts and workloads for corrective actions.",
+              "Document processes for penetration testing, red teaming, and independent assessments on AWS."
+            ],
+            "notes": [
+              "AWS does not perform governance reviews, audits, or human-in-the-loop validations on behalf of customers; customers are fully responsible for monitoring programs, control effectiveness reviews and remediation processes."
+            ]
+          },
+          {
+            "sub_domain_id": "CC5",
+            "sub_domain_name": "Control Activities",
+            "description": "Requires selection and development of control activities that mitigate risks, general IT controls (ITGC), and deployment of controls through policies and procedures.",
+            "controls": [
+              {
+                "control_id": "CC5.1",
+                "control_objective": "The entity selects and develops control activities that contribute to the mitigation of risks to the achievement of objectives to acceptable levels.",
+                "metadata": {
+                  "points_of_focus": [
+                    "Addresses segregation of duties"
+                  ],
+                  "aws_implementation_guidance": [
+                    "To address strict segregation of duties, implement IAM and IAM Identity Center RBAC and resource access controls"
+                  ],
+                  "aws_services": [
+                    "AWS IAM",
+                    "AWS IAM Identity Center"
+                  ],
+                  "responsibility": "Customer",
+                  "source_page_section": "CC5 series"
+                }
+              },
+              {
+                "control_id": "CC5.2",
+                "control_objective": "The entity also selects and develops general control activities over technology to support the achievement of objectives.",
+                "metadata": {
+                  "points_of_focus": [
+                    "Establishes relevant technology infrastructure control activities",
+                    "Establishes relevant security management process controls activities"
+                  ],
+                  "aws_implementation_guidance": [
+                    "To help ensure the completeness, accuracy, and availability of technology processing, enable Security Hub to accept findings from both AWS and non-AWS security tools",
+                    "To restrict technology access rights, enable IAM Access Analyzer to track unused access and permissions in AWS accounts"
+                  ],
+                  "aws_services": [
+                    "AWS Security Hub",
+                    "AWS IAM Access Analyzer"
+                  ],
+                  "responsibility": "Customer",
+                  "source_page_section": "CC5 series"
+                }
+              },
+              {
+                "control_id": "CC5.3",
+                "control_objective": "The entity deploys control activities through policies that establish what is expected and in procedures that put policies into action.",
+                "metadata": {
+                  "points_of_focus": [
+                    "Performs in a timely manner",
+                    "Takes corrective action"
+                  ],
+                  "aws_implementation_guidance": [
+                    "To perform control activities in a timely manner, enable AWS Config Rules to automate evaluation of system controls",
+                    "To help ensure corrective action is automatically completed, configure AWS Config rules to include remediation action"
+                  ],
+                  "aws_services": [
+                    "AWS Config"
+                  ],
+                  "responsibility": "Customer",
+                  "source_page_section": "CC5 series"
+                }
+              }
+            ],
+            "non_aws_implemented_controls": [
+              "Determine controls activities at various levels in AWS regarding the Shared Responsibility Matrix.",
+              "Evaluate the dependency between AWS technical controls and business process controls.",
+              "Establish policies and procedures that govern both automated and manual controls implemented in AWS."
+            ],
+            "notes": [
+              "Customers retain full responsibility for defining control activities, implementing them in their AWS accounts, and enforcing them consistently using policies, procedures, and governance processes."
+            ]
+          },
+          {
+            "sub_domain_id": "CC6",
+            "sub_domain_name": "Logical and Physical Access Controls",
+            "description": "Requires controls to restrict logical and physical access to systems, data and facilities to authorized individuals, revoke access when no longer required, and protect remote access, transmission, movement/removal of information, and against unauthorized or malicious software.",
+            "controls": [
+              {
+                "control_id": "CC6.1",
+                "control_objective": "The entity implements logical access security software, infrastructure, and architectures over protected information assets to protect them from security events to meet the entity's objectives.",
+                "metadata": {
+                  "points_of_focus": [
+                    "Identifies and manages the inventory of information assets",
+                    "Restricts logical access",
+                    "Considers network segmentation",
+                    "Restricts access to information assets",
+                    "Manages credentials for infrastructure and software",
+                    "Uses encryption to protect data",
+                    "Protects encryption keys"
+                  ],
+                  "aws_implementation_guidance": [
+                    "To track AWS resources and EC2 instances, enable AWS Config configuration recorder and AWS Systems Manager Inventory",
+                    "To restrict logical access to information assets based on specific requirements, configure RBAC using IAM and IAM Identity Center and access controls with SCPs, resource control policies (RCPs), and resource based policies such as S3 bucket policies",
+                    "To isolate network environments, use multiple AWS accounts, multiple Amazon VPCs, and restrict traffic using security groups and network ACLs",
+                    "To protect authentication data, store credentials in AWS Secrets Manager or Systems Manager Parameter Store",
+                    "To protect data at rest, enable AWS KMS encryption on Amazon storage services, such as Amazon EBS, Amazon S3, and so on",
+                    "To protect encryption keys during generation, storage, use, and destruction, use AWS KMS customer managed keys"
+                  ],
+                  "aws_services": [
+                    "AWS Config",
+                    "AWS Systems Manager Inventory",
+                    "AWS IAM",
+                    "AWS IAM Identity Center",
+                    "AWS Organizations SCPs",
+                    "Resource Control Policies (RCPs)",
+                    "Amazon S3 bucket policies",
+                    "Amazon VPC",
+                    "Security Groups",
+                    "Network ACLs",
+                    "AWS Secrets Manager",
+                    "AWS Systems Manager Parameter Store",
+                    "AWS KMS",
+                    "Amazon EBS",
+                    "Amazon S3"
+                  ],
+                  "responsibility": "Customer",
+                  "source_page_section": "CC6 series"
+                }
+              },
+              {
+                "control_id": "CC6.2",
+                "control_objective": "Prior to issuing system credentials and granting system access, the entity registers and authorizes new internal and external users whose access is administered by the entity. For those users whose access is administered by the entity, user system credentials are removed when user access is no longer authorized.",
+                "metadata": {
+                  "points_of_focus": [
+                    "Reviews appropriateness of access credentials"
+                  ],
+                  "aws_implementation_guidance": [
+                    "To track usage and information on access credentials, enable IAM Access Analyzer and IAM credential reports"
+                  ],
+                  "aws_services": [
+                    "AWS IAM Access Analyzer",
+                    "AWS IAM credential reports"
+                  ],
+                  "responsibility": "Customer",
+                  "source_page_section": "CC6 series"
+                }
+              },
+              {
+                "control_id": "CC6.3",
+                "control_objective": "The entity authorizes, modifies, or removes access to data, software, functions, and other protected information assets based on roles, responsibilities, or the system design and changes, giving consideration to the concepts of least privilege and segregation of duties, to meet the entity's objectives.",
+                "metadata": {
+                  "points_of_focus": [
+                    "Uses role-based access controls"
+                  ],
+                  "aws_implementation_guidance": [
+                    "To segregate incompatible functions, implement IAM and IAM Identity Center RBAC and resource access controls"
+                  ],
+                  "aws_services": [
+                    "AWS IAM",
+                    "AWS IAM Identity Center"
+                  ],
+                  "responsibility": "Customer",
+                  "source_page_section": "CC6 series"
+                }
+              },
+              {
+                "control_id": "CC6.4",
+                "control_objective": "The entity restricts physical access to facilities and protected information assets (for example, data center facilities, backup media storage, and other sensitive locations) to authorized personnel to meet the entity's objectives.",
+                "metadata": {
+                  "points_of_focus": [],
+                  "aws_implementation_guidance": [
+                    "AWS is responsible for physical access to the facilities that are hosted on AWS services"
+                  ],
+                  "aws_services": [],
+                  "responsibility": "AWS (customer responsible for physical access outside AWS infrastructure, e.g. offices, on-premises data centers, laptops)",
+                  "source_page_section": "CC6 series"
+                }
+              },
+              {
+                "control_id": "CC6.5",
+                "control_objective": "The entity discontinues logical and physical protections over physical assets only after the ability to read or recover data and software from those assets has been diminished and is no longer required to meet the entity's objectives.",
+                "metadata": {
+                  "points_of_focus": [],
+                  "aws_implementation_guidance": [
+                    "AWS is responsible for the physical assets of the facilities that are hosted on AWS services"
+                  ],
+                  "aws_services": [],
+                  "responsibility": "AWS",
+                  "source_page_section": "CC6 series"
+                }
+              },
+              {
+                "control_id": "CC6.6",
+                "control_objective": "The entity implements logical access security measures to protect against threats from sources outside its system boundaries.",
+                "metadata": {
+                  "points_of_focus": [
+                    "Restricts access",
+                    "Requires additional authentication or credentials",
+                    "Implements boundary protection systems"
+                  ],
+                  "aws_implementation_guidance": [
+                    "To restrict communication channels, use multiple AWS accounts, multiple Amazon VPCs, and restrict traffic using security groups and network ACLs",
+                    "To incorporate additional authentication information, enable multifactor authentication (MFA) in IAM and IAM Identity Center",
+                    "To detect external access attempts, enable GuardDuty to alert on activities that show abnormal behavior"
+                  ],
+                  "aws_services": [
+                    "Amazon VPC",
+                    "Security Groups",
+                    "Network ACLs",
+                    "AWS IAM",
+                    "AWS IAM Identity Center",
+                    "Amazon GuardDuty"
+                  ],
+                  "responsibility": "Customer",
+                  "source_page_section": "CC6 series"
+                }
+              },
+              {
+                "control_id": "CC6.7",
+                "control_objective": "The entity restricts the transmission, movement, and removal of information to authorized internal and external users and processes, and protects it during transmission, movement, or removal to meet the entity's objectives.",
+                "metadata": {
+                  "points_of_focus": [
+                    "Uses encryption technologies or secure communication channels to protect data"
+                  ],
+                  "aws_implementation_guidance": [
+                    "To protect transmission of data, use SSL certificates stored in AWS Certificate Manager (ACM) and AWS PrivateLink, such as VPC endpoints, to securely connect with AWS services"
+                  ],
+                  "aws_services": [
+                    "AWS Certificate Manager",
+                    "AWS PrivateLink",
+                    "VPC endpoints"
+                  ],
+                  "responsibility": "Customer",
+                  "source_page_section": "CC6 series"
+                }
+              },
+              {
+                "control_id": "CC6.8",
+                "control_objective": "The entity implements controls to prevent or detect and act upon the introduction of unauthorized or malicious software to meet the entity's objectives.",
+                "metadata": {
+                  "points_of_focus": [
+                    "Restricts application and software installation",
+                    "Detects unauthorized changes to software and configuration parameters",
+                    "Uses antivirus and anti-malware software"
+                  ],
+                  "aws_implementation_guidance": [
+                    "To restrict the ability to install application and software, enable SCPs and configure AWS Service Catalog",
+                    "To detect changes to software and configuration, enable CloudFormation drift detection for IaC, AWS Config rules for AWS configuration, and CloudTrail for API-initiated changes",
+                    "To detect and remediate viruses, enable GuardDuty Malware Protection for EC2 and S3"
+                  ],
+                  "aws_services": [
+                    "AWS Organizations SCPs",
+                    "AWS Service Catalog",
+                    "AWS CloudFormation",
+                    "AWS Config",
+                    "AWS CloudTrail",
+                    "Amazon GuardDuty Malware Protection"
+                  ],
+                  "responsibility": "Customer",
+                  "source_page_section": "CC6 series"
+                }
+              }
+            ],
+            "non_aws_implemented_controls": [
+              "Establish a formal process for logical access provisioning, removal, and review for AWS infrastructure and applications.",
+              "See the AWS third-party attestation for physical access controls around AWS hosted infrastructure."
+            ],
+            "notes": [
+              "Physical access controls for AWS infrastructure are managed by AWS and evaluated in the AWS SOC 2 Type II report (badge access, video surveillance, security guards); customers can inherit these for criteria such as CC6.4.",
+              "Customers remain accountable for physical access to components outside AWS infrastructure (own offices, on-premises data centers, employee laptops, user devices) where they impact confidentiality, integrity or availability."
+            ]
+          },
+          {
+            "sub_domain_id": "CC7",
+            "sub_domain_name": "System Operations",
+            "description": "Requires activities to manage system operations, detect and monitor deviations from expected performance, and respond to and recover from security incidents and system failures.",
+            "controls": [
+              {
+                "control_id": "CC7.1",
+                "control_objective": "To meet its objectives, the entity uses detection and monitoring procedures to identify (1) changes to configurations that result in the introduction of new vulnerabilities, and (2) susceptibilities to newly discovered vulnerabilities.",
+                "metadata": {
+                  "points_of_focus": [
+                    "Monitors infrastructure and software",
+                    "Implements change-detection mechanisms",
+                    "Detects unknown or unauthorized components",
+                    "Conducts vulnerability scans"
+                  ],
+                  "aws_implementation_guidance": [
+                    "To alert personnel to unauthorized modifications of critical system files, configuration files, or content files, enable CloudFormation drift detection for IaC, AWS Config rules for AWS configuration, and CloudTrail for API-initiated changes",
+                    "To identify potential vulnerabilities, enable Amazon Inspector to scan for vulnerabilities in Amazon EC2, Amazon ECR, and Lambda"
+                  ],
+                  "aws_services": [
+                    "AWS CloudFormation",
+                    "AWS Config",
+                    "AWS CloudTrail",
+                    "Amazon Inspector",
+                    "Amazon EC2",
+                    "Amazon ECR",
+                    "AWS Lambda"
+                  ],
+                  "responsibility": "Customer",
+                  "source_page_section": "CC7 series"
+                }
+              },
+              {
+                "control_id": "CC7.2",
+                "control_objective": "The entity monitors system components and the operation of those components for anomalies that are indicative of malicious acts, natural disasters, and errors affecting the entity's ability to meet its objectives; anomalies are analyzed to determine whether they represent security events.",
+                "metadata": {
+                  "points_of_focus": [
+                    "Implements filters to analyze anomalies"
+                  ],
+                  "aws_implementation_guidance": [
+                    "To filter, summarize, and analyze anomalies using machine learning techniques, enable GuardDuty"
+                  ],
+                  "aws_services": [
+                    "Amazon GuardDuty"
+                  ],
+                  "responsibility": "Customer",
+                  "source_page_section": "CC7 series"
+                }
+              },
+              {
+                "control_id": "CC7.3",
+                "control_objective": "The entity evaluates security events to determine whether they could or have resulted in a failure of the entity to meet its objectives (security incidents) and, if so, takes actions to prevent or address such failures.",
+                "metadata": {
+                  "points_of_focus": [
+                    "Communicates and reviews detected security events"
+                  ],
+                  "aws_implementation_guidance": [
+                    "To properly notify personnel of security events, create specific Amazon SNS topics for information distribution using different communication channels"
+                  ],
+                  "aws_services": [
+                    "Amazon SNS"
+                  ],
+                  "responsibility": "Customer",
+                  "source_page_section": "CC7 series"
+                }
+              },
+              {
+                "control_id": "CC7.4",
+                "control_objective": "The entity responds to identified security incidents by executing a defined incident-response program to understand, contain, remediate, and communicate security incidents, as appropriate.",
+                "metadata": {
+                  "points_of_focus": [
+                    "Contains security incidents",
+                    "Mitigates ongoing security incidents",
+                    "Develops and implements communication protocols for security incidents"
+                  ],
+                  "aws_implementation_guidance": [
+                    "To contain, mitigate, and communicate active security incidents, configure Incident Manager, a capability of AWS Systems Manager Incident Manager, with customized responses plans and runbooks"
+                  ],
+                  "aws_services": [
+                    "AWS Systems Manager Incident Manager"
+                  ],
+                  "responsibility": "Customer",
+                  "source_page_section": "CC7 series"
+                }
+              },
+              {
+                "control_id": "CC7.5",
+                "control_objective": "The entity identifies, develops, and implements activities to recover from identified security incidents.",
+                "metadata": {
+                  "points_of_focus": [
+                    "Improves response and recovery procedures"
+                  ],
+                  "aws_implementation_guidance": [
+                    "To improve the incident response process, use Incident Manager to collect information to diagnose and learn from incidents"
+                  ],
+                  "aws_services": [
+                    "AWS Systems Manager Incident Manager"
+                  ],
+                  "responsibility": "Customer",
+                  "source_page_section": "CC7 series"
+                }
+              }
+            ],
+            "non_aws_implemented_controls": [
+              "Define baseline configurations and golden Amazon Machine Images (AMIs) in AWS.",
+              "Establish formal processes and runbooks for incident response in AWS.",
+              "Conduct periodic automated and manual incident response testing for AWS services."
+            ],
+            "notes": [
+              "The customer is fully responsible for defining, implementing, and operating the incident response plan, system monitoring strategy, and recovery procedures."
+            ]
+          },
+          {
+            "sub_domain_id": "CC8",
+            "sub_domain_name": "Change Management",
+            "description": "Requires a formal change management process so that changes to infrastructure, data, software and procedures are authorized, tested, documented and properly implemented.",
+            "controls": [
+              {
+                "control_id": "CC8.1",
+                "control_objective": "The entity authorizes, designs, develops or acquires, configures, documents, tests, approves, and implements changes to infrastructure, data, software, and procedures to meet its objectives.",
+                "metadata": {
+                  "points_of_focus": [
+                    "Manages changes throughout the system lifecycle",
+                    "Tracks system changes",
+                    "Tests system changes",
+                    "Approves system changes",
+                    "Deploys system changes",
+                    "Creates baseline configuration of IT technology"
+                  ],
+                  "aws_implementation_guidance": [
+                    "To automate change process, use Change Manager, a capability of AWS Systems Manager",
+                    "To use software development lifecycle controls for infrastructure changes, implement CloudFormation for IaC",
+                    "To standardize code change requirements for testing, approval, and deployment, implement AWS CodePipeline and AWS Developer Tools",
+                    "To maintain baseline configuration, use Amazon EC2 Image Builder to update golden AMIs"
+                  ],
+                  "aws_services": [
+                    "AWS Systems Manager Change Manager",
+                    "AWS CloudFormation",
+                    "AWS CodePipeline",
+                    "AWS Developer Tools",
+                    "Amazon EC2 Image Builder"
+                  ],
+                  "responsibility": "Customer",
+                  "source_page_section": "CC8 series"
+                }
+              }
+            ],
+            "non_aws_implemented_controls": [
+              "Define baseline configurations and golden AMIs in AWS.",
+              "Establish processes for emergency changes in AWS."
+            ],
+            "notes": [
+              "The entity is responsible for change management policies, workflows, risk assessments, approvals, testing, rollback procedures, and verifying change governance adherence."
+            ]
+          },
+          {
+            "sub_domain_id": "CC9",
+            "sub_domain_name": "Risk Mitigation",
+            "description": "Requires risk mitigation activities for risks from business disruptions and from vendors and business partners, including BCP, DR, third-party risk management and vendor oversight.",
+            "controls": [
+              {
+                "control_id": "CC9.1",
+                "control_objective": "The entity identifies, selects, and develops risk mitigation activities for risks arising from potential business disruptions.",
+                "metadata": {
+                  "points_of_focus": [
+                    "Considers mitigation of risks of business disruption"
+                  ],
+                  "aws_implementation_guidance": [
+                    "To limit the impact of security event disruptions, implement multi-Availability Zone (AZ) and multi-AWS Region architectures and use AWS Backup and AWS Elastic Disaster Recovery backups to recover from potential disruptions"
+                  ],
+                  "aws_services": [
+                    "AWS Backup",
+                    "AWS Elastic Disaster Recovery",
+                    "Multi-AZ architecture",
+                    "Multi-Region architecture"
+                  ],
+                  "responsibility": "Customer",
+                  "source_page_section": "CC9 series"
+                }
+              },
+              {
+                "control_id": "CC9.2",
+                "control_objective": "The entity assesses and manages risks associated with vendors and business partners.",
+                "metadata": {
+                  "points_of_focus": [
+                    "Assesses vendor and partner business risks"
+                  ],
+                  "aws_implementation_guidance": [
+                    "To demonstrate AWS commitment, obtain third-party attestation reports from AWS Artifact"
+                  ],
+                  "aws_services": [
+                    "AWS Artifact"
+                  ],
+                  "responsibility": "Customer",
+                  "source_page_section": "CC9 series"
+                }
+              }
+            ],
+            "non_aws_implemented_controls": [
+              "Conduct business impact analysis (BIA) on AWS workloads to verify that the AWS architecture supports the workloads.",
+              "Update the alternate security contact across AWS accounts for timely security notifications."
+            ],
+            "notes": [
+              "Vendor risk management programs, BCP and DR governance, tabletop exercises, and formal risk acceptance remain fully the customer's responsibility."
+            ]
+          }
+        ]
+      },
+      {
+        "domain_id": "PI",
+        "domain_name": "Processing Integrity",
+        "description": "Category-specific criteria ensuring system processing is complete, valid, accurate, timely and authorized.",
+        "criteria_range": "PI1.1-PI1.5",
+        "sub_domains": [
+          {
+            "sub_domain_id": "PI1",
+            "sub_domain_name": "Processing Integrity",
+            "description": "System processing is complete, valid, accurate, timely and authorized to meet the entity's commitments. AWS SOC reports do not include Processing Integrity in scope; customers must independently assess and implement these controls.",
+            "controls": [
+              {
+                "control_id": "PI1.1",
+                "control_objective": "The entity obtains or generates, uses, and communicates relevant, quality information regarding the objectives related to processing, including definitions of data processed and product and service specifications, to support the use of products and services.",
+                "metadata": {
+                  "points_of_focus": [],
+                  "aws_implementation_guidance": [
+                    "No AWS specific implementation"
+                  ],
+                  "aws_services": [],
+                  "responsibility": "Customer",
+                  "source_page_section": "PI series"
+                }
+              },
+              {
+                "control_id": "PI1.2",
+                "control_objective": "The entity implements policies and procedures over system inputs, including controls over completeness and accuracy, to result in products, services, and reporting to meet the entity's objectives.",
+                "metadata": {
+                  "points_of_focus": [
+                    "Evaluates processing inputs",
+                    "Creates and maintains records of system inputs"
+                  ],
+                  "aws_implementation_guidance": [
+                    "To evaluate REST API input, enable Amazon API Gateway request validation",
+                    "To retain system and application logs, enable CloudTrail and export native system and application logs to CloudWatch log groups"
+                  ],
+                  "aws_services": [
+                    "Amazon API Gateway",
+                    "AWS CloudTrail",
+                    "Amazon CloudWatch Logs"
+                  ],
+                  "responsibility": "Customer",
+                  "source_page_section": "PI series"
+                }
+              },
+              {
+                "control_id": "PI1.3",
+                "control_objective": "The entity implements policies and procedures over system processing to result in products, services, and reporting to meet the entity's objectives.",
+                "metadata": {
+                  "points_of_focus": [
+                    "Records systems processing activities"
+                  ],
+                  "aws_implementation_guidance": [
+                    "To retain system and application logs, enable CloudTrail and export native system and application logs to CloudWatch log groups"
+                  ],
+                  "aws_services": [
+                    "AWS CloudTrail",
+                    "Amazon CloudWatch Logs"
+                  ],
+                  "responsibility": "Customer",
+                  "source_page_section": "PI series"
+                }
+              },
+              {
+                "control_id": "PI1.4",
+                "control_objective": "The entity implements policies and procedures to make available or deliver output completely, accurately, and timely in accordance with specifications to meet the entity's objectives.",
+                "metadata": {
+                  "points_of_focus": [
+                    "Protects output",
+                    "Distributes output only to intended parties",
+                    "Creates and maintains records of system output"
+                  ],
+                  "aws_implementation_guidance": [
+                    "To protect process output, enable AWS KMS encryption on Amazon storage services, such Amazon EBS, Amazon S3, and so on",
+                    "To limit output distribution, implement IAM and IAM Identity Center RBAC and resource access controls",
+                    "To retain system and application logs, enable CloudTrail and export native system and application logs to CloudWatch log groups"
+                  ],
+                  "aws_services": [
+                    "AWS KMS",
+                    "Amazon EBS",
+                    "Amazon S3",
+                    "AWS IAM",
+                    "AWS IAM Identity Center",
+                    "AWS CloudTrail",
+                    "Amazon CloudWatch Logs"
+                  ],
+                  "responsibility": "Customer",
+                  "source_page_section": "PI series"
+                }
+              },
+              {
+                "control_id": "PI1.5",
+                "control_objective": "The entity implements policies and procedures to store inputs, items in processing, and outputs completely, accurately, and timely in accordance with system specifications to meet the entity's objectives.",
+                "metadata": {
+                  "points_of_focus": [
+                    "Protects stored items",
+                    "Archives and protects system records",
+                    "Creates and maintains records of system storage activities"
+                  ],
+                  "aws_implementation_guidance": [
+                    "To protect stored items, enable AWS KMS encryption on Amazon storage services, such Amazon EBS, Amazon S3, and so on",
+                    "To protect system records, enable AWS KMS encryption on CloudTrail trails and CloudWatch log groups",
+                    "To retain system and application logs, enable CloudTrail and export native system and application logs to CloudWatch log groups"
+                  ],
+                  "aws_services": [
+                    "AWS KMS",
+                    "Amazon EBS",
+                    "Amazon S3",
+                    "AWS CloudTrail",
+                    "Amazon CloudWatch Logs"
+                  ],
+                  "responsibility": "Customer",
+                  "source_page_section": "PI series"
+                }
+              }
+            ],
+            "non_aws_implemented_controls": [
+              "Define key characteristics of processing inputs for AWS workloads.",
+              "Establish a set of processing specifications for AWS workloads."
+            ],
+            "notes": []
+          }
+        ]
+      },
+      {
+        "domain_id": "A",
+        "domain_name": "Availability",
+        "description": "Category-specific criteria ensuring systems and data are available for operation and use as committed or agreed.",
+        "criteria_range": "A1.1-A1.3",
+        "sub_domains": [
+          {
+            "sub_domain_id": "A1",
+            "sub_domain_name": "Availability",
+            "description": "Systems and data are available for operation and use as committed or agreed. AWS is responsible only for the availability of its global infrastructure and managed services; customers architect fault-tolerant workloads, implement DR, monitor health, and perform backup and restoration testing.",
+            "controls": [
+              {
+                "control_id": "A1.1",
+                "control_objective": "The entity maintains, monitors, and evaluates current processing capacity and use of system components (infrastructure, data, and software) to manage capacity demand and to enable the implementation of additional capacity to help meet its objectives.",
+                "metadata": {
+                  "points_of_focus": [
+                    "Measures current usages",
+                    "Makes changes based on forecasts"
+                  ],
+                  "aws_implementation_guidance": [
+                    "To manage capacity constraints, enable CloudWatch metrics to monitor resource utilization",
+                    "To address capacity constraints, configure Auto Scaling for Amazon EC2, Amazon Elastic Container Service (Amazon ECS), and Amazon Relational Database Service (Amazon RDS)"
+                  ],
+                  "aws_services": [
+                    "Amazon CloudWatch",
+                    "AWS Auto Scaling",
+                    "Amazon EC2",
+                    "Amazon ECS",
+                    "Amazon RDS"
+                  ],
+                  "responsibility": "Customer",
+                  "source_page_section": "A series"
+                }
+              },
+              {
+                "control_id": "A1.2",
+                "control_objective": "The entity authorizes, designs, develops or acquires, implements, operates, approves, maintains, and monitors environmental protections, software, data backup processes, and recovery infrastructure to meet its objectives.",
+                "metadata": {
+                  "points_of_focus": [
+                    "Performs data backup",
+                    "Implements alternate processing infrastructure"
+                  ],
+                  "aws_implementation_guidance": [
+                    "To protect data from unexpected loss, configure centralized backup policies in AWS Backup for a variety of AWS services, such as Amazon EC2, Amazon EBS, Amazon RDS, Amazon S3, and so on",
+                    "To limit the impact of location disruptions, implement multi-AZ and multi-Region architectures in addition to cross-Region replication"
+                  ],
+                  "aws_services": [
+                    "AWS Backup",
+                    "Amazon EC2",
+                    "Amazon EBS",
+                    "Amazon RDS",
+                    "Amazon S3",
+                    "Multi-AZ architecture",
+                    "Multi-Region architecture",
+                    "Cross-Region replication"
+                  ],
+                  "responsibility": "Customer",
+                  "source_page_section": "A series"
+                }
+              },
+              {
+                "control_id": "A1.3",
+                "control_objective": "The entity tests recovery plan procedures supporting system recovery to meet its objectives.",
+                "metadata": {
+                  "points_of_focus": [
+                    "Implements business continuity plan testing"
+                  ],
+                  "aws_implementation_guidance": [
+                    "To minimize downtime and data loss, set up Elastic Disaster Recovery for replication and non-disruptive testing"
+                  ],
+                  "aws_services": [
+                    "AWS Elastic Disaster Recovery"
+                  ],
+                  "responsibility": "Customer",
+                  "source_page_section": "A series"
+                }
+              }
+            ],
+            "non_aws_implemented_controls": [
+              "Define relevant recovery time objectives (RTOs) and recovery point objectives (RPOs) for data and systems based on the BIA of the AWS workloads.",
+              "Develop system and data backup plans and resilient architecture on AWS using the defined RTOs and RPOs."
+            ],
+            "notes": []
+          }
+        ]
+      },
+      {
+        "domain_id": "C",
+        "domain_name": "Confidentiality",
+        "description": "Category-specific criteria for protecting information designated as confidential.",
+        "criteria_range": "C1.1-C1.2",
+        "sub_domains": [
+          {
+            "sub_domain_id": "C1",
+            "sub_domain_name": "Confidentiality",
+            "description": "Protects information designated as confidential from unauthorized access, use or disclosure from creation or receipt through storage and final disposal.",
+            "controls": [
+              {
+                "control_id": "C1.1",
+                "control_objective": "The entity identifies and maintains confidential information to meet the entity's objectives related to confidentiality.",
+                "metadata": {
+                  "points_of_focus": [
+                    "Identifies confidential information",
+                    "Protects confidential information from destruction"
+                  ],
+                  "aws_implementation_guidance": [
+                    "To identify confidential information, enable Macie for sensitive data discovery and protection",
+                    "To designate confidential information, enforce resource labeling with an Organizations tag policy",
+                    "To avoid accidental resource and data deletion, enable termination protection on EC2 instances and MFA delete on S3 buckets"
+                  ],
+                  "aws_services": [
+                    "Amazon Macie",
+                    "AWS Organizations tag policies",
+                    "Amazon EC2 termination protection",
+                    "Amazon S3 MFA Delete"
+                  ],
+                  "responsibility": "Customer",
+                  "source_page_section": "C series"
+                }
+              },
+              {
+                "control_id": "C1.2",
+                "control_objective": "The entity disposes of confidential information to meet the entity's objectives related to confidentiality.",
+                "metadata": {
+                  "points_of_focus": [
+                    "Identifies confidential information for destruction",
+                    "Destroys confidential information"
+                  ],
+                  "aws_implementation_guidance": [
+                    "To designate confidential information, enforce resource labeling with an Organizations tag policy",
+                    "To remove expired data automatically, apply Amazon S3 Lifecycle configuration and object expiration rules to delete old data beyond data retention needs"
+                  ],
+                  "aws_services": [
+                    "AWS Organizations tag policies",
+                    "Amazon S3 Lifecycle"
+                  ],
+                  "responsibility": "Customer",
+                  "source_page_section": "C series"
+                }
+              }
+            ],
+            "non_aws_implemented_controls": [
+              "Develop a standardized tagging policy for data and resources in AWS.",
+              "Define retention requirements for data stored on AWS."
+            ],
+            "notes": []
+          }
+        ]
+      },
+      {
+        "domain_id": "P",
+        "domain_name": "Privacy",
+        "description": "Category-specific criteria for personal information: collection, use, retention, disclosure and disposal in accordance with the entity's privacy commitments and legal requirements (e.g. GDPR, HIPAA, CCPA).",
+        "criteria_range": "P1.1-P8.1",
+        "relevant_aws_services": [
+          "IAM",
+          "AWS KMS",
+          "Amazon Macie",
+          "AWS CloudTrail",
+          "AWS Config",
+          "AWS Shield",
+          "AWS WAF",
+          "Amazon GuardDuty",
+          "AWS Lambda",
+          "AWS Step Functions",
+          "AWS Control Tower",
+          "AWS Organizations SCPs"
+        ],
+        "sub_domains": [
+          {
+            "sub_domain_id": "P1",
+            "sub_domain_name": "Privacy Criteria Related to Notice and Communication of Objectives Related to Privacy",
+            "description": "",
+            "controls": [
+              {
+                "control_id": "P1.1",
+                "control_objective": "The entity provides notice to data subjects about its privacy practices to meet the entity's objectives related to privacy. The notice is updated and communicated to data subjects in a timely manner for changes to the entity's privacy practices, including changes in the use of personal information, to meet the entity's objectives related to privacy.",
+                "metadata": {
+                  "points_of_focus": [
+                    "Communicates to data subjects",
+                    "Provides notice to data subjects",
+                    "Covers entities and activities in notice"
+                  ],
+                  "aws_implementation_guidance": [
+                    "Host and serve the privacy notice using Amazon S3 and CloudFront with version control for accessibility and low latency",
+                    "Use Amazon Cognito to link the notice acceptance to authenticated user accounts (for example, on sign-in or registration)",
+                    "Implement just-in-time disclosures using API Gateway and Lambda when specific personal data processing is initiated (for example, when a file is uploaded or a support ticket is created)",
+                    "Send notification emails using Amazon SES or push notifications using Amazon SNS to communicate updates to privacy practices",
+                    "Use CloudTrail and AWS Config to track backend changes related to systems processing personal data (for example, enabling new logging mechanisms, or adding destinations for personal data)",
+                    "Use Amazon S3 object versioning, and Amazon Athena and AWS Glue to audit and demonstrate historical privacy notice changes"
+                  ],
+                  "aws_services": [
+                    "Amazon S3",
+                    "Amazon CloudFront",
+                    "Amazon Cognito",
+                    "Amazon API Gateway",
+                    "AWS Lambda",
+                    "Amazon SES",
+                    "Amazon SNS",
+                    "AWS CloudTrail",
+                    "AWS Config",
+                    "Amazon Athena",
+                    "AWS Glue"
+                  ],
+                  "responsibility": "Customer",
+                  "source_page_section": "P1 series"
+                }
+              }
+            ],
+            "non_aws_implemented_controls": [
+              "Draft a clear, comprehensive privacy notice that outlines what personal data is collected, how it's used, and with whom it's shared.",
+              "Implement a notice update procedure that includes legal and compliance review before any privacy-related change is deployed.",
+              "Define roles responsible for reviewing, updating, and approving privacy notices (for example, data privacy officer (DPO), legal counsel, or marketing).",
+              "Make sure that privacy notice updates are translated, localized, and accessible to affected users (for example, based on region or language).",
+              "Maintain a log of notice updates, along with date and time stamps and internal references to affected systems or processes.",
+              "Train product teams to notify privacy or compliance teams when introducing new data uses that might affect the privacy notice."
+            ],
+            "notes": []
+          },
+          {
+            "sub_domain_id": "P2",
+            "sub_domain_name": "Privacy Criteria Related to Choice and Consent",
+            "description": "",
+            "controls": [
+              {
+                "control_id": "P2.1",
+                "control_objective": "The entity communicates choices available regarding the collection, use, retention, disclosure, and disposal of personal information to the data subjects and the consequences, if any, of each choice. Explicit consent for the collection, use, retention, disclosure, and disposal of personal information is obtained from data subjects or other authorized persons, if required. Such consent is obtained only for the intended purpose of the information to meet the entity's objectives related to privacy. The entity's basis for determining implicit consent for the collection, use, retention, disclosure, and disposal of personal information is documented.",
+                "metadata": {
+                  "points_of_focus": [
+                    "Communicates to data subjects",
+                    "Communicates consequences of denying or withdrawing consent",
+                    "Obtains implicit or explicit consent",
+                    "Documents and obtains consent for new purposes and uses",
+                    "Obtains explicit consent for sensitive information",
+                    "Obtains consent for data transfers"
+                  ],
+                  "aws_implementation_guidance": [
+                    "Use CloudFront and Amazon S3 to serve privacy preference UIs and policy documents across Regions with low latency",
+                    "Use AWS WAF to enforce Regional access controls or restrict UI to appropriate users",
+                    "Use Amazon Cognito to authenticate users and collect consent as part of sign-up and sign-in flows",
+                    "Store consent flags and history in Amazon DynamoDB, Amazon Aurora, or Amazon RDS, with timestamps, purpose, and method of consent",
+                    "Use CloudTrail to audit consent-related API actions",
+                    "Implement explicit opt-in (for example, for marketing) and log opt-outs (for example, cookie rejection) using Lambda and API Gateway",
+                    "Tag datasets with metadata representing the consent basis using AWS resource tags",
+                    "Apply IAM or application-level policies that check user consent before data access is granted",
+                    "Notify individuals of consequences of consent or denial",
+                    "Use Amazon SES or in-app messaging through Amazon SNS to communicate the implications of consent or refusal (for example, account limitations)",
+                    "Use Macie to classify PII and map to declared purposes",
+                    "Use CloudWatch Events to trigger remediation workflows"
+                  ],
+                  "aws_services": [
+                    "Amazon CloudFront",
+                    "Amazon S3",
+                    "AWS WAF",
+                    "Amazon Cognito",
+                    "Amazon DynamoDB",
+                    "Amazon Aurora",
+                    "Amazon RDS",
+                    "AWS CloudTrail",
+                    "AWS Lambda",
+                    "Amazon API Gateway",
+                    "AWS IAM",
+                    "Amazon SES",
+                    "Amazon SNS",
+                    "Amazon Macie",
+                    "Amazon CloudWatch Events"
+                  ],
+                  "responsibility": "Customer",
+                  "source_page_section": "P2 series"
+                }
+              }
+            ],
+            "non_aws_implemented_controls": [
+              "Maintain a formal consent management policy, defining how, when, and for what purposes consent must be obtained.",
+              "Make sure that privacy notices and interfaces explain individual choices and consequences clearly and understandably.",
+              "Define and document legal bases for both explicit and implicit consent, aligned with applicable laws (for example, GDPR, and CCPA).",
+              "Maintain an audit trail for all consent-related interactions, including logs of updates, revocations, and user decisions.",
+              "Train personnel involved in data collection (for example, developers, marketers, and support staff) on proper consent capture and use.",
+              "Implement internal reviews to help ensure that new features or integrations respect previously collected consent terms.",
+              "Establish processes and procedures to revalidate consent periodically, especially for sensitive or long-term data retention."
+            ],
+            "notes": []
+          },
+          {
+            "sub_domain_id": "P3",
+            "sub_domain_name": "Privacy Criteria Related to Collection",
+            "description": "",
+            "controls": [
+              {
+                "control_id": "P3.1",
+                "control_objective": "Personal information is collected consistent with the entity's objectives related to privacy.",
+                "metadata": {
+                  "points_of_focus": [
+                    "Limits the collection of personal information",
+                    "Collects information by fair and lawful means",
+                    "Collects information from reliable sources",
+                    "Informs data subjects when additional information is required"
+                  ],
+                  "aws_implementation_guidance": [
+                    "Store and serve declared purposes in your privacy notice using Amazon S3 and CloudFront",
+                    "Include purpose metadata (for example, \"analytics\" or \"account management\") in data collection logic",
+                    "Tag resources and datasets using AWS resource tags with purpose indicators",
+                    "Use IAM condition keys to restrict access or write actions based on these tags",
+                    "Use CloudTrail and AWS Config to track Lambda, API Gateway, or Amazon S3 write operations and verify alignment with declared collection intents",
+                    "Use Macie to detect PII in unexpected locations (for example, logs or raw ingestion files)",
+                    "Use Security Hub, AWS Config Rules, and CloudWatch alarms to alert if resources are collecting or storing personal data outside approved trust zones or patterns"
+                  ],
+                  "aws_services": [
+                    "Amazon S3",
+                    "Amazon CloudFront",
+                    "AWS resource tags",
+                    "AWS IAM condition keys",
+                    "AWS CloudTrail",
+                    "AWS Config",
+                    "AWS Lambda",
+                    "Amazon API Gateway",
+                    "Amazon Macie",
+                    "AWS Security Hub",
+                    "Amazon CloudWatch alarms"
+                  ],
+                  "responsibility": "Customer",
+                  "source_page_section": "P3 series"
+                }
+              },
+              {
+                "control_id": "P3.2",
+                "control_objective": "For information requiring explicit consent, the entity communicates the need for such consent as well as the consequences of a failure to provide consent for the request for personal information and obtains the consent prior to the collection of the information to meet the entity's objectives related to privacy.",
+                "metadata": {
+                  "points_of_focus": [
+                    "Obtains explicit consent for sensitive information",
+                    "Documents explicit consent to retain information"
+                  ],
+                  "aws_implementation_guidance": [
+                    "Use Amazon Cognito with pre-signup Lambda triggers to enforce consent capture before user registration",
+                    "Integrate consent modals in frontend apps backed by API Gateway and Lambda for processing consent acknowledgments",
+                    "Host privacy notices and just-in-time disclosures using Amazon S3 and CloudFront, possibly integrated into application UIs",
+                    "Use Amazon SNS or Amazon SES to send consent explanation emails before personal data is collected",
+                    "Use DynamoDB, Aurora, or Amazon RDS to persist consent metadata (user ID, timestamp, IP, purpose, consequence notice version)",
+                    "Use CloudTrail to log system-level events indicating when and by whom consent was recorded",
+                    "Use IAM policies or custom logic in Lambda to block workflows that require consent unless the user's consent status is valid and current",
+                    "Optionally, enforce consent preconditions using Step Functions in onboarding workflows"
+                  ],
+                  "aws_services": [
+                    "Amazon Cognito",
+                    "AWS Lambda",
+                    "Amazon API Gateway",
+                    "Amazon S3",
+                    "Amazon CloudFront",
+                    "Amazon SNS",
+                    "Amazon SES",
+                    "Amazon DynamoDB",
+                    "Amazon Aurora",
+                    "Amazon RDS",
+                    "AWS CloudTrail",
+                    "AWS IAM",
+                    "AWS Step Functions"
+                  ],
+                  "responsibility": "Customer",
+                  "source_page_section": "P3 series"
+                }
+              }
+            ],
+            "non_aws_implemented_controls": [
+              "Define and document a data collection policy outlining allowed purposes, data types, and scope of collection.",
+              "Make sure that all applications and forms limit data fields to only what is necessary for stated objectives.",
+              "Conduct privacy impact assessments (PIAs) for new collection mechanisms to validate alignment with privacy goals.",
+              "Review collected data periodically to confirm continued relevance to business and privacy objectives.",
+              "Train developers and product teams on data minimization principles and purpose alignment.",
+              "Engage legal and privacy officers to review whether system behavior aligns with declared objectives before launch or integration.",
+              "Define a consent management policy with clear procedures for when and how explicit consent is required.",
+              "Maintain a catalog of processing activities that require explicit consent (for example, marketing, biometric data, or sensitive profiling).",
+              "Make sure that just-in-time consent interfaces are part of all user data collection touchpoints (web, mobile, or API).",
+              "Clearly disclose the consequences of not giving consent, such as reduced service availability or limited access.",
+              "Establish periodic reviews to help ensure legal validity of consent mechanisms, especially for sensitive or regulated data types.",
+              "Train developers and legal teams to collaborate on consent language, timing, and user interface placement.",
+              "Retain consent evidence and link to specific privacy policy version in force at the time of acceptance."
+            ],
+            "notes": []
+          },
+          {
+            "sub_domain_id": "P4",
+            "sub_domain_name": "Privacy Criteria Related to Use, Retention, and Disposal",
+            "description": "",
+            "controls": [
+              {
+                "control_id": "P4.1",
+                "control_objective": "The entity limits the use of personal information to the purposes identified in the entity's objectives related to privacy.",
+                "metadata": {
+                  "points_of_focus": [
+                    "Uses personal information for intended uses"
+                  ],
+                  "aws_implementation_guidance": [
+                    "Define approved purposes and tag data accordingly using AWS resource tags (for example, Purpose=Marketing)",
+                    "Restrict access by purpose using IAM policies, S3 bucket policies, and AWS Lake Formation permissions",
+                    "Use Macie to scan for PII and confirm that personal data is not being used in non-authorized services or locations",
+                    "Monitor logs with CloudTrail and CloudWatch to detect unauthorized usage or API calls against PII-linked resources"
+                  ],
+                  "aws_services": [
+                    "AWS resource tags",
+                    "AWS IAM",
+                    "Amazon S3 bucket policies",
+                    "AWS Lake Formation",
+                    "Amazon Macie",
+                    "AWS CloudTrail",
+                    "Amazon CloudWatch"
+                  ],
+                  "responsibility": "Customer",
+                  "source_page_section": "P4 series"
+                }
+              },
+              {
+                "control_id": "P4.2",
+                "control_objective": "The entity retains personal information consistent with the entity's objectives related to privacy.",
+                "metadata": {
+                  "points_of_focus": [
+                    "Retains personal information",
+                    "Protects personal information"
+                  ],
+                  "aws_implementation_guidance": [
+                    "Set Amazon S3 Lifecycle configuration to delete or transition objects based on retention timelines",
+                    "Use DynamoDB Time to Live (TTL) or database triggers in Aurora or Amazon RDS to purge expired records",
+                    "Maintain tagging for retention duration (for example, Retention = 90 days) and use AWS Config to validate conformance",
+                    "Automate retention workflows using Step Functions, Amazon EventBridge, and Lambda"
+                  ],
+                  "aws_services": [
+                    "Amazon S3 Lifecycle",
+                    "Amazon DynamoDB TTL",
+                    "Amazon Aurora",
+                    "Amazon RDS",
+                    "AWS resource tags",
+                    "AWS Config",
+                    "AWS Step Functions",
+                    "Amazon EventBridge",
+                    "AWS Lambda"
+                  ],
+                  "responsibility": "Customer",
+                  "source_page_section": "P4 series"
+                }
+              },
+              {
+                "control_id": "P4.3",
+                "control_objective": "The entity securely disposes of personal information to meet the entity's objectives related to privacy.",
+                "metadata": {
+                  "points_of_focus": [
+                    "Captures, identifies and flags requests for deletion",
+                    "Disposes of, destroys and redacts personal information",
+                    "Destroys personal information"
+                  ],
+                  "aws_implementation_guidance": [
+                    "Enable Amazon S3 Object Lock with retention expiration followed by deletion",
+                    "Use AWS KMS key deletion schedules to help ensure cryptographic erasure if encryption is used",
+                    "Configure Amazon RDS, Amazon EBS, and Amazon Elastic File System (Amazon EFS) volumes with secure deletion protocols before deprovisioning",
+                    "Track disposal actions using CloudTrail, and alert on failure events using CloudWatch alarms",
+                    "For manual deletion workflows, build auditable pipelines using Step Functions and Lambda to confirm successful erasure of personal data"
+                  ],
+                  "aws_services": [
+                    "Amazon S3 Object Lock",
+                    "AWS KMS",
+                    "Amazon RDS",
+                    "Amazon EBS",
+                    "Amazon EFS",
+                    "AWS CloudTrail",
+                    "Amazon CloudWatch alarms",
+                    "AWS Step Functions",
+                    "AWS Lambda"
+                  ],
+                  "responsibility": "Customer",
+                  "source_page_section": "P4 series"
+                }
+              }
+            ],
+            "non_aws_implemented_controls": [
+              "Data governance policies: Establish formal policies for data usage, retention, and disposal that clearly define approved purposes, timeframes, and disposal methods aligned with regulatory and contractual obligations.",
+              "Data classification and mapping: Maintain a current data inventory and classification scheme that identifies personal data across systems, associates it with intended purposes, and aligns it with defined retention schedules.",
+              "Retention schedules and procedures: Define retention periods by data category and business function. Make sure that these are documented, accessible to stakeholders, and regularly reviewed for compliance with evolving legal or business requirements.",
+              "Disposal processes and standard operating procedures (SOPs): Implement secure disposal procedures for personal data, whether manual or automated, including deletion, anonymization, or destruction. Make sure that procedures follow standards like NIST SP 800-88 or local equivalents.",
+              "Training and awareness: Train staff (engineering, support, legal, and so on) on appropriate data handling practices, including restrictions on data reuse, retention obligations, and secure deletion practices.",
+              "Periodic reviews and audits: Conduct regular reviews to detect data that is outdated, excessive, or improperly retained. Validate that data deletion workflows operate as intended and audit logs are intact.",
+              "Incident response alignment: Make sure that data handling processes are integrated with breach response and legal hold procedures to help prevent unintended deletion or misuse during sensitive periods."
+            ],
+            "notes": []
+          },
+          {
+            "sub_domain_id": "P5",
+            "sub_domain_name": "Privacy Criteria Related to Access",
+            "description": "",
+            "controls": [
+              {
+                "control_id": "P5.1",
+                "control_objective": "The entity grants identified and authenticated data subjects the ability to access their stored personal information for review and, upon request, provides physical or electronic copies of that information to data subjects to meet the entity's objectives related to privacy. If access is denied, data subjects are informed of the denial and reason for such denial, as required, to meet the entity's objectives related to privacy.",
+                "metadata": {
+                  "points_of_focus": [
+                    "Authenticates data subjects' identity",
+                    "Permits data subjects access to their personal information",
+                    "Provides understandable personal information within reasonable information",
+                    "Informs data subjects if access is denied"
+                  ],
+                  "aws_implementation_guidance": [
+                    "Maintain indexed personal information in queryable stores such as Amazon RDS, Aurora, or DynamoDB with identity-linked keys",
+                    "Create DSAR request forms or portals hosted on Amazon S3 with backend APIs in API Gateway and Lambda",
+                    "Implement secure identity verification workflows using Amazon Cognito",
+                    "Generate reports using Athena, AWS Glue, or Lambda that compile data into downloadable formats (CSV, PDF) and deliver using Amazon SES or presigned Amazon S3 URLs",
+                    "Track access events and responses using CloudTrail and log audit entries in CloudWatch Logs"
+                  ],
+                  "aws_services": [
+                    "Amazon RDS",
+                    "Amazon Aurora",
+                    "Amazon DynamoDB",
+                    "Amazon S3",
+                    "Amazon API Gateway",
+                    "AWS Lambda",
+                    "Amazon Cognito",
+                    "Amazon Athena",
+                    "AWS Glue",
+                    "Amazon SES",
+                    "AWS CloudTrail",
+                    "Amazon CloudWatch Logs"
+                  ],
+                  "responsibility": "Customer",
+                  "source_page_section": "P5 series"
+                }
+              },
+              {
+                "control_id": "P5.2",
+                "control_objective": "The entity corrects, amends, or appends personal information based on information provided by data subjects and communicates such information to third parties, as committed or required, to meet the entity's objectives related to privacy. If a request for correction is denied, data subjects are informed of the denial and reason for such denial to meet the entity's objectives related to privacy.",
+                "metadata": {
+                  "points_of_focus": [
+                    "Communicates denial of access requests",
+                    "Permits data subjects to update or correct personal information",
+                    "Communicates denial of correction requests"
+                  ],
+                  "aws_implementation_guidance": [
+                    "Build secure request workflows using API Gateway and Lambda to allow users to submit correction requests",
+                    "Store updated data in DynamoDB, Aurora, or Amazon RDS, with CloudTrail tracking who made changes and when",
+                    "Propagate changes using Amazon SNS or EventBridge to downstream systems and third-party APIs",
+                    "Maintain logs of denied requests and justifications using DynamoDB or Amazon S3, and provide user notifications through Amazon SES or in-app messages",
+                    "Use IAM policies to restrict edit access to authorized roles and systems only"
+                  ],
+                  "aws_services": [
+                    "Amazon API Gateway",
+                    "AWS Lambda",
+                    "Amazon DynamoDB",
+                    "Amazon Aurora",
+                    "Amazon RDS",
+                    "AWS CloudTrail",
+                    "Amazon SNS",
+                    "Amazon EventBridge",
+                    "Amazon S3",
+                    "Amazon SES",
+                    "AWS IAM"
+                  ],
+                  "responsibility": "Customer",
+                  "source_page_section": "P5 series"
+                }
+              }
+            ],
+            "non_aws_implemented_controls": [
+              "Data subject rights and Data subject access requests (DSR and DSAR) procedures: Establish and document SOPs to handle data subject access and correction requests, including identification verification, request validation, fulfillment timelines, and escalation paths.",
+              "Identity verification controls: Implement robust verification methods to confirm the identity of requesters before providing or modifying personal data, in alignment with regional privacy laws (for example, GDPR, CCPA).",
+              "Data inventory and mapping: Maintain a detailed and regularly updated inventory of systems and data flows to enable quick and accurate data retrieval or updates when responding to access or correction requests.",
+              "Response templates and legal review: Prepare standardized communication templates for granting, denying, or requesting clarification on access or correction requests. Make sure that legal or privacy teams review complex or denied requests for compliance.",
+              "Training and awareness: Train customer support, legal, engineering, and compliance teams on how to identify, triage, and fulfill data subject rights requests securely and in a timely manner.",
+              "Denial justification and appeals: Create a policy for handling denied requests, including proper documentation of the reason for denial and the process for appeals or complaints.",
+              "Change propagation: If personal information is corrected, make sure that downstream systems and third-party processors are notified as committed or required by contract or regulation.",
+              "Logging and monitoring: Maintain secure logs of all access and correction requests and outcomes to support audit readiness and demonstrate accountability."
+            ],
+            "notes": []
+          },
+          {
+            "sub_domain_id": "P6",
+            "sub_domain_name": "Privacy Criteria Related to Disclosure and Notification",
+            "description": "",
+            "controls": [
+              {
+                "control_id": "P6.1",
+                "control_objective": "The entity discloses personal information to third parties with the explicit consent of data subjects and such consent is obtained prior to disclosure to meet the entity's objectives related to privacy.",
+                "metadata": {
+                  "points_of_focus": [
+                    "Communicates privacy policies to third parties",
+                    "Discloses personal information only when appropriate",
+                    "Discloses personal information only to appropriate third parties",
+                    "Discloses information to third parties for new purposes"
+                  ],
+                  "aws_implementation_guidance": [
+                    "Capture disclosure consent through Amazon Cognito or frontend apps powered by API Gateway and Lambda",
+                    "Record consent status in DynamoDB or Aurora, linked to the third-party service ID",
+                    "Enforce data sharing logic in backend code to check for valid consent before transferring to external APIs, Amazon S3 cross-account, or PrivateLink endpoints",
+                    "Use CloudTrail and CloudWatch Logs to monitor disclosure workflows"
+                  ],
+                  "aws_services": [
+                    "Amazon Cognito",
+                    "Amazon API Gateway",
+                    "AWS Lambda",
+                    "Amazon DynamoDB",
+                    "Amazon Aurora",
+                    "Amazon S3",
+                    "AWS PrivateLink",
+                    "AWS CloudTrail",
+                    "Amazon CloudWatch Logs"
+                  ],
+                  "responsibility": "Customer",
+                  "source_page_section": "P6 series"
+                }
+              },
+              {
+                "control_id": "P6.2",
+                "control_objective": "The entity creates and retains a complete, accurate, and timely record of authorized disclosures of personal information to meet the entity's objectives related to privacy.",
+                "metadata": {
+                  "points_of_focus": [
+                    "Creates and retains records of authorized disclosures"
+                  ],
+                  "aws_implementation_guidance": [
+                    "Log disclosure events in Amazon DynamoDB or Amazon S3 with event metadata (timestamp, subject ID, recipient, and data shared)",
+                    "Use EventBridge and Step Functions to trigger audit record creation upon each authorized sharing",
+                    "Send audit logs to CloudWatch Logs, Amazon Data Firehose, or Amazon OpenSearch for visualization and tracking"
+                  ],
+                  "aws_services": [
+                    "Amazon DynamoDB",
+                    "Amazon S3",
+                    "Amazon EventBridge",
+                    "AWS Step Functions",
+                    "Amazon CloudWatch Logs",
+                    "Amazon Data Firehose",
+                    "Amazon OpenSearch Service"
+                  ],
+                  "responsibility": "Customer",
+                  "source_page_section": "P6 series"
+                }
+              },
+              {
+                "control_id": "P6.3",
+                "control_objective": "The entity creates and retains a complete, accurate, and timely record of detected or reported unauthorized disclosures (including breaches) of personal information to meet the entity's objectives related to privacy.",
+                "metadata": {
+                  "points_of_focus": [
+                    "Creates and retains records of detected or reported unauthorized disclosures"
+                  ],
+                  "aws_implementation_guidance": [
+                    "Detect breaches using GuardDuty, Security Hub, and Macie (for example, PII exposure in Amazon S3)",
+                    "Route alerts to Amazon SNS or Amazon Security Lake and trigger incident logging with Lambda or Step Functions",
+                    "Store incident evidence and breach metadata securely in Amazon S3 with AWS KMS encryption, using Object Lock to help ensure immutability",
+                    "Use AWS Audit Manager or third-party incident response (IR) services to centralize breach investigation records"
+                  ],
+                  "aws_services": [
+                    "Amazon GuardDuty",
+                    "AWS Security Hub",
+                    "Amazon Macie",
+                    "Amazon SNS",
+                    "Amazon Security Lake",
+                    "AWS Lambda",
+                    "AWS Step Functions",
+                    "Amazon S3",
+                    "AWS KMS",
+                    "Amazon S3 Object Lock",
+                    "AWS Audit Manager"
+                  ],
+                  "responsibility": "Customer",
+                  "source_page_section": "P6 series"
+                }
+              },
+              {
+                "control_id": "P6.4",
+                "control_objective": "The entity obtains privacy commitments from vendors and other third parties who have access to personal information to meet the entity's objectives related to privacy. The entity assesses those parties' compliance on a periodic and as-needed basis and takes corrective action, if necessary.",
+                "metadata": {
+                  "points_of_focus": [
+                    "Discloses personal information only to appropriate third parties",
+                    "Remediates misuse of personal information by a third party"
+                  ],
+                  "aws_implementation_guidance": [
+                    "Store signed contracts and vendor agreements in Amazon S3 with restricted access using bucket policies",
+                    "Track vendor onboarding and offboarding and assessment status in DynamoDB or Systems Manager Inventory",
+                    "Use AWS Artifact to request and track third-party privacy certifications (for example, ISO 27701, SOC 2 reports)",
+                    "Maintain an internal vendor privacy risk register in Amazon RDS or integrate with governance, risk, and compliance (GRC) services (for example, ServiceNow)"
+                  ],
+                  "aws_services": [
+                    "Amazon S3",
+                    "Amazon DynamoDB",
+                    "AWS Systems Manager Inventory",
+                    "AWS Artifact",
+                    "Amazon RDS"
+                  ],
+                  "responsibility": "Customer",
+                  "source_page_section": "P6 series"
+                }
+              },
+              {
+                "control_id": "P6.5",
+                "control_objective": "The entity obtains commitments from vendors and other third parties with access to personal information to notify the entity in the event of actual or suspected unauthorized disclosures of personal information. Such notifications are reported to appropriate personnel and acted on in accordance with established incident-response procedures to meet the entity's objectives related to privacy.",
+                "metadata": {
+                  "points_of_focus": [
+                    "Remediates misuse of personal information by a third party",
+                    "Reports actual or suspected unauthorized disclosures"
+                  ],
+                  "aws_implementation_guidance": [
+                    "Include breach notification clauses in third-party contracts and track compliance in your contract database",
+                    "Set up Amazon SNS or custom Lambda endpoints to receive breach alerts from vendors or integrated systems",
+                    "Integrate with third-party services using EventBridge or API Gateway for automated intake of vendor incident notifications",
+                    "Route alerts to Security Hub or ChatOps channels (for example, Amazon Chime or Slack) for immediate response"
+                  ],
+                  "aws_services": [
+                    "Amazon SNS",
+                    "AWS Lambda",
+                    "Amazon EventBridge",
+                    "Amazon API Gateway",
+                    "AWS Security Hub",
+                    "Amazon Chime"
+                  ],
+                  "responsibility": "Customer",
+                  "source_page_section": "P6 series"
+                }
+              },
+              {
+                "control_id": "P6.6",
+                "control_objective": "The entity provides notification of breaches and incidents to affected data subjects, regulators, and others to meet the entity's objectives related to privacy.",
+                "metadata": {
+                  "points_of_focus": [
+                    "Remediates misuse of personal information by a third party",
+                    "Provides notice of breaches and incidents"
+                  ],
+                  "aws_implementation_guidance": [
+                    "Use Security Hub and GuardDuty to detect suspicious activity that might indicate data misuse or a breach",
+                    "Aggregate findings into centralized response workflows using Amazon Detective, EventBridge, and Lambda to triage and route incidents",
+                    "Store detailed forensic logs and analysis in Amazon S3 (with versioning and AWS KMS encryption) and CloudTrail Lake for long-term querying",
+                    "Maintain automated alerts and escalations using Amazon SNS and integrate with incident ticketing systems through Lambda or Step Functions",
+                    "Use Macie to detect if exposed or exfiltrated data contains PII or personal health information (PHI) and tag those objects for breach scope estimation",
+                    "Create notification templates and dispatch alerts to affected users using Amazon SES or Amazon SMS through Amazon Pinpoint"
+                  ],
+                  "aws_services": [
+                    "AWS Security Hub",
+                    "Amazon GuardDuty",
+                    "Amazon Detective",
+                    "Amazon EventBridge",
+                    "AWS Lambda",
+                    "Amazon S3",
+                    "AWS KMS",
+                    "AWS CloudTrail Lake",
+                    "Amazon SNS",
+                    "AWS Step Functions",
+                    "Amazon Macie",
+                    "Amazon SES",
+                    "Amazon Pinpoint"
+                  ],
+                  "responsibility": "Customer",
+                  "source_page_section": "P6 series"
+                }
+              },
+              {
+                "control_id": "P6.7",
+                "control_objective": "The entity provides data subjects with an accounting of the personal information held and disclosure of the data subjects' personal information, upon the data subjects' request, to meet the entity's objectives related to privacy.",
+                "metadata": {
+                  "points_of_focus": [
+                    "Identifies types of personal information and handling process",
+                    "Captures, identifies, and communicates requests for information"
+                  ],
+                  "aws_implementation_guidance": [
+                    "Identify personal or sensitive data types using Macie to scan Amazon S3 buckets for PII, financial, and health data; classify and label assets based on sensitivity",
+                    "Use AWS Glue Data Catalog to maintain metadata on datasets containing personal information, including their source, transformation logic, and destinations",
+                    "Use CloudTrail Lake to query detailed logs about data access and disclosures by IAM users, roles, or services",
+                    "Capture data subject requests through API Gateway and Lambda, storing request logs and timestamps in DynamoDB or Amazon RDS",
+                    "Securely generate and share accounting reports using Amazon S3 (with S3 Object Lock and AWS KMS encryption) and notify users using Amazon SES",
+                    "Use Amazon Cognito for secure authentication and identity linkage of data requests to specific data subjects",
+                    "Implement centralized evidence gathering using Audit Manager and Athena for structured querying across logs, systems, and data repositories",
+                    "Integrate ticketing or workflow systems using Step Functions and EventBridge for request status tracking and escalation"
+                  ],
+                  "aws_services": [
+                    "Amazon Macie",
+                    "Amazon S3",
+                    "AWS Glue Data Catalog",
+                    "AWS CloudTrail Lake",
+                    "Amazon API Gateway",
+                    "AWS Lambda",
+                    "Amazon DynamoDB",
+                    "Amazon RDS",
+                    "Amazon S3 Object Lock",
+                    "AWS KMS",
+                    "Amazon SES",
+                    "Amazon Cognito",
+                    "AWS Audit Manager",
+                    "Amazon Athena",
+                    "AWS Step Functions",
+                    "Amazon EventBridge"
+                  ],
+                  "responsibility": "Customer",
+                  "source_page_section": "P6 series"
+                }
+              }
+            ],
+            "non_aws_implemented_controls": [
+              "Define and enforce a third-party data sharing policy, including requirements for explicit consent prior to disclosure.",
+              "Maintain data processing agreements (DPAs) with all vendors accessing personal data, with clauses on use, breach notification, and termination handling.",
+              "Establish a consent management process to capture, store, and retrieve data subject authorizations for disclosures.",
+              "Maintain a disclosure log documenting all authorized and unauthorized data sharing events, including purpose, recipient, and lawful basis.",
+              "Implement a privacy incident response plan, covering breach detection, classification, communication timelines, and regulator notification procedures.",
+              "Define and document vendor breach reporting obligations and integrate vendor disclosures into internal response workflows.",
+              "Conduct periodic vendor privacy risk assessments and follow up on non-compliance with corrective action.",
+              "Respond to data subject access and accounting requests with verified identity procedures and structured reports of held and disclosed information.",
+              "Provide training and awareness for legal, compliance, IT, and procurement teams on privacy obligations tied to disclosure, breach response, and vendor oversight.",
+              "Maintain documentation and audit readiness for all privacy-related decisions, processes, and exceptions related to third-party data disclosures."
+            ],
+            "notes": []
+          },
+          {
+            "sub_domain_id": "P7",
+            "sub_domain_name": "Privacy Criteria Related to Quality",
+            "description": "",
+            "controls": [
+              {
+                "control_id": "P7.1",
+                "control_objective": "The entity collects and maintains accurate, up-to-date, complete, and relevant personal information to meet the entity's objectives related to privacy.",
+                "metadata": {
+                  "points_of_focus": [
+                    "Helps ensure accuracy and completeness of personal information",
+                    "Helps ensure relevance of personal information"
+                  ],
+                  "aws_implementation_guidance": [
+                    "Implement data validation and cleansing routines at data ingestion points using Lambda, AWS Glue, or AWS Glue DataBrew to enforce accuracy and format rules",
+                    "Use Data Catalog to maintain metadata describing the source, context, and use case of personal data, supporting data relevance assessments",
+                    "Apply Macie to classify and review data stored in Amazon S3, flagging sensitive data stored in non-relevant locations; integrate Amazon RDS or DynamoDB with business logic that enforces required fields and input constraints for personal information",
+                    "Use Amazon AppFlow or AWS Database Migration Service (AWS DMS) to synchronize personal data across systems to reduce inconsistencies and duplication",
+                    "Use CloudWatch and AWS Config to monitor configuration drift in systems managing personal data"
+                  ],
+                  "aws_services": [
+                    "AWS Lambda",
+                    "AWS Glue",
+                    "AWS Glue DataBrew",
+                    "AWS Glue Data Catalog",
+                    "Amazon Macie",
+                    "Amazon S3",
+                    "Amazon RDS",
+                    "Amazon DynamoDB",
+                    "Amazon AppFlow",
+                    "AWS DMS",
+                    "Amazon CloudWatch",
+                    "AWS Config"
+                  ],
+                  "responsibility": "Customer",
+                  "source_page_section": "P7 series"
+                }
+              }
+            ],
+            "non_aws_implemented_controls": [
+              "Define policies and procedures to help ensure that personal data is collected only if relevant and with a clearly documented lawful purpose.",
+              "Train staff on how to validate and update data during collection and throughout the data lifecycle.",
+              "Implement periodic reviews and quality audits of personal data to detect and correct inaccuracies or outdated entries.",
+              "Establish data stewardship roles responsible for maintaining the accuracy, completeness, and relevance of personal information.",
+              "Enable data subject access and correction workflows to help ensure that individuals can update their own information when necessary.",
+              "Limit collection forms and field to what is essential for the declared purpose, avoiding overcollection of personal data."
+            ],
+            "notes": []
+          },
+          {
+            "sub_domain_id": "P8",
+            "sub_domain_name": "Privacy Criteria Related to Monitoring and Enforcement",
+            "description": "",
+            "controls": [
+              {
+                "control_id": "P8.1",
+                "control_objective": "The entity implements a process for receiving, addressing, resolving, and communicating the resolution of inquiries, complaints, and disputes from data subjects and others and periodically monitors compliance to meet the entity's objectives related to privacy. Corrections and other necessary actions related to identified deficiencies are made or taken in a timely manner.",
+                "metadata": {
+                  "points_of_focus": [
+                    "Communicates to data subjects",
+                    "Addresses inquiries, complaints, and disputes",
+                    "Documents and communicates dispute resolution and recourse",
+                    "Documents and reports compliance review results",
+                    "Documents and reports instances of noncompliance",
+                    "Performs ongoing monitoring"
+                  ],
+                  "aws_implementation_guidance": [
+                    "Use API Gateway and Lambda to build secure inquiry intake endpoints and integrate with case management tools",
+                    "Store and track inquiry metadata using DynamoDB or Amazon RDS, including timestamps, resolution steps, and outcomes",
+                    "Use Amazon SES or Pinpoint for secure notification to data subjects confirming receipt and resolution of complaints",
+                    "Implement compliance dashboards using Amazon QuickSight, Athena, and Amazon S3 to visualize dispute resolution SLAs, patterns, and noncompliance trends",
+                    "Use AWS Config and Security Hub to monitor compliance across AWS resources; generate alerts on configuration violations tied to privacy controls",
+                    "Maintain immutable logs using CloudTrail and Amazon S3 Object Lock for audit support"
+                  ],
+                  "aws_services": [
+                    "Amazon API Gateway",
+                    "AWS Lambda",
+                    "Amazon DynamoDB",
+                    "Amazon RDS",
+                    "Amazon SES",
+                    "Amazon Pinpoint",
+                    "Amazon QuickSight",
+                    "Amazon Athena",
+                    "Amazon S3",
+                    "AWS Config",
+                    "AWS Security Hub",
+                    "AWS CloudTrail",
+                    "Amazon S3 Object Lock"
+                  ],
+                  "responsibility": "Customer",
+                  "source_page_section": "P8 series"
+                }
+              }
+            ],
+            "non_aws_implemented_controls": [
+              "Establish a formal complaint-handling policy with defined intake channels (for example, web, phone, or email) and timelines for response and resolution.",
+              "Train customer service, privacy, and legal teams to handle privacy inquiries and resolve complaints in accordance with applicable laws (for example, CCPA, or GDPR).",
+              "Document every inquiry or complaint, track resolution steps, and provide written confirmation to the individual regarding the outcome.",
+              "Perform periodic privacy compliance reviews and generate internal reports for leadership, outlining any issues, trends, and improvement actions.",
+              "Track and report instances of noncompliance, applying corrective or disciplinary actions as appropriate.",
+              "Maintain an ongoing monitoring plan that assesses the effectiveness of controls, remediates deficiencies, and helps ensure continuous improvement.",
+              "Review and update processes regularly to incorporate regulatory changes and lessons learned from past complaints or incidents."
+            ],
+            "notes": [
+              "See the AWS Privacy Reference Architecture for detailed patterns and AWS service recommendations."
+            ]
+          }
+        ]
+      }
+    ]
+  },
+  "supporting_reference_content": {
+    "complementary_user_entity_controls_cuecs": {
+      "definition": "Control activities a service provider expects its customers to implement for the provider's controls to function effectively; disclosed in the AWS SOC 2 Type II report and not optional.",
+      "typical_areas": [
+        "Managing IAM roles and permissions",
+        "Encrypting and backing up data",
+        "Reviewing logs and responding to security alerts",
+        "Securing user devices that access AWS services"
+      ],
+      "recommended_steps": [
+        "Review the CUECs disclosed in the AWS SOC 2 report",
+        "Map those CUECs to internal control activities",
+        "Implement supporting policies, procedures, and technical configurations",
+        "Provide evidence (for example, IAM policies, backup jobs, incident response logs) that these controls operate effectively"
+      ]
+    },
+    "efficient_control_attributes": {
+      "Purpose": "Aligned to a specific Trust Services Criterion",
+      "Owned": "Assigned to a responsible individual or team",
+      "Recurring": "Executed at a defined cadence",
+      "Evidence": "Producing auditable proof of operation",
+      "Mapped": "Linked to AWS configurations, service settings, or organization policies (where applicable)"
+    },
+    "control_documentation_template": [
+      {
+        "attribute": "Control ID",
+        "description": "A unique label tied to a Trust Service Criterion (for example, CC6.1-MFA)"
+      },
+      {
+        "attribute": "Control description",
+        "description": "What the control does and why it exists"
+      },
+      {
+        "attribute": "Owner",
+        "description": "Responsible person or team"
+      },
+      {
+        "attribute": "Execution frequency",
+        "description": "Daily, weekly, monthly, or quarterly"
+      },
+      {
+        "attribute": "AWS services involved",
+        "description": "For example, IAM, AWS KMS, AWS Config, CloudTrail"
+      },
+      {
+        "attribute": "Expected evidence",
+        "description": "For example, policy documents, logs, screenshots, and Config reports"
+      },
+      {
+        "attribute": "Points of focus addressed",
+        "description": "Which points of focus are satisfied by this control"
+      }
+    ],
+    "aws_evidence_sources": [
+      {
+        "aws_tool": "CloudTrail",
+        "type_of_evidence": "API calls, authentication, config changes"
+      },
+      {
+        "aws_tool": "AWS Config",
+        "type_of_evidence": "Compliance evaluations, resource history"
+      },
+      {
+        "aws_tool": "CloudWatch Logs",
+        "type_of_evidence": "Application logs, alarms, usage data"
+      },
+      {
+        "aws_tool": "IAM Reports",
+        "type_of_evidence": "User and group access rights and changes"
+      },
+      {
+        "aws_tool": "Audit Manager",
+        "type_of_evidence": "Control framework mapping, evidence folders"
+      },
+      {
+        "aws_tool": "Security Hub",
+        "type_of_evidence": "Findings, status of integrated services"
+      }
+    ],
+    "evidence_collection_strategies": [
+      "Tag artifacts with control IDs (for example, CC5.3, or A1.2)",
+      "Use Amazon S3 with versioning and access logs for long-term evidence retention",
+      "Automate evidence exports with EventBridge and Lambda (for example, send logs to Amazon S3)",
+      "Prepare walk-throughs describing how each control works and where evidence is stored",
+      "Run mock audits using Audit Manager or internal security teams to simulate questions and evidence requirements"
+    ]
+  }
+}

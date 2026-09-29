@@ -1,0 +1,7 @@
+App ID	Application Name	Business Unit	App Owner	Tech Owner (Email)	Hosting Environment	App Type	Criticality	Data Classification	Authentication Method	Internet Facing	Version	End of Life Date	Status	Last Reviewed
+APP-001	E-Commerce Portal	Retail	Jane Smith	jsmith@mcd.com	AWS (EKS)	Web Application	High	PII / Payment Data	SSO (Okta)	Yes	v5.2.1	N/A	Active	2024-10-01
+APP-002	Payments Gateway	Finance	Bob Lee	blee@mcd.com	AWS (EC2)	Microservice	High	Payment Data	OAuth 2.0	Yes	v3.0.4	N/A	Active	2024-10-01
+APP-003	Internal HR Portal	HR	Carol White	cwhite@mcd.com	Azure (App Service)	Web Application	Medium	PII	SSO (Okta)	No	v2.1.0	N/A	Active	2024-09-15
+APP-004	Legacy Reporting Tool	Finance	Mark Green	mgreen@mcd.com	On-Prem	Desktop App	Medium	Internal	LDAP	No	v1.4.2	2024-06-30	End of Life	2024-06-01
+APP-005	Mobile Customer App	Retail	Jane Smith	jsmith@mcd.com	AWS (Lambda)	Mobile Backend	High	PII	OAuth 2.0 + MFA	Yes	v4.8.0	N/A	Active	2024-10-15
+APP-006	Analytics Dashboard	Data	David Kim	dkim@mcd.com	GCP (GKE)	Web Application	Medium	Internal	SSO (Okta)	No	v2.3.1	N/A	Active	2024-11-01

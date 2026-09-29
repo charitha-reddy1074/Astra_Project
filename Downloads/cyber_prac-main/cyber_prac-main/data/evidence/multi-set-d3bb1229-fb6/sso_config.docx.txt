@@ -1,0 +1,25 @@
+Single Sign-On (SSO) Configuration
+Document ID: CFG-SEC-SSO-2024
+Version: 2.0
+Identity Provider: Microsoft Azure Active Directory (Entra ID)
+Owner: IT Security — Identity Team
+Last Updated: 01 November 2024
+Classification: CONFIDENTIAL
+
+1. Overview
+Acme Corporation has implemented centralised Single Sign-On (SSO) using Microsoft Azure Active Directory (Entra ID) as the Identity Provider (IdP). SSO enforces consistent authentication policies including MFA, conditional access, and session management across all integrated applications. The target state is 100% SSO coverage for all SaaS and internal web applications.
+
+2. Architecture Summary
+Identity Provider: Microsoft Azure AD (Entra ID) — Tenant: acmecorp.onmicrosoft.com
+Primary Protocol: SAML 2.0 (OIDC for modern applications)
+User Directory: Azure AD synced from on-premises Active Directory via Azure AD Connect
+Provisioning: SCIM 2.0 automated provisioning enabled for supported apps
+Session Timeout: 8 hours (employees); 1 hour (privileged accounts)
+Conditional Access: Enforced — requires compliant device + MFA for all app access
+
+3. SSO-Integrated Application Inventory
+
+4. Conditional Access Policies
+
+5. Known Gaps & Remediation
+The Legacy Billing App currently uses LDAP authentication against on-premises Active Directory and does not support SSO or MFA enforcement. Migration to SAML 2.0 with Azure AD is planned for Q1 2025. Compensating controls include: IP allowlisting, VPN requirement, and enhanced monitoring of LDAP authentication logs.

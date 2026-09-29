@@ -1,0 +1,5 @@
+Review ID	Review Type	Trigger	Scope	Reviewer	Review Date	Decision	Risk Rating	Findings Summary	Remediation Owner	Remediation Due	Status	Reference Doc
+CR-2024-001	Architecture Review	New workload deployment	E-Commerce microservices on EKS	Cloud Security Arch	2024-09-10	Approved with conditions	Medium	Missing network segmentation between services	Platform Eng	2024-10-31	Closed	ADR-2024-045
+CR-2024-002	Config Baseline Review	Quarterly cycle	All AWS accounts	Cloud Security Eng	2024-10-15	Approved	Low	2 S3 buckets lacking versioning	DevOps	2024-11-15	In Progress	CSPM-RPT-Q3-2024
+CR-2024-003	Architecture Review	Major feature release	Payment gateway integration	CISO / Cloud Arch	2024-11-01	Conditionally Approved	High	Encryption-at-rest not enforced on RDS	App Security	2024-11-30	Open	ADR-2024-052
+CR-2024-004	IaC Template Review	PR raised for prod infra	Terraform modules – networking	Cloud Security Eng	2024-11-20	Rejected	High	Publicly accessible security groups	DevOps	2024-12-05	Remediation Required	IaC-SCAN-2024-110

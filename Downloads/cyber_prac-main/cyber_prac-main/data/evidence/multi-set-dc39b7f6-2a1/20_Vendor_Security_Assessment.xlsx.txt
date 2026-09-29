@@ -1,0 +1,7 @@
+Control Domain	Control ID	Control Question	Response	Evidence Provided	Finding	Risk Rating	Remediation Required	Disposition	Notes
+Data Security	DS-01	Does the vendor encrypt data at rest using AES-256 or equivalent?	Yes	Encryption policy + AWS KMS config screenshot	No finding	—	No	Approved	Verified in SOC 2 report
+Data Security	DS-02	Is data in transit encrypted using TLS 1.2 or higher?	Yes	TLS configuration evidence	No finding	—	No	Approved	TLS 1.3 confirmed
+Access Control	AC-01	Is MFA enforced for all privileged accounts?	Partial	Policy doc provided; MFA not enforced on 3 admin accounts	MFA gap on admin accounts	High	Yes	Conditional Approval	Vendor committed to full MFA by 2024-12-31
+Incident Response	IR-01	Does the vendor have a documented IR plan and have they tested it in the past 12 months?	Yes	IR Plan v3.2 + tabletop exercise summary	No finding	—	No	Approved	Tabletop conducted Aug 2024
+TPRM / Sub-processors	SP-01	Does the vendor use sub-processors that access MCD data?	Yes	Sub-processor list provided	Sub-processor list not contractually maintained	Medium	Yes	Conditional Approval	Vendor to add sub-processor clause to contract
+Vulnerability Management	VM-01	Does the vendor conduct regular penetration testing of systems processing MCD data?	Yes	Pentest executive summary (2024)	No finding	—	No	Approved	Annual pentest by third party; executive summary reviewed

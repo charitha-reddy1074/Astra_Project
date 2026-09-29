@@ -1,0 +1,476 @@
+[
+  {
+    "cis_control": "1.1",
+    "cis_title": "Establish and Maintain Detailed Enterprise Asset Inventory",
+    "asset_type": "Devices",
+    "implementation_group": "1",
+    "description": "Establish and maintain an accurate, detailed, and up-to-date inventory of all enterprise assets with the potential to store or process data, to include: end-user devices (including portable and mobile), network devices, non-computing/IoT devices, and servers. Ensure the inventory records the network address (if static), hardware address, machine name, enterprise asset owner, department for each asset, and whether the asset has been approved to connect to the network. For mobile end-user devices, MDM type tools can support this process, where appropriate. This inventory includes assets connected to the infrastructure physically, virtually, remotely, and those within cloud environments. Additionally, it includes assets that are regularly connected to the enterprise’s network infrastructure, even if they are not under control of the enterprise. Review and update the inventory of all enterprise assets bi-annually, or more frequently.",
+    "nist_controls": [
+      "ID.AM-01",
+      "ID.AM-08"
+    ]
+  },
+  {
+    "cis_control": "1.2",
+    "cis_title": "Address Unauthorized Assets",
+    "asset_type": "Devices",
+    "implementation_group": "1",
+    "description": "Ensure that a process exists to address unauthorized assets on a weekly basis. The enterprise may choose to remove the asset from the network, deny the asset from connecting remotely to the network, or quarantine the asset.",
+    "nist_controls": [
+      "PR.PS-03"
+    ]
+  },
+  {
+    "cis_control": "2.1",
+    "cis_title": "Establish and Maintain a Software Inventory",
+    "asset_type": "Software",
+    "implementation_group": "1",
+    "description": "Establish and maintain a detailed inventory of all licensed software installed on enterprise assets. The software inventory must document the title, publisher, initial install/use date, and business purpose for each entry; where appropriate, include the Uniform Resource Locator (URL), app store(s), version(s), deployment mechanism, decommission date, and number of licenses. Review and update the software inventory bi-annually, or more frequently.",
+    "nist_controls": [
+      "ID.AM-02"
+    ]
+  },
+  {
+    "cis_control": "2.2",
+    "cis_title": "Ensure Authorized Software is Currently Supported",
+    "asset_type": "Software",
+    "implementation_group": "1",
+    "description": "Ensure that only currently supported software is designated as authorized in the software inventory for enterprise assets. If software is unsupported, yet necessary for the fulfillment of the enterprise’s mission, document an exception detailing mitigating controls and residual risk acceptance. For any unsupported software without an exception documentation, designate as unauthorized. Review the software list to verify software support at least monthly, or more frequently.",
+    "nist_controls": [
+      "PR.PS-02"
+    ]
+  },
+  {
+    "cis_control": "2.3",
+    "cis_title": "Address Unauthorized Software",
+    "asset_type": "Software",
+    "implementation_group": "1",
+    "description": "Ensure that unauthorized software is either removed from use on enterprise assets or receives a documented exception. Review monthly, or more frequently.",
+    "nist_controls": [
+      "PR.PS-02"
+    ]
+  },
+  {
+    "cis_control": "2.5",
+    "cis_title": "Allowlist Authorized Software",
+    "asset_type": "Software",
+    "implementation_group": "2",
+    "description": "Use technical controls, such as application allowlisting, to ensure that only authorized software can execute or be accessed. Reassess bi-annually, or more frequently.",
+    "nist_controls": [
+      "PR.PS-05"
+    ]
+  },
+  {
+    "cis_control": "3.2",
+    "cis_title": "Establish and Maintain a Data Inventory",
+    "asset_type": "Data",
+    "implementation_group": "1",
+    "description": "Establish and maintain a data inventory based on the enterprise’s data management process. Inventory sensitive data, at a minimum. Review and update inventory annually, at a minimum, with a priority on sensitive data.",
+    "nist_controls": [
+      "ID.AM-07"
+    ]
+  },
+  {
+    "cis_control": "3.5",
+    "cis_title": "Securely Dispose of Data",
+    "asset_type": "Data",
+    "implementation_group": "1",
+    "description": "Securely dispose of data as outlined in the enterprise’s documented data management process. Ensure the disposal process and method are commensurate with the data sensitivity.",
+    "nist_controls": [
+      "ID.AM-08"
+    ]
+  },
+  {
+    "cis_control": "3.7",
+    "cis_title": "Establish and Maintain a Data Classification Scheme",
+    "asset_type": "Data",
+    "implementation_group": "2",
+    "description": "Establish and maintain an overall data classification scheme for the enterprise. Enterprises may use labels, such as “Sensitive,” “Confidential,” and “Public,” and classify their data according to those labels. Review and update the classification scheme annually, or when significant enterprise changes occur that could impact this Safeguard.",
+    "nist_controls": [
+      "ID.AM-05"
+    ]
+  },
+  {
+    "cis_control": "3.8",
+    "cis_title": "Document Data Flows",
+    "asset_type": "Data",
+    "implementation_group": "2",
+    "description": "Document data flows. Data flow documentation includes service provider data flows and should be based on the enterprise’s data management process. Review and update documentation annually, or when significant enterprise changes occur that could impact this Safeguard.",
+    "nist_controls": [
+      "ID.AM-03"
+    ]
+  },
+  {
+    "cis_control": "3.1",
+    "cis_title": "Encrypt Sensitive Data in Transit",
+    "asset_type": "Data",
+    "implementation_group": "2",
+    "description": "Encrypt sensitive data in transit. Example implementations can include: Transport Layer Security (TLS) and Open Secure Shell (OpenSSH).",
+    "nist_controls": [
+      "PR.DS-02"
+    ]
+  },
+  {
+    "cis_control": "3.11",
+    "cis_title": "Encrypt Sensitive Data at Rest",
+    "asset_type": "Data",
+    "implementation_group": "2",
+    "description": "Encrypt sensitive data at rest on servers, applications, and databases. Storage-layer encryption, also known as server-side encryption, meets the minimum requirement of this Safeguard. Additional encryption methods may include application-layer encryption, also known as client-side encryption, where access to the data storage device(s) does not permit access to the plain-text data.",
+    "nist_controls": [
+      "PR.DS-01"
+    ]
+  },
+  {
+    "cis_control": "3.12",
+    "cis_title": "Segment Data Processing and Storage Based on Sensitivity",
+    "asset_type": "Data",
+    "implementation_group": "2",
+    "description": "Segment data processing and storage based on the sensitivity of the data. Do not process sensitive data on enterprise assets intended for lower sensitivity data.",
+    "nist_controls": [
+      "PR.IR-01"
+    ]
+  },
+  {
+    "cis_control": "4.1",
+    "cis_title": "Establish and Maintain a Secure Configuration Process",
+    "asset_type": "Documentation",
+    "implementation_group": "1",
+    "description": "Establish and maintain a documented secure configuration process for enterprise assets (end-user devices, including portable and mobile, non-computing/IoT devices, and servers) and software (operating systems and applications). Review and update documentation annually, or when significant enterprise changes occur that could impact this Safeguard.",
+    "nist_controls": [
+      "PR.PS-01"
+    ]
+  },
+  {
+    "cis_control": "4.2",
+    "cis_title": "Establish and Maintain a Secure Configuration Process for Network Infrastructure",
+    "asset_type": "Documentation",
+    "implementation_group": "1",
+    "description": "Establish and maintain a documented secure configuration process for network devices. Review and update documentation annually, or when significant enterprise changes occur that could impact this Safeguard.",
+    "nist_controls": [
+      "PR.PS-01"
+    ]
+  },
+  {
+    "cis_control": "5.1",
+    "cis_title": "Establish and Maintain an Inventory of Accounts",
+    "asset_type": "Users",
+    "implementation_group": "1",
+    "description": "Establish and maintain an inventory of all accounts managed in the enterprise. The inventory must at a minimum include user, administrator accounts, and service accounts. The inventory, at a minimum, should contain the person’s name, username, start/stop dates, and department. Validate that all active accounts are authorized, on a recurring schedule at a minimum quarterly, or more frequently.",
+    "nist_controls": [
+      "PR.AA-01",
+      "PR.AA-05"
+    ]
+  },
+  {
+    "cis_control": "5.6",
+    "cis_title": "Centralize Account Management",
+    "asset_type": "Users",
+    "implementation_group": "2",
+    "description": "Centralize account management through a directory or identity service.",
+    "nist_controls": [
+      "PR.AA-01"
+    ]
+  },
+  {
+    "cis_control": "6.1",
+    "cis_title": "Establish an Access Granting Process",
+    "asset_type": "Documentation",
+    "implementation_group": "1",
+    "description": "Establish and follow a documented process, preferably automated, for granting access to enterprise assets upon new hire or role change of a user.",
+    "nist_controls": [
+      "GV.RR-04"
+    ]
+  },
+  {
+    "cis_control": "6.2",
+    "cis_title": "Establish an Access Revoking Process",
+    "asset_type": "Documentation",
+    "implementation_group": "1",
+    "description": "Establish and follow a process, preferably automated, for revoking access to enterprise assets, through disabling accounts immediately upon termination, rights revocation, or role change of a user. Disabling accounts, instead of deleting accounts, may be necessary to preserve audit trails.",
+    "nist_controls": [
+      "GV.RR-04"
+    ]
+  },
+  {
+    "cis_control": "6.8",
+    "cis_title": "Define and Maintain Role-Based Access Control",
+    "asset_type": "Users",
+    "implementation_group": "3",
+    "description": "Define and maintain role-based access control, through determining and documenting the access rights necessary for each role within the enterprise to successfully carry out its assigned duties. Perform access control reviews of enterprise assets to validate that all privileges are authorized, on a recurring schedule at a minimum annually, or more frequently.",
+    "nist_controls": [
+      "PR.AA-05"
+    ]
+  },
+  {
+    "cis_control": "7.1",
+    "cis_title": "Establish and Maintain a Vulnerability Management Process",
+    "asset_type": "Documentation",
+    "implementation_group": "1",
+    "description": "Establish and maintain a documented vulnerability management process for enterprise assets. Review and update documentation annually, or when significant enterprise changes occur that could impact this Safeguard.",
+    "nist_controls": [
+      "ID.RA-01"
+    ]
+  },
+  {
+    "cis_control": "7.2",
+    "cis_title": "Establish and Maintain a Remediation Process",
+    "asset_type": "Documentation",
+    "implementation_group": "1",
+    "description": "Establish and maintain a risk-based remediation strategy documented in a remediation process, with monthly, or more frequent, reviews.",
+    "nist_controls": [
+      "ID.IM-02",
+      "ID.RA-08"
+    ]
+  },
+  {
+    "cis_control": "8.2",
+    "cis_title": "Collect Audit Logs",
+    "asset_type": "Data",
+    "implementation_group": "1",
+    "description": "Collect audit logs. Ensure that logging, per the enterprise’s audit log management process, has been enabled across enterprise assets.",
+    "nist_controls": [
+      "PR.PS-04"
+    ]
+  },
+  {
+    "cis_control": "8.11",
+    "cis_title": "Conduct Audit Log Reviews",
+    "asset_type": "Data",
+    "implementation_group": "2",
+    "description": "Conduct reviews of audit logs to detect anomalies or abnormal events that could indicate a potential threat. Conduct reviews on a weekly, or more frequent, basis.",
+    "nist_controls": [
+      "DE.AE-02"
+    ]
+  },
+  {
+    "cis_control": "10.1",
+    "cis_title": "Deploy and Maintain Anti-Malware Software",
+    "asset_type": "Devices",
+    "implementation_group": "1",
+    "description": "Deploy and maintain anti-malware software on all enterprise assets.",
+    "nist_controls": [
+      "DE.CM-09"
+    ]
+  },
+  {
+    "cis_control": "10.7",
+    "cis_title": "Use Behavior-Based Anti-Malware Software",
+    "asset_type": "Devices",
+    "implementation_group": "2",
+    "description": "Use behavior-based anti-malware software.",
+    "nist_controls": [
+      "DE.CM-03"
+    ]
+  },
+  {
+    "cis_control": "11.2",
+    "cis_title": "Perform Automated Backups",
+    "asset_type": "Data",
+    "implementation_group": "1",
+    "description": "Perform automated backups of in-scope enterprise assets. Run backups weekly, or more frequently, based on the sensitivity of the data.",
+    "nist_controls": [
+      "PR.DS-11"
+    ]
+  },
+  {
+    "cis_control": "11.3",
+    "cis_title": "Protect Recovery Data",
+    "asset_type": "Data",
+    "implementation_group": "1",
+    "description": "Protect recovery data with equivalent controls to the original data. Reference encryption or data separation, based on requirements.",
+    "nist_controls": [
+      "PR.DS-11"
+    ]
+  },
+  {
+    "cis_control": "11.5",
+    "cis_title": "Test Data Recovery",
+    "asset_type": "Data",
+    "implementation_group": "2",
+    "description": "Test backup recovery quarterly, or more frequently, for a sampling of in-scope enterprise assets.",
+    "nist_controls": [
+      "PR.DS-11",
+      "RC.RP-03"
+    ]
+  },
+  {
+    "cis_control": "12.2",
+    "cis_title": "Establish and Maintain a Secure Network Architecture",
+    "asset_type": "Network",
+    "implementation_group": "2",
+    "description": "Design and maintain a secure network architecture. A secure network architecture must address segmentation, least privilege, and availability, at a minimum. Example implementations will not solely include documentation, but also policy and design components.",
+    "nist_controls": [
+      "PR.IR-01"
+    ]
+  },
+  {
+    "cis_control": "13.1",
+    "cis_title": "Centralize Security Event Alerting",
+    "asset_type": "Network",
+    "implementation_group": "2",
+    "description": "Centralize security event alerting across enterprise assets for log correlation and analysis. Best practice implementation requires the use of a SIEM, which includes vendor-defined event correlation alerts. A log analytics platform configured with security-relevant correlation alerts also satisfies this Safeguard.",
+    "nist_controls": [
+      "DE.CM-01"
+    ]
+  },
+  {
+    "cis_control": "14.1",
+    "cis_title": "Establish and Maintain a Security Awareness Program",
+    "asset_type": "Documentation",
+    "implementation_group": "1",
+    "description": "Establish and maintain a security awareness program. The purpose of a security awareness program is to educate the enterprise’s workforce on how to interact with enterprise assets and data in a secure manner. Conduct training at hire and, at a minimum, annually. Review and update content annually, or when significant enterprise changes occur that could impact this Safeguard.",
+    "nist_controls": [
+      "GV.RR-01",
+      "PR.AT-01"
+    ]
+  },
+  {
+    "cis_control": "14.9",
+    "cis_title": "Conduct Role-Specific Security Awareness and Skills Training",
+    "asset_type": "Users",
+    "implementation_group": "2",
+    "description": "Conduct role-specific security awareness and skills training. Example implementations include secure system administration courses for IT professionals, OWASP® Top 10 vulnerability awareness and prevention training for web application developers, and advanced social engineering awareness training for high-profile roles.",
+    "nist_controls": [
+      "GV.RR-02",
+      "PR.AT-02"
+    ]
+  },
+  {
+    "cis_control": "15.1",
+    "cis_title": "Establish and Maintain an Inventory of Service Providers",
+    "asset_type": "Users",
+    "implementation_group": "1",
+    "description": "Establish and maintain an inventory of service providers. The inventory is to list all known service providers, include classification(s), and designate an enterprise contact for each service provider. Review and update the inventory annually, or when significant enterprise changes occur that could impact this Safeguard.",
+    "nist_controls": [
+      "GV.SC-04",
+      "ID.AM-04"
+    ]
+  },
+  {
+    "cis_control": "15.2",
+    "cis_title": "Establish and Maintain a Service Provider Management Policy",
+    "asset_type": "Documentation",
+    "implementation_group": "2",
+    "description": "Establish and maintain a service provider management policy. Ensure the policy addresses the classification, inventory, assessment, monitoring, and decommissioning of service providers. Review and update the policy annually, or when significant enterprise changes occur that could impact this Safeguard.",
+    "nist_controls": [
+      "DE.CM-06",
+      "GV.SC-01"
+    ]
+  },
+  {
+    "cis_control": "15.3",
+    "cis_title": "Classify Service Providers",
+    "asset_type": "Users",
+    "implementation_group": "2",
+    "description": "Classify service providers. Classification consideration may include one or more characteristics, such as data sensitivity, data volume, availability requirements, applicable regulations, inherent risk, and mitigated risk. Update and review classifications annually, or when significant enterprise changes occur that could impact this Safeguard.",
+    "nist_controls": [
+      "GV.SC-04"
+    ]
+  },
+  {
+    "cis_control": "15.4",
+    "cis_title": "Ensure Service Provider Contracts Include Security Requirements",
+    "asset_type": "Documentation",
+    "implementation_group": "2",
+    "description": "Ensure service provider contracts include security requirements. Example requirements may include minimum security program requirements, security incident and/or data breach notification and response, data encryption requirements, and data disposal commitments. These security requirements must be consistent with the enterprise’s service provider management policy. Review service provider contracts annually to ensure contracts are not missing security requirements.",
+    "nist_controls": [
+      "GV.SC-02",
+      "GV.SC-05",
+      "GV.SC-08"
+    ]
+  },
+  {
+    "cis_control": "15.5",
+    "cis_title": "Assess Service Providers",
+    "asset_type": "Users",
+    "implementation_group": "3",
+    "description": "Assess service providers consistent with the enterprise’s service provider management policy. Assessment scope may vary based on classification(s), and may include review of standardized assessment reports, such as Service Organization Control 2 (SOC 2) and Payment Card Industry (PCI) Attestation of Compliance (AoC), customized questionnaires, or other appropriately rigorous processes. Reassess service providers annually, at a minimum, or with new and renewed contracts.",
+    "nist_controls": [
+      "GV.SC-06"
+    ]
+  },
+  {
+    "cis_control": "15.6",
+    "cis_title": "Monitor Service Providers",
+    "asset_type": "Data",
+    "implementation_group": "3",
+    "description": "Monitor service providers consistent with the enterprise’s service provider management policy. Monitoring may include periodic reassessment of service provider compliance, monitoring service provider release notes, and dark web monitoring.",
+    "nist_controls": [
+      "DE.CM-06",
+      "GV.SC-07",
+      "GV.SC-09"
+    ]
+  },
+  {
+    "cis_control": "15.7",
+    "cis_title": "Securely Decommission Service Providers",
+    "asset_type": "Data",
+    "implementation_group": "3",
+    "description": "Securely decommission service providers. Example considerations include user and service account deactivation, termination of data flows, and secure disposal of enterprise data within service provider systems.",
+    "nist_controls": [
+      "GV.SC-10"
+    ]
+  },
+  {
+    "cis_control": "16.1",
+    "cis_title": "Establish and Maintain a Secure Application Development Process",
+    "asset_type": "Documentation",
+    "implementation_group": "2",
+    "description": "Establish and maintain a secure application development process. In the process, address such items as: secure application design standards, secure coding practices, developer training, vulnerability management, security of third-party code, and application security testing procedures. Review and update documentation annually, or when significant enterprise changes occur that could impact this Safeguard.",
+    "nist_controls": [
+      "PR.PS-06"
+    ]
+  },
+  {
+    "cis_control": "17.2",
+    "cis_title": "Establish and Maintain Contact Information for Reporting Security Incidents",
+    "asset_type": "Documentation",
+    "implementation_group": "1",
+    "description": "Establish and maintain contact information for parties that need to be informed of security incidents. Contacts may include internal staff, service vendors, law enforcement, cyber insurance providers, relevant government agencies, Information Sharing and Analysis Center (ISAC) partners, or other stakeholders. Verify contacts annually to ensure that information is up-to-date.",
+    "nist_controls": [
+      "RC.CO-04",
+      "RS.CO-02",
+      "RS.CO-03"
+    ]
+  },
+  {
+    "cis_control": "17.4",
+    "cis_title": "Establish and Maintain an Incident Response Process",
+    "asset_type": "Documentation",
+    "implementation_group": "2",
+    "description": "Establish and maintain a documented incident response process that addresses roles and responsibilities, compliance requirements, and a communication plan. Review annually, or when significant enterprise changes occur that could impact this Safeguard.",
+    "nist_controls": [
+      "RS.MA-01"
+    ]
+  },
+  {
+    "cis_control": "17.6",
+    "cis_title": "Define Mechanisms for Communicating During Incident Response",
+    "asset_type": "Users",
+    "implementation_group": "2",
+    "description": "Determine which primary and secondary mechanisms will be used to communicate and report during a security incident. Mechanisms can include phone calls, emails, secure chat, or notification letters. Keep in mind that certain mechanisms, such as emails, can be affected during a security incident. Review annually, or when significant enterprise changes occur that could impact this Safeguard.",
+    "nist_controls": [
+      "RC.CO-04"
+    ]
+  },
+  {
+    "cis_control": "17.8",
+    "cis_title": "Conduct Post-Incident Reviews",
+    "asset_type": "Users",
+    "implementation_group": "2",
+    "description": "Conduct post-incident reviews. Post-incident reviews help prevent incident recurrence through identifying lessons learned and follow-up action.",
+    "nist_controls": [
+      "RS.AN-03"
+    ]
+  },
+  {
+    "cis_control": "17.9",
+    "cis_title": "Establish and Maintain Security Incident Thresholds",
+    "asset_type": "Documentation",
+    "implementation_group": "3",
+    "description": "Establish and maintain security incident thresholds, including, at a minimum, differentiating between an incident and an event. Examples can include: abnormal activity, security vulnerability, security weakness, data breach, privacy incident, etc. Review annually, or when significant enterprise changes occur that could impact this Safeguard.",
+    "nist_controls": [
+      "RS.MA-05"
+    ]
+  }
+]

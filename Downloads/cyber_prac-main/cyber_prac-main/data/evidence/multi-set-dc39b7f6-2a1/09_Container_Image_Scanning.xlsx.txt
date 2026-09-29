@@ -1,0 +1,5 @@
+Scan ID	Repository / Registry	Image Name	Image Tag	Scanning Tool	Scan Stage	Date Scanned	Critical CVEs	High CVEs	Medium CVEs	Low CVEs	Gate Action	Deployment Allowed	Owner	Remediation Ticket
+IMG-001	ECR / mcd-prod	ecomm-api	v2.4.1	Snyk Container	CI Pipeline (pre-deploy)	2024-11-20	0	2	8	12	Warn (High<5)	Yes	Platform Eng	SNYK-2024-0891
+IMG-002	ECR / mcd-prod	payments-svc	v1.9.0	Snyk Container	CI Pipeline (pre-deploy)	2024-11-19	1	3	5	9	Blocked (Critical=1)	No	Platform Eng	SNYK-2024-0892
+IMG-003	ACR / mcd-azure	identity-svc	v3.1.2	Trivy	CI Pipeline (pre-deploy)	2024-11-18	0	0	3	7	Pass	Yes	DevOps	—
+IMG-004	GCR / mcd-gcp	analytics-worker	v1.2.5	Trivy + Wiz	CI Pipeline (pre-deploy)	2024-11-17	0	1	4	10	Warn	Yes	Data Eng	TRIVY-2024-110

@@ -1,0 +1,61 @@
+Access Granting Procedure
+Identity & Access Management  |  IAM-PROC-2026-003  |  Version 2.4
+
+1. Document Control
+
+2. Purpose & Scope
+
+This procedure defines the mandatory process for requesting, approving, provisioning, and verifying access to all corporate systems, applications, and data. It applies to new joiners, role changes, temporary access grants, and contractor onboarding.
+Scope: All employees, contractors, service accounts, and third-party users requiring access to corporate IT systems, cloud platforms, or data assets.
+
+3. Access Request & Approval Matrix
+
+
+4. Step-by-Step Access Granting Procedure
+
+Step 1 — Access Request (Requester)
+Submit access request via ITSM portal (ticket type: Access Request)
+Specify: user/account, system/application, access level required, business justification, required duration
+For privileged access: attach risk assessment and compensating controls documentation
+For contractor access: confirm background check completion and NDA signed
+
+Step 2 — Line Manager Approval (Line Manager)
+Review request within 2 business days
+Confirm access is appropriate to the user's role and job function
+Confirm least privilege principle is applied (no broader access than required)
+Approve or reject in ITSM with documented reason
+
+Step 3 — System / Data Owner Approval (for elevated access)
+System or data owner reviews and approves within 3 business days
+Confirms no segregation of duties conflicts against Role Definition Document (IAM-POL-2026-002)
+Escalates to CISO if access is classified as high-risk or creates SoD conflict
+
+Step 4 — Provisioning (IAM Manager)
+Provision access upon receipt of all required approvals
+Assign to approved role group in Active Directory / Azure AD — no direct entitlement assignment
+For privileged access: configure via Azure PIM with just-in-time activation
+Ensure MFA is enrolled before access is activated
+Record provisioning action in ITSM ticket with timestamp
+
+Step 5 — Notification & Verification
+Notify user and line manager of access grant with instructions
+User confirms successful access within 1 business day
+IAM Manager verifies access in AD / Azure AD report and closes ticket
+
+5. Access Granting SLAs
+
+
+6. Segregation of Duties Checks
+
+Before provisioning any access, the IAM Manager must verify that the requested role does not create a prohibited combination as defined in the Role Definition Document (IAM-POL-2026-002, Section 5). Any conflict must be escalated to the CISO before provisioning.
+
+7. Temporary Access Controls
+
+Temporary access is time-limited and must have an expiry date set at provisioning
+Maximum duration: 30 days without CISO renewal approval
+Auto-expiry is enforced via Azure AD access packages
+Requestor receives reminder at Day 25; access auto-revoked at Day 30 if not renewed
+
+8. Audit & Compliance
+
+All access requests, approvals, and provisioning actions are logged in the ITSM system and Azure AD audit log. The IAM Manager produces a monthly Access Granting Report reviewed by the CISO. Non-compliance (access granted without documented approval) is treated as a security incident.

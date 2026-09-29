@@ -1,0 +1,7 @@
+Provider	Account ID	Log Type	Log Source / Service	Enabled	Log Destination	GSOC Forwarding	Forwarding Method	Retention (Days)	Encryption	Last Validated	Owner	Notes
+AWS	123456789012	Management Events	CloudTrail	Yes	S3 + CloudWatch Logs	Yes	Kinesis Firehose → SIEM	365	KMS	2024-11-01	IT Security	All regions enabled
+AWS	123456789012	Data Events (S3)	CloudTrail	Yes	S3	Yes	Kinesis Firehose → SIEM	365	KMS	2024-11-01	IT Security	Write events only
+AWS	123456789012	VPC Flow Logs	VPC	Yes	CloudWatch Logs	Yes	Lambda → SIEM	90	AES-256	2024-11-01	Network Ops	All VPCs covered
+Azure	sub-0987abcd	Activity Logs	Azure Monitor	Yes	Log Analytics Workspace	Yes	Event Hub → SIEM	180	Azure Encryption	2024-10-15	IT Security	Diagnostic settings configured
+Azure	sub-0987abcd	Resource Logs	Azure Diagnostics	Partial	Log Analytics Workspace	Partial	Event Hub → SIEM	90	Azure Encryption	2024-10-15	DevOps	3 resources not forwarding – ticket AZ-339
+GCP	gcp-proj-321	Audit Logs (Admin)	Cloud Audit Logs	Yes	Cloud Logging → Pub/Sub	Yes	Pub/Sub → SIEM	400	CMEK	2024-11-05	IT Security	Data access logs also enabled

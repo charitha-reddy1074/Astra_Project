@@ -1,0 +1,1050 @@
+{
+  "questionnaire_id": "multi-mcd-market-assessment-cloud",
+  "questionnaire_type": "multi_framework",
+  "framework_id": "41e4fe3e-b70d-54c1-a18f-7bbc894b33ca",
+  "name": "MCD Market Assessment Framework (Hosting & Cloud Security)",
+  "framework_names": [
+    "MCD Market Assessment Framework"
+  ],
+  "framework_summary": "MCD Market Assessment Framework",
+  "version": "1.0",
+  "source_format": "multi_framework_merged",
+  "question_count": 8,
+  "part1_checklist": [
+    {
+      "number": 1,
+      "question_id": "f47ac10b-ee9c-43b5-93cb-07b5f7b4494b",
+      "question_text": "Is CSPM tool deployed?",
+      "sub_topic": "Hosting & Cloud Security",
+      "domain_name": "Hosting & Cloud Security",
+      "framework_name": "MCD Market Assessment Framework",
+      "control_id": "CLOUD-1, CLOUD-2, CLOUD-3",
+      "answer_format": "yes_no_with_detail",
+      "response_options": "Yes / No / Partial",
+      "detail_prompt": "If yes or partial, specify the tool or technology in use."
+    },
+    {
+      "number": 2,
+      "question_id": "9b7f3a8e-4e2f-4c9d-8c3b-07a5c9b7f3a8",
+      "question_text": "How often are cloud security reviews performed?",
+      "sub_topic": "Hosting & Cloud Security",
+      "domain_name": "Hosting & Cloud Security",
+      "framework_name": "MCD Market Assessment Framework",
+      "control_id": "",
+      "answer_format": "yes_no_with_detail",
+      "response_options": "Yes / No / Partial",
+      "detail_prompt": "Frequency of reviews"
+    },
+    {
+      "number": 3,
+      "question_id": "1a2b3c4d-5e6f-7g8h-9i0j-1a2b3c4d5e6",
+      "question_text": "What process triggers cloud misconfiguration remediation?",
+      "sub_topic": "Hosting & Cloud Security",
+      "domain_name": "Hosting & Cloud Security",
+      "framework_name": "MCD Market Assessment Framework",
+      "control_id": "",
+      "answer_format": "yes_no_with_detail",
+      "response_options": "Yes / No / Partial",
+      "detail_prompt": "Remediation process"
+    },
+    {
+      "number": 4,
+      "question_id": "2c4d6e8f-0g1h-2i3j-4k5l-2c4d6e8f0g1",
+      "question_text": "How are IaC templates scanned for security issues?",
+      "sub_topic": "Hosting & Cloud Security",
+      "domain_name": "Hosting & Cloud Security",
+      "framework_name": "MCD Market Assessment Framework",
+      "control_id": "",
+      "answer_format": "yes_no_with_detail",
+      "response_options": "Yes / No / Partial",
+      "detail_prompt": "IaC scanning process"
+    },
+    {
+      "number": 5,
+      "question_id": "3f5g6h7j-8k9l-0m1n-2o3p-3f5g6h7j8k9",
+      "question_text": "What cloud benchmarks are applied to the environment?",
+      "sub_topic": "Hosting & Cloud Security",
+      "domain_name": "Hosting & Cloud Security",
+      "framework_name": "MCD Market Assessment Framework",
+      "control_id": "",
+      "answer_format": "yes_no_with_detail",
+      "response_options": "Yes / No / Partial",
+      "detail_prompt": "Cloud benchmarks"
+    },
+    {
+      "number": 6,
+      "question_id": "4h5j6k7l-8m9n-0p1q-2r3s-4h5j6k7l8m9",
+      "question_text": "How are cloud-native audit logs configured and forwarded?",
+      "sub_topic": "Hosting & Cloud Security",
+      "domain_name": "Hosting & Cloud Security",
+      "framework_name": "MCD Market Assessment Framework",
+      "control_id": "",
+      "answer_format": "yes_no_with_detail",
+      "response_options": "Yes / No / Partial",
+      "detail_prompt": "Audit log configuration"
+    },
+    {
+      "number": 7,
+      "question_id": "5m6n7o8p-9q0r-1s2t-3u4v-5m6n7o8p9q0",
+      "question_text": "What process exists for responding to cloud alerts?",
+      "sub_topic": "Hosting & Cloud Security",
+      "domain_name": "Hosting & Cloud Security",
+      "framework_name": "MCD Market Assessment Framework",
+      "control_id": "",
+      "answer_format": "yes_no_with_detail",
+      "response_options": "Yes / No / Partial",
+      "detail_prompt": "Alert response process"
+    },
+    {
+      "number": 8,
+      "question_id": "6p7q8r9s-0t1u-2v3w-4x5y-6p7q8r9s0t1",
+      "question_text": "How often are cloud alerts reviewed and updated?",
+      "sub_topic": "Hosting & Cloud Security",
+      "domain_name": "Hosting & Cloud Security",
+      "framework_name": "MCD Market Assessment Framework",
+      "control_id": "",
+      "answer_format": "yes_no_with_detail",
+      "response_options": "Yes / No / Partial",
+      "detail_prompt": "Alert review frequency"
+    },
+    {
+      "number": 9,
+      "question_id": "7q8r9s0t-1u2v-3w4x-5y6z-7q8r9s0t1u2",
+      "question_text": "What is the defined SLA for remediating cloud misconfigurations?",
+      "sub_topic": "Hosting & Cloud Security",
+      "domain_name": "Hosting & Cloud Security",
+      "framework_name": "MCD Market Assessment Framework",
+      "control_id": "",
+      "answer_format": "yes_no_with_detail",
+      "response_options": "Yes / No / Partial",
+      "detail_prompt": "Remediation SLA"
+    },
+    {
+      "number": 10,
+      "question_id": "8r9s0t1u-2v3w-4x5y-6z7q-8r9s0t1u2v3",
+      "question_text": "How are cloud security risks assessed and prioritized?",
+      "sub_topic": "Hosting & Cloud Security",
+      "domain_name": "Hosting & Cloud Security",
+      "framework_name": "MCD Market Assessment Framework",
+      "control_id": "",
+      "answer_format": "yes_no_with_detail",
+      "response_options": "Yes / No / Partial",
+      "detail_prompt": "Risk assessment process"
+    },
+    {
+      "number": 11,
+      "question_id": "9t1u2v3w-4x5y-6z7q-8r9s-9t1u2v3w4x5",
+      "question_text": "What is the process for updating cloud security policies and procedures?",
+      "sub_topic": "Hosting & Cloud Security",
+      "domain_name": "Hosting & Cloud Security",
+      "framework_name": "MCD Market Assessment Framework",
+      "control_id": "",
+      "answer_format": "yes_no_with_detail",
+      "response_options": "Yes / No / Partial",
+      "detail_prompt": "Policy update process"
+    }
+  ],
+  "question_groups": [
+    {
+      "framework_id": "a3f2c1d4-7b8e-5a9f-b012-3c4d5e6f7a8b",
+      "framework_key": "mcd-market-assessment",
+      "framework_name": "MCD Market Assessment Framework",
+      "domain_id": "CLOUD",
+      "domain_name": "Hosting & Cloud Security",
+      "domain_description": "Covers cloud adoption, configuration management, workload security, and cloud governance.",
+      "question_count": 3,
+      "questions": [
+        {
+          "item_id": "09e309f6-820e-5b79-ac05-55fba46ee5ee",
+          "question_id": "09e309f6-820e-5b79-ac05-55fba46ee5ee",
+          "question_text": "Is there a complete inventory of all cloud accounts, subscriptions, and tenants in use, including those provisioned outside of the central IT and security governance process?",
+          "question_type": "merged",
+          "answer_formats": [
+            "free_text"
+          ],
+          "framework_name": "MCD Market Assessment Framework",
+          "framework_key": "mcd-market-assessment",
+          "domain_id": "CLOUD",
+          "domain_name": "Hosting & Cloud Security",
+          "control_id": "CLOUD-1",
+          "control_statement": "Cloud environment is documented and governed. Security reviews cloud architecture decisions before deployment. A hybrid or multiple cloud strategy is defined and managed.",
+          "expected_evidence": "Cloud environment inventory showing providers, workloads, and ownership, Cloud account and subscription inventory, Cloud security review process documentation",
+          "maturity_level": "Critical Gap",
+          "merge_reason": "Merged by control fallback because LLM output was unavailable or invalid.",
+          "source_item_ids": [
+            "fbe3dc7f-f343-5ba3-9897-3bdb09e53358",
+            "f50d0a1f-70dd-56c7-ba2f-aea334382fb8",
+            "8484fce8-8708-5202-99a8-97c6d74f0258"
+          ],
+          "source_questions": [
+            {
+              "question_id": "CLOUD-1-Q1",
+              "question_text": "What cloud providers are in use (AWS, Azure, GCP, other), and what workloads run there?",
+              "question_type": "free_text",
+              "framework_name": "MCD Market Assessment Framework",
+              "framework_key": "mcd-market-assessment",
+              "domain_id": "CLOUD",
+              "domain_name": "Hosting & Cloud Security",
+              "control_id": "CLOUD-1",
+              "cross_references": [],
+              "expected_evidence": "Cloud environment inventory showing providers, workloads, and ownership, Cloud account and subscription inventory, Cloud security review process documentation"
+            },
+            {
+              "question_id": "CLOUD-1-Q2",
+              "question_text": "Is there a complete inventory of all cloud accounts, subscriptions, and tenants in use, including those provisioned outside of the central IT and security governance process?",
+              "question_type": "free_text",
+              "framework_name": "MCD Market Assessment Framework",
+              "framework_key": "mcd-market-assessment",
+              "domain_id": "CLOUD",
+              "domain_name": "Hosting & Cloud Security",
+              "control_id": "CLOUD-1",
+              "cross_references": [],
+              "expected_evidence": "Cloud environment inventory showing providers, workloads, and ownership, Cloud account and subscription inventory, Cloud security review process documentation"
+            },
+            {
+              "question_id": "CLOUD-1-Q3",
+              "question_text": "Does the security team review cloud architecture decisions before deployment?",
+              "question_type": "free_text",
+              "framework_name": "MCD Market Assessment Framework",
+              "framework_key": "mcd-market-assessment",
+              "domain_id": "CLOUD",
+              "domain_name": "Hosting & Cloud Security",
+              "control_id": "CLOUD-1",
+              "cross_references": [],
+              "expected_evidence": "Cloud environment inventory showing providers, workloads, and ownership, Cloud account and subscription inventory, Cloud security review process documentation"
+            }
+          ],
+          "cross_references": []
+        },
+        {
+          "item_id": "6f691f17-e9a7-5071-be0c-f58deb1f92cc",
+          "question_id": "6f691f17-e9a7-5071-be0c-f58deb1f92cc",
+          "question_text": "Is infrastructure-as-code used for cloud provisioning, and is security scanning applied to those templates?",
+          "question_type": "merged",
+          "answer_formats": [
+            "free_text"
+          ],
+          "framework_name": "MCD Market Assessment Framework",
+          "framework_key": "mcd-market-assessment",
+          "domain_id": "CLOUD",
+          "domain_name": "Hosting & Cloud Security",
+          "control_id": "CLOUD-2",
+          "control_statement": "CSPM tool is fully deployed and tuned. Cloud benchmarks such as CIS are applied. Misconfigurations are tracked and remediated on a defined SLA. IaC templates are scanned before deployment.",
+          "expected_evidence": "CSPM tool findings report showing open misconfiguration findings and account coverage, Cloud benchmark scan results, IaC security scanning configuration and pipeline documentation",
+          "maturity_level": "Critical Gap",
+          "merge_reason": "Merged by control fallback because LLM output was unavailable or invalid.",
+          "source_item_ids": [
+            "ecd8d03e-0e99-5b87-bff8-4d760227b59a",
+            "5395a3ab-e925-5587-82c5-ad53284df3bd",
+            "f17689cd-f2f4-5a8b-9fb3-b9b6c72a1da0"
+          ],
+          "source_questions": [
+            {
+              "question_id": "CLOUD-2-Q1",
+              "question_text": "Is a Cloud Security Posture Management (CSPM) tool in use to identify misconfigurations? If so, which tool and is it fully deployed?",
+              "question_type": "free_text",
+              "framework_name": "MCD Market Assessment Framework",
+              "framework_key": "mcd-market-assessment",
+              "domain_id": "CLOUD",
+              "domain_name": "Hosting & Cloud Security",
+              "control_id": "CLOUD-2",
+              "cross_references": [],
+              "expected_evidence": "CSPM tool findings report showing open misconfiguration findings and account coverage, Cloud benchmark scan results, IaC security scanning configuration and pipeline documentation"
+            },
+            {
+              "question_id": "CLOUD-2-Q2",
+              "question_text": "Are cloud storage buckets, databases, and services regularly checked for unintended public exposure?",
+              "question_type": "free_text",
+              "framework_name": "MCD Market Assessment Framework",
+              "framework_key": "mcd-market-assessment",
+              "domain_id": "CLOUD",
+              "domain_name": "Hosting & Cloud Security",
+              "control_id": "CLOUD-2",
+              "cross_references": [],
+              "expected_evidence": "CSPM tool findings report showing open misconfiguration findings and account coverage, Cloud benchmark scan results, IaC security scanning configuration and pipeline documentation"
+            },
+            {
+              "question_id": "CLOUD-2-Q3",
+              "question_text": "Is infrastructure-as-code used for cloud provisioning, and is security scanning applied to those templates?",
+              "question_type": "free_text",
+              "framework_name": "MCD Market Assessment Framework",
+              "framework_key": "mcd-market-assessment",
+              "domain_id": "CLOUD",
+              "domain_name": "Hosting & Cloud Security",
+              "control_id": "CLOUD-2",
+              "cross_references": [],
+              "expected_evidence": "CSPM tool findings report showing open misconfiguration findings and account coverage, Cloud benchmark scan results, IaC security scanning configuration and pipeline documentation"
+            }
+          ],
+          "cross_references": []
+        },
+        {
+          "item_id": "e858f64d-2657-56c2-990f-74949ba313bb",
+          "question_id": "e858f64d-2657-56c2-990f-74949ba313bb",
+          "question_text": "Are cloud-native audit logs enabled across all cloud accounts and forwarded into the GSOC for centralized visibility?",
+          "question_type": "merged",
+          "answer_formats": [
+            "free_text"
+          ],
+          "framework_name": "MCD Market Assessment Framework",
+          "framework_key": "mcd-market-assessment",
+          "domain_id": "CLOUD",
+          "domain_name": "Hosting & Cloud Security",
+          "control_id": "CLOUD-3",
+          "control_statement": "Cloud-native audit logs are fully enabled and forwarded to the GSOC. Alerts are configured for high-risk cloud events. A defined process exists for responding to cloud alerts.",
+          "expected_evidence": "Cloud audit log configuration showing which logs are enabled and where they are sent, Cloud alerts summary from the past 30 days",
+          "maturity_level": "Critical Gap",
+          "merge_reason": "Merged by control fallback because LLM output was unavailable or invalid.",
+          "source_item_ids": [
+            "33cdd835-8c92-532e-90f2-00a9b6117b54",
+            "7692534b-aa6c-5f2b-b1bd-5b9fadc031a8"
+          ],
+          "source_questions": [
+            {
+              "question_id": "CLOUD-3-Q1",
+              "question_text": "Are cloud-native audit logs enabled across all cloud accounts and forwarded into the GSOC for centralized visibility?",
+              "question_type": "free_text",
+              "framework_name": "MCD Market Assessment Framework",
+              "framework_key": "mcd-market-assessment",
+              "domain_id": "CLOUD",
+              "domain_name": "Hosting & Cloud Security",
+              "control_id": "CLOUD-3",
+              "cross_references": [],
+              "expected_evidence": "Cloud audit log configuration showing which logs are enabled and where they are sent, Cloud alerts summary from the past 30 days"
+            },
+            {
+              "question_id": "CLOUD-3-Q2",
+              "question_text": "Are high-risk cloud events such as new admin role creation, public bucket exposure, or unusual API activity generating alerts that flow into the GSOC?",
+              "question_type": "free_text",
+              "framework_name": "MCD Market Assessment Framework",
+              "framework_key": "mcd-market-assessment",
+              "domain_id": "CLOUD",
+              "domain_name": "Hosting & Cloud Security",
+              "control_id": "CLOUD-3",
+              "cross_references": [],
+              "expected_evidence": "Cloud audit log configuration showing which logs are enabled and where they are sent, Cloud alerts summary from the past 30 days"
+            }
+          ],
+          "cross_references": []
+        }
+      ],
+      "sub_topics": [
+        {
+          "sub_topic": "Hosting & Cloud Security",
+          "control_ids": [
+            "CLOUD-1",
+            "CLOUD-2",
+            "CLOUD-3"
+          ],
+          "part1_question": {
+            "question_id": "f47ac10b-ee9c-43b5-93cb-07b5f7b4494b",
+            "question_text": "Is CSPM tool deployed?",
+            "question_type": "yes_no_with_detail",
+            "response_options": "Yes / No / Partial",
+            "detail_prompt": "If yes or partial, specify the tool or technology in use."
+          },
+          "questions": [
+            {
+              "question_id": "9b7f3a8e-4e2f-4c9d-8c3b-07a5c9b7f3a8",
+              "text": "How often are cloud security reviews performed?",
+              "help_text": "Frequency of reviews",
+              "question_type": "SCALE_1_5",
+              "weight": 4,
+              "maturity_level": 4,
+              "expected_evidence_types": [
+                "cloud_security_review_process_documentation"
+              ]
+            },
+            {
+              "question_id": "1a2b3c4d-5e6f-7g8h-9i0j-1a2b3c4d5e6",
+              "text": "What process triggers cloud misconfiguration remediation?",
+              "help_text": "Remediation process",
+              "question_type": "FREE_TEXT",
+              "weight": 5,
+              "maturity_level": 5,
+              "expected_evidence_types": [
+                "cspm_tool_findings_report"
+              ]
+            },
+            {
+              "question_id": "2c4d6e8f-0g1h-2i3j-4k5l-2c4d6e8f0g1",
+              "text": "How are IaC templates scanned for security issues?",
+              "help_text": "IaC scanning process",
+              "question_type": "FREE_TEXT",
+              "weight": 4,
+              "maturity_level": 4,
+              "expected_evidence_types": [
+                "iac_security_scanning_configuration"
+              ]
+            },
+            {
+              "question_id": "3f5g6h7j-8k9l-0m1n-2o3p-3f5g6h7j8k9",
+              "text": "What cloud benchmarks are applied to the environment?",
+              "help_text": "Cloud benchmarks",
+              "question_type": "MULTI_CHOICE",
+              "choices": [
+                "CIS",
+                "NIST",
+                "ISO 27001"
+              ],
+              "weight": 3,
+              "maturity_level": 3,
+              "expected_evidence_types": [
+                "cloud_benchmark_scan_results"
+              ]
+            },
+            {
+              "question_id": "4h5j6k7l-8m9n-0p1q-2r3s-4h5j6k7l8m9",
+              "text": "How are cloud-native audit logs configured and forwarded?",
+              "help_text": "Audit log configuration",
+              "question_type": "FREE_TEXT",
+              "weight": 5,
+              "maturity_level": 5,
+              "expected_evidence_types": [
+                "cloud_audit_log_configuration"
+              ]
+            },
+            {
+              "question_id": "5m6n7o8p-9q0r-1s2t-3u4v-5m6n7o8p9q0",
+              "text": "What process exists for responding to cloud alerts?",
+              "help_text": "Alert response process",
+              "question_type": "FREE_TEXT",
+              "weight": 5,
+              "maturity_level": 5,
+              "expected_evidence_types": [
+                "cloud_alerts_summary"
+              ]
+            },
+            {
+              "question_id": "6p7q8r9s-0t1u-2v3w-4x5y-6p7q8r9s0t1",
+              "text": "How often are cloud alerts reviewed and updated?",
+              "help_text": "Alert review frequency",
+              "question_type": "SCALE_1_5",
+              "weight": 4,
+              "maturity_level": 4,
+              "expected_evidence_types": [
+                "cloud_alerts_summary"
+              ]
+            },
+            {
+              "question_id": "7q8r9s0t-1u2v-3w4x-5y6z-7q8r9s0t1u2",
+              "text": "What is the defined SLA for remediating cloud misconfigurations?",
+              "help_text": "Remediation SLA",
+              "question_type": "FREE_TEXT",
+              "weight": 4,
+              "maturity_level": 4,
+              "expected_evidence_types": [
+                "cspm_tool_findings_report"
+              ]
+            },
+            {
+              "question_id": "8r9s0t1u-2v3w-4x5y-6z7q-8r9s0t1u2v3",
+              "text": "How are cloud security risks assessed and prioritized?",
+              "help_text": "Risk assessment process",
+              "question_type": "FREE_TEXT",
+              "weight": 5,
+              "maturity_level": 5,
+              "expected_evidence_types": [
+                "cloud_security_review_process_documentation"
+              ]
+            },
+            {
+              "question_id": "9t1u2v3w-4x5y-6z7q-8r9s-9t1u2v3w4x5",
+              "text": "What is the process for updating cloud security policies and procedures?",
+              "help_text": "Policy update process",
+              "question_type": "FREE_TEXT",
+              "weight": 4,
+              "maturity_level": 4,
+              "expected_evidence_types": [
+                "cloud_security_review_process_documentation"
+              ]
+            }
+          ],
+          "maturity_guide": {
+            "mature": "Cloud environment is fully documented, governed, and secured, with regular security reviews and remediation of misconfigurations.",
+            "partial": "Cloud environment is partially documented and governed, with some security reviews and remediation of misconfigurations, but with gaps in coverage and frequency.",
+            "critical_gap": "Cloud environment is not documented, governed, or secured, with no security reviews or remediation of misconfigurations, posing a high risk to the organization."
+          },
+          "evidence_to_request": [
+            "cloud_environment_inventory",
+            "cloud_account_and_subscription_inventory",
+            "cloud_security_review_process_documentation",
+            "cspm_tool_findings_report",
+            "cloud_benchmark_scan_results"
+          ],
+          "red_flags": [
+            {
+              "critical_gap": "Cloud environment is not documented or governed, posing a high risk to the organization.",
+              "recommended_action": "Immediately document and govern the cloud environment, and implement regular security reviews and remediation of misconfigurations."
+            },
+            {
+              "critical_gap": "CSPM tool is not deployed or tuned, leaving the organization vulnerable to cloud misconfigurations.",
+              "recommended_action": "Deploy and tune a CSPM tool to identify and remediate cloud misconfigurations."
+            },
+            {
+              "critical_gap": "Cloud-native audit logs are not enabled or forwarded, limiting visibility into cloud security events.",
+              "recommended_action": "Enable and forward cloud-native audit logs to a security information and event management (SIEM) system or a cloud security monitoring platform."
+            },
+            {
+              "critical_gap": "Cloud alerts are not configured or reviewed, leaving the organization unaware of potential security threats.",
+              "recommended_action": "Configure and review cloud alerts regularly to identify and respond to potential security threats."
+            }
+          ]
+        }
+      ],
+      "evidence_to_request": [
+        "cloud_environment_inventory",
+        "cloud_account_and_subscription_inventory",
+        "cloud_security_review_process_documentation",
+        "cspm_tool_findings_report",
+        "cloud_benchmark_scan_results"
+      ],
+      "red_flags": [
+        {
+          "critical_gap": "Cloud environment is not documented or governed, posing a high risk to the organization.",
+          "recommended_action": "Immediately document and govern the cloud environment, and implement regular security reviews and remediation of misconfigurations."
+        },
+        {
+          "critical_gap": "CSPM tool is not deployed or tuned, leaving the organization vulnerable to cloud misconfigurations.",
+          "recommended_action": "Deploy and tune a CSPM tool to identify and remediate cloud misconfigurations."
+        },
+        {
+          "critical_gap": "Cloud-native audit logs are not enabled or forwarded, limiting visibility into cloud security events.",
+          "recommended_action": "Enable and forward cloud-native audit logs to a security information and event management (SIEM) system or a cloud security monitoring platform."
+        },
+        {
+          "critical_gap": "Cloud alerts are not configured or reviewed, leaving the organization unaware of potential security threats.",
+          "recommended_action": "Configure and review cloud alerts regularly to identify and respond to potential security threats."
+        }
+      ],
+      "maturity_guide": {
+        "mature": "Cloud environment is fully documented, governed, and secured, with regular security reviews and remediation of misconfigurations.",
+        "partial": "Cloud environment is partially documented and governed, with some security reviews and remediation of misconfigurations, but with gaps in coverage and frequency.",
+        "critical_gap": "Cloud environment is not documented, governed, or secured, with no security reviews or remediation of misconfigurations, posing a high risk to the organization."
+      }
+    }
+  ],
+  "questions": [
+    {
+      "question_id": "CLOUD-1-Q1",
+      "question_text": "What cloud providers are in use (AWS, Azure, GCP, other), and what workloads run there?",
+      "question_type": "free_text",
+      "framework_name": "MCD Market Assessment Framework",
+      "framework_key": "mcd-market-assessment",
+      "domain_id": "CLOUD",
+      "domain_name": "Hosting & Cloud Security",
+      "control_id": "CLOUD-1",
+      "cross_references": [],
+      "expected_evidence": "Cloud environment inventory showing providers, workloads, and ownership, Cloud account and subscription inventory, Cloud security review process documentation"
+    },
+    {
+      "question_id": "CLOUD-1-Q2",
+      "question_text": "Is there a complete inventory of all cloud accounts, subscriptions, and tenants in use, including those provisioned outside of the central IT and security governance process?",
+      "question_type": "free_text",
+      "framework_name": "MCD Market Assessment Framework",
+      "framework_key": "mcd-market-assessment",
+      "domain_id": "CLOUD",
+      "domain_name": "Hosting & Cloud Security",
+      "control_id": "CLOUD-1",
+      "cross_references": [],
+      "expected_evidence": "Cloud environment inventory showing providers, workloads, and ownership, Cloud account and subscription inventory, Cloud security review process documentation"
+    },
+    {
+      "question_id": "CLOUD-1-Q3",
+      "question_text": "Does the security team review cloud architecture decisions before deployment?",
+      "question_type": "free_text",
+      "framework_name": "MCD Market Assessment Framework",
+      "framework_key": "mcd-market-assessment",
+      "domain_id": "CLOUD",
+      "domain_name": "Hosting & Cloud Security",
+      "control_id": "CLOUD-1",
+      "cross_references": [],
+      "expected_evidence": "Cloud environment inventory showing providers, workloads, and ownership, Cloud account and subscription inventory, Cloud security review process documentation"
+    },
+    {
+      "question_id": "CLOUD-2-Q1",
+      "question_text": "Is a Cloud Security Posture Management (CSPM) tool in use to identify misconfigurations? If so, which tool and is it fully deployed?",
+      "question_type": "free_text",
+      "framework_name": "MCD Market Assessment Framework",
+      "framework_key": "mcd-market-assessment",
+      "domain_id": "CLOUD",
+      "domain_name": "Hosting & Cloud Security",
+      "control_id": "CLOUD-2",
+      "cross_references": [],
+      "expected_evidence": "CSPM tool findings report showing open misconfiguration findings and account coverage, Cloud benchmark scan results, IaC security scanning configuration and pipeline documentation"
+    },
+    {
+      "question_id": "CLOUD-2-Q2",
+      "question_text": "Are cloud storage buckets, databases, and services regularly checked for unintended public exposure?",
+      "question_type": "free_text",
+      "framework_name": "MCD Market Assessment Framework",
+      "framework_key": "mcd-market-assessment",
+      "domain_id": "CLOUD",
+      "domain_name": "Hosting & Cloud Security",
+      "control_id": "CLOUD-2",
+      "cross_references": [],
+      "expected_evidence": "CSPM tool findings report showing open misconfiguration findings and account coverage, Cloud benchmark scan results, IaC security scanning configuration and pipeline documentation"
+    },
+    {
+      "question_id": "CLOUD-2-Q3",
+      "question_text": "Is infrastructure-as-code used for cloud provisioning, and is security scanning applied to those templates?",
+      "question_type": "free_text",
+      "framework_name": "MCD Market Assessment Framework",
+      "framework_key": "mcd-market-assessment",
+      "domain_id": "CLOUD",
+      "domain_name": "Hosting & Cloud Security",
+      "control_id": "CLOUD-2",
+      "cross_references": [],
+      "expected_evidence": "CSPM tool findings report showing open misconfiguration findings and account coverage, Cloud benchmark scan results, IaC security scanning configuration and pipeline documentation"
+    },
+    {
+      "question_id": "CLOUD-3-Q1",
+      "question_text": "Are cloud-native audit logs enabled across all cloud accounts and forwarded into the GSOC for centralized visibility?",
+      "question_type": "free_text",
+      "framework_name": "MCD Market Assessment Framework",
+      "framework_key": "mcd-market-assessment",
+      "domain_id": "CLOUD",
+      "domain_name": "Hosting & Cloud Security",
+      "control_id": "CLOUD-3",
+      "cross_references": [],
+      "expected_evidence": "Cloud audit log configuration showing which logs are enabled and where they are sent, Cloud alerts summary from the past 30 days"
+    },
+    {
+      "question_id": "CLOUD-3-Q2",
+      "question_text": "Are high-risk cloud events such as new admin role creation, public bucket exposure, or unusual API activity generating alerts that flow into the GSOC?",
+      "question_type": "free_text",
+      "framework_name": "MCD Market Assessment Framework",
+      "framework_key": "mcd-market-assessment",
+      "domain_id": "CLOUD",
+      "domain_name": "Hosting & Cloud Security",
+      "control_id": "CLOUD-3",
+      "cross_references": [],
+      "expected_evidence": "Cloud audit log configuration showing which logs are enabled and where they are sent, Cloud alerts summary from the past 30 days"
+    }
+  ],
+  "part3_tracker": [
+    {
+      "framework": "MCD Market Assessment Framework",
+      "domain": "Hosting & Cloud Security",
+      "sub_topic": "Hosting & Cloud Security",
+      "control_id": "CLOUD-1, CLOUD-2, CLOUD-3",
+      "evidence_request": "cloud_environment_inventory",
+      "answer_format": "status_text",
+      "status": ""
+    },
+    {
+      "framework": "MCD Market Assessment Framework",
+      "domain": "Hosting & Cloud Security",
+      "sub_topic": "Hosting & Cloud Security",
+      "control_id": "CLOUD-1, CLOUD-2, CLOUD-3",
+      "evidence_request": "cloud_account_and_subscription_inventory",
+      "answer_format": "status_text",
+      "status": ""
+    },
+    {
+      "framework": "MCD Market Assessment Framework",
+      "domain": "Hosting & Cloud Security",
+      "sub_topic": "Hosting & Cloud Security",
+      "control_id": "CLOUD-1, CLOUD-2, CLOUD-3",
+      "evidence_request": "cloud_security_review_process_documentation",
+      "answer_format": "status_text",
+      "status": ""
+    },
+    {
+      "framework": "MCD Market Assessment Framework",
+      "domain": "Hosting & Cloud Security",
+      "sub_topic": "Hosting & Cloud Security",
+      "control_id": "CLOUD-1, CLOUD-2, CLOUD-3",
+      "evidence_request": "cspm_tool_findings_report",
+      "answer_format": "status_text",
+      "status": ""
+    },
+    {
+      "framework": "MCD Market Assessment Framework",
+      "domain": "Hosting & Cloud Security",
+      "sub_topic": "Hosting & Cloud Security",
+      "control_id": "CLOUD-1, CLOUD-2, CLOUD-3",
+      "evidence_request": "cloud_benchmark_scan_results",
+      "answer_format": "status_text",
+      "status": ""
+    }
+  ],
+  "red_flags_by_domain": [
+    {
+      "domain_name": "Hosting & Cloud Security",
+      "framework_name": "MCD Market Assessment Framework",
+      "red_flags": [
+        {
+          "critical_gap": "Cloud environment is not documented or governed, posing a high risk to the organization.",
+          "recommended_action": "Immediately document and govern the cloud environment, and implement regular security reviews and remediation of misconfigurations."
+        },
+        {
+          "critical_gap": "CSPM tool is not deployed or tuned, leaving the organization vulnerable to cloud misconfigurations.",
+          "recommended_action": "Deploy and tune a CSPM tool to identify and remediate cloud misconfigurations."
+        },
+        {
+          "critical_gap": "Cloud-native audit logs are not enabled or forwarded, limiting visibility into cloud security events.",
+          "recommended_action": "Enable and forward cloud-native audit logs to a security information and event management (SIEM) system or a cloud security monitoring platform."
+        },
+        {
+          "critical_gap": "Cloud alerts are not configured or reviewed, leaving the organization unaware of potential security threats.",
+          "recommended_action": "Configure and review cloud alerts regularly to identify and respond to potential security threats."
+        }
+      ]
+    }
+  ],
+  "selected_domain_keys": [
+    "mcd-market-assessment:CLOUD"
+  ],
+  "ingested_at": "2026-06-10T08:28:29.755435+00:00",
+  "maturity_levels": [
+    {
+      "level": 1,
+      "code": "INITIAL",
+      "name": "Initial",
+      "description": "Ad hoc and undocumented."
+    },
+    {
+      "level": 2,
+      "code": "REPEATABLE",
+      "name": "Repeatable",
+      "description": "Basic processes established and repeated."
+    },
+    {
+      "level": 3,
+      "code": "DEFINED",
+      "name": "Defined",
+      "description": "Processes documented, standardised, and communicated."
+    },
+    {
+      "level": 4,
+      "code": "MANAGED",
+      "name": "Managed",
+      "description": "Processes measured and controlled with quantitative data."
+    },
+    {
+      "level": 5,
+      "code": "OPTIMIZING",
+      "name": "Optimizing",
+      "description": "Continuous improvement driven by metrics and feedback."
+    }
+  ],
+  "domains": [
+    {
+      "code": "CLOUD",
+      "name": "Hosting & Cloud Security",
+      "categories": [
+        {
+          "code": "CLOUD",
+          "name": "CLOUD",
+          "controls": [
+            {
+              "code": "CLOUD-1",
+              "statement": "Cloud environment is documented and governed. Security reviews cloud architecture decisions before deployment. A hybrid or multiple cloud strategy is defined and managed.",
+              "cross_refs": [],
+              "questions": [
+                {
+                  "question_id": "9b7f3a8e-4e2f-4c9d-8c3b-07a5c9b7f3a8",
+                  "text": "How often are cloud security reviews performed?",
+                  "question_type": "SCALE_1_5",
+                  "weight": 4,
+                  "maturity_level": 4,
+                  "help_text": "Frequency of reviews",
+                  "choices": []
+                },
+                {
+                  "question_id": "1a2b3c4d-5e6f-7g8h-9i0j-1a2b3c4d5e6",
+                  "text": "What process triggers cloud misconfiguration remediation?",
+                  "question_type": "FREE_TEXT",
+                  "weight": 5,
+                  "maturity_level": 5,
+                  "help_text": "Remediation process",
+                  "choices": []
+                },
+                {
+                  "question_id": "2c4d6e8f-0g1h-2i3j-4k5l-2c4d6e8f0g1",
+                  "text": "How are IaC templates scanned for security issues?",
+                  "question_type": "FREE_TEXT",
+                  "weight": 4,
+                  "maturity_level": 4,
+                  "help_text": "IaC scanning process",
+                  "choices": []
+                },
+                {
+                  "question_id": "3f5g6h7j-8k9l-0m1n-2o3p-3f5g6h7j8k9",
+                  "text": "What cloud benchmarks are applied to the environment?",
+                  "question_type": "MULTI_CHOICE",
+                  "weight": 3,
+                  "maturity_level": 3,
+                  "help_text": "Cloud benchmarks",
+                  "choices": [
+                    "CIS",
+                    "NIST",
+                    "ISO 27001"
+                  ]
+                },
+                {
+                  "question_id": "4h5j6k7l-8m9n-0p1q-2r3s-4h5j6k7l8m9",
+                  "text": "How are cloud-native audit logs configured and forwarded?",
+                  "question_type": "FREE_TEXT",
+                  "weight": 5,
+                  "maturity_level": 5,
+                  "help_text": "Audit log configuration",
+                  "choices": []
+                },
+                {
+                  "question_id": "5m6n7o8p-9q0r-1s2t-3u4v-5m6n7o8p9q0",
+                  "text": "What process exists for responding to cloud alerts?",
+                  "question_type": "FREE_TEXT",
+                  "weight": 5,
+                  "maturity_level": 5,
+                  "help_text": "Alert response process",
+                  "choices": []
+                },
+                {
+                  "question_id": "6p7q8r9s-0t1u-2v3w-4x5y-6p7q8r9s0t1",
+                  "text": "How often are cloud alerts reviewed and updated?",
+                  "question_type": "SCALE_1_5",
+                  "weight": 4,
+                  "maturity_level": 4,
+                  "help_text": "Alert review frequency",
+                  "choices": []
+                },
+                {
+                  "question_id": "7q8r9s0t-1u2v-3w4x-5y6z-7q8r9s0t1u2",
+                  "text": "What is the defined SLA for remediating cloud misconfigurations?",
+                  "question_type": "FREE_TEXT",
+                  "weight": 4,
+                  "maturity_level": 4,
+                  "help_text": "Remediation SLA",
+                  "choices": []
+                },
+                {
+                  "question_id": "8r9s0t1u-2v3w-4x5y-6z7q-8r9s0t1u2v3",
+                  "text": "How are cloud security risks assessed and prioritized?",
+                  "question_type": "FREE_TEXT",
+                  "weight": 5,
+                  "maturity_level": 5,
+                  "help_text": "Risk assessment process",
+                  "choices": []
+                },
+                {
+                  "question_id": "9t1u2v3w-4x5y-6z7q-8r9s-9t1u2v3w4x5",
+                  "text": "What is the process for updating cloud security policies and procedures?",
+                  "question_type": "FREE_TEXT",
+                  "weight": 4,
+                  "maturity_level": 4,
+                  "help_text": "Policy update process",
+                  "choices": []
+                }
+              ]
+            },
+            {
+              "code": "CLOUD-2",
+              "statement": "CSPM tool is fully deployed and tuned. Cloud benchmarks such as CIS are applied. Misconfigurations are tracked and remediated on a defined SLA. IaC templates are scanned before deployment.",
+              "cross_refs": [],
+              "questions": [
+                {
+                  "question_id": "9b7f3a8e-4e2f-4c9d-8c3b-07a5c9b7f3a8",
+                  "text": "How often are cloud security reviews performed?",
+                  "question_type": "SCALE_1_5",
+                  "weight": 4,
+                  "maturity_level": 4,
+                  "help_text": "Frequency of reviews",
+                  "choices": []
+                },
+                {
+                  "question_id": "1a2b3c4d-5e6f-7g8h-9i0j-1a2b3c4d5e6",
+                  "text": "What process triggers cloud misconfiguration remediation?",
+                  "question_type": "FREE_TEXT",
+                  "weight": 5,
+                  "maturity_level": 5,
+                  "help_text": "Remediation process",
+                  "choices": []
+                },
+                {
+                  "question_id": "2c4d6e8f-0g1h-2i3j-4k5l-2c4d6e8f0g1",
+                  "text": "How are IaC templates scanned for security issues?",
+                  "question_type": "FREE_TEXT",
+                  "weight": 4,
+                  "maturity_level": 4,
+                  "help_text": "IaC scanning process",
+                  "choices": []
+                },
+                {
+                  "question_id": "3f5g6h7j-8k9l-0m1n-2o3p-3f5g6h7j8k9",
+                  "text": "What cloud benchmarks are applied to the environment?",
+                  "question_type": "MULTI_CHOICE",
+                  "weight": 3,
+                  "maturity_level": 3,
+                  "help_text": "Cloud benchmarks",
+                  "choices": [
+                    "CIS",
+                    "NIST",
+                    "ISO 27001"
+                  ]
+                },
+                {
+                  "question_id": "4h5j6k7l-8m9n-0p1q-2r3s-4h5j6k7l8m9",
+                  "text": "How are cloud-native audit logs configured and forwarded?",
+                  "question_type": "FREE_TEXT",
+                  "weight": 5,
+                  "maturity_level": 5,
+                  "help_text": "Audit log configuration",
+                  "choices": []
+                },
+                {
+                  "question_id": "5m6n7o8p-9q0r-1s2t-3u4v-5m6n7o8p9q0",
+                  "text": "What process exists for responding to cloud alerts?",
+                  "question_type": "FREE_TEXT",
+                  "weight": 5,
+                  "maturity_level": 5,
+                  "help_text": "Alert response process",
+                  "choices": []
+                },
+                {
+                  "question_id": "6p7q8r9s-0t1u-2v3w-4x5y-6p7q8r9s0t1",
+                  "text": "How often are cloud alerts reviewed and updated?",
+                  "question_type": "SCALE_1_5",
+                  "weight": 4,
+                  "maturity_level": 4,
+                  "help_text": "Alert review frequency",
+                  "choices": []
+                },
+                {
+                  "question_id": "7q8r9s0t-1u2v-3w4x-5y6z-7q8r9s0t1u2",
+                  "text": "What is the defined SLA for remediating cloud misconfigurations?",
+                  "question_type": "FREE_TEXT",
+                  "weight": 4,
+                  "maturity_level": 4,
+                  "help_text": "Remediation SLA",
+                  "choices": []
+                },
+                {
+                  "question_id": "8r9s0t1u-2v3w-4x5y-6z7q-8r9s0t1u2v3",
+                  "text": "How are cloud security risks assessed and prioritized?",
+                  "question_type": "FREE_TEXT",
+                  "weight": 5,
+                  "maturity_level": 5,
+                  "help_text": "Risk assessment process",
+                  "choices": []
+                },
+                {
+                  "question_id": "9t1u2v3w-4x5y-6z7q-8r9s-9t1u2v3w4x5",
+                  "text": "What is the process for updating cloud security policies and procedures?",
+                  "question_type": "FREE_TEXT",
+                  "weight": 4,
+                  "maturity_level": 4,
+                  "help_text": "Policy update process",
+                  "choices": []
+                }
+              ]
+            },
+            {
+              "code": "CLOUD-3",
+              "statement": "Cloud-native audit logs are fully enabled and forwarded to the GSOC. Alerts are configured for high-risk cloud events. A defined process exists for responding to cloud alerts.",
+              "cross_refs": [],
+              "questions": [
+                {
+                  "question_id": "9b7f3a8e-4e2f-4c9d-8c3b-07a5c9b7f3a8",
+                  "text": "How often are cloud security reviews performed?",
+                  "question_type": "SCALE_1_5",
+                  "weight": 4,
+                  "maturity_level": 4,
+                  "help_text": "Frequency of reviews",
+                  "choices": []
+                },
+                {
+                  "question_id": "1a2b3c4d-5e6f-7g8h-9i0j-1a2b3c4d5e6",
+                  "text": "What process triggers cloud misconfiguration remediation?",
+                  "question_type": "FREE_TEXT",
+                  "weight": 5,
+                  "maturity_level": 5,
+                  "help_text": "Remediation process",
+                  "choices": []
+                },
+                {
+                  "question_id": "2c4d6e8f-0g1h-2i3j-4k5l-2c4d6e8f0g1",
+                  "text": "How are IaC templates scanned for security issues?",
+                  "question_type": "FREE_TEXT",
+                  "weight": 4,
+                  "maturity_level": 4,
+                  "help_text": "IaC scanning process",
+                  "choices": []
+                },
+                {
+                  "question_id": "3f5g6h7j-8k9l-0m1n-2o3p-3f5g6h7j8k9",
+                  "text": "What cloud benchmarks are applied to the environment?",
+                  "question_type": "MULTI_CHOICE",
+                  "weight": 3,
+                  "maturity_level": 3,
+                  "help_text": "Cloud benchmarks",
+                  "choices": [
+                    "CIS",
+                    "NIST",
+                    "ISO 27001"
+                  ]
+                },
+                {
+                  "question_id": "4h5j6k7l-8m9n-0p1q-2r3s-4h5j6k7l8m9",
+                  "text": "How are cloud-native audit logs configured and forwarded?",
+                  "question_type": "FREE_TEXT",
+                  "weight": 5,
+                  "maturity_level": 5,
+                  "help_text": "Audit log configuration",
+                  "choices": []
+                },
+                {
+                  "question_id": "5m6n7o8p-9q0r-1s2t-3u4v-5m6n7o8p9q0",
+                  "text": "What process exists for responding to cloud alerts?",
+                  "question_type": "FREE_TEXT",
+                  "weight": 5,
+                  "maturity_level": 5,
+                  "help_text": "Alert response process",
+                  "choices": []
+                },
+                {
+                  "question_id": "6p7q8r9s-0t1u-2v3w-4x5y-6p7q8r9s0t1",
+                  "text": "How often are cloud alerts reviewed and updated?",
+                  "question_type": "SCALE_1_5",
+                  "weight": 4,
+                  "maturity_level": 4,
+                  "help_text": "Alert review frequency",
+                  "choices": []
+                },
+                {
+                  "question_id": "7q8r9s0t-1u2v-3w4x-5y6z-7q8r9s0t1u2",
+                  "text": "What is the defined SLA for remediating cloud misconfigurations?",
+                  "question_type": "FREE_TEXT",
+                  "weight": 4,
+                  "maturity_level": 4,
+                  "help_text": "Remediation SLA",
+                  "choices": []
+                },
+                {
+                  "question_id": "8r9s0t1u-2v3w-4x5y-6z7q-8r9s0t1u2v3",
+                  "text": "How are cloud security risks assessed and prioritized?",
+                  "question_type": "FREE_TEXT",
+                  "weight": 5,
+                  "maturity_level": 5,
+                  "help_text": "Risk assessment process",
+                  "choices": []
+                },
+                {
+                  "question_id": "9t1u2v3w-4x5y-6z7q-8r9s-9t1u2v3w4x5",
+                  "text": "What is the process for updating cloud security policies and procedures?",
+                  "question_type": "FREE_TEXT",
+                  "weight": 4,
+                  "maturity_level": 4,
+                  "help_text": "Policy update process",
+                  "choices": []
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    }
+  ],
+  "mappings": []
+}

@@ -1,0 +1,1944 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Security Assessment Report — multi-set-dc39b7f6-2a1</title>
+  <style>
+    *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+
+    :root {
+      --c-bg:      #f0f2f5;
+      --c-surface: #ffffff;
+      --c-border:  #e2e6ed;
+      --c-text:    #1a2332;
+      --c-muted:   #6b7a90;
+      --c-accent:  #3a7bd5;
+      --r-sm: 8px;
+      --r-md: 12px;
+      --shadow: 0 1px 3px rgba(0,0,0,.07), 0 4px 12px rgba(0,0,0,.05);
+    }
+
+    body {
+      font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
+      background: var(--c-bg);
+      color: var(--c-text);
+      font-size: 14px;
+      line-height: 1.5;
+    }
+
+    /* ── Header ───────────────────────────────────────────────────────── */
+    .report-header {
+      background: linear-gradient(135deg, #0f1923 0%, #17324d 100%);
+      color: #e8edf3;
+      padding: 2rem 2.5rem 1.75rem;
+    }
+    .report-header h1 {
+      font-size: 1.5rem;
+      font-weight: 700;
+      color: #fff;
+      margin-bottom: 0.4rem;
+    }
+    .header-meta {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 1.25rem;
+      font-size: 0.82rem;
+      color: #7a9ab8;
+      margin-top: 0.75rem;
+    }
+    .header-meta span strong { color: #c8d8e8; font-weight: 600; }
+    .badge-mode {
+      display: inline-block;
+      background: rgba(255,255,255,.1);
+      border: 1px solid rgba(255,255,255,.15);
+      border-radius: 20px;
+      padding: 2px 10px;
+      font-size: 0.72rem;
+      font-weight: 600;
+      letter-spacing: 0.06em;
+      text-transform: uppercase;
+      color: #a8c4e0;
+    }
+
+    /* ── Section wrapper ──────────────────────────────────────────────── */
+    .section { padding: 2rem 2.5rem; }
+    .section + .section { padding-top: 0; }
+    .section-title {
+      font-size: 0.72rem;
+      font-weight: 700;
+      letter-spacing: 0.1em;
+      text-transform: uppercase;
+      color: var(--c-muted);
+      margin-bottom: 1rem;
+    }
+
+    /* ── Dashboard row ────────────────────────────────────────────────── */
+    .dashboard-row {
+      display: grid;
+      grid-template-columns: 240px 1fr 220px;
+      gap: 1.25rem;
+      padding: 2rem 2.5rem 1rem;
+    }
+    @media (max-width: 900px) {
+      .dashboard-row { grid-template-columns: 1fr; }
+    }
+
+    .widget {
+      background: var(--c-surface);
+      border: 1px solid var(--c-border);
+      border-radius: var(--r-md);
+      box-shadow: var(--shadow);
+      padding: 1.4rem;
+    }
+    .widget-title {
+      font-size: 0.72rem;
+      font-weight: 700;
+      letter-spacing: 0.1em;
+      text-transform: uppercase;
+      color: var(--c-muted);
+      margin-bottom: 1rem;
+    }
+
+    /* ── Security Level Gauge widget ──────────────────────────────────── */
+    .widget-security {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      text-align: center;
+    }
+    .gauge-wrap {
+      position: relative;
+      width: 148px;
+      height: 148px;
+      border-radius: 50%;
+      background: conic-gradient(
+        #dc2626 165.8deg,
+        #e5e7eb 165.8deg
+      );
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      margin-bottom: 1rem;
+    }
+    .gauge-inner {
+      position: absolute;
+      width: 110px;
+      height: 110px;
+      border-radius: 50%;
+      background: var(--c-surface);
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+    }
+    .gauge-score {
+      font-size: 1.9rem;
+      font-weight: 800;
+      color: #dc2626;
+      line-height: 1;
+    }
+    .gauge-label {
+      font-size: 0.65rem;
+      font-weight: 600;
+      color: var(--c-muted);
+      letter-spacing: 0.06em;
+      text-transform: uppercase;
+      margin-top: 2px;
+    }
+    .security-label {
+      font-size: 1rem;
+      font-weight: 700;
+      color: #dc2626;
+      margin-bottom: 0.35rem;
+    }
+    .maturity-chip {
+      display: inline-block;
+      background: #f0f4ff;
+      color: var(--c-accent);
+      border: 1px solid #c7d9f7;
+      border-radius: 20px;
+      padding: 3px 12px;
+      font-size: 0.75rem;
+      font-weight: 600;
+    }
+    .chip-row {
+      display: flex;
+      gap: 0.4rem;
+      justify-content: center;
+      flex-wrap: wrap;
+    }
+    .risk-chip {
+      background: #fff;
+    }
+
+    /* ── Top 3 Vulnerabilities widget ────────────────────────────────── */
+    .vuln-list { list-style: none; display: flex; flex-direction: column; gap: 0.75rem; }
+    .vuln-item {
+      display: flex;
+      gap: 0.75rem;
+      align-items: flex-start;
+      background: #fff8f7;
+      border: 1px solid #fce0dc;
+      border-left: 4px solid #dc2626;
+      border-radius: var(--r-sm);
+      padding: 0.75rem;
+    }
+    .vuln-num {
+      flex-shrink: 0;
+      width: 22px;
+      height: 22px;
+      border-radius: 50%;
+      background: #dc2626;
+      color: #fff;
+      font-size: 0.72rem;
+      font-weight: 700;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+    }
+    .vuln-body { flex: 1; min-width: 0; }
+    .vuln-title {
+      font-size: 0.82rem;
+      font-weight: 600;
+      color: #7f1d1d;
+      margin-bottom: 2px;
+      word-break: break-word;
+    }
+    .vuln-obs {
+      font-size: 0.76rem;
+      color: #991b1b;
+      opacity: 0.85;
+    }
+    .vuln-score {
+      flex-shrink: 0;
+      font-size: 0.75rem;
+      font-weight: 700;
+      color: #dc2626;
+      background: #fee2e2;
+      border-radius: 20px;
+      padding: 2px 8px;
+      align-self: flex-start;
+    }
+    .no-vulns {
+      font-size: 0.85rem;
+      color: #16a34a;
+      background: #f0fdf4;
+      border: 1px solid #bbf7d0;
+      border-radius: var(--r-sm);
+      padding: 0.75rem 1rem;
+      font-weight: 600;
+    }
+
+    /* ── At-a-Glance stats widget ─────────────────────────────────────── */
+    .stat-grid { display: flex; flex-direction: column; gap: 0.5rem; }
+    .stat-row {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      font-size: 0.82rem;
+      padding: 4px 0;
+      border-bottom: 1px solid var(--c-border);
+    }
+    .stat-row:last-child { border-bottom: none; }
+    .stat-lbl { color: var(--c-muted); }
+    .stat-val {
+      font-weight: 700;
+      font-size: 0.88rem;
+      border-radius: 4px;
+      padding: 1px 7px;
+    }
+    .stat-val.s-strong  { background: #dcfce7; color: #15803d; }
+    .stat-val.s-partial { background: #fef9c3; color: #a16207; }
+    .stat-val.s-weak    { background: #ffedd5; color: #c2410c; }
+    .stat-val.s-missing { background: #fee2e2; color: #b91c1c; }
+
+    /* ── Domain summary banner ────────────────────────────────────────── */
+    .summary-banner {
+      background: #f0f7ff;
+      border: 1px solid #bfdbfe;
+      border-radius: var(--r-sm);
+      padding: 0.85rem 1.25rem;
+      font-size: 0.88rem;
+      color: #1e3a5f;
+      margin: 0 2.5rem 1rem;
+    }
+
+    /* ── Per-question table ───────────────────────────────────────────── */
+    .table-wrap {
+      overflow-x: auto;
+      border: 1px solid var(--c-border);
+      border-radius: var(--r-md);
+      box-shadow: var(--shadow);
+      margin: 0 2.5rem 2rem;
+      background: var(--c-surface);
+    }
+    table.q-table {
+      width: 100%;
+      border-collapse: collapse;
+    }
+    .q-table th {
+      background: #f7f9fc;
+      font-size: 0.72rem;
+      font-weight: 700;
+      letter-spacing: 0.06em;
+      text-transform: uppercase;
+      color: var(--c-muted);
+      padding: 10px 12px;
+      text-align: left;
+      border-bottom: 1px solid var(--c-border);
+      white-space: nowrap;
+    }
+    .q-table td {
+      padding: 10px 12px;
+      vertical-align: top;
+      border-bottom: 1px solid #f0f2f5;
+      font-size: 0.83rem;
+    }
+    .q-table tr:last-child td { border-bottom: none; }
+    .q-table tr:hover td { background: #f9fafb; }
+
+    .q-num {
+      color: var(--c-muted);
+      font-weight: 600;
+      font-size: 0.78rem;
+      white-space: nowrap;
+    }
+    .q-text { font-weight: 500; color: var(--c-text); max-width: 260px; }
+    .q-response {
+      color: #374151;
+      max-width: 180px;
+      word-break: break-word;
+    }
+    .q-obs {
+      color: #4b5563;
+      font-style: italic;
+      max-width: 260px;
+    }
+
+    /* gap flags */
+    .gap-flag {
+      display: inline-block;
+      border-radius: 20px;
+      padding: 3px 10px;
+      font-size: 0.73rem;
+      font-weight: 700;
+      white-space: nowrap;
+    }
+    .gap-addressed { background: #dcfce7; color: #15803d; }
+    .gap-partial   { background: #fef9c3; color: #a16207; }
+    .gap-missing   { background: #fee2e2; color: #b91c1c; }
+
+    /* score bar */
+    .score-cell { min-width: 120px; }
+    .score-bar-wrap {
+      display: flex;
+      align-items: center;
+      gap: 8px;
+    }
+    .score-bar-track {
+      flex: 1;
+      height: 6px;
+      background: #e5e7eb;
+      border-radius: 3px;
+      overflow: hidden;
+    }
+    .score-bar-fill {
+      height: 100%;
+      border-radius: 3px;
+      transition: width 0.3s ease;
+    }
+    .score-num {
+      font-size: 0.78rem;
+      font-weight: 700;
+      color: var(--c-text);
+      min-width: 28px;
+    }
+
+    /* row tinting by verdict */
+    tr.row-strong  td { border-left: 3px solid #16a34a; }
+    tr.row-partial td { border-left: 3px solid #ca8a04; }
+    tr.row-weak    td { border-left: 3px solid #ea580c; }
+    tr.row-missing td { border-left: 3px solid #dc2626; }
+
+    /* ── Strengths & Gaps ─────────────────────────────────────────────── */
+    .sg-grid {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 1.25rem;
+      margin: 0 2.5rem 2rem;
+    }
+    @media (max-width: 700px) { .sg-grid { grid-template-columns: 1fr; } }
+
+    .sg-card {
+      background: var(--c-surface);
+      border: 1px solid var(--c-border);
+      border-radius: var(--r-md);
+      box-shadow: var(--shadow);
+      padding: 1.25rem;
+    }
+    .sg-card h3 {
+      font-size: 0.85rem;
+      font-weight: 700;
+      margin-bottom: 0.85rem;
+      display: flex;
+      align-items: center;
+      gap: 6px;
+    }
+    .sg-card.strengths h3 { color: #15803d; }
+    .sg-card.gaps      h3 { color: #b91c1c; }
+    .sg-list { list-style: none; display: flex; flex-direction: column; gap: 0.5rem; }
+    .sg-item {
+      font-size: 0.82rem;
+      padding: 0.5rem 0.75rem;
+      border-radius: 6px;
+      line-height: 1.45;
+    }
+    .strengths .sg-item { background: #f0fdf4; color: #14532d; border-left: 3px solid #16a34a; }
+    .gaps      .sg-item { background: #fff7f7; color: #7f1d1d; border-left: 3px solid #dc2626; }
+    .sg-empty { font-size: 0.82rem; color: var(--c-muted); font-style: italic; padding: 0.4rem 0; }
+
+    /* ── Score Distribution Chart ─────────────────────────────────────── */
+    .dist-section {
+      margin: 0 2.5rem 2.5rem;
+      background: var(--c-surface);
+      border: 1px solid var(--c-border);
+      border-radius: var(--r-md);
+      box-shadow: var(--shadow);
+      padding: 1.4rem;
+    }
+    .dist-bars {
+      display: flex;
+      align-items: flex-end;
+      gap: 12px;
+      height: 80px;
+      margin-top: 1rem;
+    }
+    .dist-col {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      flex: 1;
+    }
+    .dist-bar {
+      width: 100%;
+      border-radius: 4px 4px 0 0;
+      background: var(--c-accent);
+      min-height: 4px;
+      transition: height 0.3s ease;
+    }
+    .dist-range {
+      font-size: 0.68rem;
+      color: var(--c-muted);
+      margin-top: 4px;
+      white-space: nowrap;
+    }
+    .dist-count {
+      font-size: 0.72rem;
+      font-weight: 700;
+      color: var(--c-text);
+      margin-bottom: 3px;
+    }
+
+    /* ── Footer ───────────────────────────────────────────────────────── */
+    .report-footer {
+      background: #f7f9fc;
+      border-top: 1px solid var(--c-border);
+      padding: 1rem 2.5rem;
+      font-size: 0.75rem;
+      color: var(--c-muted);
+      display: flex;
+      justify-content: space-between;
+    }
+
+    @media print {
+      .report-header { -webkit-print-color-adjust: exact; print-color-adjust: exact; }
+      .widget { break-inside: avoid; }
+    }
+  </style>
+</head>
+<body>
+
+<!-- ── Report Header ──────────────────────────────────────────────────────── -->
+<div class="report-header">
+  <h1>Security Assessment Report</h1>
+  <div class="header-meta">
+    <span><strong>ID:</strong> multi-set-dc39b7f6-2a1</span>
+    <span><strong>Scope:</strong> —</span>
+    <span><strong>Framework:</strong> MCD Market Assessment Framework (Hosting &amp; Cloud Security) + MCD Market Assessment Framework (Application Inventory &amp; Security) + MCD Market Assessment Framework (Third Party &amp; Vendor Risk)</span>
+    <span><strong>Auditor:</strong> web-auditor</span>
+    <span><strong>Date:</strong> —</span>
+    <span class="badge-mode">fallback-deterministic</span>
+  </div>
+</div>
+
+<!-- ── Dashboard Row ──────────────────────────────────────────────────────── -->
+<div class="dashboard-row">
+
+  <!-- Widget 1 — Security Level Gauge -->
+  <div class="widget widget-security">
+    <div class="widget-title">Security Level Attained</div>
+    <div class="gauge-wrap">
+      <div class="gauge-inner">
+        <span class="gauge-score">46.0%</span>
+        <span class="gauge-label">Score</span>
+      </div>
+    </div>
+    <div class="security-label">Critical</div>
+    <div class="chip-row">
+      <span class="maturity-chip">Developing</span>
+      <span class="maturity-chip risk-chip"
+            style="color:#dc2626;border-color:#dc2626">
+        Critical risk</span>
+    </div>
+  </div>
+
+  <!-- Widget 2 — Top 3 Vulnerabilities / Gaps -->
+  <div class="widget">
+    <div class="widget-title">Top 3 Vulnerabilities / Gaps Identified</div>
+    
+    <ol class="vuln-list">
+      
+      <li class="vuln-item">
+        <div class="vuln-num">1</div>
+        <div class="vuln-body">
+          <div class="vuln-title">How is cloud environment governance ensured?</div>
+          
+          <div class="vuln-obs">No response provided — question was left unanswered.</div>
+          
+        </div>
+        <div class="vuln-score">0</div>
+      </li>
+      
+      <li class="vuln-item">
+        <div class="vuln-num">2</div>
+        <div class="vuln-body">
+          <div class="vuln-title">What is the average time to remediate critical vulnerabilities in internet-facing applications?</div>
+          
+          <div class="vuln-obs">No response provided — question was left unanswered.</div>
+          
+        </div>
+        <div class="vuln-score">0</div>
+      </li>
+      
+      <li class="vuln-item">
+        <div class="vuln-num">3</div>
+        <div class="vuln-body">
+          <div class="vuln-title">Is there a formal Third Party Risk Management (TPRM) program in place?</div>
+          
+          <div class="vuln-obs">No response provided — question was left unanswered.</div>
+          
+        </div>
+        <div class="vuln-score">0</div>
+      </li>
+      
+    </ol>
+    
+  </div>
+
+  <!-- Widget 3 — At a Glance -->
+  <div class="widget">
+    <div class="widget-title">At a Glance</div>
+    <div class="stat-grid">
+      <div class="stat-row">
+        <span class="stat-lbl">Addressed</span>
+        <span class="stat-val s-strong">6</span>
+      </div>
+      <div class="stat-row">
+        <span class="stat-lbl">Partial</span>
+        <span class="stat-val s-partial">12</span>
+      </div>
+      <div class="stat-row">
+        <span class="stat-lbl">Weak</span>
+        <span class="stat-val s-weak">2</span>
+      </div>
+      <div class="stat-row">
+        <span class="stat-lbl">Missing</span>
+        <span class="stat-val s-missing">7</span>
+      </div>
+      
+      <div class="stat-row">
+        <span class="stat-lbl">Yes/No confirmed</span>
+        <span class="stat-val s-strong">5/6</span>
+      </div>
+      
+      
+      
+      <div class="stat-row">
+        <span class="stat-lbl">Total questions</span>
+        <span class="stat-val" style="background:#f0f4ff;color:#3a7bd5">27</span>
+      </div>
+    </div>
+  </div>
+
+</div><!-- /dashboard-row -->
+
+<!-- ── Domain Summary ─────────────────────────────────────────────────────── -->
+
+<div class="summary-banner">
+  <strong>Assessment summary:</strong> 5 of 6 yes/no controls were confirmed. 8 open-ended question(s) left unanswered.
+</div>
+
+
+<!-- ── Maturity Classification (Mature / Partial / Critical Gap) ───────────── -->
+
+
+<div class="section-title" style="padding: 0 2.5rem 0.5rem;">
+  Maturity Classification
+</div>
+<div style="padding: 0 2.5rem 1.25rem;">
+  
+  <div style="margin-bottom:0.9rem;font-size:0.95rem;">
+    Overall, this scope is assessed as
+    <span style="display:inline-block;padding:0.15rem 0.6rem;border-radius:999px;
+      font-weight:700;color:#fff;background:#ca8a04">
+      Partial</span>
+    
+    <span style="color:var(--c-muted);font-size:0.82rem;margin-left:0.4rem">
+      (6 mature ·
+       12 partial ·
+       9 critical gap)
+    </span>
+    
+  </div>
+  <div class="table-wrap">
+    <table class="q-table">
+      <thead>
+        <tr>
+          <th>Sub-topic / Control</th>
+          <th style="width:130px">Classification</th>
+          <th class="score-cell">Score</th>
+          <th>Gaps revealed</th>
+        </tr>
+      </thead>
+      <tbody>
+        
+        <tr>
+          <td class="q-text">Workload &amp; Container Security</td>
+          <td>
+            <span style="display:inline-block;padding:0.1rem 0.55rem;border-radius:999px;
+              font-weight:700;font-size:0.78rem;color:#fff;
+              background:#dc2626">
+              Critical Gap</span>
+          </td>
+          <td class="score-cell"><span class="score-num">0</span></td>
+          <td class="q-obs">
+            
+              <ul style="margin:0;padding-left:1.1rem">
+                <li>Incomplete workload coverage</li>
+              </ul>
+            
+          </td>
+        </tr>
+        
+        <tr>
+          <td class="q-text">Patch &amp; Vulnerability Management</td>
+          <td>
+            <span style="display:inline-block;padding:0.1rem 0.55rem;border-radius:999px;
+              font-weight:700;font-size:0.78rem;color:#fff;
+              background:#dc2626">
+              Critical Gap</span>
+          </td>
+          <td class="score-cell"><span class="score-num">0</span></td>
+          <td class="q-obs">
+            
+              <ul style="margin:0;padding-left:1.1rem">
+                <li>Inadequate remediation of critical vulnerabilities</li>
+              </ul>
+            
+          </td>
+        </tr>
+        
+        <tr>
+          <td class="q-text">Vendor Onboarding &amp; Assessment</td>
+          <td>
+            <span style="display:inline-block;padding:0.1rem 0.55rem;border-radius:999px;
+              font-weight:700;font-size:0.78rem;color:#fff;
+              background:#dc2626">
+              Critical Gap</span>
+          </td>
+          <td class="score-cell"><span class="score-num">18</span></td>
+          <td class="q-obs">
+            —
+          </td>
+        </tr>
+        
+        <tr>
+          <td class="q-text">TPRM Program</td>
+          <td>
+            <span style="display:inline-block;padding:0.1rem 0.55rem;border-radius:999px;
+              font-weight:700;font-size:0.78rem;color:#fff;
+              background:#dc2626">
+              Critical Gap</span>
+          </td>
+          <td class="score-cell"><span class="score-num">21</span></td>
+          <td class="q-obs">
+            —
+          </td>
+        </tr>
+        
+        <tr>
+          <td class="q-text">Cloud Adoption &amp; Architecture</td>
+          <td>
+            <span style="display:inline-block;padding:0.1rem 0.55rem;border-radius:999px;
+              font-weight:700;font-size:0.78rem;color:#fff;
+              background:#dc2626">
+              Critical Gap</span>
+          </td>
+          <td class="score-cell"><span class="score-num">26</span></td>
+          <td class="q-obs">
+            
+              <ul style="margin:0;padding-left:1.1rem">
+                <li>Lack of formal governance process</li><li>Lack of defined process for reviewing cloud architecture decisions</li>
+              </ul>
+            
+          </td>
+        </tr>
+        
+        <tr>
+          <td class="q-text">Ongoing Vendor Oversight</td>
+          <td>
+            <span style="display:inline-block;padding:0.1rem 0.55rem;border-radius:999px;
+              font-weight:700;font-size:0.78rem;color:#fff;
+              background:#dc2626">
+              Critical Gap</span>
+          </td>
+          <td class="score-cell"><span class="score-num">38</span></td>
+          <td class="q-obs">
+            —
+          </td>
+        </tr>
+        
+        <tr>
+          <td class="q-text">Application Security</td>
+          <td>
+            <span style="display:inline-block;padding:0.1rem 0.55rem;border-radius:999px;
+              font-weight:700;font-size:0.78rem;color:#fff;
+              background:#ca8a04">
+              Partial</span>
+          </td>
+          <td class="score-cell"><span class="score-num">70</span></td>
+          <td class="q-obs">
+            
+              <ul style="margin:0;padding-left:1.1rem">
+                <li>Lack of API inventory and testing</li>
+              </ul>
+            
+          </td>
+        </tr>
+        
+        <tr>
+          <td class="q-text">Cloud Security Posture</td>
+          <td>
+            <span style="display:inline-block;padding:0.1rem 0.55rem;border-radius:999px;
+              font-weight:700;font-size:0.78rem;color:#fff;
+              background:#ca8a04">
+              Partial</span>
+          </td>
+          <td class="score-cell"><span class="score-num">70</span></td>
+          <td class="q-obs">
+            
+              <ul style="margin:0;padding-left:1.1rem">
+                <li>Lack of regular checks for public exposure</li><li>Lack of regular monitoring and remediation</li><li>Lack of IaC scanning</li><li>Lack of prioritization and remediation</li>
+              </ul>
+            
+          </td>
+        </tr>
+        
+        <tr>
+          <td class="q-text">Cloud Monitoring &amp; Logging</td>
+          <td>
+            <span style="display:inline-block;padding:0.1rem 0.55rem;border-radius:999px;
+              font-weight:700;font-size:0.78rem;color:#fff;
+              background:#ca8a04">
+              Partial</span>
+          </td>
+          <td class="score-cell"><span class="score-num">73</span></td>
+          <td class="q-obs">
+            
+              <ul style="margin:0;padding-left:1.1rem">
+                <li>Lack of alerts for high-risk cloud events</li><li>Lack of defined process for responding to cloud alerts</li>
+              </ul>
+            
+          </td>
+        </tr>
+        
+        <tr>
+          <td class="q-text">Application Inventory</td>
+          <td>
+            <span style="display:inline-block;padding:0.1rem 0.55rem;border-radius:999px;
+              font-weight:700;font-size:0.78rem;color:#fff;
+              background:#16a34a">
+              Mature</span>
+          </td>
+          <td class="score-cell"><span class="score-num">85</span></td>
+          <td class="q-obs">
+            
+              <ul style="margin:0;padding-left:1.1rem">
+                <li>Inadequate handling of end of life applications</li>
+              </ul>
+            
+          </td>
+        </tr>
+        
+      </tbody>
+    </table>
+  </div>
+</div>
+
+
+<!-- ── Per-question Detail Table ──────────────────────────────────────────── -->
+<div class="section-title" style="padding: 0 2.5rem 0.5rem;">
+  Question-by-Question Review
+</div>
+<div class="table-wrap">
+  <table class="q-table">
+    <thead>
+      <tr>
+        <th style="width:36px">#</th>
+        <th>Question</th>
+        <th>Answer</th>
+        <th>Observation</th>
+        <th>Status</th>
+        <th style="width:96px">Maturity</th>
+        <th class="score-cell">Score</th>
+        <th style="width:48px">Wt</th>
+      </tr>
+    </thead>
+    <tbody>
+      
+      
+      <tr class="row-missing">
+        <td class="q-num">1</td>
+        <td class="q-text">How is cloud environment governance ensured?</td>
+        <td class="q-response">
+          
+          
+            —
+          
+        </td>
+        <td class="q-obs">No response provided — question was left unanswered.</td>
+        <td><span class="gap-flag gap-missing">✗ Missing</span></td>
+        <td>
+          
+          
+          <span title="No governance process is in place, with no security review of cloud architecture decisions."
+                style="display:inline-block;padding:0.08rem 0.45rem;border-radius:999px;
+                font-size:0.72rem;font-weight:700;color:#fff;
+                background:#dc2626">
+            Critical Gap</span>
+          
+        </td>
+        <td class="score-cell">
+          <div class="score-bar-wrap">
+            <div class="score-bar-track">
+              
+              
+                
+              
+              <div class="score-bar-fill"
+                   style="width:0.0%;background:#dc2626"></div>
+            </div>
+            <span class="score-num">0</span>
+          </div>
+        </td>
+        <td style="color:var(--c-muted);font-size:0.78rem;text-align:center">5</td>
+      </tr>
+      
+      
+      <tr class="row-partial">
+        <td class="q-num">2</td>
+        <td class="q-text">What is the process for reviewing cloud architecture decisions?</td>
+        <td class="q-response">
+          
+          
+            Architecture reviews are performed, with a review type of &#39;Architecture Review&#39; and a trigger of &#39;New workload deploymen…
+          
+        </td>
+        <td class="q-obs">Response provided but may not directly address the specific question.</td>
+        <td><span class="gap-flag gap-partial">⚠ Partial</span></td>
+        <td>
+          
+          
+          <span title="Some security involvement in architecture decisions, but no defined process."
+                style="display:inline-block;padding:0.08rem 0.45rem;border-radius:999px;
+                font-size:0.72rem;font-weight:700;color:#fff;
+                background:#ca8a04">
+            Partial</span>
+          
+        </td>
+        <td class="score-cell">
+          <div class="score-bar-wrap">
+            <div class="score-bar-track">
+              
+              
+                
+              
+              <div class="score-bar-fill"
+                   style="width:51.39%;background:#ca8a04"></div>
+            </div>
+            <span class="score-num">51</span>
+          </div>
+        </td>
+        <td style="color:var(--c-muted);font-size:0.78rem;text-align:center">4</td>
+      </tr>
+      
+      
+      <tr class="row-strong">
+        <td class="q-num">3</td>
+        <td class="q-text">Is a CSPM tool in use to identify misconfigurations?</td>
+        <td class="q-response">
+          
+          
+            yes
+          
+        </td>
+        <td class="q-obs">Organisation confirmed: Is a CSPM tool in use to identify misconfigurations.</td>
+        <td><span class="gap-flag gap-addressed">✓ Addressed</span></td>
+        <td>
+          
+          
+          <span title="Yes, a CSPM tool is in use and fully deployed."
+                style="display:inline-block;padding:0.08rem 0.45rem;border-radius:999px;
+                font-size:0.72rem;font-weight:700;color:#fff;
+                background:#16a34a">
+            Mature</span>
+          
+        </td>
+        <td class="score-cell">
+          <div class="score-bar-wrap">
+            <div class="score-bar-track">
+              
+              
+                
+              
+              <div class="score-bar-fill"
+                   style="width:100.0%;background:#16a34a"></div>
+            </div>
+            <span class="score-num">100</span>
+          </div>
+        </td>
+        <td style="color:var(--c-muted);font-size:0.78rem;text-align:center">5</td>
+      </tr>
+      
+      
+      <tr class="row-partial">
+        <td class="q-num">4</td>
+        <td class="q-text">How are cloud storage buckets and databases checked for public exposure?</td>
+        <td class="q-response">
+          
+          
+            Cloud storage buckets are checked for public exposure using a CSPM tool
+          
+        </td>
+        <td class="q-obs">Response addresses the question with relevant context.</td>
+        <td><span class="gap-flag gap-partial">⚠ Partial</span></td>
+        <td>
+          
+          
+          <span title="Some checks are in place, but not regular or comprehensive."
+                style="display:inline-block;padding:0.08rem 0.45rem;border-radius:999px;
+                font-size:0.72rem;font-weight:700;color:#fff;
+                background:#ca8a04">
+            Partial</span>
+          
+        </td>
+        <td class="score-cell">
+          <div class="score-bar-wrap">
+            <div class="score-bar-track">
+              
+              
+                
+              
+              <div class="score-bar-fill"
+                   style="width:60.0%;background:#ca8a04"></div>
+            </div>
+            <span class="score-num">60</span>
+          </div>
+        </td>
+        <td style="color:var(--c-muted);font-size:0.78rem;text-align:center">4</td>
+      </tr>
+      
+      
+      <tr class="row-partial">
+        <td class="q-num">5</td>
+        <td class="q-text">What is the frequency of cloud security posture management?</td>
+        <td class="q-response">
+          
+          
+            3
+          
+        </td>
+        <td class="q-obs">Response is very brief and may lack sufficient detail.</td>
+        <td><span class="gap-flag gap-partial">⚠ Partial</span></td>
+        <td>
+          
+          
+          <span title="3 - Regular monitoring, but remediation is not consistent."
+                style="display:inline-block;padding:0.08rem 0.45rem;border-radius:999px;
+                font-size:0.72rem;font-weight:700;color:#fff;
+                background:#ca8a04">
+            Partial</span>
+          
+        </td>
+        <td class="score-cell">
+          <div class="score-bar-wrap">
+            <div class="score-bar-track">
+              
+              
+                
+              
+              <div class="score-bar-fill"
+                   style="width:60.0%;background:#ca8a04"></div>
+            </div>
+            <span class="score-num">60</span>
+          </div>
+        </td>
+        <td style="color:var(--c-muted);font-size:0.78rem;text-align:center">4</td>
+      </tr>
+      
+      
+      <tr class="row-partial">
+        <td class="q-num">6</td>
+        <td class="q-text">How are IaC templates scanned for security vulnerabilities?</td>
+        <td class="q-response">
+          
+          
+            IaC templates are scanned using Checkov + Wiz in a GitHub Actions pipeline
+          
+        </td>
+        <td class="q-obs">Response addresses the question with relevant context.</td>
+        <td><span class="gap-flag gap-partial">⚠ Partial</span></td>
+        <td>
+          
+          
+          <span title="Some IaC templates are scanned, but not all."
+                style="display:inline-block;padding:0.08rem 0.45rem;border-radius:999px;
+                font-size:0.72rem;font-weight:700;color:#fff;
+                background:#ca8a04">
+            Partial</span>
+          
+        </td>
+        <td class="score-cell">
+          <div class="score-bar-wrap">
+            <div class="score-bar-track">
+              
+              
+                
+              
+              <div class="score-bar-fill"
+                   style="width:62.5%;background:#ca8a04"></div>
+            </div>
+            <span class="score-num">62</span>
+          </div>
+        </td>
+        <td style="color:var(--c-muted);font-size:0.78rem;text-align:center">4</td>
+      </tr>
+      
+      
+      <tr class="row-partial">
+        <td class="q-num">7</td>
+        <td class="q-text">How are cloud security posture management findings prioritized and remediated?</td>
+        <td class="q-response">
+          
+          
+            prioritization_and_remediation_based_on_risk
+          
+        </td>
+        <td class="q-obs">Response provided but may not directly address the specific question.</td>
+        <td><span class="gap-flag gap-partial">⚠ Partial</span></td>
+        <td>
+          
+          
+          <span title="Some prioritization, but no remediation."
+                style="display:inline-block;padding:0.08rem 0.45rem;border-radius:999px;
+                font-size:0.72rem;font-weight:700;color:#fff;
+                background:#ca8a04">
+            Partial</span>
+          
+        </td>
+        <td class="score-cell">
+          <div class="score-bar-wrap">
+            <div class="score-bar-track">
+              
+              
+                
+              
+              <div class="score-bar-fill"
+                   style="width:70.0%;background:#ca8a04"></div>
+            </div>
+            <span class="score-num">70</span>
+          </div>
+        </td>
+        <td style="color:var(--c-muted);font-size:0.78rem;text-align:center">5</td>
+      </tr>
+      
+      
+      <tr class="row-strong">
+        <td class="q-num">8</td>
+        <td class="q-text">Are cloud-native audit logs enabled and forwarded to the GSOC?</td>
+        <td class="q-response">
+          
+          
+            yes
+          
+        </td>
+        <td class="q-obs">Organisation confirmed: Are cloud-native audit logs enabled and forwarded to the GSOC.</td>
+        <td><span class="gap-flag gap-addressed">✓ Addressed</span></td>
+        <td>
+          
+          
+          <span title="Yes, cloud-native audit logs are enabled and forwarded to the GSOC."
+                style="display:inline-block;padding:0.08rem 0.45rem;border-radius:999px;
+                font-size:0.72rem;font-weight:700;color:#fff;
+                background:#16a34a">
+            Mature</span>
+          
+        </td>
+        <td class="score-cell">
+          <div class="score-bar-wrap">
+            <div class="score-bar-track">
+              
+              
+                
+              
+              <div class="score-bar-fill"
+                   style="width:100.0%;background:#16a34a"></div>
+            </div>
+            <span class="score-num">100</span>
+          </div>
+        </td>
+        <td style="color:var(--c-muted);font-size:0.78rem;text-align:center">5</td>
+      </tr>
+      
+      
+      <tr class="row-partial">
+        <td class="q-num">9</td>
+        <td class="q-text">How are high-risk cloud events generating alerts?</td>
+        <td class="q-response">
+          
+          
+            High-risk cloud events generate alerts through tools like GuardDuty
+          
+        </td>
+        <td class="q-obs">Response addresses the question with relevant context.</td>
+        <td><span class="gap-flag gap-partial">⚠ Partial</span></td>
+        <td>
+          
+          
+          <span title="Some alerts are configured, but not for all critical event types."
+                style="display:inline-block;padding:0.08rem 0.45rem;border-radius:999px;
+                font-size:0.72rem;font-weight:700;color:#fff;
+                background:#ca8a04">
+            Partial</span>
+          
+        </td>
+        <td class="score-cell">
+          <div class="score-bar-wrap">
+            <div class="score-bar-track">
+              
+              
+                
+              
+              <div class="score-bar-fill"
+                   style="width:52.5%;background:#ca8a04"></div>
+            </div>
+            <span class="score-num">52</span>
+          </div>
+        </td>
+        <td style="color:var(--c-muted);font-size:0.78rem;text-align:center">4</td>
+      </tr>
+      
+      
+      <tr class="row-partial">
+        <td class="q-num">10</td>
+        <td class="q-text">What is the process for responding to cloud alerts?</td>
+        <td class="q-response">
+          
+          
+            The process for responding to cloud alerts involves acknowledgement and resolution by the IR Team
+          
+        </td>
+        <td class="q-obs">Response addresses the question with relevant context.</td>
+        <td><span class="gap-flag gap-partial">⚠ Partial</span></td>
+        <td>
+          
+          
+          <span title="Some process is in place, but not well-defined or consistent."
+                style="display:inline-block;padding:0.08rem 0.45rem;border-radius:999px;
+                font-size:0.72rem;font-weight:700;color:#fff;
+                background:#ca8a04">
+            Partial</span>
+          
+        </td>
+        <td class="score-cell">
+          <div class="score-bar-wrap">
+            <div class="score-bar-track">
+              
+              
+                
+              
+              <div class="score-bar-fill"
+                   style="width:67.5%;background:#ca8a04"></div>
+            </div>
+            <span class="score-num">68</span>
+          </div>
+        </td>
+        <td style="color:var(--c-muted);font-size:0.78rem;text-align:center">4</td>
+      </tr>
+      
+      
+      <tr class="row-weak">
+        <td class="q-num">11</td>
+        <td class="q-text">What percentage of cloud workloads are covered under endpoint security and patching programs?</td>
+        <td class="q-response">
+          
+          
+            —
+          
+        </td>
+        <td class="q-obs">No response provided — question was left unanswered.</td>
+        <td><span class="gap-flag gap-missing">✗ Missing</span></td>
+        <td>
+          
+          
+          <span title="Less than 20% of cloud workloads are covered"
+                style="display:inline-block;padding:0.08rem 0.45rem;border-radius:999px;
+                font-size:0.72rem;font-weight:700;color:#fff;
+                background:#dc2626">
+            Critical Gap</span>
+          
+        </td>
+        <td class="score-cell">
+          <div class="score-bar-wrap">
+            <div class="score-bar-track">
+              
+              
+                
+              
+              <div class="score-bar-fill"
+                   style="width:0.0%;background:#dc2626"></div>
+            </div>
+            <span class="score-num">0</span>
+          </div>
+        </td>
+        <td style="color:var(--c-muted);font-size:0.78rem;text-align:center">4</td>
+      </tr>
+      
+      
+      <tr class="row-strong">
+        <td class="q-num">12</td>
+        <td class="q-text">Is there a formal application catalog in place?</td>
+        <td class="q-response">
+          
+          
+            yes
+          
+        </td>
+        <td class="q-obs">Organisation confirmed: Is there a formal application catalog in place.</td>
+        <td><span class="gap-flag gap-addressed">✓ Addressed</span></td>
+        <td>
+          
+          
+          <span title="Yes, a formal application catalog is maintained and kept current"
+                style="display:inline-block;padding:0.08rem 0.45rem;border-radius:999px;
+                font-size:0.72rem;font-weight:700;color:#fff;
+                background:#16a34a">
+            Mature</span>
+          
+        </td>
+        <td class="score-cell">
+          <div class="score-bar-wrap">
+            <div class="score-bar-track">
+              
+              
+                
+              
+              <div class="score-bar-fill"
+                   style="width:100.0%;background:#16a34a"></div>
+            </div>
+            <span class="score-num">100</span>
+          </div>
+        </td>
+        <td style="color:var(--c-muted);font-size:0.78rem;text-align:center">5</td>
+      </tr>
+      
+      
+      <tr class="row-partial">
+        <td class="q-num">13</td>
+        <td class="q-text">How are end of life applications handled in the application inventory?</td>
+        <td class="q-response">
+          
+          
+            removed_after_a_defined_period
+          
+        </td>
+        <td class="q-obs">Response provided but may not directly address the specific question.</td>
+        <td><span class="gap-flag gap-partial">⚠ Partial</span></td>
+        <td>
+          
+          
+          <span title="Removed after a defined period, but not consistently"
+                style="display:inline-block;padding:0.08rem 0.45rem;border-radius:999px;
+                font-size:0.72rem;font-weight:700;color:#fff;
+                background:#ca8a04">
+            Partial</span>
+          
+        </td>
+        <td class="score-cell">
+          <div class="score-bar-wrap">
+            <div class="score-bar-track">
+              
+              
+                
+              
+              <div class="score-bar-fill"
+                   style="width:70.0%;background:#ca8a04"></div>
+            </div>
+            <span class="score-num">70</span>
+          </div>
+        </td>
+        <td style="color:var(--c-muted);font-size:0.78rem;text-align:center">4</td>
+      </tr>
+      
+      
+      <tr class="row-missing">
+        <td class="q-num">14</td>
+        <td class="q-text">What is the average time to remediate critical vulnerabilities in internet-facing applications?</td>
+        <td class="q-response">
+          
+          
+            —
+          
+        </td>
+        <td class="q-obs">No response provided — question was left unanswered.</td>
+        <td><span class="gap-flag gap-missing">✗ Missing</span></td>
+        <td>
+          
+          
+          <span title="More than 4 weeks or unknown"
+                style="display:inline-block;padding:0.08rem 0.45rem;border-radius:999px;
+                font-size:0.72rem;font-weight:700;color:#fff;
+                background:#dc2626">
+            Critical Gap</span>
+          
+        </td>
+        <td class="score-cell">
+          <div class="score-bar-wrap">
+            <div class="score-bar-track">
+              
+              
+                
+              
+              <div class="score-bar-fill"
+                   style="width:0.0%;background:#dc2626"></div>
+            </div>
+            <span class="score-num">0</span>
+          </div>
+        </td>
+        <td style="color:var(--c-muted);font-size:0.78rem;text-align:center">4</td>
+      </tr>
+      
+      
+      <tr class="row-strong">
+        <td class="q-num">15</td>
+        <td class="q-text">Is application security testing part of the development lifecycle?</td>
+        <td class="q-response">
+          
+          
+            yes
+          
+        </td>
+        <td class="q-obs">Organisation confirmed: Is application security testing part of the development lifecycle.</td>
+        <td><span class="gap-flag gap-addressed">✓ Addressed</span></td>
+        <td>
+          
+          
+          <span title="Yes, application security testing is integrated into the development lifecycle"
+                style="display:inline-block;padding:0.08rem 0.45rem;border-radius:999px;
+                font-size:0.72rem;font-weight:700;color:#fff;
+                background:#16a34a">
+            Mature</span>
+          
+        </td>
+        <td class="score-cell">
+          <div class="score-bar-wrap">
+            <div class="score-bar-track">
+              
+              
+                
+              
+              <div class="score-bar-fill"
+                   style="width:100.0%;background:#16a34a"></div>
+            </div>
+            <span class="score-num">100</span>
+          </div>
+        </td>
+        <td style="color:var(--c-muted);font-size:0.78rem;text-align:center">5</td>
+      </tr>
+      
+      
+      <tr class="row-strong">
+        <td class="q-num">16</td>
+        <td class="q-text">How often are penetration tests conducted against applications?</td>
+        <td class="q-response">
+          
+          
+            4
+          
+        </td>
+        <td class="q-obs">Response is very brief and may lack sufficient detail.</td>
+        <td><span class="gap-flag gap-addressed">✓ Addressed</span></td>
+        <td>
+          
+          
+          <span title="Penetration tests are conducted quarterly or more frequently"
+                style="display:inline-block;padding:0.08rem 0.45rem;border-radius:999px;
+                font-size:0.72rem;font-weight:700;color:#fff;
+                background:#16a34a">
+            Mature</span>
+          
+        </td>
+        <td class="score-cell">
+          <div class="score-bar-wrap">
+            <div class="score-bar-track">
+              
+              
+                
+              
+              <div class="score-bar-fill"
+                   style="width:80.0%;background:#16a34a"></div>
+            </div>
+            <span class="score-num">80</span>
+          </div>
+        </td>
+        <td style="color:var(--c-muted);font-size:0.78rem;text-align:center">4</td>
+      </tr>
+      
+      
+      <tr class="row-strong">
+        <td class="q-num">17</td>
+        <td class="q-text">Are third-party and open source components tracked and scanned for vulnerabilities?</td>
+        <td class="q-response">
+          
+          
+            yes
+          
+        </td>
+        <td class="q-obs">Organisation confirmed: Are third-party and open source components tracked and scanned for vul.</td>
+        <td><span class="gap-flag gap-addressed">✓ Addressed</span></td>
+        <td>
+          
+          
+          <span title="Yes, third-party and open source components are tracked and scanned"
+                style="display:inline-block;padding:0.08rem 0.45rem;border-radius:999px;
+                font-size:0.72rem;font-weight:700;color:#fff;
+                background:#16a34a">
+            Mature</span>
+          
+        </td>
+        <td class="score-cell">
+          <div class="score-bar-wrap">
+            <div class="score-bar-track">
+              
+              
+                
+              
+              <div class="score-bar-fill"
+                   style="width:100.0%;background:#16a34a"></div>
+            </div>
+            <span class="score-num">100</span>
+          </div>
+        </td>
+        <td style="color:var(--c-muted);font-size:0.78rem;text-align:center">4</td>
+      </tr>
+      
+      
+      <tr class="row-weak">
+        <td class="q-num">18</td>
+        <td class="q-text">Are APIs inventoried and included in application security testing?</td>
+        <td class="q-response">
+          
+          
+            —
+          
+        </td>
+        <td class="q-obs">Not confirmed — this control may not be in place.</td>
+        <td><span class="gap-flag gap-missing">✗ Missing</span></td>
+        <td>
+          
+          
+          <span title="No, APIs are not inventoried or included in application security testing"
+                style="display:inline-block;padding:0.08rem 0.45rem;border-radius:999px;
+                font-size:0.72rem;font-weight:700;color:#fff;
+                background:#dc2626">
+            Critical Gap</span>
+          
+        </td>
+        <td class="score-cell">
+          <div class="score-bar-wrap">
+            <div class="score-bar-track">
+              
+              
+                
+              
+              <div class="score-bar-fill"
+                   style="width:0.0%;background:#dc2626"></div>
+            </div>
+            <span class="score-num">0</span>
+          </div>
+        </td>
+        <td style="color:var(--c-muted);font-size:0.78rem;text-align:center">4</td>
+      </tr>
+      
+      
+      <tr class="row-missing">
+        <td class="q-num">19</td>
+        <td class="q-text">Is there a formal Third Party Risk Management (TPRM) program in place?</td>
+        <td class="q-response">
+          
+          
+            —
+          
+        </td>
+        <td class="q-obs">No response provided — question was left unanswered.</td>
+        <td><span class="gap-flag gap-missing">✗ Missing</span></td>
+        <td>
+          
+          
+          <span title=""
+                style="display:inline-block;padding:0.08rem 0.45rem;border-radius:999px;
+                font-size:0.72rem;font-weight:700;color:#fff;
+                background:#dc2626">
+            Critical Gap</span>
+          
+        </td>
+        <td class="score-cell">
+          <div class="score-bar-wrap">
+            <div class="score-bar-track">
+              
+              
+                
+              
+              <div class="score-bar-fill"
+                   style="width:0.0%;background:#dc2626"></div>
+            </div>
+            <span class="score-num">0</span>
+          </div>
+        </td>
+        <td style="color:var(--c-muted);font-size:0.78rem;text-align:center">3</td>
+      </tr>
+      
+      
+      <tr class="row-missing">
+        <td class="q-num">20</td>
+        <td class="q-text">Is there a complete and maintained inventory of all third parties with access to MCD systems or data, and how is that inventory kept current?</td>
+        <td class="q-response">
+          
+          
+            —
+          
+        </td>
+        <td class="q-obs">No response provided — question was left unanswered.</td>
+        <td><span class="gap-flag gap-missing">✗ Missing</span></td>
+        <td>
+          
+          
+          <span title=""
+                style="display:inline-block;padding:0.08rem 0.45rem;border-radius:999px;
+                font-size:0.72rem;font-weight:700;color:#fff;
+                background:#dc2626">
+            Critical Gap</span>
+          
+        </td>
+        <td class="score-cell">
+          <div class="score-bar-wrap">
+            <div class="score-bar-track">
+              
+              
+                
+              
+              <div class="score-bar-fill"
+                   style="width:0.0%;background:#dc2626"></div>
+            </div>
+            <span class="score-num">0</span>
+          </div>
+        </td>
+        <td style="color:var(--c-muted);font-size:0.78rem;text-align:center">3</td>
+      </tr>
+      
+      
+      <tr class="row-partial">
+        <td class="q-num">21</td>
+        <td class="q-text">Are vendors classified by risk tier based on access level and criticality?</td>
+        <td class="q-response">
+          
+          
+            Yes, vendors are classified by risk tier based on access level and criticality
+          
+        </td>
+        <td class="q-obs">Response addresses the question with relevant context.</td>
+        <td><span class="gap-flag gap-partial">⚠ Partial</span></td>
+        <td>
+          
+          
+          <span title=""
+                style="display:inline-block;padding:0.08rem 0.45rem;border-radius:999px;
+                font-size:0.72rem;font-weight:700;color:#fff;
+                background:#ca8a04">
+            Partial</span>
+          
+        </td>
+        <td class="score-cell">
+          <div class="score-bar-wrap">
+            <div class="score-bar-track">
+              
+              
+                
+              
+              <div class="score-bar-fill"
+                   style="width:62.5%;background:#ca8a04"></div>
+            </div>
+            <span class="score-num">62</span>
+          </div>
+        </td>
+        <td style="color:var(--c-muted);font-size:0.78rem;text-align:center">3</td>
+      </tr>
+      
+      
+      <tr class="row-missing">
+        <td class="q-num">22</td>
+        <td class="q-text">Is a security assessment or questionnaire completed before onboarding a new vendor?</td>
+        <td class="q-response">
+          
+          
+            —
+          
+        </td>
+        <td class="q-obs">No response provided — question was left unanswered.</td>
+        <td><span class="gap-flag gap-missing">✗ Missing</span></td>
+        <td>
+          
+          
+          <span title=""
+                style="display:inline-block;padding:0.08rem 0.45rem;border-radius:999px;
+                font-size:0.72rem;font-weight:700;color:#fff;
+                background:#dc2626">
+            Critical Gap</span>
+          
+        </td>
+        <td class="score-cell">
+          <div class="score-bar-wrap">
+            <div class="score-bar-track">
+              
+              
+                
+              
+              <div class="score-bar-fill"
+                   style="width:0.0%;background:#dc2626"></div>
+            </div>
+            <span class="score-num">0</span>
+          </div>
+        </td>
+        <td style="color:var(--c-muted);font-size:0.78rem;text-align:center">3</td>
+      </tr>
+      
+      
+      <tr class="row-partial">
+        <td class="q-num">23</td>
+        <td class="q-text">Are vendors required to provide evidence of security controls such as SOC 2 reports, ISO 27001 certification, or penetration test results?</td>
+        <td class="q-response">
+          
+          
+            Yes, vendors are required to provide evidence of security controls
+          
+        </td>
+        <td class="q-obs">Response addresses the question with relevant context.</td>
+        <td><span class="gap-flag gap-partial">⚠ Partial</span></td>
+        <td>
+          
+          
+          <span title=""
+                style="display:inline-block;padding:0.08rem 0.45rem;border-radius:999px;
+                font-size:0.72rem;font-weight:700;color:#fff;
+                background:#ca8a04">
+            Partial</span>
+          
+        </td>
+        <td class="score-cell">
+          <div class="score-bar-wrap">
+            <div class="score-bar-track">
+              
+              
+                
+              
+              <div class="score-bar-fill"
+                   style="width:55.0%;background:#ca8a04"></div>
+            </div>
+            <span class="score-num">55</span>
+          </div>
+        </td>
+        <td style="color:var(--c-muted);font-size:0.78rem;text-align:center">3</td>
+      </tr>
+      
+      
+      <tr class="row-missing">
+        <td class="q-num">24</td>
+        <td class="q-text">Are security requirements and data protection obligations included in vendor contracts?</td>
+        <td class="q-response">
+          
+          
+            —
+          
+        </td>
+        <td class="q-obs">No response provided — question was left unanswered.</td>
+        <td><span class="gap-flag gap-missing">✗ Missing</span></td>
+        <td>
+          
+          
+          <span title=""
+                style="display:inline-block;padding:0.08rem 0.45rem;border-radius:999px;
+                font-size:0.72rem;font-weight:700;color:#fff;
+                background:#dc2626">
+            Critical Gap</span>
+          
+        </td>
+        <td class="score-cell">
+          <div class="score-bar-wrap">
+            <div class="score-bar-track">
+              
+              
+                
+              
+              <div class="score-bar-fill"
+                   style="width:0.0%;background:#dc2626"></div>
+            </div>
+            <span class="score-num">0</span>
+          </div>
+        </td>
+        <td style="color:var(--c-muted);font-size:0.78rem;text-align:center">3</td>
+      </tr>
+      
+      
+      <tr class="row-partial">
+        <td class="q-num">25</td>
+        <td class="q-text">Are vendors reassessed periodically after initial onboarding? If so, how often?</td>
+        <td class="q-response">
+          
+          
+            Yes, vendors are reassessed periodically after initial onboarding
+          
+        </td>
+        <td class="q-obs">Response addresses the question with relevant context.</td>
+        <td><span class="gap-flag gap-partial">⚠ Partial</span></td>
+        <td>
+          
+          
+          <span title=""
+                style="display:inline-block;padding:0.08rem 0.45rem;border-radius:999px;
+                font-size:0.72rem;font-weight:700;color:#fff;
+                background:#ca8a04">
+            Partial</span>
+          
+        </td>
+        <td class="score-cell">
+          <div class="score-bar-wrap">
+            <div class="score-bar-track">
+              
+              
+                
+              
+              <div class="score-bar-fill"
+                   style="width:50.0%;background:#ca8a04"></div>
+            </div>
+            <span class="score-num">50</span>
+          </div>
+        </td>
+        <td style="color:var(--c-muted);font-size:0.78rem;text-align:center">3</td>
+      </tr>
+      
+      
+      <tr class="row-partial">
+        <td class="q-num">26</td>
+        <td class="q-text">Are vendor access rights reviewed regularly and removed when the relationship ends?</td>
+        <td class="q-response">
+          
+          
+            Yes, vendor access rights are reviewed regularly and removed when the relationship ends
+          
+        </td>
+        <td class="q-obs">Response addresses the question with relevant context.</td>
+        <td><span class="gap-flag gap-partial">⚠ Partial</span></td>
+        <td>
+          
+          
+          <span title=""
+                style="display:inline-block;padding:0.08rem 0.45rem;border-radius:999px;
+                font-size:0.72rem;font-weight:700;color:#fff;
+                background:#ca8a04">
+            Partial</span>
+          
+        </td>
+        <td class="score-cell">
+          <div class="score-bar-wrap">
+            <div class="score-bar-track">
+              
+              
+                
+              
+              <div class="score-bar-fill"
+                   style="width:62.5%;background:#ca8a04"></div>
+            </div>
+            <span class="score-num">62</span>
+          </div>
+        </td>
+        <td style="color:var(--c-muted);font-size:0.78rem;text-align:center">3</td>
+      </tr>
+      
+      
+      <tr class="row-missing">
+        <td class="q-num">27</td>
+        <td class="q-text">Are vendors contractually required to notify MCD within a defined timeframe if they experience a security incident or breach that may affect MCD data?</td>
+        <td class="q-response">
+          
+          
+            —
+          
+        </td>
+        <td class="q-obs">No response provided — question was left unanswered.</td>
+        <td><span class="gap-flag gap-missing">✗ Missing</span></td>
+        <td>
+          
+          
+          <span title=""
+                style="display:inline-block;padding:0.08rem 0.45rem;border-radius:999px;
+                font-size:0.72rem;font-weight:700;color:#fff;
+                background:#dc2626">
+            Critical Gap</span>
+          
+        </td>
+        <td class="score-cell">
+          <div class="score-bar-wrap">
+            <div class="score-bar-track">
+              
+              
+                
+              
+              <div class="score-bar-fill"
+                   style="width:0.0%;background:#dc2626"></div>
+            </div>
+            <span class="score-num">0</span>
+          </div>
+        </td>
+        <td style="color:var(--c-muted);font-size:0.78rem;text-align:center">3</td>
+      </tr>
+      
+    </tbody>
+  </table>
+</div>
+
+<!-- ── Strengths & Gaps ───────────────────────────────────────────────────── -->
+<div class="sg-grid">
+  <div class="sg-card strengths">
+    <h3>✓ Strengths</h3>
+    
+    <ul class="sg-list">
+      
+      <li class="sg-item">Is a CSPM tool in use to identify misconfigurations?</li>
+      
+      <li class="sg-item">Are cloud-native audit logs enabled and forwarded to the GSOC?</li>
+      
+      <li class="sg-item">Is there a formal application catalog in place?</li>
+      
+      <li class="sg-item">Is application security testing part of the development lifecycle?</li>
+      
+      <li class="sg-item">How often are penetration tests conducted against applications?</li>
+      
+      <li class="sg-item">Are third-party and open source components tracked and scanned for vulnerabilities?</li>
+      
+    </ul>
+    
+  </div>
+  <div class="sg-card gaps">
+    <h3>✗ Gaps &amp; Weaknesses</h3>
+    
+    <ul class="sg-list">
+      
+      <li class="sg-item">Lack of formal governance process</li>
+      
+      <li class="sg-item">Lack of defined process for reviewing cloud architecture decisions</li>
+      
+      <li class="sg-item">Lack of regular checks for public exposure</li>
+      
+      <li class="sg-item">Lack of regular monitoring and remediation</li>
+      
+      <li class="sg-item">Lack of IaC scanning</li>
+      
+      <li class="sg-item">Lack of prioritization and remediation</li>
+      
+      <li class="sg-item">Lack of alerts for high-risk cloud events</li>
+      
+      <li class="sg-item">Lack of defined process for responding to cloud alerts</li>
+      
+      <li class="sg-item">Incomplete workload coverage</li>
+      
+      <li class="sg-item">Inadequate handling of end of life applications</li>
+      
+      <li class="sg-item">Inadequate remediation of critical vulnerabilities</li>
+      
+      <li class="sg-item">Lack of API inventory and testing</li>
+      
+    </ul>
+    
+  </div>
+</div>
+
+<!-- ── Score Distribution ─────────────────────────────────────────────────── -->
+
+<div class="dist-section">
+  <div class="section-title">Score Distribution</div>
+  <div class="dist-bars">
+    
+    <div class="dist-col">
+      <div class="dist-count">9</div>
+      <div class="dist-bar" style="height:100%"></div>
+      <div class="dist-range">0–20</div>
+    </div>
+    
+    <div class="dist-col">
+      <div class="dist-count">0</div>
+      <div class="dist-bar" style="height:0%"></div>
+      <div class="dist-range">21–40</div>
+    </div>
+    
+    <div class="dist-col">
+      <div class="dist-count">6</div>
+      <div class="dist-bar" style="height:67%"></div>
+      <div class="dist-range">41–60</div>
+    </div>
+    
+    <div class="dist-col">
+      <div class="dist-count">7</div>
+      <div class="dist-bar" style="height:78%"></div>
+      <div class="dist-range">61–80</div>
+    </div>
+    
+    <div class="dist-col">
+      <div class="dist-count">5</div>
+      <div class="dist-bar" style="height:56%"></div>
+      <div class="dist-range">81–100</div>
+    </div>
+    
+  </div>
+</div>
+
+
+<!-- ── Footer ─────────────────────────────────────────────────────────────── -->
+<div class="report-footer">
+  <span>Generated by NIST CSF 2.0 RAG Assessment Pipeline</span>
+  <span>Scoring mode: fallback-deterministic · Questions reviewed: 27</span>
+</div>
+
+</body>
+</html>

@@ -1,0 +1,16 @@
+# CyberAI database tooling — runtime dependencies.
+#
+# The importer, schema creation and verification use ONLY the Python standard
+# library (sqlite3, json, argparse, pathlib, dataclasses). There are no
+# mandatory third-party runtime dependencies, which keeps the ingestion
+# pipeline reproducible and CI-friendly.
+#
+# Requires Python 3.10+ (uses PEP 604 `X | None` type unions).
+#
+# --- Optional, for the future PostgreSQL migration ---
+# psycopg[binary]>=3.1     # PostgreSQL driver
+# SQLAlchemy>=2.0          # ORM / engine abstraction
+# alembic>=1.13            # schema migrations
+#
+# --- Optional, for development ---
+# pytest>=8.0

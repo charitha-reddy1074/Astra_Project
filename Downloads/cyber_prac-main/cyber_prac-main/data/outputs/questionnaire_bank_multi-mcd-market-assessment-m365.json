@@ -1,0 +1,828 @@
+{
+  "questionnaire_id": "multi-mcd-market-assessment-m365",
+  "questionnaire_type": "multi_framework",
+  "framework_id": "71d80a37-8a16-5ea1-a1ea-805dffe93cdf",
+  "name": "MCD Market Assessment Framework (M365 & Email Security)",
+  "framework_names": [
+    "MCD Market Assessment Framework"
+  ],
+  "framework_summary": "MCD Market Assessment Framework",
+  "version": "1.0",
+  "source_format": "multi_framework_merged",
+  "question_count": 9,
+  "part1_checklist": [
+    {
+      "number": 1,
+      "question_id": "f47ac10b-ee9c-42e4-9f9d-4b5f4a5f4a5f",
+      "question_text": "Is MFA enforced for M365 admin roles?",
+      "sub_topic": "M365 & Email Security",
+      "domain_name": "M365 & Email Security",
+      "framework_name": "MCD Market Assessment Framework",
+      "control_id": "M365-1, M365-2, M365-3",
+      "answer_format": "yes_no_with_detail",
+      "response_options": "Yes / No / Partial",
+      "detail_prompt": "If yes or partial, specify the tool or technology in use."
+    },
+    {
+      "number": 2,
+      "question_id": "9b4a5c5c-5c5c-42e4-9f9d-4b5f4a5f4a5f",
+      "question_text": "How frequently are M365 admin role assignments reviewed?",
+      "sub_topic": "M365 & Email Security",
+      "domain_name": "M365 & Email Security",
+      "framework_name": "MCD Market Assessment Framework",
+      "control_id": "",
+      "answer_format": "yes_no_with_detail",
+      "response_options": "Yes / No / Partial",
+      "detail_prompt": "Provide review schedule"
+    },
+    {
+      "number": 3,
+      "question_id": "1a2b3c4d-5e6f-7g8h-9i0j-1k2l3m4n5o",
+      "question_text": "What process triggers DMARC, DKIM, and SPF configuration updates?",
+      "sub_topic": "M365 & Email Security",
+      "domain_name": "M365 & Email Security",
+      "framework_name": "MCD Market Assessment Framework",
+      "control_id": "",
+      "answer_format": "yes_no_with_detail",
+      "response_options": "Yes / No / Partial",
+      "detail_prompt": "Describe update process"
+    },
+    {
+      "number": 4,
+      "question_id": "5f5f5f5f-5f5f-5f5f-5f5f-5f5f5f5f5f5f",
+      "question_text": "How are external sharing restrictions enforced in SharePoint and OneDrive?",
+      "sub_topic": "M365 & Email Security",
+      "domain_name": "M365 & Email Security",
+      "framework_name": "MCD Market Assessment Framework",
+      "control_id": "",
+      "answer_format": "yes_no_with_detail",
+      "response_options": "Yes / No / Partial",
+      "detail_prompt": "Describe enforcement process"
+    },
+    {
+      "number": 5,
+      "question_id": "2b2b2b2b-2b2b-2b2b-2b2b-2b2b2b2b2b2b",
+      "question_text": "What is the frequency of DLP policy reviews and updates?",
+      "sub_topic": "M365 & Email Security",
+      "domain_name": "M365 & Email Security",
+      "framework_name": "MCD Market Assessment Framework",
+      "control_id": "",
+      "answer_format": "yes_no_with_detail",
+      "response_options": "Yes / No / Partial",
+      "detail_prompt": "Provide review schedule"
+    },
+    {
+      "number": 6,
+      "question_id": "3c3c3c3c-3c3c-3c3c-3c3c-3c3c3c3c3c3c",
+      "question_text": "How are OAuth app permissions reviewed and approved?",
+      "sub_topic": "M365 & Email Security",
+      "domain_name": "M365 & Email Security",
+      "framework_name": "MCD Market Assessment Framework",
+      "control_id": "",
+      "answer_format": "yes_no_with_detail",
+      "response_options": "Yes / No / Partial",
+      "detail_prompt": "Describe review and approval process"
+    }
+  ],
+  "question_groups": [
+    {
+      "framework_id": "a3f2c1d4-7b8e-5a9f-b012-3c4d5e6f7a8b",
+      "framework_key": "mcd-market-assessment",
+      "framework_name": "MCD Market Assessment Framework",
+      "domain_id": "M365",
+      "domain_name": "M365 & Email Security",
+      "domain_description": "Covers Microsoft 365 configuration, email security controls, and anti-phishing protections.",
+      "question_count": 3,
+      "questions": [
+        {
+          "item_id": "62084548-753f-519a-8c59-ea578b9b45fd",
+          "question_id": "62084548-753f-519a-8c59-ea578b9b45fd",
+          "question_text": "Is Microsoft Defender for Office 365 enabled (Plan 1 or Plan 2)?",
+          "question_type": "merged",
+          "answer_formats": [
+            "free_text"
+          ],
+          "framework_name": "MCD Market Assessment Framework",
+          "framework_key": "mcd-market-assessment",
+          "domain_id": "M365",
+          "domain_name": "M365 & Email Security",
+          "control_id": "M365-1",
+          "control_statement": "M365 tenant is configured against a security baseline. Admin roles are minimized and global admin use is restricted. Microsoft Defender for Office 365 is enabled.",
+          "expected_evidence": "Microsoft Secure Score report, M365 admin role assignment report",
+          "maturity_level": "Critical Gap",
+          "merge_reason": "Merged by control fallback because LLM output was unavailable or invalid.",
+          "source_item_ids": [
+            "cfd1373d-43ad-522e-8351-3662192ee296",
+            "ae59f217-4258-5107-b167-7f47fbf6b240",
+            "08845b69-263d-5303-aa2b-47d7fb77c072"
+          ],
+          "source_questions": [
+            {
+              "question_id": "M365-1-Q1",
+              "question_text": "Has the M365 tenant been configured against a security baseline such as Microsoft Secure Score or the CIS M365 Benchmark?",
+              "question_type": "free_text",
+              "framework_name": "MCD Market Assessment Framework",
+              "framework_key": "mcd-market-assessment",
+              "domain_id": "M365",
+              "domain_name": "M365 & Email Security",
+              "control_id": "M365-1",
+              "cross_references": [],
+              "expected_evidence": "Microsoft Secure Score report, M365 admin role assignment report"
+            },
+            {
+              "question_id": "M365-1-Q2",
+              "question_text": "Are M365 admin roles minimized, and is global admin use restricted?",
+              "question_type": "free_text",
+              "framework_name": "MCD Market Assessment Framework",
+              "framework_key": "mcd-market-assessment",
+              "domain_id": "M365",
+              "domain_name": "M365 & Email Security",
+              "control_id": "M365-1",
+              "cross_references": [],
+              "expected_evidence": "Microsoft Secure Score report, M365 admin role assignment report"
+            },
+            {
+              "question_id": "M365-1-Q3",
+              "question_text": "Is Microsoft Defender for Office 365 enabled (Plan 1 or Plan 2)?",
+              "question_type": "free_text",
+              "framework_name": "MCD Market Assessment Framework",
+              "framework_key": "mcd-market-assessment",
+              "domain_id": "M365",
+              "domain_name": "M365 & Email Security",
+              "control_id": "M365-1",
+              "cross_references": [],
+              "expected_evidence": "Microsoft Secure Score report, M365 admin role assignment report"
+            }
+          ],
+          "cross_references": []
+        },
+        {
+          "item_id": "81012228-3569-552c-8f9c-022780e731b1",
+          "question_id": "81012228-3569-552c-8f9c-022780e731b1",
+          "question_text": "Is phishing simulation training conducted regularly, and is click rate and reporting rate tracked over time?",
+          "question_type": "merged",
+          "answer_formats": [
+            "free_text"
+          ],
+          "framework_name": "MCD Market Assessment Framework",
+          "framework_key": "mcd-market-assessment",
+          "domain_id": "M365",
+          "domain_name": "M365 & Email Security",
+          "control_id": "M365-2",
+          "control_statement": "DMARC, DKIM, and SPF are configured and enforced for all sending domains. Anti-phishing, safe links, and safe attachments are fully configured. A third-party email gateway is in use. Users can report suspicious emails.",
+          "expected_evidence": "DMARC, DKIM, and SPF DNS record output for all sending domains, Email filtering configuration summary showing safe links, safe attachments, and anti-phishing settings, User phishing report submission log and review process documentation",
+          "maturity_level": "Critical Gap",
+          "merge_reason": "Merged by control fallback because LLM output was unavailable or invalid.",
+          "source_item_ids": [
+            "5a06eb39-d469-5254-8e1b-ec592e25e3bf",
+            "b5f9fe24-d19c-528e-a89c-ccc3e1543f33",
+            "6bdce997-087c-5a6c-98e2-cb3ceeb5750a"
+          ],
+          "source_questions": [
+            {
+              "question_id": "M365-2-Q1",
+              "question_text": "Are DMARC, DKIM, and SPF configured and enforced for all sending domains?",
+              "question_type": "free_text",
+              "framework_name": "MCD Market Assessment Framework",
+              "framework_key": "mcd-market-assessment",
+              "domain_id": "M365",
+              "domain_name": "M365 & Email Security",
+              "control_id": "M365-2",
+              "cross_references": [],
+              "expected_evidence": "DMARC, DKIM, and SPF DNS record output for all sending domains, Email filtering configuration summary showing safe links, safe attachments, and anti-phishing settings, User phishing report submission log and review process documentation"
+            },
+            {
+              "question_id": "M365-2-Q2",
+              "question_text": "Is an additional email security gateway in use such as Proofpoint?",
+              "question_type": "free_text",
+              "framework_name": "MCD Market Assessment Framework",
+              "framework_key": "mcd-market-assessment",
+              "domain_id": "M365",
+              "domain_name": "M365 & Email Security",
+              "control_id": "M365-2",
+              "cross_references": [],
+              "expected_evidence": "DMARC, DKIM, and SPF DNS record output for all sending domains, Email filtering configuration summary showing safe links, safe attachments, and anti-phishing settings, User phishing report submission log and review process documentation"
+            },
+            {
+              "question_id": "M365-2-Q3",
+              "question_text": "Is phishing simulation training conducted regularly, and is click rate and reporting rate tracked over time?",
+              "question_type": "free_text",
+              "framework_name": "MCD Market Assessment Framework",
+              "framework_key": "mcd-market-assessment",
+              "domain_id": "M365",
+              "domain_name": "M365 & Email Security",
+              "control_id": "M365-2",
+              "cross_references": [],
+              "expected_evidence": "DMARC, DKIM, and SPF DNS record output for all sending domains, Email filtering configuration summary showing safe links, safe attachments, and anti-phishing settings, User phishing report submission log and review process documentation"
+            }
+          ],
+          "cross_references": []
+        },
+        {
+          "item_id": "815975a1-93ec-5a0d-897d-b4f39cea9429",
+          "question_id": "815975a1-93ec-5a0d-897d-b4f39cea9429",
+          "question_text": "Is a DLP solution configured to prevent sensitive data from leaving via email or Teams?",
+          "question_type": "merged",
+          "answer_formats": [
+            "free_text"
+          ],
+          "framework_name": "MCD Market Assessment Framework",
+          "framework_key": "mcd-market-assessment",
+          "domain_id": "M365",
+          "domain_name": "M365 & Email Security",
+          "control_id": "M365-3",
+          "control_statement": "External sharing in SharePoint and OneDrive is governed and restricted. DLP policies are configured and enforced. M365 audit logs are enabled and retained. OAuth app permissions are reviewed.",
+          "expected_evidence": "External sharing report from SharePoint and OneDrive showing active external shares, DLP policy export and sensitivity label configuration, OAuth app permissions report",
+          "maturity_level": "Critical Gap",
+          "merge_reason": "Merged by control fallback because LLM output was unavailable or invalid.",
+          "source_item_ids": [
+            "7ca57104-974d-576f-a9fe-a09ae9ecac2f",
+            "da239e42-8608-5a57-ad10-e2b178e5c1af",
+            "4d9ba84e-e461-555f-9f67-df308996c65a"
+          ],
+          "source_questions": [
+            {
+              "question_id": "M365-3-Q1",
+              "question_text": "Are external sharing settings in SharePoint and OneDrive governed and appropriately restricted?",
+              "question_type": "free_text",
+              "framework_name": "MCD Market Assessment Framework",
+              "framework_key": "mcd-market-assessment",
+              "domain_id": "M365",
+              "domain_name": "M365 & Email Security",
+              "control_id": "M365-3",
+              "cross_references": [],
+              "expected_evidence": "External sharing report from SharePoint and OneDrive showing active external shares, DLP policy export and sensitivity label configuration, OAuth app permissions report"
+            },
+            {
+              "question_id": "M365-3-Q2",
+              "question_text": "Is a DLP solution configured to prevent sensitive data from leaving via email or Teams?",
+              "question_type": "free_text",
+              "framework_name": "MCD Market Assessment Framework",
+              "framework_key": "mcd-market-assessment",
+              "domain_id": "M365",
+              "domain_name": "M365 & Email Security",
+              "control_id": "M365-3",
+              "cross_references": [],
+              "expected_evidence": "External sharing report from SharePoint and OneDrive showing active external shares, DLP policy export and sensitivity label configuration, OAuth app permissions report"
+            },
+            {
+              "question_id": "M365-3-Q3",
+              "question_text": "Is there visibility into OAuth app permissions granted to third-party apps connected to M365?",
+              "question_type": "free_text",
+              "framework_name": "MCD Market Assessment Framework",
+              "framework_key": "mcd-market-assessment",
+              "domain_id": "M365",
+              "domain_name": "M365 & Email Security",
+              "control_id": "M365-3",
+              "cross_references": [],
+              "expected_evidence": "External sharing report from SharePoint and OneDrive showing active external shares, DLP policy export and sensitivity label configuration, OAuth app permissions report"
+            }
+          ],
+          "cross_references": []
+        }
+      ],
+      "sub_topics": [
+        {
+          "sub_topic": "M365 & Email Security",
+          "control_ids": [
+            "M365-1",
+            "M365-2",
+            "M365-3"
+          ],
+          "part1_question": {
+            "question_id": "f47ac10b-ee9c-42e4-9f9d-4b5f4a5f4a5f",
+            "question_text": "Is MFA enforced for M365 admin roles?",
+            "question_type": "yes_no_with_detail",
+            "response_options": "Yes / No / Partial",
+            "detail_prompt": "If yes or partial, specify the tool or technology in use."
+          },
+          "questions": [
+            {
+              "question_id": "9b4a5c5c-5c5c-42e4-9f9d-4b5f4a5f4a5f",
+              "text": "How frequently are M365 admin role assignments reviewed?",
+              "help_text": "Provide review schedule",
+              "question_type": "FREE_TEXT",
+              "weight": 4,
+              "maturity_level": 4,
+              "expected_evidence_types": [
+                "M365 admin role assignment report"
+              ]
+            },
+            {
+              "question_id": "1a2b3c4d-5e6f-7g8h-9i0j-1k2l3m4n5o",
+              "text": "What process triggers DMARC, DKIM, and SPF configuration updates?",
+              "help_text": "Describe update process",
+              "question_type": "FREE_TEXT",
+              "weight": 3,
+              "maturity_level": 3,
+              "expected_evidence_types": [
+                "DMARC, DKIM, and SPF DNS record output"
+              ]
+            },
+            {
+              "question_id": "5f5f5f5f-5f5f-5f5f-5f5f-5f5f5f5f5f5f",
+              "text": "How are external sharing restrictions enforced in SharePoint and OneDrive?",
+              "help_text": "Describe enforcement process",
+              "question_type": "FREE_TEXT",
+              "weight": 5,
+              "maturity_level": 5,
+              "expected_evidence_types": [
+                "External sharing report from SharePoint and OneDrive"
+              ]
+            },
+            {
+              "question_id": "2b2b2b2b-2b2b-2b2b-2b2b-2b2b2b2b2b2b",
+              "text": "What is the frequency of DLP policy reviews and updates?",
+              "help_text": "Provide review schedule",
+              "question_type": "SCALE_1_5",
+              "choices": [
+                "Daily",
+                "Weekly",
+                "Monthly",
+                "Quarterly"
+              ],
+              "weight": 4,
+              "maturity_level": 4,
+              "expected_evidence_types": [
+                "DLP policy export and sensitivity label configuration"
+              ]
+            },
+            {
+              "question_id": "3c3c3c3c-3c3c-3c3c-3c3c-3c3c3c3c3c3c",
+              "text": "How are OAuth app permissions reviewed and approved?",
+              "help_text": "Describe review and approval process",
+              "question_type": "FREE_TEXT",
+              "weight": 5,
+              "maturity_level": 5,
+              "expected_evidence_types": [
+                "OAuth app permissions report"
+              ]
+            }
+          ],
+          "maturity_guide": {
+            "mature": "M365 tenant is fully configured against a security baseline, with minimized admin roles, restricted global admin use, and enabled Microsoft Defender for Office 365. DMARC, DKIM, and SPF are configured and enforced for all sending domains, with fully configured anti-phishing, safe links, and safe attachments. External sharing in SharePoint and OneDrive is governed and restricted, with configured and enforced DLP policies and enabled M365 audit logs.",
+            "partial": "M365 tenant has some security baseline configurations in place, but admin roles are not fully minimized, and global admin use is not restricted. DMARC, DKIM, and SPF are partially configured, with some anti-phishing, safe links, and safe attachments settings in place. External sharing in SharePoint and OneDrive is partially governed, with some DLP policies configured, but M365 audit logs are not fully enabled.",
+            "critical_gap": "M365 tenant has no security baseline configurations in place, with unrestricted admin roles and global admin use, leaving the organization vulnerable to email-based attacks and data breaches."
+          },
+          "evidence_to_request": [
+            "Microsoft Secure Score report",
+            "M365 admin role assignment report",
+            "DMARC, DKIM, and SPF DNS record output for all sending domains",
+            "Email filtering configuration summary showing safe links, safe attachments, and anti-phishing settings",
+            "User phishing report submission log and review process documentation",
+            "External sharing report from SharePoint and OneDrive showing active external shares"
+          ],
+          "red_flags": [
+            {
+              "critical_gap": "M365 tenant has no enabled Microsoft Defender for Office 365, leaving the organization vulnerable to email-based attacks.",
+              "recommended_action": "Enable Microsoft Defender for Office 365 and configure anti-phishing, safe links, and safe attachments settings."
+            },
+            {
+              "critical_gap": "Admin roles are not minimized, and global admin use is not restricted, increasing the risk of privilege escalation attacks.",
+              "recommended_action": "Minimize admin roles and restrict global admin use to prevent privilege escalation attacks."
+            },
+            {
+              "critical_gap": "External sharing in SharePoint and OneDrive is not governed and restricted, increasing the risk of data breaches.",
+              "recommended_action": "Govern and restrict external sharing in SharePoint and OneDrive to prevent data breaches."
+            }
+          ]
+        }
+      ],
+      "evidence_to_request": [
+        "Microsoft Secure Score report",
+        "M365 admin role assignment report",
+        "DMARC, DKIM, and SPF DNS record output for all sending domains",
+        "Email filtering configuration summary showing safe links, safe attachments, and anti-phishing settings",
+        "User phishing report submission log and review process documentation",
+        "External sharing report from SharePoint and OneDrive showing active external shares"
+      ],
+      "red_flags": [
+        {
+          "critical_gap": "M365 tenant has no enabled Microsoft Defender for Office 365, leaving the organization vulnerable to email-based attacks.",
+          "recommended_action": "Enable Microsoft Defender for Office 365 and configure anti-phishing, safe links, and safe attachments settings."
+        },
+        {
+          "critical_gap": "Admin roles are not minimized, and global admin use is not restricted, increasing the risk of privilege escalation attacks.",
+          "recommended_action": "Minimize admin roles and restrict global admin use to prevent privilege escalation attacks."
+        },
+        {
+          "critical_gap": "External sharing in SharePoint and OneDrive is not governed and restricted, increasing the risk of data breaches.",
+          "recommended_action": "Govern and restrict external sharing in SharePoint and OneDrive to prevent data breaches."
+        }
+      ],
+      "maturity_guide": {
+        "mature": "M365 tenant is fully configured against a security baseline, with minimized admin roles, restricted global admin use, and enabled Microsoft Defender for Office 365. DMARC, DKIM, and SPF are configured and enforced for all sending domains, with fully configured anti-phishing, safe links, and safe attachments. External sharing in SharePoint and OneDrive is governed and restricted, with configured and enforced DLP policies and enabled M365 audit logs.",
+        "partial": "M365 tenant has some security baseline configurations in place, but admin roles are not fully minimized, and global admin use is not restricted. DMARC, DKIM, and SPF are partially configured, with some anti-phishing, safe links, and safe attachments settings in place. External sharing in SharePoint and OneDrive is partially governed, with some DLP policies configured, but M365 audit logs are not fully enabled.",
+        "critical_gap": "M365 tenant has no security baseline configurations in place, with unrestricted admin roles and global admin use, leaving the organization vulnerable to email-based attacks and data breaches."
+      }
+    }
+  ],
+  "questions": [
+    {
+      "question_id": "M365-1-Q1",
+      "question_text": "Has the M365 tenant been configured against a security baseline such as Microsoft Secure Score or the CIS M365 Benchmark?",
+      "question_type": "free_text",
+      "framework_name": "MCD Market Assessment Framework",
+      "framework_key": "mcd-market-assessment",
+      "domain_id": "M365",
+      "domain_name": "M365 & Email Security",
+      "control_id": "M365-1",
+      "cross_references": [],
+      "expected_evidence": "Microsoft Secure Score report, M365 admin role assignment report"
+    },
+    {
+      "question_id": "M365-1-Q2",
+      "question_text": "Are M365 admin roles minimized, and is global admin use restricted?",
+      "question_type": "free_text",
+      "framework_name": "MCD Market Assessment Framework",
+      "framework_key": "mcd-market-assessment",
+      "domain_id": "M365",
+      "domain_name": "M365 & Email Security",
+      "control_id": "M365-1",
+      "cross_references": [],
+      "expected_evidence": "Microsoft Secure Score report, M365 admin role assignment report"
+    },
+    {
+      "question_id": "M365-1-Q3",
+      "question_text": "Is Microsoft Defender for Office 365 enabled (Plan 1 or Plan 2)?",
+      "question_type": "free_text",
+      "framework_name": "MCD Market Assessment Framework",
+      "framework_key": "mcd-market-assessment",
+      "domain_id": "M365",
+      "domain_name": "M365 & Email Security",
+      "control_id": "M365-1",
+      "cross_references": [],
+      "expected_evidence": "Microsoft Secure Score report, M365 admin role assignment report"
+    },
+    {
+      "question_id": "M365-2-Q1",
+      "question_text": "Are DMARC, DKIM, and SPF configured and enforced for all sending domains?",
+      "question_type": "free_text",
+      "framework_name": "MCD Market Assessment Framework",
+      "framework_key": "mcd-market-assessment",
+      "domain_id": "M365",
+      "domain_name": "M365 & Email Security",
+      "control_id": "M365-2",
+      "cross_references": [],
+      "expected_evidence": "DMARC, DKIM, and SPF DNS record output for all sending domains, Email filtering configuration summary showing safe links, safe attachments, and anti-phishing settings, User phishing report submission log and review process documentation"
+    },
+    {
+      "question_id": "M365-2-Q2",
+      "question_text": "Is an additional email security gateway in use such as Proofpoint?",
+      "question_type": "free_text",
+      "framework_name": "MCD Market Assessment Framework",
+      "framework_key": "mcd-market-assessment",
+      "domain_id": "M365",
+      "domain_name": "M365 & Email Security",
+      "control_id": "M365-2",
+      "cross_references": [],
+      "expected_evidence": "DMARC, DKIM, and SPF DNS record output for all sending domains, Email filtering configuration summary showing safe links, safe attachments, and anti-phishing settings, User phishing report submission log and review process documentation"
+    },
+    {
+      "question_id": "M365-2-Q3",
+      "question_text": "Is phishing simulation training conducted regularly, and is click rate and reporting rate tracked over time?",
+      "question_type": "free_text",
+      "framework_name": "MCD Market Assessment Framework",
+      "framework_key": "mcd-market-assessment",
+      "domain_id": "M365",
+      "domain_name": "M365 & Email Security",
+      "control_id": "M365-2",
+      "cross_references": [],
+      "expected_evidence": "DMARC, DKIM, and SPF DNS record output for all sending domains, Email filtering configuration summary showing safe links, safe attachments, and anti-phishing settings, User phishing report submission log and review process documentation"
+    },
+    {
+      "question_id": "M365-3-Q1",
+      "question_text": "Are external sharing settings in SharePoint and OneDrive governed and appropriately restricted?",
+      "question_type": "free_text",
+      "framework_name": "MCD Market Assessment Framework",
+      "framework_key": "mcd-market-assessment",
+      "domain_id": "M365",
+      "domain_name": "M365 & Email Security",
+      "control_id": "M365-3",
+      "cross_references": [],
+      "expected_evidence": "External sharing report from SharePoint and OneDrive showing active external shares, DLP policy export and sensitivity label configuration, OAuth app permissions report"
+    },
+    {
+      "question_id": "M365-3-Q2",
+      "question_text": "Is a DLP solution configured to prevent sensitive data from leaving via email or Teams?",
+      "question_type": "free_text",
+      "framework_name": "MCD Market Assessment Framework",
+      "framework_key": "mcd-market-assessment",
+      "domain_id": "M365",
+      "domain_name": "M365 & Email Security",
+      "control_id": "M365-3",
+      "cross_references": [],
+      "expected_evidence": "External sharing report from SharePoint and OneDrive showing active external shares, DLP policy export and sensitivity label configuration, OAuth app permissions report"
+    },
+    {
+      "question_id": "M365-3-Q3",
+      "question_text": "Is there visibility into OAuth app permissions granted to third-party apps connected to M365?",
+      "question_type": "free_text",
+      "framework_name": "MCD Market Assessment Framework",
+      "framework_key": "mcd-market-assessment",
+      "domain_id": "M365",
+      "domain_name": "M365 & Email Security",
+      "control_id": "M365-3",
+      "cross_references": [],
+      "expected_evidence": "External sharing report from SharePoint and OneDrive showing active external shares, DLP policy export and sensitivity label configuration, OAuth app permissions report"
+    }
+  ],
+  "part3_tracker": [
+    {
+      "framework": "MCD Market Assessment Framework",
+      "domain": "M365 & Email Security",
+      "sub_topic": "M365 & Email Security",
+      "control_id": "M365-1, M365-2, M365-3",
+      "evidence_request": "Microsoft Secure Score report",
+      "answer_format": "status_text",
+      "status": ""
+    },
+    {
+      "framework": "MCD Market Assessment Framework",
+      "domain": "M365 & Email Security",
+      "sub_topic": "M365 & Email Security",
+      "control_id": "M365-1, M365-2, M365-3",
+      "evidence_request": "M365 admin role assignment report",
+      "answer_format": "status_text",
+      "status": ""
+    },
+    {
+      "framework": "MCD Market Assessment Framework",
+      "domain": "M365 & Email Security",
+      "sub_topic": "M365 & Email Security",
+      "control_id": "M365-1, M365-2, M365-3",
+      "evidence_request": "DMARC, DKIM, and SPF DNS record output for all sending domains",
+      "answer_format": "status_text",
+      "status": ""
+    },
+    {
+      "framework": "MCD Market Assessment Framework",
+      "domain": "M365 & Email Security",
+      "sub_topic": "M365 & Email Security",
+      "control_id": "M365-1, M365-2, M365-3",
+      "evidence_request": "Email filtering configuration summary showing safe links, safe attachments, and anti-phishing settings",
+      "answer_format": "status_text",
+      "status": ""
+    },
+    {
+      "framework": "MCD Market Assessment Framework",
+      "domain": "M365 & Email Security",
+      "sub_topic": "M365 & Email Security",
+      "control_id": "M365-1, M365-2, M365-3",
+      "evidence_request": "User phishing report submission log and review process documentation",
+      "answer_format": "status_text",
+      "status": ""
+    },
+    {
+      "framework": "MCD Market Assessment Framework",
+      "domain": "M365 & Email Security",
+      "sub_topic": "M365 & Email Security",
+      "control_id": "M365-1, M365-2, M365-3",
+      "evidence_request": "External sharing report from SharePoint and OneDrive showing active external shares",
+      "answer_format": "status_text",
+      "status": ""
+    }
+  ],
+  "red_flags_by_domain": [
+    {
+      "domain_name": "M365 & Email Security",
+      "framework_name": "MCD Market Assessment Framework",
+      "red_flags": [
+        {
+          "critical_gap": "M365 tenant has no enabled Microsoft Defender for Office 365, leaving the organization vulnerable to email-based attacks.",
+          "recommended_action": "Enable Microsoft Defender for Office 365 and configure anti-phishing, safe links, and safe attachments settings."
+        },
+        {
+          "critical_gap": "Admin roles are not minimized, and global admin use is not restricted, increasing the risk of privilege escalation attacks.",
+          "recommended_action": "Minimize admin roles and restrict global admin use to prevent privilege escalation attacks."
+        },
+        {
+          "critical_gap": "External sharing in SharePoint and OneDrive is not governed and restricted, increasing the risk of data breaches.",
+          "recommended_action": "Govern and restrict external sharing in SharePoint and OneDrive to prevent data breaches."
+        }
+      ]
+    }
+  ],
+  "selected_domain_keys": [
+    "mcd-market-assessment:M365"
+  ],
+  "ingested_at": "2026-06-10T07:22:22.500658+00:00",
+  "maturity_levels": [
+    {
+      "level": 1,
+      "code": "INITIAL",
+      "name": "Initial",
+      "description": "Ad hoc and undocumented."
+    },
+    {
+      "level": 2,
+      "code": "REPEATABLE",
+      "name": "Repeatable",
+      "description": "Basic processes established and repeated."
+    },
+    {
+      "level": 3,
+      "code": "DEFINED",
+      "name": "Defined",
+      "description": "Processes documented, standardised, and communicated."
+    },
+    {
+      "level": 4,
+      "code": "MANAGED",
+      "name": "Managed",
+      "description": "Processes measured and controlled with quantitative data."
+    },
+    {
+      "level": 5,
+      "code": "OPTIMIZING",
+      "name": "Optimizing",
+      "description": "Continuous improvement driven by metrics and feedback."
+    }
+  ],
+  "domains": [
+    {
+      "code": "M365",
+      "name": "M365 & Email Security",
+      "categories": [
+        {
+          "code": "M365",
+          "name": "M365",
+          "controls": [
+            {
+              "code": "M365-1",
+              "statement": "M365 tenant is configured against a security baseline. Admin roles are minimized and global admin use is restricted. Microsoft Defender for Office 365 is enabled.",
+              "cross_refs": [],
+              "questions": [
+                {
+                  "question_id": "9b4a5c5c-5c5c-42e4-9f9d-4b5f4a5f4a5f",
+                  "text": "How frequently are M365 admin role assignments reviewed?",
+                  "question_type": "FREE_TEXT",
+                  "weight": 4,
+                  "maturity_level": 4,
+                  "help_text": "Provide review schedule",
+                  "choices": []
+                },
+                {
+                  "question_id": "1a2b3c4d-5e6f-7g8h-9i0j-1k2l3m4n5o",
+                  "text": "What process triggers DMARC, DKIM, and SPF configuration updates?",
+                  "question_type": "FREE_TEXT",
+                  "weight": 3,
+                  "maturity_level": 3,
+                  "help_text": "Describe update process",
+                  "choices": []
+                },
+                {
+                  "question_id": "5f5f5f5f-5f5f-5f5f-5f5f-5f5f5f5f5f5f",
+                  "text": "How are external sharing restrictions enforced in SharePoint and OneDrive?",
+                  "question_type": "FREE_TEXT",
+                  "weight": 5,
+                  "maturity_level": 5,
+                  "help_text": "Describe enforcement process",
+                  "choices": []
+                },
+                {
+                  "question_id": "2b2b2b2b-2b2b-2b2b-2b2b-2b2b2b2b2b2b",
+                  "text": "What is the frequency of DLP policy reviews and updates?",
+                  "question_type": "SCALE_1_5",
+                  "weight": 4,
+                  "maturity_level": 4,
+                  "help_text": "Provide review schedule",
+                  "choices": [
+                    "Daily",
+                    "Weekly",
+                    "Monthly",
+                    "Quarterly"
+                  ]
+                },
+                {
+                  "question_id": "3c3c3c3c-3c3c-3c3c-3c3c-3c3c3c3c3c3c",
+                  "text": "How are OAuth app permissions reviewed and approved?",
+                  "question_type": "FREE_TEXT",
+                  "weight": 5,
+                  "maturity_level": 5,
+                  "help_text": "Describe review and approval process",
+                  "choices": []
+                }
+              ]
+            },
+            {
+              "code": "M365-2",
+              "statement": "DMARC, DKIM, and SPF are configured and enforced for all sending domains. Anti-phishing, safe links, and safe attachments are fully configured. A third-party email gateway is in use. Users can report suspicious emails.",
+              "cross_refs": [],
+              "questions": [
+                {
+                  "question_id": "9b4a5c5c-5c5c-42e4-9f9d-4b5f4a5f4a5f",
+                  "text": "How frequently are M365 admin role assignments reviewed?",
+                  "question_type": "FREE_TEXT",
+                  "weight": 4,
+                  "maturity_level": 4,
+                  "help_text": "Provide review schedule",
+                  "choices": []
+                },
+                {
+                  "question_id": "1a2b3c4d-5e6f-7g8h-9i0j-1k2l3m4n5o",
+                  "text": "What process triggers DMARC, DKIM, and SPF configuration updates?",
+                  "question_type": "FREE_TEXT",
+                  "weight": 3,
+                  "maturity_level": 3,
+                  "help_text": "Describe update process",
+                  "choices": []
+                },
+                {
+                  "question_id": "5f5f5f5f-5f5f-5f5f-5f5f-5f5f5f5f5f5f",
+                  "text": "How are external sharing restrictions enforced in SharePoint and OneDrive?",
+                  "question_type": "FREE_TEXT",
+                  "weight": 5,
+                  "maturity_level": 5,
+                  "help_text": "Describe enforcement process",
+                  "choices": []
+                },
+                {
+                  "question_id": "2b2b2b2b-2b2b-2b2b-2b2b-2b2b2b2b2b2b",
+                  "text": "What is the frequency of DLP policy reviews and updates?",
+                  "question_type": "SCALE_1_5",
+                  "weight": 4,
+                  "maturity_level": 4,
+                  "help_text": "Provide review schedule",
+                  "choices": [
+                    "Daily",
+                    "Weekly",
+                    "Monthly",
+                    "Quarterly"
+                  ]
+                },
+                {
+                  "question_id": "3c3c3c3c-3c3c-3c3c-3c3c-3c3c3c3c3c3c",
+                  "text": "How are OAuth app permissions reviewed and approved?",
+                  "question_type": "FREE_TEXT",
+                  "weight": 5,
+                  "maturity_level": 5,
+                  "help_text": "Describe review and approval process",
+                  "choices": []
+                }
+              ]
+            },
+            {
+              "code": "M365-3",
+              "statement": "External sharing in SharePoint and OneDrive is governed and restricted. DLP policies are configured and enforced. M365 audit logs are enabled and retained. OAuth app permissions are reviewed.",
+              "cross_refs": [],
+              "questions": [
+                {
+                  "question_id": "9b4a5c5c-5c5c-42e4-9f9d-4b5f4a5f4a5f",
+                  "text": "How frequently are M365 admin role assignments reviewed?",
+                  "question_type": "FREE_TEXT",
+                  "weight": 4,
+                  "maturity_level": 4,
+                  "help_text": "Provide review schedule",
+                  "choices": []
+                },
+                {
+                  "question_id": "1a2b3c4d-5e6f-7g8h-9i0j-1k2l3m4n5o",
+                  "text": "What process triggers DMARC, DKIM, and SPF configuration updates?",
+                  "question_type": "FREE_TEXT",
+                  "weight": 3,
+                  "maturity_level": 3,
+                  "help_text": "Describe update process",
+                  "choices": []
+                },
+                {
+                  "question_id": "5f5f5f5f-5f5f-5f5f-5f5f-5f5f5f5f5f5f",
+                  "text": "How are external sharing restrictions enforced in SharePoint and OneDrive?",
+                  "question_type": "FREE_TEXT",
+                  "weight": 5,
+                  "maturity_level": 5,
+                  "help_text": "Describe enforcement process",
+                  "choices": []
+                },
+                {
+                  "question_id": "2b2b2b2b-2b2b-2b2b-2b2b-2b2b2b2b2b2b",
+                  "text": "What is the frequency of DLP policy reviews and updates?",
+                  "question_type": "SCALE_1_5",
+                  "weight": 4,
+                  "maturity_level": 4,
+                  "help_text": "Provide review schedule",
+                  "choices": [
+                    "Daily",
+                    "Weekly",
+                    "Monthly",
+                    "Quarterly"
+                  ]
+                },
+                {
+                  "question_id": "3c3c3c3c-3c3c-3c3c-3c3c-3c3c3c3c3c3c",
+                  "text": "How are OAuth app permissions reviewed and approved?",
+                  "question_type": "FREE_TEXT",
+                  "weight": 5,
+                  "maturity_level": 5,
+                  "help_text": "Describe review and approval process",
+                  "choices": []
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    }
+  ],
+  "mappings": []
+}

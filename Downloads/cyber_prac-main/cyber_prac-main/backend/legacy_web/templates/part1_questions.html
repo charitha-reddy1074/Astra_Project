@@ -1,0 +1,45 @@
+<!doctype html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title>Part 1 Pre-Assessment Questions</title>
+    <link rel="stylesheet" href="/static/style.css">
+  </head>
+  <body>
+    <div class="page-shell">
+      <header class="hero">
+        <p class="eyebrow">Market Assessment</p>
+        <h1>{{ part1._meta.title or 'Part 1 Pre-Assessment Questions' }}</h1>
+        <p class="lede">{{ part1._meta.instructions }}</p>
+        <p><a href="/">Back to questionnaire studio</a> · <a href="/api/part1-questions">View JSON</a></p>
+      </header>
+
+      <main class="question-panel">
+        <table class="part1-table">
+          <thead>
+            <tr>
+              <th>#</th>
+              <th>Cluster</th>
+              <th>Sub-topic</th>
+              <th>Question</th>
+              <th>Response Options</th>
+              <th>Detail Prompt</th>
+            </tr>
+          </thead>
+          <tbody>
+            {% for row in part1.questions %}
+            <tr>
+              <td>{{ row.number }}</td>
+              <td>{{ row.cluster }}</td>
+              <td>{{ row.sub_topic }}</td>
+              <td>{{ row.question_text }}</td>
+              <td>{{ row.response_options|join(' / ') if row.response_options else 'Free text' }}</td>
+              <td>{{ row.detail_prompt or '' }}</td>
+            </tr>
+            {% endfor %}
+          </tbody>
+        </table>
+      </main>
+    </div>
+  </body>
+</html>

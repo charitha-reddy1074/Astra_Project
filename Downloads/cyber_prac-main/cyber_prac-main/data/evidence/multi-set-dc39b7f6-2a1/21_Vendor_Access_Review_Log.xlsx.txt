@@ -1,0 +1,6 @@
+Review ID	Vendor Name	Access Type	System / Resource	Account / Credential ID	Access Level	Review Date	Reviewer	Access Still Required	Action Taken	Date Actioned	Confirmed By	Notes
+VAR-001	SecureTest Ltd	Human – Temporary	AWS Test Environment	arn:aws:iam::123:user/securetest-pt	ReadOnly + S3	2024-11-01	IT Security	No	Deprovisioned	2024-11-01	IT Security Lead	Access removed post-pentest
+VAR-002	Salesforce	Service Account – Ongoing	CRM API Integration	svc-salesforce-api	API Read/Write	2024-11-05	IT Security	Yes	No action required	2024-11-05	IT Security Lead	Quarterly review passed
+VAR-003	DataFlow Analytics	Service Account – Ongoing	Data Pipeline S3 Bucket	svc-dataflow-s3	Write (scoped prefix)	2024-11-05	IT Security	Yes	Scope reduced	2024-11-10	IT Security Lead	Prefix scoped to /analytics/ only
+VAR-004	Former Vendor – MarketCo	Human – Terminated	Internal BI Tool	mktco-user@marketco.com	ReadOnly	2024-10-15	IT Security	No	Deprovisioned	2024-10-15	IT Security Lead	Contract ended 2024-10-01; 14-day grace applied
+VAR-005	AWS	Managed Service	Core Infrastructure	AWS Managed Role	AdministratorAccess (AWS-managed)	2024-11-01	Cloud Security	Yes	No action required	2024-11-01	Cloud Security Lead	AWS service role; reviewed via SCPs
