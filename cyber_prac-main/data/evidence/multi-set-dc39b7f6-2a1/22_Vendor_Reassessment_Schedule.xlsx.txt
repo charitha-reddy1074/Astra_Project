@@ -1,0 +1,6 @@
+Vendor ID	Vendor Name	Risk Tier	Assessment Frequency	Last Assessment Date	Next Assessment Due	Assigned Assessor	Assessment Method	Most Recent Score	Findings Summary	Status	Notes
+VND-001	Salesforce	Tier 1 (Critical)	Annual	2024-06-01	2025-06-01	Vendor Risk Team	Full questionnaire + SOC 2 review	88/100	No critical findings; 1 medium (MFA gap – remediated)	Completed
+VND-002	AWS	Tier 1 (Critical)	Annual	2024-07-01	2025-07-01	Cloud Security	Shared responsibility review + compliance report review	N/A (CSP)	Shared responsibility matrix reviewed; all MCD controls verified	Completed
+VND-003	Okta	Tier 1 (Critical)	Annual	2024-08-15	2025-08-15	Vendor Risk Team	Full questionnaire + pentest review	92/100	No critical findings	Completed
+VND-004	SecureTest Ltd	Tier 2 (High)	Annual	2024-09-10	2025-09-10	IT Security	Questionnaire + contract review	85/100	1 medium: sub-processor clause missing – added	Completed
+VND-006	DataFlow Analytics	Tier 2 (High)	Annual	2024-06-10	2025-06-10	Privacy / Vendor Risk	Full questionnaire + DPA review	80/100	1 high: data retention policy unclear – updated	Completed

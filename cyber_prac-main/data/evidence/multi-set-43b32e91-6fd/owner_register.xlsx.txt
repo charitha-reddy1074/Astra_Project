@@ -1,0 +1,5 @@
+Asset	Owner	Department
+DC01	Infrastructure Manager	IT
+APP01	Application Team Lead	Engineering
+Finance-Laptop	Finance Manager	Finance
+AWS-App	Cloud Operations Lead	Cloud Team

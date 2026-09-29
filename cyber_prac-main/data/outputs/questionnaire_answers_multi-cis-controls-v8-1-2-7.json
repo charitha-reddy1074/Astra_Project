@@ -1,0 +1,609 @@
+{
+  "questionnaire_id": "multi-cis-controls-v8-1-2-7",
+  "framework_names": [
+    "CIS Controls v8.1.2"
+  ],
+  "selected_domain_keys": [
+    "cis-controls-v8-1-2:7"
+  ],
+  "control_id": null,
+  "domain_id": null,
+  "domain_name": null,
+  "domain_description": null,
+  "control_statement": null,
+  "part1_answers": [
+    {
+      "question_id": "p1-001",
+      "number": 1,
+      "cluster": "Identity & Access Management (IAM)",
+      "sub_topic": "Identity Lifecycle & Directory",
+      "question_text": "Do you manage user identities separate from corporate platform? If so, what is used?",
+      "answer_format": "yes_no_with_detail",
+      "response": "",
+      "detail": ""
+    },
+    {
+      "question_id": "p1-002",
+      "number": 2,
+      "cluster": "Identity & Access Management (IAM)",
+      "sub_topic": "Identity Lifecycle & Directory",
+      "question_text": "Is any part of the joiner/mover/leaver process automated? (i.e., IGA tool in place)",
+      "answer_format": "yes_no_partial_with_detail",
+      "response": "",
+      "detail": ""
+    },
+    {
+      "question_id": "p1-003",
+      "number": 3,
+      "cluster": "Identity & Access Management (IAM)",
+      "sub_topic": "Authentication & MFA",
+      "question_text": "Is Multi-Factor Authentication (MFA) enforced for all users?",
+      "answer_format": "yes_no_partial_with_detail",
+      "response": "",
+      "detail": ""
+    },
+    {
+      "question_id": "p1-004",
+      "number": 4,
+      "cluster": "Identity & Access Management (IAM)",
+      "sub_topic": "Authentication & MFA",
+      "question_text": "Is Single Sign-On (SSO) implemented?",
+      "answer_format": "yes_no_with_detail",
+      "response": "",
+      "detail": ""
+    },
+    {
+      "question_id": "p1-005",
+      "number": 5,
+      "cluster": "Identity & Access Management (IAM)",
+      "sub_topic": "Privileged Access Management",
+      "question_text": "Is a Privileged Access Management (PAM) tool in use?",
+      "answer_format": "yes_no_with_detail",
+      "response": "",
+      "detail": ""
+    },
+    {
+      "question_id": "p1-006",
+      "number": 6,
+      "cluster": "Identity & Access Management (IAM)",
+      "sub_topic": "Access Control & Least Privilege",
+      "question_text": "Is there a process in place to periodically review access requests?",
+      "answer_format": "yes_no",
+      "response": "",
+      "detail": ""
+    },
+    {
+      "question_id": "p1-007",
+      "number": 7,
+      "cluster": "Network Security",
+      "sub_topic": "Network Architecture & Perimeter",
+      "question_text": "Is a next-generation firewall (NGFW) in use?",
+      "answer_format": "yes_no_with_detail",
+      "response": "",
+      "detail": ""
+    },
+    {
+      "question_id": "p1-008",
+      "number": 8,
+      "cluster": "Network Security",
+      "sub_topic": "Network Segmentation",
+      "question_text": "Is your network divided into separate zones to limit what systems can communicate with each other?",
+      "answer_format": "yes_no_partial",
+      "response": "",
+      "detail": ""
+    },
+    {
+      "question_id": "p1-009",
+      "number": 9,
+      "cluster": "Network Security",
+      "sub_topic": "Remote Access",
+      "question_text": "Is a VPN or Zero Trust Network Access (ZTNA) solution in use for remote access?",
+      "answer_format": "yes_no_with_detail",
+      "response": "",
+      "detail": ""
+    },
+    {
+      "question_id": "p1-010",
+      "number": 10,
+      "cluster": "Network Security",
+      "sub_topic": "Wireless & Physical Network",
+      "question_text": "Is the corporate wireless network separate from guest and IoT networks?",
+      "answer_format": "yes_no_partial",
+      "response": "",
+      "detail": ""
+    },
+    {
+      "question_id": "p1-011",
+      "number": 11,
+      "cluster": "Network Security",
+      "sub_topic": "Network Monitoring & Threat Detection",
+      "question_text": "Is a DNS filtering or web gateway tool in use to block malicious sites?",
+      "answer_format": "yes_no_with_detail",
+      "response": "",
+      "detail": ""
+    },
+    {
+      "question_id": "p1-012",
+      "number": 12,
+      "cluster": "Network Security",
+      "sub_topic": "Network Monitoring & Threat Detection",
+      "question_text": "Is there a tool in place to monitor network traffic for suspicious activity?",
+      "answer_format": "yes_no_with_detail",
+      "response": "",
+      "detail": ""
+    },
+    {
+      "question_id": "p1-013",
+      "number": 13,
+      "cluster": "Hosting & Cloud Security",
+      "sub_topic": "Cloud Adoption & Architecture",
+      "question_text": "What cloud providers are in use?",
+      "answer_format": "multi_select_or_text",
+      "response": "",
+      "detail": ""
+    },
+    {
+      "question_id": "p1-014",
+      "number": 14,
+      "cluster": "Hosting & Cloud Security",
+      "sub_topic": "Cloud Adoption & Architecture",
+      "question_text": "Is any data hosted outside of the primary cloud? If so, is it stored on a local server or private cloud?",
+      "answer_format": "yes_no_with_detail",
+      "response": "",
+      "detail": ""
+    },
+    {
+      "question_id": "p1-015",
+      "number": 15,
+      "cluster": "M365 & Email Security",
+      "sub_topic": "M365 Configuration & Governance",
+      "question_text": "Is Microsoft 365 in use?",
+      "answer_format": "yes_no",
+      "response": "",
+      "detail": ""
+    },
+    {
+      "question_id": "p1-016",
+      "number": 16,
+      "cluster": "M365 & Email Security",
+      "sub_topic": "Email Security",
+      "question_text": "Is email security filtering in place beyond native M365 controls?",
+      "answer_format": "yes_no_with_detail",
+      "response": "",
+      "detail": ""
+    },
+    {
+      "question_id": "p1-017",
+      "number": 17,
+      "cluster": "Endpoint Security",
+      "sub_topic": "Endpoint Protection",
+      "question_text": "Is SentinelOne or another Endpoint Detection and Response (EDR) solution deployed?",
+      "answer_format": "yes_no_with_detail",
+      "response": "",
+      "detail": ""
+    },
+    {
+      "question_id": "p1-018",
+      "number": 18,
+      "cluster": "Endpoint Security",
+      "sub_topic": "Device Management",
+      "question_text": "Is Tanium, Tenable and/or another formal vulnerability and patch management tool in place?",
+      "answer_format": "yes_no_partial_with_detail",
+      "response": "",
+      "detail": ""
+    },
+    {
+      "question_id": "p1-019",
+      "number": 19,
+      "cluster": "Data & Storage Security",
+      "sub_topic": "Data Classification & Governance",
+      "question_text": "Has sensitive data and crown jewels been identified and documented?",
+      "answer_format": "yes_no_partial",
+      "response": "",
+      "detail": ""
+    },
+    {
+      "question_id": "p1-020",
+      "number": 20,
+      "cluster": "Data & Storage Security",
+      "sub_topic": "Data Classification & Governance",
+      "question_text": "Is sensitive data encrypted at rest and in transit?",
+      "answer_format": "yes_no_partial",
+      "response": "",
+      "detail": ""
+    },
+    {
+      "question_id": "p1-021",
+      "number": 21,
+      "cluster": "Data & Storage Security",
+      "sub_topic": "Data Classification & Governance",
+      "question_text": "Is a Data Loss Prevention (DLP) solution in use?",
+      "answer_format": "yes_no_with_detail",
+      "response": "",
+      "detail": ""
+    },
+    {
+      "question_id": "p1-022",
+      "number": 22,
+      "cluster": "Defense & Response",
+      "sub_topic": "Log Management",
+      "question_text": "Are logs ingested into the Global SOC?",
+      "answer_format": "yes_no_partial",
+      "response": "",
+      "detail": ""
+    },
+    {
+      "question_id": "p1-023",
+      "number": 23,
+      "cluster": "Defense & Response",
+      "sub_topic": "Incident Response",
+      "question_text": "Is there a documented Incident Response plan?",
+      "answer_format": "yes_no",
+      "response": "",
+      "detail": ""
+    },
+    {
+      "question_id": "p1-024",
+      "number": 24,
+      "cluster": "Defense & Response",
+      "sub_topic": "Incident Response",
+      "question_text": "Has a security incident or data breach occurred in the past 24 months?",
+      "answer_format": "yes_no_prefer_not_to_say_with_detail",
+      "response": "",
+      "detail": ""
+    },
+    {
+      "question_id": "p1-025",
+      "number": 25,
+      "cluster": "Application Inventory & Security",
+      "sub_topic": "Application Inventory",
+      "question_text": "Do you maintain a list of all applications in use across the organization?",
+      "answer_format": "yes_no_partial",
+      "response": "",
+      "detail": ""
+    },
+    {
+      "question_id": "p1-026",
+      "number": 26,
+      "cluster": "Application Inventory & Security",
+      "sub_topic": "Application Security",
+      "question_text": "Is application security testing (SAST/DAST) performed as part of the development lifecycle?",
+      "answer_format": "yes_no_with_detail",
+      "response": "",
+      "detail": ""
+    },
+    {
+      "question_id": "p1-027",
+      "number": 27,
+      "cluster": "AI Security",
+      "sub_topic": "AI Usage & Governance",
+      "question_text": "Is AI or generative AI tooling in use across the organization?",
+      "answer_format": "yes_no_with_detail",
+      "response": "",
+      "detail": ""
+    },
+    {
+      "question_id": "p1-028",
+      "number": 28,
+      "cluster": "Third Party & Vendor Risk",
+      "sub_topic": "TPRM Program",
+      "question_text": "Do you maintain and update an inventory of third parties?",
+      "answer_format": "yes_no_partial",
+      "response": "",
+      "detail": ""
+    },
+    {
+      "question_id": "p1-029",
+      "number": 29,
+      "cluster": "General",
+      "sub_topic": "Known Gaps",
+      "question_text": "Are there known gaps or active security initiatives underway that we should be aware of before the sessions?",
+      "answer_format": "free_text",
+      "response": "",
+      "detail": ""
+    }
+  ],
+  "answers": [
+    {
+      "question_id": "36794720-dd08-5e39-914b-e894007ed4ab",
+      "question_text": "Is the organization implementing and operating the control: Establish and Maintain a Vulnerability Management Process: Establish and maintain a documented vulnerability management process for enterprise assets. Review and update documentation annually, or when significant enterprise changes occur that could impact this Safeguard?",
+      "question_type": "yes_no",
+      "response": "",
+      "note": ""
+    },
+    {
+      "question_id": "358ed7a6-f33a-5135-9b41-0feaf5351d1f",
+      "question_text": "Upload evidence such as role_matrix, org_chart, responsibility_assignment that demonstrates: Establish and Maintain a Vulnerability Management Process: Establish and maintain a documented vulnerability management process for enterprise assets. Review and update documentation annually, or when significant enterprise changes occur that could impact this Safeguard.",
+      "question_type": "evidence_upload",
+      "response": "",
+      "note": ""
+    },
+    {
+      "question_id": "3f883874-e32a-5eae-87b8-e8bfde141dc1",
+      "question_text": "Is the organization implementing and operating the control: Establish and Maintain a Remediation Process: Establish and maintain a risk-based remediation strategy documented in a remediation process, with monthly, or more frequent, reviews?",
+      "question_type": "yes_no",
+      "response": "",
+      "note": ""
+    },
+    {
+      "question_id": "0c7044a2-fc26-5d98-b624-28378b8a6a17",
+      "question_text": "Upload evidence such as facility_record, access_log, maintenance_log that demonstrates: Establish and Maintain a Remediation Process: Establish and maintain a risk-based remediation strategy documented in a remediation process, with monthly, or more frequent, reviews.",
+      "question_type": "evidence_upload",
+      "response": "",
+      "note": ""
+    },
+    {
+      "question_id": "eb65b0b8-70a1-5b97-b182-e6660b2b824c",
+      "question_text": "Is the organization implementing and operating the control: Perform Automated Operating System Patch Management: Perform operating system updates on enterprise assets through automated patch management on a monthly, or more frequent, basis?",
+      "question_type": "yes_no",
+      "response": "",
+      "note": ""
+    },
+    {
+      "question_id": "0111c247-4df0-53a4-bf55-c6cb584d86bf",
+      "question_text": "Upload evidence such as role_matrix, org_chart, responsibility_assignment that demonstrates: Perform Automated Operating System Patch Management: Perform operating system updates on enterprise assets through automated patch management on a monthly, or more frequent, basis.",
+      "question_type": "evidence_upload",
+      "response": "",
+      "note": ""
+    },
+    {
+      "question_id": "ab586bf3-a216-5e1b-90ff-29ad6890a710",
+      "question_text": "Is the organization implementing and operating the control: Perform Automated Application Patch Management: Perform application updates on enterprise assets through automated patch management on a monthly, or more frequent, basis?",
+      "question_type": "yes_no",
+      "response": "",
+      "note": ""
+    },
+    {
+      "question_id": "05645169-e7ab-50b7-8914-e4064fbcbb98",
+      "question_text": "Upload evidence such as role_matrix, org_chart, responsibility_assignment that demonstrates: Perform Automated Application Patch Management: Perform application updates on enterprise assets through automated patch management on a monthly, or more frequent, basis.",
+      "question_type": "evidence_upload",
+      "response": "",
+      "note": ""
+    },
+    {
+      "question_id": "63cfd78b-bbe0-5bac-b6af-f963517a33d3",
+      "question_text": "Is the organization implementing and operating the control: Perform Automated Vulnerability Scans of Internal Enterprise Assets: Perform automated vulnerability scans of internal enterprise assets on a quarterly, or more frequent, basis. Conduct both authenticated and unauthenticated scans?",
+      "question_type": "yes_no",
+      "response": "",
+      "note": ""
+    },
+    {
+      "question_id": "063efe2a-7812-5e47-9099-913001017970",
+      "question_text": "Upload evidence such as inventory, asset_register, owner_register that demonstrates: Perform Automated Vulnerability Scans of Internal Enterprise Assets: Perform automated vulnerability scans of internal enterprise assets on a quarterly, or more frequent, basis. Conduct both authenticated and unauthenticated scans.",
+      "question_type": "evidence_upload",
+      "response": "",
+      "note": ""
+    },
+    {
+      "question_id": "d5762ead-2dff-5fb4-ae7d-29d6a70e51a3",
+      "question_text": "Is the organization implementing and operating the control: Perform Automated Vulnerability Scans of Externally-Exposed Enterprise Assets: Perform automated vulnerability scans of externally-exposed enterprise assets. Perform scans on a monthly, or more frequent, basis?",
+      "question_type": "yes_no",
+      "response": "",
+      "note": ""
+    },
+    {
+      "question_id": "2a9fda87-f292-5963-93ca-8df2ea291d5e",
+      "question_text": "Upload evidence such as inventory, asset_register, owner_register that demonstrates: Perform Automated Vulnerability Scans of Externally-Exposed Enterprise Assets: Perform automated vulnerability scans of externally-exposed enterprise assets. Perform scans on a monthly, or more frequent, basis.",
+      "question_type": "evidence_upload",
+      "response": "",
+      "note": ""
+    },
+    {
+      "question_id": "e448681e-ff76-5947-bb91-7c590e4fdd67",
+      "question_text": "Is the organization implementing and operating the control: Remediate Detected Vulnerabilities: Remediate detected vulnerabilities in software through processes and tooling on a monthly, or more frequent, basis, based on the remediation process?",
+      "question_type": "yes_no",
+      "response": "",
+      "note": ""
+    },
+    {
+      "question_id": "861f0b30-a84d-5507-a879-182edf5b5b27",
+      "question_text": "Upload evidence such as project_record, change_ticket, engineering_standard that demonstrates: Remediate Detected Vulnerabilities: Remediate detected vulnerabilities in software through processes and tooling on a monthly, or more frequent, basis, based on the remediation process.",
+      "question_type": "evidence_upload",
+      "response": "",
+      "note": ""
+    }
+  ],
+  "answered_at": null,
+  "auditor": "web-auditor",
+  "scoring": {
+    "control_score_percent": 0.0,
+    "overall_risk_rating": "Critical",
+    "maturity_level": "Below IG1",
+    "summary": "Fallback deterministic score used because no LLM review was available.",
+    "strengths": [],
+    "gaps": [
+      "No documentary evidence provided for any evidence-upload question.",
+      "Majority of yes/no controls not confirmed as implemented (7/7)."
+    ],
+    "question_reviews": [
+      {
+        "question_id": "36794720-dd08-5e39-914b-e894007ed4ab",
+        "question_text": "Is the organization implementing and operating the control: Establish and Maintain a Vulnerability Management Process: Establish and maintain a documented vulnerability management process for enterprise assets. Review and update documentation annually, or when significant enterprise changes occur that could impact this Safeguard?",
+        "question_type": "yes_no",
+        "control_id": "7.1",
+        "domain_id": "7",
+        "response": "",
+        "verdict": "weak",
+        "score": 0.0,
+        "comment": "Fallback scoring used because the LLM review was unavailable.",
+        "evidence_alignment": "none",
+        "weight": 3
+      },
+      {
+        "question_id": "358ed7a6-f33a-5135-9b41-0feaf5351d1f",
+        "question_text": "Upload evidence such as role_matrix, org_chart, responsibility_assignment that demonstrates: Establish and Maintain a Vulnerability Management Process: Establish and maintain a documented vulnerability management process for enterprise assets. Review and update documentation annually, or when significant enterprise changes occur that could impact this Safeguard.",
+        "question_type": "evidence_upload",
+        "control_id": "7.1",
+        "domain_id": "7",
+        "response": "",
+        "verdict": "missing",
+        "score": null,
+        "comment": "Evidence uploads are excluded from scoring; they are displayed for reference only.",
+        "evidence_alignment": "none",
+        "weight": 3
+      },
+      {
+        "question_id": "3f883874-e32a-5eae-87b8-e8bfde141dc1",
+        "question_text": "Is the organization implementing and operating the control: Establish and Maintain a Remediation Process: Establish and maintain a risk-based remediation strategy documented in a remediation process, with monthly, or more frequent, reviews?",
+        "question_type": "yes_no",
+        "control_id": "7.2",
+        "domain_id": "7",
+        "response": "",
+        "verdict": "weak",
+        "score": 0.0,
+        "comment": "Fallback scoring used because the LLM review was unavailable.",
+        "evidence_alignment": "none",
+        "weight": 3
+      },
+      {
+        "question_id": "0c7044a2-fc26-5d98-b624-28378b8a6a17",
+        "question_text": "Upload evidence such as facility_record, access_log, maintenance_log that demonstrates: Establish and Maintain a Remediation Process: Establish and maintain a risk-based remediation strategy documented in a remediation process, with monthly, or more frequent, reviews.",
+        "question_type": "evidence_upload",
+        "control_id": "7.2",
+        "domain_id": "7",
+        "response": "",
+        "verdict": "missing",
+        "score": null,
+        "comment": "Evidence uploads are excluded from scoring; they are displayed for reference only.",
+        "evidence_alignment": "none",
+        "weight": 3
+      },
+      {
+        "question_id": "eb65b0b8-70a1-5b97-b182-e6660b2b824c",
+        "question_text": "Is the organization implementing and operating the control: Perform Automated Operating System Patch Management: Perform operating system updates on enterprise assets through automated patch management on a monthly, or more frequent, basis?",
+        "question_type": "yes_no",
+        "control_id": "7.3",
+        "domain_id": "7",
+        "response": "",
+        "verdict": "weak",
+        "score": 0.0,
+        "comment": "Fallback scoring used because the LLM review was unavailable.",
+        "evidence_alignment": "none",
+        "weight": 3
+      },
+      {
+        "question_id": "0111c247-4df0-53a4-bf55-c6cb584d86bf",
+        "question_text": "Upload evidence such as role_matrix, org_chart, responsibility_assignment that demonstrates: Perform Automated Operating System Patch Management: Perform operating system updates on enterprise assets through automated patch management on a monthly, or more frequent, basis.",
+        "question_type": "evidence_upload",
+        "control_id": "7.3",
+        "domain_id": "7",
+        "response": "",
+        "verdict": "missing",
+        "score": null,
+        "comment": "Evidence uploads are excluded from scoring; they are displayed for reference only.",
+        "evidence_alignment": "none",
+        "weight": 3
+      },
+      {
+        "question_id": "ab586bf3-a216-5e1b-90ff-29ad6890a710",
+        "question_text": "Is the organization implementing and operating the control: Perform Automated Application Patch Management: Perform application updates on enterprise assets through automated patch management on a monthly, or more frequent, basis?",
+        "question_type": "yes_no",
+        "control_id": "7.4",
+        "domain_id": "7",
+        "response": "",
+        "verdict": "weak",
+        "score": 0.0,
+        "comment": "Fallback scoring used because the LLM review was unavailable.",
+        "evidence_alignment": "none",
+        "weight": 3
+      },
+      {
+        "question_id": "05645169-e7ab-50b7-8914-e4064fbcbb98",
+        "question_text": "Upload evidence such as role_matrix, org_chart, responsibility_assignment that demonstrates: Perform Automated Application Patch Management: Perform application updates on enterprise assets through automated patch management on a monthly, or more frequent, basis.",
+        "question_type": "evidence_upload",
+        "control_id": "7.4",
+        "domain_id": "7",
+        "response": "",
+        "verdict": "missing",
+        "score": null,
+        "comment": "Evidence uploads are excluded from scoring; they are displayed for reference only.",
+        "evidence_alignment": "none",
+        "weight": 3
+      },
+      {
+        "question_id": "63cfd78b-bbe0-5bac-b6af-f963517a33d3",
+        "question_text": "Is the organization implementing and operating the control: Perform Automated Vulnerability Scans of Internal Enterprise Assets: Perform automated vulnerability scans of internal enterprise assets on a quarterly, or more frequent, basis. Conduct both authenticated and unauthenticated scans?",
+        "question_type": "yes_no",
+        "control_id": "7.5",
+        "domain_id": "7",
+        "response": "",
+        "verdict": "weak",
+        "score": 0.0,
+        "comment": "Fallback scoring used because the LLM review was unavailable.",
+        "evidence_alignment": "none",
+        "weight": 3
+      },
+      {
+        "question_id": "063efe2a-7812-5e47-9099-913001017970",
+        "question_text": "Upload evidence such as inventory, asset_register, owner_register that demonstrates: Perform Automated Vulnerability Scans of Internal Enterprise Assets: Perform automated vulnerability scans of internal enterprise assets on a quarterly, or more frequent, basis. Conduct both authenticated and unauthenticated scans.",
+        "question_type": "evidence_upload",
+        "control_id": "7.5",
+        "domain_id": "7",
+        "response": "",
+        "verdict": "missing",
+        "score": null,
+        "comment": "Evidence uploads are excluded from scoring; they are displayed for reference only.",
+        "evidence_alignment": "none",
+        "weight": 3
+      },
+      {
+        "question_id": "d5762ead-2dff-5fb4-ae7d-29d6a70e51a3",
+        "question_text": "Is the organization implementing and operating the control: Perform Automated Vulnerability Scans of Externally-Exposed Enterprise Assets: Perform automated vulnerability scans of externally-exposed enterprise assets. Perform scans on a monthly, or more frequent, basis?",
+        "question_type": "yes_no",
+        "control_id": "7.6",
+        "domain_id": "7",
+        "response": "",
+        "verdict": "weak",
+        "score": 0.0,
+        "comment": "Fallback scoring used because the LLM review was unavailable.",
+        "evidence_alignment": "none",
+        "weight": 3
+      },
+      {
+        "question_id": "2a9fda87-f292-5963-93ca-8df2ea291d5e",
+        "question_text": "Upload evidence such as inventory, asset_register, owner_register that demonstrates: Perform Automated Vulnerability Scans of Externally-Exposed Enterprise Assets: Perform automated vulnerability scans of externally-exposed enterprise assets. Perform scans on a monthly, or more frequent, basis.",
+        "question_type": "evidence_upload",
+        "control_id": "7.6",
+        "domain_id": "7",
+        "response": "",
+        "verdict": "missing",
+        "score": null,
+        "comment": "Evidence uploads are excluded from scoring; they are displayed for reference only.",
+        "evidence_alignment": "none",
+        "weight": 3
+      },
+      {
+        "question_id": "e448681e-ff76-5947-bb91-7c590e4fdd67",
+        "question_text": "Is the organization implementing and operating the control: Remediate Detected Vulnerabilities: Remediate detected vulnerabilities in software through processes and tooling on a monthly, or more frequent, basis, based on the remediation process?",
+        "question_type": "yes_no",
+        "control_id": "7.7",
+        "domain_id": "7",
+        "response": "",
+        "verdict": "weak",
+        "score": 0.0,
+        "comment": "Fallback scoring used because the LLM review was unavailable.",
+        "evidence_alignment": "none",
+        "weight": 3
+      },
+      {
+        "question_id": "861f0b30-a84d-5507-a879-182edf5b5b27",
+        "question_text": "Upload evidence such as project_record, change_ticket, engineering_standard that demonstrates: Remediate Detected Vulnerabilities: Remediate detected vulnerabilities in software through processes and tooling on a monthly, or more frequent, basis, based on the remediation process.",
+        "question_type": "evidence_upload",
+        "control_id": "7.7",
+        "domain_id": "7",
+        "response": "",
+        "verdict": "missing",
+        "score": null,
+        "comment": "Evidence uploads are excluded from scoring; they are displayed for reference only.",
+        "evidence_alignment": "none",
+        "weight": 3
+      }
+    ],
+    "scoring_mode": "fallback-deterministic",
+    "framework_key": "cis-controls-v8-1-2"
+  },
+  "scoring_mode": "fallback-deterministic",
+  "control_score_percent": 0.0,
+  "overall_risk_rating": "Critical",
+  "maturity_level": "Below IG1"
+}

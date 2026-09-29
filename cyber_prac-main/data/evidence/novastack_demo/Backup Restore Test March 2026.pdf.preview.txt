@@ -1,0 +1,5 @@
+Backup Restore Test March 2026.pdf
+NovaStack Technologies
+Approved 2026-01-15
+
+A restore test recovered the customer database within the stated recovery objective.

@@ -1,0 +1,7 @@
+Alert ID	Provider	Account ID	Alert Source	Alert Title	Severity	Category	Date Triggered	Time Triggered	Assigned To	Status	Time to Acknowledge (hrs)	Time to Resolve (hrs)	Root Cause	Notes
+ALT-001	AWS	123456789012	GuardDuty	Unauthorized API call from unusual IP	High	Threat Detection	2024-11-01	03:22	IR Team	Closed	0.5	4	Compromised access key – rotated	Key invalidated within SLA
+ALT-002	AWS	123456789012	CloudTrail	Root account login detected	Critical	IAM	2024-11-05	18:44	IR Team	Closed	0.25	1.5	Accidental root login by admin	MFA confirmed; password rotated
+ALT-003	Azure	sub-0987abcd	Defender for Cloud	Brute force attack on VM SSH port	High	Network	2024-11-08	11:15	IT Security	Closed	1	6	Exposed SSH port; attacker blocked	NSG updated to restrict SSH
+ALT-004	GCP	gcp-proj-321	SCC	Service account granted Owner role	High	IAM	2024-11-12	09:30	Cloud Security	Closed	0.5	3	Misconfigured Terraform run	IAM binding corrected
+ALT-005	AWS	123456789012	GuardDuty	Cryptocurrency mining activity detected	Critical	Threat Detection	2024-11-18	22:05	IR Team	In Progress	0.25	Open	Compromised EC2 instance	Instance isolated; forensics underway
+ALT-006	AWS	234567890123	Config	Non-compliant S3 bucket policy change	Medium	Config Compliance	2024-11-20	14:10	DevOps	Closed	2	8	Accidental policy update via console	Policy reverted; change control updated

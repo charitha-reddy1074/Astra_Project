@@ -1,0 +1,2374 @@
+{
+  "questionnaire_id": "multi-set-a32dbe4a-c71",
+  "questionnaire_type": "multi_framework",
+  "framework_id": "57dfcbe6-6c29-5f0c-9eda-1cb241fdea26",
+  "name": "NIST CSF 2.0 (Identify) + CIS Controls v8.1.2 (Access Control Management)",
+  "framework_names": [
+    "NIST CSF 2.0",
+    "CIS Controls v8.1.2"
+  ],
+  "framework_summary": "NIST CSF 2.0 + CIS Controls v8.1.2",
+  "version": "1.0",
+  "source_format": "multi_framework_merged",
+  "question_count": 30,
+  "part1_checklist": [
+    {
+      "number": 1,
+      "question_id": "123e4567-e89b-12d3-a456-426655440000",
+      "question_text": "Are asset inventories maintained using tools like ServiceNow or JIRA?",
+      "sub_topic": "Asset Management and Inventory",
+      "domain_name": "Identify",
+      "framework_name": "NIST CSF 2.0",
+      "control_id": "ID.AM-01, ID.AM-02, ID.AM-05, ID.IM-01, ID.RA-01, ID.RA-02, ID.RA-06",
+      "answer_format": "yes_no_with_detail",
+      "response_options": "Yes / No / Partial",
+      "detail_prompt": "If yes or partial, specify the tool or technology in use."
+    },
+    {
+      "number": 2,
+      "question_id": "123e4567-e89b-12d3-a456-426655440000",
+      "question_text": "Is an automated access granting process in place using tools like Okta or Azure AD? (Yes / No / Partial. If yes, which tool?)",
+      "sub_topic": "Access Control Management",
+      "domain_name": "Access Control Management",
+      "framework_name": "CIS Controls v8.1.2",
+      "control_id": "6.1, 6.2, 6.3, 6.4, 6.5, 6.6, 6.7, 6.8",
+      "answer_format": "yes_no_with_detail",
+      "response_options": "Yes / No / Partial",
+      "detail_prompt": "If yes or partial, specify the tool or technology in use."
+    }
+  ],
+  "question_groups": [
+    {
+      "framework_id": "d048b355-a19a-52eb-bf3d-3e2133c57d1e",
+      "framework_key": "nist-csf-2-0",
+      "framework_name": "NIST CSF 2.0",
+      "domain_id": "ID",
+      "domain_name": "Identify",
+      "domain_description": "Inventory assets, understand context, and identify cyber risk.",
+      "question_count": 7,
+      "questions": [
+        {
+          "item_id": "6f422859-6c4c-5eea-a493-66177b9c136c",
+          "question_id": "6f422859-6c4c-5eea-a493-66177b9c136c",
+          "question_text": "Is the organization implementing and operating the control: Inventories of hardware managed by the organization are maintained?",
+          "question_type": "merged",
+          "answer_formats": [
+            "yes_no",
+            "evidence_upload"
+          ],
+          "framework_name": "NIST CSF 2.0",
+          "framework_key": "nist-csf-2-0",
+          "domain_id": "ID",
+          "domain_name": "Identify",
+          "control_id": "ID.AM-01",
+          "control_statement": "Inventories of hardware managed by the organization are maintained.",
+          "expected_evidence": "asset_inventory, cmdb_export, discovery_scan_report",
+          "maturity_level": "Initial",
+          "merge_reason": "Merged by control fallback because LLM output was unavailable or invalid.",
+          "source_item_ids": [
+            "26af1da2-2d0d-5025-a93e-0ec8ee1958b1",
+            "e4191e10-1e84-5ac3-b44f-c45a12b3de83"
+          ],
+          "source_questions": [
+            {
+              "question_id": "302e287a-d9c4-5b65-8bee-7582d01ce75e",
+              "question_text": "Is the organization implementing and operating the control: Inventories of hardware managed by the organization are maintained?",
+              "question_type": "yes_no",
+              "framework_name": "NIST CSF 2.0",
+              "framework_key": "nist-csf-2-0",
+              "domain_id": "ID",
+              "domain_name": "Identify",
+              "control_id": "ID.AM-01",
+              "cross_references": [
+                {
+                  "other_framework_id": "nist-sp-800-53",
+                  "other_control_id": "CM-8"
+                },
+                {
+                  "other_framework_id": "iso-27001-2022",
+                  "other_control_id": "A.5.9"
+                }
+              ],
+              "expected_evidence": "asset_inventory, cmdb_export, discovery_scan_report"
+            },
+            {
+              "question_id": "ba96c309-7f81-5dca-81fc-a18a5c9fd4f6",
+              "question_text": "Upload evidence such as asset_inventory, cmdb_export, discovery_scan_report that demonstrates: Inventories of hardware managed by the organization are maintained.",
+              "question_type": "evidence_upload",
+              "framework_name": "NIST CSF 2.0",
+              "framework_key": "nist-csf-2-0",
+              "domain_id": "ID",
+              "domain_name": "Identify",
+              "control_id": "ID.AM-01",
+              "cross_references": [
+                {
+                  "other_framework_id": "nist-sp-800-53",
+                  "other_control_id": "CM-8"
+                },
+                {
+                  "other_framework_id": "iso-27001-2022",
+                  "other_control_id": "A.5.9"
+                }
+              ],
+              "expected_evidence": "asset_inventory, cmdb_export, discovery_scan_report"
+            }
+          ],
+          "cross_references": [
+            {
+              "other_framework_id": "nist-sp-800-53",
+              "other_control_id": "CM-8"
+            },
+            {
+              "other_framework_id": "iso-27001-2022",
+              "other_control_id": "A.5.9"
+            }
+          ]
+        },
+        {
+          "item_id": "e3e7f6d8-2014-5a48-8449-9b898609e0a0",
+          "question_id": "e3e7f6d8-2014-5a48-8449-9b898609e0a0",
+          "question_text": "Is the organization implementing and operating the control: Inventories of software, services, and systems managed by the organization are maintained?",
+          "question_type": "merged",
+          "answer_formats": [
+            "yes_no",
+            "evidence_upload"
+          ],
+          "framework_name": "NIST CSF 2.0",
+          "framework_key": "nist-csf-2-0",
+          "domain_id": "ID",
+          "domain_name": "Identify",
+          "control_id": "ID.AM-02",
+          "control_statement": "Inventories of software, services, and systems managed by the organization are maintained.",
+          "expected_evidence": "software_inventory, license_register, sbom",
+          "maturity_level": "Initial",
+          "merge_reason": "Merged by control fallback because LLM output was unavailable or invalid.",
+          "source_item_ids": [
+            "8bd3d360-d857-5885-b1c1-a11deec0a822",
+            "9aac7bbd-52cc-5fa3-881f-9a9b9250e3c5"
+          ],
+          "source_questions": [
+            {
+              "question_id": "4560d363-00ed-5c86-af63-673c13b9c9f1",
+              "question_text": "Is the organization implementing and operating the control: Inventories of software, services, and systems managed by the organization are maintained?",
+              "question_type": "yes_no",
+              "framework_name": "NIST CSF 2.0",
+              "framework_key": "nist-csf-2-0",
+              "domain_id": "ID",
+              "domain_name": "Identify",
+              "control_id": "ID.AM-02",
+              "cross_references": [
+                {
+                  "other_framework_id": "nist-sp-800-53",
+                  "other_control_id": "CM-8"
+                },
+                {
+                  "other_framework_id": "iso-27001-2022",
+                  "other_control_id": "A.5.9"
+                }
+              ],
+              "expected_evidence": "software_inventory, license_register, sbom"
+            },
+            {
+              "question_id": "19054a70-a77e-5694-85a1-07483a9d3fb5",
+              "question_text": "Upload evidence such as software_inventory, license_register, sbom that demonstrates: Inventories of software, services, and systems managed by the organization are maintained.",
+              "question_type": "evidence_upload",
+              "framework_name": "NIST CSF 2.0",
+              "framework_key": "nist-csf-2-0",
+              "domain_id": "ID",
+              "domain_name": "Identify",
+              "control_id": "ID.AM-02",
+              "cross_references": [
+                {
+                  "other_framework_id": "nist-sp-800-53",
+                  "other_control_id": "CM-8"
+                },
+                {
+                  "other_framework_id": "iso-27001-2022",
+                  "other_control_id": "A.5.9"
+                }
+              ],
+              "expected_evidence": "software_inventory, license_register, sbom"
+            }
+          ],
+          "cross_references": [
+            {
+              "other_framework_id": "nist-sp-800-53",
+              "other_control_id": "CM-8"
+            },
+            {
+              "other_framework_id": "iso-27001-2022",
+              "other_control_id": "A.5.9"
+            }
+          ]
+        },
+        {
+          "item_id": "ddfa1192-fee6-5e23-b07d-1fd325764635",
+          "question_id": "ddfa1192-fee6-5e23-b07d-1fd325764635",
+          "question_text": "Is the organization implementing and operating the control: Assets are prioritized based on classification, criticality, resources, and impact on the mission?",
+          "question_type": "merged",
+          "answer_formats": [
+            "yes_no",
+            "evidence_upload"
+          ],
+          "framework_name": "NIST CSF 2.0",
+          "framework_key": "nist-csf-2-0",
+          "domain_id": "ID",
+          "domain_name": "Identify",
+          "control_id": "ID.AM-05",
+          "control_statement": "Assets are prioritized based on classification, criticality, resources, and impact on the mission.",
+          "expected_evidence": "asset_classification_policy, bia_report, risk_register",
+          "maturity_level": "Initial",
+          "merge_reason": "Merged by control fallback because LLM output was unavailable or invalid.",
+          "source_item_ids": [
+            "028a22e8-a586-5f02-bd64-dd36e0f2dfb7",
+            "1f3c68e3-4441-5a78-bf99-c469564ae285"
+          ],
+          "source_questions": [
+            {
+              "question_id": "2ea2e7db-7f56-5209-b053-dbe67eaa4cd0",
+              "question_text": "Is the organization implementing and operating the control: Assets are prioritized based on classification, criticality, resources, and impact on the mission?",
+              "question_type": "yes_no",
+              "framework_name": "NIST CSF 2.0",
+              "framework_key": "nist-csf-2-0",
+              "domain_id": "ID",
+              "domain_name": "Identify",
+              "control_id": "ID.AM-05",
+              "cross_references": [
+                {
+                  "other_framework_id": "iso-27001-2022",
+                  "other_control_id": "A.5.12"
+                },
+                {
+                  "other_framework_id": "nist-sp-800-53",
+                  "other_control_id": "RA-2"
+                }
+              ],
+              "expected_evidence": "asset_classification_policy, bia_report, risk_register"
+            },
+            {
+              "question_id": "c35a94f0-dec7-565d-8d9e-1c87c5d4952b",
+              "question_text": "Upload evidence such as asset_classification_policy, bia_report, risk_register that demonstrates: Assets are prioritized based on classification, criticality, resources, and impact on the mission.",
+              "question_type": "evidence_upload",
+              "framework_name": "NIST CSF 2.0",
+              "framework_key": "nist-csf-2-0",
+              "domain_id": "ID",
+              "domain_name": "Identify",
+              "control_id": "ID.AM-05",
+              "cross_references": [
+                {
+                  "other_framework_id": "iso-27001-2022",
+                  "other_control_id": "A.5.12"
+                },
+                {
+                  "other_framework_id": "nist-sp-800-53",
+                  "other_control_id": "RA-2"
+                }
+              ],
+              "expected_evidence": "asset_classification_policy, bia_report, risk_register"
+            }
+          ],
+          "cross_references": [
+            {
+              "other_framework_id": "iso-27001-2022",
+              "other_control_id": "A.5.12"
+            },
+            {
+              "other_framework_id": "nist-sp-800-53",
+              "other_control_id": "RA-2"
+            }
+          ]
+        },
+        {
+          "item_id": "36698649-b4cb-504d-bf7d-aaf814798533",
+          "question_id": "36698649-b4cb-504d-bf7d-aaf814798533",
+          "question_text": "Is the organization implementing and operating the control: Improvements are identified from evaluations?",
+          "question_type": "merged",
+          "answer_formats": [
+            "yes_no",
+            "evidence_upload"
+          ],
+          "framework_name": "NIST CSF 2.0",
+          "framework_key": "nist-csf-2-0",
+          "domain_id": "ID",
+          "domain_name": "Identify",
+          "control_id": "ID.IM-01",
+          "control_statement": "Improvements are identified from evaluations.",
+          "expected_evidence": "audit_findings, lessons_learned, improvement_log",
+          "maturity_level": "Initial",
+          "merge_reason": "Merged by control fallback because LLM output was unavailable or invalid.",
+          "source_item_ids": [
+            "b7ac4314-c91d-51c3-aaf8-43ed8b4130a7",
+            "e0c97c38-a5d3-5f65-8adf-cbcc0f0ade3b"
+          ],
+          "source_questions": [
+            {
+              "question_id": "1ed40acb-39e4-51bd-a468-3399bb556e3b",
+              "question_text": "Is the organization implementing and operating the control: Improvements are identified from evaluations?",
+              "question_type": "yes_no",
+              "framework_name": "NIST CSF 2.0",
+              "framework_key": "nist-csf-2-0",
+              "domain_id": "ID",
+              "domain_name": "Identify",
+              "control_id": "ID.IM-01",
+              "cross_references": [
+                {
+                  "other_framework_id": "iso-27001-2022",
+                  "other_control_id": "10.1"
+                },
+                {
+                  "other_framework_id": "nist-sp-800-53",
+                  "other_control_id": "CA-7"
+                }
+              ],
+              "expected_evidence": "audit_findings, lessons_learned, improvement_log"
+            },
+            {
+              "question_id": "864d3743-b0ba-5841-b97a-aef428cb7b26",
+              "question_text": "Upload evidence such as audit_findings, lessons_learned, improvement_log that demonstrates: Improvements are identified from evaluations.",
+              "question_type": "evidence_upload",
+              "framework_name": "NIST CSF 2.0",
+              "framework_key": "nist-csf-2-0",
+              "domain_id": "ID",
+              "domain_name": "Identify",
+              "control_id": "ID.IM-01",
+              "cross_references": [
+                {
+                  "other_framework_id": "iso-27001-2022",
+                  "other_control_id": "10.1"
+                },
+                {
+                  "other_framework_id": "nist-sp-800-53",
+                  "other_control_id": "CA-7"
+                }
+              ],
+              "expected_evidence": "audit_findings, lessons_learned, improvement_log"
+            }
+          ],
+          "cross_references": [
+            {
+              "other_framework_id": "iso-27001-2022",
+              "other_control_id": "10.1"
+            },
+            {
+              "other_framework_id": "nist-sp-800-53",
+              "other_control_id": "CA-7"
+            }
+          ]
+        },
+        {
+          "item_id": "c48049d2-e7ac-56c8-9fb1-52f5cf88427a",
+          "question_id": "c48049d2-e7ac-56c8-9fb1-52f5cf88427a",
+          "question_text": "Is the organization implementing and operating the control: Vulnerabilities in assets are identified, validated, and recorded?",
+          "question_type": "merged",
+          "answer_formats": [
+            "yes_no",
+            "evidence_upload"
+          ],
+          "framework_name": "NIST CSF 2.0",
+          "framework_key": "nist-csf-2-0",
+          "domain_id": "ID",
+          "domain_name": "Identify",
+          "control_id": "ID.RA-01",
+          "control_statement": "Vulnerabilities in assets are identified, validated, and recorded.",
+          "expected_evidence": "vulnerability_scan_report, cve_tracker, patch_log",
+          "maturity_level": "Initial",
+          "merge_reason": "Merged by control fallback because LLM output was unavailable or invalid.",
+          "source_item_ids": [
+            "842516e1-1fef-5771-af9b-a0460f3cca29",
+            "9467203c-4ccf-59a3-93f4-d4cbbdcab618"
+          ],
+          "source_questions": [
+            {
+              "question_id": "269aa860-337a-5579-9cae-5775d2979122",
+              "question_text": "Is the organization implementing and operating the control: Vulnerabilities in assets are identified, validated, and recorded?",
+              "question_type": "yes_no",
+              "framework_name": "NIST CSF 2.0",
+              "framework_key": "nist-csf-2-0",
+              "domain_id": "ID",
+              "domain_name": "Identify",
+              "control_id": "ID.RA-01",
+              "cross_references": [
+                {
+                  "other_framework_id": "nist-sp-800-53",
+                  "other_control_id": "RA-5"
+                },
+                {
+                  "other_framework_id": "iso-27001-2022",
+                  "other_control_id": "A.8.8"
+                }
+              ],
+              "expected_evidence": "vulnerability_scan_report, cve_tracker, patch_log"
+            },
+            {
+              "question_id": "d2022515-05b2-5f53-8363-9015868e92e0",
+              "question_text": "Upload evidence such as vulnerability_scan_report, cve_tracker, patch_log that demonstrates: Vulnerabilities in assets are identified, validated, and recorded.",
+              "question_type": "evidence_upload",
+              "framework_name": "NIST CSF 2.0",
+              "framework_key": "nist-csf-2-0",
+              "domain_id": "ID",
+              "domain_name": "Identify",
+              "control_id": "ID.RA-01",
+              "cross_references": [
+                {
+                  "other_framework_id": "nist-sp-800-53",
+                  "other_control_id": "RA-5"
+                },
+                {
+                  "other_framework_id": "iso-27001-2022",
+                  "other_control_id": "A.8.8"
+                }
+              ],
+              "expected_evidence": "vulnerability_scan_report, cve_tracker, patch_log"
+            }
+          ],
+          "cross_references": [
+            {
+              "other_framework_id": "nist-sp-800-53",
+              "other_control_id": "RA-5"
+            },
+            {
+              "other_framework_id": "iso-27001-2022",
+              "other_control_id": "A.8.8"
+            }
+          ]
+        },
+        {
+          "item_id": "8672df7f-9597-556b-b5ca-22fa32b69291",
+          "question_id": "8672df7f-9597-556b-b5ca-22fa32b69291",
+          "question_text": "Is the organization implementing and operating the control: Cyber threat intelligence is received from information sharing forums and sources?",
+          "question_type": "merged",
+          "answer_formats": [
+            "yes_no",
+            "evidence_upload"
+          ],
+          "framework_name": "NIST CSF 2.0",
+          "framework_key": "nist-csf-2-0",
+          "domain_id": "ID",
+          "domain_name": "Identify",
+          "control_id": "ID.RA-02",
+          "control_statement": "Cyber threat intelligence is received from information sharing forums and sources.",
+          "expected_evidence": "threat_intel_feeds, isac_membership, threat_reports",
+          "maturity_level": "Initial",
+          "merge_reason": "Merged by control fallback because LLM output was unavailable or invalid.",
+          "source_item_ids": [
+            "7da5462b-d30a-5a98-9866-56e5aed35887",
+            "d332d334-fce5-5f37-b861-e4693b2e4c67"
+          ],
+          "source_questions": [
+            {
+              "question_id": "40aadea8-683f-5e9b-89d1-4c7cea404463",
+              "question_text": "Is the organization implementing and operating the control: Cyber threat intelligence is received from information sharing forums and sources?",
+              "question_type": "yes_no",
+              "framework_name": "NIST CSF 2.0",
+              "framework_key": "nist-csf-2-0",
+              "domain_id": "ID",
+              "domain_name": "Identify",
+              "control_id": "ID.RA-02",
+              "cross_references": [
+                {
+                  "other_framework_id": "nist-sp-800-150",
+                  "other_control_id": ""
+                },
+                {
+                  "other_framework_id": "iso-27001-2022",
+                  "other_control_id": "A.5.7"
+                }
+              ],
+              "expected_evidence": "threat_intel_feeds, isac_membership, threat_reports"
+            },
+            {
+              "question_id": "d8c9b989-7c06-555f-8f93-837087f6699d",
+              "question_text": "Upload evidence such as threat_intel_feeds, isac_membership, threat_reports that demonstrates: Cyber threat intelligence is received from information sharing forums and sources.",
+              "question_type": "evidence_upload",
+              "framework_name": "NIST CSF 2.0",
+              "framework_key": "nist-csf-2-0",
+              "domain_id": "ID",
+              "domain_name": "Identify",
+              "control_id": "ID.RA-02",
+              "cross_references": [
+                {
+                  "other_framework_id": "nist-sp-800-150",
+                  "other_control_id": ""
+                },
+                {
+                  "other_framework_id": "iso-27001-2022",
+                  "other_control_id": "A.5.7"
+                }
+              ],
+              "expected_evidence": "threat_intel_feeds, isac_membership, threat_reports"
+            }
+          ],
+          "cross_references": [
+            {
+              "other_framework_id": "nist-sp-800-150",
+              "other_control_id": ""
+            },
+            {
+              "other_framework_id": "iso-27001-2022",
+              "other_control_id": "A.5.7"
+            }
+          ]
+        },
+        {
+          "item_id": "64dd7487-707d-510a-a6e0-cdc873fb8cf8",
+          "question_id": "64dd7487-707d-510a-a6e0-cdc873fb8cf8",
+          "question_text": "Is the organization implementing and operating the control: Risk responses are chosen, prioritized, planned, tracked, and communicated?",
+          "question_type": "merged",
+          "answer_formats": [
+            "yes_no",
+            "evidence_upload"
+          ],
+          "framework_name": "NIST CSF 2.0",
+          "framework_key": "nist-csf-2-0",
+          "domain_id": "ID",
+          "domain_name": "Identify",
+          "control_id": "ID.RA-06",
+          "control_statement": "Risk responses are chosen, prioritized, planned, tracked, and communicated.",
+          "expected_evidence": "risk_treatment_plan, risk_register, remediation_tickets",
+          "maturity_level": "Initial",
+          "merge_reason": "Merged by control fallback because LLM output was unavailable or invalid.",
+          "source_item_ids": [
+            "c69b402a-d356-5d19-9ec8-16d3bd76515c",
+            "1a2d8041-fdd3-5f14-9e13-6eb101808bd5"
+          ],
+          "source_questions": [
+            {
+              "question_id": "db3dbb90-4593-5cb7-9f61-8d7fc2784676",
+              "question_text": "Is the organization implementing and operating the control: Risk responses are chosen, prioritized, planned, tracked, and communicated?",
+              "question_type": "yes_no",
+              "framework_name": "NIST CSF 2.0",
+              "framework_key": "nist-csf-2-0",
+              "domain_id": "ID",
+              "domain_name": "Identify",
+              "control_id": "ID.RA-06",
+              "cross_references": [
+                {
+                  "other_framework_id": "iso-27001-2022",
+                  "other_control_id": "6.1.3"
+                },
+                {
+                  "other_framework_id": "nist-sp-800-39",
+                  "other_control_id": ""
+                }
+              ],
+              "expected_evidence": "risk_treatment_plan, risk_register, remediation_tickets"
+            },
+            {
+              "question_id": "39f8f2bd-0d45-5352-b9b4-aae75c237a42",
+              "question_text": "Upload evidence such as risk_treatment_plan, risk_register, remediation_tickets that demonstrates: Risk responses are chosen, prioritized, planned, tracked, and communicated.",
+              "question_type": "evidence_upload",
+              "framework_name": "NIST CSF 2.0",
+              "framework_key": "nist-csf-2-0",
+              "domain_id": "ID",
+              "domain_name": "Identify",
+              "control_id": "ID.RA-06",
+              "cross_references": [
+                {
+                  "other_framework_id": "iso-27001-2022",
+                  "other_control_id": "6.1.3"
+                },
+                {
+                  "other_framework_id": "nist-sp-800-39",
+                  "other_control_id": ""
+                }
+              ],
+              "expected_evidence": "risk_treatment_plan, risk_register, remediation_tickets"
+            }
+          ],
+          "cross_references": [
+            {
+              "other_framework_id": "iso-27001-2022",
+              "other_control_id": "6.1.3"
+            },
+            {
+              "other_framework_id": "nist-sp-800-39",
+              "other_control_id": ""
+            }
+          ]
+        }
+      ],
+      "sub_topics": [
+        {
+          "sub_topic": "Asset Management and Inventory",
+          "control_ids": [
+            "ID.AM-01",
+            "ID.AM-02",
+            "ID.AM-05",
+            "ID.IM-01",
+            "ID.RA-01",
+            "ID.RA-02",
+            "ID.RA-06"
+          ],
+          "part1_question": {
+            "question_id": "123e4567-e89b-12d3-a456-426655440000",
+            "question_text": "Are asset inventories maintained using tools like ServiceNow or JIRA?",
+            "question_type": "yes_no_with_detail",
+            "response_options": "Yes / No / Partial",
+            "detail_prompt": "If yes or partial, specify the tool or technology in use."
+          },
+          "interview_questions": [
+            "What processes are in place to ensure that asset inventories are updated regularly and accurately?",
+            "How does the organization prioritize assets based on classification, criticality, resources, and impact on the mission?",
+            "Can you describe the procedures for identifying, validating, and recording vulnerabilities in assets?",
+            "How does the organization receive and act upon cyber threat intelligence from information sharing forums and sources?"
+          ],
+          "maturity_guide": {
+            "mature": "The organization maintains comprehensive, up-to-date, and accurate inventories of all hardware, software, services, and systems, and prioritizes assets based on a well-defined classification and criticality framework.",
+            "partial": "The organization maintains some inventories, but they may be incomplete, outdated, or inaccurate, and asset prioritization is ad-hoc or based on incomplete information.",
+            "critical_gap": "The absence of asset inventories and prioritization leaves the organization unable to effectively identify, assess, and respond to cyber risks, resulting in increased vulnerability to attacks and breaches."
+          },
+          "evidence_to_request": [
+            "asset_inventory",
+            "cmdb_export",
+            "discovery_scan_report",
+            "software_inventory",
+            "vulnerability_scan_report"
+          ],
+          "red_flags": [
+            {
+              "critical_gap": "Inaccurate or incomplete asset inventories, leading to unidentified vulnerabilities and unaddressed risks.",
+              "recommended_action": "Conduct a thorough asset discovery and inventory update, and implement a regular review and update process."
+            },
+            {
+              "critical_gap": "Lack of asset prioritization, resulting in inadequate risk assessment and response.",
+              "recommended_action": "Develop and implement a comprehensive asset classification and prioritization framework, and apply it to all assets."
+            },
+            {
+              "critical_gap": "Insufficient vulnerability identification and management, leading to unaddressed vulnerabilities and increased risk.",
+              "recommended_action": "Implement a regular vulnerability scanning and management process, and ensure that all identified vulnerabilities are tracked, prioritized, and remediated."
+            }
+          ]
+        }
+      ],
+      "interview_questions": [
+        "What processes are in place to ensure that asset inventories are updated regularly and accurately?",
+        "How does the organization prioritize assets based on classification, criticality, resources, and impact on the mission?",
+        "Can you describe the procedures for identifying, validating, and recording vulnerabilities in assets?",
+        "How does the organization receive and act upon cyber threat intelligence from information sharing forums and sources?"
+      ],
+      "evidence_to_request": [
+        "asset_inventory",
+        "cmdb_export",
+        "discovery_scan_report",
+        "software_inventory",
+        "vulnerability_scan_report"
+      ],
+      "red_flags": [
+        {
+          "critical_gap": "Inaccurate or incomplete asset inventories, leading to unidentified vulnerabilities and unaddressed risks.",
+          "recommended_action": "Conduct a thorough asset discovery and inventory update, and implement a regular review and update process."
+        },
+        {
+          "critical_gap": "Lack of asset prioritization, resulting in inadequate risk assessment and response.",
+          "recommended_action": "Develop and implement a comprehensive asset classification and prioritization framework, and apply it to all assets."
+        },
+        {
+          "critical_gap": "Insufficient vulnerability identification and management, leading to unaddressed vulnerabilities and increased risk.",
+          "recommended_action": "Implement a regular vulnerability scanning and management process, and ensure that all identified vulnerabilities are tracked, prioritized, and remediated."
+        }
+      ],
+      "maturity_guide": {
+        "mature": "The organization maintains comprehensive, up-to-date, and accurate inventories of all hardware, software, services, and systems, and prioritizes assets based on a well-defined classification and criticality framework.",
+        "partial": "The organization maintains some inventories, but they may be incomplete, outdated, or inaccurate, and asset prioritization is ad-hoc or based on incomplete information.",
+        "critical_gap": "The absence of asset inventories and prioritization leaves the organization unable to effectively identify, assess, and respond to cyber risks, resulting in increased vulnerability to attacks and breaches."
+      }
+    },
+    {
+      "framework_id": "8ac1d180-5b22-5cf6-8a0b-df10e87ebad8",
+      "framework_key": "cis-controls-v8-1-2",
+      "framework_name": "CIS Controls v8.1.2",
+      "domain_id": "6",
+      "domain_name": "Access Control Management",
+      "domain_description": "",
+      "question_count": 8,
+      "questions": [
+        {
+          "item_id": "6ee81765-423b-5dd6-8bb1-90493c9006c6",
+          "question_id": "6ee81765-423b-5dd6-8bb1-90493c9006c6",
+          "question_text": "Is the organization implementing and operating the control: Establish an Access Granting Process: Establish and follow a documented process, preferably automated, for granting access to enterprise assets upon new hire or role change of a user?",
+          "question_type": "merged",
+          "answer_formats": [
+            "yes_no",
+            "evidence_upload"
+          ],
+          "framework_name": "CIS Controls v8.1.2",
+          "framework_key": "cis-controls-v8-1-2",
+          "domain_id": "6",
+          "domain_name": "Access Control Management",
+          "control_id": "6.1",
+          "control_statement": "Establish an Access Granting Process: Establish and follow a documented process, preferably automated, for granting access to enterprise assets upon new hire or role change of a user.",
+          "expected_evidence": "project_record, change_ticket, engineering_standard",
+          "maturity_level": "Defined",
+          "merge_reason": "Merged by control fallback because LLM output was unavailable or invalid.",
+          "source_item_ids": [
+            "25b8fa5e-b141-570c-be17-1e484c115eef",
+            "36144490-88e7-5e7c-a599-a3cb0017ed2d"
+          ],
+          "source_questions": [
+            {
+              "question_id": "3c3409ca-4333-5cdd-b58d-149cf81c8b06",
+              "question_text": "Is the organization implementing and operating the control: Establish an Access Granting Process: Establish and follow a documented process, preferably automated, for granting access to enterprise assets upon new hire or role change of a user?",
+              "question_type": "yes_no",
+              "framework_name": "CIS Controls v8.1.2",
+              "framework_key": "cis-controls-v8-1-2",
+              "domain_id": "6",
+              "domain_name": "Access Control Management",
+              "control_id": "6.1",
+              "cross_references": [
+                {
+                  "other_framework_id": "nist-csf-2-0",
+                  "other_control_id": "GV.RR-04",
+                  "relationship": "Subset",
+                  "description": "Cybersecurity is included in human resources practices"
+                }
+              ],
+              "expected_evidence": "project_record, change_ticket, engineering_standard"
+            },
+            {
+              "question_id": "dcb8acfe-a69a-5333-98f5-ae000fc99a59",
+              "question_text": "Upload evidence such as project_record, change_ticket, engineering_standard that demonstrates: Establish an Access Granting Process: Establish and follow a documented process, preferably automated, for granting access to enterprise assets upon new hire or role change of a user.",
+              "question_type": "evidence_upload",
+              "framework_name": "CIS Controls v8.1.2",
+              "framework_key": "cis-controls-v8-1-2",
+              "domain_id": "6",
+              "domain_name": "Access Control Management",
+              "control_id": "6.1",
+              "cross_references": [
+                {
+                  "other_framework_id": "nist-csf-2-0",
+                  "other_control_id": "GV.RR-04",
+                  "relationship": "Subset",
+                  "description": "Cybersecurity is included in human resources practices"
+                }
+              ],
+              "expected_evidence": "project_record, change_ticket, engineering_standard"
+            }
+          ],
+          "cross_references": [
+            {
+              "other_framework_id": "nist-csf-2-0",
+              "other_control_id": "GV.RR-04"
+            }
+          ]
+        },
+        {
+          "item_id": "8bdfdef2-75f1-5417-94ce-537b7525ffb7",
+          "question_id": "8bdfdef2-75f1-5417-94ce-537b7525ffb7",
+          "question_text": "Is the organization implementing and operating the control: Establish an Access Revoking Process: Establish and follow a process, preferably automated, for revoking access to enterprise assets, through disabling accounts immediately upon termination, rights revocation, or role change of a user. Disabling accounts, instead of deleting accounts, may be necessary to preserve audit trails?",
+          "question_type": "merged",
+          "answer_formats": [
+            "yes_no",
+            "evidence_upload"
+          ],
+          "framework_name": "CIS Controls v8.1.2",
+          "framework_key": "cis-controls-v8-1-2",
+          "domain_id": "6",
+          "domain_name": "Access Control Management",
+          "control_id": "6.2",
+          "control_statement": "Establish an Access Revoking Process: Establish and follow a process, preferably automated, for revoking access to enterprise assets, through disabling accounts immediately upon termination, rights revocation, or role change of a user. Disabling accounts, instead of deleting accounts, may be necessary to preserve audit trails.",
+          "expected_evidence": "project_record, change_ticket, engineering_standard",
+          "maturity_level": "Defined",
+          "merge_reason": "Merged by control fallback because LLM output was unavailable or invalid.",
+          "source_item_ids": [
+            "b543e95a-f985-56b8-bfdd-9c120c31b643",
+            "cf3a5784-fd7d-5138-b45b-47e7f128d1a5"
+          ],
+          "source_questions": [
+            {
+              "question_id": "d9066a00-4c16-56fe-9880-d4fc0b23ffa9",
+              "question_text": "Is the organization implementing and operating the control: Establish an Access Revoking Process: Establish and follow a process, preferably automated, for revoking access to enterprise assets, through disabling accounts immediately upon termination, rights revocation, or role change of a user. Disabling accounts, instead of deleting accounts, may be necessary to preserve audit trails?",
+              "question_type": "yes_no",
+              "framework_name": "CIS Controls v8.1.2",
+              "framework_key": "cis-controls-v8-1-2",
+              "domain_id": "6",
+              "domain_name": "Access Control Management",
+              "control_id": "6.2",
+              "cross_references": [
+                {
+                  "other_framework_id": "nist-csf-2-0",
+                  "other_control_id": "GV.RR-04",
+                  "relationship": "Subset",
+                  "description": "Cybersecurity is included in human resources practices"
+                }
+              ],
+              "expected_evidence": "project_record, change_ticket, engineering_standard"
+            },
+            {
+              "question_id": "31563fef-e845-57e3-b954-f73875dac99b",
+              "question_text": "Upload evidence such as project_record, change_ticket, engineering_standard that demonstrates: Establish an Access Revoking Process: Establish and follow a process, preferably automated, for revoking access to enterprise assets, through disabling accounts immediately upon termination, rights revocation, or role change of a user. Disabling accounts, instead of deleting accounts, may be necessary to preserve audit trails.",
+              "question_type": "evidence_upload",
+              "framework_name": "CIS Controls v8.1.2",
+              "framework_key": "cis-controls-v8-1-2",
+              "domain_id": "6",
+              "domain_name": "Access Control Management",
+              "control_id": "6.2",
+              "cross_references": [
+                {
+                  "other_framework_id": "nist-csf-2-0",
+                  "other_control_id": "GV.RR-04",
+                  "relationship": "Subset",
+                  "description": "Cybersecurity is included in human resources practices"
+                }
+              ],
+              "expected_evidence": "project_record, change_ticket, engineering_standard"
+            }
+          ],
+          "cross_references": [
+            {
+              "other_framework_id": "nist-csf-2-0",
+              "other_control_id": "GV.RR-04"
+            }
+          ]
+        },
+        {
+          "item_id": "a67788cc-d6d0-5ad3-8076-d01b12ad05cf",
+          "question_id": "a67788cc-d6d0-5ad3-8076-d01b12ad05cf",
+          "question_text": "Is the organization implementing and operating the control: Require MFA for Externally-Exposed Applications: Require all externally-exposed enterprise or third-party applications to enforce MFA, where supported. Enforcing MFA through a directory service or SSO provider is a satisfactory implementation of this Safeguard?",
+          "question_type": "merged",
+          "answer_formats": [
+            "yes_no",
+            "evidence_upload"
+          ],
+          "framework_name": "CIS Controls v8.1.2",
+          "framework_key": "cis-controls-v8-1-2",
+          "domain_id": "6",
+          "domain_name": "Access Control Management",
+          "control_id": "6.3",
+          "control_statement": "Require MFA for Externally-Exposed Applications: Require all externally-exposed enterprise or third-party applications to enforce MFA, where supported. Enforcing MFA through a directory service or SSO provider is a satisfactory implementation of this Safeguard.",
+          "expected_evidence": "implementation_evidence, operational_record",
+          "maturity_level": "Defined",
+          "merge_reason": "Merged by control fallback because LLM output was unavailable or invalid.",
+          "source_item_ids": [
+            "fae27342-32aa-53bf-9f2b-c5f328cb91af",
+            "432d4c7b-512a-5ac4-bc64-d40db3af0807"
+          ],
+          "source_questions": [
+            {
+              "question_id": "5f7630d0-809a-5075-ac9b-ad9fcd19605c",
+              "question_text": "Is the organization implementing and operating the control: Require MFA for Externally-Exposed Applications: Require all externally-exposed enterprise or third-party applications to enforce MFA, where supported. Enforcing MFA through a directory service or SSO provider is a satisfactory implementation of this Safeguard?",
+              "question_type": "yes_no",
+              "framework_name": "CIS Controls v8.1.2",
+              "framework_key": "cis-controls-v8-1-2",
+              "domain_id": "6",
+              "domain_name": "Access Control Management",
+              "control_id": "6.3",
+              "cross_references": [],
+              "expected_evidence": "implementation_evidence, operational_record"
+            },
+            {
+              "question_id": "ba4601bd-d221-5033-9fe2-94cdd5740637",
+              "question_text": "Upload evidence such as implementation_evidence, operational_record that demonstrates: Require MFA for Externally-Exposed Applications: Require all externally-exposed enterprise or third-party applications to enforce MFA, where supported. Enforcing MFA through a directory service or SSO provider is a satisfactory implementation of this Safeguard.",
+              "question_type": "evidence_upload",
+              "framework_name": "CIS Controls v8.1.2",
+              "framework_key": "cis-controls-v8-1-2",
+              "domain_id": "6",
+              "domain_name": "Access Control Management",
+              "control_id": "6.3",
+              "cross_references": [],
+              "expected_evidence": "implementation_evidence, operational_record"
+            }
+          ],
+          "cross_references": []
+        },
+        {
+          "item_id": "ca8f297f-8fd6-58f4-b200-973876ad7a87",
+          "question_id": "ca8f297f-8fd6-58f4-b200-973876ad7a87",
+          "question_text": "Is the organization implementing and operating the control: Require MFA for Remote Network Access: Require MFA for remote network access?",
+          "question_type": "merged",
+          "answer_formats": [
+            "yes_no",
+            "evidence_upload"
+          ],
+          "framework_name": "CIS Controls v8.1.2",
+          "framework_key": "cis-controls-v8-1-2",
+          "domain_id": "6",
+          "domain_name": "Access Control Management",
+          "control_id": "6.4",
+          "control_statement": "Require MFA for Remote Network Access: Require MFA for remote network access.",
+          "expected_evidence": "technical_control_record, system_config, monitoring_report",
+          "maturity_level": "Defined",
+          "merge_reason": "Merged by control fallback because LLM output was unavailable or invalid.",
+          "source_item_ids": [
+            "3bb79659-b347-514f-9ef9-d0421f33c63a",
+            "a12641f0-ea31-56b2-a4ec-30a7ce05f003"
+          ],
+          "source_questions": [
+            {
+              "question_id": "64873bab-2460-5df5-9af8-0c5337268649",
+              "question_text": "Is the organization implementing and operating the control: Require MFA for Remote Network Access: Require MFA for remote network access?",
+              "question_type": "yes_no",
+              "framework_name": "CIS Controls v8.1.2",
+              "framework_key": "cis-controls-v8-1-2",
+              "domain_id": "6",
+              "domain_name": "Access Control Management",
+              "control_id": "6.4",
+              "cross_references": [],
+              "expected_evidence": "technical_control_record, system_config, monitoring_report"
+            },
+            {
+              "question_id": "46bc11c9-7564-59f4-ba9a-db4f198a0b58",
+              "question_text": "Upload evidence such as technical_control_record, system_config, monitoring_report that demonstrates: Require MFA for Remote Network Access: Require MFA for remote network access.",
+              "question_type": "evidence_upload",
+              "framework_name": "CIS Controls v8.1.2",
+              "framework_key": "cis-controls-v8-1-2",
+              "domain_id": "6",
+              "domain_name": "Access Control Management",
+              "control_id": "6.4",
+              "cross_references": [],
+              "expected_evidence": "technical_control_record, system_config, monitoring_report"
+            }
+          ],
+          "cross_references": []
+        },
+        {
+          "item_id": "3d104e72-1e66-55c5-81bb-17fa0f285586",
+          "question_id": "3d104e72-1e66-55c5-81bb-17fa0f285586",
+          "question_text": "Is the organization implementing and operating the control: Require MFA for Administrative Access: Require MFA for all administrative access accounts, where supported, on all enterprise assets, whether managed on-site or through a service provider?",
+          "question_type": "merged",
+          "answer_formats": [
+            "yes_no",
+            "evidence_upload"
+          ],
+          "framework_name": "CIS Controls v8.1.2",
+          "framework_key": "cis-controls-v8-1-2",
+          "domain_id": "6",
+          "domain_name": "Access Control Management",
+          "control_id": "6.5",
+          "control_statement": "Require MFA for Administrative Access: Require MFA for all administrative access accounts, where supported, on all enterprise assets, whether managed on-site or through a service provider.",
+          "expected_evidence": "inventory, asset_register, owner_register",
+          "maturity_level": "Defined",
+          "merge_reason": "Merged by control fallback because LLM output was unavailable or invalid.",
+          "source_item_ids": [
+            "35a166ba-e0cc-5eea-9653-3a3e331c677d",
+            "5b23c1ff-e0f0-58cc-9759-e6659e9e3de8"
+          ],
+          "source_questions": [
+            {
+              "question_id": "476fa11c-8989-59e9-ba2d-7e3759639293",
+              "question_text": "Is the organization implementing and operating the control: Require MFA for Administrative Access: Require MFA for all administrative access accounts, where supported, on all enterprise assets, whether managed on-site or through a service provider?",
+              "question_type": "yes_no",
+              "framework_name": "CIS Controls v8.1.2",
+              "framework_key": "cis-controls-v8-1-2",
+              "domain_id": "6",
+              "domain_name": "Access Control Management",
+              "control_id": "6.5",
+              "cross_references": [],
+              "expected_evidence": "inventory, asset_register, owner_register"
+            },
+            {
+              "question_id": "1e970cfe-7c77-5d60-a3d9-02eb7dc90f44",
+              "question_text": "Upload evidence such as inventory, asset_register, owner_register that demonstrates: Require MFA for Administrative Access: Require MFA for all administrative access accounts, where supported, on all enterprise assets, whether managed on-site or through a service provider.",
+              "question_type": "evidence_upload",
+              "framework_name": "CIS Controls v8.1.2",
+              "framework_key": "cis-controls-v8-1-2",
+              "domain_id": "6",
+              "domain_name": "Access Control Management",
+              "control_id": "6.5",
+              "cross_references": [],
+              "expected_evidence": "inventory, asset_register, owner_register"
+            }
+          ],
+          "cross_references": []
+        },
+        {
+          "item_id": "c15f906c-30a8-5e03-8b6e-913abd78ffd5",
+          "question_id": "c15f906c-30a8-5e03-8b6e-913abd78ffd5",
+          "question_text": "Is the organization implementing and operating the control: Establish and Maintain an Inventory of Authentication and Authorization Systems: Establish and maintain an inventory of the enterprise's authentication and authorization systems, including those hosted on-site or at a remote service provider. Review and update the inventory, at a minimum, annually, or more frequently?",
+          "question_type": "merged",
+          "answer_formats": [
+            "yes_no",
+            "evidence_upload"
+          ],
+          "framework_name": "CIS Controls v8.1.2",
+          "framework_key": "cis-controls-v8-1-2",
+          "domain_id": "6",
+          "domain_name": "Access Control Management",
+          "control_id": "6.6",
+          "control_statement": "Establish and Maintain an Inventory of Authentication and Authorization Systems: Establish and maintain an inventory of the enterprise's authentication and authorization systems, including those hosted on-site or at a remote service provider. Review and update the inventory, at a minimum, annually, or more frequently.",
+          "expected_evidence": "project_record, change_ticket, engineering_standard",
+          "maturity_level": "Defined",
+          "merge_reason": "Merged by control fallback because LLM output was unavailable or invalid.",
+          "source_item_ids": [
+            "4847af5e-2246-5b98-b9df-4bd7b71fa774",
+            "00baae45-a2f7-5c13-a7eb-00f1d163f738"
+          ],
+          "source_questions": [
+            {
+              "question_id": "2c90a078-4eb8-5fb7-b39c-09ce9d1f1d6e",
+              "question_text": "Is the organization implementing and operating the control: Establish and Maintain an Inventory of Authentication and Authorization Systems: Establish and maintain an inventory of the enterprise's authentication and authorization systems, including those hosted on-site or at a remote service provider. Review and update the inventory, at a minimum, annually, or more frequently?",
+              "question_type": "yes_no",
+              "framework_name": "CIS Controls v8.1.2",
+              "framework_key": "cis-controls-v8-1-2",
+              "domain_id": "6",
+              "domain_name": "Access Control Management",
+              "control_id": "6.6",
+              "cross_references": [],
+              "expected_evidence": "project_record, change_ticket, engineering_standard"
+            },
+            {
+              "question_id": "b13be3b6-10aa-5b3f-bdb4-cb7951607daa",
+              "question_text": "Upload evidence such as project_record, change_ticket, engineering_standard that demonstrates: Establish and Maintain an Inventory of Authentication and Authorization Systems: Establish and maintain an inventory of the enterprise's authentication and authorization systems, including those hosted on-site or at a remote service provider. Review and update the inventory, at a minimum, annually, or more frequently.",
+              "question_type": "evidence_upload",
+              "framework_name": "CIS Controls v8.1.2",
+              "framework_key": "cis-controls-v8-1-2",
+              "domain_id": "6",
+              "domain_name": "Access Control Management",
+              "control_id": "6.6",
+              "cross_references": [],
+              "expected_evidence": "project_record, change_ticket, engineering_standard"
+            }
+          ],
+          "cross_references": []
+        },
+        {
+          "item_id": "1da27384-c553-5e23-8428-0ba99a85da14",
+          "question_id": "1da27384-c553-5e23-8428-0ba99a85da14",
+          "question_text": "Is the organization implementing and operating the control: Centralize Access Control: Centralize access control for all enterprise assets through a directory service or SSO provider, where supported?",
+          "question_type": "merged",
+          "answer_formats": [
+            "yes_no",
+            "evidence_upload"
+          ],
+          "framework_name": "CIS Controls v8.1.2",
+          "framework_key": "cis-controls-v8-1-2",
+          "domain_id": "6",
+          "domain_name": "Access Control Management",
+          "control_id": "6.7",
+          "control_statement": "Centralize Access Control: Centralize access control for all enterprise assets through a directory service or SSO provider, where supported.",
+          "expected_evidence": "inventory, asset_register, owner_register",
+          "maturity_level": "Defined",
+          "merge_reason": "Merged by control fallback because LLM output was unavailable or invalid.",
+          "source_item_ids": [
+            "f9a5bffd-6d81-5c96-ba7f-ab5baeba2e56",
+            "4a85ab2f-274f-55be-acb8-865a5dae04c0"
+          ],
+          "source_questions": [
+            {
+              "question_id": "9c578377-13ff-5031-b98a-c6f8f47d2ff1",
+              "question_text": "Is the organization implementing and operating the control: Centralize Access Control: Centralize access control for all enterprise assets through a directory service or SSO provider, where supported?",
+              "question_type": "yes_no",
+              "framework_name": "CIS Controls v8.1.2",
+              "framework_key": "cis-controls-v8-1-2",
+              "domain_id": "6",
+              "domain_name": "Access Control Management",
+              "control_id": "6.7",
+              "cross_references": [],
+              "expected_evidence": "inventory, asset_register, owner_register"
+            },
+            {
+              "question_id": "1f5b39cd-893c-59f8-819a-f57aa116fdd8",
+              "question_text": "Upload evidence such as inventory, asset_register, owner_register that demonstrates: Centralize Access Control: Centralize access control for all enterprise assets through a directory service or SSO provider, where supported.",
+              "question_type": "evidence_upload",
+              "framework_name": "CIS Controls v8.1.2",
+              "framework_key": "cis-controls-v8-1-2",
+              "domain_id": "6",
+              "domain_name": "Access Control Management",
+              "control_id": "6.7",
+              "cross_references": [],
+              "expected_evidence": "inventory, asset_register, owner_register"
+            }
+          ],
+          "cross_references": []
+        },
+        {
+          "item_id": "64a0c401-46a3-5d8f-a8f6-fdb0f91e0d73",
+          "question_id": "64a0c401-46a3-5d8f-a8f6-fdb0f91e0d73",
+          "question_text": "Is the organization implementing and operating the control: Define and Maintain Role-Based Access Control: Define and maintain role-based access control, through determining and documenting the access rights necessary for each role within the enterprise to successfully carry out its assigned duties. Perform access control reviews of enterprise assets to validate that all privileges are authorized, on a recurring schedule at a minimum annually, or more frequently?",
+          "question_type": "merged",
+          "answer_formats": [
+            "yes_no",
+            "evidence_upload"
+          ],
+          "framework_name": "CIS Controls v8.1.2",
+          "framework_key": "cis-controls-v8-1-2",
+          "domain_id": "6",
+          "domain_name": "Access Control Management",
+          "control_id": "6.8",
+          "control_statement": "Define and Maintain Role-Based Access Control: Define and maintain role-based access control, through determining and documenting the access rights necessary for each role within the enterprise to successfully carry out its assigned duties. Perform access control reviews of enterprise assets to validate that all privileges are authorized, on a recurring schedule at a minimum annually, or more frequently.",
+          "expected_evidence": "inventory, asset_register, owner_register",
+          "maturity_level": "Defined",
+          "merge_reason": "Merged by control fallback because LLM output was unavailable or invalid.",
+          "source_item_ids": [
+            "136bb6c5-8e7f-5188-93b2-f36cd6eaca19",
+            "3898b9fe-eeb5-53e6-a534-698be608e27f"
+          ],
+          "source_questions": [
+            {
+              "question_id": "fa20e132-359e-5bd9-ad44-a8cf14c36432",
+              "question_text": "Is the organization implementing and operating the control: Define and Maintain Role-Based Access Control: Define and maintain role-based access control, through determining and documenting the access rights necessary for each role within the enterprise to successfully carry out its assigned duties. Perform access control reviews of enterprise assets to validate that all privileges are authorized, on a recurring schedule at a minimum annually, or more frequently?",
+              "question_type": "yes_no",
+              "framework_name": "CIS Controls v8.1.2",
+              "framework_key": "cis-controls-v8-1-2",
+              "domain_id": "6",
+              "domain_name": "Access Control Management",
+              "control_id": "6.8",
+              "cross_references": [
+                {
+                  "other_framework_id": "nist-csf-2-0",
+                  "other_control_id": "PR.AA-05",
+                  "relationship": "Equivalent",
+                  "description": "Access permissions, entitlements, and authorizations are defined in a policy, managed, enforced, and reviewed, and incorporate the principles of least privilege and separation of duties"
+                }
+              ],
+              "expected_evidence": "inventory, asset_register, owner_register"
+            },
+            {
+              "question_id": "de5843aa-fcfb-56a0-b128-8f6cb2b1bb75",
+              "question_text": "Upload evidence such as inventory, asset_register, owner_register that demonstrates: Define and Maintain Role-Based Access Control: Define and maintain role-based access control, through determining and documenting the access rights necessary for each role within the enterprise to successfully carry out its assigned duties. Perform access control reviews of enterprise assets to validate that all privileges are authorized, on a recurring schedule at a minimum annually, or more frequently.",
+              "question_type": "evidence_upload",
+              "framework_name": "CIS Controls v8.1.2",
+              "framework_key": "cis-controls-v8-1-2",
+              "domain_id": "6",
+              "domain_name": "Access Control Management",
+              "control_id": "6.8",
+              "cross_references": [
+                {
+                  "other_framework_id": "nist-csf-2-0",
+                  "other_control_id": "PR.AA-05",
+                  "relationship": "Equivalent",
+                  "description": "Access permissions, entitlements, and authorizations are defined in a policy, managed, enforced, and reviewed, and incorporate the principles of least privilege and separation of duties"
+                }
+              ],
+              "expected_evidence": "inventory, asset_register, owner_register"
+            }
+          ],
+          "cross_references": [
+            {
+              "other_framework_id": "nist-csf-2-0",
+              "other_control_id": "PR.AA-05"
+            }
+          ]
+        }
+      ],
+      "sub_topics": [
+        {
+          "sub_topic": "Access Control Management",
+          "control_ids": [
+            "6.1",
+            "6.2",
+            "6.3",
+            "6.4",
+            "6.5",
+            "6.6",
+            "6.7",
+            "6.8"
+          ],
+          "part1_question": {
+            "question_id": "123e4567-e89b-12d3-a456-426655440000",
+            "question_text": "Is an automated access granting process in place using tools like Okta or Azure AD? (Yes / No / Partial. If yes, which tool?)",
+            "question_type": "yes_no_with_detail",
+            "response_options": "Yes / No / Partial",
+            "detail_prompt": "If yes or partial, specify the tool or technology in use."
+          },
+          "interview_questions": [
+            "Can you describe the process for granting access to new employees or when roles change within the organization?",
+            "How does the organization ensure that access is revoked promptly when an employee leaves or changes roles?",
+            "What measures are in place to enforce multi-factor authentication for externally-exposed applications and remote network access?",
+            "How does the organization maintain an inventory of its authentication and authorization systems, and how often is this inventory reviewed and updated?"
+          ],
+          "maturity_guide": {
+            "mature": "The organization has a fully automated and documented process for granting and revoking access, with clear role-based access controls and centralized management through a directory service or SSO provider, and regular reviews of access rights and authentication systems.",
+            "partial": "The organization has a partially implemented access control process, with some automation and documentation, but with gaps in role-based access controls, centralized management, or regular reviews, and may rely on manual processes or lack a comprehensive inventory of authentication and authorization systems.",
+            "critical_gap": "The absence of a formal access control process and lack of centralized management and role-based access controls exposes the organization to significant risk of unauthorized access, data breaches, and compliance violations."
+          },
+          "evidence_to_request": [
+            "project_record",
+            "change_ticket",
+            "engineering_standard",
+            "implementation_evidence",
+            "inventory",
+            "asset_register"
+          ],
+          "red_flags": [
+            {
+              "critical_gap": "Access control processes are not documented or automated, leading to inconsistent and potentially insecure access granting and revocation.",
+              "recommended_action": "Implement a documented and automated access control process, utilizing tools like Okta or Azure AD, and conduct regular reviews of access rights and authentication systems."
+            },
+            {
+              "critical_gap": "Multi-factor authentication is not enforced for externally-exposed applications or remote network access, increasing the risk of unauthorized access.",
+              "recommended_action": "Enforce multi-factor authentication for all externally-exposed applications and remote network access, using a directory service or SSO provider where possible."
+            },
+            {
+              "critical_gap": "Role-based access controls are not defined or maintained, leading to overly permissive access and increased risk of data breaches.",
+              "recommended_action": "Define and maintain role-based access controls, determining and documenting the necessary access rights for each role, and conduct regular access control reviews."
+            }
+          ]
+        }
+      ],
+      "interview_questions": [
+        "Can you describe the process for granting access to new employees or when roles change within the organization?",
+        "How does the organization ensure that access is revoked promptly when an employee leaves or changes roles?",
+        "What measures are in place to enforce multi-factor authentication for externally-exposed applications and remote network access?",
+        "How does the organization maintain an inventory of its authentication and authorization systems, and how often is this inventory reviewed and updated?"
+      ],
+      "evidence_to_request": [
+        "project_record",
+        "change_ticket",
+        "engineering_standard",
+        "implementation_evidence",
+        "inventory",
+        "asset_register"
+      ],
+      "red_flags": [
+        {
+          "critical_gap": "Access control processes are not documented or automated, leading to inconsistent and potentially insecure access granting and revocation.",
+          "recommended_action": "Implement a documented and automated access control process, utilizing tools like Okta or Azure AD, and conduct regular reviews of access rights and authentication systems."
+        },
+        {
+          "critical_gap": "Multi-factor authentication is not enforced for externally-exposed applications or remote network access, increasing the risk of unauthorized access.",
+          "recommended_action": "Enforce multi-factor authentication for all externally-exposed applications and remote network access, using a directory service or SSO provider where possible."
+        },
+        {
+          "critical_gap": "Role-based access controls are not defined or maintained, leading to overly permissive access and increased risk of data breaches.",
+          "recommended_action": "Define and maintain role-based access controls, determining and documenting the necessary access rights for each role, and conduct regular access control reviews."
+        }
+      ],
+      "maturity_guide": {
+        "mature": "The organization has a fully automated and documented process for granting and revoking access, with clear role-based access controls and centralized management through a directory service or SSO provider, and regular reviews of access rights and authentication systems.",
+        "partial": "The organization has a partially implemented access control process, with some automation and documentation, but with gaps in role-based access controls, centralized management, or regular reviews, and may rely on manual processes or lack a comprehensive inventory of authentication and authorization systems.",
+        "critical_gap": "The absence of a formal access control process and lack of centralized management and role-based access controls exposes the organization to significant risk of unauthorized access, data breaches, and compliance violations."
+      }
+    }
+  ],
+  "questions": [
+    {
+      "question_id": "3c3409ca-4333-5cdd-b58d-149cf81c8b06",
+      "question_text": "Is the organization implementing and operating the control: Establish an Access Granting Process: Establish and follow a documented process, preferably automated, for granting access to enterprise assets upon new hire or role change of a user?",
+      "question_type": "yes_no",
+      "framework_name": "CIS Controls v8.1.2",
+      "framework_key": "cis-controls-v8-1-2",
+      "domain_id": "6",
+      "domain_name": "Access Control Management",
+      "control_id": "6.1",
+      "cross_references": [
+        {
+          "other_framework_id": "nist-csf-2-0",
+          "other_control_id": "GV.RR-04",
+          "relationship": "Subset",
+          "description": "Cybersecurity is included in human resources practices"
+        }
+      ],
+      "expected_evidence": "project_record, change_ticket, engineering_standard"
+    },
+    {
+      "question_id": "dcb8acfe-a69a-5333-98f5-ae000fc99a59",
+      "question_text": "Upload evidence such as project_record, change_ticket, engineering_standard that demonstrates: Establish an Access Granting Process: Establish and follow a documented process, preferably automated, for granting access to enterprise assets upon new hire or role change of a user.",
+      "question_type": "evidence_upload",
+      "framework_name": "CIS Controls v8.1.2",
+      "framework_key": "cis-controls-v8-1-2",
+      "domain_id": "6",
+      "domain_name": "Access Control Management",
+      "control_id": "6.1",
+      "cross_references": [
+        {
+          "other_framework_id": "nist-csf-2-0",
+          "other_control_id": "GV.RR-04",
+          "relationship": "Subset",
+          "description": "Cybersecurity is included in human resources practices"
+        }
+      ],
+      "expected_evidence": "project_record, change_ticket, engineering_standard"
+    },
+    {
+      "question_id": "d9066a00-4c16-56fe-9880-d4fc0b23ffa9",
+      "question_text": "Is the organization implementing and operating the control: Establish an Access Revoking Process: Establish and follow a process, preferably automated, for revoking access to enterprise assets, through disabling accounts immediately upon termination, rights revocation, or role change of a user. Disabling accounts, instead of deleting accounts, may be necessary to preserve audit trails?",
+      "question_type": "yes_no",
+      "framework_name": "CIS Controls v8.1.2",
+      "framework_key": "cis-controls-v8-1-2",
+      "domain_id": "6",
+      "domain_name": "Access Control Management",
+      "control_id": "6.2",
+      "cross_references": [
+        {
+          "other_framework_id": "nist-csf-2-0",
+          "other_control_id": "GV.RR-04",
+          "relationship": "Subset",
+          "description": "Cybersecurity is included in human resources practices"
+        }
+      ],
+      "expected_evidence": "project_record, change_ticket, engineering_standard"
+    },
+    {
+      "question_id": "31563fef-e845-57e3-b954-f73875dac99b",
+      "question_text": "Upload evidence such as project_record, change_ticket, engineering_standard that demonstrates: Establish an Access Revoking Process: Establish and follow a process, preferably automated, for revoking access to enterprise assets, through disabling accounts immediately upon termination, rights revocation, or role change of a user. Disabling accounts, instead of deleting accounts, may be necessary to preserve audit trails.",
+      "question_type": "evidence_upload",
+      "framework_name": "CIS Controls v8.1.2",
+      "framework_key": "cis-controls-v8-1-2",
+      "domain_id": "6",
+      "domain_name": "Access Control Management",
+      "control_id": "6.2",
+      "cross_references": [
+        {
+          "other_framework_id": "nist-csf-2-0",
+          "other_control_id": "GV.RR-04",
+          "relationship": "Subset",
+          "description": "Cybersecurity is included in human resources practices"
+        }
+      ],
+      "expected_evidence": "project_record, change_ticket, engineering_standard"
+    },
+    {
+      "question_id": "5f7630d0-809a-5075-ac9b-ad9fcd19605c",
+      "question_text": "Is the organization implementing and operating the control: Require MFA for Externally-Exposed Applications: Require all externally-exposed enterprise or third-party applications to enforce MFA, where supported. Enforcing MFA through a directory service or SSO provider is a satisfactory implementation of this Safeguard?",
+      "question_type": "yes_no",
+      "framework_name": "CIS Controls v8.1.2",
+      "framework_key": "cis-controls-v8-1-2",
+      "domain_id": "6",
+      "domain_name": "Access Control Management",
+      "control_id": "6.3",
+      "cross_references": [],
+      "expected_evidence": "implementation_evidence, operational_record"
+    },
+    {
+      "question_id": "ba4601bd-d221-5033-9fe2-94cdd5740637",
+      "question_text": "Upload evidence such as implementation_evidence, operational_record that demonstrates: Require MFA for Externally-Exposed Applications: Require all externally-exposed enterprise or third-party applications to enforce MFA, where supported. Enforcing MFA through a directory service or SSO provider is a satisfactory implementation of this Safeguard.",
+      "question_type": "evidence_upload",
+      "framework_name": "CIS Controls v8.1.2",
+      "framework_key": "cis-controls-v8-1-2",
+      "domain_id": "6",
+      "domain_name": "Access Control Management",
+      "control_id": "6.3",
+      "cross_references": [],
+      "expected_evidence": "implementation_evidence, operational_record"
+    },
+    {
+      "question_id": "64873bab-2460-5df5-9af8-0c5337268649",
+      "question_text": "Is the organization implementing and operating the control: Require MFA for Remote Network Access: Require MFA for remote network access?",
+      "question_type": "yes_no",
+      "framework_name": "CIS Controls v8.1.2",
+      "framework_key": "cis-controls-v8-1-2",
+      "domain_id": "6",
+      "domain_name": "Access Control Management",
+      "control_id": "6.4",
+      "cross_references": [],
+      "expected_evidence": "technical_control_record, system_config, monitoring_report"
+    },
+    {
+      "question_id": "46bc11c9-7564-59f4-ba9a-db4f198a0b58",
+      "question_text": "Upload evidence such as technical_control_record, system_config, monitoring_report that demonstrates: Require MFA for Remote Network Access: Require MFA for remote network access.",
+      "question_type": "evidence_upload",
+      "framework_name": "CIS Controls v8.1.2",
+      "framework_key": "cis-controls-v8-1-2",
+      "domain_id": "6",
+      "domain_name": "Access Control Management",
+      "control_id": "6.4",
+      "cross_references": [],
+      "expected_evidence": "technical_control_record, system_config, monitoring_report"
+    },
+    {
+      "question_id": "476fa11c-8989-59e9-ba2d-7e3759639293",
+      "question_text": "Is the organization implementing and operating the control: Require MFA for Administrative Access: Require MFA for all administrative access accounts, where supported, on all enterprise assets, whether managed on-site or through a service provider?",
+      "question_type": "yes_no",
+      "framework_name": "CIS Controls v8.1.2",
+      "framework_key": "cis-controls-v8-1-2",
+      "domain_id": "6",
+      "domain_name": "Access Control Management",
+      "control_id": "6.5",
+      "cross_references": [],
+      "expected_evidence": "inventory, asset_register, owner_register"
+    },
+    {
+      "question_id": "1e970cfe-7c77-5d60-a3d9-02eb7dc90f44",
+      "question_text": "Upload evidence such as inventory, asset_register, owner_register that demonstrates: Require MFA for Administrative Access: Require MFA for all administrative access accounts, where supported, on all enterprise assets, whether managed on-site or through a service provider.",
+      "question_type": "evidence_upload",
+      "framework_name": "CIS Controls v8.1.2",
+      "framework_key": "cis-controls-v8-1-2",
+      "domain_id": "6",
+      "domain_name": "Access Control Management",
+      "control_id": "6.5",
+      "cross_references": [],
+      "expected_evidence": "inventory, asset_register, owner_register"
+    },
+    {
+      "question_id": "2c90a078-4eb8-5fb7-b39c-09ce9d1f1d6e",
+      "question_text": "Is the organization implementing and operating the control: Establish and Maintain an Inventory of Authentication and Authorization Systems: Establish and maintain an inventory of the enterprise's authentication and authorization systems, including those hosted on-site or at a remote service provider. Review and update the inventory, at a minimum, annually, or more frequently?",
+      "question_type": "yes_no",
+      "framework_name": "CIS Controls v8.1.2",
+      "framework_key": "cis-controls-v8-1-2",
+      "domain_id": "6",
+      "domain_name": "Access Control Management",
+      "control_id": "6.6",
+      "cross_references": [],
+      "expected_evidence": "project_record, change_ticket, engineering_standard"
+    },
+    {
+      "question_id": "b13be3b6-10aa-5b3f-bdb4-cb7951607daa",
+      "question_text": "Upload evidence such as project_record, change_ticket, engineering_standard that demonstrates: Establish and Maintain an Inventory of Authentication and Authorization Systems: Establish and maintain an inventory of the enterprise's authentication and authorization systems, including those hosted on-site or at a remote service provider. Review and update the inventory, at a minimum, annually, or more frequently.",
+      "question_type": "evidence_upload",
+      "framework_name": "CIS Controls v8.1.2",
+      "framework_key": "cis-controls-v8-1-2",
+      "domain_id": "6",
+      "domain_name": "Access Control Management",
+      "control_id": "6.6",
+      "cross_references": [],
+      "expected_evidence": "project_record, change_ticket, engineering_standard"
+    },
+    {
+      "question_id": "9c578377-13ff-5031-b98a-c6f8f47d2ff1",
+      "question_text": "Is the organization implementing and operating the control: Centralize Access Control: Centralize access control for all enterprise assets through a directory service or SSO provider, where supported?",
+      "question_type": "yes_no",
+      "framework_name": "CIS Controls v8.1.2",
+      "framework_key": "cis-controls-v8-1-2",
+      "domain_id": "6",
+      "domain_name": "Access Control Management",
+      "control_id": "6.7",
+      "cross_references": [],
+      "expected_evidence": "inventory, asset_register, owner_register"
+    },
+    {
+      "question_id": "1f5b39cd-893c-59f8-819a-f57aa116fdd8",
+      "question_text": "Upload evidence such as inventory, asset_register, owner_register that demonstrates: Centralize Access Control: Centralize access control for all enterprise assets through a directory service or SSO provider, where supported.",
+      "question_type": "evidence_upload",
+      "framework_name": "CIS Controls v8.1.2",
+      "framework_key": "cis-controls-v8-1-2",
+      "domain_id": "6",
+      "domain_name": "Access Control Management",
+      "control_id": "6.7",
+      "cross_references": [],
+      "expected_evidence": "inventory, asset_register, owner_register"
+    },
+    {
+      "question_id": "fa20e132-359e-5bd9-ad44-a8cf14c36432",
+      "question_text": "Is the organization implementing and operating the control: Define and Maintain Role-Based Access Control: Define and maintain role-based access control, through determining and documenting the access rights necessary for each role within the enterprise to successfully carry out its assigned duties. Perform access control reviews of enterprise assets to validate that all privileges are authorized, on a recurring schedule at a minimum annually, or more frequently?",
+      "question_type": "yes_no",
+      "framework_name": "CIS Controls v8.1.2",
+      "framework_key": "cis-controls-v8-1-2",
+      "domain_id": "6",
+      "domain_name": "Access Control Management",
+      "control_id": "6.8",
+      "cross_references": [
+        {
+          "other_framework_id": "nist-csf-2-0",
+          "other_control_id": "PR.AA-05",
+          "relationship": "Equivalent",
+          "description": "Access permissions, entitlements, and authorizations are defined in a policy, managed, enforced, and reviewed, and incorporate the principles of least privilege and separation of duties"
+        }
+      ],
+      "expected_evidence": "inventory, asset_register, owner_register"
+    },
+    {
+      "question_id": "de5843aa-fcfb-56a0-b128-8f6cb2b1bb75",
+      "question_text": "Upload evidence such as inventory, asset_register, owner_register that demonstrates: Define and Maintain Role-Based Access Control: Define and maintain role-based access control, through determining and documenting the access rights necessary for each role within the enterprise to successfully carry out its assigned duties. Perform access control reviews of enterprise assets to validate that all privileges are authorized, on a recurring schedule at a minimum annually, or more frequently.",
+      "question_type": "evidence_upload",
+      "framework_name": "CIS Controls v8.1.2",
+      "framework_key": "cis-controls-v8-1-2",
+      "domain_id": "6",
+      "domain_name": "Access Control Management",
+      "control_id": "6.8",
+      "cross_references": [
+        {
+          "other_framework_id": "nist-csf-2-0",
+          "other_control_id": "PR.AA-05",
+          "relationship": "Equivalent",
+          "description": "Access permissions, entitlements, and authorizations are defined in a policy, managed, enforced, and reviewed, and incorporate the principles of least privilege and separation of duties"
+        }
+      ],
+      "expected_evidence": "inventory, asset_register, owner_register"
+    },
+    {
+      "question_id": "302e287a-d9c4-5b65-8bee-7582d01ce75e",
+      "question_text": "Is the organization implementing and operating the control: Inventories of hardware managed by the organization are maintained?",
+      "question_type": "yes_no",
+      "framework_name": "NIST CSF 2.0",
+      "framework_key": "nist-csf-2-0",
+      "domain_id": "ID",
+      "domain_name": "Identify",
+      "control_id": "ID.AM-01",
+      "cross_references": [
+        {
+          "other_framework_id": "nist-sp-800-53",
+          "other_control_id": "CM-8"
+        },
+        {
+          "other_framework_id": "iso-27001-2022",
+          "other_control_id": "A.5.9"
+        }
+      ],
+      "expected_evidence": "asset_inventory, cmdb_export, discovery_scan_report"
+    },
+    {
+      "question_id": "ba96c309-7f81-5dca-81fc-a18a5c9fd4f6",
+      "question_text": "Upload evidence such as asset_inventory, cmdb_export, discovery_scan_report that demonstrates: Inventories of hardware managed by the organization are maintained.",
+      "question_type": "evidence_upload",
+      "framework_name": "NIST CSF 2.0",
+      "framework_key": "nist-csf-2-0",
+      "domain_id": "ID",
+      "domain_name": "Identify",
+      "control_id": "ID.AM-01",
+      "cross_references": [
+        {
+          "other_framework_id": "nist-sp-800-53",
+          "other_control_id": "CM-8"
+        },
+        {
+          "other_framework_id": "iso-27001-2022",
+          "other_control_id": "A.5.9"
+        }
+      ],
+      "expected_evidence": "asset_inventory, cmdb_export, discovery_scan_report"
+    },
+    {
+      "question_id": "4560d363-00ed-5c86-af63-673c13b9c9f1",
+      "question_text": "Is the organization implementing and operating the control: Inventories of software, services, and systems managed by the organization are maintained?",
+      "question_type": "yes_no",
+      "framework_name": "NIST CSF 2.0",
+      "framework_key": "nist-csf-2-0",
+      "domain_id": "ID",
+      "domain_name": "Identify",
+      "control_id": "ID.AM-02",
+      "cross_references": [
+        {
+          "other_framework_id": "nist-sp-800-53",
+          "other_control_id": "CM-8"
+        },
+        {
+          "other_framework_id": "iso-27001-2022",
+          "other_control_id": "A.5.9"
+        }
+      ],
+      "expected_evidence": "software_inventory, license_register, sbom"
+    },
+    {
+      "question_id": "19054a70-a77e-5694-85a1-07483a9d3fb5",
+      "question_text": "Upload evidence such as software_inventory, license_register, sbom that demonstrates: Inventories of software, services, and systems managed by the organization are maintained.",
+      "question_type": "evidence_upload",
+      "framework_name": "NIST CSF 2.0",
+      "framework_key": "nist-csf-2-0",
+      "domain_id": "ID",
+      "domain_name": "Identify",
+      "control_id": "ID.AM-02",
+      "cross_references": [
+        {
+          "other_framework_id": "nist-sp-800-53",
+          "other_control_id": "CM-8"
+        },
+        {
+          "other_framework_id": "iso-27001-2022",
+          "other_control_id": "A.5.9"
+        }
+      ],
+      "expected_evidence": "software_inventory, license_register, sbom"
+    },
+    {
+      "question_id": "2ea2e7db-7f56-5209-b053-dbe67eaa4cd0",
+      "question_text": "Is the organization implementing and operating the control: Assets are prioritized based on classification, criticality, resources, and impact on the mission?",
+      "question_type": "yes_no",
+      "framework_name": "NIST CSF 2.0",
+      "framework_key": "nist-csf-2-0",
+      "domain_id": "ID",
+      "domain_name": "Identify",
+      "control_id": "ID.AM-05",
+      "cross_references": [
+        {
+          "other_framework_id": "iso-27001-2022",
+          "other_control_id": "A.5.12"
+        },
+        {
+          "other_framework_id": "nist-sp-800-53",
+          "other_control_id": "RA-2"
+        }
+      ],
+      "expected_evidence": "asset_classification_policy, bia_report, risk_register"
+    },
+    {
+      "question_id": "c35a94f0-dec7-565d-8d9e-1c87c5d4952b",
+      "question_text": "Upload evidence such as asset_classification_policy, bia_report, risk_register that demonstrates: Assets are prioritized based on classification, criticality, resources, and impact on the mission.",
+      "question_type": "evidence_upload",
+      "framework_name": "NIST CSF 2.0",
+      "framework_key": "nist-csf-2-0",
+      "domain_id": "ID",
+      "domain_name": "Identify",
+      "control_id": "ID.AM-05",
+      "cross_references": [
+        {
+          "other_framework_id": "iso-27001-2022",
+          "other_control_id": "A.5.12"
+        },
+        {
+          "other_framework_id": "nist-sp-800-53",
+          "other_control_id": "RA-2"
+        }
+      ],
+      "expected_evidence": "asset_classification_policy, bia_report, risk_register"
+    },
+    {
+      "question_id": "1ed40acb-39e4-51bd-a468-3399bb556e3b",
+      "question_text": "Is the organization implementing and operating the control: Improvements are identified from evaluations?",
+      "question_type": "yes_no",
+      "framework_name": "NIST CSF 2.0",
+      "framework_key": "nist-csf-2-0",
+      "domain_id": "ID",
+      "domain_name": "Identify",
+      "control_id": "ID.IM-01",
+      "cross_references": [
+        {
+          "other_framework_id": "iso-27001-2022",
+          "other_control_id": "10.1"
+        },
+        {
+          "other_framework_id": "nist-sp-800-53",
+          "other_control_id": "CA-7"
+        }
+      ],
+      "expected_evidence": "audit_findings, lessons_learned, improvement_log"
+    },
+    {
+      "question_id": "864d3743-b0ba-5841-b97a-aef428cb7b26",
+      "question_text": "Upload evidence such as audit_findings, lessons_learned, improvement_log that demonstrates: Improvements are identified from evaluations.",
+      "question_type": "evidence_upload",
+      "framework_name": "NIST CSF 2.0",
+      "framework_key": "nist-csf-2-0",
+      "domain_id": "ID",
+      "domain_name": "Identify",
+      "control_id": "ID.IM-01",
+      "cross_references": [
+        {
+          "other_framework_id": "iso-27001-2022",
+          "other_control_id": "10.1"
+        },
+        {
+          "other_framework_id": "nist-sp-800-53",
+          "other_control_id": "CA-7"
+        }
+      ],
+      "expected_evidence": "audit_findings, lessons_learned, improvement_log"
+    },
+    {
+      "question_id": "269aa860-337a-5579-9cae-5775d2979122",
+      "question_text": "Is the organization implementing and operating the control: Vulnerabilities in assets are identified, validated, and recorded?",
+      "question_type": "yes_no",
+      "framework_name": "NIST CSF 2.0",
+      "framework_key": "nist-csf-2-0",
+      "domain_id": "ID",
+      "domain_name": "Identify",
+      "control_id": "ID.RA-01",
+      "cross_references": [
+        {
+          "other_framework_id": "nist-sp-800-53",
+          "other_control_id": "RA-5"
+        },
+        {
+          "other_framework_id": "iso-27001-2022",
+          "other_control_id": "A.8.8"
+        }
+      ],
+      "expected_evidence": "vulnerability_scan_report, cve_tracker, patch_log"
+    },
+    {
+      "question_id": "d2022515-05b2-5f53-8363-9015868e92e0",
+      "question_text": "Upload evidence such as vulnerability_scan_report, cve_tracker, patch_log that demonstrates: Vulnerabilities in assets are identified, validated, and recorded.",
+      "question_type": "evidence_upload",
+      "framework_name": "NIST CSF 2.0",
+      "framework_key": "nist-csf-2-0",
+      "domain_id": "ID",
+      "domain_name": "Identify",
+      "control_id": "ID.RA-01",
+      "cross_references": [
+        {
+          "other_framework_id": "nist-sp-800-53",
+          "other_control_id": "RA-5"
+        },
+        {
+          "other_framework_id": "iso-27001-2022",
+          "other_control_id": "A.8.8"
+        }
+      ],
+      "expected_evidence": "vulnerability_scan_report, cve_tracker, patch_log"
+    },
+    {
+      "question_id": "40aadea8-683f-5e9b-89d1-4c7cea404463",
+      "question_text": "Is the organization implementing and operating the control: Cyber threat intelligence is received from information sharing forums and sources?",
+      "question_type": "yes_no",
+      "framework_name": "NIST CSF 2.0",
+      "framework_key": "nist-csf-2-0",
+      "domain_id": "ID",
+      "domain_name": "Identify",
+      "control_id": "ID.RA-02",
+      "cross_references": [
+        {
+          "other_framework_id": "nist-sp-800-150",
+          "other_control_id": ""
+        },
+        {
+          "other_framework_id": "iso-27001-2022",
+          "other_control_id": "A.5.7"
+        }
+      ],
+      "expected_evidence": "threat_intel_feeds, isac_membership, threat_reports"
+    },
+    {
+      "question_id": "d8c9b989-7c06-555f-8f93-837087f6699d",
+      "question_text": "Upload evidence such as threat_intel_feeds, isac_membership, threat_reports that demonstrates: Cyber threat intelligence is received from information sharing forums and sources.",
+      "question_type": "evidence_upload",
+      "framework_name": "NIST CSF 2.0",
+      "framework_key": "nist-csf-2-0",
+      "domain_id": "ID",
+      "domain_name": "Identify",
+      "control_id": "ID.RA-02",
+      "cross_references": [
+        {
+          "other_framework_id": "nist-sp-800-150",
+          "other_control_id": ""
+        },
+        {
+          "other_framework_id": "iso-27001-2022",
+          "other_control_id": "A.5.7"
+        }
+      ],
+      "expected_evidence": "threat_intel_feeds, isac_membership, threat_reports"
+    },
+    {
+      "question_id": "db3dbb90-4593-5cb7-9f61-8d7fc2784676",
+      "question_text": "Is the organization implementing and operating the control: Risk responses are chosen, prioritized, planned, tracked, and communicated?",
+      "question_type": "yes_no",
+      "framework_name": "NIST CSF 2.0",
+      "framework_key": "nist-csf-2-0",
+      "domain_id": "ID",
+      "domain_name": "Identify",
+      "control_id": "ID.RA-06",
+      "cross_references": [
+        {
+          "other_framework_id": "iso-27001-2022",
+          "other_control_id": "6.1.3"
+        },
+        {
+          "other_framework_id": "nist-sp-800-39",
+          "other_control_id": ""
+        }
+      ],
+      "expected_evidence": "risk_treatment_plan, risk_register, remediation_tickets"
+    },
+    {
+      "question_id": "39f8f2bd-0d45-5352-b9b4-aae75c237a42",
+      "question_text": "Upload evidence such as risk_treatment_plan, risk_register, remediation_tickets that demonstrates: Risk responses are chosen, prioritized, planned, tracked, and communicated.",
+      "question_type": "evidence_upload",
+      "framework_name": "NIST CSF 2.0",
+      "framework_key": "nist-csf-2-0",
+      "domain_id": "ID",
+      "domain_name": "Identify",
+      "control_id": "ID.RA-06",
+      "cross_references": [
+        {
+          "other_framework_id": "iso-27001-2022",
+          "other_control_id": "6.1.3"
+        },
+        {
+          "other_framework_id": "nist-sp-800-39",
+          "other_control_id": ""
+        }
+      ],
+      "expected_evidence": "risk_treatment_plan, risk_register, remediation_tickets"
+    }
+  ],
+  "part3_tracker": [
+    {
+      "framework": "NIST CSF 2.0",
+      "domain": "Identify",
+      "sub_topic": "Asset Management and Inventory",
+      "control_id": "ID.AM-01, ID.AM-02, ID.AM-05, ID.IM-01, ID.RA-01, ID.RA-02, ID.RA-06",
+      "evidence_request": "asset_inventory",
+      "answer_format": "status_text",
+      "status": ""
+    },
+    {
+      "framework": "NIST CSF 2.0",
+      "domain": "Identify",
+      "sub_topic": "Asset Management and Inventory",
+      "control_id": "ID.AM-01, ID.AM-02, ID.AM-05, ID.IM-01, ID.RA-01, ID.RA-02, ID.RA-06",
+      "evidence_request": "cmdb_export",
+      "answer_format": "status_text",
+      "status": ""
+    },
+    {
+      "framework": "NIST CSF 2.0",
+      "domain": "Identify",
+      "sub_topic": "Asset Management and Inventory",
+      "control_id": "ID.AM-01, ID.AM-02, ID.AM-05, ID.IM-01, ID.RA-01, ID.RA-02, ID.RA-06",
+      "evidence_request": "discovery_scan_report",
+      "answer_format": "status_text",
+      "status": ""
+    },
+    {
+      "framework": "NIST CSF 2.0",
+      "domain": "Identify",
+      "sub_topic": "Asset Management and Inventory",
+      "control_id": "ID.AM-01, ID.AM-02, ID.AM-05, ID.IM-01, ID.RA-01, ID.RA-02, ID.RA-06",
+      "evidence_request": "software_inventory",
+      "answer_format": "status_text",
+      "status": ""
+    },
+    {
+      "framework": "NIST CSF 2.0",
+      "domain": "Identify",
+      "sub_topic": "Asset Management and Inventory",
+      "control_id": "ID.AM-01, ID.AM-02, ID.AM-05, ID.IM-01, ID.RA-01, ID.RA-02, ID.RA-06",
+      "evidence_request": "vulnerability_scan_report",
+      "answer_format": "status_text",
+      "status": ""
+    },
+    {
+      "framework": "CIS Controls v8.1.2",
+      "domain": "Access Control Management",
+      "sub_topic": "Access Control Management",
+      "control_id": "6.1, 6.2, 6.3, 6.4, 6.5, 6.6, 6.7, 6.8",
+      "evidence_request": "project_record",
+      "answer_format": "status_text",
+      "status": ""
+    },
+    {
+      "framework": "CIS Controls v8.1.2",
+      "domain": "Access Control Management",
+      "sub_topic": "Access Control Management",
+      "control_id": "6.1, 6.2, 6.3, 6.4, 6.5, 6.6, 6.7, 6.8",
+      "evidence_request": "change_ticket",
+      "answer_format": "status_text",
+      "status": ""
+    },
+    {
+      "framework": "CIS Controls v8.1.2",
+      "domain": "Access Control Management",
+      "sub_topic": "Access Control Management",
+      "control_id": "6.1, 6.2, 6.3, 6.4, 6.5, 6.6, 6.7, 6.8",
+      "evidence_request": "engineering_standard",
+      "answer_format": "status_text",
+      "status": ""
+    },
+    {
+      "framework": "CIS Controls v8.1.2",
+      "domain": "Access Control Management",
+      "sub_topic": "Access Control Management",
+      "control_id": "6.1, 6.2, 6.3, 6.4, 6.5, 6.6, 6.7, 6.8",
+      "evidence_request": "implementation_evidence",
+      "answer_format": "status_text",
+      "status": ""
+    },
+    {
+      "framework": "CIS Controls v8.1.2",
+      "domain": "Access Control Management",
+      "sub_topic": "Access Control Management",
+      "control_id": "6.1, 6.2, 6.3, 6.4, 6.5, 6.6, 6.7, 6.8",
+      "evidence_request": "inventory",
+      "answer_format": "status_text",
+      "status": ""
+    },
+    {
+      "framework": "CIS Controls v8.1.2",
+      "domain": "Access Control Management",
+      "sub_topic": "Access Control Management",
+      "control_id": "6.1, 6.2, 6.3, 6.4, 6.5, 6.6, 6.7, 6.8",
+      "evidence_request": "asset_register",
+      "answer_format": "status_text",
+      "status": ""
+    }
+  ],
+  "red_flags_by_domain": [
+    {
+      "domain_name": "Identify",
+      "framework_name": "NIST CSF 2.0",
+      "red_flags": [
+        {
+          "critical_gap": "Inaccurate or incomplete asset inventories, leading to unidentified vulnerabilities and unaddressed risks.",
+          "recommended_action": "Conduct a thorough asset discovery and inventory update, and implement a regular review and update process."
+        },
+        {
+          "critical_gap": "Lack of asset prioritization, resulting in inadequate risk assessment and response.",
+          "recommended_action": "Develop and implement a comprehensive asset classification and prioritization framework, and apply it to all assets."
+        },
+        {
+          "critical_gap": "Insufficient vulnerability identification and management, leading to unaddressed vulnerabilities and increased risk.",
+          "recommended_action": "Implement a regular vulnerability scanning and management process, and ensure that all identified vulnerabilities are tracked, prioritized, and remediated."
+        }
+      ]
+    },
+    {
+      "domain_name": "Access Control Management",
+      "framework_name": "CIS Controls v8.1.2",
+      "red_flags": [
+        {
+          "critical_gap": "Access control processes are not documented or automated, leading to inconsistent and potentially insecure access granting and revocation.",
+          "recommended_action": "Implement a documented and automated access control process, utilizing tools like Okta or Azure AD, and conduct regular reviews of access rights and authentication systems."
+        },
+        {
+          "critical_gap": "Multi-factor authentication is not enforced for externally-exposed applications or remote network access, increasing the risk of unauthorized access.",
+          "recommended_action": "Enforce multi-factor authentication for all externally-exposed applications and remote network access, using a directory service or SSO provider where possible."
+        },
+        {
+          "critical_gap": "Role-based access controls are not defined or maintained, leading to overly permissive access and increased risk of data breaches.",
+          "recommended_action": "Define and maintain role-based access controls, determining and documenting the necessary access rights for each role, and conduct regular access control reviews."
+        }
+      ]
+    }
+  ],
+  "selected_domain_keys": [
+    "nist-csf-2-0:ID",
+    "cis-controls-v8-1-2:6"
+  ],
+  "ingested_at": "2026-06-08T06:30:02.953206+00:00",
+  "Domains": [
+    {
+      "domain_id": "ID",
+      "domain_name": "Identify",
+      "Controls": [
+        {
+          "control_id": "ID.AM-01",
+          "control_statement": "Inventories of hardware managed by the organization are maintained.",
+          "maturity_levels": [
+            "Initial"
+          ],
+          "expected_evidence_types": [
+            "asset_inventory, cmdb_export, discovery_scan_report"
+          ],
+          "cross_references": [
+            {
+              "other_framework_id": "nist-sp-800-53",
+              "other_control_id": "CM-8"
+            },
+            {
+              "other_framework_id": "iso-27001-2022",
+              "other_control_id": "A.5.9"
+            }
+          ],
+          "Questions": [
+            {
+              "question_id": "302e287a-d9c4-5b65-8bee-7582d01ce75e",
+              "question_text": "Is the organization implementing and operating the control: Inventories of hardware managed by the organization are maintained?",
+              "question_type": "yes_no",
+              "weight": 3
+            },
+            {
+              "question_id": "ba96c309-7f81-5dca-81fc-a18a5c9fd4f6",
+              "question_text": "Upload evidence such as asset_inventory, cmdb_export, discovery_scan_report that demonstrates: Inventories of hardware managed by the organization are maintained.",
+              "question_type": "evidence_upload",
+              "weight": 3
+            }
+          ]
+        },
+        {
+          "control_id": "ID.AM-02",
+          "control_statement": "Inventories of software, services, and systems managed by the organization are maintained.",
+          "maturity_levels": [
+            "Initial"
+          ],
+          "expected_evidence_types": [
+            "software_inventory, license_register, sbom"
+          ],
+          "cross_references": [
+            {
+              "other_framework_id": "nist-sp-800-53",
+              "other_control_id": "CM-8"
+            },
+            {
+              "other_framework_id": "iso-27001-2022",
+              "other_control_id": "A.5.9"
+            }
+          ],
+          "Questions": [
+            {
+              "question_id": "4560d363-00ed-5c86-af63-673c13b9c9f1",
+              "question_text": "Is the organization implementing and operating the control: Inventories of software, services, and systems managed by the organization are maintained?",
+              "question_type": "yes_no",
+              "weight": 3
+            },
+            {
+              "question_id": "19054a70-a77e-5694-85a1-07483a9d3fb5",
+              "question_text": "Upload evidence such as software_inventory, license_register, sbom that demonstrates: Inventories of software, services, and systems managed by the organization are maintained.",
+              "question_type": "evidence_upload",
+              "weight": 3
+            }
+          ]
+        },
+        {
+          "control_id": "ID.AM-05",
+          "control_statement": "Assets are prioritized based on classification, criticality, resources, and impact on the mission.",
+          "maturity_levels": [
+            "Initial"
+          ],
+          "expected_evidence_types": [
+            "asset_classification_policy, bia_report, risk_register"
+          ],
+          "cross_references": [
+            {
+              "other_framework_id": "iso-27001-2022",
+              "other_control_id": "A.5.12"
+            },
+            {
+              "other_framework_id": "nist-sp-800-53",
+              "other_control_id": "RA-2"
+            }
+          ],
+          "Questions": [
+            {
+              "question_id": "2ea2e7db-7f56-5209-b053-dbe67eaa4cd0",
+              "question_text": "Is the organization implementing and operating the control: Assets are prioritized based on classification, criticality, resources, and impact on the mission?",
+              "question_type": "yes_no",
+              "weight": 3
+            },
+            {
+              "question_id": "c35a94f0-dec7-565d-8d9e-1c87c5d4952b",
+              "question_text": "Upload evidence such as asset_classification_policy, bia_report, risk_register that demonstrates: Assets are prioritized based on classification, criticality, resources, and impact on the mission.",
+              "question_type": "evidence_upload",
+              "weight": 3
+            }
+          ]
+        },
+        {
+          "control_id": "ID.IM-01",
+          "control_statement": "Improvements are identified from evaluations.",
+          "maturity_levels": [
+            "Initial"
+          ],
+          "expected_evidence_types": [
+            "audit_findings, lessons_learned, improvement_log"
+          ],
+          "cross_references": [
+            {
+              "other_framework_id": "iso-27001-2022",
+              "other_control_id": "10.1"
+            },
+            {
+              "other_framework_id": "nist-sp-800-53",
+              "other_control_id": "CA-7"
+            }
+          ],
+          "Questions": [
+            {
+              "question_id": "1ed40acb-39e4-51bd-a468-3399bb556e3b",
+              "question_text": "Is the organization implementing and operating the control: Improvements are identified from evaluations?",
+              "question_type": "yes_no",
+              "weight": 3
+            },
+            {
+              "question_id": "864d3743-b0ba-5841-b97a-aef428cb7b26",
+              "question_text": "Upload evidence such as audit_findings, lessons_learned, improvement_log that demonstrates: Improvements are identified from evaluations.",
+              "question_type": "evidence_upload",
+              "weight": 3
+            }
+          ]
+        },
+        {
+          "control_id": "ID.RA-01",
+          "control_statement": "Vulnerabilities in assets are identified, validated, and recorded.",
+          "maturity_levels": [
+            "Initial"
+          ],
+          "expected_evidence_types": [
+            "vulnerability_scan_report, cve_tracker, patch_log"
+          ],
+          "cross_references": [
+            {
+              "other_framework_id": "nist-sp-800-53",
+              "other_control_id": "RA-5"
+            },
+            {
+              "other_framework_id": "iso-27001-2022",
+              "other_control_id": "A.8.8"
+            }
+          ],
+          "Questions": [
+            {
+              "question_id": "269aa860-337a-5579-9cae-5775d2979122",
+              "question_text": "Is the organization implementing and operating the control: Vulnerabilities in assets are identified, validated, and recorded?",
+              "question_type": "yes_no",
+              "weight": 3
+            },
+            {
+              "question_id": "d2022515-05b2-5f53-8363-9015868e92e0",
+              "question_text": "Upload evidence such as vulnerability_scan_report, cve_tracker, patch_log that demonstrates: Vulnerabilities in assets are identified, validated, and recorded.",
+              "question_type": "evidence_upload",
+              "weight": 3
+            }
+          ]
+        },
+        {
+          "control_id": "ID.RA-02",
+          "control_statement": "Cyber threat intelligence is received from information sharing forums and sources.",
+          "maturity_levels": [
+            "Initial"
+          ],
+          "expected_evidence_types": [
+            "threat_intel_feeds, isac_membership, threat_reports"
+          ],
+          "cross_references": [
+            {
+              "other_framework_id": "nist-sp-800-150",
+              "other_control_id": ""
+            },
+            {
+              "other_framework_id": "iso-27001-2022",
+              "other_control_id": "A.5.7"
+            }
+          ],
+          "Questions": [
+            {
+              "question_id": "40aadea8-683f-5e9b-89d1-4c7cea404463",
+              "question_text": "Is the organization implementing and operating the control: Cyber threat intelligence is received from information sharing forums and sources?",
+              "question_type": "yes_no",
+              "weight": 3
+            },
+            {
+              "question_id": "d8c9b989-7c06-555f-8f93-837087f6699d",
+              "question_text": "Upload evidence such as threat_intel_feeds, isac_membership, threat_reports that demonstrates: Cyber threat intelligence is received from information sharing forums and sources.",
+              "question_type": "evidence_upload",
+              "weight": 3
+            }
+          ]
+        },
+        {
+          "control_id": "ID.RA-06",
+          "control_statement": "Risk responses are chosen, prioritized, planned, tracked, and communicated.",
+          "maturity_levels": [
+            "Initial"
+          ],
+          "expected_evidence_types": [
+            "risk_treatment_plan, risk_register, remediation_tickets"
+          ],
+          "cross_references": [
+            {
+              "other_framework_id": "iso-27001-2022",
+              "other_control_id": "6.1.3"
+            },
+            {
+              "other_framework_id": "nist-sp-800-39",
+              "other_control_id": ""
+            }
+          ],
+          "Questions": [
+            {
+              "question_id": "db3dbb90-4593-5cb7-9f61-8d7fc2784676",
+              "question_text": "Is the organization implementing and operating the control: Risk responses are chosen, prioritized, planned, tracked, and communicated?",
+              "question_type": "yes_no",
+              "weight": 3
+            },
+            {
+              "question_id": "39f8f2bd-0d45-5352-b9b4-aae75c237a42",
+              "question_text": "Upload evidence such as risk_treatment_plan, risk_register, remediation_tickets that demonstrates: Risk responses are chosen, prioritized, planned, tracked, and communicated.",
+              "question_type": "evidence_upload",
+              "weight": 3
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "domain_id": "6",
+      "domain_name": "Access Control Management",
+      "Controls": [
+        {
+          "control_id": "6.1",
+          "control_statement": "Establish an Access Granting Process: Establish and follow a documented process, preferably automated, for granting access to enterprise assets upon new hire or role change of a user.",
+          "maturity_levels": [
+            "Defined"
+          ],
+          "expected_evidence_types": [
+            "project_record, change_ticket, engineering_standard"
+          ],
+          "cross_references": [
+            {
+              "other_framework_id": "nist-csf-2-0",
+              "other_control_id": "GV.RR-04"
+            }
+          ],
+          "Questions": [
+            {
+              "question_id": "3c3409ca-4333-5cdd-b58d-149cf81c8b06",
+              "question_text": "Is the organization implementing and operating the control: Establish an Access Granting Process: Establish and follow a documented process, preferably automated, for granting access to enterprise assets upon new hire or role change of a user?",
+              "question_type": "yes_no",
+              "weight": 3
+            },
+            {
+              "question_id": "dcb8acfe-a69a-5333-98f5-ae000fc99a59",
+              "question_text": "Upload evidence such as project_record, change_ticket, engineering_standard that demonstrates: Establish an Access Granting Process: Establish and follow a documented process, preferably automated, for granting access to enterprise assets upon new hire or role change of a user.",
+              "question_type": "evidence_upload",
+              "weight": 3
+            }
+          ]
+        },
+        {
+          "control_id": "6.2",
+          "control_statement": "Establish an Access Revoking Process: Establish and follow a process, preferably automated, for revoking access to enterprise assets, through disabling accounts immediately upon termination, rights revocation, or role change of a user. Disabling accounts, instead of deleting accounts, may be necessary to preserve audit trails.",
+          "maturity_levels": [
+            "Defined"
+          ],
+          "expected_evidence_types": [
+            "project_record, change_ticket, engineering_standard"
+          ],
+          "cross_references": [
+            {
+              "other_framework_id": "nist-csf-2-0",
+              "other_control_id": "GV.RR-04"
+            }
+          ],
+          "Questions": [
+            {
+              "question_id": "d9066a00-4c16-56fe-9880-d4fc0b23ffa9",
+              "question_text": "Is the organization implementing and operating the control: Establish an Access Revoking Process: Establish and follow a process, preferably automated, for revoking access to enterprise assets, through disabling accounts immediately upon termination, rights revocation, or role change of a user. Disabling accounts, instead of deleting accounts, may be necessary to preserve audit trails?",
+              "question_type": "yes_no",
+              "weight": 3
+            },
+            {
+              "question_id": "31563fef-e845-57e3-b954-f73875dac99b",
+              "question_text": "Upload evidence such as project_record, change_ticket, engineering_standard that demonstrates: Establish an Access Revoking Process: Establish and follow a process, preferably automated, for revoking access to enterprise assets, through disabling accounts immediately upon termination, rights revocation, or role change of a user. Disabling accounts, instead of deleting accounts, may be necessary to preserve audit trails.",
+              "question_type": "evidence_upload",
+              "weight": 3
+            }
+          ]
+        },
+        {
+          "control_id": "6.3",
+          "control_statement": "Require MFA for Externally-Exposed Applications: Require all externally-exposed enterprise or third-party applications to enforce MFA, where supported. Enforcing MFA through a directory service or SSO provider is a satisfactory implementation of this Safeguard.",
+          "maturity_levels": [
+            "Defined"
+          ],
+          "expected_evidence_types": [
+            "implementation_evidence, operational_record"
+          ],
+          "cross_references": [],
+          "Questions": [
+            {
+              "question_id": "5f7630d0-809a-5075-ac9b-ad9fcd19605c",
+              "question_text": "Is the organization implementing and operating the control: Require MFA for Externally-Exposed Applications: Require all externally-exposed enterprise or third-party applications to enforce MFA, where supported. Enforcing MFA through a directory service or SSO provider is a satisfactory implementation of this Safeguard?",
+              "question_type": "yes_no",
+              "weight": 3
+            },
+            {
+              "question_id": "ba4601bd-d221-5033-9fe2-94cdd5740637",
+              "question_text": "Upload evidence such as implementation_evidence, operational_record that demonstrates: Require MFA for Externally-Exposed Applications: Require all externally-exposed enterprise or third-party applications to enforce MFA, where supported. Enforcing MFA through a directory service or SSO provider is a satisfactory implementation of this Safeguard.",
+              "question_type": "evidence_upload",
+              "weight": 3
+            }
+          ]
+        },
+        {
+          "control_id": "6.4",
+          "control_statement": "Require MFA for Remote Network Access: Require MFA for remote network access.",
+          "maturity_levels": [
+            "Defined"
+          ],
+          "expected_evidence_types": [
+            "technical_control_record, system_config, monitoring_report"
+          ],
+          "cross_references": [],
+          "Questions": [
+            {
+              "question_id": "64873bab-2460-5df5-9af8-0c5337268649",
+              "question_text": "Is the organization implementing and operating the control: Require MFA for Remote Network Access: Require MFA for remote network access?",
+              "question_type": "yes_no",
+              "weight": 3
+            },
+            {
+              "question_id": "46bc11c9-7564-59f4-ba9a-db4f198a0b58",
+              "question_text": "Upload evidence such as technical_control_record, system_config, monitoring_report that demonstrates: Require MFA for Remote Network Access: Require MFA for remote network access.",
+              "question_type": "evidence_upload",
+              "weight": 3
+            }
+          ]
+        },
+        {
+          "control_id": "6.5",
+          "control_statement": "Require MFA for Administrative Access: Require MFA for all administrative access accounts, where supported, on all enterprise assets, whether managed on-site or through a service provider.",
+          "maturity_levels": [
+            "Defined"
+          ],
+          "expected_evidence_types": [
+            "inventory, asset_register, owner_register"
+          ],
+          "cross_references": [],
+          "Questions": [
+            {
+              "question_id": "476fa11c-8989-59e9-ba2d-7e3759639293",
+              "question_text": "Is the organization implementing and operating the control: Require MFA for Administrative Access: Require MFA for all administrative access accounts, where supported, on all enterprise assets, whether managed on-site or through a service provider?",
+              "question_type": "yes_no",
+              "weight": 3
+            },
+            {
+              "question_id": "1e970cfe-7c77-5d60-a3d9-02eb7dc90f44",
+              "question_text": "Upload evidence such as inventory, asset_register, owner_register that demonstrates: Require MFA for Administrative Access: Require MFA for all administrative access accounts, where supported, on all enterprise assets, whether managed on-site or through a service provider.",
+              "question_type": "evidence_upload",
+              "weight": 3
+            }
+          ]
+        },
+        {
+          "control_id": "6.6",
+          "control_statement": "Establish and Maintain an Inventory of Authentication and Authorization Systems: Establish and maintain an inventory of the enterprise's authentication and authorization systems, including those hosted on-site or at a remote service provider. Review and update the inventory, at a minimum, annually, or more frequently.",
+          "maturity_levels": [
+            "Defined"
+          ],
+          "expected_evidence_types": [
+            "project_record, change_ticket, engineering_standard"
+          ],
+          "cross_references": [],
+          "Questions": [
+            {
+              "question_id": "2c90a078-4eb8-5fb7-b39c-09ce9d1f1d6e",
+              "question_text": "Is the organization implementing and operating the control: Establish and Maintain an Inventory of Authentication and Authorization Systems: Establish and maintain an inventory of the enterprise's authentication and authorization systems, including those hosted on-site or at a remote service provider. Review and update the inventory, at a minimum, annually, or more frequently?",
+              "question_type": "yes_no",
+              "weight": 3
+            },
+            {
+              "question_id": "b13be3b6-10aa-5b3f-bdb4-cb7951607daa",
+              "question_text": "Upload evidence such as project_record, change_ticket, engineering_standard that demonstrates: Establish and Maintain an Inventory of Authentication and Authorization Systems: Establish and maintain an inventory of the enterprise's authentication and authorization systems, including those hosted on-site or at a remote service provider. Review and update the inventory, at a minimum, annually, or more frequently.",
+              "question_type": "evidence_upload",
+              "weight": 3
+            }
+          ]
+        },
+        {
+          "control_id": "6.7",
+          "control_statement": "Centralize Access Control: Centralize access control for all enterprise assets through a directory service or SSO provider, where supported.",
+          "maturity_levels": [
+            "Defined"
+          ],
+          "expected_evidence_types": [
+            "inventory, asset_register, owner_register"
+          ],
+          "cross_references": [],
+          "Questions": [
+            {
+              "question_id": "9c578377-13ff-5031-b98a-c6f8f47d2ff1",
+              "question_text": "Is the organization implementing and operating the control: Centralize Access Control: Centralize access control for all enterprise assets through a directory service or SSO provider, where supported?",
+              "question_type": "yes_no",
+              "weight": 3
+            },
+            {
+              "question_id": "1f5b39cd-893c-59f8-819a-f57aa116fdd8",
+              "question_text": "Upload evidence such as inventory, asset_register, owner_register that demonstrates: Centralize Access Control: Centralize access control for all enterprise assets through a directory service or SSO provider, where supported.",
+              "question_type": "evidence_upload",
+              "weight": 3
+            }
+          ]
+        },
+        {
+          "control_id": "6.8",
+          "control_statement": "Define and Maintain Role-Based Access Control: Define and maintain role-based access control, through determining and documenting the access rights necessary for each role within the enterprise to successfully carry out its assigned duties. Perform access control reviews of enterprise assets to validate that all privileges are authorized, on a recurring schedule at a minimum annually, or more frequently.",
+          "maturity_levels": [
+            "Defined"
+          ],
+          "expected_evidence_types": [
+            "inventory, asset_register, owner_register"
+          ],
+          "cross_references": [
+            {
+              "other_framework_id": "nist-csf-2-0",
+              "other_control_id": "PR.AA-05"
+            }
+          ],
+          "Questions": [
+            {
+              "question_id": "fa20e132-359e-5bd9-ad44-a8cf14c36432",
+              "question_text": "Is the organization implementing and operating the control: Define and Maintain Role-Based Access Control: Define and maintain role-based access control, through determining and documenting the access rights necessary for each role within the enterprise to successfully carry out its assigned duties. Perform access control reviews of enterprise assets to validate that all privileges are authorized, on a recurring schedule at a minimum annually, or more frequently?",
+              "question_type": "yes_no",
+              "weight": 3
+            },
+            {
+              "question_id": "de5843aa-fcfb-56a0-b128-8f6cb2b1bb75",
+              "question_text": "Upload evidence such as inventory, asset_register, owner_register that demonstrates: Define and Maintain Role-Based Access Control: Define and maintain role-based access control, through determining and documenting the access rights necessary for each role within the enterprise to successfully carry out its assigned duties. Perform access control reviews of enterprise assets to validate that all privileges are authorized, on a recurring schedule at a minimum annually, or more frequently.",
+              "question_type": "evidence_upload",
+              "weight": 3
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

@@ -1,0 +1,6 @@
+Scan ID	Application	Scan Type	Tool	Date Scanned	Branch / Build	Critical	High	Medium	Low	Informational	New Since Last Scan	Gate Status	Ticket	Notes
+SAST-001	E-Commerce Portal	SAST	SonarQube	2024-11-20	main / build-1422	0	1	4	9	6	2 new High	Pass (High<3)	SAST-TICK-001	1 High: SQL injection pattern – under review
+SAST-002	Payments Gateway	SAST	Checkmarx	2024-11-19	main / build-0987	1	2	3	7	4	1 new Critical	Blocked	SAST-TICK-002	Critical: Hardcoded credentials found
+DAST-001	E-Commerce Portal	DAST	OWASP ZAP	2024-11-18	prod-staging	0	2	5	11	8	—	Pass	DAST-TICK-001	XSS findings in search module
+DAST-002	Payments Gateway	DAST	Burp Suite Enterprise	2024-11-17	prod-staging	0	1	2	4	3	—	Pass	DAST-TICK-002	Payment flow tested end-to-end
+SCA-001	E-Commerce Portal	SCA	Snyk	2024-11-20	main	1	3	8	14	—	3 new High	Blocked	SCA-TICK-001	Critical: Log4Shell variant in dependency

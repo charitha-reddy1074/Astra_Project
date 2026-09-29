@@ -1,0 +1,38 @@
+Identity Proofing Procedure
+Document ID: PROC-IAM-004
+Version: 2.1
+Owner: IT Security — Identity Management
+Effective Date: 01 March 2024
+NIST Reference: SP 800-63A (Identity Assurance Level 2)
+
+1. Purpose
+This procedure defines the steps required to verify and confirm the identity of individuals before provisioning access to Acme Corporation information systems. Identity proofing is performed to ensure that access credentials are issued only to verified, authorized individuals.
+
+2. Identity Assurance Levels (IAL)
+
+3. Employee Onboarding — Identity Proofing Steps
+The following steps are performed by HR and IT Security jointly for all new hires:
+HR initiates onboarding request in Workday; employment contract signed
+New hire presents government-issued photo ID (passport or national ID) on Day 1
+HR validates ID against employment records (name, DOB, address)
+ID scan stored in HR system (encrypted, access-restricted)
+IT Security issues corporate email and temporary password via secure channel
+User enrolls MFA device during first login (see MFA Configuration doc)
+Identity proofing record logged in IAM system with date and HR officer name
+
+4. Privileged Account Identity Proofing (IAL3)
+All steps from Section 3 apply
+In-person meeting with IT Security Manager required
+Background check completion verified before privileged access provisioned
+Biometric enrollment (fingerprint) in PAM system
+Signed Privileged Access Agreement obtained and filed
+
+5. Remote/Contractor Identity Proofing
+For remote employees and contractors who cannot present ID in person, the following remote proofing process applies (IAL2 equivalent):
+Video call with HR representative (recorded with consent)
+Government-issued photo ID held up to camera — HR captures screenshot
+Knowledge-based verification questions (prior employer, address history)
+Signed employment agreement with digital signature verified via DocuSign
+
+6. Record Retention
+Identity proofing records are retained for a minimum of 7 years in accordance with SOC 2 Type II requirements and applicable data protection regulations. Records are stored in encrypted form with access restricted to HR and IT Security leadership.

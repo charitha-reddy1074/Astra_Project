@@ -1,0 +1,5 @@
+Incident Response Plan.pdf
+NovaStack Technologies
+Approved 2026-01-15
+
+Security incidents are triaged by the SOC, escalated by severity, and reviewed after closure.

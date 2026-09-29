@@ -1,0 +1,158 @@
+{
+  "verdicts": [
+    {
+      "control_id": "5.1",
+      "compliance_status": "PARTIALLY_COMPLIANT",
+      "confidence_score": 0.6,
+      "matched_evidence": [
+        "data_classification_policy.pdf",
+        "access_control_policy_v3.pdf",
+        "patch_management_policy.pdf"
+      ],
+      "missing_requirements": [
+        "Evidence of management approval for information security policies",
+        "Documentation of policy communication and acknowledgement by relevant personnel and interested parties",
+        "Proof of regular review and update of information security policies"
+      ],
+      "reasoning": "While the company has defined and documented various security policies (e.g., data classification, access control, patch management), there is limited evidence that these policies have been approved by management, communicated to and acknowledged by relevant personnel and interested parties, or reviewed at planned intervals.",
+      "recommendations": [
+        "Obtain management approval for all information security policies",
+        "Develop a process to communicate and obtain acknowledgement of policies from relevant personnel and interested parties",
+        "Establish a regular review and update cycle for all information security policies"
+      ],
+      "evaluated_at": "2026-06-08T04:36:46.673582+00:00"
+    },
+    {
+      "control_id": "5.2",
+      "compliance_status": "NON_COMPLIANT",
+      "confidence_score": 0.2,
+      "matched_evidence": [],
+      "missing_requirements": [
+        "defined information security roles and responsibilities",
+        "allocation of roles according to organizational needs",
+        "documentation of roles and responsibilities"
+      ],
+      "reasoning": "The provided evidence does not contain any information about defined information security roles and responsibilities, or their allocation according to the organization's needs. The evidence focuses on various security categories, but does not address the specific control requirement.",
+      "recommendations": [
+        "Define and document information security roles and responsibilities",
+        "Allocate roles according to organizational needs",
+        "Establish a clear understanding of security responsibilities among personnel"
+      ],
+      "evaluated_at": "2026-06-08T04:36:48.896655+00:00"
+    },
+    {
+      "control_id": "5.3",
+      "compliance_status": "UNKNOWN",
+      "confidence_score": 0.0,
+      "matched_evidence": [],
+      "missing_requirements": [
+        "Evaluation error"
+      ],
+      "reasoning": "Error during evaluation: All LLM models failed after multiple attempts. Last error: Model llama-3.3-70b-versatile: Rate limited (HTTP 429)",
+      "recommendations": [
+        "Retry with a valid evidence file."
+      ],
+      "evaluated_at": "2026-06-08T04:37:05.249051+00:00"
+    },
+    {
+      "control_id": "5.4",
+      "compliance_status": "NON_COMPLIANT",
+      "confidence_score": 0.2,
+      "matched_evidence": [],
+      "missing_requirements": [
+        "Evidence of management requiring personnel to apply information security in accordance with established policies",
+        "Documentation of personnel acknowledging and adhering to information security policies",
+        "Records of management oversight and enforcement of information security policies"
+      ],
+      "reasoning": "The provided evidence does not demonstrate that management requires all personnel to apply information security in accordance with established policies. While various security controls and policies are mentioned, there is no direct evidence that management enforces these policies or that personnel are held accountable for adhering to them.",
+      "recommendations": [
+        "Develop and implement a process for management to require personnel to apply information security policies",
+        "Establish a system for personnel to acknowledge and adhere to information security policies",
+        "Maintain records of management oversight and enforcement of information security policies"
+      ],
+      "evaluated_at": "2026-06-08T04:37:07.353273+00:00"
+    },
+    {
+      "control_id": "5.5",
+      "compliance_status": "NON_COMPLIANT",
+      "confidence_score": 0.0,
+      "matched_evidence": [],
+      "missing_requirements": [
+        "Established and maintained contact with relevant authorities",
+        "Documentation of authority contact information",
+        "Evidence of regular communication with authorities"
+      ],
+      "reasoning": "The provided company evidence does not mention any established contact with relevant authorities, which is a requirement for control 5.5. None of the evidence items or categories directly address this control statement.",
+      "recommendations": [
+        "Establish formal relationships with relevant authorities",
+        "Document authority contact information and communication protocols",
+        "Schedule regular check-ins or meetings with authorities to maintain open lines of communication"
+      ],
+      "evaluated_at": "2026-06-08T04:37:09.661258+00:00"
+    },
+    {
+      "control_id": "5.6",
+      "compliance_status": "NON_COMPLIANT",
+      "confidence_score": 0.0,
+      "matched_evidence": [],
+      "missing_requirements": [
+        "established contact with special interest groups",
+        "maintenance of contact with specialist security forums",
+        "participation in professional associations"
+      ],
+      "reasoning": "The provided company evidence does not mention any contact or engagement with special interest groups, specialist security forums, or professional associations, which is a requirement for control 5.6.",
+      "recommendations": [
+        "Establish relationships with relevant special interest groups",
+        "Participate in specialist security forums and professional associations",
+        "Document and maintain records of these engagements"
+      ],
+      "evaluated_at": "2026-06-08T04:37:12.057367+00:00"
+    },
+    {
+      "control_id": "5.7",
+      "compliance_status": "PARTIALLY_COMPLIANT",
+      "confidence_score": 0.6,
+      "matched_evidence": [
+        "Threat intelligence feeds from FS-ISAC are integrated",
+        "ids_rule_review_q4_2024.docx"
+      ],
+      "missing_requirements": [
+        "Explicit documentation of threat intelligence collection and analysis process",
+        "Evidence of threat intelligence production and dissemination"
+      ],
+      "reasoning": "The company has integrated threat intelligence feeds from FS-ISAC and reviews IDS/IPS rules quarterly, indicating some level of threat intelligence collection and analysis. However, there is no explicit documentation of the threat intelligence collection and analysis process, nor is there evidence of threat intelligence production and dissemination.",
+      "recommendations": [
+        "Develop and document a comprehensive threat intelligence program",
+        "Provide evidence of threat intelligence production and dissemination to relevant stakeholders"
+      ],
+      "evaluated_at": "2026-06-08T04:37:20.047162+00:00"
+    },
+    {
+      "control_id": "5.8",
+      "compliance_status": "NON_COMPLIANT",
+      "confidence_score": 0.0,
+      "matched_evidence": [],
+      "missing_requirements": [
+        "Integration of information security into project management",
+        "Evidence of security considerations in project planning and execution"
+      ],
+      "reasoning": "The provided evidence does not demonstrate the integration of information security into project management. There is no mention of security considerations in project planning, execution, or delivery. The evidence focuses on various security controls and practices, but does not address the specific requirement of incorporating security into project management.",
+      "recommendations": [
+        "Develop a project management framework that incorporates information security considerations",
+        "Establish clear guidelines for integrating security into project planning and execution",
+        "Provide training to project managers and team members on information security best practices"
+      ],
+      "evaluated_at": "2026-06-08T04:37:32.536933+00:00"
+    }
+  ],
+  "summary": {
+    "total_controls_evaluated": 8,
+    "compliant": 0,
+    "partially_compliant": 2,
+    "non_compliant": 5,
+    "unknown": 1,
+    "average_confidence_score": 0.2,
+    "compliance_rate_pct": 0.0
+  },
+  "evaluated_at": "2026-06-08T04:37:32.554360+00:00"
+}

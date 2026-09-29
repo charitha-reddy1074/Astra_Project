@@ -1,0 +1,983 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Assessment Studio</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Sans:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+  <style>
+    *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+
+    :root {
+      --accent:       #3a7bd5;
+      --accent-dark:  #2c62b0;
+      --accent-light: #eaf1fb;
+      --bg:           #f0f2f5;
+      --surface:      #ffffff;
+      --border:       #e2e6ed;
+      --text:         #1a2332;
+      --muted:        #6b7a90;
+      --bar-bg:       #0f1923;
+      --radius-card:  12px;
+      --shadow-card:  0 1px 4px rgba(0,0,0,.08), 0 4px 16px rgba(0,0,0,.04);
+    }
+
+    html, body {
+      font-family: 'IBM Plex Sans', system-ui, sans-serif;
+      font-size: 14px;
+      color: var(--text);
+      background: var(--bg);
+      min-height: 100vh;
+    }
+
+    /* ── App bar ── */
+    .app-bar {
+      position: sticky;
+      top: 0;
+      z-index: 100;
+      background: var(--bar-bg);
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      padding: 0 28px;
+      height: 58px;
+      box-shadow: 0 2px 8px rgba(0,0,0,.3);
+    }
+
+    .app-bar__brand {
+      display: flex;
+      align-items: center;
+      gap: 10px;
+    }
+
+    .app-bar__brand-icon {
+      flex-shrink: 0;
+      color: var(--accent);
+    }
+
+    .app-bar__name {
+      font-size: 17px;
+      font-weight: 700;
+      color: #ffffff;
+      letter-spacing: -.2px;
+      line-height: 1.1;
+    }
+
+    .app-bar__sub {
+      font-size: 10.5px;
+      font-weight: 400;
+      color: rgba(255,255,255,.45);
+      letter-spacing: .6px;
+      text-transform: uppercase;
+      margin-top: 1px;
+    }
+
+    .app-bar__stats {
+      display: flex;
+      gap: 8px;
+    }
+
+    .stat-chip {
+      display: flex;
+      align-items: center;
+      gap: 6px;
+      background: rgba(255,255,255,.08);
+      border: 1px solid rgba(255,255,255,.12);
+      border-radius: 20px;
+      padding: 4px 11px 4px 9px;
+      font-size: 12px;
+      color: rgba(255,255,255,.8);
+      font-weight: 500;
+    }
+
+    .stat-chip__num {
+      font-weight: 700;
+      color: #ffffff;
+    }
+
+    /* ── Flash messages ── */
+    .flash-stack {
+      max-width: 1240px;
+      margin: 18px auto 0;
+      padding: 0 24px;
+      display: flex;
+      flex-direction: column;
+      gap: 8px;
+    }
+
+    .flash {
+      display: flex;
+      align-items: center;
+      gap: 10px;
+      padding: 11px 16px;
+      border-radius: 8px;
+      font-size: 13.5px;
+      font-weight: 500;
+    }
+
+    .flash--success { background: #edfaf3; border: 1px solid #a3e4bf; color: #1a6640; }
+    .flash--error   { background: #fef2f2; border: 1px solid #fca5a5; color: #991b1b; }
+    .flash--warning { background: #fffbeb; border: 1px solid #fcd34d; color: #92400e; }
+    .flash--info    { background: var(--accent-light); border: 1px solid #bfdbfe; color: #1e40af; }
+
+    .flash__close {
+      margin-left: auto;
+      cursor: pointer;
+      background: none;
+      border: none;
+      font-size: 16px;
+      line-height: 1;
+      opacity: .5;
+      color: inherit;
+    }
+
+    .flash__close:hover { opacity: 1; }
+
+    /* ── Page layout ── */
+    .page-body {
+      max-width: 1240px;
+      margin: 24px auto 48px;
+      padding: 0 24px;
+      display: grid;
+      grid-template-columns: 1fr 360px;
+      gap: 24px;
+      align-items: start;
+    }
+
+    @media (max-width: 900px) {
+      .page-body { grid-template-columns: 1fr; }
+    }
+
+    /* ── Cards ── */
+    .card {
+      background: var(--surface);
+      border: 1px solid var(--border);
+      border-radius: var(--radius-card);
+      box-shadow: var(--shadow-card);
+    }
+
+    .step-card {
+      border-left: 4px solid var(--accent);
+      padding: 24px 24px 20px;
+      margin-bottom: 16px;
+    }
+
+    .step-card:last-of-type { margin-bottom: 0; }
+
+    .step-card__header {
+      display: flex;
+      align-items: center;
+      gap: 10px;
+      margin-bottom: 18px;
+    }
+
+    .step-badge {
+      width: 28px;
+      height: 28px;
+      border-radius: 50%;
+      background: var(--accent);
+      color: #fff;
+      font-size: 13px;
+      font-weight: 700;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      flex-shrink: 0;
+    }
+
+    .step-title {
+      font-size: 15px;
+      font-weight: 600;
+      color: var(--text);
+    }
+
+    /* ── Framework chips ── */
+    .framework-selector {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 8px;
+    }
+
+    .framework-chip {
+      display: flex;
+      align-items: center;
+      gap: 8px;
+      padding: 8px 12px;
+      border: 1.5px solid var(--border);
+      border-radius: 8px;
+      background: var(--surface);
+      cursor: pointer;
+      user-select: none;
+      transition: border-color .15s, background .15s, box-shadow .15s;
+      font-weight: 500;
+      font-size: 13px;
+      color: var(--text);
+    }
+
+    .framework-chip input { display: none; }
+
+    .framework-chip:hover {
+      border-color: #b0c4e6;
+      box-shadow: 0 0 0 3px rgba(58,123,213,.08);
+    }
+
+    .framework-chip.is-checked {
+      border-color: var(--accent);
+      background: var(--accent-light);
+    }
+
+    .framework-chip.is-checked .fw-name { color: var(--accent-dark); }
+
+    .fw-name { font-weight: 600; }
+
+    .fw-badge {
+      font-size: 10.5px;
+      font-weight: 600;
+      padding: 2px 6px;
+      border-radius: 10px;
+      margin-left: 2px;
+    }
+
+    .fw-key--nist-csf-2-0 .fw-badge { background: #d1fae5; color: #065f46; }
+    .fw-key--cis           .fw-badge { background: #dbeafe; color: #1e40af; }
+    .fw-key--iso           .fw-badge { background: #ede9fe; color: #5b21b6; }
+    .fw-key--mcd           .fw-badge { background: #ffedd5; color: #c2410c; }
+    .fw-badge-default            { background: #e2e6ed; color: var(--muted); }
+
+    /* ── Domain section note ── */
+    .section-note {
+      font-size: 12.5px;
+      color: var(--muted);
+      margin-bottom: 14px;
+      line-height: 1.5;
+    }
+
+    /* ── Cluster groups ── */
+    .domain-groups {
+      display: flex;
+      flex-direction: column;
+      gap: 14px;
+    }
+
+    .cluster-group {
+      border: 1px solid var(--border);
+      border-radius: 8px;
+      overflow: hidden;
+    }
+
+    .cluster-header {
+      display: flex;
+      align-items: center;
+      gap: 10px;
+      padding: 10px 14px;
+      background: #f7f9fb;
+      border-bottom: 1px solid var(--border);
+      cursor: pointer;
+    }
+
+    .cluster-toggle {
+      width: 15px;
+      height: 15px;
+      accent-color: var(--accent);
+      cursor: pointer;
+      flex-shrink: 0;
+    }
+
+    .cluster-name {
+      font-size: 13px;
+      font-weight: 600;
+      color: var(--text);
+    }
+
+    .cluster-count {
+      font-size: 11px;
+      font-weight: 600;
+      background: var(--border);
+      color: var(--muted);
+      border-radius: 10px;
+      padding: 1px 7px;
+      margin-left: auto;
+    }
+
+    .domain-list {
+      padding: 10px 14px 12px;
+      display: flex;
+      flex-direction: column;
+      gap: 4px;
+    }
+
+    .domain-row {
+      display: flex;
+      align-items: center;
+      gap: 9px;
+      padding: 5px 8px;
+      border-radius: 6px;
+      border: 1px solid transparent;
+      cursor: pointer;
+      user-select: none;
+      transition: border-color .12s, background .12s;
+      font-size: 13px;
+      color: var(--text);
+    }
+
+    .domain-row:hover { background: var(--accent-light); }
+
+    .domain-row.is-checked {
+      border-color: #93b8ea;
+      background: var(--accent-light);
+      border-left: 3px solid var(--accent);
+    }
+
+    .domain-row input { display: none; }
+
+    .domain-id-badge {
+      font-size: 10px;
+      font-weight: 700;
+      padding: 2px 6px;
+      border-radius: 4px;
+      background: #e2e6ed;
+      color: var(--muted);
+      white-space: nowrap;
+      flex-shrink: 0;
+      letter-spacing: .3px;
+    }
+
+    /* ── Generate button ── */
+    .generate-btn {
+      display: block;
+      width: 100%;
+      height: 48px;
+      background: var(--accent);
+      color: #fff;
+      font-family: 'IBM Plex Sans', sans-serif;
+      font-size: 15px;
+      font-weight: 600;
+      border: none;
+      border-radius: 10px;
+      cursor: pointer;
+      margin-top: 20px;
+      letter-spacing: .1px;
+      transition: background .15s, box-shadow .15s, transform .08s;
+    }
+
+    .generate-btn:hover {
+      background: var(--accent-dark);
+      box-shadow: 0 4px 14px rgba(58,123,213,.35);
+    }
+
+    .generate-btn:active { transform: scale(.985); }
+
+    /* ── Upload framework card ── */
+    .upload-card {
+      max-width: 1240px;
+      margin: 20px auto 0;
+      padding: 0 24px;
+    }
+
+    .upload-card .card {
+      border-left: 4px solid #7c3aed;
+      padding: 18px 22px;
+    }
+
+    .upload-card__header {
+      display: flex;
+      align-items: center;
+      gap: 10px;
+      margin-bottom: 0;
+      cursor: pointer;
+      user-select: none;
+    }
+
+    .upload-badge {
+      width: 28px;
+      height: 28px;
+      border-radius: 50%;
+      background: #7c3aed;
+      color: #fff;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      flex-shrink: 0;
+    }
+
+    .upload-title {
+      font-size: 15px;
+      font-weight: 600;
+      color: var(--text);
+      flex: 1;
+    }
+
+    .upload-toggle-hint {
+      font-size: 12px;
+      color: var(--muted);
+      font-weight: 400;
+    }
+
+    .upload-body {
+      margin-top: 16px;
+      display: none;
+    }
+
+    .upload-body.is-open { display: block; }
+
+    .upload-row {
+      display: flex;
+      gap: 12px;
+      flex-wrap: wrap;
+      align-items: flex-end;
+    }
+
+    .upload-field {
+      display: flex;
+      flex-direction: column;
+      gap: 5px;
+    }
+
+    .upload-field label {
+      font-size: 12px;
+      font-weight: 600;
+      color: var(--muted);
+      text-transform: uppercase;
+      letter-spacing: .4px;
+    }
+
+    .upload-input {
+      height: 38px;
+      border: 1.5px solid var(--border);
+      border-radius: 7px;
+      padding: 0 11px;
+      font-family: inherit;
+      font-size: 13.5px;
+      color: var(--text);
+      background: var(--surface);
+      outline: none;
+      transition: border-color .15s;
+    }
+
+    .upload-input:focus { border-color: #7c3aed; }
+
+    .upload-file-wrap {
+      flex: 1;
+      min-width: 200px;
+    }
+
+    .upload-file-wrap .upload-input { width: 100%; cursor: pointer; }
+
+    .upload-name-wrap { min-width: 200px; }
+    .upload-name-wrap .upload-input { width: 220px; }
+
+    .upload-ver-wrap .upload-input { width: 120px; }
+
+    .upload-submit {
+      height: 38px;
+      padding: 0 20px;
+      background: #7c3aed;
+      color: #fff;
+      border: none;
+      border-radius: 7px;
+      font-family: inherit;
+      font-size: 13.5px;
+      font-weight: 600;
+      cursor: pointer;
+      white-space: nowrap;
+      transition: background .15s, box-shadow .15s;
+    }
+
+    .upload-submit:hover { background: #6d28d9; box-shadow: 0 3px 10px rgba(109,40,217,.3); }
+    .upload-submit:disabled { opacity: .6; cursor: not-allowed; }
+
+    .upload-hint {
+      margin-top: 10px;
+      font-size: 11.5px;
+      color: var(--muted);
+    }
+
+    .upload-spinner {
+      display: none;
+      align-items: center;
+      gap: 8px;
+      margin-top: 12px;
+      font-size: 13px;
+      color: #7c3aed;
+      font-weight: 500;
+    }
+
+    .upload-spinner.is-active { display: flex; }
+
+    @keyframes spin { to { transform: rotate(360deg); } }
+    .spinner-icon { animation: spin 1s linear infinite; }
+
+    /* ── Sidebar ── */
+    .sidebar {
+      position: sticky;
+      top: 74px;
+    }
+
+    .sidebar-card {
+      padding: 0;
+      overflow: hidden;
+    }
+
+    .sidebar-header {
+      display: flex;
+      align-items: center;
+      gap: 10px;
+      padding: 16px 20px 14px;
+      border-bottom: 1px solid var(--border);
+    }
+
+    .sidebar-title {
+      font-size: 14px;
+      font-weight: 700;
+      color: var(--text);
+    }
+
+    .sidebar-count {
+      font-size: 11px;
+      font-weight: 700;
+      background: var(--accent);
+      color: #fff;
+      border-radius: 10px;
+      padding: 2px 8px;
+      margin-left: auto;
+    }
+
+    .q-list {
+      list-style: none;
+      max-height: calc(100vh - 160px);
+      overflow-y: auto;
+      padding: 10px 12px 12px;
+      display: flex;
+      flex-direction: column;
+      gap: 8px;
+    }
+
+    .q-list::-webkit-scrollbar { width: 5px; }
+    .q-list::-webkit-scrollbar-track { background: transparent; }
+    .q-list::-webkit-scrollbar-thumb { background: #d0d7e3; border-radius: 4px; }
+
+    .q-card {
+      display: block;
+      text-decoration: none;
+      padding: 12px 13px;
+      border: 1px solid var(--border);
+      border-radius: 8px;
+      background: var(--surface);
+      box-shadow: 0 1px 3px rgba(0,0,0,.04);
+      transition: border-color .14s, box-shadow .14s, transform .08s;
+    }
+
+    .q-card:hover {
+      border-color: var(--accent);
+      box-shadow: 0 2px 8px rgba(58,123,213,.14);
+      transform: translateY(-1px);
+    }
+
+    .q-card__top {
+      display: flex;
+      align-items: flex-start;
+      gap: 8px;
+      margin-bottom: 4px;
+    }
+
+    .q-card__name {
+      font-size: 13px;
+      font-weight: 600;
+      color: var(--text);
+      line-height: 1.35;
+      flex: 1;
+      word-break: break-word;
+    }
+
+    .q-count {
+      flex-shrink: 0;
+      font-size: 10.5px;
+      font-weight: 700;
+      background: var(--accent-light);
+      color: var(--accent-dark);
+      border-radius: 10px;
+      padding: 2px 7px;
+      white-space: nowrap;
+      margin-top: 1px;
+    }
+
+    .q-card__fw {
+      font-size: 11px;
+      color: var(--muted);
+      margin-bottom: 3px;
+      font-weight: 500;
+    }
+
+    .q-card__desc {
+      font-size: 11.5px;
+      color: #8a96a8;
+      line-height: 1.4;
+      overflow: hidden;
+      display: -webkit-box;
+      -webkit-line-clamp: 2;
+      -webkit-box-orient: vertical;
+    }
+
+    .empty-sidebar {
+      padding: 28px 20px;
+      text-align: center;
+      color: var(--muted);
+      font-size: 13px;
+      line-height: 1.6;
+    }
+
+    .empty-sidebar svg {
+      display: block;
+      margin: 0 auto 10px;
+      opacity: .35;
+    }
+  </style>
+</head>
+<body>
+
+  <!-- ── App bar ── -->
+  <header class="app-bar">
+    <div class="app-bar__brand">
+      <svg class="app-bar__brand-icon" width="22" height="22" viewBox="0 0 22 22" fill="none" aria-hidden="true">
+        <rect x="1" y="1" width="8" height="8" rx="2" fill="currentColor" opacity=".9"/>
+        <rect x="13" y="1" width="8" height="8" rx="2" fill="currentColor" opacity=".6"/>
+        <rect x="1" y="13" width="8" height="8" rx="2" fill="currentColor" opacity=".6"/>
+        <rect x="13" y="13" width="8" height="8" rx="2" fill="currentColor" opacity=".35"/>
+      </svg>
+      <div>
+        <div class="app-bar__name">Assessment Studio</div>
+        <div class="app-bar__sub">NIST CSF · CIS Controls · ISO 27001</div>
+      </div>
+    </div>
+
+    <div class="app-bar__stats">
+      <div class="stat-chip">
+        <svg width="12" height="12" viewBox="0 0 12 12" fill="none" aria-hidden="true">
+          <path d="M1 2h10M1 6h10M1 10h5" stroke="currentColor" stroke-width="1.5" stroke-linecap="round"/>
+        </svg>
+        <span class="stat-chip__num">{{ frameworks|length }}</span>
+        <span>frameworks</span>
+      </div>
+      <div class="stat-chip">
+        <svg width="12" height="12" viewBox="0 0 12 12" fill="none" aria-hidden="true">
+          <circle cx="6" cy="6" r="4.5" stroke="currentColor" stroke-width="1.5"/>
+          <path d="M6 3.5v3l1.5 1.5" stroke="currentColor" stroke-width="1.3" stroke-linecap="round"/>
+        </svg>
+        <span class="stat-chip__num">{{ domain_count }}</span>
+        <span>domains</span>
+      </div>
+      <div class="stat-chip">
+        <svg width="12" height="12" viewBox="0 0 12 12" fill="none" aria-hidden="true">
+          <path d="M2 1h8a1 1 0 011 1v9l-2-1.2L7 11l-1-.6L5 11l-2 1.2-2-1.2V2a1 1 0 011-1z" stroke="currentColor" stroke-width="1.3" stroke-linejoin="round"/>
+        </svg>
+        <span class="stat-chip__num">{{ questionnaires|length }}</span>
+        <span>saved</span>
+      </div>
+    </div>
+  </header>
+
+  <!-- ── Flash messages ── -->
+  {% with messages = get_flashed_messages(with_categories=true) %}
+  {% if messages %}
+  <div class="flash-stack">
+    {% for category, message in messages %}
+    <div class="flash flash--{{ category if category in ['success','error','warning','info'] else 'info' }}" role="alert">
+      {% if category == 'success' %}
+      <svg width="16" height="16" viewBox="0 0 16 16" fill="none" aria-hidden="true"><circle cx="8" cy="8" r="7" stroke="currentColor" stroke-width="1.5"/><path d="M5 8l2 2 4-4" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/></svg>
+      {% elif category == 'error' %}
+      <svg width="16" height="16" viewBox="0 0 16 16" fill="none" aria-hidden="true"><circle cx="8" cy="8" r="7" stroke="currentColor" stroke-width="1.5"/><path d="M8 5v4M8 11v.5" stroke="currentColor" stroke-width="1.5" stroke-linecap="round"/></svg>
+      {% elif category == 'warning' %}
+      <svg width="16" height="16" viewBox="0 0 16 16" fill="none" aria-hidden="true"><path d="M8 2L14.5 13H1.5L8 2z" stroke="currentColor" stroke-width="1.4" stroke-linejoin="round"/><path d="M8 6v3.5M8 11v.5" stroke="currentColor" stroke-width="1.4" stroke-linecap="round"/></svg>
+      {% else %}
+      <svg width="16" height="16" viewBox="0 0 16 16" fill="none" aria-hidden="true"><circle cx="8" cy="8" r="7" stroke="currentColor" stroke-width="1.5"/><path d="M8 7v5M8 5v.5" stroke="currentColor" stroke-width="1.5" stroke-linecap="round"/></svg>
+      {% endif %}
+      {{ message }}
+      <button class="flash__close" onclick="this.closest('.flash').remove()" aria-label="Dismiss">&#x2715;</button>
+    </div>
+    {% endfor %}
+  </div>
+  {% endif %}
+  {% endwith %}
+
+  <!-- ── Upload framework ── -->
+  <div class="upload-card">
+    <div class="card">
+      <div class="upload-card__header" id="uploadToggle" aria-expanded="false" aria-controls="uploadBody">
+        <div class="upload-badge">
+          <svg width="14" height="14" viewBox="0 0 14 14" fill="none" aria-hidden="true">
+            <path d="M7 2v8M4 5l3-3 3 3" stroke="#fff" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"/>
+            <path d="M2 11h10" stroke="#fff" stroke-width="1.5" stroke-linecap="round"/>
+          </svg>
+        </div>
+        <span class="upload-title">Upload New Framework</span>
+        <span class="upload-toggle-hint">Click to expand &bull; PDF, JSON, XLSX, CSV, XML</span>
+      </div>
+
+      <div class="upload-body" id="uploadBody">
+        <form id="ingestForm" method="post" action="/ingest-framework" enctype="multipart/form-data">
+          <div class="upload-row">
+            <div class="upload-field upload-file-wrap">
+              <label for="framework_file">Framework document</label>
+              <input class="upload-input" type="file" name="framework_file" id="framework_file"
+                     accept=".pdf,.json,.xlsx,.xls,.csv,.xml" required>
+            </div>
+            <div class="upload-field upload-name-wrap">
+              <label for="framework_name">Framework name <span style="color:#dc2626">*</span></label>
+              <input class="upload-input" type="text" name="framework_name" id="framework_name"
+                     placeholder='e.g. PCI DSS' required>
+            </div>
+            <div class="upload-field upload-ver-wrap">
+              <label for="framework_version">Version</label>
+              <input class="upload-input" type="text" name="framework_version" id="framework_version"
+                     placeholder='e.g. 4.0'>
+            </div>
+            <div class="upload-field" style="justify-content:flex-end">
+              <button type="submit" class="upload-submit" id="ingestBtn">Ingest &rarr;</button>
+            </div>
+          </div>
+          <p class="upload-hint">
+            The document is parsed, controls extracted via Groq LLM, chunked and embedded into ChromaDB.
+            After ingestion the framework appears in the selector below.
+          </p>
+          <div class="upload-spinner" id="ingestSpinner">
+            <svg class="spinner-icon" width="16" height="16" viewBox="0 0 16 16" fill="none" aria-hidden="true">
+              <circle cx="8" cy="8" r="6" stroke="#7c3aed" stroke-width="2" stroke-dasharray="28" stroke-dashoffset="10"/>
+            </svg>
+            Ingesting framework — this may take 1–3 minutes for large documents…
+          </div>
+        </form>
+      </div>
+    </div>
+  </div>
+
+  <!-- ── Page body ── -->
+  <div class="page-body">
+
+    <!-- ── Left: generator form ── -->
+    <main>
+      <form method="post" action="/generate-questionnaire-bank">
+
+        <!-- Step 1: Frameworks -->
+        <div class="card step-card">
+          <div class="step-card__header">
+            <div class="step-badge">1</div>
+            <span class="step-title">Select Frameworks</span>
+          </div>
+          <div class="framework-selector">
+            {% for framework in frameworks %}
+            <label class="framework-chip fw-key--{{ framework.framework_key }}" data-fw-key="{{ framework.framework_key }}">
+              <input class="framework-toggle" type="checkbox" name="framework_keys"
+                     value="{{ framework.framework_key }}" checked>
+              <span class="fw-name">{{ framework.framework_name }}</span>
+              <span class="fw-badge">{{ framework.domains|length }} domains</span>
+            </label>
+            {% endfor %}
+          </div>
+        </div>
+
+        <!-- Step 2: Domains -->
+        <div class="card step-card">
+          <div class="step-card__header">
+            <div class="step-badge">2</div>
+            <span class="step-title">Choose Domains</span>
+          </div>
+          <p class="section-note">Select one or more domains. Uncheck a framework above to hide its domains.</p>
+          <div class="domain-groups">
+            {% for framework in frameworks %}
+            <div class="cluster-group" data-framework="{{ framework.framework_key }}">
+              <div class="cluster-header">
+                <input type="checkbox" class="cluster-toggle" value="{{ framework.framework_key }}"
+                       id="cluster-{{ framework.framework_key }}" aria-label="Select all domains for {{ framework.framework_name }}">
+                <label class="cluster-name" for="cluster-{{ framework.framework_key }}">{{ framework.framework_name }}</label>
+                <span class="cluster-count">{{ framework.domains|length }}</span>
+              </div>
+              <div class="domain-list">
+                {% for domain in framework.domains %}
+                <label class="domain-row" data-domain-label>
+                  <input type="checkbox" class="domain-checkbox"
+                         name="domains" value="{{ framework.framework_key }}/{{ domain.domain_id }}">
+                  <span class="domain-id-badge">{{ domain.domain_id }}</span>
+                  <span>{{ domain.domain_name }}</span>
+                </label>
+                {% endfor %}
+              </div>
+            </div>
+            {% endfor %}
+          </div>
+        </div>
+
+        <button type="submit" class="generate-btn">Generate Assessment Questionnaire &rarr;</button>
+      </form>
+    </main>
+
+    <!-- ── Right: saved questionnaires ── -->
+    <aside class="sidebar">
+      <div class="card sidebar-card">
+        <div class="sidebar-header">
+          <div class="sidebar-title">Saved Questionnaires</div>
+          <div class="sidebar-count">{{ questionnaires|length }}</div>
+        </div>
+        {% if questionnaires %}
+        <ul class="q-list">
+          {% for q in questionnaires %}
+          <li>
+            {% if q.type == 'multi_framework' %}
+            <a class="q-card" href="/questionnaire-bank/{{ q.questionnaire_id }}">
+            {% elif q.type == 'domain' %}
+            <a class="q-card" href="/domain/{{ q.domain_id }}">
+            {% else %}
+            <a class="q-card" href="/questionnaire/{{ q.control_id }}">
+            {% endif %}
+              <div class="q-card__top">
+                <span class="q-card__name">{{ q.scope_name }}</span>
+                <span class="q-count">{{ q.question_count }}q</span>
+              </div>
+              {% if q.framework_summary %}
+              <div class="q-card__fw">{{ q.framework_summary }}</div>
+              {% endif %}
+              {% if q.description %}
+              <div class="q-card__desc">{{ q.description }}</div>
+              {% endif %}
+            </a>
+          </li>
+          {% endfor %}
+        </ul>
+        {% else %}
+        <div class="empty-sidebar">
+          <svg width="36" height="36" viewBox="0 0 36 36" fill="none">
+            <rect x="4" y="4" width="28" height="28" rx="6" stroke="#6b7a90" stroke-width="2"/>
+            <path d="M11 14h14M11 19h10M11 24h8" stroke="#6b7a90" stroke-width="1.8" stroke-linecap="round"/>
+          </svg>
+          No questionnaires yet. Select frameworks and domains, then generate one.
+        </div>
+        {% endif %}
+      </div>
+    </aside>
+
+  </div><!-- /page-body -->
+
+  <script>
+  (function () {
+    'use strict';
+
+    /* ── helpers ── */
+    function qsa(root, sel) { return Array.from(root.querySelectorAll(sel)); }
+
+    /* ── framework chips: visual checked state ── */
+    function refreshChipState(chip) {
+      const checked = chip.querySelector('input').checked;
+      chip.classList.toggle('is-checked', checked);
+    }
+
+    const frameworkChips   = qsa(document, '.framework-chip');
+    const frameworkToggles = qsa(document, '.framework-toggle');
+    const clusterGroups    = qsa(document, '.cluster-group');
+
+    frameworkChips.forEach(chip => refreshChipState(chip));
+
+    /* ── show/hide domain clusters when framework toggled ── */
+    function syncDomainVisibility() {
+      const activeKeys = new Set(
+        frameworkToggles.filter(t => t.checked).map(t => t.value)
+      );
+      clusterGroups.forEach(group => {
+        const visible = activeKeys.has(group.dataset.framework);
+        group.hidden = !visible;
+        qsa(group, 'input[type="checkbox"]').forEach(cb => {
+          cb.disabled = !visible;
+          if (!visible) cb.checked = false;
+        });
+        /* also update domain-row visual state */
+        qsa(group, '.domain-row').forEach(row => row.classList.remove('is-checked'));
+      });
+    }
+
+    frameworkToggles.forEach(toggle => {
+      toggle.addEventListener('change', function () {
+        refreshChipState(this.closest('.framework-chip'));
+        syncDomainVisibility();
+      });
+    });
+
+    syncDomainVisibility();
+
+    /* ── cluster "select all" toggle ── */
+    qsa(document, '.cluster-toggle').forEach(clusterCb => {
+      clusterCb.addEventListener('change', function () {
+        const group = this.closest('.cluster-group');
+        qsa(group, '.domain-checkbox').forEach(cb => {
+          cb.checked = clusterCb.checked;
+          cb.closest('.domain-row').classList.toggle('is-checked', clusterCb.checked);
+        });
+      });
+    });
+
+    /* ── individual domain checkbox ── */
+    function updateClusterState(group) {
+      const all     = qsa(group, '.domain-checkbox');
+      const checked = all.filter(cb => cb.checked);
+      const toggle  = group.querySelector('.cluster-toggle');
+      if (!toggle) return;
+      toggle.indeterminate = checked.length > 0 && checked.length < all.length;
+      toggle.checked = checked.length === all.length && all.length > 0;
+    }
+
+    qsa(document, '.domain-checkbox').forEach(cb => {
+      cb.addEventListener('change', function () {
+        const row = this.closest('.domain-row');
+        if (row) row.classList.toggle('is-checked', this.checked);
+        updateClusterState(this.closest('.cluster-group'));
+      });
+    });
+
+    /* ── domain-row click: propagate to hidden checkbox ── */
+    qsa(document, '.domain-row[data-domain-label]').forEach(row => {
+      row.addEventListener('click', function (e) {
+        /* label already handles the checkbox — just sync visual state */
+        const cb = this.querySelector('.domain-checkbox');
+        /* after browser toggles: */
+        requestAnimationFrame(() => {
+          this.classList.toggle('is-checked', cb.checked);
+          updateClusterState(this.closest('.cluster-group'));
+        });
+      });
+    });
+
+  })();
+
+  /* ── Upload framework card ── */
+  (function () {
+    var toggle  = document.getElementById('uploadToggle');
+    var body    = document.getElementById('uploadBody');
+    var form    = document.getElementById('ingestForm');
+    var btn     = document.getElementById('ingestBtn');
+    var spinner = document.getElementById('ingestSpinner');
+
+    if (!toggle || !body) return;
+
+    /* expand/collapse */
+    toggle.addEventListener('click', function () {
+      var open = body.classList.toggle('is-open');
+      toggle.setAttribute('aria-expanded', open ? 'true' : 'false');
+    });
+
+    /* show spinner + disable button on submit */
+    if (form) {
+      form.addEventListener('submit', function () {
+        btn.disabled = true;
+        btn.textContent = 'Ingesting…';
+        spinner.classList.add('is-active');
+      });
+    }
+
+    /* auto-expand if a flash message is present (likely came back from ingest) */
+    if (document.querySelector('.flash--success, .flash--error')) {
+      body.classList.add('is-open');
+      toggle.setAttribute('aria-expanded', 'true');
+    }
+  })();
+  </script>
+</body>
+</html>

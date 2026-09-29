@@ -1,0 +1,470 @@
+{
+  "_meta": {
+    "document": "Market Assessment - Maturity Scoring Criteria",
+    "description": "One maturity scoring entry per domain sub-topic, extracted verbatim from the Market Assessment document. Columns preserve the Mature / Partial / Critical Gap structure.",
+    "source": "Market_Assessment_51.docx",
+    "column_order": [
+      "mature",
+      "partial",
+      "critical_gap"
+    ],
+    "entry_count": 35
+  },
+  "criteria": [
+    {
+      "criteria_id": "iam-identity-lifecycle-directory",
+      "cluster_id": "IAM",
+      "cluster_name": "Identity & Access Management",
+      "domain_id": "IAM",
+      "sub_topic": "Identity Lifecycle & Directory",
+      "control_id": "IAM-1",
+      "scoring_columns": {
+        "mature": "HR-driven automation handles all joiner/mover/leaver events. Accounts are provisioned and deprovisioned same-day. Stale and contractor accounts are managed on a defined cycle.",
+        "partial": "Some automation exists but gaps remain. Manual steps, delayed offboarding, or access accumulation on role changes are common",
+        "critical_gap": "Terminated employees and contractors still have active access to your systems. Third party data comingled with MCD data"
+      }
+    },
+    {
+      "criteria_id": "iam-authentication-mfa",
+      "cluster_id": "IAM",
+      "cluster_name": "Identity & Access Management",
+      "domain_id": "IAM",
+      "sub_topic": "Authentication & MFA",
+      "control_id": "IAM-2",
+      "scoring_columns": {
+        "mature": "MFA is enforced for all users with no exceptions SSO covers all major applications Legacy authentication protocols are disable.",
+        "partial": "MFA is broadly deployed but some user groups or systems are excluded SSO exists but coverage is incomplete Some legacy protocols remain active",
+        "critical_gap": "MFA is not implemented and/or enforced Legacy authentication protocols in place"
+      }
+    },
+    {
+      "criteria_id": "iam-access-control-least-privilege",
+      "cluster_id": "IAM",
+      "cluster_name": "Identity & Access Management",
+      "domain_id": "IAM",
+      "sub_topic": "Access Control & Least Privilege",
+      "control_id": "IAM-3",
+      "scoring_columns": {
+        "mature": "Formal access request and approval process is in place RBAC is consistently applied Access certifications run on a defined cadence Separation of duties is enforced for critical functions",
+        "partial": "Access requests are tracked but approvals are informal RBAC exists in some areas but not others Certifications occur infrequently or inconsistently",
+        "critical_gap": "Employees have access to systems and data far beyond what their role requires and no one is reviewing it No separation of duties means a single employee can initiate and approve their own transactions, creating fraud risk and compliance exposure Access accumulates indefinitely as employees change roles as stale access is never reviewed or removed Third parties have access to sensitive beyond the intent of the engagement"
+      }
+    },
+    {
+      "criteria_id": "iam-privileged-access-management",
+      "cluster_id": "IAM",
+      "cluster_name": "Identity & Access Management",
+      "domain_id": "IAM",
+      "sub_topic": "Privileged Access Management",
+      "control_id": "IAM-4",
+      "scoring_columns": {
+        "mature": "Full inventory of privileged accounts exists A PAM tool is deployed and credentials are vaulted Just-in-time access is used for privileged sessions Sessions are recorded",
+        "partial": "Some privileged accounts are inventoried and vaulted. PAM tool is partially deployed. Standing access exists for some admins. Session recording is inconsistent.",
+        "critical_gap": "Shared admin credentials with no oversight means anyone who has ever touched those accounts could still use them. Admins with persistent standing access to all systems means one compromised admin account results in immediate full environment access Privileged credentials stored in spreadsheets or shared password managers are readable by anyone who has ever had access to that file"
+      }
+    },
+    {
+      "criteria_id": "iam-monitoring-visibility",
+      "cluster_id": "IAM",
+      "cluster_name": "Identity & Access Management",
+      "domain_id": "IAM",
+      "sub_topic": "Monitoring & Visibility",
+      "control_id": "IAM-5",
+      "scoring_columns": {
+        "mature": "Identity and access logs are centrally collected in GSOC. Alerts are configured for high-risk events. UEBA is in use. Alerts are reviewed and acted on promptly.",
+        "partial": "Logs are collected but alert coverage is incomplete. Some high-risk events are monitored but gaps exist. Alert response is inconsistent.",
+        "critical_gap": "No centralized identity logging exists There are no alerts configured for suspicious access activity."
+      }
+    },
+    {
+      "criteria_id": "net-network-architecture-perimeter",
+      "cluster_id": "NETWORK",
+      "cluster_name": "Network Security",
+      "domain_id": "NET",
+      "sub_topic": "Network Architecture & Perimeter",
+      "control_id": "NET-1",
+      "scoring_columns": {
+        "mature": "NGFW is fully deployed and rules are reviewed regularly A DMZ exists for internet-facing systems Network diagrams are current and maintained",
+        "partial": "NGFW is in place but rule reviews are infrequent DMZ exists but is not consistently applied Network diagrams are outdated",
+        "critical_gap": "Firewall rules have never been audited and no current network documentation exists No DMZ or segmentation means internet facing systems have direct network paths to internal infrastructure, collapsing the effort required for lateral movement after a perimeter breach"
+      }
+    },
+    {
+      "criteria_id": "net-network-segmentation",
+      "cluster_id": "NETWORK",
+      "cluster_name": "Network Security",
+      "domain_id": "NET",
+      "sub_topic": "Network Segmentation",
+      "control_id": "NET-2",
+      "scoring_columns": {
+        "mature": "Segmentation is in place across business units, system types, and sensitivity levels Critical systems are isolated East-west traffic is monitored and restricted",
+        "partial": "Segmentation exists at a high level but critical systems are not fully isolated East-west traffic visibility is limited",
+        "critical_gap": "One compromised device gives an attacker unrestricted movement across your entire network Critical systems such as finance and HR share the same network as general workstations a single endpoint compromise can reach your most sensitive systems directly No east-west traffic monitoring means lateral movement can occur completely undetected until the attacker has achieved their objective"
+      }
+    },
+    {
+      "criteria_id": "net-remote-access",
+      "cluster_id": "NETWORK",
+      "cluster_name": "Network Security",
+      "domain_id": "NET",
+      "sub_topic": "Remote Access",
+      "control_id": "NET-3",
+      "scoring_columns": {
+        "mature": "All remote access requires MFA ZTNA or VPN is fully deployed RDP and remote management tools are not exposed to the internet Split tunneling is assessed and controlled",
+        "partial": "MFA is required for most remote access but exceptions exist VPN is in place but configuration has not been recently reviewed",
+        "critical_gap": "RDP is exposed to the internet with No MFA on remote access Third-party and vendor remote access is not separately scoped or monitored. Vendor credentials provide the same level of access as internal users"
+      }
+    },
+    {
+      "criteria_id": "net-network-monitoring-threat-detection",
+      "cluster_id": "NETWORK",
+      "cluster_name": "Network Security",
+      "domain_id": "NET",
+      "sub_topic": "Network Monitoring & Threat Detection",
+      "control_id": "NET-4",
+      "scoring_columns": {
+        "mature": "IDS, IPS, or NDR is in place Network logs feed into the SIEM DNS filtering and a secure web gateway are deployed TLS inspection is in use",
+        "partial": "Some network monitoring exists but coverage is inconsistent DNS filtering is in place but encrypted traffic is not inspected",
+        "critical_gap": "No network monitoring tool is in place and network logs are not collected anywhere There are unmonitored network segments or OT environments No DNS filtering means malware can freely communicate with command-and-control infrastructure and employees can reach malicious sites with no blocking or alerting"
+      }
+    },
+    {
+      "criteria_id": "net-wireless-physical-network",
+      "cluster_id": "NETWORK",
+      "cluster_name": "Network Security",
+      "domain_id": "NET",
+      "sub_topic": "Wireless & Physical Network",
+      "control_id": "NET-5",
+      "scoring_columns": {
+        "mature": "Corporate wireless is segmented from guest and IoT networks WPA2-Enterprise or certificate based authentication is in use Rogue access point detection is active",
+        "partial": "Corporate and guest wireless are separated but IoT devices share segments Authentication is WPA2-PSK Rogue AP detection is manual",
+        "critical_gap": "Anyone in physical range of your office can access your corporate network Guest and IoT devices share the same network as corporate systems, giving any compromised device a direct path to internal resources No rogue access point detection means an attacker could install a wireless device inside your building and operate indefinitely without detection"
+      }
+    },
+    {
+      "criteria_id": "cloud-cloud-adoption-architecture",
+      "cluster_id": "CLOUD",
+      "cluster_name": "Hosting & Cloud Security",
+      "domain_id": "CLOUD",
+      "sub_topic": "Cloud Adoption & Architecture",
+      "control_id": "CLOUD-1",
+      "scoring_columns": {
+        "mature": "Cloud environment is documented and governed Security reviews cloud architecture decisions before deployment A hybrid or multiple cloud strategy is defined and managed",
+        "partial": "Cloud is in active use but governance is informal Security is involved in some but not all architecture decisions Multiple cloud use is not fully inventoried",
+        "critical_gap": "No complete inventory of cloud accounts and subscriptions No visibility into what is deployed or publicly exposed across cloud environments as misconfigured and internet-facing resources go undetected. No security review of cloud architecture, internet facing systems deployed with no security input, continuously expanding the attack surface"
+      }
+    },
+    {
+      "criteria_id": "cloud-cloud-security-posture",
+      "cluster_id": "CLOUD",
+      "cluster_name": "Hosting & Cloud Security",
+      "domain_id": "CLOUD",
+      "sub_topic": "Cloud Security Posture",
+      "control_id": "CLOUD-2",
+      "scoring_columns": {
+        "mature": "CSPM tool is fully deployed and tuned Cloud benchmarks such as CIS are applied Misconfigurations are tracked and remediated on a defined SLA IaC templates are scanned before deployment",
+        "partial": "CSPM is in place but findings are not consistently remediated Benchmarks are partially applied IaC scanning is not in the pipeline",
+        "critical_gap": "No CSPM tool is in use and cloud storage and databases have never been checked for public exposure No IaC scanning. Misconfigurations reach production with no security check"
+      }
+    },
+    {
+      "criteria_id": "cloud-cloud-monitoring-logging",
+      "cluster_id": "CLOUD",
+      "cluster_name": "Hosting & Cloud Security",
+      "domain_id": "CLOUD",
+      "sub_topic": "Cloud Monitoring & Logging",
+      "control_id": "CLOUD-3",
+      "scoring_columns": {
+        "mature": "Cloud-native audit logs are fully enabled and forwarded to the GSOC Alerts are configured for high-risk cloud events A defined process exists for responding to cloud alerts",
+        "partial": "Some cloud logs are enabled and forwarded but coverage is incomplete Alerting exists but does not cover all critical event types",
+        "critical_gap": "Cloud audit logging is not enabled and no logs are being retained or forwarded anywhere No cloud alerts. High-risk events such as new admin roles and public bucket exposure go completely unnoticed"
+      }
+    },
+    {
+      "criteria_id": "m365-m365-configuration-governance",
+      "cluster_id": "M365",
+      "cluster_name": "M365 & Email Security",
+      "domain_id": "M365",
+      "sub_topic": "M365 Configuration & Governance",
+      "control_id": "M365-1",
+      "scoring_columns": {
+        "mature": "M365 tenant is configured against a security baseline Admin roles are minimized and global admin use is restricted Microsoft Defender for Office 365 is enabled",
+        "partial": "M365 is in use and some hardening has been applied but the environment has not been fully benchmarked Admin roles are not consistently restricted",
+        "critical_gap": "The M365 tenant has never been hardened against a security baseline and global admin accounts are used routinely"
+      }
+    },
+    {
+      "criteria_id": "m365-email-security",
+      "cluster_id": "M365",
+      "cluster_name": "M365 & Email Security",
+      "domain_id": "M365",
+      "sub_topic": "Email Security",
+      "control_id": "M365-2",
+      "scoring_columns": {
+        "mature": "DMARC, DKIM, and SPF are configured and enforced for all sending domains Anti-phishing, safe links, and safe attachments are fully configured A third-party email gateway is in use Users can report suspicious emails",
+        "partial": "SPF and DKIM are in place but DMARC is not enforced Email filtering is configured at default settings No additional email gateway",
+        "critical_gap": "Employees have no meaningful protection against phishing as impersonation, lookalike domains, and social engineering attacks pass through uninspected. Phishing campaigns can run undetected for days or weeks. Without user reporting, the SOC has no visibility into what is reaching inboxes, allowing credential harvesting at scale before anyone knows it's happening"
+      }
+    },
+    {
+      "criteria_id": "m365-data-collaboration-security",
+      "cluster_id": "M365",
+      "cluster_name": "M365 & Email Security",
+      "domain_id": "M365",
+      "sub_topic": "Data & Collaboration Security",
+      "control_id": "M365-3",
+      "scoring_columns": {
+        "mature": "External sharing in SharePoint and OneDrive is governed and restricted DLP policies are configured and enforced M365 audit logs are enabled and retained OAuth app permissions are reviewed",
+        "partial": "Sharing settings have been reviewed but are not fully restricted DLP is partially configured Audit logs are enabled but retention is insufficient",
+        "critical_gap": "Sensitive data in SharePoint, OneDrive, and Teams is being shared externally with no controls and no visibility No visibility into OAuth app permissions means third-party apps connected to M365 may have read or write access to all user email and files with no review or revocation process"
+      }
+    },
+    {
+      "criteria_id": "ai-ai-usage-governance",
+      "cluster_id": "AI",
+      "cluster_name": "AI Security",
+      "domain_id": "AI",
+      "sub_topic": "AI Usage & Governance",
+      "control_id": "AI-1",
+      "scoring_columns": {
+        "mature": "An acceptable use policy for AI tools is in place and communicated IT has visibility into what AI tools are in use Consumer AI tool use for work purposes is governed",
+        "partial": "AI tools are in active use but policy is informal or not consistently enforced Some tools have been approved but shadow AI use is likely",
+        "critical_gap": "Employees are feeding confidential company data into consumer AI tools with no oversight or controls No visibility into what AI tools are in use means shadow AI adoption is likely widespread, with data flowing to unreviewed third-party platforms"
+      }
+    },
+    {
+      "criteria_id": "ai-ai-data-risk",
+      "cluster_id": "AI",
+      "cluster_name": "AI Security",
+      "domain_id": "AI",
+      "sub_topic": "AI Data & Risk",
+      "control_id": "AI-2",
+      "scoring_columns": {
+        "mature": "Employees are trained on AI data risks AI tools go through a review and approval process before use with company data AI outputs are reviewed before use in decisions or external communications A designated owner is responsible for AI governance",
+        "partial": "Some AI risk awareness exists but training is informal Tool approval processes are ad hoc No designated AI governance owner",
+        "critical_gap": "Sensitive client or business data is being submitted to third-party AI systems that you do not control and cannot audit No AI output review process means AI generated content may be used in client facing communications or business decisions without any human verification"
+      }
+    },
+    {
+      "criteria_id": "app-workload-container-security",
+      "cluster_id": "APPSEC",
+      "cluster_name": "Application Inventory & Security",
+      "domain_id": "APP",
+      "sub_topic": "Workload & Container Security",
+      "control_id": "APP-1",
+      "scoring_columns": {
+        "mature": "All cloud workloads are covered under endpoint security and patching programs Container images are scanned before deployment Runtime protection is in place",
+        "partial": "Most workloads are covered but containers and serverless functions are not fully included in security programs Image scanning is inconsistent",
+        "critical_gap": "Vulnerable container images are being deployed to production with no visibility into what is running or what can be exploited No runtime protection means compromised containers can execute arbitrary code and move laterally without any detection"
+      }
+    },
+    {
+      "criteria_id": "app-application-inventory",
+      "cluster_id": "APPSEC",
+      "cluster_name": "Application Inventory & Security",
+      "domain_id": "APP",
+      "sub_topic": "Application Inventory",
+      "control_id": "APP-2",
+      "scoring_columns": {
+        "mature": "A formal application catalog is maintained and kept current Applications are classified by criticality and data sensitivity Ownership is clearly assigned",
+        "partial": "An application inventory exists but is incomplete or not regularly updated Classification is partial Ownership is unclear for some applications",
+        "critical_gap": "No application inventory or incomplete inventory End of life applications remain in production with no vendor support or security patches"
+      }
+    },
+    {
+      "criteria_id": "app-patch-vulnerability-management",
+      "cluster_id": "APPSEC",
+      "cluster_name": "Application Inventory & Security",
+      "domain_id": "APP",
+      "sub_topic": "Patch & Vulnerability Management",
+      "control_id": "APP-3",
+      "scoring_columns": {
+        "mature": "A formal vulnerability and patch management process is in place with defined SLAs by severity Internet systems are patched on an accelerated schedule Vulnerabilities are prioritized by exploitability and asset criticality",
+        "partial": "Patching occurs but SLAs are not consistently met Prioritization is primarily by CVSS score Internet systems are not on a separate track",
+        "critical_gap": "No formal vulnerability management program as vulnerabilities across the environment are never identified, prioritized, or tracked, leaving the organization blind to its own exposur No formal patch management process as critical vulnerabilities remain open indefinitely with no remediation timeline or ownership. Internet-facing systems with unpatched critical vulnerabilities are identified and exploited by automated tools within hours of public disclosure"
+      }
+    },
+    {
+      "criteria_id": "app-application-security",
+      "cluster_id": "APPSEC",
+      "cluster_name": "Application Inventory & Security",
+      "domain_id": "APP",
+      "sub_topic": "Application Security",
+      "control_id": "APP-4",
+      "scoring_columns": {
+        "mature": "SAST, DAST, and SCA are integrated into the development lifecycle Third-party and open source components are tracked and scanned Penetration testing is conducted regularly Findings are tracked to remediation",
+        "partial": "Some application security testing occurs but it is not consistently embedded in the SDLC Penetration testing happens occasionally Findings tracking is informal",
+        "critical_gap": "No application security testing has ever been performed and no penetration testing has been conducted Third-party and open source components may contain known critical vulnerabilities that have never been identified because there is no inventory or scanning in place APIs are not inventoried or tested, leaving the most exposed attack surface in the environment completely unassessed"
+      }
+    },
+    {
+      "criteria_id": "ep-endpoint-protection",
+      "cluster_id": "ENDPOINT",
+      "cluster_name": "Endpoint Security",
+      "domain_id": "EP",
+      "sub_topic": "Endpoint Protection",
+      "control_id": "EP-1",
+      "scoring_columns": {
+        "mature": "EDR is fully deployed across the environment Traditional AV has been replaced Application control and exploit protection are in place Host firewall is configured and enforced",
+        "partial": "EDR covers most endpoints but some gaps exist Legacy AV remains on some systems Host based firewall is inconsistently configured",
+        "critical_gap": "No EDR is deployed and some devices have no endpoint protection in place at all Legacy antivirus relying on signature detection cannot detect modern fileless attacks or living-off-the-land techniques, providing a false sense of protection EDR alerts not monitored or investigated Unrestricted USB and removable media access on endpoints"
+      }
+    },
+    {
+      "criteria_id": "ep-device-management",
+      "cluster_id": "ENDPOINT",
+      "cluster_name": "Endpoint Security",
+      "domain_id": "EP",
+      "sub_topic": "Device Management",
+      "control_id": "EP-2",
+      "scoring_columns": {
+        "mature": "All corporate devices are enrolled in an MDM or UEM platform Compliance policies covering encryption, screen lock, and patch level are enforced BYOD policy is defined and controlled",
+        "partial": "MDM is in place but enrollment is incomplete Compliance policies exist but are not fully enforced BYOD controls are inconsistent",
+        "critical_gap": "Unmanaged personal and corporate devices are accessing company data with no visibility or controls applied No device compliance enforcement means compromised, unpatched, or malware infected devices can freely access corporate resources with no restriction Lost or stolen devices cannot be remotely wiped - corporate data is permanently exposed with no containment capability."
+      }
+    },
+    {
+      "criteria_id": "dr-security-operations",
+      "cluster_id": "DEFENSE",
+      "cluster_name": "Defense & Response",
+      "domain_id": "DR",
+      "sub_topic": "Security Operations",
+      "control_id": "DR-1",
+      "scoring_columns": {
+        "mature": "Market is fully connected to and monitored by the McDonald's GSOC with defined triage and escalation workflows Mean time to detect and respond meets defined targets Alert prioritization is formalized with clear ownership and response SLAs",
+        "partial": "Market has some security monitoring capability but operates reactively and independently from the GSOC Triage and escalation processes exist but are informal or undocumented Operating hours and coverage are limited",
+        "critical_gap": "There is no SOC function and security alerts are not consistently monitored or acted on Alert fatigue from untuned detections means real threats are buried in noise and never acted on, providing only a technical illusion of monitoring"
+      }
+    },
+    {
+      "criteria_id": "dr-threat-detection",
+      "cluster_id": "DEFENSE",
+      "cluster_name": "Defense & Response",
+      "domain_id": "DR",
+      "sub_topic": "Threat Detection",
+      "control_id": "DR-2",
+      "scoring_columns": {
+        "mature": "Threat intelligence is integrated into detection workflows Active threat hunting is conducted Behavioral analytics or UEBA is in use to detect anomalous activity",
+        "partial": "Detection is primarily alert-driven Some threat intelligence is referenced but not formally integrated No active threat hunting",
+        "critical_gap": "Detection is entirely signature-based with no threat intelligence, no behavioral analytics, and no threat hunting capability No active threat hunting means attackers who bypass perimeter controls can operate in your environment for weeks or months before detection Detection gaps across cloud, OT and remote environments"
+      }
+    },
+    {
+      "criteria_id": "dr-incident-response",
+      "cluster_id": "DEFENSE",
+      "cluster_name": "Defense & Response",
+      "domain_id": "DR",
+      "sub_topic": "Incident Response",
+      "control_id": "DR-3",
+      "scoring_columns": {
+        "mature": "A documented IR plan exists and has been tested in the past 12 months via tabletop exercise Roles and responsibilities are clearly defined An external IR retainer is in place Executive escalation procedures are documented",
+        "partial": "An IR plan exists but has not been tested recently Roles are defined but not consistently communicated No external retainer",
+        "critical_gap": "No IR plan exists, no roles are defined, no tabletop has ever been run, and there is no external retainer in place Markets without GSOC connectivity have no local IR capability. Active incidents progress unchecked with no response capability."
+      }
+    },
+    {
+      "criteria_id": "dr-log-management",
+      "cluster_id": "DEFENSE",
+      "cluster_name": "Defense & Response",
+      "domain_id": "DR",
+      "sub_topic": "Log Management",
+      "control_id": "DR-4",
+      "scoring_columns": {
+        "mature": "Market is fully connected to the GSOC with all log sources ingested Log retention meets policy and compliance requirements Detection rules are reviewed and tuned regularly to reduce false positives and ensure meaningful alerting No gaps in log coverage across the environment",
+        "partial": "Market is connected to the GSOC but log source coverage has gaps as some environments are not sending logs Retention may not meet compliance requirements Detection rules exist but are not regularly reviewed or tuned Some environments feeding logs locally rather than into the GSOC",
+        "critical_gap": "The market has no log collection or GSOC connectivity. Security events go completely undetected and unrecorded with no visibility at the market or corporate level."
+      }
+    },
+    {
+      "criteria_id": "tprm-tprm-program",
+      "cluster_id": "TPRM",
+      "cluster_name": "Third Party & Vendor Risk",
+      "domain_id": "TPRM",
+      "sub_topic": "TPRM Program",
+      "control_id": "TPRM-1",
+      "scoring_columns": {
+        "mature": "A formal TPRM program is in place with clear ownership Vendors are classified by risk tier Program coverage is proportional to vendor risk level",
+        "partial": "A TPRM program exists but coverage is inconsistent Risk tiering is informal Ownership is shared across functions without clear accountability",
+        "critical_gap": "Vendors with direct access to your systems and data have never been assessed and represent an uncontrolled entry point No vendor risk tiering. Highest-risk vendors receive the same scrutiny as low-risk ones and the most dangerous relationships are never reviewed rigorously No visibility into the third -parties with access to their systems or data, making TPRM program ungovernable"
+      }
+    },
+    {
+      "criteria_id": "tprm-vendor-onboarding-assessment",
+      "cluster_id": "TPRM",
+      "cluster_name": "Third Party & Vendor Risk",
+      "domain_id": "TPRM",
+      "sub_topic": "Vendor Onboarding & Assessment",
+      "control_id": "TPRM-2",
+      "scoring_columns": {
+        "mature": "Security assessments are completed before onboarding all vendors Evidence of controls such as SOC 2 or ISO 27001 is required Security requirements are embedded in contracts Higher-risk vendors go through a more rigorous review",
+        "partial": "Security questionnaires are used for some vendors but not consistently Contract language around data protection exists but is not standardized High-risk vendor reviews are informal",
+        "critical_gap": "High-risk vendors can be onboarded regardless of assessment outcome No contractual security obligations means no enforceable accountability for vendor breaches MCD data flows to unreviewed subprocessors outside MCD's visibility or control"
+      }
+    },
+    {
+      "criteria_id": "tprm-ongoing-vendor-oversight",
+      "cluster_id": "TPRM",
+      "cluster_name": "Third Party & Vendor Risk",
+      "domain_id": "TPRM",
+      "sub_topic": "Ongoing Vendor Oversight",
+      "control_id": "TPRM-3",
+      "scoring_columns": {
+        "mature": "Vendors are reassessed periodically after onboarding A process exists to monitor for vendor security incidents Vendor access rights are reviewed regularly and removed when the relationship ends",
+        "partial": "Initial assessments occur but ongoing reassessment is inconsistent Vendor access is reviewed infrequently Off-boarding of vendor access is sometimes missed",
+        "critical_gap": "Former vendors likely still have active access to your systems long after their engagement ended No process to monitor vendors for their own security incidents means you learn about a vendor breach from the news rather than the vendor, losing critical response time"
+      }
+    },
+    {
+      "criteria_id": "data-data-classification-governance",
+      "cluster_id": "DATA",
+      "cluster_name": "Data & Storage Security",
+      "domain_id": "DATA",
+      "sub_topic": "Data Classification & Governance",
+      "control_id": "DATA-1",
+      "scoring_columns": {
+        "mature": "A data classification policy is in place with defined tiers Classification is actively applied to data A data inventory shows where sensitive data resides A designated owner is responsible for enforcement",
+        "partial": "A classification policy exists but is primarily a paper exercise Some data is labeled but coverage is inconsistent No complete data inventory",
+        "critical_gap": "You do not know where your most sensitive data lives, which means you cannot protect it or detect when it is stolen No active data classification. DLP, encryption, and access controls cannot identify what data to protect"
+      }
+    },
+    {
+      "criteria_id": "data-encryption",
+      "cluster_id": "DATA",
+      "cluster_name": "Data & Storage Security",
+      "domain_id": "DATA",
+      "sub_topic": "Encryption",
+      "control_id": "DATA-2",
+      "scoring_columns": {
+        "mature": "Sensitive data is encrypted at rest across all databases, file shares, and cloud storage TLS is enforced for all communications Encryption keys are centrally managed with a documented key management policy",
+        "partial": "Encryption is applied to most data stores but some gaps exist TLS is broadly in use but not enforced everywhere Key management is informal",
+        "critical_gap": "Sensitive data is sitting unencrypted in databases and file stores, readable by anyone who gains access A lost or stolen laptop with no full disk encryption exposes all data in plaintext with no recovery or containment capability. TLS not enforced on internal communications means sensitive data transmitted between systems can be intercepted by any attacker with network access."
+      }
+    },
+    {
+      "criteria_id": "data-data-loss-prevention",
+      "cluster_id": "DATA",
+      "cluster_name": "Data & Storage Security",
+      "domain_id": "DATA",
+      "sub_topic": "Data Loss Prevention",
+      "control_id": "DATA-3",
+      "scoring_columns": {
+        "mature": "A DLP solution is deployed covering email, endpoint, and cloud channels Policies are configured to detect and block exfiltration of PII, financial data, and intellectual property Alerts are reviewed and acted on",
+        "partial": "DLP is partially deployed Some channels are covered but others are not Policies exist but may not cover all sensitive data types Alerts are informational only",
+        "critical_gap": "No DLP solution is in place and there are no controls or visibility over how sensitive data leaves the organization DLP deployed in monitor-only mode with no alert review provides no real security benefit No controls preventing data being copied to personal devices or unauthorized cloud storage so employees can exfiltrate sensitive data with no technical barrier and no detection capability."
+      }
+    },
+    {
+      "criteria_id": "data-backup-recovery",
+      "cluster_id": "DATA",
+      "cluster_name": "Data & Storage Security",
+      "domain_id": "DATA",
+      "sub_topic": "Backup & Recovery",
+      "control_id": "DATA-4",
+      "scoring_columns": {
+        "mature": "Backups are performed for all critical systems and stored in an isolated or air-gapped location Restoration procedures are tested regularly RTO and RPO are defined and validated",
+        "partial": "Backups are in place for most systems but some critical data is not covered Backups are stored separately but not fully air-gapped Restoration has not been recently tested",
+        "critical_gap": "Backups have never been tested, recovery procedures have never been validated, and backups are stored in the same environment as production Backups stored in the same environment as production are encrypted alongside production data in a ransomware attack, leaving no recovery path without paying the ransom"
+      }
+    }
+  ]
+}

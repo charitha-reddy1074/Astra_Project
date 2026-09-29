@@ -1,0 +1,6 @@
+Finding ID	CSPM Tool	Provider	Account ID	Resource Type	Resource ID	Region	Finding Title	Severity	Category	Benchmark / Standard	Status	Assigned To	Date Identified	Remediation Due	Date Closed	Notes
+CSPM-001	Wiz	AWS	123456789012	S3 Bucket	arn:aws:s3:::mcd-data-backup	us-east-1	S3 Bucket publicly accessible	Critical	Data Exposure	CIS AWS 2.1.5	Open	DevOps	2024-11-01	2024-11-15	Immediate remediation required
+CSPM-002	Wiz	AWS	123456789012	Security Group	sg-0abc123	us-east-1	Unrestricted SSH inbound (0.0.0.0/0)	High	Network	CIS AWS 5.2	In Remediation	Platform Eng	2024-10-28	2024-11-20	Ticket raised DEV-4421
+CSPM-003	Wiz	Azure	sub-0987abcd	Storage Account	st-mcd-dev-01	eastus	Storage account allows public blob access	High	Data Exposure	CIS Azure 3.5	Closed	DevOps	2024-10-10	2024-10-31	2024-10-30	Resolved – public access disabled
+CSPM-004	Wiz	GCP	gcp-proj-321	BigQuery Dataset	analytics_raw	us-central1	BigQuery dataset is publicly accessible	Critical	Data Exposure	CIS GCP 7.1	Open	Data Eng	2024-11-15	2024-11-22	Escalated to CISO
+CSPM-005	Wiz	AWS	234567890123	IAM Policy	AdminPolicy-v1	Global	IAM policy grants wildcard (*) permissions	High	IAM	CIS AWS 1.16	Open	IT Security	2024-11-18	2024-12-05	Least-privilege review needed

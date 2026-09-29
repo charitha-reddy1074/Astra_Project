@@ -1,0 +1,28 @@
+Identity and Access Management (IAM) Policy
+Document ID: POL-IAM-2024-v3.2
+Classification: INTERNAL CONFIDENTIAL
+Owner: Chief Information Security Officer (CISO)
+Effective Date: 01 January 2024
+Review Date: 01 January 2025
+Version: 3.2
+
+1. Purpose
+This policy establishes the requirements for managing identities, access rights, and privileges across all information systems owned or operated by Acme Corporation. It ensures that access to systems and data is granted based on business need, the principle of least privilege, and applicable regulatory requirements.
+
+2. Scope
+This policy applies to all employees, contractors, vendors, and other third parties who access Acme Corporation information systems, networks, applications, or data — regardless of location or device type.
+
+3. Policy Statements
+
+4. Access Request Process
+Requestor submits access request via ServiceNow ticketing system
+Direct manager provides written approval for standard access
+Data owner provides approval for sensitive data access
+IT Security reviews privileged access requests
+Provisioning completed within 2 business days of all approvals
+Access confirmation sent to requestor and logged in IAM system
+
+5. Violations
+Violations of this policy may result in disciplinary action up to and including termination, and may be referred to law enforcement where applicable. All violations must be reported to the CISO within 24 hours of discovery.
+
+6. Approvals

@@ -1,0 +1,5 @@
+Pipeline ID	Repository	IaC Type	Scanning Tool	Pipeline Platform	Scan Trigger	Policy Gate (Block on Severity)	Last Scan Date	Critical Issues	High Issues	Medium Issues	Low Issues	Gate Passed	Owner	Notes
+IaC-001	github/mcd-infra-prod	Terraform	Checkov + Wiz	GitHub Actions	PR / Push to main	Critical, High	2024-11-20	0	2	5	8	Yes	Platform Eng	Gate blocks merge on Critical or High
+IaC-002	github/mcd-k8s-manifests	Kubernetes YAML	Checkov	GitHub Actions	PR / Push	Critical	2024-11-19	0	1	3	4	Yes	DevOps	High findings require manual approval
+IaC-003	gitlab/mcd-azure-tf	Terraform	tfsec	GitLab CI	MR trigger	Critical, High	2024-11-18	0	0	2	6	Yes	Cloud Arch	Integrated with Azure DevOps board
+IaC-004	github/mcd-cloudformation	CloudFormation	cfn-nag + Checkov	GitHub Actions	PR	Critical	2024-11-15	0	3	4	7	No (3 High open)	DevOps	Remediation in progress – ticket IaC-221

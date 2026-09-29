@@ -1,0 +1,20 @@
+Access Provisioning Records
+Record Period: November 2024
+System: ServiceNow ITSM — IAM Module
+Maintained By: IT Operations — Access Management Team
+Classification: INTERNAL
+
+Purpose
+This document records all access provisioning and de-provisioning activities performed during the reporting period. Each record includes the ticket reference, requester, access granted/revoked, approval chain, and completion status to support audit and compliance requirements.
+
+Provisioning Log
+
+Process Notes
+All provisioning requests are initiated via ServiceNow self-service portal or HR system integration
+Manager approval required for all standard access requests
+CISO approval required for privileged and sensitive data access
+Offboarding requests are auto-triggered by HR system upon termination entry
+Vendor access requires dual approval: Procurement and Data Owner
+All provisioning activities are logged with timestamp and approver identity
+
+SLA Compliance

@@ -1,0 +1,7 @@
+Role	Department	Responsibility
+CISO	Security	Approves vulnerability management program
+Vulnerability Manager	Security Operations	Conducts scans and reporting
+Infrastructure Manager	IT Operations	OS patch deployment
+Application Owner	Business Unit	Application remediation
+SOC Analyst	Security Operations	Vulnerability validation
+Change Manager	IT Operations	Approves remediation changes

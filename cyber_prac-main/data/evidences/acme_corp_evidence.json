@@ -1,0 +1,78 @@
+{
+  "organisation": "Acme Corp",
+  "assessment_date": "2025-01-15",
+  "evidence_items": [
+    {
+      "category": "Identity & Access Management",
+      "description": "Acme Corp maintains a centralised IAM platform using Okta. All user accounts require MFA. Quarterly access reviews are conducted and documented in Jira. Privileged accounts use hardware tokens. A formal access control policy is in place and acknowledged by all staff annually.",
+      "artefacts": [
+        "access_control_policy_v3.pdf",
+        "okta_mfa_config.png",
+        "q3_2024_access_review.xlsx"
+      ]
+    },
+    {
+      "category": "Vulnerability Management",
+      "description": "Qualys is used for weekly vulnerability scans across all production and staging environments. Critical and high findings are patched within 30 days per SLA. The vulnerability register is reviewed monthly by the CISO. A formal patch management procedure exists.",
+      "artefacts": [
+        "qualys_scan_dec2024.pdf",
+        "patch_management_policy.pdf",
+        "vuln_register_jan2025.xlsx"
+      ]
+    },
+    {
+      "category": "Security Monitoring",
+      "description": "A Splunk SIEM is deployed and ingesting logs from network devices, servers, cloud workloads, and endpoints. A 24/7 SOC monitors alerts. IDS/IPS rules are reviewed quarterly. Threat intelligence feeds from FS-ISAC are integrated.",
+      "artefacts": [
+        "splunk_architecture.pdf",
+        "soc_runbook.pdf",
+        "ids_rule_review_q4_2024.docx"
+      ]
+    },
+    {
+      "category": "Incident Response",
+      "description": "Acme Corp has a documented Incident Response Plan (IRP) reviewed annually. A tabletop exercise was conducted in November 2024. Incidents are tracked in ServiceNow. Post-incident reviews are completed within 5 days of resolution.",
+      "artefacts": [
+        "incident_response_plan_2024.pdf",
+        "tabletop_exercise_report_nov2024.pdf"
+      ]
+    },
+    {
+      "category": "Data Protection",
+      "description": "All data at rest is encrypted using AES-256. TLS 1.2+ is enforced for all data in transit. A data classification policy exists with four tiers: Public, Internal, Confidential, and Restricted. DLP tools monitor for sensitive data exfiltration.",
+      "artefacts": [
+        "data_classification_policy.pdf",
+        "encryption_standard.pdf",
+        "dlp_configuration.pdf"
+      ]
+    },
+    {
+      "category": "Risk Management",
+      "description": "An enterprise risk register is maintained and reviewed quarterly by the Risk Committee. A formal risk appetite statement has been approved by the Board. Third-party vendors undergo annual risk assessments prior to contract renewal.",
+      "artefacts": [
+        "risk_register_q4_2024.xlsx",
+        "risk_appetite_statement.pdf",
+        "vendor_risk_assessment_template.xlsx"
+      ]
+    },
+    {
+      "category": "Security Awareness Training",
+      "description": "All employees complete mandatory security awareness training upon onboarding and annually thereafter via KnowBe4. Phishing simulation campaigns are run quarterly. Completion rates exceed 95%.",
+      "artefacts": [
+        "training_completion_report_2024.pdf",
+        "phishing_simulation_q3_2024.xlsx"
+      ]
+    },
+    {
+      "category": "Backup and Recovery",
+      "description": "Daily backups are taken of all critical systems with 30-day retention. Backups are tested monthly. Recovery procedures are documented. RTO is 4 hours and RPO is 1 hour for Tier-1 systems. A DR test was successfully completed in October 2024.",
+      "artefacts": [
+        "backup_policy.pdf",
+        "dr_test_report_oct2024.pdf",
+        "rto_rpo_matrix.xlsx"
+      ]
+    }
+  ],
+  "overall_maturity_self_assessment": "Defined",
+  "auditor_notes": "Evidence collected by internal audit team. External pen test scheduled for Q2 2025."
+}

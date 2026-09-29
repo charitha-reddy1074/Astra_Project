@@ -1,0 +1,5 @@
+Scan ID	Benchmark	Provider	Account ID	Scan Date	Total Controls	Passed	Failed	Not Applicable	Pass Rate (%)	Critical Fails	High Fails	Medium Fails	Low Fails	Tool	Report Reference
+SCN-001	CIS AWS Foundations v1.5	AWS	123456789012	2024-11-01	231	189	28	14	3	9	11	5	Wiz	BENCH-AWS-PRD-NOV24
+SCN-002	CIS Azure v2.0	Azure	sub-0987abcd	2024-11-01	185	152	22	11	2	7	9	4	Wiz	BENCH-AZ-DEV-NOV24
+SCN-003	CIS GCP v2.0	GCP	gcp-proj-321	2024-11-01	163	130	25	8	4	8	9	4	Wiz	BENCH-GCP-PRD-NOV24
+SCN-004	CIS AWS Foundations v1.5	AWS	234567890123	2024-11-01	231	205	18	8	1	5	8	4	Wiz	BENCH-AWS-CORP-NOV24

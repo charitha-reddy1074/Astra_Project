@@ -1,0 +1,5 @@
+Provider	Account / Subscription ID	Account Name	Root/Owner Email	MFA Enabled	Environment	Business Unit	Date Created	Last Reviewed	Active Users	Service Principals	Status	Notes
+AWS	123456789012	prod-aws-us	root-prod@mcd.com	Yes	Production	Technology	2020-03-15	2024-12-01	42	8	Active	Root MFA enforced
+AWS	234567890123	corp-aws-infra	root-corp@mcd.com	Yes	Corporate	IT	2019-07-01	2024-11-15	18	3	Active	SCPs applied via Control Tower
+Azure	sub-0987abcd	azure-dev	devops@mcd.com	Yes	Development	Engineering	2021-05-20	2024-10-30	25	12	Active	Linked to EA billing
+GCP	gcp-proj-321	analytics-gcp	data@mcd.com	Yes	Production	Data	2022-01-10	2024-12-01	15	5	Active	VPC SC configured

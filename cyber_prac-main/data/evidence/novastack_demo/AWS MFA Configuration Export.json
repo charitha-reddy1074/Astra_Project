@@ -1,0 +1,5 @@
+AWS MFA Configuration Export.json
+NovaStack Technologies
+Approved 2026-01-15
+
+MFA is enforced for the cloud root account and privileged production roles.

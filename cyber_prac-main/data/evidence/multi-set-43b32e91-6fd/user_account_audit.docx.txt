@@ -1,0 +1,25 @@
+User Account Audit Report
+Report ID: AUD-USR-2024-Q4
+Audit Period: 01 October 2024 – 30 November 2024
+Auditor: Internal Audit Team — Raj Patel
+Date Issued: 05 December 2024
+Classification: CONFIDENTIAL
+
+Executive Summary
+This report documents the findings of the quarterly user account audit conducted across all enterprise systems. A total of 247 accounts were reviewed. Three (3) critical findings were identified: two (2) terminated employee accounts with active access and one (1) orphaned account with no identifiable owner.
+
+Audit Scope
+Active Directory (Windows domain accounts)
+AWS IAM Console accounts
+Salesforce CRM user licenses
+ServiceNow platform accounts
+VPN access profiles
+
+Account Inventory — Sample
+
+Findings Summary
+
+Auditor Sign-Off
+Lead Auditor: Raj Patel
+Reviewed By: Sarah Mitchell (CISO)
+Report Status: FINAL

@@ -1,0 +1,1844 @@
+@import "tailwindcss";
+
+/* ═════════════════════════════════════════════════════════════════════════════
+   CYBERAI — DESIGN TOKEN SYSTEM
+   ────────────────────────────────────────────────────────────────────────────
+   ONE brand, ONE surface system, ONE component language for the whole platform.
+
+     BRAND     #F5B700 (yellow) → #FF6A00 (orange) → #FF2D8D (pink)
+     FOUNDATION  near-black aubergine surfaces (#05030A … #1A0D26)
+     SEMANTICS  draft = muted, in progress = orange, completed = yellow,
+                critical = pink, success = a single restrained green
+
+   Two contracts make this hold across ~40 view files:
+
+     1.  TAILWIND BRIDGE — the stock Tailwind palettes (slate/gray/zinc/neutral/
+         stone, blue, indigo, violet, cyan, sky, and the role-chip utilities) are
+         re-pointed onto the semantic tokens declared in `:root` / `.dark` below.
+         `text-blue-700` compiles to `var(--color-blue-700)` → `var(--accent-ink)`,
+         so every legacy call site re-skins itself with zero JSX churn and zero
+         duplicated light/dark components.
+
+     2.  PRIMITIVES — `.card`, `.btn-*`, `.badge-*`, `.nav-item`, `.table-*`,
+         `.field`, `.menu-panel`, `.kpi` and the app shell are declared once, here,
+         from tokens. Components never name a colour.
+
+   NO COMPONENT MAY INLINE A HEX. If a new colour is needed, it is added as a
+   token below and consumed through `var(--…)`.
+   ═════════════════════════════════════════════════════════════════════════════ */
+
+/* ═════════════════════════════════════════════════════════════════════════════
+   TAILWIND CONFIG
+   ═════════════════════════════════════════════════════════════════════════════ */
+@custom-variant dark (&:where(.dark, .dark *));
+
+@theme {
+  /* ── Typography ─────────────────────────────────────────────────────────── */
+  --font-sans:    var(--font-inter), "Inter", -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
+  --font-display: var(--font-jakarta), "Plus Jakarta Sans", var(--font-inter), -apple-system, sans-serif;
+  --font-mono:    ui-monospace, "SFMono-Regular", "JetBrains Mono", Menlo, Consolas, monospace;
+
+  /* ── Type scale ─────────────────────────────────────────────────────────── */
+  --text-2xs:  10px;
+  --text-2xs--line-height: 1.35;
+
+  /* ── Radii ──────────────────────────────────────────────────────────────── */
+  --radius-sm:   8px;
+  --radius-md:   10px;
+  --radius-lg:   12px;
+  --radius-xl:   16px;
+  --radius-2xl:  18px;
+  --radius-3xl:  24px;
+
+  /* ── Motion ─────────────────────────────────────────────────────────────── */
+  --ease-out-soft:  cubic-bezier(0.22, 1, 0.36, 1);
+  --ease-in-out-soft: cubic-bezier(0.65, 0, 0.35, 1);
+
+  /* ═════════════════════════════════════════════════════════════════════════
+     NEUTRAL RAMP — bridged onto the semantic surface/ink tokens.
+     Light mode runs dark→light as 900→50 (ink at 900). Dark mode inverts the
+     ramp so `slate-900` still means "strongest ink" while `slate-50` still means
+     "most subtle wash". Utilities keep working; only the resolved value changes.
+     ═════════════════════════════════════════════════════════════════════════ */
+  --color-white:      var(--surface-primary);
+  --color-black:      #000000;
+
+  --color-slate-50:   var(--neutral-50);
+  --color-slate-100:  var(--neutral-100);
+  --color-slate-200:  var(--neutral-200);
+  --color-slate-300:  var(--neutral-300);
+  --color-slate-400:  var(--neutral-400);
+  --color-slate-500:  var(--neutral-500);
+  --color-slate-600:  var(--neutral-600);
+  --color-slate-700:  var(--neutral-700);
+  --color-slate-800:  var(--neutral-800);
+  --color-slate-900:  var(--neutral-900);
+  --color-slate-950:  var(--neutral-950);
+
+  --color-gray-50:    var(--neutral-50);
+  --color-gray-100:   var(--neutral-100);
+  --color-gray-200:   var(--neutral-200);
+  --color-gray-300:   var(--neutral-300);
+  --color-gray-400:   var(--neutral-400);
+  --color-gray-500:   var(--neutral-500);
+  --color-gray-600:   var(--neutral-600);
+  --color-gray-700:   var(--neutral-700);
+  --color-gray-800:   var(--neutral-800);
+  --color-gray-900:   var(--neutral-900);
+  --color-gray-950:   var(--neutral-950);
+
+  --color-zinc-50:    var(--neutral-50);
+  --color-zinc-100:   var(--neutral-100);
+  --color-zinc-200:   var(--neutral-200);
+  --color-zinc-300:   var(--neutral-300);
+  --color-zinc-400:   var(--neutral-400);
+  --color-zinc-500:   var(--neutral-500);
+  --color-zinc-600:   var(--neutral-600);
+  --color-zinc-700:   var(--neutral-700);
+  --color-zinc-800:   var(--neutral-800);
+  --color-zinc-900:   var(--neutral-900);
+  --color-zinc-950:   var(--neutral-950);
+
+  --color-neutral-50:  var(--neutral-50);
+  --color-neutral-100: var(--neutral-100);
+  --color-neutral-200: var(--neutral-200);
+  --color-neutral-300: var(--neutral-300);
+  --color-neutral-400: var(--neutral-400);
+  --color-neutral-500: var(--neutral-500);
+  --color-neutral-600: var(--neutral-600);
+  --color-neutral-700: var(--neutral-700);
+  --color-neutral-800: var(--neutral-800);
+  --color-neutral-900: var(--neutral-900);
+  --color-neutral-950: var(--neutral-950);
+
+  --color-stone-50:   var(--neutral-50);
+  --color-stone-100:  var(--neutral-100);
+  --color-stone-200:  var(--neutral-200);
+  --color-stone-300:  var(--neutral-300);
+  --color-stone-400:  var(--neutral-400);
+  --color-stone-500:  var(--neutral-500);
+  --color-stone-600:  var(--neutral-600);
+  --color-stone-700:  var(--neutral-700);
+  --color-stone-800:  var(--neutral-800);
+  --color-stone-900:  var(--neutral-900);
+  --color-stone-950:  var(--neutral-950);
+
+  /* ── BRAND · one accent family, three stops. Nothing purple, nothing blue.
+        50–200  tinted washes        300–600  the accent itself
+        700–800 solid chips        900 ink tone for accent text             */
+  --color-blue-50:    var(--accent-wash);
+  --color-blue-100:   var(--accent-wash-strong);
+  --color-blue-200:   var(--accent-soft-line);
+  --color-blue-300:   var(--accent-soft);
+  --color-blue-400:   var(--accent);
+  --color-blue-500:   var(--accent);
+  --color-blue-600:   var(--accent);
+  --color-blue-700:   var(--accent);
+  --color-blue-800:   var(--accent);
+  --color-blue-900:   var(--accent-ink);
+
+  --color-indigo-50:   var(--accent-wash);
+  --color-indigo-100:  var(--accent-wash-strong);
+  --color-indigo-200:  var(--accent-soft-line);
+  --color-indigo-300:  var(--accent-soft);
+  --color-indigo-400:  var(--accent-soft);
+  --color-indigo-500:  var(--accent);
+  --color-indigo-600:  var(--accent);
+  --color-indigo-700:  var(--accent);
+  --color-indigo-800:  var(--accent);
+  --color-indigo-900:  var(--accent-ink);
+
+  --color-violet-50:   var(--accent-wash);
+  --color-violet-100:  var(--accent-wash-strong);
+  --color-violet-200:  var(--accent-soft-line);
+  --color-violet-300:  var(--accent-soft);
+  --color-violet-400:  var(--accent-soft);
+  --color-violet-500:  var(--accent);
+  --color-violet-600:  var(--accent);
+  --color-violet-700:  var(--accent);
+  --color-violet-800:  var(--accent);
+  --color-violet-900:  var(--accent-ink);
+
+  --color-cyan-50:   var(--accent-wash);
+  --color-cyan-100:  var(--accent-wash-strong);
+  --color-cyan-200:  var(--accent-soft-line);
+  --color-cyan-300:  var(--accent-soft);
+  --color-cyan-400:  var(--accent);
+  --color-cyan-500:  var(--accent);
+  --color-cyan-600:  var(--accent);
+  --color-cyan-700:  var(--accent);
+  --color-cyan-800:  var(--accent);
+  --color-cyan-900:  var(--accent-ink);
+
+  --color-sky-50:    var(--accent-wash);
+  --color-sky-100:   var(--accent-wash-strong);
+  --color-sky-200:   var(--accent-soft-line);
+  --color-sky-300:   var(--accent-soft);
+  --color-sky-400:   var(--accent);
+  --color-sky-500:   var(--accent);
+  --color-sky-600:   var(--accent);
+  --color-sky-700:   var(--accent);
+  --color-sky-800:   var(--accent);
+  --color-sky-900:   var(--accent-ink);
+
+  /* ── BRAND · explicit stops, usable as `bg-brand-pink` / `text-brand-yellow` */
+  --color-brand-yellow: var(--brand-yellow);
+  --color-brand-yellow-soft: var(--brand-yellow-line);
+  --color-brand-orange: var(--brand-orange);
+  --color-brand-orange-soft: var(--brand-line);
+  --color-brand-pink:   var(--brand-pink);
+  --color-brand-pink-soft:   var(--brand-pink-line);
+  --color-brand-pink-wash:   var(--brand-pink-wash);
+
+  /* ── STATUS · restrained, functional only ──────────────────────────────── */
+  --color-emerald-50:  var(--status-success-wash);
+  --color-emerald-100: var(--status-success-wash);
+  --color-emerald-200: var(--status-success-line);
+  --color-emerald-300: var(--status-success-text);
+  --color-emerald-400: var(--status-success);
+  --color-emerald-500: var(--status-success);
+  --color-emerald-600: var(--status-success);
+  --color-emerald-700: var(--status-success-text);
+  --color-emerald-800: var(--status-success-text);
+  --color-emerald-900: var(--status-success-text);
+
+  --color-amber-50:   var(--status-warning-wash);
+  --color-amber-100:  var(--status-warning-wash);
+  --color-amber-200:  var(--status-warning-line);
+  --color-amber-300:  var(--status-warning-text);
+  --color-amber-400:  var(--status-warning);
+  --color-amber-500:  var(--status-warning);
+  --color-amber-600:  var(--status-warning);
+  --color-amber-700:  var(--status-warning-text);
+  --color-amber-800:  var(--status-warning-text);
+  --color-amber-900:  var(--status-warning-text);
+
+  --color-rose-50:    var(--status-danger-wash);
+  --color-rose-100:   var(--status-danger-wash);
+  --color-rose-200:   var(--status-danger-line);
+  --color-rose-300:   var(--status-danger-text);
+  --color-rose-400:   var(--status-danger);
+  --color-rose-500:   var(--status-danger);
+  --color-rose-600:   var(--status-danger);
+  --color-rose-700:   var(--status-danger-text);
+  --color-rose-800:   var(--status-danger-text);
+  --color-rose-900:   var(--status-danger-text);
+
+  --color-red-50:     var(--status-danger-wash);
+  --color-red-100:    var(--status-danger-wash);
+  --color-red-200:    var(--status-danger-line);
+  --color-red-300:    var(--status-danger-text);
+  --color-red-400:    var(--status-danger);
+  --color-red-500:    var(--status-danger);
+  --color-red-600:    var(--status-danger);
+  --color-red-700:    var(--status-danger-text);
+  --color-red-800:    var(--status-danger-text);
+  --color-red-900:    var(--status-danger-text);
+
+  /* ── Semantic aliases for new code ─────────────────────────────────────── */
+  --color-brand:       var(--accent);
+  --color-canvas:      var(--bg-primary);
+  --color-surface:     var(--surface-primary);
+  --color-hairline:    var(--border-subtle);
+  --color-ink:         var(--text-primary);
+}
+
+/* ═════════════════════════════════════════════════════════════════════════════
+   SEMANTIC TOKENS · LIGHT (default)
+   The same brand identity as dark mode — only the foundation inverts.
+   ═════════════════════════════════════════════════════════════════════════════ */
+:root {
+  /* ── Brand · identical in both themes. These three are the product. ─────── */
+  --brand-yellow: #F5B700;
+  --brand-orange: #FF6A00;
+  --brand-pink:   #FF2D8D;
+
+  /* The gradient is pink-forward: yellow opens, orange bridges early, and
+     hot pink owns the back half so every surface ends warm rather than amber. */
+  --brand-gradient:
+    linear-gradient(135deg, #F5B700 0%, #FF6A00 28%, #FF2D8D 100%);
+  --brand-gradient-horizontal:
+    linear-gradient(90deg, #F5B700 0%, #FF6A00 30%, #FF2D8D 100%);
+  --brand-gradient-vertical:
+    linear-gradient(180deg, #F5B700 0%, #FF6A00 28%, #FF2D8D 100%);
+  /* Pink-led variant, for moments that should read hot: selected states,
+     progress fills and the featured top edge. */
+  --brand-gradient-pink:
+    linear-gradient(135deg, #FF6A00 0%, #FF2D8D 100%);
+  --brand-gradient-pink-horizontal:
+    linear-gradient(90deg, #FF6A00 0%, #FF2D8D 100%);
+  /* Reversed sweep — pink leads, yellow closes. Used sparingly to break up
+     repetition (avatars, side-by-side tiles) without adding a new hue. */
+  --brand-gradient-r:
+    linear-gradient(135deg, #FF2D8D 0%, #FF6A00 62%, #F5B700 100%);
+
+  --brand-wash:         rgba(255, 106, 0, 0.10);
+  --brand-wash-strong:  rgba(255, 106, 0, 0.16);
+  --brand-line:         rgba(255, 106, 0, 0.28);
+  --brand-ring:         rgba(255, 106, 0, 0.16);
+
+  --brand-pink-wash:    rgba(255, 45, 141, 0.12);
+  --brand-pink-line:    rgba(255, 45, 141, 0.30);
+  --brand-yellow-wash:  rgba(245, 183, 0, 0.14);
+  --brand-yellow-line:  rgba(245, 183, 0, 0.30);
+
+  /* Two-stop brand wash — orange bleeding into pink. Used wherever a single
+     hue would leave the surface feeling flat. */
+  --brand-wash-duo:
+    linear-gradient(135deg,
+      rgba(255, 106, 0, 0.11) 0%,
+      rgba(255, 45, 141, 0.11) 100%);
+
+  /* ── Canvas ─────────────────────────────────────────────────────────────── */
+  --bg-primary:    #FAF8FB;
+  --bg-secondary:  #F3F0F4;
+  --bg-tertiary:   #ECE7ED;
+
+  /* ── Layered surfaces ───────────────────────────────────────────────────── */
+  --surface-primary:   #FFFFFF;
+  --surface-secondary: #FAF8FB;
+  --surface-elevated:  #FFFFFF;
+  --surface-sunken:    #F3F0F4;
+  --surface-hover:     #F1EBF2;
+
+  /* ── Accent · orange is the working accent; yellow and pink are its two
+        flanking stops, used for highlight and "important" respectively. ──── */
+  --accent:        var(--brand-orange);
+  --accent-hover:  #FF7F22;
+  --accent-soft:   #8F6400;          /* yellow stop, darkened for text on white */
+  --accent-deep:   #B34700;
+  /* Two jobs a single hex cannot do:
+     --accent-ink        text / icons ON a surface
+     --accent-fill-deep  a solid chip carrying white text                    */
+  --accent-ink:       #B34700;       /* 5.5:1 on #FFFFFF */
+  --accent-fill-deep: #B34700;       /* 5.5:1 with white text */
+  --accent-wash:         var(--brand-wash);
+  --accent-wash-strong:  var(--brand-wash-strong);
+  --accent-soft-line:    var(--brand-line);
+  --accent-ring:         var(--brand-ring);
+
+  --accent-pink:       var(--brand-pink);
+  --accent-pink-ink:   #C2185B;       /* 5.2:1 on #FFFFFF */
+  --accent-yellow-ink: #8F6400;
+
+  /* ── Neutral ramp ─────────────────────────────────────────────────────────
+     50→300 are surface/divider tones, 400→950 are ink tones. The 400 step is
+     deliberately an accessible muted tone (4.9:1 on white) rather than a
+     decorative tint: `text-slate-400` is the app's most-used utility and must
+     be readable in both themes. */
+  --neutral-50:  #F3F0F4;
+  --neutral-100: #E5DEE7;
+  --neutral-200: #D9D0DC;
+  --neutral-300: #C8BDCC;
+  --neutral-400: #817884;
+  --neutral-500: #6B636E;
+  --neutral-600: #625A64;
+  --neutral-700: #4A434D;
+  --neutral-800: #2E2833;
+  --neutral-900: #17121A;
+  --neutral-950: #0B0810;
+
+  /* ── Text ───────────────────────────────────────────────────────────────── */
+  --text-primary:   #17121A;
+  --text-secondary: #625A64;
+  --text-muted:     #817884;
+  --text-faint:     #9A9199;
+  --text-onaccent:  #FFFFFF;
+
+  --text-brand-yellow: var(--brand-yellow);
+  --text-brand-orange: var(--accent-ink);
+  --text-brand-pink:   var(--accent-pink-ink);
+
+  /* ── Borders ────────────────────────────────────────────────────────────── */
+  --border-hairline: #E5DEE7;
+  --border-subtle:   rgba(23, 18, 26, 0.10);
+  --border-default:  #D9D0DC;
+  --border-medium:   #C8BDCC;
+  --border-strong:   #B3A7B8;
+
+  /* ── Status · assessment semantics ride the brand ramp; green is reserved
+        for genuine success states and stays deliberately quiet. ──────────── */
+  --status-success:       #17794C;
+  --status-success-text:  #11603C;
+  --status-success-wash:  rgba(23, 121, 76, 0.10);
+  --status-success-line:  rgba(23, 121, 76, 0.26);
+
+  --status-warning:       var(--brand-orange);
+  --status-warning-text:  var(--accent-ink);
+  --status-warning-wash:  var(--brand-wash);
+  --status-warning-line:  var(--brand-line);
+
+  --status-danger:        var(--brand-pink);
+  --status-danger-text:   var(--accent-pink-ink);
+  --status-danger-wash:   var(--brand-pink-wash);
+  --status-danger-line:   var(--brand-pink-line);
+
+  --status-neutral:      #817884;
+  --status-neutral-wash: rgba(23, 18, 26, 0.05);
+  --status-neutral-line: rgba(23, 18, 26, 0.12);
+
+  /* ── Elevation ──────────────────────────────────────────────────────────── */
+  --shadow-xs:  0 1px 2px rgba(23, 18, 26, 0.05);
+  --shadow-sm:  0 1px 2px rgba(23, 18, 26, 0.06), 0 2px 6px -2px rgba(23, 18, 26, 0.05);
+  --shadow-md:  0 6px 18px -6px rgba(23, 18, 26, 0.12), 0 2px 6px -2px rgba(23, 18, 26, 0.06);
+  --shadow-lg:  0 14px 34px -10px rgba(23, 18, 26, 0.16), 0 4px 10px -4px rgba(23, 18, 26, 0.07);
+  --shadow-xl:  0 28px 64px -18px rgba(23, 18, 26, 0.20), 0 8px 20px -8px rgba(23, 18, 26, 0.10);
+
+  --shadow-card:     0 20px 50px rgba(23, 18, 26, 0.08);
+  --shadow-raised:   var(--shadow-md);
+  --shadow-elevated: var(--shadow-lg);
+  --shadow-overlay:  0 24px 70px rgba(23, 18, 26, 0.22);
+  --shadow-accent:   0 8px 24px rgba(255, 45, 141, 0.22), 0 2px 8px rgba(255, 106, 0, 0.16);
+
+  /* ── Legacy aliases kept so older references resolve ────────────────────── */
+  --brand-blue:        var(--brand-orange);
+  --brand-blue-soft:   var(--accent-wash-strong);
+  --brand-blue-wash:   var(--accent-wash);
+  --brand-blue-deep:   var(--accent-deep);
+  --brand-blue-dark:   var(--accent-deep);
+  --brand-ink:         var(--text-primary);
+  --brand-primary:       var(--brand-orange);
+  --brand-primary-dark:  var(--accent-deep);
+  --brand-primary-light: var(--accent-wash);
+  --brand-gold:        var(--brand-orange);
+  --brand-gold-soft:   var(--accent-wash-strong);
+  --brand-gold-wash:   var(--accent-wash);
+  --brand-gold-deep:   var(--accent-deep);
+  --brand-red:         var(--brand-pink);
+  --brand-red-deep:    var(--accent-pink-ink);
+  --brand-red-wash:    var(--status-danger-wash);
+  --kraft:        var(--brand-orange);
+  --kraft-deep:   var(--accent-deep);
+  --kraft-wash:   var(--accent-wash);
+  --clay:         var(--brand-pink);
+  --clay-wash:    var(--status-danger-wash);
+
+  --surface-bg:      var(--bg-primary);
+  --surface-bg-alt:  var(--bg-secondary);
+  --surface-card:    var(--surface-primary);
+  --surface-sunken:  var(--surface-sunken);
+  --surface-ink:     var(--text-primary);
+
+  --border-blue:     var(--accent-soft-line);
+  --border-gold:     var(--accent-soft-line);
+
+  --text-muted-legacy: var(--text-faint);
+
+  --shadow-gold:  var(--shadow-accent);
+  --shadow-blue:  var(--shadow-accent);
+  --shadow-ink:   var(--shadow-md);
+
+  /* ── Gradients · deliberately few. Page atmosphere, active nav, primary
+        button, featured-card edge and the brand tile. ────────────────────── */
+  --grad-accent:   var(--brand-gradient);
+  --grad-canvas:   linear-gradient(165deg, #FFFFFF 0%, #FAF8FB 52%, #F3F0F4 100%);
+  --grad-blue:     var(--brand-gradient);
+  --grad-ink:      var(--brand-gradient);
+  --grad-kraft:    var(--brand-gradient);
+  --grad-gold:     var(--brand-gradient);
+
+  /* ── Card surfaces ──────────────────────────────────────────────────────── */
+  --card-bg:        var(--surface-primary);
+  --card-border:    var(--border-hairline);
+  --card-radius:    16px;
+  --card-shadow:    var(--shadow-card);
+  --card-padding:   22px;
+
+  /* ── Layout rhythm ──────────────────────────────────────────────────────── */
+  --shell-gutter:   32px;
+  --section-gap:    28px;
+  --card-gap:       18px;
+
+  /* ── Chart tokens ───────────────────────────────────────────────────────── */
+  --chart-grid:      rgba(23, 18, 26, 0.07);
+  --chart-axis:      #817884;
+  --chart-muted:     #817884;
+  --chart-series-1:  #FF6A00;
+  --chart-series-2:  #FF2D8D;
+  --chart-series-3:  #F5B700;
+  --chart-series-4:  #B34700;
+  --chart-series-5:  #C2185B;
+  --chart-track:     rgba(23, 18, 26, 0.07);
+
+  /* ── Ambient atmosphere · near-invisible in light mode ─────────────────── */
+  --glow-navy:   rgba(245, 183, 0, 0.05);
+  --glow-purple: rgba(255, 45, 141, 0.06);
+  --glow-magenta:rgba(255, 74, 130, 0.045);
+  --glow-red:    rgba(255, 45, 141, 0.04);
+  --glow-plum:   rgba(255, 255, 255, 0.55);
+
+  /* ── Chrome (sidebar / topbar) ──────────────────────────────────────────── */
+  --chrome-bg:      var(--surface-primary);
+  --chrome-border:  var(--border-hairline);
+
+  color-scheme: light;
+}
+
+/* ═════════════════════════════════════════════════════════════════════════════
+   SEMANTIC TOKENS · DARK
+   Applied by adding `.dark` to <html> (see ThemeProvider). The foundation is a
+   near-black aubergine; the brand is byte-identical to light mode.
+   ═════════════════════════════════════════════════════════════════════════════ */
+.dark {
+  /* ── Canvas ─────────────────────────────────────────────────────────────── */
+  --bg-primary:    #05030A;
+  --bg-secondary:  #080512;
+  --bg-tertiary:   #0D0715;
+
+  /* ── Layered surfaces ───────────────────────────────────────────────────── */
+  --surface-primary:   #0A0713;
+  --surface-secondary: #0F091A;
+  --surface-elevated:  #140B20;
+  --surface-sunken:    #0B0714;
+  --surface-hover:     #1A0D26;
+
+  /* ── Accent ─────────────────────────────────────────────────────────────── */
+  --accent-hover:  #FF8226;
+  --accent-soft:   var(--brand-yellow);
+  --accent-deep:   #C25200;
+  --accent-ink:       var(--brand-orange);   /* 6.9:1 on #0A0713 */
+  --accent-fill-deep: #9A4400;               /* 5.0:1 with white text */
+  --accent-wash:         rgba(255, 106, 0, 0.14);
+  --accent-wash-strong:  rgba(255, 106, 0, 0.22);
+  --accent-soft-line:    rgba(255, 106, 0, 0.34);
+  --accent-ring:         rgba(255, 106, 0, 0.30);
+
+  --accent-pink-ink:   #FF6BA8;
+  --accent-yellow-ink: var(--brand-yellow);
+
+  /* ── Neutral ramp (inverted: low steps are surface/divider tones, high steps
+        are ink). Divider steps are alpha so they composite over the cards. ── */
+  --neutral-50:  #0F091A;
+  --neutral-100: rgba(255, 255, 255, 0.06);
+  --neutral-200: rgba(255, 255, 255, 0.10);
+  --neutral-300: rgba(255, 255, 255, 0.16);
+  --neutral-400: #8C8290;
+  --neutral-500: #A79EA9;
+  --neutral-600: #B8B0BA;
+  --neutral-700: #CFC8D1;
+  --neutral-800: #E4DFE5;
+  --neutral-900: #F2EFF2;
+  --neutral-950: #F7F4F8;
+
+  /* ── Text ───────────────────────────────────────────────────────────────── */
+  --text-primary:   #F7F4F8;
+  --text-secondary: #B8B0BA;
+  --text-muted:     #817884;
+  --text-faint:     #6B6270;
+  --text-onaccent:  #FFFFFF;
+
+  --text-brand-yellow: var(--brand-yellow);
+  --text-brand-orange: var(--brand-orange);
+  --text-brand-pink:   var(--brand-pink);
+
+  /* ── Borders ────────────────────────────────────────────────────────────── */
+  --border-hairline: rgba(255, 255, 255, 0.08);
+  --border-subtle:   rgba(255, 255, 255, 0.08);
+  --border-default:  rgba(255, 255, 255, 0.12);
+  --border-medium:   rgba(255, 255, 255, 0.16);
+  --border-strong:   rgba(255, 255, 255, 0.18);
+
+  /* ── Status ─────────────────────────────────────────────────────────────── */
+  --status-success:       #2FA37A;
+  --status-success-text:  #58C79E;
+  --status-success-wash:  rgba(47, 163, 122, 0.12);
+  --status-success-line:  rgba(47, 163, 122, 0.26);
+
+  --status-warning:       var(--brand-orange);
+  --status-warning-text:  #FF8A2B;
+  --status-warning-wash:  var(--brand-wash);
+  --status-warning-line:  var(--brand-line);
+
+  --status-danger:        var(--brand-pink);
+  --status-danger-text:   #FF6BA8;
+  --status-danger-wash:   var(--brand-pink-wash);
+  --status-danger-line:   var(--brand-pink-line);
+
+  --status-neutral:      #817884;
+  --status-neutral-wash: rgba(255, 255, 255, 0.06);
+  --status-neutral-line: rgba(255, 255, 255, 0.12);
+
+  /* ── Elevation · never pure black on near-black ─────────────────────────── */
+  --shadow-xs:  0 1px 2px rgba(0, 0, 0, 0.40);
+  --shadow-sm:  0 1px 2px rgba(0, 0, 0, 0.44), 0 2px 8px -2px rgba(0, 0, 0, 0.34);
+  --shadow-md:  0 10px 26px -8px rgba(0, 0, 0, 0.60), 0 3px 8px -3px rgba(0, 0, 0, 0.40);
+  --shadow-lg:  0 20px 48px -12px rgba(0, 0, 0, 0.66), 0 6px 14px -6px rgba(0, 0, 0, 0.46);
+  --shadow-xl:  0 34px 76px -18px rgba(0, 0, 0, 0.76), 0 10px 24px -10px rgba(0, 0, 0, 0.52);
+
+  --shadow-card:     0 20px 50px rgba(0, 0, 0, 0.20);
+  --shadow-overlay:  0 24px 70px rgba(0, 0, 0, 0.35);
+  --shadow-accent:   0 8px 24px rgba(255, 45, 141, 0.22), 0 2px 8px rgba(255, 106, 0, 0.16);
+
+  /* ── Card surfaces · one flat system + optional corner glow ────────────── */
+  --card-bg:      var(--surface-primary);
+  --card-border:  var(--border-hairline);
+  --card-shadow:  0 20px 50px rgba(0, 0, 0, 0.20);
+
+  /* ── Ambient atmosphere · low-opacity, fixed, behind all content ──────────
+        Weighted toward pink: the shell should read warm-magenta at the edges,
+        never amber-only. */
+  --glow-navy:   rgba(245, 183, 0, 0.07);
+  --glow-purple: rgba(255, 45, 141, 0.13);
+  --glow-magenta:rgba(255, 74, 130, 0.09);
+  --glow-red:    rgba(255, 45, 141, 0.08);
+  --glow-plum:   rgba(26, 8, 30, 0.72);
+
+  /* ── Sidebar / topbar · part of the same dark shell, never white ───────── */
+  --chrome-bg:      linear-gradient(180deg, #080512 0%, #05030A 100%);
+  --chrome-border:  rgba(255, 255, 255, 0.08);
+
+  /* ── Chart tokens ───────────────────────────────────────────────────────── */
+  --chart-grid:  rgba(255, 255, 255, 0.06);
+  --chart-axis:  #817884;
+  --chart-muted: #817884;
+  --chart-series-1: #FF6A00;
+  --chart-series-2: #FF2D8D;
+  --chart-series-3: #F5B700;
+  --chart-series-4: #FF8A2B;
+  --chart-series-5: #B34700;
+  --chart-track:     rgba(255, 255, 255, 0.07);
+
+  color-scheme: dark;
+}
+
+/* ═════════════════════════════════════════════════════════════════════════════
+   BASE
+   ═════════════════════════════════════════════════════════════════════════════ */
+@layer base {
+  *,
+  ::after,
+  ::before,
+  ::backdrop,
+  ::file-selector-button {
+    border-color: var(--border-hairline);
+  }
+
+  html {
+    background-color: var(--bg-primary);
+    color: var(--text-primary);
+    color-scheme: light;
+  }
+
+  .dark html,
+  html:has(.dark) { color-scheme: dark; }
+
+  body {
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+    text-rendering: optimizeLegibility;
+    background-color: var(--bg-primary);
+    color: var(--text-primary);
+    /* Guards against a stray fixed-width child creating a horizontal scrollbar. */
+    overflow-x: hidden;
+  }
+
+  ::selection {
+    background: var(--accent-wash-strong);
+    color: var(--text-primary);
+  }
+}
+
+/* ═════════════════════════════════════════════════════════════════════════════
+   PALETTE BRIDGE
+   ────────────────────────────────────────────────────────────────────────────
+   Three collisions exist that a single 50→950 scale step cannot resolve on its
+   own. All three are fixed here rather than by editing ~40 view files.
+
+   1. ACCENT TEXT vs ACCENT FILL. `bg-blue-700 text-white` is a filled brand
+      chip and needs the gradient; `text-blue-700` is a link and needs readable
+      ink. Accent *text* utilities 300–900 are pinned to --accent-ink in both
+      themes; accent *fill* utilities 600–800 are pinned to the brand gradient.
+
+   2. INK vs SURFACE INVERSION. `text-slate-100/200/300` are decorative tints
+      that collapse to ~1.4:1 on white. Both themes route them to --text-faint.
+
+   3. TINTED vs SOLID ACCENT FILLS. `bg-blue-600/10` is a subtle tinted
+      container and must stay a wash — so the gradient bridge below only matches
+      the exact solid class names, never the alpha variants.
+   ═════════════════════════════════════════════════════════════════════════════ */
+
+/* `text-white` sits on saturated brand tiles, buttons and role chips, so it
+   stays literal white in both themes even though `--color-white` is bridged to
+   the surface token for `bg-white`. */
+.text-white { color: #FFFFFF !important; }
+
+.text-slate-100,
+.text-slate-200,
+.text-slate-300 { color: var(--text-faint); }
+
+/* 1 · accent text → readable ink */
+.text-blue-300,  .text-blue-400,  .text-blue-500,  .text-blue-600,
+.text-blue-700,  .text-blue-800,  .text-blue-900,
+.text-indigo-300, .text-indigo-400, .text-indigo-500, .text-indigo-600,
+.text-indigo-700, .text-indigo-800, .text-indigo-900,
+.text-violet-300, .text-violet-400, .text-violet-500, .text-violet-600,
+.text-violet-700, .text-violet-800, .text-violet-900,
+.text-cyan-300,  .text-cyan-400,  .text-cyan-500,  .text-cyan-600,
+.text-cyan-700,  .text-cyan-800,  .text-cyan-900,
+.text-sky-300,    .text-sky-400,    .text-sky-500,    .text-sky-600,
+.text-sky-700,    .text-sky-800,    .text-sky-900 {
+  color: var(--accent-ink);
+}
+
+/* 1b · accent fills → THE brand gradient. This is the single most important
+   rule in the file: it is what removes every purple, blue, indigo and cyan
+   chip/button/tile in the product, in both themes, at once. */
+.brand-tile,
+.bg-blue-700,  .bg-blue-800,
+.bg-indigo-600, .bg-indigo-700,
+.bg-violet-600, .bg-violet-700,
+.bg-cyan-700,  .bg-cyan-800,
+.bg-sky-700,    .bg-sky-800 {
+  background-color: transparent !important;
+  background-image: var(--brand-gradient) !important;
+  background-size: 160% 160%;
+  background-position: 0% 50%;
+  border-color: transparent;
+  color: #FFFFFF;
+  box-shadow: var(--shadow-accent);
+  transition: background-position 0.45s var(--ease-out-soft),
+              box-shadow 0.22s var(--ease-out-soft),
+              filter 0.22s var(--ease-out-soft);
+}
+.brand-tile:hover,
+.bg-blue-700:hover,  .bg-blue-800:hover,
+.bg-indigo-600:hover, .bg-indigo-700:hover,
+.bg-violet-600:hover, .bg-violet-700:hover,
+.bg-cyan-700:hover,  .bg-cyan-800:hover,
+.bg-sky-700:hover,    .bg-sky-800:hover {
+  background-position: 100% 50%;
+  filter: brightness(1.07);
+}
+
+/* Gradient chips must not drag a legacy purple shadow along with them. */
+.shadow-blue-700,  .shadow-blue-800,  .shadow-blue-900,
+.shadow-indigo-600, .shadow-indigo-700,
+.shadow-violet-600, .shadow-violet-700,
+.shadow-cyan-700,   .shadow-cyan-800 {
+  --tw-shadow-color: rgba(255, 106, 0, 0.22) !important;
+}
+
+/* Legacy focus rings → brand ring */
+.ring-blue-50,   .ring-blue-100,  .ring-blue-200,  .ring-blue-300,
+.ring-blue-400,  .ring-blue-500,  .ring-blue-600,
+.ring-indigo-50, .ring-indigo-100, .ring-indigo-400, .ring-indigo-600,
+.ring-violet-50, .ring-violet-400, .ring-violet-600,
+.ring-cyan-50,   .ring-cyan-400,   .ring-cyan-600,
+.ring-sky-50,    .ring-sky-400,    .ring-sky-600 {
+  --tw-ring-color: var(--accent-ring) !important;
+}
+
+/* ═════════════════════════════════════════════════════════════════════════════
+   APP SHELL + ATMOSPHERIC BACKGROUND
+   ────────────────────────────────────────────────────────────────────────────
+   Four very soft radial washes in brand colours sit behind all content, fixed
+   to the shell and never on individual cards, so they cost nothing to render
+   and never reduce contrast.
+   ═════════════════════════════════════════════════════════════════════════════ */
+.dashboard-shell {
+  position: relative;
+  isolation: isolate;
+  background-color: var(--bg-primary);
+  overflow-x: hidden;
+}
+
+.dashboard-shell::before,
+.dashboard-shell::after {
+  content: "";
+  position: absolute;
+  inset: 0;
+  pointer-events: none;
+  z-index: 0;
+}
+
+/* Layer 1 · brand atmosphere */
+.dashboard-shell::before {
+  background:
+    radial-gradient(circle at 15% 5%,   var(--glow-navy)   0%, transparent 32%),
+    radial-gradient(circle at 85% 10%,  var(--glow-purple) 0%, transparent 34%),
+    radial-gradient(circle at 55% 45%,  var(--glow-magenta)0%, transparent 38%),
+    radial-gradient(circle at 40% 100%, var(--glow-red)    0%, transparent 35%);
+}
+
+/* Layer 2 · faint technical grid, adds "data platform" texture at 1px */
+.dashboard-shell::after {
+  background-image:
+    linear-gradient(to right, var(--border-hairline) 1px, transparent 1px),
+    linear-gradient(to bottom, var(--border-hairline) 1px, transparent 1px);
+  background-size: 64px 64px;
+  mask-image: radial-gradient(ellipse 90% 70% at 50% 0%, #000 0%, transparent 78%);
+  -webkit-mask-image: radial-gradient(ellipse 90% 70% at 50% 0%, #000 0%, transparent 78%);
+  opacity: 0.5;
+}
+
+/* Content always sits above the atmosphere */
+.dashboard-shell > * { position: relative; z-index: 1; }
+
+/* ═════════════════════════════════════════════════════════════════════════════
+   PRIMITIVES
+   ═════════════════════════════════════════════════════════════════════════════ */
+
+/* ── Cards ─────────────────────────────────────────────────────────────────── */
+.card {
+  position: relative;
+  background: var(--card-bg);
+  border: 1px solid var(--card-border);
+  border-radius: var(--card-radius);
+  box-shadow: var(--card-shadow);
+  transition: border-color 0.22s var(--ease-out-soft),
+              box-shadow 0.22s var(--ease-out-soft),
+              transform 0.22s var(--ease-out-soft);
+}
+
+/* Atmospheric corner glows — a 9–13% brand wash bleeding out of one corner,
+   rotated by card category. Felt, not seen. */
+.card-glow-pink   { --card-glow-color: rgba(255, 45, 141, 0.13); }
+.card-glow-orange { --card-glow-color: rgba(255, 106, 0, 0.11); }
+.card-glow-yellow { --card-glow-color: rgba(245, 183, 0, 0.10); }
+.card-glow-duo    { --card-glow-color: rgba(255, 74, 130, 0.12); }
+
+.card-glow-pink,
+.card-glow-orange,
+.card-glow-yellow,
+.card-glow-duo {
+  background-image: radial-gradient(circle at 90% 0%, var(--card-glow-color) 0%, transparent 38%);
+}
+
+/* Corner rotation, so a wall of cards never looks uniform. */
+.card-glow-pink.tr,
+.card-glow-orange.tr,
+.card-glow-yellow.tr,
+.card-glow-duo.tr { background-image: radial-gradient(circle at 10% 0%, var(--card-glow-color) 0%, transparent 38%); }
+.card-glow-pink.bl,
+.card-glow-orange.bl,
+.card-glow-yellow.bl,
+.card-glow-duo.bl { background-image: radial-gradient(circle at 100% 100%, var(--card-glow-color) 0%, transparent 38%); }
+.card-glow-pink.tl,
+.card-glow-orange.tl,
+.card-glow-yellow.tl,
+.card-glow-duo.tl { background-image: radial-gradient(circle at 0% 100%, var(--card-glow-color) 0%, transparent 38%); }
+
+/* Featured cards: the same wash, opposite corner, carried further into pink. */
+.card-sheen::after {
+  content: "";
+  position: absolute;
+  inset: 0;
+  border-radius: inherit;
+  pointer-events: none;
+  background:
+    radial-gradient(120% 90% at 100% 0%, rgba(255, 45, 141, 0.12) 0%, transparent 55%),
+    radial-gradient(90% 70% at 0% 0%, rgba(245, 183, 0, 0.07) 0%, transparent 55%);
+}
+
+.card-hover:hover {
+  border-color: var(--accent-soft-line);
+  box-shadow: var(--shadow-raised);
+  transform: translateY(-1px);
+}
+
+/* Featured card edge — a 2px slice of the brand gradient. */
+.card-accent::before {
+  content: "";
+  position: absolute;
+  inset: 0 0 auto 0;
+  height: 2px;
+  border-radius: var(--card-radius) var(--card-radius) 0 0;
+  background: var(--brand-gradient-horizontal);
+  pointer-events: none;
+}
+.card-accent-kraft.card-accent::before { background: var(--brand-orange); }
+.card-accent-red.card-accent::before   { background: var(--brand-pink); }
+
+/* Card header — consistent padding + rhythm across every view */
+.card-head {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 12px;
+  padding: 16px var(--card-padding);
+  border-bottom: 1px solid var(--border-hairline);
+}
+.card-head-title {
+  font-family: var(--font-display);
+  font-size: 14px;
+  font-weight: 700;
+  letter-spacing: -0.012em;
+  color: var(--text-primary);
+}
+.card-body { padding: var(--card-padding); }
+
+/* ── Row item · list rows inside a card (assessments, findings, activity) ── */
+.row-item {
+  transition: background-color 0.18s var(--ease-out-soft);
+}
+.row-item:hover { background: var(--brand-wash); }
+
+/* ── Headings ──────────────────────────────────────────────────────────────── */
+.section-title {
+  font-family: var(--font-display);
+  font-size: 19px;
+  font-weight: 700;
+  letter-spacing: -0.02em;
+  color: var(--text-primary);
+  line-height: 1.25;
+}
+
+.page-title {
+  font-family: var(--font-display);
+  font-size: 30px;
+  font-weight: 800;
+  letter-spacing: -0.035em;
+  color: var(--text-primary);
+  line-height: 1.1;
+}
+
+@media (max-width: 640px) {
+  .page-title { font-size: 24px; }
+  .section-title { font-size: 17px; }
+}
+
+/* ── Buttons ───────────────────────────────────────────────────────────────── */
+.btn-primary,
+.btn-secondary,
+.btn-ghost {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  gap: 7px;
+  font-size: 13px;
+  font-weight: 600;
+  line-height: 1;
+  padding: 10px 16px;
+  border-radius: var(--radius-md);
+  border: 1px solid transparent;
+  cursor: pointer;
+  white-space: nowrap;
+  transition: background-color 0.2s var(--ease-out-soft),
+              border-color 0.2s var(--ease-out-soft),
+              color 0.2s var(--ease-out-soft),
+              box-shadow 0.2s var(--ease-out-soft),
+              transform 0.12s var(--ease-out-soft);
+}
+
+.btn-primary {
+  background: var(--brand-gradient);
+  background-size: 160% 160%;
+  background-position: 0% 50%;
+  color: #FFFFFF;
+  border: none;
+  box-shadow: var(--shadow-accent);
+}
+.btn-primary:hover:not(:disabled) {
+  background-position: 100% 50%;
+  filter: brightness(1.08);
+}
+.btn-primary:active:not(:disabled) { transform: translateY(1px); }
+
+.btn-secondary {
+  background: var(--surface-secondary);
+  color: var(--text-primary);
+  border-color: var(--border-default);
+  box-shadow: var(--shadow-xs);
+}
+.btn-secondary:hover:not(:disabled) {
+  background: var(--surface-elevated);
+  border-color: var(--accent-soft-line);
+  color: var(--text-primary);
+}
+.btn-secondary:active:not(:disabled) { transform: translateY(1px); }
+
+.btn-ghost {
+  background: transparent;
+  color: var(--text-secondary);
+}
+.btn-ghost:hover:not(:disabled) {
+  background: var(--brand-wash);
+  color: var(--accent-ink);
+}
+
+.btn-primary:disabled,
+.btn-secondary:disabled,
+.btn-ghost:disabled {
+  opacity: 0.5;
+  cursor: not-allowed;
+  box-shadow: none;
+}
+
+.btn-lg { padding: 12px 18px; font-size: 13.5px; border-radius: var(--radius-lg); }
+
+/* ── Badges / chips · compact, tinted, never giant pills ──────────────────── */
+.badge {
+  display: inline-flex;
+  align-items: center;
+  gap: 5px;
+  font-size: 10.5px;
+  font-weight: 600;
+  line-height: 1;
+  letter-spacing: 0.01em;
+  padding: 4px 8px;
+  border-radius: 999px;
+  white-space: nowrap;
+  border: 1px solid transparent;
+}
+
+.badge-neutral  { background: var(--status-neutral-wash); color: var(--text-muted); border-color: var(--status-neutral-line); }
+.badge-low      { background: var(--status-neutral-wash); color: var(--text-muted); border-color: var(--status-neutral-line); }
+.badge-medium   { background: var(--brand-wash);     color: var(--status-warning-text); border-color: var(--brand-line); }
+.badge-high     { background: var(--brand-wash);     color: var(--status-warning-text); border-color: var(--brand-line); }
+.badge-critical { background: var(--brand-pink-wash);color: var(--status-danger-text);  border-color: var(--brand-pink-line); }
+.badge-success  { background: var(--status-success-wash); color: var(--status-success-text); border-color: var(--status-success-line); }
+.badge-brand    { background: var(--brand-wash);     color: var(--accent-ink);  border-color: var(--brand-line); }
+
+/* Assessment lifecycle, expressed entirely in brand stops:
+   draft = muted · in progress = orange · completed = yellow                    */
+.badge-draft       { background: var(--status-neutral-wash); color: var(--text-muted); border-color: var(--status-neutral-line); }
+.badge-in_progress { background: var(--brand-wash);     color: var(--status-warning-text); border-color: var(--brand-line); }
+.badge-completed   { background: var(--brand-yellow-wash); color: var(--accent-yellow-ink); border-color: var(--brand-yellow-line); }
+
+/* ── Status dots ───────────────────────────────────────────────────────────── */
+.status-dot {
+  width: 8px;
+  height: 8px;
+  border-radius: 999px;
+  display: inline-block;
+  flex-shrink: 0;
+}
+.status-completed   { background: var(--brand-yellow); box-shadow: 0 0 0 3px var(--brand-yellow-wash); }
+.status-in_progress { background: var(--brand-orange); box-shadow: 0 0 0 3px var(--brand-wash); }
+.status-in_review   { background: var(--brand-pink);   box-shadow: 0 0 0 3px var(--brand-pink-wash); }
+.status-draft       { background: var(--status-neutral); box-shadow: 0 0 0 3px var(--status-neutral-wash); }
+
+/* ── Alerts ────────────────────────────────────────────────────────────────── */
+.alert {
+  display: flex;
+  align-items: flex-start;
+  gap: 10px;
+  padding: 12px 14px;
+  border-radius: var(--radius-lg);
+  font-size: 13px;
+  border: 1px solid transparent;
+}
+.alert-danger {
+  background: var(--status-danger-wash);
+  color: var(--status-danger-text);
+  border-color: var(--status-danger-line);
+}
+.alert-info {
+  background: var(--brand-wash);
+  color: var(--text-primary);
+  border-color: var(--brand-line);
+}
+
+/* ── Empty states ──────────────────────────────────────────────────────────── */
+.empty-state {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+}
+/* Subtle brand-tinted container for icons sitting inside a card. The quiet
+   counterpart to .brand-tile — no gradient fill, just the brand hue. */
+.icon-tile {
+  background-color: var(--surface-elevated);
+  background-image: var(--brand-wash-duo);
+  color: var(--accent-ink);
+  border: 1px solid var(--accent-soft-line);
+}
+
+/* Avatar rotation — the same brand system with the gradient origin moved, so a
+   table of people doesn't read as one identical repeated chip. */
+.avatar-tile-pink { background-image: var(--brand-gradient-pink); }
+.avatar-tile-rev  { background-image: var(--brand-gradient-r); }
+
+/* Selected chip — subtle brand tint plus brand ink, for mutually exclusive
+   filter rows where four loud gradients would be too much. */
+.chip-selected {
+  background-color: var(--surface-elevated);
+  background-image: var(--brand-wash-duo);
+  color: var(--accent-ink);
+  border-color: var(--accent-line);
+  font-weight: 700;
+}
+
+/* Solid bar fill for meters/progress. Pink-forward on purpose. */
+.bar-brand {
+  background-image: var(--brand-gradient-pink-horizontal);
+  background-size: 100% 100%;
+}
+
+/* Solid bar track behind .bar-brand. */
+.bar-track {
+  background-color: var(--chart-track);
+}
+
+.empty-icon {
+  width: 46px;
+  height: 46px;
+  border-radius: var(--radius-lg);
+  background-color: var(--surface-elevated);
+  background-image: var(--brand-wash-duo);
+  color: var(--accent-ink);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-bottom: 12px;
+  border: 1px solid var(--accent-soft-line);
+}
+.empty-title {
+  font-size: 13px;
+  font-weight: 700;
+  color: var(--text-primary);
+}
+.empty-body {
+  font-size: 12px;
+  color: var(--text-faint);
+  margin-top: 4px;
+  max-width: 320px;
+  line-height: 1.5;
+}
+
+/* ── Score ring ────────────────────────────────────────────────────────────── */
+.score-ring {
+  position: relative;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-shrink: 0;
+}
+.score-ring::before {
+  content: "";
+  position: absolute;
+  inset: 9px;
+  background: var(--surface-primary);
+  border-radius: 50%;
+}
+.score-ring > * { position: relative; z-index: 1; }
+
+/* ── Skeleton shimmer ──────────────────────────────────────────────────────── */
+.skeleton {
+  background: linear-gradient(90deg, var(--neutral-100) 25%, var(--neutral-200) 50%, var(--neutral-100) 75%);
+  background-size: 200% 100%;
+  animation: skeleton-shimmer 1.4s ease-in-out infinite;
+  border-radius: 6px;
+}
+@keyframes skeleton-shimmer {
+  0%   { background-position: 200% 0; }
+  100% { background-position: -200% 0; }
+}
+
+/* ── Motion ────────────────────────────────────────────────────────────────── */
+.fade-in-up,
+.card-in {
+  animation: rise-in 0.5s var(--ease-out-soft) both;
+}
+@keyframes rise-in {
+  from { opacity: 0; transform: translateY(8px); }
+  to   { opacity: 1; transform: none; }
+}
+
+@keyframes menu-pop {
+  from { opacity: 0; transform: translateY(-4px) scale(0.985); }
+  to   { opacity: 1; transform: none; }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  *, *::before, *::after {
+    animation-duration: 0.01ms !important;
+    animation-iteration-count: 1 !important;
+    transition-duration: 0.01ms !important;
+  }
+}
+
+/* ═════════════════════════════════════════════════════════════════════════════
+   TYPOGRAPHY HELPERS
+   ═════════════════════════════════════════════════════════════════════════════ */
+.eyebrow {
+  font-size: 10.5px;
+  font-weight: 700;
+  letter-spacing: 0.13em;
+  text-transform: uppercase;
+  color: var(--accent-ink);
+}
+.eyebrow-gold { color: var(--accent-ink); }
+
+.display-lg {
+  font-family: var(--font-display);
+  font-size: 30px;
+  line-height: 1.12;
+  letter-spacing: -0.035em;
+  font-weight: 800;
+  color: var(--text-primary);
+}
+
+/* Brand text gradient — reserved for major page titles and high-level labels.
+   Dark: the full yellow → orange → pink sweep. Light: the same identity
+   stepped two stops darker, because yellow on white is unreadable. */
+.grad-text {
+  background: var(--brand-gradient-horizontal);
+  -webkit-background-clip: text;
+  background-clip: text;
+  -webkit-text-fill-color: transparent;
+  color: transparent;
+}
+:root .grad-text {
+  background: linear-gradient(90deg, #C2520A 0%, #C2185B 100%);
+  -webkit-background-clip: text;
+  background-clip: text;
+  -webkit-text-fill-color: transparent;
+  color: transparent;
+}
+
+/* Hot variant for selected state and high-emphasis labels. */
+.grad-text-hot {
+  background: var(--brand-gradient-pink-horizontal);
+  -webkit-background-clip: text;
+  background-clip: text;
+  -webkit-text-fill-color: transparent;
+  color: transparent;
+}
+:root .grad-text-hot {
+  background: linear-gradient(90deg, #C2520A 0%, #C2185B 100%);
+  -webkit-background-clip: text;
+  background-clip: text;
+  -webkit-text-fill-color: transparent;
+  color: transparent;
+}
+
+.title-rule { position: relative; padding-bottom: 12px; }
+.title-rule::after {
+  content: "";
+  position: absolute;
+  left: 0;
+  bottom: 0;
+  width: 40px;
+  height: 3px;
+  border-radius: 999px;
+  background: var(--brand-gradient-horizontal);
+}
+
+.tnum { font-variant-numeric: tabular-nums; }
+
+/* ═════════════════════════════════════════════════════════════════════════════
+   LAYOUT · CHROME
+   ═════════════════════════════════════════════════════════════════════════════ */
+
+/* ── Topbar ────────────────────────────────────────────────────────────────── */
+.topbar {
+  position: relative;
+  background: color-mix(in srgb, var(--bg-primary) 88%, transparent);
+  -webkit-backdrop-filter: blur(16px) saturate(140%);
+  backdrop-filter: blur(16px) saturate(140%);
+  border-bottom: 1px solid var(--chrome-border, var(--border-hairline));
+  transition: background-color 0.25s var(--ease-out-soft),
+              border-color 0.25s var(--ease-out-soft);
+}
+
+:root .topbar { background: color-mix(in srgb, #FAF8FB 88%, transparent); }
+.dark .topbar  { background: rgba(5, 3, 10, 0.92); }
+
+/* ── Sidebar · part of the same shell in BOTH themes. Never white. ───────── */
+.sidebar {
+  background: var(--chrome-bg);
+  border-right: 1px solid var(--chrome-border);
+  transition: transform 0.24s var(--ease-out-soft),
+              background 0.25s var(--ease-out-soft);
+}
+
+/* ── Navigation ────────────────────────────────────────────────────────────── */
+.nav-item {
+  position: relative;
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  width: 100%;
+  min-height: 38px;
+  padding: 8px 12px;
+  border-radius: var(--radius-lg);
+  font-size: 13px;
+  font-weight: 500;
+  color: var(--text-secondary);
+  border: 1px solid transparent;
+  transition: background-color 0.2s var(--ease-out-soft),
+              color 0.2s var(--ease-out-soft),
+              border-color 0.2s var(--ease-out-soft);
+}
+.nav-item:hover {
+  background: var(--brand-wash);
+  color: var(--text-primary);
+}
+.nav-item-active {
+  background: var(--nav-active-bg);
+  color: var(--nav-active-text);
+  font-weight: 600;
+  border-color: var(--nav-active-border);
+}
+
+/* Left brand indicator — a 4px slice of the brand gradient. */
+.nav-item-active::before {
+  content: "";
+  position: absolute;
+  left: -1px;
+  top: 50%;
+  transform: translateY(-50%);
+  width: 4px;
+  height: 20px;
+  border-radius: 0 999px 999px 0;
+  background: var(--brand-gradient-vertical);
+}
+
+:root .nav-item-active {
+  --nav-active-bg: linear-gradient(90deg,
+    rgba(245, 183, 0, 0.16),
+    rgba(255, 106, 0, 0.15),
+    rgba(255, 45, 141, 0.22));
+  --nav-active-border: rgba(255, 45, 141, 0.26);
+  --nav-active-text: var(--accent-deep);
+}
+
+.dark .nav-item-active {
+  --nav-active-bg: linear-gradient(90deg,
+    rgba(245, 183, 0, 0.16),
+    rgba(255, 106, 0, 0.14),
+    rgba(255, 45, 141, 0.24));
+  --nav-active-border: rgba(255, 106, 0, 0.24);
+  --nav-active-text: #FFFFFF;
+}
+
+.nav-icon {
+  width: 18px;
+  height: 18px;
+  flex-shrink: 0;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.nav-group-label {
+  display: block;
+  margin-bottom: 8px;
+  padding: 0 12px;
+  font-size: 10px;
+  font-weight: 700;
+  letter-spacing: 0.12em;
+  text-transform: uppercase;
+  color: var(--text-faint);
+}
+
+/* ── Sidebar footer · user / role card ────────────────────────────────────── */
+.side-card {
+  background: var(--surface-primary);
+  border: 1px solid var(--border-hairline);
+  border-radius: var(--radius-lg);
+  box-shadow: var(--shadow-xs);
+}
+.side-avatar {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 10px;
+  font-family: var(--font-display);
+  font-weight: 800;
+  color: #FFFFFF;
+  background: var(--brand-gradient);
+  background-size: 160% 160%;
+  box-shadow: 0 2px 10px -2px rgba(255, 45, 141, 0.28);
+  flex-shrink: 0;
+}
+
+/* Role chip — the quiet counterpart to the avatar. Brand tint + brand ink, so
+   six roles never become six competing hues. */
+.role-chip {
+  background: var(--brand-wash-duo);
+  color: var(--accent-ink);
+  border: 1px solid var(--accent-soft-line);
+}
+.side-role {
+  color: var(--accent-ink);
+  font-size: 9.5px;
+  font-weight: 800;
+  letter-spacing: 0.06em;
+  text-transform: uppercase;
+  line-height: 1.2;
+}
+.side-note {
+  color: var(--text-muted);
+  font-size: 10px;
+  font-weight: 500;
+  line-height: 1.35;
+}
+
+/* ── Mobile scrim ──────────────────────────────────────────────────────────── */
+.scrim {
+  position: fixed;
+  inset: 0;
+  z-index: 35;
+  background: rgba(0, 0, 0, 0.62);
+  -webkit-backdrop-filter: blur(2px);
+  backdrop-filter: blur(2px);
+  animation: fade-in 0.2s var(--ease-out-soft);
+}
+@keyframes fade-in { from { opacity: 0; } to { opacity: 1; } }
+
+/* ── Dashboard content container ───────────────────────────────────────────── */
+.dashboard-content {
+  padding: var(--shell-gutter);
+  padding-bottom: 56px;
+  max-width: 1680px;
+  margin: 0 auto;
+  width: 100%;
+}
+
+@media (max-width: 1024px) {
+  .dashboard-content { padding: 24px; }
+}
+@media (max-width: 640px) {
+  :root { --card-padding: 18px; }
+  .dashboard-content { padding: 18px 16px 40px; }
+}
+
+/* ═════════════════════════════════════════════════════════════════════════════
+   OVERLAYS · dropdowns, popovers, modals
+   ═════════════════════════════════════════════════════════════════════════════ */
+.menu-panel {
+  background: var(--surface-secondary);
+  border: 1px solid var(--border-default);
+  border-radius: var(--radius-lg);
+  box-shadow: var(--shadow-overlay);
+  animation: menu-pop 0.16s var(--ease-out-soft);
+  overflow: hidden;
+}
+
+.menu-item {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  width: 100%;
+  padding: 9px 12px;
+  border-radius: var(--radius-md);
+  font-size: 13px;
+  font-weight: 500;
+  color: var(--text-secondary);
+  transition: background-color 0.15s var(--ease-out-soft), color 0.15s var(--ease-out-soft);
+}
+.menu-item:hover { background: var(--brand-wash); color: var(--accent-ink); }
+.menu-item-danger { color: var(--status-danger-text); }
+.menu-item-danger:hover { background: var(--status-danger-wash); color: var(--status-danger-text); }
+
+/* Every dialog in the product shares one shell. */
+.modal-panel {
+  background: var(--surface-secondary);
+  border: 1px solid var(--border-default);
+  border-radius: var(--radius-xl);
+  box-shadow: var(--shadow-overlay);
+  overflow: hidden;
+}
+.modal-backdrop { background: rgba(0, 0, 0, 0.62); }
+
+/* ── Icon button ───────────────────────────────────────────────────────────── */
+.icon-btn {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  width: 36px;
+  height: 36px;
+  border-radius: var(--radius-md);
+  color: var(--text-secondary);
+  background: transparent;
+  border: 1px solid transparent;
+  cursor: pointer;
+  transition: background-color 0.2s var(--ease-out-soft),
+              color 0.2s var(--ease-out-soft),
+              border-color 0.2s var(--ease-out-soft);
+}
+.icon-btn:hover {
+  background: var(--brand-wash);
+  color: var(--accent-ink);
+  border-color: var(--brand-line);
+}
+
+/* ── Theme toggle ──────────────────────────────────────────────────────────── */
+.theme-toggle {
+  position: relative;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  width: 36px;
+  height: 36px;
+  border-radius: var(--radius-md);
+  color: var(--text-secondary);
+  background: var(--surface-primary);
+  border: 1px solid var(--border-hairline);
+  cursor: pointer;
+  overflow: hidden;
+  transition: color 0.22s var(--ease-out-soft),
+              border-color 0.22s var(--ease-out-soft),
+              background-color 0.22s var(--ease-out-soft);
+}
+.theme-toggle:hover {
+  color: var(--accent-ink);
+  border-color: var(--accent-soft-line);
+  background: var(--brand-wash);
+}
+.theme-toggle svg {
+  transition: transform 0.35s var(--ease-out-soft), opacity 0.25s var(--ease-out-soft);
+}
+.theme-toggle .icon-sun  { position: absolute; }
+.theme-toggle .icon-moon { position: absolute; }
+:root  .theme-toggle .icon-sun  { opacity: 1; transform: rotate(0deg) scale(1); }
+:root  .theme-toggle .icon-moon { opacity: 0; transform: rotate(-70deg) scale(0.5); }
+.dark .theme-toggle .icon-sun  { opacity: 0; transform: rotate(70deg) scale(0.5); }
+.dark .theme-toggle .icon-moon { opacity: 1; transform: rotate(0deg) scale(1); }
+
+/* ═════════════════════════════════════════════════════════════════════════════
+   KPI CARDS
+   ────────────────────────────────────────────────────────────────────────────
+   One structure, one surface, one icon treatment. The category only rotates a
+   single 0.09-alpha glow stop — it never repaints the card.
+   ═════════════════════════════════════════════════════════════════════════════ */
+.kpi {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  gap: 14px;
+  padding: var(--card-padding);
+  background: var(--card-bg);
+  border: 1px solid var(--card-border);
+  border-radius: var(--card-radius);
+  box-shadow: var(--card-shadow);
+  overflow: hidden;
+  cursor: pointer;
+  text-align: left;
+  width: 100%;
+  transition: border-color 0.22s var(--ease-out-soft),
+              box-shadow 0.22s var(--ease-out-soft),
+              transform 0.22s var(--ease-out-soft);
+}
+.kpi:hover {
+  border-color: var(--accent-soft-line);
+  box-shadow: var(--shadow-raised);
+  transform: translateY(-1px);
+}
+.kpi:focus-visible {
+  outline: 2px solid var(--brand-orange);
+  outline-offset: 2px;
+}
+
+/* Restrained top edge accent, revealed on hover */
+.kpi::before {
+  content: "";
+  position: absolute;
+  inset: 0 0 auto 0;
+  height: 2px;
+  background: var(--brand-gradient-horizontal);
+  transform: scaleX(0);
+  transform-origin: left;
+  opacity: 0.85;
+  transition: transform 0.3s var(--ease-out-soft);
+}
+.kpi:hover::before { transform: scaleX(1); }
+
+/* Atmospheric corner wash, category-rotated. Orange bleeds into pink so the
+   default reads as brand rather than as a single amber dot. */
+.kpi::after {
+  content: "";
+  position: absolute;
+  top: -34px;
+  right: -34px;
+  width: 148px;
+  height: 148px;
+  border-radius: 50%;
+  background: radial-gradient(circle,
+    var(--kpi-glow, rgba(255, 106, 0, 0.13)) 0%,
+    var(--kpi-glow-2, rgba(255, 45, 141, 0.10)) 42%,
+    transparent 70%);
+  pointer-events: none;
+  opacity: 0.9;
+}
+
+.kpi-head {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+.kpi-icon {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  width: 32px;
+  height: 32px;
+  flex-shrink: 0;
+  border-radius: 10px;
+  background-color: var(--surface-elevated);
+  background-image: var(--kpi-icon-bg, var(--brand-wash-duo));
+  color: var(--kpi-icon-fg, var(--accent-ink));
+  border: 1px solid var(--kpi-icon-border, var(--accent-soft-line));
+}
+.kpi-label {
+  font-size: 11.5px;
+  font-weight: 600;
+  letter-spacing: 0.06em;
+  text-transform: uppercase;
+  color: var(--text-muted);
+  min-width: 0;
+}
+.kpi-value {
+  font-family: var(--font-display);
+  font-size: 32px;
+  font-weight: 800;
+  letter-spacing: -0.04em;
+  line-height: 1;
+  color: var(--text-primary);
+  font-variant-numeric: tabular-nums;
+}
+.kpi-sub {
+  font-size: 11.5px;
+  font-weight: 500;
+  color: var(--text-faint);
+  margin-top: 8px;
+}
+.kpi-trend {
+  display: inline-flex;
+  align-items: center;
+  gap: 4px;
+  font-size: 11.5px;
+  font-weight: 600;
+  font-variant-numeric: tabular-nums;
+}
+.kpi-trend-up   { color: var(--status-success); }
+.kpi-trend-down { color: var(--status-danger-text); }
+
+/* Per-KPI category — the SAME brand system, one glow stop rotated. */
+.kpi[data-accent="accent"],
+.kpi[data-accent="default"] { --kpi-glow: rgba(255, 106, 0, 0.13); --kpi-glow-2: rgba(255, 45, 141, 0.10); }
+.kpi[data-accent="violet"],
+.kpi[data-accent="yellow"] { --kpi-glow: rgba(245, 183, 0, 0.11); --kpi-glow-2: rgba(255, 106, 0, 0.09); --kpi-icon-fg: var(--accent-yellow-ink); }
+.kpi[data-accent="plum"],
+.kpi[data-accent="rose"]   { --kpi-glow: rgba(255, 45, 141, 0.13); --kpi-glow-2: rgba(255, 45, 141, 0.07); --kpi-icon-fg: var(--accent-pink-ink); }
+.kpi[data-accent="amber"]  { --kpi-glow: rgba(255, 106, 0, 0.14); --kpi-glow-2: rgba(255, 106, 0, 0.08); }
+.kpi[data-accent="emerald"]{ --kpi-glow: var(--status-success-wash); --kpi-glow-2: var(--status-success-wash); --kpi-icon-fg: var(--status-success-text); --kpi-icon-border: var(--status-success-line); }
+.kpi[data-accent="slate"]  { --kpi-glow: var(--status-neutral-wash); --kpi-glow-2: var(--status-neutral-wash); --kpi-icon-fg: var(--text-secondary); --kpi-icon-border: var(--status-neutral-line); }
+
+/* ═════════════════════════════════════════════════════════════════════════════
+   TABLES
+   ═════════════════════════════════════════════════════════════════════════════ */
+.table-wrap {
+  width: 100%;
+  overflow-x: auto;
+  -webkit-overflow-scrolling: touch;
+}
+
+.data-table {
+  width: 100%;
+  border-collapse: separate;
+  border-spacing: 0;
+  background: var(--surface-primary);
+  font-size: 13px;
+}
+
+.data-table thead th {
+  position: sticky;
+  top: 0;
+  z-index: 1;
+  background: var(--surface-secondary);
+  color: var(--text-muted);
+  font-size: 10.5px;
+  font-weight: 700;
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+  text-align: left;
+  padding: 12px 16px;
+  white-space: nowrap;
+  border-bottom: 1px solid var(--border-hairline);
+}
+
+.data-table tbody td {
+  padding: 14px 16px;
+  vertical-align: middle;
+  color: var(--text-secondary);
+  border-bottom: 1px solid var(--border-hairline);
+}
+
+.data-table tbody tr { transition: background-color 0.16s var(--ease-out-soft); }
+.data-table tbody tr:hover { background: rgba(255, 106, 0, 0.05); }
+.data-table tbody tr:last-child td { border-bottom: none; }
+
+/* ── Report tables ─────────────────────────────────────────────────────────── */
+.report-table {
+  width: 100%;
+  border-collapse: collapse;
+  font-size: 13px;
+}
+.report-table th,
+.report-table td {
+  padding: 12px 14px;
+  text-align: left;
+  vertical-align: top;
+}
+.report-table thead th {
+  font-size: 10.5px;
+  text-transform: uppercase;
+  letter-spacing: 0.08em;
+  font-weight: 700;
+  color: var(--text-muted);
+  background: var(--surface-secondary);
+  border-bottom: 1px solid var(--border-hairline);
+  white-space: nowrap;
+}
+.report-table tbody tr { border-bottom: 1px solid var(--border-hairline); }
+.report-table tbody tr:last-child { border-bottom: none; }
+.report-table tbody tr:hover { background: rgba(255, 106, 0, 0.05); }
+
+/* ═════════════════════════════════════════════════════════════════════════════
+   FORM CONTROLS · one focus system for the whole platform
+   ═════════════════════════════════════════════════════════════════════════════ */
+.field,
+input:not([type="checkbox"]):not([type="radio"]):not([type="range"]),
+select,
+textarea {
+  background: var(--bg-secondary);
+  border: 1px solid var(--border-default);
+  color: var(--text-primary);
+  border-radius: var(--radius-md);
+  transition: border-color 0.18s var(--ease-out-soft),
+              box-shadow 0.18s var(--ease-out-soft),
+              background-color 0.18s var(--ease-out-soft);
+}
+input::placeholder, textarea::placeholder { color: var(--text-muted); }
+
+input:focus, select:focus, textarea:focus, .field:focus {
+  outline: none;
+  border-color: var(--brand-orange);
+  box-shadow: 0 0 0 3px rgba(255, 106, 0, 0.10);
+}
+
+input[type="checkbox"], input[type="radio"], input[type="range"] {
+  accent-color: var(--brand-orange);
+}
+
+select option {
+  background: var(--surface-secondary);
+  color: var(--text-primary);
+}
+
+/* ═════════════════════════════════════════════════════════════════════════════
+   MISC SURFACES
+   ═════════════════════════════════════════════════════════════════════════════ */
+
+/* ── Report header band ────────────────────────────────────────────────────── */
+.band-ink {
+  position: relative;
+  overflow: hidden;
+  background: var(--brand-gradient);
+  color: #FFFFFF;
+}
+.band-ink > * { position: relative; z-index: 1; }
+.band-ink::after {
+  content: "";
+  position: absolute;
+  right: -70px;
+  top: -70px;
+  width: 240px;
+  height: 240px;
+  border-radius: 50%;
+  background: radial-gradient(circle, rgba(255, 255, 255, 0.20) 0%, transparent 70%);
+  pointer-events: none;
+}
+
+/* ── Decorative dot texture ────────────────────────────────────────────────── */
+.texture-kraft {
+  background-image: radial-gradient(var(--accent-soft-line) 1.5px, transparent 1.5px);
+  background-size: 26px 26px;
+  opacity: 0.4;
+}
+
+/* ── Print ─────────────────────────────────────────────────────────────────── */
+@media print {
+  .no-print,
+  .print-hide { display: none !important; }
+  .print-only { display: flex !important; }
+  body { background: #FFFFFF; }
+}
+
+/* ── Scrollbars ────────────────────────────────────────────────────────────── */
+* {
+  scrollbar-width: thin;
+  scrollbar-color: var(--neutral-400) transparent;
+}
+*::-webkit-scrollbar { width: 8px; height: 8px; }
+*::-webkit-scrollbar-thumb {
+  background: var(--neutral-400);
+  border-radius: 999px;
+}
+*::-webkit-scrollbar-thumb:hover { background: var(--neutral-500); }
+*::-webkit-scrollbar-track { background: transparent; }
+
+/* ═════════════════════════════════════════════════════════════════════════════
+   RESPONSIVE PRIMITIVES
+   ═════════════════════════════════════════════════════════════════════════════ */
+
+/* 12-column dashboard grid with sane breakpoints */
+.dash-grid {
+  display: grid;
+  grid-template-columns: repeat(12, minmax(0, 1fr));
+  gap: var(--card-gap);
+}
+.dash-col-3  { grid-column: span 3; }
+.dash-col-4  { grid-column: span 4; }
+.dash-col-6  { grid-column: span 6; }
+.dash-col-8  { grid-column: span 8; }
+.dash-col-12 { grid-column: span 12; }
+
+@media (max-width: 1280px) {
+  .dash-col-3 { grid-column: span 6; }
+}
+@media (max-width: 1024px) {
+  .dash-col-4,
+  .dash-col-8 { grid-column: span 12; }
+  .dash-col-3 { grid-column: span 6; }
+}
+@media (max-width: 700px) {
+  .dash-grid { gap: 14px; }
+  .dash-col-3,
+  .dash-col-4,
+  .dash-col-6,
+  .dash-col-8 { grid-column: span 12; }
+}
+
+/* Scrollable tab strips that never overflow the page */
+.overflow-tabs {
+  display: flex;
+  gap: 4px;
+  overflow-x: auto;
+  scrollbar-width: none;
+}
+.overflow-tabs::-webkit-scrollbar { display: none; }
+
+/* ═════════════════════════════════════════════════════════════════════════════
+   ACCESSIBILITY
+   ═════════════════════════════════════════════════════════════════════════════ */
+@media (prefers-reduced-motion: reduce) {
+  .card-hover:hover,
+  .kpi:hover,
+  .btn-primary:active { transform: none; }
+}
+
+:focus-visible {
+  outline: 2px solid var(--brand-orange);
+  outline-offset: 2px;
+  border-radius: 4px;
+}
+
+/* Screen-reader-only helper (used by the theme toggle label) */
+.sr-only {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  padding: 0;
+  margin: -1px;
+  overflow: hidden;
+  clip: rect(0, 0, 0, 0);
+  white-space: nowrap;
+  border-width: 0;
+}
