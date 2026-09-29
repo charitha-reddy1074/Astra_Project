@@ -1,0 +1,4 @@
+Exception ID	Asset / System	Vulnerability / Finding	Severity	Risk Owner	Approval Authority	Date Approved	Expiry Date	Compensating Controls	Residual Risk	Review Frequency	Status	Notes
+EXC-001	Legacy Batch Host	CVE-2023-1111 – No patch available	Critical	IT Ops	CISO	2024-09-15	2025-03-15	Network isolation, enhanced monitoring, daily log review	High	Monthly	Active	Vendor confirmed no patch; migration in progress
+EXC-002	APP-004 Legacy Reporting	EOL Application – no vendor support	High	Finance	CTO	2024-07-01	2025-03-01	Read-only access, no internet exposure, MFA enforced	Medium	Quarterly	Active	Migration to Power BI scheduled Q1 2025
+EXC-003	Java 8 Runtime	Java 8 EOL – no security updates	Critical	IT Ops	CISO	2024-01-01	2024-12-31	JVM hardening, WAF in front of exposed service	High	Monthly	Expired	Upgrade delayed; exception renewal pending

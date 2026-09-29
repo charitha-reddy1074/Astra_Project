@@ -1,0 +1,1254 @@
+<!doctype html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title>Questionnaire {{ q.questionnaire_id or q.control_id }}</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Sans:wght@400;500;600&family=IBM+Plex+Mono:wght@400;500&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="/static/style.css">
+    <style>
+      /* ── Reset & Base ──────────────────────────────────────────── */
+      *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+      body { font-family: 'IBM Plex Sans', sans-serif; background: #f4f5f7; color: #1a1d23; }
+
+      /* ── Neutralise inherited style.css ───────────────────────── */
+      .hero { display: none !important; }
+      .page-shell { padding: 0 !important; max-width: none !important; }
+      .layout-two-col { display: block !important; }
+      .questionnaire-shell .side-panel,
+      .questionnaire-shell aside { display: none !important; }
+      .questionnaire-shell .question-panel { padding: 0 !important; border: none !important; }
+      h1, h2, h3 { color: #17324d; margin-top: 0; }
+      .part-intro h1 { font-size: inherit !important; font-weight: inherit !important; line-height: inherit !important; }
+      .eyebrow, .lede { display: none !important; }
+
+      /* ── Top App Bar ───────────────────────────────────────────── */
+      .appbar {
+        position: sticky; top: 0; z-index: 100;
+        background: #0f1923; color: #e8edf3;
+        display: flex; align-items: center; justify-content: space-between;
+        padding: 0 2rem; height: 52px;
+        border-bottom: 1px solid #1e2d3d;
+      }
+      .appbar__brand { display: flex; align-items: center; gap: 10px; font-size: 0.82rem; color: #7a9ab8; letter-spacing: 0.08em; text-transform: uppercase; }
+      .appbar__brand strong { color: #c8d8e8; font-weight: 600; letter-spacing: 0; text-transform: none; font-size: 0.92rem; }
+      .appbar__actions { display: flex; align-items: center; gap: 12px; }
+      .appbar__actions .auditor-field { display: flex; align-items: center; gap: 6px; font-size: 0.82rem; color: #7a9ab8; }
+      .appbar__actions .auditor-field input {
+        background: #1e2d3d; border: 1px solid #2c4057; border-radius: 5px;
+        color: #c8d8e8; font-family: 'IBM Plex Mono', monospace; font-size: 0.82rem;
+        padding: 4px 8px; width: 140px;
+      }
+      .appbar__actions .auditor-field input:focus { outline: none; border-color: #3a7bd5; }
+      .btn-submit-main {
+        background: #3a7bd5; color: #fff; border: none; border-radius: 6px;
+        font-family: 'IBM Plex Sans', sans-serif; font-size: 0.82rem; font-weight: 600;
+        padding: 7px 18px; cursor: pointer; letter-spacing: 0.03em;
+        transition: background 0.15s;
+      }
+      .btn-submit-main:hover { background: #2f68c0; }
+
+      /* ── Tab Nav ───────────────────────────────────────────────── */
+      .tab-nav {
+        position: sticky; top: 52px; z-index: 90;
+        background: #fff; border-bottom: 1px solid #dde3ec;
+        display: flex; align-items: stretch; padding: 0 2rem; gap: 0;
+      }
+      .tab-btn {
+        display: flex; align-items: center; gap: 7px;
+        padding: 0 20px; height: 46px;
+        font-family: 'IBM Plex Sans', sans-serif; font-size: 0.85rem; font-weight: 500;
+        color: #6b7a90; background: none; border: none; cursor: pointer;
+        border-bottom: 2px solid transparent; margin-bottom: -1px;
+        transition: color 0.15s, border-color 0.15s;
+        white-space: nowrap;
+      }
+      .tab-btn__inner { display: flex; flex-direction: column; align-items: flex-start; gap: 1px; }
+      .tab-btn__part  { font-size: 0.68rem; font-weight: 700; letter-spacing: 0.1em; text-transform: uppercase; color: #8494a9; line-height: 1; }
+      .tab-btn__title { font-size: 0.85rem; font-weight: 500; line-height: 1.2; }
+      .tab-btn:hover { color: #1a1d23; }
+      .tab-btn.active { color: #1a1d23; border-bottom-color: #3a7bd5; }
+      .tab-btn .tab-count {
+        background: #e8edf5; color: #6b7a90; font-size: 0.72rem; font-weight: 600;
+        border-radius: 10px; padding: 1px 7px; font-family: 'IBM Plex Mono', monospace;
+      }
+      .tab-btn.active .tab-count { background: #dbe8fa; color: #3a7bd5; }
+
+      /* ── Page Layout ───────────────────────────────────────────── */
+      .page-body { display: block !important; min-height: calc(100vh - 145px); }
+      .sidebar { display: none !important; }
+      .main-content {
+        display: block !important;
+        width: 100% !important;
+        max-width: 100% !important;
+        padding: 2rem 2.5rem;
+        box-sizing: border-box;
+        float: none !important;
+      }
+      
+      /* ── Sidebar ───────────────────────────────────────────────── */
+      .sidebar-section { margin-bottom: 1.75rem; }
+      .sidebar-section h3 {
+        font-size: 0.7rem; font-weight: 600; letter-spacing: 0.1em; text-transform: uppercase;
+        color: #8494a9; margin-bottom: 0.65rem; padding-bottom: 0.5rem;
+        border-bottom: 1px solid #edf0f5;
+      }
+      .sidebar-meta { font-size: 0.83rem; color: #4a5568; line-height: 1.6; }
+      .sidebar-meta strong { color: #1a1d23; font-weight: 600; }
+      .sidebar-meta p { margin-bottom: 0.4rem; }
+      .stat-chips { display: flex; flex-wrap: wrap; gap: 6px; }
+      .stat-chip {
+        background: #eef2f9; border-radius: 5px; padding: 5px 10px;
+        font-size: 0.78rem; color: #3a4d66;
+      }
+      .stat-chip span { font-weight: 600; color: #1a3a7c; }
+      .domain-pills { display: flex; flex-direction: column; gap: 5px; }
+      .domain-pill {
+        background: #f4f5f7; border-radius: 5px; padding: 6px 10px;
+        font-size: 0.78rem; color: #4a5568; border-left: 3px solid #3a7bd5;
+      }
+      .sidebar-toc { list-style: none; }
+      .sidebar-toc li a {
+        display: block; padding: 4px 8px; border-radius: 4px;
+        font-size: 0.8rem; color: #6b7a90; text-decoration: none;
+        transition: background 0.1s, color 0.1s;
+      }
+      .sidebar-toc li a:hover { background: #eef2f9; color: #1a1d23; }
+
+      /* ── Tab Panels ────────────────────────────────────────────── */
+      .tab-panel { display: none; }
+      .tab-panel.active { display: block; }
+
+      /* ── Part Heading ──────────────────────────────────────────── */
+      .part-intro { margin-bottom: 1.75rem; }
+      .part-intro h2 {
+        font-size: 1.2rem; font-weight: 600; color: #0f1923; margin-bottom: 0.3rem;
+      }
+      .part-intro p {
+        font-size: 0.875rem; color: #6b7a90; line-height: 1.6;
+        max-width: 640px;
+      }
+
+      /* ── Part 1 Table ──────────────────────────────────────────── */
+      .part1-wrap { overflow-x: auto; border-radius: 8px; border: 1px solid #dde3ec; }
+      .part1-table { width: 100%; border-collapse: collapse; font-size: 0.84rem; min-width: 700px; }
+      .part1-table thead { background: #0f1923; }
+      .part1-table thead th {
+        color: #c8d8e8; font-weight: 600; font-size: 0.75rem; letter-spacing: 0.06em;
+        text-transform: uppercase; padding: 11px 14px; text-align: left;
+        border-right: 1px solid #1e2d3d;
+      }
+      .part1-table thead th:last-child { border-right: none; }
+      .part1-table tbody tr { border-bottom: 1px solid #edf0f5; }
+      .part1-table tbody tr:hover { background: #f8fafd; }
+      .part1-table tbody tr:last-child { border-bottom: none; }
+      .part1-table td { padding: 10px 14px; vertical-align: top; }
+      .part1-table td:first-child {
+        font-family: 'IBM Plex Mono', monospace; font-size: 0.8rem;
+        color: #8494a9; font-weight: 500; text-align: center; width: 36px;
+      }
+      .cluster-label { font-weight: 600; color: #1a1d23; font-size: 0.82rem; }
+      .sub-topic-label { font-size: 0.77rem; color: #7a8fa8; margin-top: 2px; }
+      .radio-group { display: flex; flex-direction: column; gap: 5px; }
+      .radio-group label { display: flex; align-items: center; gap: 6px; font-size: 0.82rem; color: #4a5568; cursor: pointer; white-space: nowrap; }
+      .radio-group input[type=radio] { accent-color: #3a7bd5; }
+      .tool-input {
+        width: 100%; background: #f4f5f7; border: 1px solid #d1d9e6; border-radius: 5px;
+        font-family: 'IBM Plex Sans', sans-serif; font-size: 0.82rem; color: #1a1d23;
+        padding: 6px 9px;
+      }
+      .tool-input:focus { outline: none; border-color: #3a7bd5; background: #fff; }
+
+      /* ── Part 2 ────────────────────────────────────────────────── */
+      .domain-block { margin-bottom: 2.5rem; }
+      .domain-header {
+        display: flex; align-items: baseline; gap: 10px;
+        padding: 10px 16px; background: #0f1923; border-radius: 7px 7px 0 0;
+        border: 1px solid #1e2d3d;
+      }
+      .domain-header h3 { font-size: 0.92rem; font-weight: 600; color: #c8d8e8; }
+      .domain-header .domain-fw-tag {
+        font-size: 0.72rem; background: #1e3a5f; color: #7ab0e0;
+        border-radius: 4px; padding: 2px 7px; font-family: 'IBM Plex Mono', monospace;
+        font-weight: 500; letter-spacing: 0.03em;
+      }
+      .domain-header .domain-desc {
+        font-size: 0.78rem; color: #5a7899; flex: 1; text-align: right;
+      }
+      .subtopics-container {
+        border: 1px solid #dde3ec; border-top: none;
+        border-radius: 0 0 7px 7px; overflow: hidden;
+      }
+      .sub-topic-section { border-bottom: 1px solid #edf0f5; }
+      .sub-topic-section:last-child { border-bottom: none; }
+      .sub-topic-header {
+        display: flex; align-items: center; justify-content: space-between;
+        padding: 12px 16px; background: #fafbfd; cursor: pointer;
+        user-select: none;
+      }
+      .sub-topic-header:hover { background: #f0f4fa; }
+      .sub-topic-title { font-size: 0.88rem; font-weight: 600; color: #1a3a7c; }
+      .sub-topic-meta { display: flex; align-items: center; gap: 8px; }
+      .sub-topic-ctrl-ids {
+        font-size: 0.72rem; font-family: 'IBM Plex Mono', monospace;
+        color: #8494a9; background: #edf0f5; border-radius: 4px; padding: 2px 7px;
+      }
+      .sub-topic-toggle { font-size: 0.78rem; color: #8494a9; transition: transform 0.2s; }
+      .sub-topic-toggle.open { transform: rotate(180deg); }
+      .sub-topic-body { padding: 16px; display: none; }
+      .sub-topic-body.open { display: block; }
+
+      .interview-qs { margin-bottom: 1.25rem; }
+      .interview-qs h5 { font-size: 0.72rem; font-weight: 600; text-transform: uppercase; letter-spacing: 0.08em; color: #8494a9; margin-bottom: 0.65rem; }
+      .interview-qs ol { padding-left: 1.4rem; }
+      .interview-qs ol li { font-size: 0.87rem; color: #2a3848; line-height: 1.65; margin-bottom: 0.6rem; }
+
+      .maturity-table-wrap { overflow-x: auto; margin-bottom: 1.25rem; }
+      .maturity-table { width: 100%; border-collapse: collapse; font-size: 0.82rem; min-width: 520px; }
+      .maturity-table thead th {
+        padding: 8px 12px; font-size: 0.72rem; font-weight: 600; text-transform: uppercase;
+        letter-spacing: 0.07em; text-align: left;
+      }
+      .maturity-table thead th:nth-child(1) { background: #e8f5ee; color: #1a6b3c; }
+      .maturity-table thead th:nth-child(2) { background: #fef6e4; color: #7a5200; }
+      .maturity-table thead th:nth-child(3) { background: #fce8e8; color: #8b1a1a; }
+      .maturity-table tbody td { padding: 9px 12px; vertical-align: top; border: 1px solid #edf0f5; font-size: 0.82rem; line-height: 1.55; color: #2a3848; }
+      .maturity-table tbody td:nth-child(1) { background: #f6fcf9; border-left: 3px solid #2da06a; }
+      .maturity-table tbody td:nth-child(2) { background: #fffcf5; border-left: 3px solid #e8a020; }
+      .maturity-table tbody td:nth-child(3) { background: #fff8f8; border-left: 3px solid #d04040; }
+
+      .evidence-list { margin-bottom: 1.25rem; }
+      .evidence-list h5 { font-size: 0.72rem; font-weight: 600; text-transform: uppercase; letter-spacing: 0.08em; color: #8494a9; margin-bottom: 0.65rem; }
+      .evidence-list ul { list-style: none; display: flex; flex-direction: column; gap: 4px; }
+      .evidence-list ul li {
+        font-size: 0.82rem; color: #2a3848; background: #f4f5f7;
+        border-radius: 5px; padding: 6px 10px;
+        border-left: 3px solid #3a7bd5;
+        line-height: 1.5;
+      }
+
+      .red-flags-list { margin-bottom: 0.5rem; }
+      .red-flags-list h5 { font-size: 0.72rem; font-weight: 600; text-transform: uppercase; letter-spacing: 0.08em; color: #c04040; margin-bottom: 0.65rem; }
+      .red-flag-item {
+        background: #fff8f8; border: 1px solid #f0d0d0; border-left: 3px solid #d04040;
+        border-radius: 5px; padding: 8px 12px; margin-bottom: 6px;
+        font-size: 0.82rem; color: #4a1a1a; line-height: 1.5;
+      }
+      .red-flag-item .rf-action { color: #7a2020; margin-top: 4px; font-style: italic; }
+
+      /* ── Flat question card (legacy / no sub-topics) ───────────── */
+      .q-card {
+        background: #fff; border: 1px solid #dde3ec; border-radius: 7px;
+        padding: 1rem 1.25rem; margin-bottom: 10px;
+      }
+      .q-card .q-num { font-family: 'IBM Plex Mono', monospace; font-size: 0.75rem; color: #8494a9; margin-bottom: 4px; }
+      .q-card .q-text { font-size: 0.88rem; color: #1a1d23; line-height: 1.6; margin-bottom: 10px; }
+      .q-card .q-meta { font-size: 0.75rem; color: #8494a9; margin-bottom: 10px; }
+      .q-card .q-formats { display: flex; flex-direction: column; gap: 10px; }
+      .format-block { background: #f8fafd; border-radius: 5px; padding: 10px 12px; border: 1px solid #edf0f5; }
+      .format-block .fmt-label { font-size: 0.72rem; font-weight: 600; text-transform: uppercase; letter-spacing: 0.07em; color: #8494a9; margin-bottom: 6px; }
+      .yes-no-btns { display: flex; gap: 8px; }
+      .yes-no-btns label {
+        display: flex; align-items: center; gap: 5px; font-size: 0.82rem;
+        cursor: pointer; padding: 5px 12px; border-radius: 5px; border: 1px solid #dde3ec;
+        color: #4a5568;
+      }
+      .yes-no-btns label:hover { background: #eef2f9; }
+      .q-select {
+        width: 100%; max-width: 260px; background: #fff; border: 1px solid #d1d9e6;
+        border-radius: 5px; font-family: 'IBM Plex Sans', sans-serif;
+        font-size: 0.82rem; color: #1a1d23; padding: 6px 9px;
+      }
+      .q-textarea {
+        width: 100%; background: #fff; border: 1px solid #d1d9e6; border-radius: 5px;
+        font-family: 'IBM Plex Sans', sans-serif; font-size: 0.82rem; color: #1a1d23;
+        padding: 7px 10px; resize: vertical; min-height: 72px;
+      }
+      .q-textarea:focus, .q-select:focus { outline: none; border-color: #3a7bd5; }
+      .q-note { margin-top: 7px; }
+      .q-note input {
+        width: 100%; background: #fff; border: 1px solid #d1d9e6; border-radius: 5px;
+        font-family: 'IBM Plex Sans', sans-serif; font-size: 0.8rem; color: #1a1d23;
+        padding: 5px 9px;
+      }
+      .q-note input:focus { outline: none; border-color: #3a7bd5; }
+      .upload-zone { border: 1.5px dashed #bbc6d8; border-radius: 6px; padding: 14px; text-align: center; cursor: pointer; }
+      .upload-hint { font-size: 0.75rem; color: #8494a9; margin-top: 5px; }
+      .evidence-preview { margin-top: 8px; font-size: 0.78rem; }
+      .evidence-preview__meta { color: #8494a9; }
+      .evidence-preview__meta--error { color: #c04040; }
+      .evidence-preview__text { background: #f4f5f7; border-radius: 4px; padding: 8px; max-height: 120px; overflow: auto; font-family: 'IBM Plex Mono', monospace; font-size: 0.75rem; color: #2a3848; margin-top: 6px; white-space: pre-wrap; }
+
+      /* ── Part 3 Tracker ────────────────────────────────────────── */
+      .part3-wrap { overflow-x: auto; border-radius: 8px; border: 1px solid #dde3ec; }
+      .part3-table { width: 100%; border-collapse: collapse; font-size: 0.84rem; min-width: 680px; }
+      .part3-table thead { background: #0f1923; }
+      .part3-table thead th {
+        color: #c8d8e8; font-weight: 600; font-size: 0.75rem; letter-spacing: 0.06em;
+        text-transform: uppercase; padding: 11px 14px; text-align: left;
+        border-right: 1px solid #1e2d3d;
+      }
+      .part3-table thead th:last-child { border-right: none; }
+      .part3-table tbody tr { border-bottom: 1px solid #edf0f5; }
+      .part3-table tbody tr:hover { background: #f8fafd; }
+      .part3-table tbody tr:last-child { border-bottom: none; }
+      .part3-table td { padding: 10px 14px; vertical-align: top; }
+      .fw-badge {
+        display: inline-block; font-size: 0.7rem; font-family: 'IBM Plex Mono', monospace;
+        background: #1e3a5f; color: #7ab0e0; border-radius: 4px; padding: 2px 6px;
+        font-weight: 500;
+      }
+      .ctrl-badge {
+        display: inline-block; font-size: 0.7rem; font-family: 'IBM Plex Mono', monospace;
+        background: #edf0f5; color: #4a5568; border-radius: 4px; padding: 2px 6px;
+      }
+      .status-select {
+        width: 100%; min-width: 160px; background: #fff; border: 1px solid #d1d9e6;
+        border-radius: 5px; font-family: 'IBM Plex Sans', sans-serif;
+        font-size: 0.8rem; color: #1a1d23; padding: 5px 8px;
+      }
+      .status-select:focus { outline: none; border-color: #3a7bd5; }
+      .status-select option[value="Received"] { color: #1a6b3c; }
+      .status-select option[value="Reviewed"] { color: #3a7bd5; }
+      .status-select option[value="Outstanding"] { color: #8b1a1a; }
+
+      /* ── Scope Bar ─────────────────────────────────────────────── */
+      .scope-bar {
+        display: block !important;
+        width: 100% !important;
+        box-sizing: border-box;
+        background: #fff; border-bottom: 1px solid #dde3ec;
+        padding: 10px 2rem;
+      }
+      .scope-bar__inner {
+        display: flex !important; align-items: flex-start; gap: 2rem; flex-wrap: wrap;
+      }
+      .scope-bar__col { display: flex !important; flex-direction: column; gap: 4px; min-width: 0; }
+      .scope-bar__label {
+        font-size: 0.68rem; font-weight: 700; letter-spacing: 0.1em;
+        text-transform: uppercase; color: #8494a9;
+      }
+      .scope-bar__value { display: flex !important; flex-wrap: wrap; gap: 5px; font-size: 0.83rem; color: #2a3848; max-width: 1000px; }
+      .scope-bar__stat { font-size: 1.1rem; font-weight: 700; color: #17324d; }
+      .fw-chip, .domain-chip {
+        display: inline-block; font-size: 0.75rem; font-family: 'IBM Plex Mono', monospace;
+        background: #eef2f9; color: #3a4d66; border-radius: 4px; padding: 2px 8px;
+        white-space: nowrap;
+      }
+      .scope-bar__col--stats { margin-left: auto; text-align: right; }
+
+      /* ── Divider ───────────────────────────────────────────────── */
+      .section-divider { border: none; border-top: 1px solid #edf0f5; margin: 1.5rem 0; }
+
+      /* ── Empty state ───────────────────────────────────────────── */
+      .empty-state { padding: 2rem; text-align: center; color: #8494a9; font-size: 0.87rem; font-style: italic; background: #fafbfd; border-radius: 7px; border: 1px dashed #dde3ec; }
+
+      /* ── Question-type badges ──────────────────────────────────── */
+      .qtype-badge {
+        display: inline-block; font-size: 0.67rem; font-family: 'IBM Plex Mono', monospace;
+        font-weight: 600; letter-spacing: 0.07em; border-radius: 4px; padding: 2px 7px;
+        text-transform: uppercase;
+      }
+      .qtype-yes-no        { background: #e6f4ea; color: #1a6b3c; }
+      .qtype-scale         { background: #e8f0fe; color: #1a3ab8; }
+      .qtype-multi-choice  { background: #f3e8fd; color: #6b21a8; }
+      .qtype-evidence      { background: #fff3cd; color: #7a5200; }
+      .qtype-free-text     { background: #edf0f5; color: #4a5568; }
+      .qtype-maturity      { background: #fce8e8; color: #8b1a1a; }
+
+      /* ── Bulk evidence upload panel ────────────────────────────── */
+      .bulk-upload-panel {
+        background: #fff; border: 1px solid #dde3ec; border-radius: 8px;
+        padding: 1.25rem 1.5rem; margin-bottom: 1.5rem;
+      }
+      .bulk-upload-panel h3 {
+        font-size: 0.95rem; font-weight: 600; color: #0f1923; margin-bottom: 0.35rem;
+      }
+      .bulk-upload-panel p {
+        font-size: 0.82rem; color: #6b7a90; margin-bottom: 1rem; line-height: 1.55;
+      }
+      .bulk-drop-zone {
+        border: 2px dashed #bbc6d8; border-radius: 7px; padding: 28px 24px;
+        text-align: center; cursor: pointer; background: #fafbfd;
+        transition: border-color 0.15s, background 0.15s;
+      }
+      .bulk-drop-zone:hover, .bulk-drop-zone.dragover {
+        border-color: #3a7bd5; background: #f0f5fd;
+      }
+      .bulk-drop-zone__icon { font-size: 2rem; line-height: 1; margin-bottom: 8px; }
+      .bulk-drop-zone__label { font-size: 0.87rem; font-weight: 600; color: #1a3a7c; margin-bottom: 4px; }
+      .bulk-drop-zone__hint  { font-size: 0.75rem; color: #8494a9; }
+      #bulk-file-input { display: none; }
+      .bulk-results { margin-top: 1rem; display: flex; flex-direction: column; gap: 6px; }
+      .bulk-result-row {
+        display: flex; align-items: flex-start; gap: 10px;
+        background: #f8fafd; border: 1px solid #edf0f5; border-radius: 6px;
+        padding: 8px 12px; font-size: 0.82rem;
+      }
+      .bulk-result-row.ok   { border-left: 3px solid #2da06a; }
+      .bulk-result-row.err  { border-left: 3px solid #d04040; background: #fff8f8; }
+      .bulk-result-row__name  { font-weight: 600; color: #1a1d23; flex: 1; }
+      .bulk-result-row__grade {
+        font-size: 0.72rem; font-family: 'IBM Plex Mono', monospace;
+        border-radius: 4px; padding: 2px 7px; font-weight: 600;
+        white-space: nowrap;
+      }
+      .grade-operational        { background: #e6f4ea; color: #1a6b3c; }
+      .grade-policy_implemented { background: #e8f0fe; color: #1a3ab8; }
+      .grade-policy_only        { background: #fce8e8; color: #8b1a1a; }
+      .grade-filename_only      { background: #fff3cd; color: #7a5200; }
+      .grade-missing            { background: #edf0f5; color: #4a5568; }
+      .bulk-result-row__score   { font-family: 'IBM Plex Mono', monospace; font-size: 0.78rem; color: #6b7a90; }
+      .bulk-result-row__err     { color: #c04040; }
+      .bulk-upload-btn {
+        margin-top: 0.75rem; background: #3a7bd5; color: #fff; border: none;
+        border-radius: 6px; font-family: 'IBM Plex Sans', sans-serif; font-size: 0.82rem;
+        font-weight: 600; padding: 8px 20px; cursor: pointer; transition: background 0.15s;
+      }
+      .bulk-upload-btn:hover { background: #2f68c0; }
+      .bulk-upload-btn:disabled { background: #9ab3d4; cursor: not-allowed; }
+      /* ── Pre-fill from evidence ─────────────────────────────────── */
+      .prefill-panel {
+        margin-top: 1.25rem; padding: 1rem 1.25rem;
+        border: 1px solid #c7d9f7; border-radius: 10px; background: #f6f9ff;
+      }
+      .prefill-panel h3 { margin: 0 0 0.35rem; font-size: 1rem; color: #1a1d23; }
+      .prefill-panel p  { margin: 0 0 0.75rem; font-size: 0.85rem; color: #4a5568; line-height: 1.5; }
+      .prefill-btn {
+        background: #3a7bd5; color: #fff; border: none; border-radius: 7px;
+        padding: 9px 18px; font-size: 0.9rem; font-weight: 600; cursor: pointer;
+      }
+      .prefill-btn:hover:not(:disabled) { background: #2f68c0; }
+      .prefill-btn:disabled { opacity: 0.6; cursor: not-allowed; }
+      .prefill-status { margin-left: 0.75rem; font-size: 0.85rem; color: #4a5568; }
+      .prefill-banner {
+        display: none; align-items: center; gap: 0.75rem;
+        padding: 0.7rem 1.25rem; background: #fff7e6; border-bottom: 1px solid #f0c97a;
+        color: #7a5b00; font-size: 0.88rem; font-weight: 500;
+      }
+      .prefill-banner.show { display: flex; }
+      .prefill-banner__dot { color: #b8860b; font-weight: 700; }
+      .q-card.prefilled { box-shadow: inset 3px 0 0 #3a7bd5; background: #f9fbff; }
+    </style>
+  </head>
+  <body class="qa-body">
+
+    <form
+      method="post"
+      action="{% if q.questionnaire_type == 'multi_framework' %}/submit-questionnaire/{{ q.questionnaire_id }}{% elif q.domain_id %}/submit-domain/{{ q.domain_id }}{% else %}/submit/{{ q.control_id }}{% endif %}"
+      enctype="multipart/form-data"
+    >
+
+    {# ── TOP APP BAR ─────────────────────────────────────────────── #}
+    <header class="appbar">
+  <div class="appbar__brand">
+    <span>Market Assessment</span>
+  </div>
+  <div class="appbar__actions">
+    <div class="auditor-field">
+      <label for="auditor-name">Auditor</label>
+      <input id="auditor-name" type="text" name="auditor" value="web-auditor">
+    </div>
+    <button type="submit" class="btn-submit-main">Save &amp; Submit →</button>
+  </div>
+</header>
+
+    {# ── Pre-fill review banner (shown after evidence pre-fill) ──── #}
+    <div class="prefill-banner" id="prefill-banner">
+      <span class="prefill-banner__dot">●</span>
+      <span id="prefill-banner-text">Answers were pre-filled from evidence. Review and edit them, then click “Save &amp; Submit” to approve. Nothing is submitted automatically.</span>
+    </div>
+
+    {# ── TAB NAV ─────────────────────────────────────────────────── #}
+<nav class="tab-nav" id="tab-nav">
+      <button type="button" class="tab-btn active" data-tab="tab-part1">
+        <div class="tab-btn__inner">
+          <span class="tab-btn__part">Part 1</span>
+          <span class="tab-btn__title">Pre-Assessment</span>
+        </div>
+        {% if q.part1_checklist %}
+          <span class="tab-count">{{ q.part1_checklist|length }}</span>
+        {% endif %}
+      </button>
+      <button type="button" class="tab-btn" data-tab="tab-part2">
+        <div class="tab-btn__inner">
+          <span class="tab-btn__part">Part 2</span>
+          <span class="tab-btn__title">Interview Questions</span>
+        </div>
+        {% if q.question_groups %}
+          <span class="tab-count">{{ q.question_groups|length }} domains</span>
+        {% endif %}
+      </button>
+      <button type="button" class="tab-btn" data-tab="tab-part3">
+        <div class="tab-btn__inner">
+          <span class="tab-btn__part">Part 3</span>
+          <span class="tab-btn__title">Evidence Tracker</span>
+        </div>
+        {% if q.part3_tracker %}
+          <span class="tab-count">{{ q.part3_tracker|length }}</span>
+        {% endif %}
+      </button>
+</nav>
+    {# ── FULL-WIDTH SCOPE BAR ─────────────────────────────────── #}
+<div class="scope-bar">
+  <div class="scope-bar__inner">
+    <div class="scope-bar__col">
+      <span class="scope-bar__label">Frameworks</span>
+      <span class="scope-bar__value">
+        {% if q.questionnaire_type == 'multi_framework' %}
+          {% set fw_seen = [] %}
+          {% for group in q.question_groups %}
+            {% if group.framework_name not in fw_seen %}
+              {% if fw_seen.append(group.framework_name) %}{% endif %}
+              <span class="fw-chip">{{ group.framework_name }}</span>
+            {% endif %}
+          {% endfor %}
+        {% else %}
+          {{ q.framework_summary or q.framework_name or '—' }}
+        {% endif %}
+      </span>
+    </div>
+    <div class="scope-bar__col">
+      <span class="scope-bar__label">Selected Domains</span>
+      <span class="scope-bar__value">
+        {% if q.selected_domains %}
+          {% for d in q.selected_domains %}<span class="domain-chip">{{ d }}</span>{% endfor %}
+        {% elif q.domain_name %}
+          <span class="domain-chip">{{ q.domain_name }}</span>
+        {% else %}—{% endif %}
+      </span>
+    </div>
+    <div class="scope-bar__col scope-bar__col--stats">
+      <span class="scope-bar__label">Questions</span>
+      <span class="scope-bar__stat">{{ q.question_count or (q.part1_checklist|length) or '—' }}</span>
+    </div>
+  </div>
+</div>
+
+    {# ── PAGE BODY ───────────────────────────────────────────────── #}
+    <div class="page-body">
+
+      {# ── MAIN CONTENT ──────────────────────────────────────────── #}
+      <main class="main-content">
+
+        {# ══════════════════════════════════════════════════════════
+           PART 1 TAB
+           ══════════════════════════════════════════════════════════ #}
+        <div class="tab-panel active" id="tab-part1">
+          <div class="part-intro">
+            <h2>Part 1 — Pre-Assessment Questionnaire</h2>
+            <p>5 capability-check questions generated for your selected domains. Answer Yes / No / Partial and name the tool or technology in use where applicable.</p>
+          </div>
+
+          {% if q.part1_checklist %}
+            <div class="part1-wrap">
+              <table class="part1-table">
+                <thead>
+                  <tr>
+                    <th style="width:3%">#</th>
+                    <th style="width:22%">Area</th>
+                    <th style="width:36%">Question</th>
+                    <th style="width:16%">Response</th>
+                    <th style="width:23%">Tool / Technology</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  {% for row in q.part1_checklist %}
+                  <tr>
+                    <td>{{ row.number }}</td>
+                    <td>
+                      <div class="cluster-label">{{ row.domain_name }}</div>
+                      <div class="sub-topic-label">{{ row.sub_topic or row.control_id }}</div>
+                    </td>
+                    <td style="font-size:0.85rem; color:#1a1d23; line-height:1.55;">{{ row.question_text }}</td>
+                    <td>
+                      <div class="radio-group">
+                        {% set opts = row.response_options if row.response_options is iterable and row.response_options is not string else ['Yes', 'No', 'Partial'] %}
+                        {% for option in opts %}
+                          <label>
+                            <input type="radio" name="p1_{{ row.question_id }}" value="{{ option|lower|replace(' ', '_') }}">
+                            {{ option }}
+                          </label>
+                        {% endfor %}
+                      </div>
+                    </td>
+                    <td>
+                      <input type="text" class="tool-input" name="p1_detail_{{ row.question_id }}"
+                             placeholder="{{ row.detail_prompt or 'If yes or partial, specify the tool in use.' }}">
+                    </td>
+                  </tr>
+                  {% endfor %}
+                </tbody>
+              </table>
+            </div>
+          {% else %}
+            <div class="empty-state">No pre-assessment questions are available for this questionnaire.</div>
+          {% endif %}
+        </div>
+
+
+        {# ══════════════════════════════════════════════════════════
+           PART 2 TAB
+           ══════════════════════════════════════════════════════════ #}
+        <div class="tab-panel" id="tab-part2">
+          <div class="part-intro">
+            <h2>Part 2 — Interview Questions</h2>
+            <p>10 structured interview questions per domain, grouped by sub-topic. Each question has a response format (Yes/No, Scale 1–5, Multiple Choice, or Free Text). Use the maturity guide after each session.</p>
+          </div>
+
+          {# ── MULTI-FRAMEWORK with sub-topics ───────────────────── #}
+          {# ── Macro: question type badge ── #}
+          {%- macro qbadge(qt) -%}
+            {%- set t = (qt or 'free_text')|lower -%}
+            {%- if 'yes' in t %}<span class="qtype-badge qtype-yes-no">Yes/No</span>
+            {%- elif 'scale' in t or 'maturity' in t or '1_5' in t %}<span class="qtype-badge qtype-maturity">{{ 'Maturity' if 'maturity' in t else 'Scale 1–5' }}</span>
+            {%- elif 'multi' in t or 'choice' in t %}<span class="qtype-badge qtype-multi-choice">Multi Choice</span>
+            {%- elif 'evidence' in t %}<span class="qtype-badge qtype-evidence">Evidence</span>
+            {%- else %}<span class="qtype-badge qtype-free-text">Free Text</span>{%- endif -%}
+          {%- endmacro -%}
+
+          {% if q.questionnaire_type == 'multi_framework' and q.question_groups %}
+
+            {% for group in q.question_groups %}
+              <div class="domain-block" id="domain-{{ loop.index }}">
+                <div class="domain-header">
+                  <span class="domain-fw-tag">{{ group.framework_name }}</span>
+                  <h3>{{ group.domain_name }}</h3>
+                  {% if group.domain_description %}
+                    <span class="domain-desc">{{ group.domain_description }}</span>
+                  {% endif %}
+                </div>
+
+                <div class="subtopics-container">
+
+                  {% if group.sub_topics %}
+                    {% for section in group.sub_topics %}
+                      <div class="sub-topic-section">
+                        <div class="sub-topic-header" onclick="toggleSubtopic(this)">
+                          <span class="sub-topic-title">{{ section.sub_topic }}</span>
+                          <div class="sub-topic-meta">
+                            {% if section.control_ids %}
+                              <span class="sub-topic-ctrl-ids">{{ section.control_ids|join(' · ') }}</span>
+                            {% endif %}
+                            <span class="sub-topic-toggle">▾</span>
+                          </div>
+                        </div>
+                        <div class="sub-topic-body open">
+
+                          {# ── Structured questions (LLM-generated: text/question_type/choices) ── #}
+                          {% if section.questions %}
+                            <div class="interview-qs" style="padding: 4px 0 8px;">
+                              {% for qq in section.questions %}
+                                {% set qid = qq.question_id or (section.sub_topic|replace(' ','_') ~ '_' ~ loop.index) %}
+                                {% set qtype = (qq.question_type or 'FREE_TEXT')|upper %}
+                                <div class="q-card" style="margin-bottom: 10px;">
+                                  <div class="q-num" style="display:flex; align-items:center; gap:6px; flex-wrap:wrap;">
+                                    Q{{ loop.index }}
+                                    {% if qq.control_id %} · {{ qq.control_id }}{% endif %}
+                                    {% if qq.weight %} · weight {{ qq.weight }}{% endif %}
+                                    {% set qt = (qq.question_type or 'FREE_TEXT')|upper %}
+                                    {% if qt == 'YES_NO' %}<span class="qtype-badge qtype-yes-no">Yes/No</span>
+                                    {% elif qt == 'SCALE_1_5' %}<span class="qtype-badge qtype-scale">Scale 1–5</span>
+                                    {% elif qt == 'MULTI_CHOICE' %}<span class="qtype-badge qtype-multi-choice">Multi Choice</span>
+                                    {% elif qt == 'EVIDENCE_UPLOAD' %}<span class="qtype-badge qtype-evidence">Evidence</span>
+                                    {% else %}<span class="qtype-badge qtype-free-text">Free Text</span>{% endif %}
+                                  </div>
+                                  <div class="q-text">{{ qq.text or qq.question_text }}</div>
+                                  {% if qq.help_text %}
+                                    <div class="q-meta" style="font-style:italic; margin-bottom:6px;">{{ qq.help_text }}</div>
+                                  {% endif %}
+                                  <div class="q-formats">
+                                    <div class="format-block">
+                                      <div class="fmt-label">{{ qtype|replace('_',' ')|title }}</div>
+                                      {% if qtype == 'YES_NO' %}
+                                        <div class="yes-no-btns">
+                                          <label><input type="radio" name="response_{{ qid }}" value="yes"> Yes</label>
+                                          <label><input type="radio" name="response_{{ qid }}" value="no"> No</label>
+                                          <label><input type="radio" name="response_{{ qid }}" value="partial"> Partial</label>
+                                        </div>
+                                      {% elif qtype == 'SCALE_1_5' %}
+                                        <select class="q-select" name="response_{{ qid }}">
+                                          <option value="">— Select —</option>
+                                          <option value="1">1 — Initial / Ad-hoc</option>
+                                          <option value="2">2 — Developing</option>
+                                          <option value="3">3 — Defined</option>
+                                          <option value="4">4 — Managed</option>
+                                          <option value="5">5 — Optimizing</option>
+                                        </select>
+                                      {% elif qtype == 'MULTI_CHOICE' and qq.choices %}
+                                        <div style="display:flex; flex-direction:column; gap:5px;">
+                                          {% for choice in qq.choices %}
+                                            <label style="display:flex; align-items:center; gap:6px; font-size:0.83rem; cursor:pointer;">
+                                              <input type="radio" name="response_{{ qid }}" value="{{ choice|lower|replace(' ','_') }}">
+                                              {{ choice }}
+                                            </label>
+                                          {% endfor %}
+                                        </div>
+                                      {% else %}
+                                        <textarea class="q-textarea" name="response_{{ qid }}" rows="3" placeholder="Enter your response…"></textarea>
+                                      {% endif %}
+                                      <div class="q-note">
+                                        <input type="text" name="note_{{ qid }}" placeholder="Add a note…">
+                                      </div>
+                                    </div>
+                                  </div>
+                                </div>
+                              {% endfor %}
+                            </div>
+
+                          {# ── Fallback: plain interview_questions strings ── #}
+                          {% elif section.interview_questions %}
+                            <div class="interview-qs">
+                              {% for iq in section.interview_questions %}
+                                {% set qid = 'iq_' ~ section.sub_topic|replace(' ','_') ~ '_' ~ loop.index %}
+                                <div class="q-card" style="margin-bottom: 10px;">
+                                  <div class="q-num">Q{{ loop.index }}</div>
+                                  <div class="q-text">{{ iq }}</div>
+                                  <div class="q-formats">
+                                    <div class="format-block">
+                                      <textarea class="q-textarea" name="response_{{ qid }}" rows="3" placeholder="Enter your response…"></textarea>
+                                      <div class="q-note"><input type="text" name="note_{{ qid }}" placeholder="Add a note…"></div>
+                                    </div>
+                                  </div>
+                                </div>
+                              {% endfor %}
+                            </div>
+                          {% endif %}
+
+                          {% if section.evidence_to_request %}
+                            <div class="evidence-list" style="padding: 0 16px 12px;">
+                              <h5>Evidence to Request</h5>
+                              <ul>
+                                {% for ev in section.evidence_to_request %}
+                                  <li>{{ ev }}</li>
+                                {% endfor %}
+                              </ul>
+                            </div>
+                          {% endif %}
+
+                        </div>
+                      </div>
+                    {% endfor %}
+
+                  {% else %}
+                    {# ── no sub_topics: render interview_questions from group ── #}
+                    {% if group.interview_questions %}
+                      <div style="padding: 16px;">
+                        <div class="interview-qs">
+                          <h5>Interview Questions</h5>
+                          {% for iq in group.interview_questions %}
+                            <div class="q-card" style="margin-bottom: 10px;">
+                              <div class="q-num">Q{{ loop.index }} · {{ group.framework_name }} · {{ group.domain_name }}</div>
+                              <div class="q-text">{{ iq }}</div>
+                              <div class="q-formats">
+                                <div class="format-block">
+                                  <div class="fmt-label">Response</div>
+                                  <textarea class="q-textarea" name="response_iq_{{ group.domain_id }}_{{ loop.index }}" rows="3" placeholder="Enter your response…"></textarea>
+                                  <div class="q-note"><input type="text" name="note_iq_{{ group.domain_id }}_{{ loop.index }}" placeholder="Add a note…"></div>
+                                </div>
+                              </div>
+                            </div>
+                          {% endfor %}
+                        </div>
+                        {% if group.evidence_to_request %}
+                          <div class="evidence-list" style="margin-top: 1rem;">
+                            <h5>Evidence to Request</h5>
+                            <ul>
+                              {% for ev in group.evidence_to_request %}
+                                <li>{{ ev }}</li>
+                              {% endfor %}
+                            </ul>
+                          </div>
+                        {% endif %}
+                      </div>
+
+                    {# ── Fallback: the group's own (merged/flat) questions ── #}
+                    {% elif group.questions %}
+                      <div style="padding: 16px;">
+                        {% for qq in group.questions %}
+                          <div class="q-card" style="margin-bottom: 10px;">
+                            <div class="q-num" style="display:flex; align-items:center; gap:6px; flex-wrap:wrap;">
+                              Q{{ loop.index }} · {{ qq.framework_name or group.framework_name or '' }}{% if qq.domain_name or group.domain_name %} · {{ qq.domain_name or group.domain_name }}{% endif %}{% if qq.control_id %} · {{ qq.control_id }}{% endif %}
+                              {{ qbadge(qq.question_type) }}
+                            </div>
+                            <div class="q-text">{{ qq.text or qq.question_text }}</div>
+                            {% if qq.source_questions %}
+                              <div class="q-meta">Merged from {{ qq.source_questions|length }} source questions</div>
+                            {% endif %}
+                            {% set formats = qq.answer_formats or [qq.question_type] %}
+                            <div class="q-formats">
+                              {% for fmt in formats %}
+                                <div class="format-block">
+                                  <div class="fmt-label">{{ fmt|replace('_', ' ')|title }}</div>
+                                  {% if fmt == 'yes_no' %}
+                                    <div class="yes-no-btns">
+                                      <label><input type="radio" name="response_{{ qq.question_id }}{% if formats|length > 1 %}__{{ fmt }}{% endif %}" value="yes"> Yes</label>
+                                      <label><input type="radio" name="response_{{ qq.question_id }}{% if formats|length > 1 %}__{{ fmt }}{% endif %}" value="no"> No</label>
+                                    </div>
+                                  {% elif fmt == 'maturity_rating' %}
+                                    <select class="q-select" name="response_{{ qq.question_id }}{% if formats|length > 1 %}__{{ fmt }}{% endif %}">
+                                      <option>Initial</option><option>Developing</option><option>Defined</option><option>Managed</option><option>Optimizing</option>
+                                    </select>
+                                  {% elif fmt == 'evidence_upload' %}
+                                    <div class="upload-zone">
+                                      <input class="evidence-input" data-question-id="{{ qq.question_id }}{% if formats|length > 1 %}__{{ fmt }}{% endif %}" type="file" name="response_{{ qq.question_id }}{% if formats|length > 1 %}__{{ fmt }}{% endif %}" accept=".xlsx,.xls,.docx,.pdf,.txt,.md,.csv,.json,.xml">
+                                    </div>
+                                    <p class="upload-hint">XLSX, DOCX, PDF, TXT, CSV, JSON, or XML</p>
+                                    <div class="evidence-preview" id="preview_{{ qq.question_id }}{% if formats|length > 1 %}__{{ fmt }}{% endif %}"><div class="evidence-preview__meta">No file selected.</div></div>
+                                  {% else %}
+                                    <textarea class="q-textarea" name="response_{{ qq.question_id }}{% if formats|length > 1 %}__{{ fmt }}{% endif %}" rows="3" placeholder="Enter your response…"></textarea>
+                                  {% endif %}
+                                  <div class="q-note"><input type="text" name="note_{{ qq.question_id }}{% if formats|length > 1 %}__{{ fmt }}{% endif %}" placeholder="Add a note…"></div>
+                                </div>
+                              {% endfor %}
+                            </div>
+                          </div>
+                        {% endfor %}
+                      </div>
+                    {% else %}
+                      <div class="empty-state">No interview questions generated for this domain.</div>
+                    {% endif %}
+                  {% endif %}
+
+                </div>
+              </div>
+            {% endfor %}
+
+          {# ── Single domain / control: flat rendering ───────────── #}
+          {% elif q.questions %}
+            {% for qq in q.questions %}
+              <div class="q-card">
+                <div class="q-num" style="display:flex; align-items:center; gap:6px; flex-wrap:wrap;">
+                  Q{{ loop.index }} · {{ qq.framework_name or q.framework_summary or '' }}{% if qq.domain_name %} · {{ qq.domain_name }}{% endif %}{% if qq.control_id or q.control_id %} · {{ qq.control_id or q.control_id }}{% endif %}
+                  {{ qbadge(qq.question_type) }}
+                </div>
+                <div class="q-text">{{ qq.question_text }}</div>
+                {% if qq.source_questions %}
+                  <div class="q-meta">Merged from {{ qq.source_questions|length }} source questions</div>
+                {% endif %}
+                {% set formats = qq.answer_formats or [qq.question_type] %}
+                <div class="q-formats">
+                  {% for fmt in formats %}
+                    <div class="format-block">
+                      <div class="fmt-label">{{ fmt|replace('_', ' ')|title }}</div>
+                      {% if fmt == 'yes_no' %}
+                        <div class="yes-no-btns">
+                          <label><input type="radio" name="response_{{ qq.question_id }}{% if formats|length > 1 %}__{{ fmt }}{% endif %}" value="yes"> Yes</label>
+                          <label><input type="radio" name="response_{{ qq.question_id }}{% if formats|length > 1 %}__{{ fmt }}{% endif %}" value="no"> No</label>
+                        </div>
+                      {% elif fmt == 'maturity_rating' %}
+                        <select class="q-select" name="response_{{ qq.question_id }}{% if formats|length > 1 %}__{{ fmt }}{% endif %}">
+                          <option>Initial</option><option>Developing</option><option>Defined</option><option>Managed</option><option>Optimizing</option>
+                        </select>
+                      {% elif fmt == 'evidence_upload' %}
+                        <div class="upload-zone">
+                          <input class="evidence-input" data-question-id="{{ qq.question_id }}{% if formats|length > 1 %}__{{ fmt }}{% endif %}" type="file" name="response_{{ qq.question_id }}{% if formats|length > 1 %}__{{ fmt }}{% endif %}" accept=".xlsx,.xls,.docx,.pdf,.txt,.md,.csv,.json,.xml">
+                        </div>
+                        <p class="upload-hint">XLSX, DOCX, PDF, TXT, CSV, JSON, or XML</p>
+                        <div class="evidence-preview" id="preview_{{ qq.question_id }}{% if formats|length > 1 %}__{{ fmt }}{% endif %}"><div class="evidence-preview__meta">No file selected.</div></div>
+                      {% else %}
+                        <textarea class="q-textarea" name="response_{{ qq.question_id }}{% if formats|length > 1 %}__{{ fmt }}{% endif %}" rows="3"></textarea>
+                      {% endif %}
+                      <div class="q-note"><input type="text" name="note_{{ qq.question_id }}{% if formats|length > 1 %}__{{ fmt }}{% endif %}" placeholder="Add a note…"></div>
+                    </div>
+                  {% endfor %}
+                </div>
+              </div>
+            {% endfor %}
+
+          {% elif q.question_groups %}
+            {% for group in q.question_groups %}
+              {% for qq in group.questions %}
+                <div class="q-card">
+                  <div class="q-num" style="display:flex; align-items:center; gap:6px; flex-wrap:wrap;">
+                    Q{{ loop.index }} · {{ qq.framework_name or q.framework_summary or '' }}{% if qq.domain_name %} · {{ qq.domain_name }}{% endif %}{% if qq.control_id %} · {{ qq.control_id }}{% endif %}
+                    {{ qbadge(qq.question_type) }}
+                  </div>
+                  <div class="q-text">{{ qq.question_text }}</div>
+                  {% set formats = qq.answer_formats or [qq.question_type] %}
+                  <div class="q-formats">
+                    {% for fmt in formats %}
+                      <div class="format-block">
+                        <div class="fmt-label">{{ fmt|replace('_', ' ')|title }}</div>
+                        {% if fmt == 'yes_no' %}
+                          <div class="yes-no-btns">
+                            <label><input type="radio" name="response_{{ qq.question_id }}{% if formats|length > 1 %}__{{ fmt }}{% endif %}" value="yes"> Yes</label>
+                            <label><input type="radio" name="response_{{ qq.question_id }}{% if formats|length > 1 %}__{{ fmt }}{% endif %}" value="no"> No</label>
+                          </div>
+                        {% elif fmt == 'maturity_rating' %}
+                          <select class="q-select" name="response_{{ qq.question_id }}{% if formats|length > 1 %}__{{ fmt }}{% endif %}">
+                            <option>Initial</option><option>Developing</option><option>Defined</option><option>Managed</option><option>Optimizing</option>
+                          </select>
+                        {% elif fmt == 'evidence_upload' %}
+                          <div class="upload-zone">
+                            <input class="evidence-input" data-question-id="{{ qq.question_id }}{% if formats|length > 1 %}__{{ fmt }}{% endif %}" type="file" name="response_{{ qq.question_id }}{% if formats|length > 1 %}__{{ fmt }}{% endif %}" accept=".xlsx,.xls,.docx,.pdf,.txt,.md,.csv,.json,.xml">
+                          </div>
+                          <p class="upload-hint">XLSX, DOCX, PDF, TXT, CSV, JSON, or XML</p>
+                          <div class="evidence-preview" id="preview_{{ qq.question_id }}{% if formats|length > 1 %}__{{ fmt }}{% endif %}"><div class="evidence-preview__meta">No file selected.</div></div>
+                        {% else %}
+                          <textarea class="q-textarea" name="response_{{ qq.question_id }}{% if formats|length > 1 %}__{{ fmt }}{% endif %}" rows="3"></textarea>
+                        {% endif %}
+                        <div class="q-note"><input type="text" name="note_{{ qq.question_id }}{% if formats|length > 1 %}__{{ fmt }}{% endif %}" placeholder="Add a note…"></div>
+                      </div>
+                    {% endfor %}
+                  </div>
+                </div>
+              {% endfor %}
+            {% endfor %}
+          {% else %}
+            <div class="empty-state">No interview questions found for this questionnaire.</div>
+          {% endif %}
+        </div>
+
+
+        {# ══════════════════════════════════════════════════════════
+           PART 3 TAB — Evidence Tracker
+           ══════════════════════════════════════════════════════════ #}
+        <div class="tab-panel" id="tab-part3">
+          <div class="part-intro">
+            <h2>Part 3 — Evidence Tracker</h2>
+            <p>All evidence artefacts to collect across selected domains. Update the status of each item as you gather documentation during the assessment.</p>
+          </div>
+
+          {# ── Bulk evidence upload ── #}
+          <div class="bulk-upload-panel">
+            <h3>Bulk Evidence Upload</h3>
+            <p>Upload multiple XLSX or DOCX evidence files. Each file is parsed and evaluated for quality. Uploaded files are stored and associated with this questionnaire.</p>
+            <div class="bulk-drop-zone" id="bulk-drop-zone" onclick="document.getElementById('bulk-file-input').click()">
+              <div class="bulk-drop-zone__icon">📂</div>
+              <div class="bulk-drop-zone__label">Click or drag XLSX / DOCX files here</div>
+              <div class="bulk-drop-zone__hint">XLSX spreadsheets and DOCX documents accepted</div>
+            </div>
+            <input id="bulk-file-input" type="file" multiple accept=".xlsx,.xls,.docx">
+            <button type="button" class="bulk-upload-btn" id="bulk-upload-btn" disabled>Upload &amp; Evaluate</button>
+            <div class="bulk-results" id="bulk-results"></div>
+          </div>
+
+          {# ── Pre-fill answers from evidence ── #}
+          <div class="prefill-panel">
+            <h3>Pre-fill Answers from Evidence</h3>
+            <p>Generate draft answers for the Part 2 questions <strong>strictly from the evidence uploaded above</strong>. Drafts are filled into the form for you to review — <strong>nothing is submitted until you approve and click “Save &amp; Submit”.</strong></p>
+            <button type="button" class="prefill-btn" id="prefill-btn">✨ Pre-fill from Evidence</button>
+            <span class="prefill-status" id="prefill-status"></span>
+          </div>
+
+          {% if q.part3_tracker %}
+            <div class="part3-wrap">
+              <table class="part3-table">
+                <thead>
+                  <tr>
+                    <th style="width:12%">Framework</th>
+                    <th style="width:16%">Domain</th>
+                    <th style="width:16%">Sub-topic</th>
+                    <th style="width:14%">Controls</th>
+                    <th style="width:24%">Evidence to Request</th>
+                    <th style="width:18%">Status</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  {% for row in q.part3_tracker %}
+                  <tr>
+                    <td><span class="fw-badge">{{ row.framework }}</span></td>
+                    <td style="font-size:0.83rem; color:#1a1d23; font-weight:500;">{{ row.domain }}</td>
+                    <td style="font-size:0.8rem; color:#4a5568;">{{ row.sub_topic or '—' }}</td>
+                    <td>
+                      {% if row.control_id %}
+                        {% for cid in row.control_id.split(', ') %}
+                          <span class="ctrl-badge">{{ cid }}</span>
+                        {% endfor %}
+                      {% else %}—{% endif %}
+                    </td>
+                    <td style="font-size:0.83rem; color:#2a3848; line-height:1.5;">{{ row.evidence_request }}</td>
+                    <td>
+                      <select class="status-select" name="p3_status_{{ loop.index }}">
+                        <option value="">— Not started —</option>
+                        <option value="Outstanding">Outstanding</option>
+                        <option value="Requested">Requested</option>
+                        <option value="Received">Received</option>
+                        <option value="Reviewed">Reviewed</option>
+                        <option value="Not Applicable">Not Applicable</option>
+                      </select>
+                    </td>
+                  </tr>
+                  {% endfor %}
+                </tbody>
+              </table>
+            </div>
+          {% else %}
+            <div class="empty-state">No evidence items found. Generate a questionnaire with at least one domain to populate this tracker.</div>
+          {% endif %}
+        </div>
+
+
+      </main>
+    </div>
+
+    </form>
+
+    <script>
+      (function () {
+
+        /* ── Tab switching ───────────────────────────────────────── */
+        const tabs = Array.from(document.querySelectorAll('.tab-btn'));
+        const panels = Array.from(document.querySelectorAll('.tab-panel'));
+
+        function switchTab(tabId) {
+          tabs.forEach(function(t) { t.classList.toggle('active', t.dataset.tab === tabId); });
+          panels.forEach(function(p) { p.classList.toggle('active', p.id === tabId); });
+        }
+
+        tabs.forEach(function(btn) {
+          btn.addEventListener('click', function() { switchTab(btn.dataset.tab); });
+        });
+
+        window.switchTab = switchTab;
+
+        /* ── Sub-topic accordion ─────────────────────────────────── */
+        window.toggleSubtopic = function(header) {
+          var body = header.nextElementSibling;
+          var toggle = header.querySelector('.sub-topic-toggle');
+          var isOpen = body.classList.contains('open');
+          body.classList.toggle('open', !isOpen);
+          if (toggle) { toggle.classList.toggle('open', !isOpen); }
+        };
+
+        /* ── Evidence file preview ───────────────────────────────── */
+        var previewUrl = '/preview-evidence';
+        var inputs = document.querySelectorAll('.evidence-input');
+        inputs.forEach(function(input) {
+          input.addEventListener('change', async function() {
+            var file = input.files && input.files[0];
+            var preview = document.getElementById('preview_' + input.dataset.questionId);
+            if (!preview) return;
+            if (!file) {
+              preview.innerHTML = '<div class="evidence-preview__meta">No file selected.</div>';
+              return;
+            }
+            preview.innerHTML = '<div class="evidence-preview__meta">Extracting preview from ' + file.name + '…</div>';
+            var formData = new FormData();
+            formData.append('file', file);
+            try {
+              var response = await fetch(previewUrl, { method: 'POST', body: formData });
+              var data = await response.json();
+              if (!response.ok || !data.ok) {
+                preview.innerHTML = '<div class="evidence-preview__meta evidence-preview__meta--error">Preview unavailable.</div>';
+                return;
+              }
+              var text = data.has_preview ? data.preview_text : 'No text could be extracted from this file type.';
+              preview.innerHTML =
+                '<div class="evidence-preview__meta"><strong>' + data.filename + '</strong>' +
+                ' <span>· ' + data.file_type.toUpperCase() + '</span></div>' +
+                '<pre class="evidence-preview__text">' + text.replace(/</g,'&lt;').replace(/>/g,'&gt;') + '</pre>';
+            } catch (err) {
+              preview.innerHTML = '<div class="evidence-preview__meta evidence-preview__meta--error">Preview failed: ' + err + '</div>';
+            }
+          });
+        });
+
+        /* ── Bulk evidence upload ────────────────────────────────── */
+        var bulkFileInput = document.getElementById('bulk-file-input');
+        var bulkUploadBtn = document.getElementById('bulk-upload-btn');
+        var bulkDropZone  = document.getElementById('bulk-drop-zone');
+        var bulkResults   = document.getElementById('bulk-results');
+        var bulkFiles     = [];
+
+        var GRADE_CSS = {
+          'operational':        'grade-operational',
+          'policy_implemented': 'grade-policy_implemented',
+          'policy_only':        'grade-policy_only',
+          'filename_only':      'grade-filename_only',
+          'missing':            'grade-missing',
+        };
+
+        function updateBulkFiles(files) {
+          bulkFiles = Array.from(files);
+          bulkUploadBtn.disabled = bulkFiles.length === 0;
+          bulkDropZone.querySelector('.bulk-drop-zone__hint').textContent =
+            bulkFiles.length > 0
+              ? bulkFiles.length + ' file' + (bulkFiles.length > 1 ? 's' : '') + ' selected'
+              : 'XLSX spreadsheets and DOCX documents accepted';
+        }
+
+        if (bulkFileInput) {
+          bulkFileInput.addEventListener('change', function() { updateBulkFiles(bulkFileInput.files); });
+        }
+
+        if (bulkDropZone) {
+          bulkDropZone.addEventListener('dragover', function(e) {
+            e.preventDefault(); bulkDropZone.classList.add('dragover');
+          });
+          bulkDropZone.addEventListener('dragleave', function() { bulkDropZone.classList.remove('dragover'); });
+          bulkDropZone.addEventListener('drop', function(e) {
+            e.preventDefault(); bulkDropZone.classList.remove('dragover');
+            updateBulkFiles(e.dataTransfer.files);
+          });
+        }
+
+        if (bulkUploadBtn) {
+          bulkUploadBtn.addEventListener('click', async function() {
+            if (bulkFiles.length === 0) return;
+            bulkUploadBtn.disabled = true;
+            bulkUploadBtn.textContent = 'Uploading…';
+            bulkResults.innerHTML = '';
+
+            var formData = new FormData();
+            formData.append('scope_id', '{{ q.questionnaire_id or q.control_id or "bulk" }}');
+            bulkFiles.forEach(function(f) { formData.append('evidence_files', f); });
+
+            try {
+              var resp = await fetch('/upload-evidence-bulk', { method: 'POST', body: formData });
+              var data = await resp.json();
+              if (!data.ok && !data.files) {
+                bulkResults.innerHTML = '<div class="bulk-result-row err"><span class="bulk-result-row__err">' + (data.error || 'Upload failed') + '</span></div>';
+              } else {
+                (data.files || []).forEach(function(r) {
+                  var row = document.createElement('div');
+                  row.className = 'bulk-result-row ' + (r.ok ? 'ok' : 'err');
+                  if (r.ok) {
+                    var gradeClass = GRADE_CSS[r.evidence_grade] || 'grade-missing';
+                    row.innerHTML =
+                      '<span class="bulk-result-row__name">' + r.filename + '</span>' +
+                      '<span class="qtype-badge ' + gradeClass + '">' + (r.evidence_grade || '—').replace('_', ' ') + '</span>' +
+                      '<span class="bulk-result-row__score">' + Math.round(r.evidence_score || 0) + ' / 100</span>';
+                  } else {
+                    row.innerHTML =
+                      '<span class="bulk-result-row__name">' + r.filename + '</span>' +
+                      '<span class="bulk-result-row__err">' + (r.error || 'Error') + '</span>';
+                  }
+                  bulkResults.appendChild(row);
+                });
+              }
+            } catch (err) {
+              bulkResults.innerHTML = '<div class="bulk-result-row err"><span class="bulk-result-row__err">Network error: ' + err + '</span></div>';
+            }
+
+            bulkUploadBtn.disabled = false;
+            bulkUploadBtn.textContent = 'Upload & Evaluate';
+          });
+        }
+
+        /* ── Pre-fill answers from evidence ──────────────────────── */
+        var PREFILL_ID = {{ (q.questionnaire_id or q.control_id) | tojson }};
+        var prefillBtn    = document.getElementById('prefill-btn');
+        var prefillStatus = document.getElementById('prefill-status');
+        var prefillBanner = document.getElementById('prefill-banner');
+        var prefillBannerText = document.getElementById('prefill-banner-text');
+        var formEl = document.querySelector('form');
+        var prefillApplied = false;
+
+        function slug(s) { return String(s == null ? '' : s).toLowerCase().replace(/\s+/g, '_'); }
+
+        // Collect form controls named `<prefix>_<qid>` or `<prefix>_<qid>__<fmt>`
+        // by comparing names directly (avoids CSS-escaping issues with qids).
+        function controlsFor(prefix, qid) {
+          var exact = prefix + '_' + qid;
+          var multi = prefix + '_' + qid + '__';
+          return Array.prototype.filter.call(formEl.elements, function (el) {
+            var n = el.name || '';
+            return n === exact || n.indexOf(multi) === 0;
+          });
+        }
+
+        function setResponse(qid, value) {
+          if (value == null || String(value).length === 0) return false;
+          var v = String(value);
+          var controls = controlsFor('response', qid);
+          if (!controls.length) return false;
+          var done = false;
+          controls.forEach(function (el) {
+            var tag = el.tagName.toLowerCase();
+            var type = (el.type || '').toLowerCase();
+            if (tag === 'textarea' || (tag === 'input' && (type === 'text' || type === ''))) {
+              el.value = v; done = true;
+            } else if (tag === 'select') {
+              var matched = false;
+              Array.prototype.forEach.call(el.options, function (o) {
+                if (matched) return;
+                if (o.value.toLowerCase() === v.toLowerCase() || o.text.trim().toLowerCase() === v.toLowerCase()) {
+                  el.value = o.value; matched = true; done = true;
+                }
+              });
+            } else if (tag === 'input' && type === 'radio') {
+              var rv = (el.value || '').toLowerCase();
+              if (rv === v.toLowerCase() || rv === slug(v)) { el.checked = true; done = true; }
+            }
+          });
+          return done;
+        }
+
+        function setNote(qid, note) {
+          if (!note) return;
+          controlsFor('note', qid).forEach(function (el) { if (!el.value) el.value = note; });
+        }
+
+        function markPrefilled(qid) {
+          var ctrls = controlsFor('response', qid);
+          if (ctrls.length && ctrls[0].closest) {
+            var card = ctrls[0].closest('.q-card');
+            if (card) card.classList.add('prefilled');
+          }
+        }
+
+        if (prefillBtn) {
+          prefillBtn.addEventListener('click', async function () {
+            prefillBtn.disabled = true;
+            var original = prefillBtn.textContent;
+            prefillBtn.textContent = 'Reading evidence…';
+            prefillStatus.textContent = '';
+            prefillStatus.style.color = '#4a5568';
+            try {
+              var resp = await fetch('/prefill-answers/' + encodeURIComponent(PREFILL_ID), { method: 'POST' });
+              var data = await resp.json();
+              if (!resp.ok || !data.ok) {
+                prefillStatus.textContent = (data && data.error) ? data.error : 'Pre-fill failed.';
+                prefillStatus.style.color = '#dc2626';
+                return;
+              }
+              var answers = data.answers || {};
+              var ids = Object.keys(answers);
+              if (!ids.length) {
+                prefillStatus.textContent = (data.summary && data.summary.message) || 'No evidence available to pre-fill from. Upload evidence first.';
+                prefillStatus.style.color = '#b45309';
+                return;
+              }
+              var filled = 0;
+              ids.forEach(function (qid) {
+                var a = answers[qid];
+                if (setResponse(qid, a.response)) { filled++; markPrefilled(qid); }
+                setNote(qid, a.note);
+              });
+              prefillApplied = filled > 0;
+              var total = (data.summary && data.summary.total) || ids.length;
+              prefillStatus.textContent = filled + ' of ' + total + ' answers pre-filled from evidence.';
+              prefillStatus.style.color = filled ? '#16a34a' : '#b45309';
+              if (filled) {
+                prefillBannerText.textContent = filled + ' answer(s) were pre-filled from evidence. Review and edit them, then click “Save & Submit” to approve — nothing is submitted automatically.';
+                prefillBanner.classList.add('show');
+                switchTab('tab-part2');
+                window.scrollTo({ top: 0, behavior: 'smooth' });
+              }
+            } catch (err) {
+              prefillStatus.textContent = 'Network error: ' + err;
+              prefillStatus.style.color = '#dc2626';
+            } finally {
+              prefillBtn.disabled = false;
+              prefillBtn.textContent = original;
+            }
+          });
+        }
+
+        // Require explicit approval before submitting AI-prefilled answers.
+        if (formEl) {
+          formEl.addEventListener('submit', function (e) {
+            if (prefillApplied) {
+              var ok = window.confirm('Some answers were pre-filled from evidence by AI. Confirm you have reviewed and approved them before submitting?');
+              if (!ok) e.preventDefault();
+            }
+          });
+        }
+
+      })();
+    </script>
+  </body>
+</html>

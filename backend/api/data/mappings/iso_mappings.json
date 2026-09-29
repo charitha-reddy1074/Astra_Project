@@ -1,0 +1,1532 @@
+[
+  {
+    "source_framework": "ISO_27001_2022",
+    "source_control": "5.1",
+    "source_name": "Policies for information security",
+    "mapped_framework": "NIST_CSF_2_0",
+    "mapped_control": "GV.PO-01",
+    "mapped_name": "Policy",
+    "similarity": 0.5382
+  },
+  {
+    "source_framework": "ISO_27001_2022",
+    "source_control": "5.1",
+    "source_name": "Policies for information security",
+    "mapped_framework": "NIST_CSF_2_0",
+    "mapped_control": "UNKNOWN",
+    "mapped_name": "Policy",
+    "similarity": 0.5293
+  },
+  {
+    "source_framework": "ISO_27001_2022",
+    "source_control": "5.1",
+    "source_name": "Policies for information security",
+    "mapped_framework": "NIST_CSF_2_0",
+    "mapped_control": "GV.PO-02",
+    "mapped_name": "Policy",
+    "similarity": 0.5141
+  },
+  {
+    "source_framework": "ISO_27001_2022",
+    "source_control": "5.1",
+    "source_name": "Policies for information security",
+    "mapped_framework": "CIS_CONTROLS_V8",
+    "mapped_control": "3.7",
+    "mapped_name": "Establish and Maintain a Data Classification Scheme",
+    "similarity": 0.5047
+  },
+  {
+    "source_framework": "ISO_27001_2022",
+    "source_control": "5.2",
+    "source_name": "Information security roles and responsibilities",
+    "mapped_framework": "NIST_CSF_2_0",
+    "mapped_control": "GV.RR-01",
+    "mapped_name": "Roles, Responsibilities, and Authorities",
+    "similarity": 0.5667
+  },
+  {
+    "source_framework": "ISO_27001_2022",
+    "source_control": "5.2",
+    "source_name": "Information security roles and responsibilities",
+    "mapped_framework": "NIST_CSF_2_0",
+    "mapped_control": "GV.RR-02",
+    "mapped_name": "Roles, Responsibilities, and Authorities",
+    "similarity": 0.5617
+  },
+  {
+    "source_framework": "ISO_27001_2022",
+    "source_control": "5.2",
+    "source_name": "Information security roles and responsibilities",
+    "mapped_framework": "NIST_CSF_2_0",
+    "mapped_control": "UNKNOWN",
+    "mapped_name": "Roles, Responsibilities, and Authorities",
+    "similarity": 0.5264
+  },
+  {
+    "source_framework": "ISO_27001_2022",
+    "source_control": "5.2",
+    "source_name": "Information security roles and responsibilities",
+    "mapped_framework": "CIS_CONTROLS_V8",
+    "mapped_control": "17.5",
+    "mapped_name": "Assign Key Roles and Responsibilities",
+    "similarity": 0.5053
+  },
+  {
+    "source_framework": "ISO_27001_2022",
+    "source_control": "5.4",
+    "source_name": "Management responsibilities",
+    "mapped_framework": "NIST_CSF_2_0",
+    "mapped_control": "GV.RR-01",
+    "mapped_name": "Roles, Responsibilities, and Authorities",
+    "similarity": 0.5482
+  },
+  {
+    "source_framework": "ISO_27001_2022",
+    "source_control": "5.4",
+    "source_name": "Management responsibilities",
+    "mapped_framework": "NIST_CSF_2_0",
+    "mapped_control": "GV.RR-02",
+    "mapped_name": "Roles, Responsibilities, and Authorities",
+    "similarity": 0.5353
+  },
+  {
+    "source_framework": "ISO_27001_2022",
+    "source_control": "5.4",
+    "source_name": "Management responsibilities",
+    "mapped_framework": "NIST_CSF_2_0",
+    "mapped_control": "UNKNOWN",
+    "mapped_name": "Roles, Responsibilities, and Authorities",
+    "similarity": 0.5124
+  },
+  {
+    "source_framework": "ISO_27001_2022",
+    "source_control": "5.4",
+    "source_name": "Management responsibilities",
+    "mapped_framework": "CIS_CONTROLS_V8",
+    "mapped_control": "17.5",
+    "mapped_name": "Assign Key Roles and Responsibilities",
+    "similarity": 0.5088
+  },
+  {
+    "source_framework": "ISO_27001_2022",
+    "source_control": "5.6",
+    "source_name": "Contact with special interest groups",
+    "mapped_framework": "CIS_CONTROLS_V8",
+    "mapped_control": "17.2",
+    "mapped_name": "Establish and Maintain Contact Information for Reporting",
+    "similarity": 0.5237
+  },
+  {
+    "source_framework": "ISO_27001_2022",
+    "source_control": "5.7",
+    "source_name": "Threat intelligence",
+    "mapped_framework": "NIST_CSF_2_0",
+    "mapped_control": "ID.RA-02",
+    "mapped_name": "Risk Assessment",
+    "similarity": 0.5744
+  },
+  {
+    "source_framework": "ISO_27001_2022",
+    "source_control": "5.7",
+    "source_name": "Threat intelligence",
+    "mapped_framework": "NIST_CSF_2_0",
+    "mapped_control": "UNKNOWN",
+    "mapped_name": "Risk Assessment",
+    "similarity": 0.5633
+  },
+  {
+    "source_framework": "ISO_27001_2022",
+    "source_control": "5.7",
+    "source_name": "Threat intelligence",
+    "mapped_framework": "NIST_CSF_2_0",
+    "mapped_control": "ID.RA-03",
+    "mapped_name": "Risk Assessment",
+    "similarity": 0.5591
+  },
+  {
+    "source_framework": "ISO_27001_2022",
+    "source_control": "5.8",
+    "source_name": "Information security in project management",
+    "mapped_framework": "NIST_CSF_2_0",
+    "mapped_control": "UNKNOWN",
+    "mapped_name": "Improvement",
+    "similarity": 0.5185
+  },
+  {
+    "source_framework": "ISO_27001_2022",
+    "source_control": "5.9",
+    "source_name": "Inventory of information and other associated assets",
+    "mapped_framework": "NIST_CSF_2_0",
+    "mapped_control": "ID.AM-02",
+    "mapped_name": "Asset Management",
+    "similarity": 0.5418
+  },
+  {
+    "source_framework": "ISO_27001_2022",
+    "source_control": "5.9",
+    "source_name": "Inventory of information and other associated assets",
+    "mapped_framework": "NIST_CSF_2_0",
+    "mapped_control": "ID.AM-01",
+    "mapped_name": "Asset Management",
+    "similarity": 0.5341
+  },
+  {
+    "source_framework": "ISO_27001_2022",
+    "source_control": "5.9",
+    "source_name": "Inventory of information and other associated assets",
+    "mapped_framework": "NIST_CSF_2_0",
+    "mapped_control": "ID.AM-04",
+    "mapped_name": "Asset Management",
+    "similarity": 0.5234
+  },
+  {
+    "source_framework": "ISO_27001_2022",
+    "source_control": "5.9",
+    "source_name": "Inventory of information and other associated assets",
+    "mapped_framework": "CIS_CONTROLS_V8",
+    "mapped_control": "1.1",
+    "mapped_name": "Establish and Maintain Detailed Enterprise Asset Inventory",
+    "similarity": 0.5957
+  },
+  {
+    "source_framework": "ISO_27001_2022",
+    "source_control": "5.9",
+    "source_name": "Inventory of information and other associated assets",
+    "mapped_framework": "CIS_CONTROLS_V8",
+    "mapped_control": "2.1",
+    "mapped_name": "Establish and Maintain a Software Inventory",
+    "similarity": 0.5876
+  },
+  {
+    "source_framework": "ISO_27001_2022",
+    "source_control": "5.9",
+    "source_name": "Inventory of information and other associated assets",
+    "mapped_framework": "CIS_CONTROLS_V8",
+    "mapped_control": "2.4",
+    "mapped_name": "Utilize Automated Software Inventory Tools",
+    "similarity": 0.5394
+  },
+  {
+    "source_framework": "ISO_27001_2022",
+    "source_control": "5.10",
+    "source_name": "Acceptable use of information and other associated assets",
+    "mapped_framework": "NIST_CSF_2_0",
+    "mapped_control": "ID.AM-03",
+    "mapped_name": "Asset Management",
+    "similarity": 0.512
+  },
+  {
+    "source_framework": "ISO_27001_2022",
+    "source_control": "5.10",
+    "source_name": "Acceptable use of information and other associated assets",
+    "mapped_framework": "NIST_CSF_2_0",
+    "mapped_control": "UNKNOWN",
+    "mapped_name": "Asset Management",
+    "similarity": 0.5079
+  },
+  {
+    "source_framework": "ISO_27001_2022",
+    "source_control": "5.10",
+    "source_name": "Acceptable use of information and other associated assets",
+    "mapped_framework": "NIST_CSF_2_0",
+    "mapped_control": "ID.AM-02",
+    "mapped_name": "Asset Management",
+    "similarity": 0.5074
+  },
+  {
+    "source_framework": "ISO_27001_2022",
+    "source_control": "5.12",
+    "source_name": "Classification of information",
+    "mapped_framework": "NIST_CSF_2_0",
+    "mapped_control": "ID.AM-03",
+    "mapped_name": "Asset Management",
+    "similarity": 0.5031
+  },
+  {
+    "source_framework": "ISO_27001_2022",
+    "source_control": "5.12",
+    "source_name": "Classification of information",
+    "mapped_framework": "CIS_CONTROLS_V8",
+    "mapped_control": "3.7",
+    "mapped_name": "Establish and Maintain a Data Classification Scheme",
+    "similarity": 0.5519
+  },
+  {
+    "source_framework": "ISO_27001_2022",
+    "source_control": "5.15",
+    "source_name": "Access control",
+    "mapped_framework": "CIS_CONTROLS_V8",
+    "mapped_control": "13.5",
+    "mapped_name": "Manage Access Control for Remote Assets",
+    "similarity": 0.5456
+  },
+  {
+    "source_framework": "ISO_27001_2022",
+    "source_control": "5.15",
+    "source_name": "Access control",
+    "mapped_framework": "CIS_CONTROLS_V8",
+    "mapped_control": "6.7",
+    "mapped_name": "Centralize Access Control",
+    "similarity": 0.5444
+  },
+  {
+    "source_framework": "ISO_27001_2022",
+    "source_control": "5.15",
+    "source_name": "Access control",
+    "mapped_framework": "CIS_CONTROLS_V8",
+    "mapped_control": "6.5",
+    "mapped_name": "Require MFA for Administrative Access",
+    "similarity": 0.5344
+  },
+  {
+    "source_framework": "ISO_27001_2022",
+    "source_control": "5.16",
+    "source_name": "Identity management",
+    "mapped_framework": "NIST_CSF_2_0",
+    "mapped_control": "ID.AM-03",
+    "mapped_name": "Asset Management",
+    "similarity": 0.509
+  },
+  {
+    "source_framework": "ISO_27001_2022",
+    "source_control": "5.16",
+    "source_name": "Identity management",
+    "mapped_framework": "NIST_CSF_2_0",
+    "mapped_control": "PR.AA-01",
+    "mapped_name": "Identity Management, Authentication, and Access Control",
+    "similarity": 0.5049
+  },
+  {
+    "source_framework": "ISO_27001_2022",
+    "source_control": "5.16",
+    "source_name": "Identity management",
+    "mapped_framework": "NIST_CSF_2_0",
+    "mapped_control": "ID.AM-01",
+    "mapped_name": "Asset Management",
+    "similarity": 0.5037
+  },
+  {
+    "source_framework": "ISO_27001_2022",
+    "source_control": "5.17",
+    "source_name": "Authentication information",
+    "mapped_framework": "NIST_CSF_2_0",
+    "mapped_control": "PR.AA-01",
+    "mapped_name": "Identity Management, Authentication, and Access Control",
+    "similarity": 0.5271
+  },
+  {
+    "source_framework": "ISO_27001_2022",
+    "source_control": "5.17",
+    "source_name": "Authentication information",
+    "mapped_framework": "NIST_CSF_2_0",
+    "mapped_control": "ID.AM-03",
+    "mapped_name": "Asset Management",
+    "similarity": 0.5241
+  },
+  {
+    "source_framework": "ISO_27001_2022",
+    "source_control": "5.17",
+    "source_name": "Authentication information",
+    "mapped_framework": "NIST_CSF_2_0",
+    "mapped_control": "PR.AA-02",
+    "mapped_name": "Identity Management, Authentication, and Access Control",
+    "similarity": 0.5184
+  },
+  {
+    "source_framework": "ISO_27001_2022",
+    "source_control": "5.17",
+    "source_name": "Authentication information",
+    "mapped_framework": "CIS_CONTROLS_V8",
+    "mapped_control": "6.5",
+    "mapped_name": "Require MFA for Administrative Access",
+    "similarity": 0.5252
+  },
+  {
+    "source_framework": "ISO_27001_2022",
+    "source_control": "5.17",
+    "source_name": "Authentication information",
+    "mapped_framework": "CIS_CONTROLS_V8",
+    "mapped_control": "6.4",
+    "mapped_name": "Require MFA for Remote Network Access",
+    "similarity": 0.5205
+  },
+  {
+    "source_framework": "ISO_27001_2022",
+    "source_control": "5.17",
+    "source_name": "Authentication information",
+    "mapped_framework": "CIS_CONTROLS_V8",
+    "mapped_control": "6.3",
+    "mapped_name": "Require MFA for Externally-Exposed Applications",
+    "similarity": 0.5191
+  },
+  {
+    "source_framework": "ISO_27001_2022",
+    "source_control": "5.18",
+    "source_name": "Access rights",
+    "mapped_framework": "CIS_CONTROLS_V8",
+    "mapped_control": "6.7",
+    "mapped_name": "Centralize Access Control",
+    "similarity": 0.5158
+  },
+  {
+    "source_framework": "ISO_27001_2022",
+    "source_control": "5.18",
+    "source_name": "Access rights",
+    "mapped_framework": "CIS_CONTROLS_V8",
+    "mapped_control": "13.5",
+    "mapped_name": "Manage Access Control for Remote Assets",
+    "similarity": 0.5065
+  },
+  {
+    "source_framework": "ISO_27001_2022",
+    "source_control": "5.19",
+    "source_name": "Information security in supplier relationships",
+    "mapped_framework": "NIST_CSF_2_0",
+    "mapped_control": "GV.SC-01",
+    "mapped_name": "Cybersecurity Supply Chain Risk Management",
+    "similarity": 0.52
+  },
+  {
+    "source_framework": "ISO_27001_2022",
+    "source_control": "5.19",
+    "source_name": "Information security in supplier relationships",
+    "mapped_framework": "NIST_CSF_2_0",
+    "mapped_control": "GV.SC-08",
+    "mapped_name": "Cybersecurity Supply Chain Risk Management",
+    "similarity": 0.5189
+  },
+  {
+    "source_framework": "ISO_27001_2022",
+    "source_control": "5.19",
+    "source_name": "Information security in supplier relationships",
+    "mapped_framework": "NIST_CSF_2_0",
+    "mapped_control": "GV.SC-05",
+    "mapped_name": "Cybersecurity Supply Chain Risk Management",
+    "similarity": 0.5149
+  },
+  {
+    "source_framework": "ISO_27001_2022",
+    "source_control": "5.20",
+    "source_name": "Addressing information security within supplier agreements",
+    "mapped_framework": "NIST_CSF_2_0",
+    "mapped_control": "GV.SC-05",
+    "mapped_name": "Cybersecurity Supply Chain Risk Management",
+    "similarity": 0.5319
+  },
+  {
+    "source_framework": "ISO_27001_2022",
+    "source_control": "5.20",
+    "source_name": "Addressing information security within supplier agreements",
+    "mapped_framework": "NIST_CSF_2_0",
+    "mapped_control": "GV.SC-08",
+    "mapped_name": "Cybersecurity Supply Chain Risk Management",
+    "similarity": 0.5134
+  },
+  {
+    "source_framework": "ISO_27001_2022",
+    "source_control": "5.20",
+    "source_name": "Addressing information security within supplier agreements",
+    "mapped_framework": "NIST_CSF_2_0",
+    "mapped_control": "GV.SC-06",
+    "mapped_name": "Cybersecurity Supply Chain Risk Management",
+    "similarity": 0.5062
+  },
+  {
+    "source_framework": "ISO_27001_2022",
+    "source_control": "5.21",
+    "source_name": "Managing information security in the information and communication technology (ICT) supply chain",
+    "mapped_framework": "NIST_CSF_2_0",
+    "mapped_control": "GV.SC-01",
+    "mapped_name": "Cybersecurity Supply Chain Risk Management",
+    "similarity": 0.5871
+  },
+  {
+    "source_framework": "ISO_27001_2022",
+    "source_control": "5.21",
+    "source_name": "Managing information security in the information and communication technology (ICT) supply chain",
+    "mapped_framework": "NIST_CSF_2_0",
+    "mapped_control": "UNKNOWN",
+    "mapped_name": "Cybersecurity Supply Chain Risk Management",
+    "similarity": 0.5664
+  },
+  {
+    "source_framework": "ISO_27001_2022",
+    "source_control": "5.21",
+    "source_name": "Managing information security in the information and communication technology (ICT) supply chain",
+    "mapped_framework": "NIST_CSF_2_0",
+    "mapped_control": "GV.SC-09",
+    "mapped_name": "Cybersecurity Supply Chain Risk Management",
+    "similarity": 0.5651
+  },
+  {
+    "source_framework": "ISO_27001_2022",
+    "source_control": "5.24",
+    "source_name": "Information security incident management planning and prepa ration",
+    "mapped_framework": "NIST_CSF_2_0",
+    "mapped_control": "ID.IM-04",
+    "mapped_name": "Improvement",
+    "similarity": 0.5208
+  },
+  {
+    "source_framework": "ISO_27001_2022",
+    "source_control": "5.24",
+    "source_name": "Information security incident management planning and prepa ration",
+    "mapped_framework": "NIST_CSF_2_0",
+    "mapped_control": "UNKNOWN",
+    "mapped_name": "Incident Management",
+    "similarity": 0.5191
+  },
+  {
+    "source_framework": "ISO_27001_2022",
+    "source_control": "5.24",
+    "source_name": "Information security incident management planning and prepa ration",
+    "mapped_framework": "NIST_CSF_2_0",
+    "mapped_control": "RS.MA-05",
+    "mapped_name": "Incident Management",
+    "similarity": 0.5143
+  },
+  {
+    "source_framework": "ISO_27001_2022",
+    "source_control": "5.24",
+    "source_name": "Information security incident management planning and prepa ration",
+    "mapped_framework": "CIS_CONTROLS_V8",
+    "mapped_control": "17.9",
+    "mapped_name": "Establish and Maintain Security Incident Thresholds",
+    "similarity": 0.59
+  },
+  {
+    "source_framework": "ISO_27001_2022",
+    "source_control": "5.24",
+    "source_name": "Information security incident management planning and prepa ration",
+    "mapped_framework": "CIS_CONTROLS_V8",
+    "mapped_control": "17.4",
+    "mapped_name": "Establish and Maintain an Incident Response Process",
+    "similarity": 0.5794
+  },
+  {
+    "source_framework": "ISO_27001_2022",
+    "source_control": "5.24",
+    "source_name": "Information security incident management planning and prepa ration",
+    "mapped_framework": "CIS_CONTROLS_V8",
+    "mapped_control": "17.3",
+    "mapped_name": "Establish and Maintain an Enterprise Process for Reporting Incidents",
+    "similarity": 0.5448
+  },
+  {
+    "source_framework": "ISO_27001_2022",
+    "source_control": "5.25",
+    "source_name": "Assessment and decision on in formation security events",
+    "mapped_framework": "NIST_CSF_2_0",
+    "mapped_control": "UNKNOWN",
+    "mapped_name": "Improvement",
+    "similarity": 0.5376
+  },
+  {
+    "source_framework": "ISO_27001_2022",
+    "source_control": "5.25",
+    "source_name": "Assessment and decision on in formation security events",
+    "mapped_framework": "NIST_CSF_2_0",
+    "mapped_control": "ID.RA-03",
+    "mapped_name": "Risk Assessment",
+    "similarity": 0.5325
+  },
+  {
+    "source_framework": "ISO_27001_2022",
+    "source_control": "5.25",
+    "source_name": "Assessment and decision on in formation security events",
+    "mapped_framework": "NIST_CSF_2_0",
+    "mapped_control": "ID.RA-01",
+    "mapped_name": "Risk Assessment",
+    "similarity": 0.5283
+  },
+  {
+    "source_framework": "ISO_27001_2022",
+    "source_control": "5.25",
+    "source_name": "Assessment and decision on in formation security events",
+    "mapped_framework": "CIS_CONTROLS_V8",
+    "mapped_control": "17.9",
+    "mapped_name": "Establish and Maintain Security Incident Thresholds",
+    "similarity": 0.5412
+  },
+  {
+    "source_framework": "ISO_27001_2022",
+    "source_control": "5.25",
+    "source_name": "Assessment and decision on in formation security events",
+    "mapped_framework": "CIS_CONTROLS_V8",
+    "mapped_control": "17.4",
+    "mapped_name": "Establish and Maintain an Incident Response Process",
+    "similarity": 0.5063
+  },
+  {
+    "source_framework": "ISO_27001_2022",
+    "source_control": "5.26",
+    "source_name": "Response to information security incidents",
+    "mapped_framework": "NIST_CSF_2_0",
+    "mapped_control": "UNKNOWN",
+    "mapped_name": "Incident Mitigation",
+    "similarity": 0.551
+  },
+  {
+    "source_framework": "ISO_27001_2022",
+    "source_control": "5.26",
+    "source_name": "Response to information security incidents",
+    "mapped_framework": "NIST_CSF_2_0",
+    "mapped_control": "ID.IM-04",
+    "mapped_name": "Improvement",
+    "similarity": 0.5491
+  },
+  {
+    "source_framework": "ISO_27001_2022",
+    "source_control": "5.26",
+    "source_name": "Response to information security incidents",
+    "mapped_framework": "NIST_CSF_2_0",
+    "mapped_control": "RS.MA-01",
+    "mapped_name": "Incident Management",
+    "similarity": 0.5393
+  },
+  {
+    "source_framework": "ISO_27001_2022",
+    "source_control": "5.26",
+    "source_name": "Response to information security incidents",
+    "mapped_framework": "CIS_CONTROLS_V8",
+    "mapped_control": "17.4",
+    "mapped_name": "Establish and Maintain an Incident Response Process",
+    "similarity": 0.5303
+  },
+  {
+    "source_framework": "ISO_27001_2022",
+    "source_control": "5.26",
+    "source_name": "Response to information security incidents",
+    "mapped_framework": "CIS_CONTROLS_V8",
+    "mapped_control": "17.9",
+    "mapped_name": "Establish and Maintain Security Incident Thresholds",
+    "similarity": 0.5141
+  },
+  {
+    "source_framework": "ISO_27001_2022",
+    "source_control": "5.27",
+    "source_name": "Learning from information se curity incidents",
+    "mapped_framework": "NIST_CSF_2_0",
+    "mapped_control": "UNKNOWN",
+    "mapped_name": "Improvement",
+    "similarity": 0.5423
+  },
+  {
+    "source_framework": "ISO_27001_2022",
+    "source_control": "5.27",
+    "source_name": "Learning from information se curity incidents",
+    "mapped_framework": "NIST_CSF_2_0",
+    "mapped_control": "DE.AE-07",
+    "mapped_name": "Adverse Event Analysis",
+    "similarity": 0.5236
+  },
+  {
+    "source_framework": "ISO_27001_2022",
+    "source_control": "5.27",
+    "source_name": "Learning from information se curity incidents",
+    "mapped_framework": "NIST_CSF_2_0",
+    "mapped_control": "ID.RA-02",
+    "mapped_name": "Risk Assessment",
+    "similarity": 0.5095
+  },
+  {
+    "source_framework": "ISO_27001_2022",
+    "source_control": "5.27",
+    "source_name": "Learning from information se curity incidents",
+    "mapped_framework": "CIS_CONTROLS_V8",
+    "mapped_control": "17.9",
+    "mapped_name": "Establish and Maintain Security Incident Thresholds",
+    "similarity": 0.5201
+  },
+  {
+    "source_framework": "ISO_27001_2022",
+    "source_control": "5.27",
+    "source_name": "Learning from information se curity incidents",
+    "mapped_framework": "CIS_CONTROLS_V8",
+    "mapped_control": "14.6",
+    "mapped_name": "Train Workforce Members on Recognizing and Reporting",
+    "similarity": 0.5078
+  },
+  {
+    "source_framework": "ISO_27001_2022",
+    "source_control": "5.27",
+    "source_name": "Learning from information se curity incidents",
+    "mapped_framework": "CIS_CONTROLS_V8",
+    "mapped_control": "14.8",
+    "mapped_name": "Train Workforce on the Dangers of Connecting to and Transmitting",
+    "similarity": 0.5046
+  },
+  {
+    "source_framework": "ISO_27001_2022",
+    "source_control": "5.29",
+    "source_name": "Information security during disruption",
+    "mapped_framework": "NIST_CSF_2_0",
+    "mapped_control": "ID.IM-04",
+    "mapped_name": "Improvement",
+    "similarity": 0.5077
+  },
+  {
+    "source_framework": "ISO_27001_2022",
+    "source_control": "5.29",
+    "source_name": "Information security during disruption",
+    "mapped_framework": "CIS_CONTROLS_V8",
+    "mapped_control": "17.9",
+    "mapped_name": "Establish and Maintain Security Incident Thresholds",
+    "similarity": 0.5474
+  },
+  {
+    "source_framework": "ISO_27001_2022",
+    "source_control": "5.29",
+    "source_name": "Information security during disruption",
+    "mapped_framework": "CIS_CONTROLS_V8",
+    "mapped_control": "17.4",
+    "mapped_name": "Establish and Maintain an Incident Response Process",
+    "similarity": 0.5175
+  },
+  {
+    "source_framework": "ISO_27001_2022",
+    "source_control": "5.29",
+    "source_name": "Information security during disruption",
+    "mapped_framework": "CIS_CONTROLS_V8",
+    "mapped_control": "17.2",
+    "mapped_name": "Establish and Maintain Contact Information for Reporting",
+    "similarity": 0.5027
+  },
+  {
+    "source_framework": "ISO_27001_2022",
+    "source_control": "5.31",
+    "source_name": "Legal, statutory, regulatory and contractual requirements",
+    "mapped_framework": "NIST_CSF_2_0",
+    "mapped_control": "GV.OC-03",
+    "mapped_name": "Organizational Context",
+    "similarity": 0.5413
+  },
+  {
+    "source_framework": "ISO_27001_2022",
+    "source_control": "5.31",
+    "source_name": "Legal, statutory, regulatory and contractual requirements",
+    "mapped_framework": "NIST_CSF_2_0",
+    "mapped_control": "GV.OC-04",
+    "mapped_name": "Organizational Context",
+    "similarity": 0.5104
+  },
+  {
+    "source_framework": "ISO_27001_2022",
+    "source_control": "5.31",
+    "source_name": "Legal, statutory, regulatory and contractual requirements",
+    "mapped_framework": "CIS_CONTROLS_V8",
+    "mapped_control": "15.4",
+    "mapped_name": "Ensure Service Provider Contracts Include Security Requirements",
+    "similarity": 0.5014
+  },
+  {
+    "source_framework": "ISO_27001_2022",
+    "source_control": "5.35",
+    "source_name": "Independent review of informa tion security",
+    "mapped_framework": "NIST_CSF_2_0",
+    "mapped_control": "GV.OV-03",
+    "mapped_name": "Oversight",
+    "similarity": 0.5082
+  },
+  {
+    "source_framework": "ISO_27001_2022",
+    "source_control": "5.36",
+    "source_name": "Compliance with policies, rules and standards for information security",
+    "mapped_framework": "NIST_CSF_2_0",
+    "mapped_control": "UNKNOWN",
+    "mapped_name": "Policy",
+    "similarity": 0.5057
+  },
+  {
+    "source_framework": "ISO_27001_2022",
+    "source_control": "6.3",
+    "source_name": "Planning of changes When the organization determines the need for changes to the information security management system, the changes shall be carried out in a planned manner.",
+    "mapped_framework": "CIS_CONTROLS_V8",
+    "mapped_control": "3.1",
+    "mapped_name": "Establish and Maintain a Data Management Process",
+    "similarity": 0.5046
+  },
+  {
+    "source_framework": "ISO_27001_2022",
+    "source_control": "6.3",
+    "source_name": "Planning of changes When the organization determines the need for changes to the information security management system, the changes shall be carried out in a planned manner.",
+    "mapped_framework": "CIS_CONTROLS_V8",
+    "mapped_control": "7.1",
+    "mapped_name": "Establish and Maintain a Vulnerability Management Process",
+    "similarity": 0.5039
+  },
+  {
+    "source_framework": "ISO_27001_2022",
+    "source_control": "6.3",
+    "source_name": "Information security awareness, education and training",
+    "mapped_framework": "NIST_CSF_2_0",
+    "mapped_control": "PR.AT-01",
+    "mapped_name": "Awareness and Training",
+    "similarity": 0.5396
+  },
+  {
+    "source_framework": "ISO_27001_2022",
+    "source_control": "6.3",
+    "source_name": "Information security awareness, education and training",
+    "mapped_framework": "NIST_CSF_2_0",
+    "mapped_control": "UNKNOWN",
+    "mapped_name": "Improvement",
+    "similarity": 0.512
+  },
+  {
+    "source_framework": "ISO_27001_2022",
+    "source_control": "6.3",
+    "source_name": "Information security awareness, education and training",
+    "mapped_framework": "NIST_CSF_2_0",
+    "mapped_control": "UNKNOWN",
+    "mapped_name": "Awareness and Training",
+    "similarity": 0.5036
+  },
+  {
+    "source_framework": "ISO_27001_2022",
+    "source_control": "6.3",
+    "source_name": "Information security awareness, education and training",
+    "mapped_framework": "CIS_CONTROLS_V8",
+    "mapped_control": "14.9",
+    "mapped_name": "Conduct Role-Specific Security Awareness and Skills Training",
+    "similarity": 0.6168
+  },
+  {
+    "source_framework": "ISO_27001_2022",
+    "source_control": "6.3",
+    "source_name": "Information security awareness, education and training",
+    "mapped_framework": "CIS_CONTROLS_V8",
+    "mapped_control": "14.6",
+    "mapped_name": "Train Workforce Members on Recognizing and Reporting",
+    "similarity": 0.6005
+  },
+  {
+    "source_framework": "ISO_27001_2022",
+    "source_control": "6.3",
+    "source_name": "Information security awareness, education and training",
+    "mapped_framework": "CIS_CONTROLS_V8",
+    "mapped_control": "14.8",
+    "mapped_name": "Train Workforce on the Dangers of Connecting to and Transmitting",
+    "similarity": 0.5784
+  },
+  {
+    "source_framework": "ISO_27001_2022",
+    "source_control": "6.4",
+    "source_name": "Disciplinary process",
+    "mapped_framework": "CIS_CONTROLS_V8",
+    "mapped_control": "17.3",
+    "mapped_name": "Establish and Maintain an Enterprise Process for Reporting Incidents",
+    "similarity": 0.5383
+  },
+  {
+    "source_framework": "ISO_27001_2022",
+    "source_control": "6.4",
+    "source_name": "Disciplinary process",
+    "mapped_framework": "CIS_CONTROLS_V8",
+    "mapped_control": "17.4",
+    "mapped_name": "Establish and Maintain an Incident Response Process",
+    "similarity": 0.5015
+  },
+  {
+    "source_framework": "ISO_27001_2022",
+    "source_control": "6.7",
+    "source_name": "Remote working",
+    "mapped_framework": "CIS_CONTROLS_V8",
+    "mapped_control": "6.4",
+    "mapped_name": "Require MFA for Remote Network Access",
+    "similarity": 0.5275
+  },
+  {
+    "source_framework": "ISO_27001_2022",
+    "source_control": "6.7",
+    "source_name": "Remote working",
+    "mapped_framework": "CIS_CONTROLS_V8",
+    "mapped_control": "14.8",
+    "mapped_name": "Train Workforce on the Dangers of Connecting to and Transmitting",
+    "similarity": 0.5154
+  },
+  {
+    "source_framework": "ISO_27001_2022",
+    "source_control": "6.8",
+    "source_name": "Information security event re porting",
+    "mapped_framework": "CIS_CONTROLS_V8",
+    "mapped_control": "17.3",
+    "mapped_name": "Establish and Maintain an Enterprise Process for Reporting Incidents",
+    "similarity": 0.5127
+  },
+  {
+    "source_framework": "ISO_27001_2022",
+    "source_control": "6.8",
+    "source_name": "Information security event re porting",
+    "mapped_framework": "CIS_CONTROLS_V8",
+    "mapped_control": "13.11",
+    "mapped_name": "Tune Security Event Alerting Thresholds",
+    "similarity": 0.5072
+  },
+  {
+    "source_framework": "ISO_27001_2022",
+    "source_control": "6.8",
+    "source_name": "Information security event re porting",
+    "mapped_framework": "CIS_CONTROLS_V8",
+    "mapped_control": "17.9",
+    "mapped_name": "Establish and Maintain Security Incident Thresholds",
+    "similarity": 0.5072
+  },
+  {
+    "source_framework": "ISO_27001_2022",
+    "source_control": "7.4",
+    "source_name": "Physical security monitoring",
+    "mapped_framework": "NIST_CSF_2_0",
+    "mapped_control": "DE.CM-02",
+    "mapped_name": "Continuous Monitoring",
+    "similarity": 0.5604
+  },
+  {
+    "source_framework": "ISO_27001_2022",
+    "source_control": "7.4",
+    "source_name": "Physical security monitoring",
+    "mapped_framework": "NIST_CSF_2_0",
+    "mapped_control": "DE.CM-01",
+    "mapped_name": "Continuous Monitoring",
+    "similarity": 0.5395
+  },
+  {
+    "source_framework": "ISO_27001_2022",
+    "source_control": "7.4",
+    "source_name": "Physical security monitoring",
+    "mapped_framework": "NIST_CSF_2_0",
+    "mapped_control": "DE.CM-03",
+    "mapped_name": "Continuous Monitoring",
+    "similarity": 0.527
+  },
+  {
+    "source_framework": "ISO_27001_2022",
+    "source_control": "7.5",
+    "source_name": "Protecting against physical and environmental threats",
+    "mapped_framework": "NIST_CSF_2_0",
+    "mapped_control": "DE.CM-02",
+    "mapped_name": "Continuous Monitoring",
+    "similarity": 0.5323
+  },
+  {
+    "source_framework": "ISO_27001_2022",
+    "source_control": "7.5",
+    "source_name": "Protecting against physical and environmental threats",
+    "mapped_framework": "NIST_CSF_2_0",
+    "mapped_control": "DE.CM-01",
+    "mapped_name": "Continuous Monitoring",
+    "similarity": 0.5022
+  },
+  {
+    "source_framework": "ISO_27001_2022",
+    "source_control": "7.6",
+    "source_name": "Working in secure areas",
+    "mapped_framework": "CIS_CONTROLS_V8",
+    "mapped_control": "3.7",
+    "mapped_name": "Establish and Maintain a Data Classification Scheme",
+    "similarity": 0.5013
+  },
+  {
+    "source_framework": "ISO_27001_2022",
+    "source_control": "7.6",
+    "source_name": "Working in secure areas",
+    "mapped_framework": "CIS_CONTROLS_V8",
+    "mapped_control": "6.4",
+    "mapped_name": "Require MFA for Remote Network Access",
+    "similarity": 0.5002
+  },
+  {
+    "source_framework": "ISO_27001_2022",
+    "source_control": "7.8",
+    "source_name": "Equipment siting and protection Control Equipment shall be sited securely and protected.",
+    "mapped_framework": "NIST_CSF_2_0",
+    "mapped_control": "ID.AM-01",
+    "mapped_name": "Asset Management",
+    "similarity": 0.5243
+  },
+  {
+    "source_framework": "ISO_27001_2022",
+    "source_control": "7.10",
+    "source_name": "Storage media",
+    "mapped_framework": "CIS_CONTROLS_V8",
+    "mapped_control": "3.9",
+    "mapped_name": "Encrypt Data on Removable Media",
+    "similarity": 0.5051
+  },
+  {
+    "source_framework": "ISO_27001_2022",
+    "source_control": "7.12",
+    "source_name": "Cabling security",
+    "mapped_framework": "CIS_CONTROLS_V8",
+    "mapped_control": "12.4",
+    "mapped_name": "Establish and Maintain Architecture Diagram(s)",
+    "similarity": 0.5183
+  },
+  {
+    "source_framework": "ISO_27001_2022",
+    "source_control": "7.13",
+    "source_name": "Equipment maintenance",
+    "mapped_framework": "NIST_CSF_2_0",
+    "mapped_control": "ID.AM-01",
+    "mapped_name": "Asset Management",
+    "similarity": 0.5212
+  },
+  {
+    "source_framework": "ISO_27001_2022",
+    "source_control": "7.14",
+    "source_name": "Secure disposal or re-use of equipment",
+    "mapped_framework": "NIST_CSF_2_0",
+    "mapped_control": "ID.AM-01",
+    "mapped_name": "Asset Management",
+    "similarity": 0.523
+  },
+  {
+    "source_framework": "ISO_27001_2022",
+    "source_control": "7.14",
+    "source_name": "Secure disposal or re-use of equipment",
+    "mapped_framework": "NIST_CSF_2_0",
+    "mapped_control": "UNKNOWN",
+    "mapped_name": "Asset Management",
+    "similarity": 0.5065
+  },
+  {
+    "source_framework": "ISO_27001_2022",
+    "source_control": "7.14",
+    "source_name": "Secure disposal or re-use of equipment",
+    "mapped_framework": "CIS_CONTROLS_V8",
+    "mapped_control": "3.5",
+    "mapped_name": "Securely Dispose of Data",
+    "similarity": 0.5374
+  },
+  {
+    "source_framework": "ISO_27001_2022",
+    "source_control": "7.14",
+    "source_name": "Secure disposal or re-use of equipment",
+    "mapped_framework": "CIS_CONTROLS_V8",
+    "mapped_control": "3.9",
+    "mapped_name": "Encrypt Data on Removable Media",
+    "similarity": 0.505
+  },
+  {
+    "source_framework": "ISO_27001_2022",
+    "source_control": "7.14",
+    "source_name": "Secure disposal or re-use of equipment",
+    "mapped_framework": "CIS_CONTROLS_V8",
+    "mapped_control": "15.7",
+    "mapped_name": "Securely Decommission Service Providers",
+    "similarity": 0.5016
+  },
+  {
+    "source_framework": "ISO_27001_2022",
+    "source_control": "8.3",
+    "source_name": "Information access restriction",
+    "mapped_framework": "CIS_CONTROLS_V8",
+    "mapped_control": "3.14",
+    "mapped_name": "Log Sensitive Data Access",
+    "similarity": 0.5176
+  },
+  {
+    "source_framework": "ISO_27001_2022",
+    "source_control": "8.4",
+    "source_name": "Access to source code",
+    "mapped_framework": "CIS_CONTROLS_V8",
+    "mapped_control": "2.5",
+    "mapped_name": "Allowlist Authorized Software",
+    "similarity": 0.5045
+  },
+  {
+    "source_framework": "ISO_27001_2022",
+    "source_control": "8.5",
+    "source_name": "Secure authentication",
+    "mapped_framework": "NIST_CSF_2_0",
+    "mapped_control": "PR.AA-02",
+    "mapped_name": "Identity Management, Authentication, and Access Control",
+    "similarity": 0.5303
+  },
+  {
+    "source_framework": "ISO_27001_2022",
+    "source_control": "8.5",
+    "source_name": "Secure authentication",
+    "mapped_framework": "NIST_CSF_2_0",
+    "mapped_control": "PR.AA-01",
+    "mapped_name": "Identity Management, Authentication, and Access Control",
+    "similarity": 0.5296
+  },
+  {
+    "source_framework": "ISO_27001_2022",
+    "source_control": "8.5",
+    "source_name": "Secure authentication",
+    "mapped_framework": "NIST_CSF_2_0",
+    "mapped_control": "UNKNOWN",
+    "mapped_name": "Identity Management, Authentication, and Access Control",
+    "similarity": 0.5205
+  },
+  {
+    "source_framework": "ISO_27001_2022",
+    "source_control": "8.5",
+    "source_name": "Secure authentication",
+    "mapped_framework": "CIS_CONTROLS_V8",
+    "mapped_control": "14.3",
+    "mapped_name": "Train Workforce Members on Authentication Best Practices",
+    "similarity": 0.5397
+  },
+  {
+    "source_framework": "ISO_27001_2022",
+    "source_control": "8.5",
+    "source_name": "Secure authentication",
+    "mapped_framework": "CIS_CONTROLS_V8",
+    "mapped_control": "6.4",
+    "mapped_name": "Require MFA for Remote Network Access",
+    "similarity": 0.5352
+  },
+  {
+    "source_framework": "ISO_27001_2022",
+    "source_control": "8.5",
+    "source_name": "Secure authentication",
+    "mapped_framework": "CIS_CONTROLS_V8",
+    "mapped_control": "6.3",
+    "mapped_name": "Require MFA for Externally-Exposed Applications",
+    "similarity": 0.5194
+  },
+  {
+    "source_framework": "ISO_27001_2022",
+    "source_control": "8.7",
+    "source_name": "Protection against malware",
+    "mapped_framework": "CIS_CONTROLS_V8",
+    "mapped_control": "10.7",
+    "mapped_name": "Use Behavior-Based Anti-Malware Software",
+    "similarity": 0.5951
+  },
+  {
+    "source_framework": "ISO_27001_2022",
+    "source_control": "8.7",
+    "source_name": "Protection against malware",
+    "mapped_framework": "CIS_CONTROLS_V8",
+    "mapped_control": "10.1",
+    "mapped_name": "Deploy and Maintain Anti-Malware Software",
+    "similarity": 0.5778
+  },
+  {
+    "source_framework": "ISO_27001_2022",
+    "source_control": "8.7",
+    "source_name": "Protection against malware",
+    "mapped_framework": "CIS_CONTROLS_V8",
+    "mapped_control": "10.6",
+    "mapped_name": "Centrally Manage Anti-Malware Software",
+    "similarity": 0.5661
+  },
+  {
+    "source_framework": "ISO_27001_2022",
+    "source_control": "8.9",
+    "source_name": "Configuration management",
+    "mapped_framework": "NIST_CSF_2_0",
+    "mapped_control": "PR.PS-01",
+    "mapped_name": "Platform Security",
+    "similarity": 0.5224
+  },
+  {
+    "source_framework": "ISO_27001_2022",
+    "source_control": "8.12",
+    "source_name": "Data leakage prevention",
+    "mapped_framework": "CIS_CONTROLS_V8",
+    "mapped_control": "3.7",
+    "mapped_name": "Establish and Maintain a Data Classification Scheme",
+    "similarity": 0.5493
+  },
+  {
+    "source_framework": "ISO_27001_2022",
+    "source_control": "8.12",
+    "source_name": "Data leakage prevention",
+    "mapped_framework": "CIS_CONTROLS_V8",
+    "mapped_control": "3.14",
+    "mapped_name": "Log Sensitive Data Access",
+    "similarity": 0.5335
+  },
+  {
+    "source_framework": "ISO_27001_2022",
+    "source_control": "8.12",
+    "source_name": "Data leakage prevention",
+    "mapped_framework": "CIS_CONTROLS_V8",
+    "mapped_control": "3.1",
+    "mapped_name": "Establish and Maintain a Data Management Process",
+    "similarity": 0.5285
+  },
+  {
+    "source_framework": "ISO_27001_2022",
+    "source_control": "8.13",
+    "source_name": "Information backup",
+    "mapped_framework": "NIST_CSF_2_0",
+    "mapped_control": "PR.DS-11",
+    "mapped_name": "Data Security",
+    "similarity": 0.5311
+  },
+  {
+    "source_framework": "ISO_27001_2022",
+    "source_control": "8.13",
+    "source_name": "Information backup",
+    "mapped_framework": "NIST_CSF_2_0",
+    "mapped_control": "UNKNOWN",
+    "mapped_name": "Data Security",
+    "similarity": 0.5089
+  },
+  {
+    "source_framework": "ISO_27001_2022",
+    "source_control": "8.15",
+    "source_name": "Logging",
+    "mapped_framework": "NIST_CSF_2_0",
+    "mapped_control": "PR.PS-04",
+    "mapped_name": "Platform Security",
+    "similarity": 0.5116
+  },
+  {
+    "source_framework": "ISO_27001_2022",
+    "source_control": "8.15",
+    "source_name": "Logging",
+    "mapped_framework": "CIS_CONTROLS_V8",
+    "mapped_control": "8.3",
+    "mapped_name": "Ensure Adequate Audit Log Storage",
+    "similarity": 0.5332
+  },
+  {
+    "source_framework": "ISO_27001_2022",
+    "source_control": "8.15",
+    "source_name": "Logging",
+    "mapped_framework": "CIS_CONTROLS_V8",
+    "mapped_control": "8.2",
+    "mapped_name": "Collect Audit Logs",
+    "similarity": 0.5257
+  },
+  {
+    "source_framework": "ISO_27001_2022",
+    "source_control": "8.15",
+    "source_name": "Logging",
+    "mapped_framework": "CIS_CONTROLS_V8",
+    "mapped_control": "8.12",
+    "mapped_name": "8.Collect Service Provider Logs",
+    "similarity": 0.507
+  },
+  {
+    "source_framework": "ISO_27001_2022",
+    "source_control": "8.16",
+    "source_name": "Monitoring activities",
+    "mapped_framework": "NIST_CSF_2_0",
+    "mapped_control": "DE.CM-01",
+    "mapped_name": "Continuous Monitoring",
+    "similarity": 0.595
+  },
+  {
+    "source_framework": "ISO_27001_2022",
+    "source_control": "8.16",
+    "source_name": "Monitoring activities",
+    "mapped_framework": "NIST_CSF_2_0",
+    "mapped_control": "DE.CM-03",
+    "mapped_name": "Continuous Monitoring",
+    "similarity": 0.5937
+  },
+  {
+    "source_framework": "ISO_27001_2022",
+    "source_control": "8.16",
+    "source_name": "Monitoring activities",
+    "mapped_framework": "NIST_CSF_2_0",
+    "mapped_control": "DE.CM-02",
+    "mapped_name": "Continuous Monitoring",
+    "similarity": 0.5713
+  },
+  {
+    "source_framework": "ISO_27001_2022",
+    "source_control": "8.16",
+    "source_name": "Monitoring activities",
+    "mapped_framework": "CIS_CONTROLS_V8",
+    "mapped_control": "13.6",
+    "mapped_name": "Collect Network Traffic Flow Logs",
+    "similarity": 0.5527
+  },
+  {
+    "source_framework": "ISO_27001_2022",
+    "source_control": "8.16",
+    "source_name": "Monitoring activities",
+    "mapped_framework": "CIS_CONTROLS_V8",
+    "mapped_control": "13.11",
+    "mapped_name": "Tune Security Event Alerting Thresholds",
+    "similarity": 0.5087
+  },
+  {
+    "source_framework": "ISO_27001_2022",
+    "source_control": "8.16",
+    "source_name": "Monitoring activities",
+    "mapped_framework": "CIS_CONTROLS_V8",
+    "mapped_control": "17.9",
+    "mapped_name": "Establish and Maintain Security Incident Thresholds",
+    "similarity": 0.5008
+  },
+  {
+    "source_framework": "ISO_27001_2022",
+    "source_control": "8.17",
+    "source_name": "Clock synchronization",
+    "mapped_framework": "CIS_CONTROLS_V8",
+    "mapped_control": "8.4",
+    "mapped_name": "Standardize Time Synchronization",
+    "similarity": 0.6027
+  },
+  {
+    "source_framework": "ISO_27001_2022",
+    "source_control": "8.20",
+    "source_name": "Networks security",
+    "mapped_framework": "NIST_CSF_2_0",
+    "mapped_control": "ID.AM-03",
+    "mapped_name": "Asset Management",
+    "similarity": 0.5178
+  },
+  {
+    "source_framework": "ISO_27001_2022",
+    "source_control": "8.20",
+    "source_name": "Networks security",
+    "mapped_framework": "NIST_CSF_2_0",
+    "mapped_control": "ID.AM-08",
+    "mapped_name": "Asset Management",
+    "similarity": 0.5066
+  },
+  {
+    "source_framework": "ISO_27001_2022",
+    "source_control": "8.20",
+    "source_name": "Networks security",
+    "mapped_framework": "NIST_CSF_2_0",
+    "mapped_control": "ID.AM-02",
+    "mapped_name": "Asset Management",
+    "similarity": 0.5041
+  },
+  {
+    "source_framework": "ISO_27001_2022",
+    "source_control": "8.20",
+    "source_name": "Networks security",
+    "mapped_framework": "CIS_CONTROLS_V8",
+    "mapped_control": "12.3",
+    "mapped_name": "Securely Manage Network Infrastructure",
+    "similarity": 0.5633
+  },
+  {
+    "source_framework": "ISO_27001_2022",
+    "source_control": "8.20",
+    "source_name": "Networks security",
+    "mapped_framework": "CIS_CONTROLS_V8",
+    "mapped_control": "12.6",
+    "mapped_name": "Use of Secure Network Management and Communication Protocols",
+    "similarity": 0.5563
+  },
+  {
+    "source_framework": "ISO_27001_2022",
+    "source_control": "8.20",
+    "source_name": "Networks security",
+    "mapped_framework": "CIS_CONTROLS_V8",
+    "mapped_control": "12.4",
+    "mapped_name": "Establish and Maintain Architecture Diagram(s)",
+    "similarity": 0.5396
+  },
+  {
+    "source_framework": "ISO_27001_2022",
+    "source_control": "8.22",
+    "source_name": "Segregation of networks",
+    "mapped_framework": "CIS_CONTROLS_V8",
+    "mapped_control": "13.4",
+    "mapped_name": "Perform Traffic Filtering Between Network Segments",
+    "similarity": 0.52
+  },
+  {
+    "source_framework": "ISO_27001_2022",
+    "source_control": "8.23",
+    "source_name": "Web filtering",
+    "mapped_framework": "CIS_CONTROLS_V8",
+    "mapped_control": "9.2",
+    "mapped_name": "Use DNS Filtering Services",
+    "similarity": 0.5435
+  },
+  {
+    "source_framework": "ISO_27001_2022",
+    "source_control": "8.23",
+    "source_name": "Web filtering",
+    "mapped_framework": "CIS_CONTROLS_V8",
+    "mapped_control": "9.3",
+    "mapped_name": "Maintain and Enforce Network-Based URL Filters",
+    "similarity": 0.5234
+  },
+  {
+    "source_framework": "ISO_27001_2022",
+    "source_control": "8.25",
+    "source_name": "Secure development life cycle",
+    "mapped_framework": "NIST_CSF_2_0",
+    "mapped_control": "PR.PS-06",
+    "mapped_name": "Platform Security",
+    "similarity": 0.5105
+  },
+  {
+    "source_framework": "ISO_27001_2022",
+    "source_control": "8.25",
+    "source_name": "Secure development life cycle",
+    "mapped_framework": "NIST_CSF_2_0",
+    "mapped_control": "ID.AM-08",
+    "mapped_name": "Asset Management",
+    "similarity": 0.5053
+  },
+  {
+    "source_framework": "ISO_27001_2022",
+    "source_control": "8.25",
+    "source_name": "Secure development life cycle",
+    "mapped_framework": "CIS_CONTROLS_V8",
+    "mapped_control": "16.12",
+    "mapped_name": "Implement Code-Level Security Checks",
+    "similarity": 0.5238
+  },
+  {
+    "source_framework": "ISO_27001_2022",
+    "source_control": "8.25",
+    "source_name": "Secure development life cycle",
+    "mapped_framework": "CIS_CONTROLS_V8",
+    "mapped_control": "16.1",
+    "mapped_name": "Establish and Maintain a Secure Application Development Process",
+    "similarity": 0.5185
+  },
+  {
+    "source_framework": "ISO_27001_2022",
+    "source_control": "8.25",
+    "source_name": "Secure development life cycle",
+    "mapped_framework": "CIS_CONTROLS_V8",
+    "mapped_control": "16.5",
+    "mapped_name": "Use Up-to-Date and Trusted Third-Party Software Components",
+    "similarity": 0.5011
+  },
+  {
+    "source_framework": "ISO_27001_2022",
+    "source_control": "8.26",
+    "source_name": "Application security require ments",
+    "mapped_framework": "CIS_CONTROLS_V8",
+    "mapped_control": "16.1",
+    "mapped_name": "Establish and Maintain a Secure Application Development Process",
+    "similarity": 0.5298
+  },
+  {
+    "source_framework": "ISO_27001_2022",
+    "source_control": "8.26",
+    "source_name": "Application security require ments",
+    "mapped_framework": "CIS_CONTROLS_V8",
+    "mapped_control": "16.5",
+    "mapped_name": "Use Up-to-Date and Trusted Third-Party Software Components",
+    "similarity": 0.5239
+  },
+  {
+    "source_framework": "ISO_27001_2022",
+    "source_control": "8.26",
+    "source_name": "Application security require ments",
+    "mapped_framework": "CIS_CONTROLS_V8",
+    "mapped_control": "16.12",
+    "mapped_name": "Implement Code-Level Security Checks",
+    "similarity": 0.5201
+  },
+  {
+    "source_framework": "ISO_27001_2022",
+    "source_control": "8.27",
+    "source_name": "Secure system architecture and engineering principles",
+    "mapped_framework": "CIS_CONTROLS_V8",
+    "mapped_control": "12.4",
+    "mapped_name": "Establish and Maintain Architecture Diagram(s)",
+    "similarity": 0.5394
+  },
+  {
+    "source_framework": "ISO_27001_2022",
+    "source_control": "8.27",
+    "source_name": "Secure system architecture and engineering principles",
+    "mapped_framework": "CIS_CONTROLS_V8",
+    "mapped_control": "4.1",
+    "mapped_name": "Establish and Maintain a Secure Configuration Process",
+    "similarity": 0.509
+  },
+  {
+    "source_framework": "ISO_27001_2022",
+    "source_control": "8.27",
+    "source_name": "Secure system architecture and engineering principles",
+    "mapped_framework": "CIS_CONTROLS_V8",
+    "mapped_control": "12.2",
+    "mapped_name": "Establish and Maintain a Secure Network Architecture",
+    "similarity": 0.5083
+  },
+  {
+    "source_framework": "ISO_27001_2022",
+    "source_control": "8.28",
+    "source_name": "Secure coding",
+    "mapped_framework": "CIS_CONTROLS_V8",
+    "mapped_control": "16.12",
+    "mapped_name": "Implement Code-Level Security Checks",
+    "similarity": 0.5753
+  },
+  {
+    "source_framework": "ISO_27001_2022",
+    "source_control": "8.28",
+    "source_name": "Secure coding",
+    "mapped_framework": "CIS_CONTROLS_V8",
+    "mapped_control": "16.9",
+    "mapped_name": "Train Developers in Application Security Concepts and Secure Coding",
+    "similarity": 0.5412
+  },
+  {
+    "source_framework": "ISO_27001_2022",
+    "source_control": "8.29",
+    "source_name": "Security testing in development and acceptance",
+    "mapped_framework": "NIST_CSF_2_0",
+    "mapped_control": "ID.RA-08",
+    "mapped_name": "Risk Assessment",
+    "similarity": 0.5109
+  },
+  {
+    "source_framework": "ISO_27001_2022",
+    "source_control": "8.29",
+    "source_name": "Security testing in development and acceptance",
+    "mapped_framework": "CIS_CONTROLS_V8",
+    "mapped_control": "18.4",
+    "mapped_name": "Validate Security Measures",
+    "similarity": 0.5509
+  },
+  {
+    "source_framework": "ISO_27001_2022",
+    "source_control": "8.29",
+    "source_name": "Security testing in development and acceptance",
+    "mapped_framework": "CIS_CONTROLS_V8",
+    "mapped_control": "16.12",
+    "mapped_name": "Implement Code-Level Security Checks",
+    "similarity": 0.5001
+  },
+  {
+    "source_framework": "ISO_27001_2022",
+    "source_control": "8.31",
+    "source_name": "Separation of development, test and production environments",
+    "mapped_framework": "CIS_CONTROLS_V8",
+    "mapped_control": "16.8",
+    "mapped_name": "Separate Production and Non-Production Systems",
+    "similarity": 0.5575
+  },
+  {
+    "source_framework": "ISO_27001_2022",
+    "source_control": "8.34",
+    "source_name": "Protection of information sys tems during audit testing",
+    "mapped_framework": "CIS_CONTROLS_V8",
+    "mapped_control": "8.3",
+    "mapped_name": "Ensure Adequate Audit Log Storage",
+    "similarity": 0.5209
+  },
+  {
+    "source_framework": "ISO_27001_2022",
+    "source_control": "8.34",
+    "source_name": "Protection of information sys tems during audit testing",
+    "mapped_framework": "CIS_CONTROLS_V8",
+    "mapped_control": "8.6",
+    "mapped_name": "Collect DNS Query Audit Logs",
+    "similarity": 0.5076
+  },
+  {
+    "source_framework": "ISO_27001_2022",
+    "source_control": "8.34",
+    "source_name": "Protection of information sys tems during audit testing",
+    "mapped_framework": "CIS_CONTROLS_V8",
+    "mapped_control": "8.2",
+    "mapped_name": "Collect Audit Logs",
+    "similarity": 0.5061
+  }
+]

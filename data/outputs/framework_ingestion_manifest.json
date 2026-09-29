@@ -1,0 +1,98 @@
+{
+  "ingested_at": "2026-06-09T10:19:52.660084+00:00",
+  "embedding_provider": "trychroma_default",
+  "framework_collections": [
+    {
+      "framework_key": "nist",
+      "framework_id": "d048b355-a19a-52eb-bf3d-3e2133c57d1e",
+      "framework_name": "NIST CSF 2.0",
+      "collection_name": "framework_nist_csf_2_0",
+      "document_count": 35,
+      "document_format": "canonical_framework_control_v1",
+      "json_path": "C:\\Users\\chari\\Downloads\\files\\data\\outputs\\canonical_frameworks\\nist_csf_2_0.json"
+    },
+    {
+      "framework_key": "iso",
+      "framework_id": "iso-iec-27001-2022",
+      "framework_name": "ISO/IEC 27001:2022",
+      "collection_name": "framework_iso_27001_2022",
+      "document_count": 91,
+      "document_format": "canonical_framework_control_v1",
+      "json_path": "C:\\Users\\chari\\Downloads\\files\\data\\outputs\\canonical_frameworks\\iso_27001_2022.json"
+    },
+    {
+      "framework_key": "cis",
+      "framework_id": "8ac1d180-5b22-5cf6-8a0b-df10e87ebad8",
+      "framework_name": "CIS Controls v8.1.2",
+      "collection_name": "framework_cis_controls_v8_1_2",
+      "document_count": 153,
+      "document_format": "canonical_framework_control_v1",
+      "json_path": "C:\\Users\\chari\\Downloads\\files\\data\\outputs\\canonical_frameworks\\cis_controls_v8_1_2.json"
+    },
+    {
+      "framework_key": "market_assessment",
+      "framework_id": "a3f2c1d4-7b8e-5a9f-b012-3c4d5e6f7a8b",
+      "framework_name": "MCD Market Assessment Framework",
+      "collection_name": "framework_market_assessment_51",
+      "document_count": 35,
+      "document_format": "canonical_framework_control_v1",
+      "json_path": "C:\\Users\\chari\\Downloads\\files\\data\\outputs\\canonical_frameworks\\market_assessment_canonical.json",
+      "domains": [
+        {
+          "domain_id": "IAM",
+          "domain_name": "Identity & Access Management",
+          "control_count": 5
+        },
+        {
+          "domain_id": "NET",
+          "domain_name": "Network Security",
+          "control_count": 5
+        },
+        {
+          "domain_id": "CLOUD",
+          "domain_name": "Hosting & Cloud Security",
+          "control_count": 3
+        },
+        {
+          "domain_id": "M365",
+          "domain_name": "M365 & Email Security",
+          "control_count": 3
+        },
+        {
+          "domain_id": "AI",
+          "domain_name": "AI Security",
+          "control_count": 2
+        },
+        {
+          "domain_id": "APP",
+          "domain_name": "Application Inventory & Security",
+          "control_count": 4
+        },
+        {
+          "domain_id": "EP",
+          "domain_name": "Endpoint Security",
+          "control_count": 2
+        },
+        {
+          "domain_id": "DR",
+          "domain_name": "Defense & Response",
+          "control_count": 4
+        },
+        {
+          "domain_id": "TPRM",
+          "domain_name": "Third Party & Vendor Risk",
+          "control_count": 3
+        },
+        {
+          "domain_id": "DATA",
+          "domain_name": "Data & Storage Security",
+          "control_count": 4
+        }
+      ]
+    }
+  ],
+  "cross_mapping_collection": "framework_cross_mappings",
+  "cross_mapping_count": 60,
+  "cross_mapping_format": "canonical_framework_cross_mapping_v1",
+  "cross_mapping_source": "C:\\Users\\chari\\Downloads\\files\\data\\frameworks\\xlsx\\CIS_Controls_v8.1__Mapping_to_NIST_CSF_v2.0__6_24_2024_Final__1_.xlsx"
+}

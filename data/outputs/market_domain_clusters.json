@@ -1,0 +1,317 @@
+{
+  "_meta": {
+    "description": "Maps each Market Assessment domain cluster to the specific framework domain IDs from NIST CSF 2.0, CIS Controls v8.1.2, and ISO/IEC 27001:2022. When a cluster is selected on the frontend, these domain_keys are passed directly to build_questionnaire_from_selection().",
+    "framework_keys": {
+      "nist": "nist-csf-2-0",
+      "cis": "cis-controls-v8-1-2",
+      "iso": "iso-27001-2022"
+    },
+    "domain_key_format": "<framework_key>:<DOMAIN_ID>",
+    "version": "1.0",
+    "notes": "NIST domain IDs: GV=Govern, ID=Identify, PR=Protect, DE=Detect, RS=Respond, RC=Recover. CIS domain IDs are numeric (1-18). ISO domain IDs are numeric chapter numbers (5=Organizational, 6=People, 7=Physical, 8=Technological)."
+  },
+  "clusters": [
+    {
+      "cluster_id": "IAM",
+      "cluster_name": "Identity & Access Management (IAM)",
+      "description": "Covers identity lifecycle, authentication, access control, privileged access, and identity monitoring.",
+      "icon": "shield-user",
+      "part1_question_ids": ["p1-001", "p1-002", "p1-003", "p1-004", "p1-005", "p1-006"],
+      "sub_topics": [
+        "Identity Lifecycle & Directory",
+        "Authentication & MFA",
+        "Access Control & Least Privilege",
+        "Privileged Access Management",
+        "Monitoring & Visibility"
+      ],
+      "domain_keys": [
+        "nist-csf-2-0:PR",
+        "nist-csf-2-0:DE",
+        "cis-controls-v8-1-2:5",
+        "cis-controls-v8-1-2:6",
+        "iso-27001-2022:5",
+        "iso-27001-2022:8"
+      ],
+      "framework_domain_rationale": {
+        "nist-csf-2-0:PR": "PR.AA (Access Control) covers identity management, authentication, MFA, SSO, least privilege, PAM",
+        "nist-csf-2-0:DE": "DE.CM (Continuous Monitoring) covers identity and access log monitoring, UEBA, anomalous access alerts",
+        "cis-controls-v8-1-2:5": "CIS Control 5 — Account Management: Establish and maintain an inventory of all accounts, enforce MFA, remove dormant accounts",
+        "cis-controls-v8-1-2:6": "CIS Control 6 — Access Control Management: RBAC, least privilege, access reviews, privileged access",
+        "iso-27001-2022:5": "ISO 27001 Clause 5 Organizational Controls: Access control policy, identity management governance, privileged access policy",
+        "iso-27001-2022:8": "ISO 27001 Clause 8 Technological Controls: 8.2 Privileged access rights, 8.5 Secure authentication, 8.18 PAM"
+      }
+    },
+    {
+      "cluster_id": "NETWORK",
+      "cluster_name": "Network Security",
+      "description": "Covers network architecture, perimeter controls, segmentation, remote access, traffic monitoring, and wireless security.",
+      "icon": "network",
+      "part1_question_ids": ["p1-007", "p1-008", "p1-009", "p1-010", "p1-011", "p1-012"],
+      "sub_topics": [
+        "Network Architecture & Perimeter",
+        "Network Segmentation",
+        "Remote Access",
+        "Network Monitoring & Threat Detection",
+        "Wireless & Physical Network"
+      ],
+      "domain_keys": [
+        "nist-csf-2-0:PR",
+        "nist-csf-2-0:DE",
+        "cis-controls-v8-1-2:12",
+        "cis-controls-v8-1-2:13",
+        "iso-27001-2022:7",
+        "iso-27001-2022:8"
+      ],
+      "framework_domain_rationale": {
+        "nist-csf-2-0:PR": "PR.PS (Platform Security) and PR.IR (Infrastructure Resilience) cover network architecture, segmentation, and access",
+        "nist-csf-2-0:DE": "DE.CM covers network traffic monitoring, IDS/IPS, anomaly detection",
+        "cis-controls-v8-1-2:12": "CIS Control 12 — Network Infrastructure Management: Secure network architecture, firewall management, segmentation",
+        "cis-controls-v8-1-2:13": "CIS Control 13 — Network Monitoring and Defense: IDS/IPS, DNS filtering, traffic analysis, threat detection",
+        "iso-27001-2022:7": "ISO 27001 Clause 7 Physical Controls: Physical network security, cabling security, equipment placement",
+        "iso-27001-2022:8": "ISO 27001 Clause 8 Technological Controls: 8.20 Networks security, 8.21 Security of network services, 8.22 Segregation of networks"
+      }
+    },
+    {
+      "cluster_id": "CLOUD",
+      "cluster_name": "Hosting & Cloud Security",
+      "description": "Covers cloud adoption governance, cloud security posture management, cloud workload security, and cloud logging.",
+      "icon": "cloud",
+      "part1_question_ids": ["p1-013", "p1-014"],
+      "sub_topics": [
+        "Cloud Adoption & Architecture",
+        "Cloud Security Posture",
+        "Cloud Monitoring & Logging",
+        "Workload & Container Security"
+      ],
+      "domain_keys": [
+        "nist-csf-2-0:GV",
+        "nist-csf-2-0:ID",
+        "nist-csf-2-0:PR",
+        "nist-csf-2-0:DE",
+        "cis-controls-v8-1-2:4",
+        "cis-controls-v8-1-2:16",
+        "iso-27001-2022:5",
+        "iso-27001-2022:8"
+      ],
+      "framework_domain_rationale": {
+        "nist-csf-2-0:GV": "GV.SC (Supply Chain Risk) covers cloud provider governance and cloud security review processes",
+        "nist-csf-2-0:ID": "ID.AM (Asset Management) covers cloud account/subscription inventory and workload discovery",
+        "nist-csf-2-0:PR": "PR.PS covers cloud configuration baselines; PR.DS covers cloud data security",
+        "nist-csf-2-0:DE": "DE.CM covers cloud-native audit log monitoring and CSPM alert integration",
+        "cis-controls-v8-1-2:4": "CIS Control 4 — Secure Configuration of Enterprise Assets: Secure cloud configuration, CSPM, IaC scanning, benchmarks",
+        "cis-controls-v8-1-2:16": "CIS Control 16 — Application Software Security: Covers container image scanning and workload security",
+        "iso-27001-2022:5": "ISO 27001 Clause 5: Cloud use policy, cloud supplier agreements, security review process",
+        "iso-27001-2022:8": "ISO 27001 Clause 8: 8.23 Web filtering, 8.25 Secure development, cloud workload security controls"
+      }
+    },
+    {
+      "cluster_id": "M365",
+      "cluster_name": "M365 & Email Security",
+      "description": "Covers Microsoft 365 configuration, email security controls, anti-phishing, DLP, and data collaboration security.",
+      "icon": "mail",
+      "part1_question_ids": ["p1-015", "p1-016"],
+      "sub_topics": [
+        "M365 Configuration & Governance",
+        "Email Security",
+        "Data & Collaboration Security"
+      ],
+      "domain_keys": [
+        "nist-csf-2-0:PR",
+        "nist-csf-2-0:DE",
+        "cis-controls-v8-1-2:4",
+        "cis-controls-v8-1-2:9",
+        "iso-27001-2022:5",
+        "iso-27001-2022:8"
+      ],
+      "framework_domain_rationale": {
+        "nist-csf-2-0:PR": "PR.DS (Data Security) covers DLP, email encryption, sensitivity labelling; PR.AT covers phishing awareness",
+        "nist-csf-2-0:DE": "DE.CM covers M365 audit log ingestion and alert configuration",
+        "cis-controls-v8-1-2:4": "CIS Control 4 — Secure Configuration: M365 tenant hardening, CIS M365 Benchmark, admin role minimisation",
+        "cis-controls-v8-1-2:9": "CIS Control 9 — Email and Web Browser Protections: DMARC/DKIM/SPF, email gateway, anti-phishing, safe links",
+        "iso-27001-2022:5": "ISO 27001 Clause 5: Acceptable use of information policy, information classification policy, DLP governance",
+        "iso-27001-2022:8": "ISO 27001 Clause 8: 8.12 DLP, 8.13 Information backup, 8.16 Monitoring activities for M365 audit logs"
+      }
+    },
+    {
+      "cluster_id": "AI",
+      "cluster_name": "AI Security",
+      "description": "Covers AI tool governance, data exposure risks from generative AI, shadow AI detection, and AI output review.",
+      "icon": "cpu",
+      "part1_question_ids": ["p1-027"],
+      "sub_topics": [
+        "AI Usage & Governance",
+        "AI Data & Risk"
+      ],
+      "domain_keys": [
+        "nist-csf-2-0:GV",
+        "nist-csf-2-0:ID",
+        "nist-csf-2-0:PR",
+        "cis-controls-v8-1-2:2",
+        "cis-controls-v8-1-2:3",
+        "iso-27001-2022:5",
+        "iso-27001-2022:6"
+      ],
+      "framework_domain_rationale": {
+        "nist-csf-2-0:GV": "GV.PO (Policy) and GV.OC (Organizational Context) cover AI acceptable use policy and AI governance ownership",
+        "nist-csf-2-0:ID": "ID.AM (Asset Management) covers AI tool inventory including shadow AI discovery via CASB",
+        "nist-csf-2-0:PR": "PR.AT (Awareness & Training) covers employee AI risk training; PR.DS covers data sent to external AI platforms",
+        "cis-controls-v8-1-2:2": "CIS Control 2 — Inventory and Control of Software Assets: AI tool inventory and shadow AI tracking",
+        "cis-controls-v8-1-2:3": "CIS Control 3 — Data Protection: Controls for data submitted to AI tools, DLP for AI channels",
+        "iso-27001-2022:5": "ISO 27001 Clause 5: AI governance policy, third-party AI tool agreements, AI risk acceptance",
+        "iso-27001-2022:6": "ISO 27001 Clause 6 People Controls: Security awareness training covering AI-specific risks"
+      }
+    },
+    {
+      "cluster_id": "APPSEC",
+      "cluster_name": "Application Inventory & Security",
+      "description": "Covers application inventory, vulnerability and patch management, application security testing, container security, and SDLC practices.",
+      "icon": "code",
+      "part1_question_ids": ["p1-025", "p1-026"],
+      "sub_topics": [
+        "Application Inventory",
+        "Patch & Vulnerability Management",
+        "Application Security",
+        "Workload & Container Security"
+      ],
+      "domain_keys": [
+        "nist-csf-2-0:ID",
+        "nist-csf-2-0:PR",
+        "cis-controls-v8-1-2:1",
+        "cis-controls-v8-1-2:2",
+        "cis-controls-v8-1-2:7",
+        "cis-controls-v8-1-2:16",
+        "iso-27001-2022:5",
+        "iso-27001-2022:8"
+      ],
+      "framework_domain_rationale": {
+        "nist-csf-2-0:ID": "ID.AM (Asset Management) covers application catalog, software inventory, end-of-life tracking",
+        "nist-csf-2-0:PR": "PR.PS (Platform Security) covers patching, secure configuration, vulnerability remediation SLAs",
+        "cis-controls-v8-1-2:1": "CIS Control 1 — Inventory and Control of Enterprise Assets: Device and workload inventory underpinning patch coverage",
+        "cis-controls-v8-1-2:2": "CIS Control 2 — Inventory and Control of Software Assets: Formal application catalog, EOL tracking, SaaS visibility",
+        "cis-controls-v8-1-2:7": "CIS Control 7 — Continuous Vulnerability Management: Vulnerability scanning, patching SLAs, prioritisation by exploitability",
+        "cis-controls-v8-1-2:16": "CIS Control 16 — Application Software Security: SAST/DAST/SCA, secure coding, penetration testing, API security",
+        "iso-27001-2022:5": "ISO 27001 Clause 5: Vulnerability management policy, secure development policy, patch management governance",
+        "iso-27001-2022:8": "ISO 27001 Clause 8: 8.8 Management of technical vulnerabilities, 8.25 Secure development lifecycle, 8.27 Secure system architecture"
+      }
+    },
+    {
+      "cluster_id": "ENDPOINT",
+      "cluster_name": "Endpoint Security",
+      "description": "Covers endpoint protection (EDR), device management (MDM/UEM), USB controls, disk encryption, and BYOD policies.",
+      "icon": "monitor",
+      "part1_question_ids": ["p1-017", "p1-018"],
+      "sub_topics": [
+        "Endpoint Protection",
+        "Device Management"
+      ],
+      "domain_keys": [
+        "nist-csf-2-0:PR",
+        "nist-csf-2-0:DE",
+        "cis-controls-v8-1-2:4",
+        "cis-controls-v8-1-2:10",
+        "cis-controls-v8-1-2:18",
+        "iso-27001-2022:7",
+        "iso-27001-2022:8"
+      ],
+      "framework_domain_rationale": {
+        "nist-csf-2-0:PR": "PR.PS (Platform Security) covers endpoint hardening, EDR deployment, encryption, USB controls, MDM compliance policies",
+        "nist-csf-2-0:DE": "DE.CM covers EDR alert monitoring, managed vs unmanaged device detection",
+        "cis-controls-v8-1-2:4": "CIS Control 4 — Secure Configuration: Endpoint hardening standards, host firewall, exploit protection settings",
+        "cis-controls-v8-1-2:10": "CIS Control 10 — Malware Defenses: EDR deployment, behavioral detection, AV replacement strategy",
+        "cis-controls-v8-1-2:18": "CIS Control 18 — Penetration Testing: Validates endpoint controls effectiveness",
+        "iso-27001-2022:7": "ISO 27001 Clause 7 Physical Controls: Clear desk, equipment security, removable media handling",
+        "iso-27001-2022:8": "ISO 27001 Clause 8: 8.1 User end point devices, 8.7 Protection against malware, 8.11 Data masking, 8.12 DLP on endpoints"
+      }
+    },
+    {
+      "cluster_id": "DEFENSE",
+      "cluster_name": "Defense & Response",
+      "description": "Covers threat detection, security operations (SOC/GSOC), incident response, log management, and threat hunting.",
+      "icon": "shield",
+      "part1_question_ids": ["p1-022", "p1-023", "p1-024"],
+      "sub_topics": [
+        "Security Operations",
+        "Threat Detection",
+        "Incident Response",
+        "Log Management"
+      ],
+      "domain_keys": [
+        "nist-csf-2-0:DE",
+        "nist-csf-2-0:RS",
+        "nist-csf-2-0:RC",
+        "cis-controls-v8-1-2:8",
+        "cis-controls-v8-1-2:17",
+        "cis-controls-v8-1-2:18",
+        "iso-27001-2022:5",
+        "iso-27001-2022:8"
+      ],
+      "framework_domain_rationale": {
+        "nist-csf-2-0:DE": "DE.CM (Continuous Monitoring) and DE.AE (Adverse Event Analysis) cover SOC monitoring, SIEM, UEBA, threat detection",
+        "nist-csf-2-0:RS": "RS.MA/RS.AN/RS.CO/RS.MI covers IR plan, playbooks, tabletop exercises, containment, regulatory notification",
+        "nist-csf-2-0:RC": "RC.RP (Recovery Planning) and RC.CO (Recovery Communications) cover business recovery post-incident",
+        "cis-controls-v8-1-2:8": "CIS Control 8 — Audit Log Management: Centralised log collection, retention, SIEM ingestion, alert coverage",
+        "cis-controls-v8-1-2:17": "CIS Control 17 — Incident Response Management: IR plan, roles and responsibilities, tabletops, retainer",
+        "cis-controls-v8-1-2:18": "CIS Control 18 — Penetration Testing: Red team exercises, adversary simulation to validate detection",
+        "iso-27001-2022:5": "ISO 27001 Clause 5: Information security incident management policy, response procedures, breach notification obligations",
+        "iso-27001-2022:8": "ISO 27001 Clause 8: 8.15 Logging, 8.16 Monitoring, 8.17 Clock synchronisation for log integrity"
+      }
+    },
+    {
+      "cluster_id": "TPRM",
+      "cluster_name": "Third Party & Vendor Risk",
+      "description": "Covers TPRM program maturity, vendor onboarding assessments, ongoing oversight, and fourth-party risk.",
+      "icon": "users",
+      "part1_question_ids": ["p1-028"],
+      "sub_topics": [
+        "TPRM Program",
+        "Vendor Onboarding & Assessment",
+        "Ongoing Vendor Oversight"
+      ],
+      "domain_keys": [
+        "nist-csf-2-0:GV",
+        "nist-csf-2-0:ID",
+        "cis-controls-v8-1-2:15",
+        "iso-27001-2022:5",
+        "iso-27001-2022:6"
+      ],
+      "framework_domain_rationale": {
+        "nist-csf-2-0:GV": "GV.SC (Supply Chain Risk Management) covers TPRM program, vendor risk tiering, contractual security requirements",
+        "nist-csf-2-0:ID": "ID.RA (Risk Assessment) covers vendor risk assessment, criticality classification, ongoing monitoring",
+        "cis-controls-v8-1-2:15": "CIS Control 15 — Service Provider Management: Vendor inventory, security assessments, contract requirements, monitoring",
+        "iso-27001-2022:5": "ISO 27001 Clause 5: 5.19 Information security in supplier relationships, 5.20 Addressing security in agreements, 5.22 Monitoring and review of supplier services",
+        "iso-27001-2022:6": "ISO 27001 Clause 6: 6.6 Confidentiality or non-disclosure agreements for vendor personnel"
+      }
+    },
+    {
+      "cluster_id": "DATA",
+      "cluster_name": "Data & Storage Security",
+      "description": "Covers data classification, encryption at rest and in transit, DLP, backup and recovery, and data retention.",
+      "icon": "database",
+      "part1_question_ids": ["p1-019", "p1-020", "p1-021"],
+      "sub_topics": [
+        "Data Classification & Governance",
+        "Encryption & Key Management",
+        "Data Loss Prevention",
+        "Backup & Recovery"
+      ],
+      "domain_keys": [
+        "nist-csf-2-0:ID",
+        "nist-csf-2-0:PR",
+        "nist-csf-2-0:RC",
+        "cis-controls-v8-1-2:3",
+        "cis-controls-v8-1-2:11",
+        "iso-27001-2022:5",
+        "iso-27001-2022:8"
+      ],
+      "framework_domain_rationale": {
+        "nist-csf-2-0:ID": "ID.AM (Asset Management) covers data inventory, crown jewels identification, data classification taxonomy",
+        "nist-csf-2-0:PR": "PR.DS (Data Security) covers encryption, DLP, data handling, labelling, retention, and secure disposal",
+        "nist-csf-2-0:RC": "RC.RP (Recovery Planning) covers backup testing, RTO/RPO targets, recovery procedures",
+        "cis-controls-v8-1-2:3": "CIS Control 3 — Data Protection: Data classification, encryption, DLP, secure disposal, retention management",
+        "cis-controls-v8-1-2:11": "CIS Control 11 — Data Recovery: Backup coverage, backup testing, offsite/cloud backup, recovery SLAs",
+        "iso-27001-2022:5": "ISO 27001 Clause 5: 5.10 Acceptable use, 5.12 Classification, 5.13 Labelling, 5.33 Protection of records",
+        "iso-27001-2022:8": "ISO 27001 Clause 8: 8.10 Information deletion, 8.11 Data masking, 8.12 DLP, 8.24 Use of cryptography"
+      }
+    }
+  ]
+}

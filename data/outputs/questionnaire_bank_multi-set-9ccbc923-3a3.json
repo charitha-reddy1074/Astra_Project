@@ -1,0 +1,2251 @@
+{
+  "questionnaire_id": "multi-set-9ccbc923-3a3",
+  "questionnaire_type": "multi_framework",
+  "framework_id": "a6073af5-acf1-5b7b-9699-b84672146e6d",
+  "name": "CIS Controls v8.1.2 (Continuous Vulnerability Management) + MCD Market Assessment Framework (AI Security)",
+  "framework_names": [
+    "CIS Controls v8.1.2",
+    "MCD Market Assessment Framework"
+  ],
+  "framework_summary": "CIS Controls v8.1.2 + MCD Market Assessment Framework",
+  "version": "1.0",
+  "source_format": "multi_framework_merged",
+  "question_count": 20,
+  "part1_checklist": [
+    {
+      "question_id": "f47ac10b-58cc-4372-a567-0e02b2c3d479",
+      "question_text": "Is vulnerability management process in place?",
+      "sub_topic": "Continuous Vulnerability Management",
+      "domain_name": "Continuous Vulnerability Management",
+      "framework_name": "CIS Controls v8.1.2",
+      "control_id": "7.1, 7.2, 7.3, 7.4, 7.5, 7.6, 7.7",
+      "answer_format": "yes_no_with_detail",
+      "response_options": "Yes / No / Partial",
+      "detail_prompt": "If yes or partial, specify the tool or technology in use.",
+      "number": 1
+    },
+    {
+      "question_id": "f47ac10b-ee9e-43e4-9f9e-372f5b9e5e2a",
+      "question_text": "Is AI governance framework in place?",
+      "sub_topic": "AI Security",
+      "domain_name": "AI Security",
+      "framework_name": "MCD Market Assessment Framework",
+      "control_id": "AI-1, AI-2",
+      "answer_format": "yes_no_with_detail",
+      "response_options": "Yes / No / Partial",
+      "detail_prompt": "If yes or partial, specify the framework or policy in use.",
+      "number": 2
+    }
+  ],
+  "question_groups": [
+    {
+      "framework_id": "8ac1d180-5b22-5cf6-8a0b-df10e87ebad8",
+      "framework_key": "cis-controls-v8-1-2",
+      "framework_name": "CIS Controls v8.1.2",
+      "domain_id": "7",
+      "domain_name": "Continuous Vulnerability Management",
+      "domain_description": "Develop a plan to continuously assess and track vulnerabilities on all enterprise assets within the enterprise's infrastructure, in order to remediate, and minimize, the window of opportunity for attackers. Monitor public and private industry sources for new threat and vulnerability information.",
+      "question_count": 7,
+      "questions": [
+        {
+          "item_id": "4c644ef1-59e7-5d84-acc0-dad816a1b80a",
+          "question_id": "4c644ef1-59e7-5d84-acc0-dad816a1b80a",
+          "question_text": "Is the organization implementing and operating the control: Establish and Maintain a Vulnerability Management Process: Establish and maintain a documented vulnerability management process for enterprise assets. Review and update documentation annually, or when significant enterprise changes occur that could impact this Safeguard?",
+          "question_type": "merged",
+          "answer_formats": [
+            "yes_no",
+            "evidence_upload"
+          ],
+          "framework_name": "CIS Controls v8.1.2",
+          "framework_key": "cis-controls-v8-1-2",
+          "domain_id": "7",
+          "domain_name": "Continuous Vulnerability Management",
+          "control_id": "7.1",
+          "control_statement": "Establish and Maintain a Vulnerability Management Process: Establish and maintain a documented vulnerability management process for enterprise assets. Review and update documentation annually, or when significant enterprise changes occur that could impact this Safeguard.",
+          "expected_evidence": "role_matrix, org_chart, responsibility_assignment",
+          "maturity_level": "Defined",
+          "merge_reason": "Merged by control fallback because LLM output was unavailable or invalid.",
+          "source_item_ids": [
+            "412a385f-3c1e-5c76-8959-5c3004f08254",
+            "8cc815cf-2e94-5dfa-9f09-aef3a5dd72d9"
+          ],
+          "source_questions": [
+            {
+              "question_id": "36794720-dd08-5e39-914b-e894007ed4ab",
+              "question_text": "Is the organization implementing and operating the control: Establish and Maintain a Vulnerability Management Process: Establish and maintain a documented vulnerability management process for enterprise assets. Review and update documentation annually, or when significant enterprise changes occur that could impact this Safeguard?",
+              "question_type": "yes_no",
+              "framework_name": "CIS Controls v8.1.2",
+              "framework_key": "cis-controls-v8-1-2",
+              "domain_id": "7",
+              "domain_name": "Continuous Vulnerability Management",
+              "control_id": "7.1",
+              "cross_references": [
+                {
+                  "other_framework_id": "nist-csf-2-0",
+                  "other_control_id": "ID.RA-01",
+                  "relationship": "Superset",
+                  "description": "Vulnerabilities in assets are identified, validated, and recorded"
+                }
+              ],
+              "expected_evidence": "role_matrix, org_chart, responsibility_assignment"
+            },
+            {
+              "question_id": "358ed7a6-f33a-5135-9b41-0feaf5351d1f",
+              "question_text": "Upload evidence such as role_matrix, org_chart, responsibility_assignment that demonstrates: Establish and Maintain a Vulnerability Management Process: Establish and maintain a documented vulnerability management process for enterprise assets. Review and update documentation annually, or when significant enterprise changes occur that could impact this Safeguard.",
+              "question_type": "evidence_upload",
+              "framework_name": "CIS Controls v8.1.2",
+              "framework_key": "cis-controls-v8-1-2",
+              "domain_id": "7",
+              "domain_name": "Continuous Vulnerability Management",
+              "control_id": "7.1",
+              "cross_references": [
+                {
+                  "other_framework_id": "nist-csf-2-0",
+                  "other_control_id": "ID.RA-01",
+                  "relationship": "Superset",
+                  "description": "Vulnerabilities in assets are identified, validated, and recorded"
+                }
+              ],
+              "expected_evidence": "role_matrix, org_chart, responsibility_assignment"
+            }
+          ],
+          "cross_references": [
+            {
+              "other_framework_id": "nist-csf-2-0",
+              "other_control_id": "ID.RA-01"
+            }
+          ]
+        },
+        {
+          "item_id": "ac9bd1c1-85d0-59fa-bad5-c55dc723d889",
+          "question_id": "ac9bd1c1-85d0-59fa-bad5-c55dc723d889",
+          "question_text": "Is the organization implementing and operating the control: Establish and Maintain a Remediation Process: Establish and maintain a risk-based remediation strategy documented in a remediation process, with monthly, or more frequent, reviews?",
+          "question_type": "merged",
+          "answer_formats": [
+            "yes_no",
+            "evidence_upload"
+          ],
+          "framework_name": "CIS Controls v8.1.2",
+          "framework_key": "cis-controls-v8-1-2",
+          "domain_id": "7",
+          "domain_name": "Continuous Vulnerability Management",
+          "control_id": "7.2",
+          "control_statement": "Establish and Maintain a Remediation Process: Establish and maintain a risk-based remediation strategy documented in a remediation process, with monthly, or more frequent, reviews.",
+          "expected_evidence": "facility_record, access_log, maintenance_log",
+          "maturity_level": "Defined",
+          "merge_reason": "Merged by control fallback because LLM output was unavailable or invalid.",
+          "source_item_ids": [
+            "e9fdadf0-a6f4-51d4-8c58-4df9e20c3188",
+            "a17ad65a-d25c-5403-b98d-8f3468c8bc24"
+          ],
+          "source_questions": [
+            {
+              "question_id": "3f883874-e32a-5eae-87b8-e8bfde141dc1",
+              "question_text": "Is the organization implementing and operating the control: Establish and Maintain a Remediation Process: Establish and maintain a risk-based remediation strategy documented in a remediation process, with monthly, or more frequent, reviews?",
+              "question_type": "yes_no",
+              "framework_name": "CIS Controls v8.1.2",
+              "framework_key": "cis-controls-v8-1-2",
+              "domain_id": "7",
+              "domain_name": "Continuous Vulnerability Management",
+              "control_id": "7.2",
+              "cross_references": [
+                {
+                  "other_framework_id": "nist-csf-2-0",
+                  "other_control_id": "ID.RA-08",
+                  "relationship": "Superset",
+                  "description": "Processes for receiving, analyzing, and responding to vulnerability disclosures are established"
+                },
+                {
+                  "other_framework_id": "nist-csf-2-0",
+                  "other_control_id": "ID.IM-02",
+                  "relationship": "Superset",
+                  "description": "Improvements are identified from security tests and exercises, including those done in coordination with suppliers and relevant third parties"
+                }
+              ],
+              "expected_evidence": "facility_record, access_log, maintenance_log"
+            },
+            {
+              "question_id": "0c7044a2-fc26-5d98-b624-28378b8a6a17",
+              "question_text": "Upload evidence such as facility_record, access_log, maintenance_log that demonstrates: Establish and Maintain a Remediation Process: Establish and maintain a risk-based remediation strategy documented in a remediation process, with monthly, or more frequent, reviews.",
+              "question_type": "evidence_upload",
+              "framework_name": "CIS Controls v8.1.2",
+              "framework_key": "cis-controls-v8-1-2",
+              "domain_id": "7",
+              "domain_name": "Continuous Vulnerability Management",
+              "control_id": "7.2",
+              "cross_references": [
+                {
+                  "other_framework_id": "nist-csf-2-0",
+                  "other_control_id": "ID.RA-08",
+                  "relationship": "Superset",
+                  "description": "Processes for receiving, analyzing, and responding to vulnerability disclosures are established"
+                },
+                {
+                  "other_framework_id": "nist-csf-2-0",
+                  "other_control_id": "ID.IM-02",
+                  "relationship": "Superset",
+                  "description": "Improvements are identified from security tests and exercises, including those done in coordination with suppliers and relevant third parties"
+                }
+              ],
+              "expected_evidence": "facility_record, access_log, maintenance_log"
+            }
+          ],
+          "cross_references": [
+            {
+              "other_framework_id": "nist-csf-2-0",
+              "other_control_id": "ID.RA-08"
+            },
+            {
+              "other_framework_id": "nist-csf-2-0",
+              "other_control_id": "ID.IM-02"
+            }
+          ]
+        },
+        {
+          "item_id": "210ace43-8f96-5b61-a5cc-c1464376eb62",
+          "question_id": "210ace43-8f96-5b61-a5cc-c1464376eb62",
+          "question_text": "Is the organization implementing and operating the control: Perform Automated Operating System Patch Management: Perform operating system updates on enterprise assets through automated patch management on a monthly, or more frequent, basis?",
+          "question_type": "merged",
+          "answer_formats": [
+            "yes_no",
+            "evidence_upload"
+          ],
+          "framework_name": "CIS Controls v8.1.2",
+          "framework_key": "cis-controls-v8-1-2",
+          "domain_id": "7",
+          "domain_name": "Continuous Vulnerability Management",
+          "control_id": "7.3",
+          "control_statement": "Perform Automated Operating System Patch Management: Perform operating system updates on enterprise assets through automated patch management on a monthly, or more frequent, basis.",
+          "expected_evidence": "role_matrix, org_chart, responsibility_assignment",
+          "maturity_level": "Defined",
+          "merge_reason": "Merged by control fallback because LLM output was unavailable or invalid.",
+          "source_item_ids": [
+            "a168e586-df9f-5dba-a1ce-328a826018bb",
+            "77ddcebb-a904-5ffa-aaa7-f126f6e7445c"
+          ],
+          "source_questions": [
+            {
+              "question_id": "eb65b0b8-70a1-5b97-b182-e6660b2b824c",
+              "question_text": "Is the organization implementing and operating the control: Perform Automated Operating System Patch Management: Perform operating system updates on enterprise assets through automated patch management on a monthly, or more frequent, basis?",
+              "question_type": "yes_no",
+              "framework_name": "CIS Controls v8.1.2",
+              "framework_key": "cis-controls-v8-1-2",
+              "domain_id": "7",
+              "domain_name": "Continuous Vulnerability Management",
+              "control_id": "7.3",
+              "cross_references": [],
+              "expected_evidence": "role_matrix, org_chart, responsibility_assignment"
+            },
+            {
+              "question_id": "0111c247-4df0-53a4-bf55-c6cb584d86bf",
+              "question_text": "Upload evidence such as role_matrix, org_chart, responsibility_assignment that demonstrates: Perform Automated Operating System Patch Management: Perform operating system updates on enterprise assets through automated patch management on a monthly, or more frequent, basis.",
+              "question_type": "evidence_upload",
+              "framework_name": "CIS Controls v8.1.2",
+              "framework_key": "cis-controls-v8-1-2",
+              "domain_id": "7",
+              "domain_name": "Continuous Vulnerability Management",
+              "control_id": "7.3",
+              "cross_references": [],
+              "expected_evidence": "role_matrix, org_chart, responsibility_assignment"
+            }
+          ],
+          "cross_references": []
+        },
+        {
+          "item_id": "ab7fe7fa-95bd-5452-aa9d-57bfb9b39be7",
+          "question_id": "ab7fe7fa-95bd-5452-aa9d-57bfb9b39be7",
+          "question_text": "Is the organization implementing and operating the control: Perform Automated Application Patch Management: Perform application updates on enterprise assets through automated patch management on a monthly, or more frequent, basis?",
+          "question_type": "merged",
+          "answer_formats": [
+            "yes_no",
+            "evidence_upload"
+          ],
+          "framework_name": "CIS Controls v8.1.2",
+          "framework_key": "cis-controls-v8-1-2",
+          "domain_id": "7",
+          "domain_name": "Continuous Vulnerability Management",
+          "control_id": "7.4",
+          "control_statement": "Perform Automated Application Patch Management: Perform application updates on enterprise assets through automated patch management on a monthly, or more frequent, basis.",
+          "expected_evidence": "role_matrix, org_chart, responsibility_assignment",
+          "maturity_level": "Defined",
+          "merge_reason": "Merged by control fallback because LLM output was unavailable or invalid.",
+          "source_item_ids": [
+            "f3c37754-9203-5252-a1aa-c67c0a1e48b2",
+            "48e78f8d-ab32-5cad-9e25-d1d138abb8ea"
+          ],
+          "source_questions": [
+            {
+              "question_id": "ab586bf3-a216-5e1b-90ff-29ad6890a710",
+              "question_text": "Is the organization implementing and operating the control: Perform Automated Application Patch Management: Perform application updates on enterprise assets through automated patch management on a monthly, or more frequent, basis?",
+              "question_type": "yes_no",
+              "framework_name": "CIS Controls v8.1.2",
+              "framework_key": "cis-controls-v8-1-2",
+              "domain_id": "7",
+              "domain_name": "Continuous Vulnerability Management",
+              "control_id": "7.4",
+              "cross_references": [],
+              "expected_evidence": "role_matrix, org_chart, responsibility_assignment"
+            },
+            {
+              "question_id": "05645169-e7ab-50b7-8914-e4064fbcbb98",
+              "question_text": "Upload evidence such as role_matrix, org_chart, responsibility_assignment that demonstrates: Perform Automated Application Patch Management: Perform application updates on enterprise assets through automated patch management on a monthly, or more frequent, basis.",
+              "question_type": "evidence_upload",
+              "framework_name": "CIS Controls v8.1.2",
+              "framework_key": "cis-controls-v8-1-2",
+              "domain_id": "7",
+              "domain_name": "Continuous Vulnerability Management",
+              "control_id": "7.4",
+              "cross_references": [],
+              "expected_evidence": "role_matrix, org_chart, responsibility_assignment"
+            }
+          ],
+          "cross_references": []
+        },
+        {
+          "item_id": "e4231718-8369-5169-89b2-533b74520650",
+          "question_id": "e4231718-8369-5169-89b2-533b74520650",
+          "question_text": "Is the organization implementing and operating the control: Perform Automated Vulnerability Scans of Internal Enterprise Assets: Perform automated vulnerability scans of internal enterprise assets on a quarterly, or more frequent, basis. Conduct both authenticated and unauthenticated scans?",
+          "question_type": "merged",
+          "answer_formats": [
+            "yes_no",
+            "evidence_upload"
+          ],
+          "framework_name": "CIS Controls v8.1.2",
+          "framework_key": "cis-controls-v8-1-2",
+          "domain_id": "7",
+          "domain_name": "Continuous Vulnerability Management",
+          "control_id": "7.5",
+          "control_statement": "Perform Automated Vulnerability Scans of Internal Enterprise Assets: Perform automated vulnerability scans of internal enterprise assets on a quarterly, or more frequent, basis. Conduct both authenticated and unauthenticated scans.",
+          "expected_evidence": "inventory, asset_register, owner_register",
+          "maturity_level": "Defined",
+          "merge_reason": "Merged by control fallback because LLM output was unavailable or invalid.",
+          "source_item_ids": [
+            "ab41ba1a-d5fa-5aa2-9c44-1da9208c27dc",
+            "0013a67f-d04c-5b6b-909b-40965ae67f15"
+          ],
+          "source_questions": [
+            {
+              "question_id": "63cfd78b-bbe0-5bac-b6af-f963517a33d3",
+              "question_text": "Is the organization implementing and operating the control: Perform Automated Vulnerability Scans of Internal Enterprise Assets: Perform automated vulnerability scans of internal enterprise assets on a quarterly, or more frequent, basis. Conduct both authenticated and unauthenticated scans?",
+              "question_type": "yes_no",
+              "framework_name": "CIS Controls v8.1.2",
+              "framework_key": "cis-controls-v8-1-2",
+              "domain_id": "7",
+              "domain_name": "Continuous Vulnerability Management",
+              "control_id": "7.5",
+              "cross_references": [],
+              "expected_evidence": "inventory, asset_register, owner_register"
+            },
+            {
+              "question_id": "063efe2a-7812-5e47-9099-913001017970",
+              "question_text": "Upload evidence such as inventory, asset_register, owner_register that demonstrates: Perform Automated Vulnerability Scans of Internal Enterprise Assets: Perform automated vulnerability scans of internal enterprise assets on a quarterly, or more frequent, basis. Conduct both authenticated and unauthenticated scans.",
+              "question_type": "evidence_upload",
+              "framework_name": "CIS Controls v8.1.2",
+              "framework_key": "cis-controls-v8-1-2",
+              "domain_id": "7",
+              "domain_name": "Continuous Vulnerability Management",
+              "control_id": "7.5",
+              "cross_references": [],
+              "expected_evidence": "inventory, asset_register, owner_register"
+            }
+          ],
+          "cross_references": []
+        },
+        {
+          "item_id": "640d3bce-83c0-524d-bea4-745131f47bba",
+          "question_id": "640d3bce-83c0-524d-bea4-745131f47bba",
+          "question_text": "Is the organization implementing and operating the control: Perform Automated Vulnerability Scans of Externally-Exposed Enterprise Assets: Perform automated vulnerability scans of externally-exposed enterprise assets. Perform scans on a monthly, or more frequent, basis?",
+          "question_type": "merged",
+          "answer_formats": [
+            "yes_no",
+            "evidence_upload"
+          ],
+          "framework_name": "CIS Controls v8.1.2",
+          "framework_key": "cis-controls-v8-1-2",
+          "domain_id": "7",
+          "domain_name": "Continuous Vulnerability Management",
+          "control_id": "7.6",
+          "control_statement": "Perform Automated Vulnerability Scans of Externally-Exposed Enterprise Assets: Perform automated vulnerability scans of externally-exposed enterprise assets. Perform scans on a monthly, or more frequent, basis.",
+          "expected_evidence": "inventory, asset_register, owner_register",
+          "maturity_level": "Defined",
+          "merge_reason": "Merged by control fallback because LLM output was unavailable or invalid.",
+          "source_item_ids": [
+            "3ffa5b5b-241e-5228-8404-507ef79a5b3c",
+            "b2c7d208-d9df-58d8-9033-da3abb55f638"
+          ],
+          "source_questions": [
+            {
+              "question_id": "d5762ead-2dff-5fb4-ae7d-29d6a70e51a3",
+              "question_text": "Is the organization implementing and operating the control: Perform Automated Vulnerability Scans of Externally-Exposed Enterprise Assets: Perform automated vulnerability scans of externally-exposed enterprise assets. Perform scans on a monthly, or more frequent, basis?",
+              "question_type": "yes_no",
+              "framework_name": "CIS Controls v8.1.2",
+              "framework_key": "cis-controls-v8-1-2",
+              "domain_id": "7",
+              "domain_name": "Continuous Vulnerability Management",
+              "control_id": "7.6",
+              "cross_references": [],
+              "expected_evidence": "inventory, asset_register, owner_register"
+            },
+            {
+              "question_id": "2a9fda87-f292-5963-93ca-8df2ea291d5e",
+              "question_text": "Upload evidence such as inventory, asset_register, owner_register that demonstrates: Perform Automated Vulnerability Scans of Externally-Exposed Enterprise Assets: Perform automated vulnerability scans of externally-exposed enterprise assets. Perform scans on a monthly, or more frequent, basis.",
+              "question_type": "evidence_upload",
+              "framework_name": "CIS Controls v8.1.2",
+              "framework_key": "cis-controls-v8-1-2",
+              "domain_id": "7",
+              "domain_name": "Continuous Vulnerability Management",
+              "control_id": "7.6",
+              "cross_references": [],
+              "expected_evidence": "inventory, asset_register, owner_register"
+            }
+          ],
+          "cross_references": []
+        },
+        {
+          "item_id": "d5f8d9d9-b98b-5ce9-a174-e979e0ca11bb",
+          "question_id": "d5f8d9d9-b98b-5ce9-a174-e979e0ca11bb",
+          "question_text": "Is the organization implementing and operating the control: Remediate Detected Vulnerabilities: Remediate detected vulnerabilities in software through processes and tooling on a monthly, or more frequent, basis, based on the remediation process?",
+          "question_type": "merged",
+          "answer_formats": [
+            "yes_no",
+            "evidence_upload"
+          ],
+          "framework_name": "CIS Controls v8.1.2",
+          "framework_key": "cis-controls-v8-1-2",
+          "domain_id": "7",
+          "domain_name": "Continuous Vulnerability Management",
+          "control_id": "7.7",
+          "control_statement": "Remediate Detected Vulnerabilities: Remediate detected vulnerabilities in software through processes and tooling on a monthly, or more frequent, basis, based on the remediation process.",
+          "expected_evidence": "project_record, change_ticket, engineering_standard",
+          "maturity_level": "Defined",
+          "merge_reason": "Merged by control fallback because LLM output was unavailable or invalid.",
+          "source_item_ids": [
+            "5bc2d7aa-1424-50a2-8c40-af33bc931fe1",
+            "4a81c124-763b-5b87-9fd8-bd17049cae1b"
+          ],
+          "source_questions": [
+            {
+              "question_id": "e448681e-ff76-5947-bb91-7c590e4fdd67",
+              "question_text": "Is the organization implementing and operating the control: Remediate Detected Vulnerabilities: Remediate detected vulnerabilities in software through processes and tooling on a monthly, or more frequent, basis, based on the remediation process?",
+              "question_type": "yes_no",
+              "framework_name": "CIS Controls v8.1.2",
+              "framework_key": "cis-controls-v8-1-2",
+              "domain_id": "7",
+              "domain_name": "Continuous Vulnerability Management",
+              "control_id": "7.7",
+              "cross_references": [],
+              "expected_evidence": "project_record, change_ticket, engineering_standard"
+            },
+            {
+              "question_id": "861f0b30-a84d-5507-a879-182edf5b5b27",
+              "question_text": "Upload evidence such as project_record, change_ticket, engineering_standard that demonstrates: Remediate Detected Vulnerabilities: Remediate detected vulnerabilities in software through processes and tooling on a monthly, or more frequent, basis, based on the remediation process.",
+              "question_type": "evidence_upload",
+              "framework_name": "CIS Controls v8.1.2",
+              "framework_key": "cis-controls-v8-1-2",
+              "domain_id": "7",
+              "domain_name": "Continuous Vulnerability Management",
+              "control_id": "7.7",
+              "cross_references": [],
+              "expected_evidence": "project_record, change_ticket, engineering_standard"
+            }
+          ],
+          "cross_references": []
+        }
+      ],
+      "sub_topics": [
+        {
+          "sub_topic": "Continuous Vulnerability Management",
+          "control_ids": [
+            "7.1",
+            "7.2",
+            "7.3",
+            "7.4",
+            "7.5",
+            "7.6",
+            "7.7"
+          ],
+          "part1_question": {
+            "question_id": "f47ac10b-58cc-4372-a567-0e02b2c3d479",
+            "question_text": "Is vulnerability management process in place?",
+            "question_type": "yes_no_with_detail",
+            "response_options": "Yes / No / Partial",
+            "detail_prompt": "If yes or partial, specify the tool or technology in use."
+          },
+          "questions": [
+            {
+              "question_id": "4b6c10b-58cc-4372-a567-0e02b2c3d480",
+              "text": "How often are vulnerability scans performed?",
+              "help_text": "Frequency of scans",
+              "question_type": "SCALE_1_5",
+              "weight": 4,
+              "maturity_level": 4,
+              "expected_evidence_types": [
+                "inventory",
+                "asset_register"
+              ]
+            },
+            {
+              "question_id": "9f7ac10b-58cc-4372-a567-0e02b2c3d481",
+              "text": "What is the process for remediating detected vulnerabilities?",
+              "help_text": "Remediation steps",
+              "question_type": "FREE_TEXT",
+              "weight": 5,
+              "maturity_level": 5,
+              "expected_evidence_types": [
+                "project_record",
+                "change_ticket"
+              ]
+            },
+            {
+              "question_id": "1a3c10b-58cc-4372-a567-0e02b2c3d482",
+              "text": "Who is responsible for performing vulnerability scans?",
+              "help_text": "Scan responsibility",
+              "question_type": "FREE_TEXT",
+              "weight": 3,
+              "maturity_level": 3,
+              "expected_evidence_types": [
+                "role_matrix",
+                "org_chart"
+              ]
+            },
+            {
+              "question_id": "6d5c10b-58cc-4372-a567-0e02b2c3d483",
+              "text": "What tools are used for automated patch management?",
+              "help_text": "Patch management tools",
+              "question_type": "FREE_TEXT",
+              "weight": 4,
+              "maturity_level": 4,
+              "expected_evidence_types": [
+                "inventory",
+                "asset_register"
+              ]
+            },
+            {
+              "question_id": "8b2c10b-58cc-4372-a567-0e02b2c3d484",
+              "text": "How are vulnerability scan results reviewed and prioritized?",
+              "help_text": "Scan result review",
+              "question_type": "FREE_TEXT",
+              "weight": 5,
+              "maturity_level": 5,
+              "expected_evidence_types": [
+                "project_record",
+                "change_ticket"
+              ]
+            },
+            {
+              "question_id": "3e1c10b-58cc-4372-a567-0e02b2c3d485",
+              "text": "What is the frequency of reviewing and updating vulnerability management documentation?",
+              "help_text": "Documentation review frequency",
+              "question_type": "SCALE_1_5",
+              "weight": 3,
+              "maturity_level": 3,
+              "expected_evidence_types": [
+                "role_matrix",
+                "org_chart"
+              ]
+            },
+            {
+              "question_id": "7c4c10b-58cc-4372-a567-0e02b2c3d486",
+              "text": "How are exceptions to the remediation process handled?",
+              "help_text": "Remediation exceptions",
+              "question_type": "FREE_TEXT",
+              "weight": 4,
+              "maturity_level": 4,
+              "expected_evidence_types": [
+                "project_record",
+                "change_ticket"
+              ]
+            },
+            {
+              "question_id": "2f9c10b-58cc-4372-a567-0e02b2c3d487",
+              "text": "What metrics are used to measure the effectiveness of vulnerability management?",
+              "help_text": "Effectiveness metrics",
+              "question_type": "FREE_TEXT",
+              "weight": 5,
+              "maturity_level": 5,
+              "expected_evidence_types": [
+                "inventory",
+                "asset_register"
+              ]
+            },
+            {
+              "question_id": "5a6c10b-58cc-4372-a567-0e02b2c3d488",
+              "text": "Are vulnerability scans performed on all enterprise assets?",
+              "help_text": "Scan coverage",
+              "question_type": "YES_NO",
+              "weight": 4,
+              "maturity_level": 4,
+              "expected_evidence_types": [
+                "inventory",
+                "asset_register"
+              ]
+            },
+            {
+              "question_id": "4c3c10b-58cc-4372-a567-0e02b2c3d489",
+              "text": "What is the process for addressing vulnerabilities that cannot be remediated?",
+              "help_text": "Unremediated vulnerabilities",
+              "question_type": "FREE_TEXT",
+              "weight": 5,
+              "maturity_level": 5,
+              "expected_evidence_types": [
+                "project_record",
+                "change_ticket"
+              ]
+            }
+          ],
+          "maturity_guide": {
+            "mature": "A well-established vulnerability management process is in place, with regular scans, prioritized remediation, and effective metrics to measure success.",
+            "partial": "A vulnerability management process is partially implemented, with some scans and remediation efforts, but lacks consistency, prioritization, or effective metrics.",
+            "critical_gap": "The absence of a vulnerability management process leaves the organization exposed to significant risk, with no systematic approach to identifying and remediating vulnerabilities."
+          },
+          "evidence_to_request": [
+            "role_matrix",
+            "org_chart",
+            "inventory",
+            "asset_register",
+            "project_record",
+            "change_ticket"
+          ],
+          "red_flags": [
+            {
+              "critical_gap": "No vulnerability management process is in place, leaving the organization exposed to significant risk.",
+              "recommended_action": "Establish a vulnerability management process, including regular scans, prioritized remediation, and effective metrics to measure success."
+            },
+            {
+              "critical_gap": "Vulnerability scans are not performed regularly, or results are not reviewed and prioritized.",
+              "recommended_action": "Implement regular vulnerability scans, and establish a process for reviewing and prioritizing scan results."
+            },
+            {
+              "critical_gap": "Remediation efforts are not prioritized, or are not effective in addressing vulnerabilities.",
+              "recommended_action": "Establish a prioritized remediation process, and ensure that remediation efforts are effective in addressing vulnerabilities."
+            }
+          ]
+        }
+      ],
+      "evidence_to_request": [
+        "role_matrix",
+        "org_chart",
+        "inventory",
+        "asset_register",
+        "project_record",
+        "change_ticket"
+      ],
+      "red_flags": [
+        {
+          "critical_gap": "No vulnerability management process is in place, leaving the organization exposed to significant risk.",
+          "recommended_action": "Establish a vulnerability management process, including regular scans, prioritized remediation, and effective metrics to measure success."
+        },
+        {
+          "critical_gap": "Vulnerability scans are not performed regularly, or results are not reviewed and prioritized.",
+          "recommended_action": "Implement regular vulnerability scans, and establish a process for reviewing and prioritizing scan results."
+        },
+        {
+          "critical_gap": "Remediation efforts are not prioritized, or are not effective in addressing vulnerabilities.",
+          "recommended_action": "Establish a prioritized remediation process, and ensure that remediation efforts are effective in addressing vulnerabilities."
+        }
+      ],
+      "maturity_guide": {
+        "mature": "A well-established vulnerability management process is in place, with regular scans, prioritized remediation, and effective metrics to measure success.",
+        "partial": "A vulnerability management process is partially implemented, with some scans and remediation efforts, but lacks consistency, prioritization, or effective metrics.",
+        "critical_gap": "The absence of a vulnerability management process leaves the organization exposed to significant risk, with no systematic approach to identifying and remediating vulnerabilities."
+      }
+    },
+    {
+      "framework_id": "a3f2c1d4-7b8e-5a9f-b012-3c4d5e6f7a8b",
+      "framework_key": "mcd-market-assessment",
+      "framework_name": "MCD Market Assessment Framework",
+      "domain_id": "AI",
+      "domain_name": "AI Security",
+      "domain_description": "Covers the organization's current use of AI tools, governance posture, and data exposure risks.",
+      "question_count": 2,
+      "questions": [
+        {
+          "item_id": "06545f2e-bf9a-520e-86c3-33d918c92214",
+          "question_id": "06545f2e-bf9a-520e-86c3-33d918c92214",
+          "question_text": "Is there a formal AI acceptable use policy in place and followed today?",
+          "question_type": "merged",
+          "answer_formats": [
+            "free_text"
+          ],
+          "framework_name": "MCD Market Assessment Framework",
+          "framework_key": "mcd-market-assessment",
+          "domain_id": "AI",
+          "domain_name": "AI Security",
+          "control_id": "AI-1",
+          "control_statement": "An acceptable use policy for AI tools is in place and communicated. IT has visibility into what AI tools are in use. Consumer AI tool use for work purposes is governed.",
+          "expected_evidence": "Inventory of AI tools in active use across the organization, AI acceptable use policy document, Shadow IT or CASB report showing detected AI tool usage",
+          "maturity_level": "Critical Gap",
+          "merge_reason": "Merged by control fallback because LLM output was unavailable or invalid.",
+          "source_item_ids": [
+            "4657cb09-eeff-52c8-a117-63d398d1693e",
+            "f602fa28-49aa-5533-ac28-e15b4f993196",
+            "329be46e-dcca-5917-823d-e0ce70d24590"
+          ],
+          "source_questions": [
+            {
+              "question_id": "AI-1-Q1",
+              "question_text": "Is AI or generative AI tooling in active use across the organization? Which tools (Microsoft Copilot, ChatGPT, other)?",
+              "question_type": "free_text",
+              "framework_name": "MCD Market Assessment Framework",
+              "framework_key": "mcd-market-assessment",
+              "domain_id": "AI",
+              "domain_name": "AI Security",
+              "control_id": "AI-1",
+              "cross_references": [],
+              "expected_evidence": "Inventory of AI tools in active use across the organization, AI acceptable use policy document, Shadow IT or CASB report showing detected AI tool usage"
+            },
+            {
+              "question_id": "AI-1-Q2",
+              "question_text": "Is there a formal AI acceptable use policy in place and followed today?",
+              "question_type": "free_text",
+              "framework_name": "MCD Market Assessment Framework",
+              "framework_key": "mcd-market-assessment",
+              "domain_id": "AI",
+              "domain_name": "AI Security",
+              "control_id": "AI-1",
+              "cross_references": [],
+              "expected_evidence": "Inventory of AI tools in active use across the organization, AI acceptable use policy document, Shadow IT or CASB report showing detected AI tool usage"
+            },
+            {
+              "question_id": "AI-1-Q3",
+              "question_text": "Is there visibility into what AI tools are being used, including tools adopted without IT approval?",
+              "question_type": "free_text",
+              "framework_name": "MCD Market Assessment Framework",
+              "framework_key": "mcd-market-assessment",
+              "domain_id": "AI",
+              "domain_name": "AI Security",
+              "control_id": "AI-1",
+              "cross_references": [],
+              "expected_evidence": "Inventory of AI tools in active use across the organization, AI acceptable use policy document, Shadow IT or CASB report showing detected AI tool usage"
+            }
+          ],
+          "cross_references": []
+        },
+        {
+          "item_id": "41795727-5b3e-55d2-bf7f-f19b056af61b",
+          "question_id": "41795727-5b3e-55d2-bf7f-f19b056af61b",
+          "question_text": "Is there a review and approval process for AI tools before they are used with company data?",
+          "question_type": "merged",
+          "answer_formats": [
+            "free_text"
+          ],
+          "framework_name": "MCD Market Assessment Framework",
+          "framework_key": "mcd-market-assessment",
+          "domain_id": "AI",
+          "domain_name": "AI Security",
+          "control_id": "AI-2",
+          "control_statement": "Employees are trained on AI data risks. AI tools go through a review and approval process before use with company data. AI outputs are reviewed before use in decisions or external communications. A designated owner is responsible for AI governance.",
+          "expected_evidence": "AI tool approval or review records showing what has been assessed before use, AI tool review and approval workflow documentation, AI governance ownership documentation or charter",
+          "maturity_level": "Critical Gap",
+          "merge_reason": "Merged by control fallback because LLM output was unavailable or invalid.",
+          "source_item_ids": [
+            "6528f91f-33e8-5cd6-b5de-7a1bd0abdf34",
+            "384678d6-ea94-5248-99e3-3d069870559d",
+            "c2f5fab7-6efd-5b23-a793-ee507b4a3a62"
+          ],
+          "source_questions": [
+            {
+              "question_id": "AI-2-Q1",
+              "question_text": "Are employees trained on the risks of entering sensitive or confidential data into AI tools?",
+              "question_type": "free_text",
+              "framework_name": "MCD Market Assessment Framework",
+              "framework_key": "mcd-market-assessment",
+              "domain_id": "AI",
+              "domain_name": "AI Security",
+              "control_id": "AI-2",
+              "cross_references": [],
+              "expected_evidence": "AI tool approval or review records showing what has been assessed before use, AI tool review and approval workflow documentation, AI governance ownership documentation or charter"
+            },
+            {
+              "question_id": "AI-2-Q2",
+              "question_text": "Is there a review and approval process for AI tools before they are used with company data?",
+              "question_type": "free_text",
+              "framework_name": "MCD Market Assessment Framework",
+              "framework_key": "mcd-market-assessment",
+              "domain_id": "AI",
+              "domain_name": "AI Security",
+              "control_id": "AI-2",
+              "cross_references": [],
+              "expected_evidence": "AI tool approval or review records showing what has been assessed before use, AI tool review and approval workflow documentation, AI governance ownership documentation or charter"
+            },
+            {
+              "question_id": "AI-2-Q3",
+              "question_text": "Is there a designated owner or function responsible for AI governance and risk?",
+              "question_type": "free_text",
+              "framework_name": "MCD Market Assessment Framework",
+              "framework_key": "mcd-market-assessment",
+              "domain_id": "AI",
+              "domain_name": "AI Security",
+              "control_id": "AI-2",
+              "cross_references": [],
+              "expected_evidence": "AI tool approval or review records showing what has been assessed before use, AI tool review and approval workflow documentation, AI governance ownership documentation or charter"
+            }
+          ],
+          "cross_references": []
+        }
+      ],
+      "sub_topics": [
+        {
+          "sub_topic": "AI Security",
+          "control_ids": [
+            "AI-1",
+            "AI-2"
+          ],
+          "part1_question": {
+            "question_id": "f47ac10b-ee9e-43e4-9f9e-372f5b9e5e2a",
+            "question_text": "Is AI governance framework in place?",
+            "question_type": "yes_no_with_detail",
+            "response_options": "Yes / No / Partial",
+            "detail_prompt": "If yes or partial, specify the framework or policy in use."
+          },
+          "questions": [
+            {
+              "question_id": "4b6f3f4a-2c9f-4123-81a5-6f4d5e6f7a8b",
+              "text": "How are AI tool usage and risks communicated to employees?",
+              "help_text": "Look for training records or awareness campaigns",
+              "question_type": "FREE_TEXT",
+              "weight": 4,
+              "maturity_level": 4,
+              "expected_evidence_types": [
+                "AI_acceptable_use_policy",
+                "employee_training_records"
+              ]
+            },
+            {
+              "question_id": "1a2b3c4d-5e6f-7g8h-9i0j-1k2l3m4n5o",
+              "text": "What process triggers AI tool review and approval?",
+              "help_text": "Check for workflow documentation or approval records",
+              "question_type": "FREE_TEXT",
+              "weight": 5,
+              "maturity_level": 5,
+              "expected_evidence_types": [
+                "AI_tool_review_records",
+                "approval_workflow_documentation"
+              ]
+            },
+            {
+              "question_id": "6f5d4e3c-2b1a-9c8d-7f6e-5d4c3b2a1",
+              "text": "How often are AI outputs reviewed for accuracy and reliability?",
+              "help_text": "Check for review records or audit trails",
+              "question_type": "SCALE_1_5",
+              "choices": [
+                "Daily",
+                "Weekly",
+                "Monthly",
+                "Quarterly"
+              ],
+              "weight": 4,
+              "maturity_level": 4,
+              "expected_evidence_types": [
+                "AI_output_review_records",
+                "audit_trails"
+              ]
+            },
+            {
+              "question_id": "8d7f6e5c-4b3a-2c1d-9f8e-7g6h5j4k",
+              "text": "Who is responsible for AI governance and ownership?",
+              "help_text": "Check for governance documentation or charter",
+              "question_type": "FREE_TEXT",
+              "weight": 5,
+              "maturity_level": 5,
+              "expected_evidence_types": [
+                "AI_governance_documentation",
+                "ownership_charter"
+              ]
+            }
+          ],
+          "maturity_guide": {
+            "mature": "AI security is fully integrated into the organization's overall security framework, with clear policies, procedures, and governance in place.",
+            "partial": "AI security is partially implemented, with some policies and procedures in place, but with gaps in governance, training, or review processes.",
+            "critical_gap": "The absence of AI security governance and oversight poses significant risks to the organization, including data breaches, reputational damage, and non-compliance with regulations."
+          },
+          "evidence_to_request": [
+            "Inventory of AI tools in active use",
+            "AI acceptable use policy document",
+            "AI tool approval or review records",
+            "AI governance ownership documentation or charter",
+            "Shadow IT or CASB report showing detected AI tool usage"
+          ],
+          "red_flags": [
+            {
+              "critical_gap": "Lack of AI governance framework and oversight",
+              "recommended_action": "Establish a comprehensive AI governance framework, including policies, procedures, and ownership"
+            },
+            {
+              "critical_gap": "Insufficient training on AI data risks",
+              "recommended_action": "Develop and implement a training program for employees on AI data risks and security best practices"
+            },
+            {
+              "critical_gap": "Inadequate review and approval process for AI tools",
+              "recommended_action": "Establish a formal review and approval process for AI tools, including risk assessments and security evaluations"
+            }
+          ]
+        }
+      ],
+      "evidence_to_request": [
+        "Inventory of AI tools in active use",
+        "AI acceptable use policy document",
+        "AI tool approval or review records",
+        "AI governance ownership documentation or charter",
+        "Shadow IT or CASB report showing detected AI tool usage"
+      ],
+      "red_flags": [
+        {
+          "critical_gap": "Lack of AI governance framework and oversight",
+          "recommended_action": "Establish a comprehensive AI governance framework, including policies, procedures, and ownership"
+        },
+        {
+          "critical_gap": "Insufficient training on AI data risks",
+          "recommended_action": "Develop and implement a training program for employees on AI data risks and security best practices"
+        },
+        {
+          "critical_gap": "Inadequate review and approval process for AI tools",
+          "recommended_action": "Establish a formal review and approval process for AI tools, including risk assessments and security evaluations"
+        }
+      ],
+      "maturity_guide": {
+        "mature": "AI security is fully integrated into the organization's overall security framework, with clear policies, procedures, and governance in place.",
+        "partial": "AI security is partially implemented, with some policies and procedures in place, but with gaps in governance, training, or review processes.",
+        "critical_gap": "The absence of AI security governance and oversight poses significant risks to the organization, including data breaches, reputational damage, and non-compliance with regulations."
+      }
+    }
+  ],
+  "questions": [
+    {
+      "question_id": "36794720-dd08-5e39-914b-e894007ed4ab",
+      "question_text": "Is the organization implementing and operating the control: Establish and Maintain a Vulnerability Management Process: Establish and maintain a documented vulnerability management process for enterprise assets. Review and update documentation annually, or when significant enterprise changes occur that could impact this Safeguard?",
+      "question_type": "yes_no",
+      "framework_name": "CIS Controls v8.1.2",
+      "framework_key": "cis-controls-v8-1-2",
+      "domain_id": "7",
+      "domain_name": "Continuous Vulnerability Management",
+      "control_id": "7.1",
+      "cross_references": [
+        {
+          "other_framework_id": "nist-csf-2-0",
+          "other_control_id": "ID.RA-01",
+          "relationship": "Superset",
+          "description": "Vulnerabilities in assets are identified, validated, and recorded"
+        }
+      ],
+      "expected_evidence": "role_matrix, org_chart, responsibility_assignment"
+    },
+    {
+      "question_id": "358ed7a6-f33a-5135-9b41-0feaf5351d1f",
+      "question_text": "Upload evidence such as role_matrix, org_chart, responsibility_assignment that demonstrates: Establish and Maintain a Vulnerability Management Process: Establish and maintain a documented vulnerability management process for enterprise assets. Review and update documentation annually, or when significant enterprise changes occur that could impact this Safeguard.",
+      "question_type": "evidence_upload",
+      "framework_name": "CIS Controls v8.1.2",
+      "framework_key": "cis-controls-v8-1-2",
+      "domain_id": "7",
+      "domain_name": "Continuous Vulnerability Management",
+      "control_id": "7.1",
+      "cross_references": [
+        {
+          "other_framework_id": "nist-csf-2-0",
+          "other_control_id": "ID.RA-01",
+          "relationship": "Superset",
+          "description": "Vulnerabilities in assets are identified, validated, and recorded"
+        }
+      ],
+      "expected_evidence": "role_matrix, org_chart, responsibility_assignment"
+    },
+    {
+      "question_id": "3f883874-e32a-5eae-87b8-e8bfde141dc1",
+      "question_text": "Is the organization implementing and operating the control: Establish and Maintain a Remediation Process: Establish and maintain a risk-based remediation strategy documented in a remediation process, with monthly, or more frequent, reviews?",
+      "question_type": "yes_no",
+      "framework_name": "CIS Controls v8.1.2",
+      "framework_key": "cis-controls-v8-1-2",
+      "domain_id": "7",
+      "domain_name": "Continuous Vulnerability Management",
+      "control_id": "7.2",
+      "cross_references": [
+        {
+          "other_framework_id": "nist-csf-2-0",
+          "other_control_id": "ID.RA-08",
+          "relationship": "Superset",
+          "description": "Processes for receiving, analyzing, and responding to vulnerability disclosures are established"
+        },
+        {
+          "other_framework_id": "nist-csf-2-0",
+          "other_control_id": "ID.IM-02",
+          "relationship": "Superset",
+          "description": "Improvements are identified from security tests and exercises, including those done in coordination with suppliers and relevant third parties"
+        }
+      ],
+      "expected_evidence": "facility_record, access_log, maintenance_log"
+    },
+    {
+      "question_id": "0c7044a2-fc26-5d98-b624-28378b8a6a17",
+      "question_text": "Upload evidence such as facility_record, access_log, maintenance_log that demonstrates: Establish and Maintain a Remediation Process: Establish and maintain a risk-based remediation strategy documented in a remediation process, with monthly, or more frequent, reviews.",
+      "question_type": "evidence_upload",
+      "framework_name": "CIS Controls v8.1.2",
+      "framework_key": "cis-controls-v8-1-2",
+      "domain_id": "7",
+      "domain_name": "Continuous Vulnerability Management",
+      "control_id": "7.2",
+      "cross_references": [
+        {
+          "other_framework_id": "nist-csf-2-0",
+          "other_control_id": "ID.RA-08",
+          "relationship": "Superset",
+          "description": "Processes for receiving, analyzing, and responding to vulnerability disclosures are established"
+        },
+        {
+          "other_framework_id": "nist-csf-2-0",
+          "other_control_id": "ID.IM-02",
+          "relationship": "Superset",
+          "description": "Improvements are identified from security tests and exercises, including those done in coordination with suppliers and relevant third parties"
+        }
+      ],
+      "expected_evidence": "facility_record, access_log, maintenance_log"
+    },
+    {
+      "question_id": "eb65b0b8-70a1-5b97-b182-e6660b2b824c",
+      "question_text": "Is the organization implementing and operating the control: Perform Automated Operating System Patch Management: Perform operating system updates on enterprise assets through automated patch management on a monthly, or more frequent, basis?",
+      "question_type": "yes_no",
+      "framework_name": "CIS Controls v8.1.2",
+      "framework_key": "cis-controls-v8-1-2",
+      "domain_id": "7",
+      "domain_name": "Continuous Vulnerability Management",
+      "control_id": "7.3",
+      "cross_references": [],
+      "expected_evidence": "role_matrix, org_chart, responsibility_assignment"
+    },
+    {
+      "question_id": "0111c247-4df0-53a4-bf55-c6cb584d86bf",
+      "question_text": "Upload evidence such as role_matrix, org_chart, responsibility_assignment that demonstrates: Perform Automated Operating System Patch Management: Perform operating system updates on enterprise assets through automated patch management on a monthly, or more frequent, basis.",
+      "question_type": "evidence_upload",
+      "framework_name": "CIS Controls v8.1.2",
+      "framework_key": "cis-controls-v8-1-2",
+      "domain_id": "7",
+      "domain_name": "Continuous Vulnerability Management",
+      "control_id": "7.3",
+      "cross_references": [],
+      "expected_evidence": "role_matrix, org_chart, responsibility_assignment"
+    },
+    {
+      "question_id": "ab586bf3-a216-5e1b-90ff-29ad6890a710",
+      "question_text": "Is the organization implementing and operating the control: Perform Automated Application Patch Management: Perform application updates on enterprise assets through automated patch management on a monthly, or more frequent, basis?",
+      "question_type": "yes_no",
+      "framework_name": "CIS Controls v8.1.2",
+      "framework_key": "cis-controls-v8-1-2",
+      "domain_id": "7",
+      "domain_name": "Continuous Vulnerability Management",
+      "control_id": "7.4",
+      "cross_references": [],
+      "expected_evidence": "role_matrix, org_chart, responsibility_assignment"
+    },
+    {
+      "question_id": "05645169-e7ab-50b7-8914-e4064fbcbb98",
+      "question_text": "Upload evidence such as role_matrix, org_chart, responsibility_assignment that demonstrates: Perform Automated Application Patch Management: Perform application updates on enterprise assets through automated patch management on a monthly, or more frequent, basis.",
+      "question_type": "evidence_upload",
+      "framework_name": "CIS Controls v8.1.2",
+      "framework_key": "cis-controls-v8-1-2",
+      "domain_id": "7",
+      "domain_name": "Continuous Vulnerability Management",
+      "control_id": "7.4",
+      "cross_references": [],
+      "expected_evidence": "role_matrix, org_chart, responsibility_assignment"
+    },
+    {
+      "question_id": "63cfd78b-bbe0-5bac-b6af-f963517a33d3",
+      "question_text": "Is the organization implementing and operating the control: Perform Automated Vulnerability Scans of Internal Enterprise Assets: Perform automated vulnerability scans of internal enterprise assets on a quarterly, or more frequent, basis. Conduct both authenticated and unauthenticated scans?",
+      "question_type": "yes_no",
+      "framework_name": "CIS Controls v8.1.2",
+      "framework_key": "cis-controls-v8-1-2",
+      "domain_id": "7",
+      "domain_name": "Continuous Vulnerability Management",
+      "control_id": "7.5",
+      "cross_references": [],
+      "expected_evidence": "inventory, asset_register, owner_register"
+    },
+    {
+      "question_id": "063efe2a-7812-5e47-9099-913001017970",
+      "question_text": "Upload evidence such as inventory, asset_register, owner_register that demonstrates: Perform Automated Vulnerability Scans of Internal Enterprise Assets: Perform automated vulnerability scans of internal enterprise assets on a quarterly, or more frequent, basis. Conduct both authenticated and unauthenticated scans.",
+      "question_type": "evidence_upload",
+      "framework_name": "CIS Controls v8.1.2",
+      "framework_key": "cis-controls-v8-1-2",
+      "domain_id": "7",
+      "domain_name": "Continuous Vulnerability Management",
+      "control_id": "7.5",
+      "cross_references": [],
+      "expected_evidence": "inventory, asset_register, owner_register"
+    },
+    {
+      "question_id": "d5762ead-2dff-5fb4-ae7d-29d6a70e51a3",
+      "question_text": "Is the organization implementing and operating the control: Perform Automated Vulnerability Scans of Externally-Exposed Enterprise Assets: Perform automated vulnerability scans of externally-exposed enterprise assets. Perform scans on a monthly, or more frequent, basis?",
+      "question_type": "yes_no",
+      "framework_name": "CIS Controls v8.1.2",
+      "framework_key": "cis-controls-v8-1-2",
+      "domain_id": "7",
+      "domain_name": "Continuous Vulnerability Management",
+      "control_id": "7.6",
+      "cross_references": [],
+      "expected_evidence": "inventory, asset_register, owner_register"
+    },
+    {
+      "question_id": "2a9fda87-f292-5963-93ca-8df2ea291d5e",
+      "question_text": "Upload evidence such as inventory, asset_register, owner_register that demonstrates: Perform Automated Vulnerability Scans of Externally-Exposed Enterprise Assets: Perform automated vulnerability scans of externally-exposed enterprise assets. Perform scans on a monthly, or more frequent, basis.",
+      "question_type": "evidence_upload",
+      "framework_name": "CIS Controls v8.1.2",
+      "framework_key": "cis-controls-v8-1-2",
+      "domain_id": "7",
+      "domain_name": "Continuous Vulnerability Management",
+      "control_id": "7.6",
+      "cross_references": [],
+      "expected_evidence": "inventory, asset_register, owner_register"
+    },
+    {
+      "question_id": "e448681e-ff76-5947-bb91-7c590e4fdd67",
+      "question_text": "Is the organization implementing and operating the control: Remediate Detected Vulnerabilities: Remediate detected vulnerabilities in software through processes and tooling on a monthly, or more frequent, basis, based on the remediation process?",
+      "question_type": "yes_no",
+      "framework_name": "CIS Controls v8.1.2",
+      "framework_key": "cis-controls-v8-1-2",
+      "domain_id": "7",
+      "domain_name": "Continuous Vulnerability Management",
+      "control_id": "7.7",
+      "cross_references": [],
+      "expected_evidence": "project_record, change_ticket, engineering_standard"
+    },
+    {
+      "question_id": "861f0b30-a84d-5507-a879-182edf5b5b27",
+      "question_text": "Upload evidence such as project_record, change_ticket, engineering_standard that demonstrates: Remediate Detected Vulnerabilities: Remediate detected vulnerabilities in software through processes and tooling on a monthly, or more frequent, basis, based on the remediation process.",
+      "question_type": "evidence_upload",
+      "framework_name": "CIS Controls v8.1.2",
+      "framework_key": "cis-controls-v8-1-2",
+      "domain_id": "7",
+      "domain_name": "Continuous Vulnerability Management",
+      "control_id": "7.7",
+      "cross_references": [],
+      "expected_evidence": "project_record, change_ticket, engineering_standard"
+    },
+    {
+      "question_id": "AI-1-Q1",
+      "question_text": "Is AI or generative AI tooling in active use across the organization? Which tools (Microsoft Copilot, ChatGPT, other)?",
+      "question_type": "free_text",
+      "framework_name": "MCD Market Assessment Framework",
+      "framework_key": "mcd-market-assessment",
+      "domain_id": "AI",
+      "domain_name": "AI Security",
+      "control_id": "AI-1",
+      "cross_references": [],
+      "expected_evidence": "Inventory of AI tools in active use across the organization, AI acceptable use policy document, Shadow IT or CASB report showing detected AI tool usage"
+    },
+    {
+      "question_id": "AI-1-Q2",
+      "question_text": "Is there a formal AI acceptable use policy in place and followed today?",
+      "question_type": "free_text",
+      "framework_name": "MCD Market Assessment Framework",
+      "framework_key": "mcd-market-assessment",
+      "domain_id": "AI",
+      "domain_name": "AI Security",
+      "control_id": "AI-1",
+      "cross_references": [],
+      "expected_evidence": "Inventory of AI tools in active use across the organization, AI acceptable use policy document, Shadow IT or CASB report showing detected AI tool usage"
+    },
+    {
+      "question_id": "AI-1-Q3",
+      "question_text": "Is there visibility into what AI tools are being used, including tools adopted without IT approval?",
+      "question_type": "free_text",
+      "framework_name": "MCD Market Assessment Framework",
+      "framework_key": "mcd-market-assessment",
+      "domain_id": "AI",
+      "domain_name": "AI Security",
+      "control_id": "AI-1",
+      "cross_references": [],
+      "expected_evidence": "Inventory of AI tools in active use across the organization, AI acceptable use policy document, Shadow IT or CASB report showing detected AI tool usage"
+    },
+    {
+      "question_id": "AI-2-Q1",
+      "question_text": "Are employees trained on the risks of entering sensitive or confidential data into AI tools?",
+      "question_type": "free_text",
+      "framework_name": "MCD Market Assessment Framework",
+      "framework_key": "mcd-market-assessment",
+      "domain_id": "AI",
+      "domain_name": "AI Security",
+      "control_id": "AI-2",
+      "cross_references": [],
+      "expected_evidence": "AI tool approval or review records showing what has been assessed before use, AI tool review and approval workflow documentation, AI governance ownership documentation or charter"
+    },
+    {
+      "question_id": "AI-2-Q2",
+      "question_text": "Is there a review and approval process for AI tools before they are used with company data?",
+      "question_type": "free_text",
+      "framework_name": "MCD Market Assessment Framework",
+      "framework_key": "mcd-market-assessment",
+      "domain_id": "AI",
+      "domain_name": "AI Security",
+      "control_id": "AI-2",
+      "cross_references": [],
+      "expected_evidence": "AI tool approval or review records showing what has been assessed before use, AI tool review and approval workflow documentation, AI governance ownership documentation or charter"
+    },
+    {
+      "question_id": "AI-2-Q3",
+      "question_text": "Is there a designated owner or function responsible for AI governance and risk?",
+      "question_type": "free_text",
+      "framework_name": "MCD Market Assessment Framework",
+      "framework_key": "mcd-market-assessment",
+      "domain_id": "AI",
+      "domain_name": "AI Security",
+      "control_id": "AI-2",
+      "cross_references": [],
+      "expected_evidence": "AI tool approval or review records showing what has been assessed before use, AI tool review and approval workflow documentation, AI governance ownership documentation or charter"
+    }
+  ],
+  "part3_tracker": [
+    {
+      "framework": "CIS Controls v8.1.2",
+      "domain": "Continuous Vulnerability Management",
+      "sub_topic": "Continuous Vulnerability Management",
+      "control_id": "7.1, 7.2, 7.3, 7.4, 7.5, 7.6, 7.7",
+      "evidence_request": "role_matrix",
+      "answer_format": "status_text",
+      "status": ""
+    },
+    {
+      "framework": "CIS Controls v8.1.2",
+      "domain": "Continuous Vulnerability Management",
+      "sub_topic": "Continuous Vulnerability Management",
+      "control_id": "7.1, 7.2, 7.3, 7.4, 7.5, 7.6, 7.7",
+      "evidence_request": "org_chart",
+      "answer_format": "status_text",
+      "status": ""
+    },
+    {
+      "framework": "CIS Controls v8.1.2",
+      "domain": "Continuous Vulnerability Management",
+      "sub_topic": "Continuous Vulnerability Management",
+      "control_id": "7.1, 7.2, 7.3, 7.4, 7.5, 7.6, 7.7",
+      "evidence_request": "inventory",
+      "answer_format": "status_text",
+      "status": ""
+    },
+    {
+      "framework": "CIS Controls v8.1.2",
+      "domain": "Continuous Vulnerability Management",
+      "sub_topic": "Continuous Vulnerability Management",
+      "control_id": "7.1, 7.2, 7.3, 7.4, 7.5, 7.6, 7.7",
+      "evidence_request": "asset_register",
+      "answer_format": "status_text",
+      "status": ""
+    },
+    {
+      "framework": "CIS Controls v8.1.2",
+      "domain": "Continuous Vulnerability Management",
+      "sub_topic": "Continuous Vulnerability Management",
+      "control_id": "7.1, 7.2, 7.3, 7.4, 7.5, 7.6, 7.7",
+      "evidence_request": "project_record",
+      "answer_format": "status_text",
+      "status": ""
+    },
+    {
+      "framework": "CIS Controls v8.1.2",
+      "domain": "Continuous Vulnerability Management",
+      "sub_topic": "Continuous Vulnerability Management",
+      "control_id": "7.1, 7.2, 7.3, 7.4, 7.5, 7.6, 7.7",
+      "evidence_request": "change_ticket",
+      "answer_format": "status_text",
+      "status": ""
+    },
+    {
+      "framework": "MCD Market Assessment Framework",
+      "domain": "AI Security",
+      "sub_topic": "AI Security",
+      "control_id": "AI-1, AI-2",
+      "evidence_request": "Inventory of AI tools in active use",
+      "answer_format": "status_text",
+      "status": ""
+    },
+    {
+      "framework": "MCD Market Assessment Framework",
+      "domain": "AI Security",
+      "sub_topic": "AI Security",
+      "control_id": "AI-1, AI-2",
+      "evidence_request": "AI acceptable use policy document",
+      "answer_format": "status_text",
+      "status": ""
+    },
+    {
+      "framework": "MCD Market Assessment Framework",
+      "domain": "AI Security",
+      "sub_topic": "AI Security",
+      "control_id": "AI-1, AI-2",
+      "evidence_request": "AI tool approval or review records",
+      "answer_format": "status_text",
+      "status": ""
+    },
+    {
+      "framework": "MCD Market Assessment Framework",
+      "domain": "AI Security",
+      "sub_topic": "AI Security",
+      "control_id": "AI-1, AI-2",
+      "evidence_request": "AI governance ownership documentation or charter",
+      "answer_format": "status_text",
+      "status": ""
+    },
+    {
+      "framework": "MCD Market Assessment Framework",
+      "domain": "AI Security",
+      "sub_topic": "AI Security",
+      "control_id": "AI-1, AI-2",
+      "evidence_request": "Shadow IT or CASB report showing detected AI tool usage",
+      "answer_format": "status_text",
+      "status": ""
+    }
+  ],
+  "red_flags_by_domain": [
+    {
+      "domain_name": "Continuous Vulnerability Management",
+      "framework_name": "CIS Controls v8.1.2",
+      "red_flags": [
+        {
+          "critical_gap": "No vulnerability management process is in place, leaving the organization exposed to significant risk.",
+          "recommended_action": "Establish a vulnerability management process, including regular scans, prioritized remediation, and effective metrics to measure success."
+        },
+        {
+          "critical_gap": "Vulnerability scans are not performed regularly, or results are not reviewed and prioritized.",
+          "recommended_action": "Implement regular vulnerability scans, and establish a process for reviewing and prioritizing scan results."
+        },
+        {
+          "critical_gap": "Remediation efforts are not prioritized, or are not effective in addressing vulnerabilities.",
+          "recommended_action": "Establish a prioritized remediation process, and ensure that remediation efforts are effective in addressing vulnerabilities."
+        }
+      ]
+    },
+    {
+      "domain_name": "AI Security",
+      "framework_name": "MCD Market Assessment Framework",
+      "red_flags": [
+        {
+          "critical_gap": "Lack of AI governance framework and oversight",
+          "recommended_action": "Establish a comprehensive AI governance framework, including policies, procedures, and ownership"
+        },
+        {
+          "critical_gap": "Insufficient training on AI data risks",
+          "recommended_action": "Develop and implement a training program for employees on AI data risks and security best practices"
+        },
+        {
+          "critical_gap": "Inadequate review and approval process for AI tools",
+          "recommended_action": "Establish a formal review and approval process for AI tools, including risk assessments and security evaluations"
+        }
+      ]
+    }
+  ],
+  "selected_domain_keys": [
+    "cis-controls-v8-1-2:7",
+    "mcd-market-assessment:AI"
+  ],
+  "ingested_at": "2026-06-12T08:46:54.796445+00:00",
+  "maturity_levels": [
+    {
+      "level": 1,
+      "code": "INITIAL",
+      "name": "Initial",
+      "description": "Ad hoc and undocumented."
+    },
+    {
+      "level": 2,
+      "code": "REPEATABLE",
+      "name": "Repeatable",
+      "description": "Basic processes established and repeated."
+    },
+    {
+      "level": 3,
+      "code": "DEFINED",
+      "name": "Defined",
+      "description": "Processes documented, standardised, and communicated."
+    },
+    {
+      "level": 4,
+      "code": "MANAGED",
+      "name": "Managed",
+      "description": "Processes measured and controlled with quantitative data."
+    },
+    {
+      "level": 5,
+      "code": "OPTIMIZING",
+      "name": "Optimizing",
+      "description": "Continuous improvement driven by metrics and feedback."
+    }
+  ],
+  "domains": [
+    {
+      "code": "7",
+      "name": "Continuous Vulnerability Management",
+      "categories": [
+        {
+          "code": "7.1",
+          "name": "7.1",
+          "controls": [
+            {
+              "code": "7.1",
+              "statement": "Establish and Maintain a Vulnerability Management Process: Establish and maintain a documented vulnerability management process for enterprise assets. Review and update documentation annually, or when significant enterprise changes occur that could impact this Safeguard.",
+              "cross_refs": [
+                {
+                  "framework": "nist-csf-2-0",
+                  "version": "",
+                  "code": "ID.RA-01"
+                }
+              ],
+              "questions": [
+                {
+                  "question_id": "4b6c10b-58cc-4372-a567-0e02b2c3d480",
+                  "text": "How often are vulnerability scans performed?",
+                  "question_type": "SCALE_1_5",
+                  "weight": 4,
+                  "maturity_level": 4,
+                  "help_text": "Frequency of scans",
+                  "choices": []
+                },
+                {
+                  "question_id": "9f7ac10b-58cc-4372-a567-0e02b2c3d481",
+                  "text": "What is the process for remediating detected vulnerabilities?",
+                  "question_type": "FREE_TEXT",
+                  "weight": 5,
+                  "maturity_level": 5,
+                  "help_text": "Remediation steps",
+                  "choices": []
+                },
+                {
+                  "question_id": "1a3c10b-58cc-4372-a567-0e02b2c3d482",
+                  "text": "Who is responsible for performing vulnerability scans?",
+                  "question_type": "FREE_TEXT",
+                  "weight": 3,
+                  "maturity_level": 3,
+                  "help_text": "Scan responsibility",
+                  "choices": []
+                },
+                {
+                  "question_id": "6d5c10b-58cc-4372-a567-0e02b2c3d483",
+                  "text": "What tools are used for automated patch management?",
+                  "question_type": "FREE_TEXT",
+                  "weight": 4,
+                  "maturity_level": 4,
+                  "help_text": "Patch management tools",
+                  "choices": []
+                },
+                {
+                  "question_id": "8b2c10b-58cc-4372-a567-0e02b2c3d484",
+                  "text": "How are vulnerability scan results reviewed and prioritized?",
+                  "question_type": "FREE_TEXT",
+                  "weight": 5,
+                  "maturity_level": 5,
+                  "help_text": "Scan result review",
+                  "choices": []
+                },
+                {
+                  "question_id": "3e1c10b-58cc-4372-a567-0e02b2c3d485",
+                  "text": "What is the frequency of reviewing and updating vulnerability management documentation?",
+                  "question_type": "SCALE_1_5",
+                  "weight": 3,
+                  "maturity_level": 3,
+                  "help_text": "Documentation review frequency",
+                  "choices": []
+                },
+                {
+                  "question_id": "7c4c10b-58cc-4372-a567-0e02b2c3d486",
+                  "text": "How are exceptions to the remediation process handled?",
+                  "question_type": "FREE_TEXT",
+                  "weight": 4,
+                  "maturity_level": 4,
+                  "help_text": "Remediation exceptions",
+                  "choices": []
+                },
+                {
+                  "question_id": "2f9c10b-58cc-4372-a567-0e02b2c3d487",
+                  "text": "What metrics are used to measure the effectiveness of vulnerability management?",
+                  "question_type": "FREE_TEXT",
+                  "weight": 5,
+                  "maturity_level": 5,
+                  "help_text": "Effectiveness metrics",
+                  "choices": []
+                },
+                {
+                  "question_id": "5a6c10b-58cc-4372-a567-0e02b2c3d488",
+                  "text": "Are vulnerability scans performed on all enterprise assets?",
+                  "question_type": "YES_NO",
+                  "weight": 4,
+                  "maturity_level": 4,
+                  "help_text": "Scan coverage",
+                  "choices": []
+                },
+                {
+                  "question_id": "4c3c10b-58cc-4372-a567-0e02b2c3d489",
+                  "text": "What is the process for addressing vulnerabilities that cannot be remediated?",
+                  "question_type": "FREE_TEXT",
+                  "weight": 5,
+                  "maturity_level": 5,
+                  "help_text": "Unremediated vulnerabilities",
+                  "choices": []
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "code": "7.2",
+          "name": "7.2",
+          "controls": [
+            {
+              "code": "7.2",
+              "statement": "Establish and Maintain a Remediation Process: Establish and maintain a risk-based remediation strategy documented in a remediation process, with monthly, or more frequent, reviews.",
+              "cross_refs": [
+                {
+                  "framework": "nist-csf-2-0",
+                  "version": "",
+                  "code": "ID.RA-08"
+                },
+                {
+                  "framework": "nist-csf-2-0",
+                  "version": "",
+                  "code": "ID.IM-02"
+                }
+              ],
+              "questions": [
+                {
+                  "question_id": "4b6c10b-58cc-4372-a567-0e02b2c3d480",
+                  "text": "How often are vulnerability scans performed?",
+                  "question_type": "SCALE_1_5",
+                  "weight": 4,
+                  "maturity_level": 4,
+                  "help_text": "Frequency of scans",
+                  "choices": []
+                },
+                {
+                  "question_id": "9f7ac10b-58cc-4372-a567-0e02b2c3d481",
+                  "text": "What is the process for remediating detected vulnerabilities?",
+                  "question_type": "FREE_TEXT",
+                  "weight": 5,
+                  "maturity_level": 5,
+                  "help_text": "Remediation steps",
+                  "choices": []
+                },
+                {
+                  "question_id": "1a3c10b-58cc-4372-a567-0e02b2c3d482",
+                  "text": "Who is responsible for performing vulnerability scans?",
+                  "question_type": "FREE_TEXT",
+                  "weight": 3,
+                  "maturity_level": 3,
+                  "help_text": "Scan responsibility",
+                  "choices": []
+                },
+                {
+                  "question_id": "6d5c10b-58cc-4372-a567-0e02b2c3d483",
+                  "text": "What tools are used for automated patch management?",
+                  "question_type": "FREE_TEXT",
+                  "weight": 4,
+                  "maturity_level": 4,
+                  "help_text": "Patch management tools",
+                  "choices": []
+                },
+                {
+                  "question_id": "8b2c10b-58cc-4372-a567-0e02b2c3d484",
+                  "text": "How are vulnerability scan results reviewed and prioritized?",
+                  "question_type": "FREE_TEXT",
+                  "weight": 5,
+                  "maturity_level": 5,
+                  "help_text": "Scan result review",
+                  "choices": []
+                },
+                {
+                  "question_id": "3e1c10b-58cc-4372-a567-0e02b2c3d485",
+                  "text": "What is the frequency of reviewing and updating vulnerability management documentation?",
+                  "question_type": "SCALE_1_5",
+                  "weight": 3,
+                  "maturity_level": 3,
+                  "help_text": "Documentation review frequency",
+                  "choices": []
+                },
+                {
+                  "question_id": "7c4c10b-58cc-4372-a567-0e02b2c3d486",
+                  "text": "How are exceptions to the remediation process handled?",
+                  "question_type": "FREE_TEXT",
+                  "weight": 4,
+                  "maturity_level": 4,
+                  "help_text": "Remediation exceptions",
+                  "choices": []
+                },
+                {
+                  "question_id": "2f9c10b-58cc-4372-a567-0e02b2c3d487",
+                  "text": "What metrics are used to measure the effectiveness of vulnerability management?",
+                  "question_type": "FREE_TEXT",
+                  "weight": 5,
+                  "maturity_level": 5,
+                  "help_text": "Effectiveness metrics",
+                  "choices": []
+                },
+                {
+                  "question_id": "5a6c10b-58cc-4372-a567-0e02b2c3d488",
+                  "text": "Are vulnerability scans performed on all enterprise assets?",
+                  "question_type": "YES_NO",
+                  "weight": 4,
+                  "maturity_level": 4,
+                  "help_text": "Scan coverage",
+                  "choices": []
+                },
+                {
+                  "question_id": "4c3c10b-58cc-4372-a567-0e02b2c3d489",
+                  "text": "What is the process for addressing vulnerabilities that cannot be remediated?",
+                  "question_type": "FREE_TEXT",
+                  "weight": 5,
+                  "maturity_level": 5,
+                  "help_text": "Unremediated vulnerabilities",
+                  "choices": []
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "code": "7.3",
+          "name": "7.3",
+          "controls": [
+            {
+              "code": "7.3",
+              "statement": "Perform Automated Operating System Patch Management: Perform operating system updates on enterprise assets through automated patch management on a monthly, or more frequent, basis.",
+              "cross_refs": [],
+              "questions": [
+                {
+                  "question_id": "4b6c10b-58cc-4372-a567-0e02b2c3d480",
+                  "text": "How often are vulnerability scans performed?",
+                  "question_type": "SCALE_1_5",
+                  "weight": 4,
+                  "maturity_level": 4,
+                  "help_text": "Frequency of scans",
+                  "choices": []
+                },
+                {
+                  "question_id": "9f7ac10b-58cc-4372-a567-0e02b2c3d481",
+                  "text": "What is the process for remediating detected vulnerabilities?",
+                  "question_type": "FREE_TEXT",
+                  "weight": 5,
+                  "maturity_level": 5,
+                  "help_text": "Remediation steps",
+                  "choices": []
+                },
+                {
+                  "question_id": "1a3c10b-58cc-4372-a567-0e02b2c3d482",
+                  "text": "Who is responsible for performing vulnerability scans?",
+                  "question_type": "FREE_TEXT",
+                  "weight": 3,
+                  "maturity_level": 3,
+                  "help_text": "Scan responsibility",
+                  "choices": []
+                },
+                {
+                  "question_id": "6d5c10b-58cc-4372-a567-0e02b2c3d483",
+                  "text": "What tools are used for automated patch management?",
+                  "question_type": "FREE_TEXT",
+                  "weight": 4,
+                  "maturity_level": 4,
+                  "help_text": "Patch management tools",
+                  "choices": []
+                },
+                {
+                  "question_id": "8b2c10b-58cc-4372-a567-0e02b2c3d484",
+                  "text": "How are vulnerability scan results reviewed and prioritized?",
+                  "question_type": "FREE_TEXT",
+                  "weight": 5,
+                  "maturity_level": 5,
+                  "help_text": "Scan result review",
+                  "choices": []
+                },
+                {
+                  "question_id": "3e1c10b-58cc-4372-a567-0e02b2c3d485",
+                  "text": "What is the frequency of reviewing and updating vulnerability management documentation?",
+                  "question_type": "SCALE_1_5",
+                  "weight": 3,
+                  "maturity_level": 3,
+                  "help_text": "Documentation review frequency",
+                  "choices": []
+                },
+                {
+                  "question_id": "7c4c10b-58cc-4372-a567-0e02b2c3d486",
+                  "text": "How are exceptions to the remediation process handled?",
+                  "question_type": "FREE_TEXT",
+                  "weight": 4,
+                  "maturity_level": 4,
+                  "help_text": "Remediation exceptions",
+                  "choices": []
+                },
+                {
+                  "question_id": "2f9c10b-58cc-4372-a567-0e02b2c3d487",
+                  "text": "What metrics are used to measure the effectiveness of vulnerability management?",
+                  "question_type": "FREE_TEXT",
+                  "weight": 5,
+                  "maturity_level": 5,
+                  "help_text": "Effectiveness metrics",
+                  "choices": []
+                },
+                {
+                  "question_id": "5a6c10b-58cc-4372-a567-0e02b2c3d488",
+                  "text": "Are vulnerability scans performed on all enterprise assets?",
+                  "question_type": "YES_NO",
+                  "weight": 4,
+                  "maturity_level": 4,
+                  "help_text": "Scan coverage",
+                  "choices": []
+                },
+                {
+                  "question_id": "4c3c10b-58cc-4372-a567-0e02b2c3d489",
+                  "text": "What is the process for addressing vulnerabilities that cannot be remediated?",
+                  "question_type": "FREE_TEXT",
+                  "weight": 5,
+                  "maturity_level": 5,
+                  "help_text": "Unremediated vulnerabilities",
+                  "choices": []
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "code": "7.4",
+          "name": "7.4",
+          "controls": [
+            {
+              "code": "7.4",
+              "statement": "Perform Automated Application Patch Management: Perform application updates on enterprise assets through automated patch management on a monthly, or more frequent, basis.",
+              "cross_refs": [],
+              "questions": [
+                {
+                  "question_id": "4b6c10b-58cc-4372-a567-0e02b2c3d480",
+                  "text": "How often are vulnerability scans performed?",
+                  "question_type": "SCALE_1_5",
+                  "weight": 4,
+                  "maturity_level": 4,
+                  "help_text": "Frequency of scans",
+                  "choices": []
+                },
+                {
+                  "question_id": "9f7ac10b-58cc-4372-a567-0e02b2c3d481",
+                  "text": "What is the process for remediating detected vulnerabilities?",
+                  "question_type": "FREE_TEXT",
+                  "weight": 5,
+                  "maturity_level": 5,
+                  "help_text": "Remediation steps",
+                  "choices": []
+                },
+                {
+                  "question_id": "1a3c10b-58cc-4372-a567-0e02b2c3d482",
+                  "text": "Who is responsible for performing vulnerability scans?",
+                  "question_type": "FREE_TEXT",
+                  "weight": 3,
+                  "maturity_level": 3,
+                  "help_text": "Scan responsibility",
+                  "choices": []
+                },
+                {
+                  "question_id": "6d5c10b-58cc-4372-a567-0e02b2c3d483",
+                  "text": "What tools are used for automated patch management?",
+                  "question_type": "FREE_TEXT",
+                  "weight": 4,
+                  "maturity_level": 4,
+                  "help_text": "Patch management tools",
+                  "choices": []
+                },
+                {
+                  "question_id": "8b2c10b-58cc-4372-a567-0e02b2c3d484",
+                  "text": "How are vulnerability scan results reviewed and prioritized?",
+                  "question_type": "FREE_TEXT",
+                  "weight": 5,
+                  "maturity_level": 5,
+                  "help_text": "Scan result review",
+                  "choices": []
+                },
+                {
+                  "question_id": "3e1c10b-58cc-4372-a567-0e02b2c3d485",
+                  "text": "What is the frequency of reviewing and updating vulnerability management documentation?",
+                  "question_type": "SCALE_1_5",
+                  "weight": 3,
+                  "maturity_level": 3,
+                  "help_text": "Documentation review frequency",
+                  "choices": []
+                },
+                {
+                  "question_id": "7c4c10b-58cc-4372-a567-0e02b2c3d486",
+                  "text": "How are exceptions to the remediation process handled?",
+                  "question_type": "FREE_TEXT",
+                  "weight": 4,
+                  "maturity_level": 4,
+                  "help_text": "Remediation exceptions",
+                  "choices": []
+                },
+                {
+                  "question_id": "2f9c10b-58cc-4372-a567-0e02b2c3d487",
+                  "text": "What metrics are used to measure the effectiveness of vulnerability management?",
+                  "question_type": "FREE_TEXT",
+                  "weight": 5,
+                  "maturity_level": 5,
+                  "help_text": "Effectiveness metrics",
+                  "choices": []
+                },
+                {
+                  "question_id": "5a6c10b-58cc-4372-a567-0e02b2c3d488",
+                  "text": "Are vulnerability scans performed on all enterprise assets?",
+                  "question_type": "YES_NO",
+                  "weight": 4,
+                  "maturity_level": 4,
+                  "help_text": "Scan coverage",
+                  "choices": []
+                },
+                {
+                  "question_id": "4c3c10b-58cc-4372-a567-0e02b2c3d489",
+                  "text": "What is the process for addressing vulnerabilities that cannot be remediated?",
+                  "question_type": "FREE_TEXT",
+                  "weight": 5,
+                  "maturity_level": 5,
+                  "help_text": "Unremediated vulnerabilities",
+                  "choices": []
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "code": "7.5",
+          "name": "7.5",
+          "controls": [
+            {
+              "code": "7.5",
+              "statement": "Perform Automated Vulnerability Scans of Internal Enterprise Assets: Perform automated vulnerability scans of internal enterprise assets on a quarterly, or more frequent, basis. Conduct both authenticated and unauthenticated scans.",
+              "cross_refs": [],
+              "questions": [
+                {
+                  "question_id": "4b6c10b-58cc-4372-a567-0e02b2c3d480",
+                  "text": "How often are vulnerability scans performed?",
+                  "question_type": "SCALE_1_5",
+                  "weight": 4,
+                  "maturity_level": 4,
+                  "help_text": "Frequency of scans",
+                  "choices": []
+                },
+                {
+                  "question_id": "9f7ac10b-58cc-4372-a567-0e02b2c3d481",
+                  "text": "What is the process for remediating detected vulnerabilities?",
+                  "question_type": "FREE_TEXT",
+                  "weight": 5,
+                  "maturity_level": 5,
+                  "help_text": "Remediation steps",
+                  "choices": []
+                },
+                {
+                  "question_id": "1a3c10b-58cc-4372-a567-0e02b2c3d482",
+                  "text": "Who is responsible for performing vulnerability scans?",
+                  "question_type": "FREE_TEXT",
+                  "weight": 3,
+                  "maturity_level": 3,
+                  "help_text": "Scan responsibility",
+                  "choices": []
+                },
+                {
+                  "question_id": "6d5c10b-58cc-4372-a567-0e02b2c3d483",
+                  "text": "What tools are used for automated patch management?",
+                  "question_type": "FREE_TEXT",
+                  "weight": 4,
+                  "maturity_level": 4,
+                  "help_text": "Patch management tools",
+                  "choices": []
+                },
+                {
+                  "question_id": "8b2c10b-58cc-4372-a567-0e02b2c3d484",
+                  "text": "How are vulnerability scan results reviewed and prioritized?",
+                  "question_type": "FREE_TEXT",
+                  "weight": 5,
+                  "maturity_level": 5,
+                  "help_text": "Scan result review",
+                  "choices": []
+                },
+                {
+                  "question_id": "3e1c10b-58cc-4372-a567-0e02b2c3d485",
+                  "text": "What is the frequency of reviewing and updating vulnerability management documentation?",
+                  "question_type": "SCALE_1_5",
+                  "weight": 3,
+                  "maturity_level": 3,
+                  "help_text": "Documentation review frequency",
+                  "choices": []
+                },
+                {
+                  "question_id": "7c4c10b-58cc-4372-a567-0e02b2c3d486",
+                  "text": "How are exceptions to the remediation process handled?",
+                  "question_type": "FREE_TEXT",
+                  "weight": 4,
+                  "maturity_level": 4,
+                  "help_text": "Remediation exceptions",
+                  "choices": []
+                },
+                {
+                  "question_id": "2f9c10b-58cc-4372-a567-0e02b2c3d487",
+                  "text": "What metrics are used to measure the effectiveness of vulnerability management?",
+                  "question_type": "FREE_TEXT",
+                  "weight": 5,
+                  "maturity_level": 5,
+                  "help_text": "Effectiveness metrics",
+                  "choices": []
+                },
+                {
+                  "question_id": "5a6c10b-58cc-4372-a567-0e02b2c3d488",
+                  "text": "Are vulnerability scans performed on all enterprise assets?",
+                  "question_type": "YES_NO",
+                  "weight": 4,
+                  "maturity_level": 4,
+                  "help_text": "Scan coverage",
+                  "choices": []
+                },
+                {
+                  "question_id": "4c3c10b-58cc-4372-a567-0e02b2c3d489",
+                  "text": "What is the process for addressing vulnerabilities that cannot be remediated?",
+                  "question_type": "FREE_TEXT",
+                  "weight": 5,
+                  "maturity_level": 5,
+                  "help_text": "Unremediated vulnerabilities",
+                  "choices": []
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "code": "7.6",
+          "name": "7.6",
+          "controls": [
+            {
+              "code": "7.6",
+              "statement": "Perform Automated Vulnerability Scans of Externally-Exposed Enterprise Assets: Perform automated vulnerability scans of externally-exposed enterprise assets. Perform scans on a monthly, or more frequent, basis.",
+              "cross_refs": [],
+              "questions": [
+                {
+                  "question_id": "4b6c10b-58cc-4372-a567-0e02b2c3d480",
+                  "text": "How often are vulnerability scans performed?",
+                  "question_type": "SCALE_1_5",
+                  "weight": 4,
+                  "maturity_level": 4,
+                  "help_text": "Frequency of scans",
+                  "choices": []
+                },
+                {
+                  "question_id": "9f7ac10b-58cc-4372-a567-0e02b2c3d481",
+                  "text": "What is the process for remediating detected vulnerabilities?",
+                  "question_type": "FREE_TEXT",
+                  "weight": 5,
+                  "maturity_level": 5,
+                  "help_text": "Remediation steps",
+                  "choices": []
+                },
+                {
+                  "question_id": "1a3c10b-58cc-4372-a567-0e02b2c3d482",
+                  "text": "Who is responsible for performing vulnerability scans?",
+                  "question_type": "FREE_TEXT",
+                  "weight": 3,
+                  "maturity_level": 3,
+                  "help_text": "Scan responsibility",
+                  "choices": []
+                },
+                {
+                  "question_id": "6d5c10b-58cc-4372-a567-0e02b2c3d483",
+                  "text": "What tools are used for automated patch management?",
+                  "question_type": "FREE_TEXT",
+                  "weight": 4,
+                  "maturity_level": 4,
+                  "help_text": "Patch management tools",
+                  "choices": []
+                },
+                {
+                  "question_id": "8b2c10b-58cc-4372-a567-0e02b2c3d484",
+                  "text": "How are vulnerability scan results reviewed and prioritized?",
+                  "question_type": "FREE_TEXT",
+                  "weight": 5,
+                  "maturity_level": 5,
+                  "help_text": "Scan result review",
+                  "choices": []
+                },
+                {
+                  "question_id": "3e1c10b-58cc-4372-a567-0e02b2c3d485",
+                  "text": "What is the frequency of reviewing and updating vulnerability management documentation?",
+                  "question_type": "SCALE_1_5",
+                  "weight": 3,
+                  "maturity_level": 3,
+                  "help_text": "Documentation review frequency",
+                  "choices": []
+                },
+                {
+                  "question_id": "7c4c10b-58cc-4372-a567-0e02b2c3d486",
+                  "text": "How are exceptions to the remediation process handled?",
+                  "question_type": "FREE_TEXT",
+                  "weight": 4,
+                  "maturity_level": 4,
+                  "help_text": "Remediation exceptions",
+                  "choices": []
+                },
+                {
+                  "question_id": "2f9c10b-58cc-4372-a567-0e02b2c3d487",
+                  "text": "What metrics are used to measure the effectiveness of vulnerability management?",
+                  "question_type": "FREE_TEXT",
+                  "weight": 5,
+                  "maturity_level": 5,
+                  "help_text": "Effectiveness metrics",
+                  "choices": []
+                },
+                {
+                  "question_id": "5a6c10b-58cc-4372-a567-0e02b2c3d488",
+                  "text": "Are vulnerability scans performed on all enterprise assets?",
+                  "question_type": "YES_NO",
+                  "weight": 4,
+                  "maturity_level": 4,
+                  "help_text": "Scan coverage",
+                  "choices": []
+                },
+                {
+                  "question_id": "4c3c10b-58cc-4372-a567-0e02b2c3d489",
+                  "text": "What is the process for addressing vulnerabilities that cannot be remediated?",
+                  "question_type": "FREE_TEXT",
+                  "weight": 5,
+                  "maturity_level": 5,
+                  "help_text": "Unremediated vulnerabilities",
+                  "choices": []
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "code": "7.7",
+          "name": "7.7",
+          "controls": [
+            {
+              "code": "7.7",
+              "statement": "Remediate Detected Vulnerabilities: Remediate detected vulnerabilities in software through processes and tooling on a monthly, or more frequent, basis, based on the remediation process.",
+              "cross_refs": [],
+              "questions": [
+                {
+                  "question_id": "4b6c10b-58cc-4372-a567-0e02b2c3d480",
+                  "text": "How often are vulnerability scans performed?",
+                  "question_type": "SCALE_1_5",
+                  "weight": 4,
+                  "maturity_level": 4,
+                  "help_text": "Frequency of scans",
+                  "choices": []
+                },
+                {
+                  "question_id": "9f7ac10b-58cc-4372-a567-0e02b2c3d481",
+                  "text": "What is the process for remediating detected vulnerabilities?",
+                  "question_type": "FREE_TEXT",
+                  "weight": 5,
+                  "maturity_level": 5,
+                  "help_text": "Remediation steps",
+                  "choices": []
+                },
+                {
+                  "question_id": "1a3c10b-58cc-4372-a567-0e02b2c3d482",
+                  "text": "Who is responsible for performing vulnerability scans?",
+                  "question_type": "FREE_TEXT",
+                  "weight": 3,
+                  "maturity_level": 3,
+                  "help_text": "Scan responsibility",
+                  "choices": []
+                },
+                {
+                  "question_id": "6d5c10b-58cc-4372-a567-0e02b2c3d483",
+                  "text": "What tools are used for automated patch management?",
+                  "question_type": "FREE_TEXT",
+                  "weight": 4,
+                  "maturity_level": 4,
+                  "help_text": "Patch management tools",
+                  "choices": []
+                },
+                {
+                  "question_id": "8b2c10b-58cc-4372-a567-0e02b2c3d484",
+                  "text": "How are vulnerability scan results reviewed and prioritized?",
+                  "question_type": "FREE_TEXT",
+                  "weight": 5,
+                  "maturity_level": 5,
+                  "help_text": "Scan result review",
+                  "choices": []
+                },
+                {
+                  "question_id": "3e1c10b-58cc-4372-a567-0e02b2c3d485",
+                  "text": "What is the frequency of reviewing and updating vulnerability management documentation?",
+                  "question_type": "SCALE_1_5",
+                  "weight": 3,
+                  "maturity_level": 3,
+                  "help_text": "Documentation review frequency",
+                  "choices": []
+                },
+                {
+                  "question_id": "7c4c10b-58cc-4372-a567-0e02b2c3d486",
+                  "text": "How are exceptions to the remediation process handled?",
+                  "question_type": "FREE_TEXT",
+                  "weight": 4,
+                  "maturity_level": 4,
+                  "help_text": "Remediation exceptions",
+                  "choices": []
+                },
+                {
+                  "question_id": "2f9c10b-58cc-4372-a567-0e02b2c3d487",
+                  "text": "What metrics are used to measure the effectiveness of vulnerability management?",
+                  "question_type": "FREE_TEXT",
+                  "weight": 5,
+                  "maturity_level": 5,
+                  "help_text": "Effectiveness metrics",
+                  "choices": []
+                },
+                {
+                  "question_id": "5a6c10b-58cc-4372-a567-0e02b2c3d488",
+                  "text": "Are vulnerability scans performed on all enterprise assets?",
+                  "question_type": "YES_NO",
+                  "weight": 4,
+                  "maturity_level": 4,
+                  "help_text": "Scan coverage",
+                  "choices": []
+                },
+                {
+                  "question_id": "4c3c10b-58cc-4372-a567-0e02b2c3d489",
+                  "text": "What is the process for addressing vulnerabilities that cannot be remediated?",
+                  "question_type": "FREE_TEXT",
+                  "weight": 5,
+                  "maturity_level": 5,
+                  "help_text": "Unremediated vulnerabilities",
+                  "choices": []
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "code": "AI",
+      "name": "AI Security",
+      "categories": [
+        {
+          "code": "AI",
+          "name": "AI",
+          "controls": [
+            {
+              "code": "AI-1",
+              "statement": "An acceptable use policy for AI tools is in place and communicated. IT has visibility into what AI tools are in use. Consumer AI tool use for work purposes is governed.",
+              "cross_refs": [],
+              "questions": [
+                {
+                  "question_id": "4b6f3f4a-2c9f-4123-81a5-6f4d5e6f7a8b",
+                  "text": "How are AI tool usage and risks communicated to employees?",
+                  "question_type": "FREE_TEXT",
+                  "weight": 4,
+                  "maturity_level": 4,
+                  "help_text": "Look for training records or awareness campaigns",
+                  "choices": []
+                },
+                {
+                  "question_id": "1a2b3c4d-5e6f-7g8h-9i0j-1k2l3m4n5o",
+                  "text": "What process triggers AI tool review and approval?",
+                  "question_type": "FREE_TEXT",
+                  "weight": 5,
+                  "maturity_level": 5,
+                  "help_text": "Check for workflow documentation or approval records",
+                  "choices": []
+                },
+                {
+                  "question_id": "6f5d4e3c-2b1a-9c8d-7f6e-5d4c3b2a1",
+                  "text": "How often are AI outputs reviewed for accuracy and reliability?",
+                  "question_type": "SCALE_1_5",
+                  "weight": 4,
+                  "maturity_level": 4,
+                  "help_text": "Check for review records or audit trails",
+                  "choices": [
+                    "Daily",
+                    "Weekly",
+                    "Monthly",
+                    "Quarterly"
+                  ]
+                },
+                {
+                  "question_id": "8d7f6e5c-4b3a-2c1d-9f8e-7g6h5j4k",
+                  "text": "Who is responsible for AI governance and ownership?",
+                  "question_type": "FREE_TEXT",
+                  "weight": 5,
+                  "maturity_level": 5,
+                  "help_text": "Check for governance documentation or charter",
+                  "choices": []
+                }
+              ]
+            },
+            {
+              "code": "AI-2",
+              "statement": "Employees are trained on AI data risks. AI tools go through a review and approval process before use with company data. AI outputs are reviewed before use in decisions or external communications. A designated owner is responsible for AI governance.",
+              "cross_refs": [],
+              "questions": [
+                {
+                  "question_id": "4b6f3f4a-2c9f-4123-81a5-6f4d5e6f7a8b",
+                  "text": "How are AI tool usage and risks communicated to employees?",
+                  "question_type": "FREE_TEXT",
+                  "weight": 4,
+                  "maturity_level": 4,
+                  "help_text": "Look for training records or awareness campaigns",
+                  "choices": []
+                },
+                {
+                  "question_id": "1a2b3c4d-5e6f-7g8h-9i0j-1k2l3m4n5o",
+                  "text": "What process triggers AI tool review and approval?",
+                  "question_type": "FREE_TEXT",
+                  "weight": 5,
+                  "maturity_level": 5,
+                  "help_text": "Check for workflow documentation or approval records",
+                  "choices": []
+                },
+                {
+                  "question_id": "6f5d4e3c-2b1a-9c8d-7f6e-5d4c3b2a1",
+                  "text": "How often are AI outputs reviewed for accuracy and reliability?",
+                  "question_type": "SCALE_1_5",
+                  "weight": 4,
+                  "maturity_level": 4,
+                  "help_text": "Check for review records or audit trails",
+                  "choices": [
+                    "Daily",
+                    "Weekly",
+                    "Monthly",
+                    "Quarterly"
+                  ]
+                },
+                {
+                  "question_id": "8d7f6e5c-4b3a-2c1d-9f8e-7g6h5j4k",
+                  "text": "Who is responsible for AI governance and ownership?",
+                  "question_type": "FREE_TEXT",
+                  "weight": 5,
+                  "maturity_level": 5,
+                  "help_text": "Check for governance documentation or charter",
+                  "choices": []
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    }
+  ],
+  "mappings": [
+    {
+      "source_control": "7.1",
+      "target_framework": "nist-csf-2-0",
+      "target_framework_version": "",
+      "target_control": "ID.RA-01",
+      "relationship": "RELATED",
+      "notes": ""
+    },
+    {
+      "source_control": "7.2",
+      "target_framework": "nist-csf-2-0",
+      "target_framework_version": "",
+      "target_control": "ID.RA-08",
+      "relationship": "RELATED",
+      "notes": ""
+    },
+    {
+      "source_control": "7.2",
+      "target_framework": "nist-csf-2-0",
+      "target_framework_version": "",
+      "target_control": "ID.IM-02",
+      "relationship": "RELATED",
+      "notes": ""
+    }
+  ]
+}

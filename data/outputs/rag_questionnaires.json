@@ -1,0 +1,151 @@
+[
+  {
+    "framework_id": "65601064-e701-54c0-aede-36568a7c893c",
+    "name": "Topic: Access control and identity management assessment",
+    "version": "1.0",
+    "source_format": "rag_generated",
+    "ingested_at": "2026-06-08T04:36:27.520176+00:00",
+    "Domains": [
+      {
+        "domain_id": "RAG",
+        "domain_name": "RAG Assessment Domain",
+        "Controls": [
+          {
+            "control_id": "PR.AA-01",
+            "control_statement": "RAG-generated context.",
+            "maturity_levels": [
+              "Initial"
+            ],
+            "expected_evidence_types": [
+              "iam_policy, user_account_audit, provisioning_records"
+            ],
+            "cross_references": [],
+            "Questions": [
+              {
+                "question_id": "9b1deb4d-3b7d-4bad-9bdd-2b0d7b3dcb6d",
+                "question_text": "Are identities and credentials for authorized users, services, and hardware managed by the organization?",
+                "question_type": "yes_no",
+                "weight": 5
+              },
+              {
+                "question_id": "6f5g4h3j2k1l0p9o8i7u6y5t4r3e2w1q",
+                "question_text": "What is the process for managing identities and credentials for authorized users, services, and hardware?",
+                "question_type": "free_text",
+                "weight": 4
+              }
+            ]
+          },
+          {
+            "control_id": "PR.AA-02",
+            "control_statement": "RAG-generated context.",
+            "maturity_levels": [
+              "Developing"
+            ],
+            "expected_evidence_types": [
+              "identity_proofing_procedure, mfa_config, sso_config"
+            ],
+            "cross_references": [],
+            "Questions": [
+              {
+                "question_id": "4b8095c9-2c4e-46e5-8c4e-4e2c4e464e4e",
+                "question_text": "Are identities proofed and bound to credentials based on the context of interactions?",
+                "question_type": "yes_no",
+                "weight": 5
+              },
+              {
+                "question_id": "2c4e6f7g8h9j0k1l2m3n4o5p6q7r8s",
+                "question_text": "Please provide evidence of identity proofing and binding procedures.",
+                "question_type": "evidence_upload",
+                "weight": 5
+              }
+            ]
+          },
+          {
+            "control_id": "PR.AA-05",
+            "control_statement": "RAG-generated context.",
+            "maturity_levels": [
+              "Defined"
+            ],
+            "expected_evidence_types": [
+              "access_control_policy, rbac_matrix, access_review_report"
+            ],
+            "cross_references": [],
+            "Questions": [
+              {
+                "question_id": "1a2b3c4d-5e6f-7g8h-9i0j-1k2l3m4n5o",
+                "question_text": "Are access permissions, entitlements, and authorizations defined in a policy, managed, enforced, and reviewed?",
+                "question_type": "yes_no",
+                "weight": 5
+              }
+            ]
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "framework_id": "bb7a393b-9056-5ef8-92c1-39d061205158",
+    "name": "Topic: Incident detection and monitoring readiness",
+    "version": "1.0",
+    "source_format": "rag_generated",
+    "ingested_at": "2026-06-08T04:36:40.586126+00:00",
+    "Domains": [
+      {
+        "domain_id": "RAG",
+        "domain_name": "RAG Assessment Domain",
+        "Controls": [
+          {
+            "control_id": "DE.AE-06",
+            "control_statement": "RAG-generated context.",
+            "maturity_levels": [
+              "Initial"
+            ],
+            "expected_evidence_types": [
+              "escalation_procedure, incident_notification_log, soar_config"
+            ],
+            "cross_references": [],
+            "Questions": [
+              {
+                "question_id": "6ec0bd7f-11c0-43fe-912a-05e2c0f6c912",
+                "question_text": "Are procedures in place to provide information on adverse events to authorized staff and tools?",
+                "question_type": "yes_no",
+                "weight": 4
+              },
+              {
+                "question_id": "2f9b7c1f-9f3e-4c1e-8f3d-06e2c0f6c914",
+                "question_text": "Please provide an example of an incident where information on adverse events was provided to authorized staff and tools",
+                "question_type": "free_text",
+                "weight": 3
+              }
+            ]
+          },
+          {
+            "control_id": "DE.AE-02",
+            "control_statement": "RAG-generated context.",
+            "maturity_levels": [
+              "Developing"
+            ],
+            "expected_evidence_types": [
+              "alert_triage_procedure, siem_correlation_rules, threat_hunt_report"
+            ],
+            "cross_references": [],
+            "Questions": [
+              {
+                "question_id": "7c1f9f3e-2f9b-4c1e-8f3d-06e2c0f6c913",
+                "question_text": "Are potentially adverse events analyzed to better understand associated activities?",
+                "question_type": "maturity_rating",
+                "weight": 5
+              },
+              {
+                "question_id": "9f3e2f9b-7c1f-4c1e-8f3d-06e2c0f6c915",
+                "question_text": "Please upload a copy of the alert triage procedure used to analyze potentially adverse events",
+                "question_type": "evidence_upload",
+                "weight": 2
+              }
+            ]
+          }
+        ]
+      }
+    ]
+  }
+]

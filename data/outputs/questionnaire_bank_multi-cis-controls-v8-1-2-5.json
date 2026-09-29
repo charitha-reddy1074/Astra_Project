@@ -1,0 +1,1271 @@
+{
+  "questionnaire_id": "multi-cis-controls-v8-1-2-5",
+  "questionnaire_type": "multi_framework",
+  "framework_id": "45dbc35d-621e-53b6-b733-616a95be2203",
+  "name": "CIS Controls v8.1.2 (Account Management)",
+  "framework_names": [
+    "CIS Controls v8.1.2"
+  ],
+  "framework_summary": "CIS Controls v8.1.2",
+  "version": "1.0",
+  "source_format": "multi_framework_merged",
+  "question_count": 12,
+  "part1_checklist": [
+    {
+      "number": 1,
+      "question_id": "f47ac10b-ee9e-43e4-9b9e-13a2a4e2c3d4",
+      "question_text": "Is account inventory in place?",
+      "sub_topic": "Account Management",
+      "domain_name": "Account Management",
+      "framework_name": "CIS Controls v8.1.2",
+      "control_id": "5.1, 5.2, 5.3, 5.4, 5.5, 5.6",
+      "answer_format": "yes_no_with_detail",
+      "response_options": "Yes / No / Partial",
+      "detail_prompt": "If yes or partial, specify the tool or technology in use."
+    }
+  ],
+  "question_groups": [
+    {
+      "framework_id": "8ac1d180-5b22-5cf6-8a0b-df10e87ebad8",
+      "framework_key": "cis-controls-v8-1-2",
+      "framework_name": "CIS Controls v8.1.2",
+      "domain_id": "5",
+      "domain_name": "Account Management",
+      "domain_description": "Use processes and tools to assign and manage authorization to credentials for user accounts, including administrator accounts, as well as service accounts, to enterprise assets and software.",
+      "question_count": 6,
+      "questions": [
+        {
+          "item_id": "c37f2aa7-e703-5fb0-a096-c9c716397848",
+          "question_id": "c37f2aa7-e703-5fb0-a096-c9c716397848",
+          "question_text": "Is the organization implementing and operating the control: Establish and Maintain an Inventory of Accounts: Establish and maintain an inventory of all accounts managed in the enterprise. The inventory must at a minimum include user, administrator, and service accounts. The inventory, at a minimum, should contain the person's name, username, start/stop dates, and department. Validate that all active accounts are authorized, on a recurring schedule at a minimum quarterly, or more frequently?",
+          "question_type": "merged",
+          "answer_formats": [
+            "yes_no",
+            "evidence_upload"
+          ],
+          "framework_name": "CIS Controls v8.1.2",
+          "framework_key": "cis-controls-v8-1-2",
+          "domain_id": "5",
+          "domain_name": "Account Management",
+          "control_id": "5.1",
+          "control_statement": "Establish and Maintain an Inventory of Accounts: Establish and maintain an inventory of all accounts managed in the enterprise. The inventory must at a minimum include user, administrator, and service accounts. The inventory, at a minimum, should contain the person's name, username, start/stop dates, and department. Validate that all active accounts are authorized, on a recurring schedule at a minimum quarterly, or more frequently.",
+          "expected_evidence": "inventory, asset_register, owner_register",
+          "maturity_level": "Defined",
+          "merge_reason": "Merged by control fallback because LLM output was unavailable or invalid.",
+          "source_item_ids": [
+            "77380904-ffbb-5bb6-bf31-513212dc8a8c",
+            "2e2afce2-e274-5149-9c9c-8e2dc62e95cf"
+          ],
+          "source_questions": [
+            {
+              "question_id": "09dcd8be-23d8-5ea2-8b92-b843dc9ef28e",
+              "question_text": "Is the organization implementing and operating the control: Establish and Maintain an Inventory of Accounts: Establish and maintain an inventory of all accounts managed in the enterprise. The inventory must at a minimum include user, administrator, and service accounts. The inventory, at a minimum, should contain the person's name, username, start/stop dates, and department. Validate that all active accounts are authorized, on a recurring schedule at a minimum quarterly, or more frequently?",
+              "question_type": "yes_no",
+              "framework_name": "CIS Controls v8.1.2",
+              "framework_key": "cis-controls-v8-1-2",
+              "domain_id": "5",
+              "domain_name": "Account Management",
+              "control_id": "5.1",
+              "cross_references": [
+                {
+                  "other_framework_id": "nist-csf-2-0",
+                  "other_control_id": "PR.AA-01",
+                  "relationship": "Subset",
+                  "description": "Identities and credentials for authorized users, services, and hardware are managed by the organization"
+                },
+                {
+                  "other_framework_id": "nist-csf-2-0",
+                  "other_control_id": "PR.AA-05",
+                  "relationship": "Subset",
+                  "description": "Access permissions, entitlements, and authorizations are defined in a policy, managed, enforced, and reviewed, and incorporate the principles of least privilege and separation of duties"
+                }
+              ],
+              "expected_evidence": "inventory, asset_register, owner_register"
+            },
+            {
+              "question_id": "47810228-2ca6-5ed0-ae33-df4d16d1aebc",
+              "question_text": "Upload evidence such as inventory, asset_register, owner_register that demonstrates: Establish and Maintain an Inventory of Accounts: Establish and maintain an inventory of all accounts managed in the enterprise. The inventory must at a minimum include user, administrator, and service accounts. The inventory, at a minimum, should contain the person's name, username, start/stop dates, and department. Validate that all active accounts are authorized, on a recurring schedule at a minimum quarterly, or more frequently.",
+              "question_type": "evidence_upload",
+              "framework_name": "CIS Controls v8.1.2",
+              "framework_key": "cis-controls-v8-1-2",
+              "domain_id": "5",
+              "domain_name": "Account Management",
+              "control_id": "5.1",
+              "cross_references": [
+                {
+                  "other_framework_id": "nist-csf-2-0",
+                  "other_control_id": "PR.AA-01",
+                  "relationship": "Subset",
+                  "description": "Identities and credentials for authorized users, services, and hardware are managed by the organization"
+                },
+                {
+                  "other_framework_id": "nist-csf-2-0",
+                  "other_control_id": "PR.AA-05",
+                  "relationship": "Subset",
+                  "description": "Access permissions, entitlements, and authorizations are defined in a policy, managed, enforced, and reviewed, and incorporate the principles of least privilege and separation of duties"
+                }
+              ],
+              "expected_evidence": "inventory, asset_register, owner_register"
+            }
+          ],
+          "cross_references": [
+            {
+              "other_framework_id": "nist-csf-2-0",
+              "other_control_id": "PR.AA-01"
+            },
+            {
+              "other_framework_id": "nist-csf-2-0",
+              "other_control_id": "PR.AA-05"
+            }
+          ]
+        },
+        {
+          "item_id": "023440de-336e-51e5-a3cf-c9259e171923",
+          "question_id": "023440de-336e-51e5-a3cf-c9259e171923",
+          "question_text": "Is the organization implementing and operating the control: Use Unique Passwords: Use unique passwords for all enterprise assets. Best practice implementation includes, at a minimum, an 8-character password for accounts using Multi-Factor Authentication (MFA) and a 14-character password for accounts not using MFA?",
+          "question_type": "merged",
+          "answer_formats": [
+            "yes_no",
+            "evidence_upload"
+          ],
+          "framework_name": "CIS Controls v8.1.2",
+          "framework_key": "cis-controls-v8-1-2",
+          "domain_id": "5",
+          "domain_name": "Account Management",
+          "control_id": "5.2",
+          "control_statement": "Use Unique Passwords: Use unique passwords for all enterprise assets. Best practice implementation includes, at a minimum, an 8-character password for accounts using Multi-Factor Authentication (MFA) and a 14-character password for accounts not using MFA.",
+          "expected_evidence": "inventory, asset_register, owner_register",
+          "maturity_level": "Defined",
+          "merge_reason": "Merged by control fallback because LLM output was unavailable or invalid.",
+          "source_item_ids": [
+            "48c06554-5c56-589f-87a3-f3fc7b6075d8",
+            "0b929c19-4972-5934-af2d-4519736fd8b5"
+          ],
+          "source_questions": [
+            {
+              "question_id": "067eabff-87cc-50b1-af16-ce904d476e52",
+              "question_text": "Is the organization implementing and operating the control: Use Unique Passwords: Use unique passwords for all enterprise assets. Best practice implementation includes, at a minimum, an 8-character password for accounts using Multi-Factor Authentication (MFA) and a 14-character password for accounts not using MFA?",
+              "question_type": "yes_no",
+              "framework_name": "CIS Controls v8.1.2",
+              "framework_key": "cis-controls-v8-1-2",
+              "domain_id": "5",
+              "domain_name": "Account Management",
+              "control_id": "5.2",
+              "cross_references": [],
+              "expected_evidence": "inventory, asset_register, owner_register"
+            },
+            {
+              "question_id": "79cb7c28-fd21-57fd-bbfd-2aeaf556d076",
+              "question_text": "Upload evidence such as inventory, asset_register, owner_register that demonstrates: Use Unique Passwords: Use unique passwords for all enterprise assets. Best practice implementation includes, at a minimum, an 8-character password for accounts using Multi-Factor Authentication (MFA) and a 14-character password for accounts not using MFA.",
+              "question_type": "evidence_upload",
+              "framework_name": "CIS Controls v8.1.2",
+              "framework_key": "cis-controls-v8-1-2",
+              "domain_id": "5",
+              "domain_name": "Account Management",
+              "control_id": "5.2",
+              "cross_references": [],
+              "expected_evidence": "inventory, asset_register, owner_register"
+            }
+          ],
+          "cross_references": []
+        },
+        {
+          "item_id": "5270655b-a8a1-580f-8645-334e2439ffe8",
+          "question_id": "5270655b-a8a1-580f-8645-334e2439ffe8",
+          "question_text": "Is the organization implementing and operating the control: Disable Dormant Accounts: Delete or disable any dormant accounts after a period of 45 days of inactivity, where supported?",
+          "question_type": "merged",
+          "answer_formats": [
+            "yes_no",
+            "evidence_upload"
+          ],
+          "framework_name": "CIS Controls v8.1.2",
+          "framework_key": "cis-controls-v8-1-2",
+          "domain_id": "5",
+          "domain_name": "Account Management",
+          "control_id": "5.3",
+          "control_statement": "Disable Dormant Accounts: Delete or disable any dormant accounts after a period of 45 days of inactivity, where supported.",
+          "expected_evidence": "implementation_evidence, operational_record",
+          "maturity_level": "Defined",
+          "merge_reason": "Merged by control fallback because LLM output was unavailable or invalid.",
+          "source_item_ids": [
+            "44de9c4b-922d-5145-a093-b0ef88806a9c",
+            "e613d542-184f-54a1-9582-df489a3a7861"
+          ],
+          "source_questions": [
+            {
+              "question_id": "02505681-aafc-5b14-85f7-d9b099691bc9",
+              "question_text": "Is the organization implementing and operating the control: Disable Dormant Accounts: Delete or disable any dormant accounts after a period of 45 days of inactivity, where supported?",
+              "question_type": "yes_no",
+              "framework_name": "CIS Controls v8.1.2",
+              "framework_key": "cis-controls-v8-1-2",
+              "domain_id": "5",
+              "domain_name": "Account Management",
+              "control_id": "5.3",
+              "cross_references": [],
+              "expected_evidence": "implementation_evidence, operational_record"
+            },
+            {
+              "question_id": "bce0401b-d100-5a65-815c-688a7723a63e",
+              "question_text": "Upload evidence such as implementation_evidence, operational_record that demonstrates: Disable Dormant Accounts: Delete or disable any dormant accounts after a period of 45 days of inactivity, where supported.",
+              "question_type": "evidence_upload",
+              "framework_name": "CIS Controls v8.1.2",
+              "framework_key": "cis-controls-v8-1-2",
+              "domain_id": "5",
+              "domain_name": "Account Management",
+              "control_id": "5.3",
+              "cross_references": [],
+              "expected_evidence": "implementation_evidence, operational_record"
+            }
+          ],
+          "cross_references": []
+        },
+        {
+          "item_id": "befead2f-f0f2-5b10-a419-20630ce3b708",
+          "question_id": "befead2f-f0f2-5b10-a419-20630ce3b708",
+          "question_text": "Is the organization implementing and operating the control: Restrict Administrator Privileges to Dedicated Administrator Accounts: Restrict administrator privileges to dedicated administrator accounts on enterprise assets. Conduct general computing activities, such as internet browsing, email, and productivity suite use, from the user's primary, non-privileged account?",
+          "question_type": "merged",
+          "answer_formats": [
+            "yes_no",
+            "evidence_upload"
+          ],
+          "framework_name": "CIS Controls v8.1.2",
+          "framework_key": "cis-controls-v8-1-2",
+          "domain_id": "5",
+          "domain_name": "Account Management",
+          "control_id": "5.4",
+          "control_statement": "Restrict Administrator Privileges to Dedicated Administrator Accounts: Restrict administrator privileges to dedicated administrator accounts on enterprise assets. Conduct general computing activities, such as internet browsing, email, and productivity suite use, from the user's primary, non-privileged account.",
+          "expected_evidence": "inventory, asset_register, owner_register",
+          "maturity_level": "Defined",
+          "merge_reason": "Merged by control fallback because LLM output was unavailable or invalid.",
+          "source_item_ids": [
+            "117d23f1-22e4-5f01-8641-0d2f9308ec38",
+            "3ae30081-d4a3-582e-99f7-3d0be0ec0278"
+          ],
+          "source_questions": [
+            {
+              "question_id": "ed030efe-dd42-5e87-a4fb-0b7e36a55821",
+              "question_text": "Is the organization implementing and operating the control: Restrict Administrator Privileges to Dedicated Administrator Accounts: Restrict administrator privileges to dedicated administrator accounts on enterprise assets. Conduct general computing activities, such as internet browsing, email, and productivity suite use, from the user's primary, non-privileged account?",
+              "question_type": "yes_no",
+              "framework_name": "CIS Controls v8.1.2",
+              "framework_key": "cis-controls-v8-1-2",
+              "domain_id": "5",
+              "domain_name": "Account Management",
+              "control_id": "5.4",
+              "cross_references": [],
+              "expected_evidence": "inventory, asset_register, owner_register"
+            },
+            {
+              "question_id": "cddbe954-3a94-5b7e-a5b4-16735f01ad0f",
+              "question_text": "Upload evidence such as inventory, asset_register, owner_register that demonstrates: Restrict Administrator Privileges to Dedicated Administrator Accounts: Restrict administrator privileges to dedicated administrator accounts on enterprise assets. Conduct general computing activities, such as internet browsing, email, and productivity suite use, from the user's primary, non-privileged account.",
+              "question_type": "evidence_upload",
+              "framework_name": "CIS Controls v8.1.2",
+              "framework_key": "cis-controls-v8-1-2",
+              "domain_id": "5",
+              "domain_name": "Account Management",
+              "control_id": "5.4",
+              "cross_references": [],
+              "expected_evidence": "inventory, asset_register, owner_register"
+            }
+          ],
+          "cross_references": []
+        },
+        {
+          "item_id": "8030bd5c-860d-5355-8bd0-d24411e6623a",
+          "question_id": "8030bd5c-860d-5355-8bd0-d24411e6623a",
+          "question_text": "Is the organization implementing and operating the control: Establish and Maintain an Inventory of Service Accounts: Establish and maintain an inventory of service accounts. The inventory, at a minimum, must contain department owner, review date, and purpose. Perform service account reviews to validate that all active accounts are authorized, on a recurring schedule at a minimum quarterly, or more frequently?",
+          "question_type": "merged",
+          "answer_formats": [
+            "yes_no",
+            "evidence_upload"
+          ],
+          "framework_name": "CIS Controls v8.1.2",
+          "framework_key": "cis-controls-v8-1-2",
+          "domain_id": "5",
+          "domain_name": "Account Management",
+          "control_id": "5.5",
+          "control_statement": "Establish and Maintain an Inventory of Service Accounts: Establish and maintain an inventory of service accounts. The inventory, at a minimum, must contain department owner, review date, and purpose. Perform service account reviews to validate that all active accounts are authorized, on a recurring schedule at a minimum quarterly, or more frequently.",
+          "expected_evidence": "inventory, asset_register, owner_register",
+          "maturity_level": "Defined",
+          "merge_reason": "Merged by control fallback because LLM output was unavailable or invalid.",
+          "source_item_ids": [
+            "f809dde2-c841-5021-bda8-6e09998a0971",
+            "b502a907-63c2-54fc-a3d8-6435f3438ca7"
+          ],
+          "source_questions": [
+            {
+              "question_id": "26a16454-f840-5f2b-968a-832f658ca210",
+              "question_text": "Is the organization implementing and operating the control: Establish and Maintain an Inventory of Service Accounts: Establish and maintain an inventory of service accounts. The inventory, at a minimum, must contain department owner, review date, and purpose. Perform service account reviews to validate that all active accounts are authorized, on a recurring schedule at a minimum quarterly, or more frequently?",
+              "question_type": "yes_no",
+              "framework_name": "CIS Controls v8.1.2",
+              "framework_key": "cis-controls-v8-1-2",
+              "domain_id": "5",
+              "domain_name": "Account Management",
+              "control_id": "5.5",
+              "cross_references": [],
+              "expected_evidence": "inventory, asset_register, owner_register"
+            },
+            {
+              "question_id": "765591f0-d9e6-5158-847c-7f0ac589178d",
+              "question_text": "Upload evidence such as inventory, asset_register, owner_register that demonstrates: Establish and Maintain an Inventory of Service Accounts: Establish and maintain an inventory of service accounts. The inventory, at a minimum, must contain department owner, review date, and purpose. Perform service account reviews to validate that all active accounts are authorized, on a recurring schedule at a minimum quarterly, or more frequently.",
+              "question_type": "evidence_upload",
+              "framework_name": "CIS Controls v8.1.2",
+              "framework_key": "cis-controls-v8-1-2",
+              "domain_id": "5",
+              "domain_name": "Account Management",
+              "control_id": "5.5",
+              "cross_references": [],
+              "expected_evidence": "inventory, asset_register, owner_register"
+            }
+          ],
+          "cross_references": []
+        },
+        {
+          "item_id": "c64d944f-7771-57af-a36a-9bc2d78bb1c2",
+          "question_id": "c64d944f-7771-57af-a36a-9bc2d78bb1c2",
+          "question_text": "Is the organization implementing and operating the control: Centralize Account Management: Centralize account management through a directory or identity service?",
+          "question_type": "merged",
+          "answer_formats": [
+            "yes_no",
+            "evidence_upload"
+          ],
+          "framework_name": "CIS Controls v8.1.2",
+          "framework_key": "cis-controls-v8-1-2",
+          "domain_id": "5",
+          "domain_name": "Account Management",
+          "control_id": "5.6",
+          "control_statement": "Centralize Account Management: Centralize account management through a directory or identity service.",
+          "expected_evidence": "role_matrix, org_chart, responsibility_assignment",
+          "maturity_level": "Defined",
+          "merge_reason": "Merged by control fallback because LLM output was unavailable or invalid.",
+          "source_item_ids": [
+            "7982e776-65eb-53a1-89a7-4305fa7f729e",
+            "6ae1374c-4ad5-575b-9d1f-37956de5b45e"
+          ],
+          "source_questions": [
+            {
+              "question_id": "91ebbe4d-1fa9-5dec-8d87-71e1f7b55fb3",
+              "question_text": "Is the organization implementing and operating the control: Centralize Account Management: Centralize account management through a directory or identity service?",
+              "question_type": "yes_no",
+              "framework_name": "CIS Controls v8.1.2",
+              "framework_key": "cis-controls-v8-1-2",
+              "domain_id": "5",
+              "domain_name": "Account Management",
+              "control_id": "5.6",
+              "cross_references": [
+                {
+                  "other_framework_id": "nist-csf-2-0",
+                  "other_control_id": "PR.AA-01",
+                  "relationship": "Subset",
+                  "description": "Identities and credentials for authorized users, services, and hardware are managed by the organization"
+                }
+              ],
+              "expected_evidence": "role_matrix, org_chart, responsibility_assignment"
+            },
+            {
+              "question_id": "972181b5-3835-5d27-8451-f01e5f7ee912",
+              "question_text": "Upload evidence such as role_matrix, org_chart, responsibility_assignment that demonstrates: Centralize Account Management: Centralize account management through a directory or identity service.",
+              "question_type": "evidence_upload",
+              "framework_name": "CIS Controls v8.1.2",
+              "framework_key": "cis-controls-v8-1-2",
+              "domain_id": "5",
+              "domain_name": "Account Management",
+              "control_id": "5.6",
+              "cross_references": [
+                {
+                  "other_framework_id": "nist-csf-2-0",
+                  "other_control_id": "PR.AA-01",
+                  "relationship": "Subset",
+                  "description": "Identities and credentials for authorized users, services, and hardware are managed by the organization"
+                }
+              ],
+              "expected_evidence": "role_matrix, org_chart, responsibility_assignment"
+            }
+          ],
+          "cross_references": [
+            {
+              "other_framework_id": "nist-csf-2-0",
+              "other_control_id": "PR.AA-01"
+            }
+          ]
+        }
+      ],
+      "sub_topics": [
+        {
+          "sub_topic": "Account Management",
+          "control_ids": [
+            "5.1",
+            "5.2",
+            "5.3",
+            "5.4",
+            "5.5",
+            "5.6"
+          ],
+          "part1_question": {
+            "question_id": "f47ac10b-ee9e-43e4-9b9e-13a2a4e2c3d4",
+            "question_text": "Is account inventory in place?",
+            "question_type": "yes_no_with_detail",
+            "response_options": "Yes / No / Partial",
+            "detail_prompt": "If yes or partial, specify the tool or technology in use."
+          },
+          "questions": [
+            {
+              "question_id": "9b3c10b-ee9e-43e4-9b9e-13a2a4e2c3d5",
+              "text": "How frequently are account inventories reviewed?",
+              "help_text": "Provide review schedule",
+              "question_type": "FREE_TEXT",
+              "weight": 4,
+              "maturity_level": 4,
+              "expected_evidence_types": [
+                "inventory",
+                "review_schedule"
+              ]
+            },
+            {
+              "question_id": "1a2b10b-ee9e-43e4-9b9e-13a2a4e2c3d6",
+              "text": "What process triggers dormant account deletion?",
+              "help_text": "Describe inactivity threshold",
+              "question_type": "FREE_TEXT",
+              "weight": 3,
+              "maturity_level": 3,
+              "expected_evidence_types": [
+                "dormant_account_policy",
+                "deletion_procedure"
+              ]
+            },
+            {
+              "question_id": "3c4d10b-ee9e-43e4-9b9e-13a2a4e2c3d7",
+              "text": "How are administrator privileges restricted?",
+              "help_text": "Describe dedicated admin account use",
+              "question_type": "FREE_TEXT",
+              "weight": 5,
+              "maturity_level": 5,
+              "expected_evidence_types": [
+                "admin_account_policy",
+                "privilege_restriction_procedure"
+              ]
+            },
+            {
+              "question_id": "5e6f10b-ee9e-43e4-9b9e-13a2a4e2c3d8",
+              "text": "What is the service account review frequency?",
+              "help_text": "Provide review schedule",
+              "question_type": "SCALE_1_5",
+              "choices": [
+                "Less than quarterly",
+                "Quarterly",
+                "Bi-annually",
+                "Annually",
+                "More than annually"
+              ],
+              "weight": 4,
+              "maturity_level": 4,
+              "expected_evidence_types": [
+                "service_account_review_schedule",
+                "review_procedure"
+              ]
+            },
+            {
+              "question_id": "7g8h10b-ee9e-43e4-9b9e-13a2a4e2c3d9",
+              "text": "Is account management centralized?",
+              "help_text": "Describe directory or identity service use",
+              "question_type": "YES_NO",
+              "weight": 5,
+              "maturity_level": 5,
+              "expected_evidence_types": [
+                "centralized_account_management_policy",
+                "directory_service_config"
+              ]
+            }
+          ],
+          "maturity_guide": {
+            "mature": "Account management is fully centralized, with automated inventory updates, regular reviews, and strict privilege restrictions. Dedicated administrator accounts are used for all administrative tasks.",
+            "partial": "Account management is partially centralized, with some manual inventory updates, infrequent reviews, and limited privilege restrictions. Some administrative tasks are performed from non-privileged accounts.",
+            "critical_gap": "Lack of account management leads to unauthorized access, dormant accounts, and uncontrolled administrator privileges, resulting in significant security risks and potential breaches."
+          },
+          "evidence_to_request": [
+            "account_inventory",
+            "review_schedule",
+            "dormant_account_policy",
+            "admin_account_policy",
+            "service_account_review_schedule",
+            "centralized_account_management_policy"
+          ],
+          "red_flags": [
+            {
+              "critical_gap": "No account inventory is maintained, leading to unauthorized access and dormant accounts.",
+              "recommended_action": "Establish and maintain a comprehensive account inventory, including user, administrator, and service accounts."
+            },
+            {
+              "critical_gap": "Dedicated administrator accounts are not used, leading to uncontrolled administrator privileges.",
+              "recommended_action": "Implement dedicated administrator accounts and restrict administrator privileges to these accounts."
+            },
+            {
+              "critical_gap": "Account management is not centralized, leading to inconsistent and ineffective account management.",
+              "recommended_action": "Centralize account management through a directory or identity service to ensure consistent and effective account management."
+            }
+          ]
+        }
+      ],
+      "interview_questions": [],
+      "evidence_to_request": [
+        "account_inventory",
+        "review_schedule",
+        "dormant_account_policy",
+        "admin_account_policy",
+        "service_account_review_schedule",
+        "centralized_account_management_policy"
+      ],
+      "red_flags": [
+        {
+          "critical_gap": "No account inventory is maintained, leading to unauthorized access and dormant accounts.",
+          "recommended_action": "Establish and maintain a comprehensive account inventory, including user, administrator, and service accounts."
+        },
+        {
+          "critical_gap": "Dedicated administrator accounts are not used, leading to uncontrolled administrator privileges.",
+          "recommended_action": "Implement dedicated administrator accounts and restrict administrator privileges to these accounts."
+        },
+        {
+          "critical_gap": "Account management is not centralized, leading to inconsistent and ineffective account management.",
+          "recommended_action": "Centralize account management through a directory or identity service to ensure consistent and effective account management."
+        }
+      ],
+      "maturity_guide": {
+        "mature": "Account management is fully centralized, with automated inventory updates, regular reviews, and strict privilege restrictions. Dedicated administrator accounts are used for all administrative tasks.",
+        "partial": "Account management is partially centralized, with some manual inventory updates, infrequent reviews, and limited privilege restrictions. Some administrative tasks are performed from non-privileged accounts.",
+        "critical_gap": "Lack of account management leads to unauthorized access, dormant accounts, and uncontrolled administrator privileges, resulting in significant security risks and potential breaches."
+      }
+    }
+  ],
+  "questions": [
+    {
+      "question_id": "09dcd8be-23d8-5ea2-8b92-b843dc9ef28e",
+      "question_text": "Is the organization implementing and operating the control: Establish and Maintain an Inventory of Accounts: Establish and maintain an inventory of all accounts managed in the enterprise. The inventory must at a minimum include user, administrator, and service accounts. The inventory, at a minimum, should contain the person's name, username, start/stop dates, and department. Validate that all active accounts are authorized, on a recurring schedule at a minimum quarterly, or more frequently?",
+      "question_type": "yes_no",
+      "framework_name": "CIS Controls v8.1.2",
+      "framework_key": "cis-controls-v8-1-2",
+      "domain_id": "5",
+      "domain_name": "Account Management",
+      "control_id": "5.1",
+      "cross_references": [
+        {
+          "other_framework_id": "nist-csf-2-0",
+          "other_control_id": "PR.AA-01",
+          "relationship": "Subset",
+          "description": "Identities and credentials for authorized users, services, and hardware are managed by the organization"
+        },
+        {
+          "other_framework_id": "nist-csf-2-0",
+          "other_control_id": "PR.AA-05",
+          "relationship": "Subset",
+          "description": "Access permissions, entitlements, and authorizations are defined in a policy, managed, enforced, and reviewed, and incorporate the principles of least privilege and separation of duties"
+        }
+      ],
+      "expected_evidence": "inventory, asset_register, owner_register"
+    },
+    {
+      "question_id": "47810228-2ca6-5ed0-ae33-df4d16d1aebc",
+      "question_text": "Upload evidence such as inventory, asset_register, owner_register that demonstrates: Establish and Maintain an Inventory of Accounts: Establish and maintain an inventory of all accounts managed in the enterprise. The inventory must at a minimum include user, administrator, and service accounts. The inventory, at a minimum, should contain the person's name, username, start/stop dates, and department. Validate that all active accounts are authorized, on a recurring schedule at a minimum quarterly, or more frequently.",
+      "question_type": "evidence_upload",
+      "framework_name": "CIS Controls v8.1.2",
+      "framework_key": "cis-controls-v8-1-2",
+      "domain_id": "5",
+      "domain_name": "Account Management",
+      "control_id": "5.1",
+      "cross_references": [
+        {
+          "other_framework_id": "nist-csf-2-0",
+          "other_control_id": "PR.AA-01",
+          "relationship": "Subset",
+          "description": "Identities and credentials for authorized users, services, and hardware are managed by the organization"
+        },
+        {
+          "other_framework_id": "nist-csf-2-0",
+          "other_control_id": "PR.AA-05",
+          "relationship": "Subset",
+          "description": "Access permissions, entitlements, and authorizations are defined in a policy, managed, enforced, and reviewed, and incorporate the principles of least privilege and separation of duties"
+        }
+      ],
+      "expected_evidence": "inventory, asset_register, owner_register"
+    },
+    {
+      "question_id": "067eabff-87cc-50b1-af16-ce904d476e52",
+      "question_text": "Is the organization implementing and operating the control: Use Unique Passwords: Use unique passwords for all enterprise assets. Best practice implementation includes, at a minimum, an 8-character password for accounts using Multi-Factor Authentication (MFA) and a 14-character password for accounts not using MFA?",
+      "question_type": "yes_no",
+      "framework_name": "CIS Controls v8.1.2",
+      "framework_key": "cis-controls-v8-1-2",
+      "domain_id": "5",
+      "domain_name": "Account Management",
+      "control_id": "5.2",
+      "cross_references": [],
+      "expected_evidence": "inventory, asset_register, owner_register"
+    },
+    {
+      "question_id": "79cb7c28-fd21-57fd-bbfd-2aeaf556d076",
+      "question_text": "Upload evidence such as inventory, asset_register, owner_register that demonstrates: Use Unique Passwords: Use unique passwords for all enterprise assets. Best practice implementation includes, at a minimum, an 8-character password for accounts using Multi-Factor Authentication (MFA) and a 14-character password for accounts not using MFA.",
+      "question_type": "evidence_upload",
+      "framework_name": "CIS Controls v8.1.2",
+      "framework_key": "cis-controls-v8-1-2",
+      "domain_id": "5",
+      "domain_name": "Account Management",
+      "control_id": "5.2",
+      "cross_references": [],
+      "expected_evidence": "inventory, asset_register, owner_register"
+    },
+    {
+      "question_id": "02505681-aafc-5b14-85f7-d9b099691bc9",
+      "question_text": "Is the organization implementing and operating the control: Disable Dormant Accounts: Delete or disable any dormant accounts after a period of 45 days of inactivity, where supported?",
+      "question_type": "yes_no",
+      "framework_name": "CIS Controls v8.1.2",
+      "framework_key": "cis-controls-v8-1-2",
+      "domain_id": "5",
+      "domain_name": "Account Management",
+      "control_id": "5.3",
+      "cross_references": [],
+      "expected_evidence": "implementation_evidence, operational_record"
+    },
+    {
+      "question_id": "bce0401b-d100-5a65-815c-688a7723a63e",
+      "question_text": "Upload evidence such as implementation_evidence, operational_record that demonstrates: Disable Dormant Accounts: Delete or disable any dormant accounts after a period of 45 days of inactivity, where supported.",
+      "question_type": "evidence_upload",
+      "framework_name": "CIS Controls v8.1.2",
+      "framework_key": "cis-controls-v8-1-2",
+      "domain_id": "5",
+      "domain_name": "Account Management",
+      "control_id": "5.3",
+      "cross_references": [],
+      "expected_evidence": "implementation_evidence, operational_record"
+    },
+    {
+      "question_id": "ed030efe-dd42-5e87-a4fb-0b7e36a55821",
+      "question_text": "Is the organization implementing and operating the control: Restrict Administrator Privileges to Dedicated Administrator Accounts: Restrict administrator privileges to dedicated administrator accounts on enterprise assets. Conduct general computing activities, such as internet browsing, email, and productivity suite use, from the user's primary, non-privileged account?",
+      "question_type": "yes_no",
+      "framework_name": "CIS Controls v8.1.2",
+      "framework_key": "cis-controls-v8-1-2",
+      "domain_id": "5",
+      "domain_name": "Account Management",
+      "control_id": "5.4",
+      "cross_references": [],
+      "expected_evidence": "inventory, asset_register, owner_register"
+    },
+    {
+      "question_id": "cddbe954-3a94-5b7e-a5b4-16735f01ad0f",
+      "question_text": "Upload evidence such as inventory, asset_register, owner_register that demonstrates: Restrict Administrator Privileges to Dedicated Administrator Accounts: Restrict administrator privileges to dedicated administrator accounts on enterprise assets. Conduct general computing activities, such as internet browsing, email, and productivity suite use, from the user's primary, non-privileged account.",
+      "question_type": "evidence_upload",
+      "framework_name": "CIS Controls v8.1.2",
+      "framework_key": "cis-controls-v8-1-2",
+      "domain_id": "5",
+      "domain_name": "Account Management",
+      "control_id": "5.4",
+      "cross_references": [],
+      "expected_evidence": "inventory, asset_register, owner_register"
+    },
+    {
+      "question_id": "26a16454-f840-5f2b-968a-832f658ca210",
+      "question_text": "Is the organization implementing and operating the control: Establish and Maintain an Inventory of Service Accounts: Establish and maintain an inventory of service accounts. The inventory, at a minimum, must contain department owner, review date, and purpose. Perform service account reviews to validate that all active accounts are authorized, on a recurring schedule at a minimum quarterly, or more frequently?",
+      "question_type": "yes_no",
+      "framework_name": "CIS Controls v8.1.2",
+      "framework_key": "cis-controls-v8-1-2",
+      "domain_id": "5",
+      "domain_name": "Account Management",
+      "control_id": "5.5",
+      "cross_references": [],
+      "expected_evidence": "inventory, asset_register, owner_register"
+    },
+    {
+      "question_id": "765591f0-d9e6-5158-847c-7f0ac589178d",
+      "question_text": "Upload evidence such as inventory, asset_register, owner_register that demonstrates: Establish and Maintain an Inventory of Service Accounts: Establish and maintain an inventory of service accounts. The inventory, at a minimum, must contain department owner, review date, and purpose. Perform service account reviews to validate that all active accounts are authorized, on a recurring schedule at a minimum quarterly, or more frequently.",
+      "question_type": "evidence_upload",
+      "framework_name": "CIS Controls v8.1.2",
+      "framework_key": "cis-controls-v8-1-2",
+      "domain_id": "5",
+      "domain_name": "Account Management",
+      "control_id": "5.5",
+      "cross_references": [],
+      "expected_evidence": "inventory, asset_register, owner_register"
+    },
+    {
+      "question_id": "91ebbe4d-1fa9-5dec-8d87-71e1f7b55fb3",
+      "question_text": "Is the organization implementing and operating the control: Centralize Account Management: Centralize account management through a directory or identity service?",
+      "question_type": "yes_no",
+      "framework_name": "CIS Controls v8.1.2",
+      "framework_key": "cis-controls-v8-1-2",
+      "domain_id": "5",
+      "domain_name": "Account Management",
+      "control_id": "5.6",
+      "cross_references": [
+        {
+          "other_framework_id": "nist-csf-2-0",
+          "other_control_id": "PR.AA-01",
+          "relationship": "Subset",
+          "description": "Identities and credentials for authorized users, services, and hardware are managed by the organization"
+        }
+      ],
+      "expected_evidence": "role_matrix, org_chart, responsibility_assignment"
+    },
+    {
+      "question_id": "972181b5-3835-5d27-8451-f01e5f7ee912",
+      "question_text": "Upload evidence such as role_matrix, org_chart, responsibility_assignment that demonstrates: Centralize Account Management: Centralize account management through a directory or identity service.",
+      "question_type": "evidence_upload",
+      "framework_name": "CIS Controls v8.1.2",
+      "framework_key": "cis-controls-v8-1-2",
+      "domain_id": "5",
+      "domain_name": "Account Management",
+      "control_id": "5.6",
+      "cross_references": [
+        {
+          "other_framework_id": "nist-csf-2-0",
+          "other_control_id": "PR.AA-01",
+          "relationship": "Subset",
+          "description": "Identities and credentials for authorized users, services, and hardware are managed by the organization"
+        }
+      ],
+      "expected_evidence": "role_matrix, org_chart, responsibility_assignment"
+    }
+  ],
+  "part3_tracker": [
+    {
+      "framework": "CIS Controls v8.1.2",
+      "domain": "Account Management",
+      "sub_topic": "Account Management",
+      "control_id": "5.1, 5.2, 5.3, 5.4, 5.5, 5.6",
+      "evidence_request": "account_inventory",
+      "answer_format": "status_text",
+      "status": ""
+    },
+    {
+      "framework": "CIS Controls v8.1.2",
+      "domain": "Account Management",
+      "sub_topic": "Account Management",
+      "control_id": "5.1, 5.2, 5.3, 5.4, 5.5, 5.6",
+      "evidence_request": "review_schedule",
+      "answer_format": "status_text",
+      "status": ""
+    },
+    {
+      "framework": "CIS Controls v8.1.2",
+      "domain": "Account Management",
+      "sub_topic": "Account Management",
+      "control_id": "5.1, 5.2, 5.3, 5.4, 5.5, 5.6",
+      "evidence_request": "dormant_account_policy",
+      "answer_format": "status_text",
+      "status": ""
+    },
+    {
+      "framework": "CIS Controls v8.1.2",
+      "domain": "Account Management",
+      "sub_topic": "Account Management",
+      "control_id": "5.1, 5.2, 5.3, 5.4, 5.5, 5.6",
+      "evidence_request": "admin_account_policy",
+      "answer_format": "status_text",
+      "status": ""
+    },
+    {
+      "framework": "CIS Controls v8.1.2",
+      "domain": "Account Management",
+      "sub_topic": "Account Management",
+      "control_id": "5.1, 5.2, 5.3, 5.4, 5.5, 5.6",
+      "evidence_request": "service_account_review_schedule",
+      "answer_format": "status_text",
+      "status": ""
+    },
+    {
+      "framework": "CIS Controls v8.1.2",
+      "domain": "Account Management",
+      "sub_topic": "Account Management",
+      "control_id": "5.1, 5.2, 5.3, 5.4, 5.5, 5.6",
+      "evidence_request": "centralized_account_management_policy",
+      "answer_format": "status_text",
+      "status": ""
+    }
+  ],
+  "red_flags_by_domain": [
+    {
+      "domain_name": "Account Management",
+      "framework_name": "CIS Controls v8.1.2",
+      "red_flags": [
+        {
+          "critical_gap": "No account inventory is maintained, leading to unauthorized access and dormant accounts.",
+          "recommended_action": "Establish and maintain a comprehensive account inventory, including user, administrator, and service accounts."
+        },
+        {
+          "critical_gap": "Dedicated administrator accounts are not used, leading to uncontrolled administrator privileges.",
+          "recommended_action": "Implement dedicated administrator accounts and restrict administrator privileges to these accounts."
+        },
+        {
+          "critical_gap": "Account management is not centralized, leading to inconsistent and ineffective account management.",
+          "recommended_action": "Centralize account management through a directory or identity service to ensure consistent and effective account management."
+        }
+      ]
+    }
+  ],
+  "selected_domain_keys": [
+    "cis-controls-v8-1-2:5"
+  ],
+  "ingested_at": "2026-06-10T05:28:52.771482+00:00",
+  "maturity_levels": [
+    {
+      "level": 1,
+      "code": "INITIAL",
+      "name": "Initial",
+      "description": "Ad hoc and undocumented."
+    },
+    {
+      "level": 2,
+      "code": "REPEATABLE",
+      "name": "Repeatable",
+      "description": "Basic processes established and repeated."
+    },
+    {
+      "level": 3,
+      "code": "DEFINED",
+      "name": "Defined",
+      "description": "Processes documented, standardised, and communicated."
+    },
+    {
+      "level": 4,
+      "code": "MANAGED",
+      "name": "Managed",
+      "description": "Processes measured and controlled with quantitative data."
+    },
+    {
+      "level": 5,
+      "code": "OPTIMIZING",
+      "name": "Optimizing",
+      "description": "Continuous improvement driven by metrics and feedback."
+    }
+  ],
+  "domains": [
+    {
+      "code": "5",
+      "name": "Account Management",
+      "categories": [
+        {
+          "code": "5.1",
+          "name": "5.1",
+          "controls": [
+            {
+              "code": "5.1",
+              "statement": "Establish and Maintain an Inventory of Accounts: Establish and maintain an inventory of all accounts managed in the enterprise. The inventory must at a minimum include user, administrator, and service accounts. The inventory, at a minimum, should contain the person's name, username, start/stop dates, and department. Validate that all active accounts are authorized, on a recurring schedule at a minimum quarterly, or more frequently.",
+              "cross_refs": [
+                {
+                  "framework": "nist-csf-2-0",
+                  "version": "",
+                  "code": "PR.AA-01"
+                },
+                {
+                  "framework": "nist-csf-2-0",
+                  "version": "",
+                  "code": "PR.AA-05"
+                }
+              ],
+              "questions": [
+                {
+                  "question_id": "9b3c10b-ee9e-43e4-9b9e-13a2a4e2c3d5",
+                  "text": "How frequently are account inventories reviewed?",
+                  "question_type": "FREE_TEXT",
+                  "weight": 4,
+                  "maturity_level": 4,
+                  "help_text": "Provide review schedule",
+                  "choices": []
+                },
+                {
+                  "question_id": "1a2b10b-ee9e-43e4-9b9e-13a2a4e2c3d6",
+                  "text": "What process triggers dormant account deletion?",
+                  "question_type": "FREE_TEXT",
+                  "weight": 3,
+                  "maturity_level": 3,
+                  "help_text": "Describe inactivity threshold",
+                  "choices": []
+                },
+                {
+                  "question_id": "3c4d10b-ee9e-43e4-9b9e-13a2a4e2c3d7",
+                  "text": "How are administrator privileges restricted?",
+                  "question_type": "FREE_TEXT",
+                  "weight": 5,
+                  "maturity_level": 5,
+                  "help_text": "Describe dedicated admin account use",
+                  "choices": []
+                },
+                {
+                  "question_id": "5e6f10b-ee9e-43e4-9b9e-13a2a4e2c3d8",
+                  "text": "What is the service account review frequency?",
+                  "question_type": "SCALE_1_5",
+                  "weight": 4,
+                  "maturity_level": 4,
+                  "help_text": "Provide review schedule",
+                  "choices": [
+                    "Less than quarterly",
+                    "Quarterly",
+                    "Bi-annually",
+                    "Annually",
+                    "More than annually"
+                  ]
+                },
+                {
+                  "question_id": "7g8h10b-ee9e-43e4-9b9e-13a2a4e2c3d9",
+                  "text": "Is account management centralized?",
+                  "question_type": "YES_NO",
+                  "weight": 5,
+                  "maturity_level": 5,
+                  "help_text": "Describe directory or identity service use",
+                  "choices": []
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "code": "5.2",
+          "name": "5.2",
+          "controls": [
+            {
+              "code": "5.2",
+              "statement": "Use Unique Passwords: Use unique passwords for all enterprise assets. Best practice implementation includes, at a minimum, an 8-character password for accounts using Multi-Factor Authentication (MFA) and a 14-character password for accounts not using MFA.",
+              "cross_refs": [],
+              "questions": [
+                {
+                  "question_id": "9b3c10b-ee9e-43e4-9b9e-13a2a4e2c3d5",
+                  "text": "How frequently are account inventories reviewed?",
+                  "question_type": "FREE_TEXT",
+                  "weight": 4,
+                  "maturity_level": 4,
+                  "help_text": "Provide review schedule",
+                  "choices": []
+                },
+                {
+                  "question_id": "1a2b10b-ee9e-43e4-9b9e-13a2a4e2c3d6",
+                  "text": "What process triggers dormant account deletion?",
+                  "question_type": "FREE_TEXT",
+                  "weight": 3,
+                  "maturity_level": 3,
+                  "help_text": "Describe inactivity threshold",
+                  "choices": []
+                },
+                {
+                  "question_id": "3c4d10b-ee9e-43e4-9b9e-13a2a4e2c3d7",
+                  "text": "How are administrator privileges restricted?",
+                  "question_type": "FREE_TEXT",
+                  "weight": 5,
+                  "maturity_level": 5,
+                  "help_text": "Describe dedicated admin account use",
+                  "choices": []
+                },
+                {
+                  "question_id": "5e6f10b-ee9e-43e4-9b9e-13a2a4e2c3d8",
+                  "text": "What is the service account review frequency?",
+                  "question_type": "SCALE_1_5",
+                  "weight": 4,
+                  "maturity_level": 4,
+                  "help_text": "Provide review schedule",
+                  "choices": [
+                    "Less than quarterly",
+                    "Quarterly",
+                    "Bi-annually",
+                    "Annually",
+                    "More than annually"
+                  ]
+                },
+                {
+                  "question_id": "7g8h10b-ee9e-43e4-9b9e-13a2a4e2c3d9",
+                  "text": "Is account management centralized?",
+                  "question_type": "YES_NO",
+                  "weight": 5,
+                  "maturity_level": 5,
+                  "help_text": "Describe directory or identity service use",
+                  "choices": []
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "code": "5.3",
+          "name": "5.3",
+          "controls": [
+            {
+              "code": "5.3",
+              "statement": "Disable Dormant Accounts: Delete or disable any dormant accounts after a period of 45 days of inactivity, where supported.",
+              "cross_refs": [],
+              "questions": [
+                {
+                  "question_id": "9b3c10b-ee9e-43e4-9b9e-13a2a4e2c3d5",
+                  "text": "How frequently are account inventories reviewed?",
+                  "question_type": "FREE_TEXT",
+                  "weight": 4,
+                  "maturity_level": 4,
+                  "help_text": "Provide review schedule",
+                  "choices": []
+                },
+                {
+                  "question_id": "1a2b10b-ee9e-43e4-9b9e-13a2a4e2c3d6",
+                  "text": "What process triggers dormant account deletion?",
+                  "question_type": "FREE_TEXT",
+                  "weight": 3,
+                  "maturity_level": 3,
+                  "help_text": "Describe inactivity threshold",
+                  "choices": []
+                },
+                {
+                  "question_id": "3c4d10b-ee9e-43e4-9b9e-13a2a4e2c3d7",
+                  "text": "How are administrator privileges restricted?",
+                  "question_type": "FREE_TEXT",
+                  "weight": 5,
+                  "maturity_level": 5,
+                  "help_text": "Describe dedicated admin account use",
+                  "choices": []
+                },
+                {
+                  "question_id": "5e6f10b-ee9e-43e4-9b9e-13a2a4e2c3d8",
+                  "text": "What is the service account review frequency?",
+                  "question_type": "SCALE_1_5",
+                  "weight": 4,
+                  "maturity_level": 4,
+                  "help_text": "Provide review schedule",
+                  "choices": [
+                    "Less than quarterly",
+                    "Quarterly",
+                    "Bi-annually",
+                    "Annually",
+                    "More than annually"
+                  ]
+                },
+                {
+                  "question_id": "7g8h10b-ee9e-43e4-9b9e-13a2a4e2c3d9",
+                  "text": "Is account management centralized?",
+                  "question_type": "YES_NO",
+                  "weight": 5,
+                  "maturity_level": 5,
+                  "help_text": "Describe directory or identity service use",
+                  "choices": []
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "code": "5.4",
+          "name": "5.4",
+          "controls": [
+            {
+              "code": "5.4",
+              "statement": "Restrict Administrator Privileges to Dedicated Administrator Accounts: Restrict administrator privileges to dedicated administrator accounts on enterprise assets. Conduct general computing activities, such as internet browsing, email, and productivity suite use, from the user's primary, non-privileged account.",
+              "cross_refs": [],
+              "questions": [
+                {
+                  "question_id": "9b3c10b-ee9e-43e4-9b9e-13a2a4e2c3d5",
+                  "text": "How frequently are account inventories reviewed?",
+                  "question_type": "FREE_TEXT",
+                  "weight": 4,
+                  "maturity_level": 4,
+                  "help_text": "Provide review schedule",
+                  "choices": []
+                },
+                {
+                  "question_id": "1a2b10b-ee9e-43e4-9b9e-13a2a4e2c3d6",
+                  "text": "What process triggers dormant account deletion?",
+                  "question_type": "FREE_TEXT",
+                  "weight": 3,
+                  "maturity_level": 3,
+                  "help_text": "Describe inactivity threshold",
+                  "choices": []
+                },
+                {
+                  "question_id": "3c4d10b-ee9e-43e4-9b9e-13a2a4e2c3d7",
+                  "text": "How are administrator privileges restricted?",
+                  "question_type": "FREE_TEXT",
+                  "weight": 5,
+                  "maturity_level": 5,
+                  "help_text": "Describe dedicated admin account use",
+                  "choices": []
+                },
+                {
+                  "question_id": "5e6f10b-ee9e-43e4-9b9e-13a2a4e2c3d8",
+                  "text": "What is the service account review frequency?",
+                  "question_type": "SCALE_1_5",
+                  "weight": 4,
+                  "maturity_level": 4,
+                  "help_text": "Provide review schedule",
+                  "choices": [
+                    "Less than quarterly",
+                    "Quarterly",
+                    "Bi-annually",
+                    "Annually",
+                    "More than annually"
+                  ]
+                },
+                {
+                  "question_id": "7g8h10b-ee9e-43e4-9b9e-13a2a4e2c3d9",
+                  "text": "Is account management centralized?",
+                  "question_type": "YES_NO",
+                  "weight": 5,
+                  "maturity_level": 5,
+                  "help_text": "Describe directory or identity service use",
+                  "choices": []
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "code": "5.5",
+          "name": "5.5",
+          "controls": [
+            {
+              "code": "5.5",
+              "statement": "Establish and Maintain an Inventory of Service Accounts: Establish and maintain an inventory of service accounts. The inventory, at a minimum, must contain department owner, review date, and purpose. Perform service account reviews to validate that all active accounts are authorized, on a recurring schedule at a minimum quarterly, or more frequently.",
+              "cross_refs": [],
+              "questions": [
+                {
+                  "question_id": "9b3c10b-ee9e-43e4-9b9e-13a2a4e2c3d5",
+                  "text": "How frequently are account inventories reviewed?",
+                  "question_type": "FREE_TEXT",
+                  "weight": 4,
+                  "maturity_level": 4,
+                  "help_text": "Provide review schedule",
+                  "choices": []
+                },
+                {
+                  "question_id": "1a2b10b-ee9e-43e4-9b9e-13a2a4e2c3d6",
+                  "text": "What process triggers dormant account deletion?",
+                  "question_type": "FREE_TEXT",
+                  "weight": 3,
+                  "maturity_level": 3,
+                  "help_text": "Describe inactivity threshold",
+                  "choices": []
+                },
+                {
+                  "question_id": "3c4d10b-ee9e-43e4-9b9e-13a2a4e2c3d7",
+                  "text": "How are administrator privileges restricted?",
+                  "question_type": "FREE_TEXT",
+                  "weight": 5,
+                  "maturity_level": 5,
+                  "help_text": "Describe dedicated admin account use",
+                  "choices": []
+                },
+                {
+                  "question_id": "5e6f10b-ee9e-43e4-9b9e-13a2a4e2c3d8",
+                  "text": "What is the service account review frequency?",
+                  "question_type": "SCALE_1_5",
+                  "weight": 4,
+                  "maturity_level": 4,
+                  "help_text": "Provide review schedule",
+                  "choices": [
+                    "Less than quarterly",
+                    "Quarterly",
+                    "Bi-annually",
+                    "Annually",
+                    "More than annually"
+                  ]
+                },
+                {
+                  "question_id": "7g8h10b-ee9e-43e4-9b9e-13a2a4e2c3d9",
+                  "text": "Is account management centralized?",
+                  "question_type": "YES_NO",
+                  "weight": 5,
+                  "maturity_level": 5,
+                  "help_text": "Describe directory or identity service use",
+                  "choices": []
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "code": "5.6",
+          "name": "5.6",
+          "controls": [
+            {
+              "code": "5.6",
+              "statement": "Centralize Account Management: Centralize account management through a directory or identity service.",
+              "cross_refs": [
+                {
+                  "framework": "nist-csf-2-0",
+                  "version": "",
+                  "code": "PR.AA-01"
+                }
+              ],
+              "questions": [
+                {
+                  "question_id": "9b3c10b-ee9e-43e4-9b9e-13a2a4e2c3d5",
+                  "text": "How frequently are account inventories reviewed?",
+                  "question_type": "FREE_TEXT",
+                  "weight": 4,
+                  "maturity_level": 4,
+                  "help_text": "Provide review schedule",
+                  "choices": []
+                },
+                {
+                  "question_id": "1a2b10b-ee9e-43e4-9b9e-13a2a4e2c3d6",
+                  "text": "What process triggers dormant account deletion?",
+                  "question_type": "FREE_TEXT",
+                  "weight": 3,
+                  "maturity_level": 3,
+                  "help_text": "Describe inactivity threshold",
+                  "choices": []
+                },
+                {
+                  "question_id": "3c4d10b-ee9e-43e4-9b9e-13a2a4e2c3d7",
+                  "text": "How are administrator privileges restricted?",
+                  "question_type": "FREE_TEXT",
+                  "weight": 5,
+                  "maturity_level": 5,
+                  "help_text": "Describe dedicated admin account use",
+                  "choices": []
+                },
+                {
+                  "question_id": "5e6f10b-ee9e-43e4-9b9e-13a2a4e2c3d8",
+                  "text": "What is the service account review frequency?",
+                  "question_type": "SCALE_1_5",
+                  "weight": 4,
+                  "maturity_level": 4,
+                  "help_text": "Provide review schedule",
+                  "choices": [
+                    "Less than quarterly",
+                    "Quarterly",
+                    "Bi-annually",
+                    "Annually",
+                    "More than annually"
+                  ]
+                },
+                {
+                  "question_id": "7g8h10b-ee9e-43e4-9b9e-13a2a4e2c3d9",
+                  "text": "Is account management centralized?",
+                  "question_type": "YES_NO",
+                  "weight": 5,
+                  "maturity_level": 5,
+                  "help_text": "Describe directory or identity service use",
+                  "choices": []
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    }
+  ],
+  "mappings": [
+    {
+      "source_control": "5.1",
+      "target_framework": "nist-csf-2-0",
+      "target_framework_version": "",
+      "target_control": "PR.AA-01",
+      "relationship": "RELATED",
+      "notes": ""
+    },
+    {
+      "source_control": "5.1",
+      "target_framework": "nist-csf-2-0",
+      "target_framework_version": "",
+      "target_control": "PR.AA-05",
+      "relationship": "RELATED",
+      "notes": ""
+    },
+    {
+      "source_control": "5.6",
+      "target_framework": "nist-csf-2-0",
+      "target_framework_version": "",
+      "target_control": "PR.AA-01",
+      "relationship": "RELATED",
+      "notes": ""
+    }
+  ]
+}

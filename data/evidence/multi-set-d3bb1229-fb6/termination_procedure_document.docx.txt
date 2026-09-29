@@ -1,0 +1,69 @@
+User Termination Procedure
+Identity & Access Management  |  IAM-PROC-2026-001  |  Version 3.0
+
+1. Document Control
+
+2. Purpose & Scope
+
+This procedure defines the mandatory steps for revoking access and disabling accounts when an employee, contractor, or third party leaves the organisation or changes role. The goal is to ensure access is removed within defined timeframes to prevent unauthorised access to corporate systems and data.
+Scope: All employees, contractors, temporary staff, and third-party users with access to corporate systems, networks, or data.
+
+3. Trigger Events
+
+Voluntary resignation
+Involuntary termination / dismissal
+End of contract or fixed-term employment
+Retirement
+Extended leave (access suspended, not deleted — see Section 6)
+Role change requiring access modification (handled via Access Modification sub-process)
+
+4. Termination Timeline Requirements
+
+
+5. Step-by-Step Termination Procedure
+
+Step 1 — HR Notification (HR Department)
+HR submits termination request via the ITSM portal (ticket type: User Offboarding) minimum 5 business days before last day for planned terminations
+For immediate terminations, HR calls IAM Manager directly and submits ticket within 1 hour
+Ticket must include: employee name, user ID, last working date, reason category, manager name
+
+Step 2 — Account Disable (IAM Manager)
+Disable Active Directory / Azure AD account
+Remove from all Active Directory and Azure AD groups
+Revoke all OAuth tokens and active sessions (Azure AD: Revoke All Sessions)
+Disable MFA devices registered to the account
+Record action in ITSM ticket with timestamp and operator ID
+
+Step 3 — System Access Revocation (IAM Manager + System Owners)
+Revoke access to all business applications via provisioning system
+Remove VPN certificates and remote access credentials
+Disable API keys and personal access tokens
+Notify system owners of privileged systems to confirm local access removal
+Confirm service accounts owned by the user are re-assigned or disabled
+
+Step 4 — Asset Recovery (HR + Line Manager)
+Retrieve corporate devices (laptop, mobile, security tokens, access cards)
+Confirm device wipe or return to IT Asset Management
+Retrieve physical access badges
+
+Step 5 — Data Handling (Line Manager + IT)
+Transfer critical data and emails to line manager as defined in offboarding checklist
+Retain mailbox for 90 days in litigation hold before deletion
+Delete personal data in accordance with Data Retention Policy (DRP-2026-001)
+
+Step 6 — Verification & Closure (IAM Manager)
+Confirm account is fully disabled via AD report and Azure AD audit log
+Close ITSM ticket with completion evidence attached
+Notify HR and line manager of completion
+
+6. Extended Leave Procedure
+
+For employees on extended leave (parental leave, medical leave, sabbatical >30 days):
+Account access suspended (not deleted) after 30 consecutive days of inactivity
+Manager and HR notified 5 days before suspension
+Account restored upon confirmed return — requires fresh MFA registration
+Leave exceeding 180 days: full access review required before reinstatement
+
+7. Audit & Compliance
+
+All termination actions are logged in the ITSM system and Active Directory audit log. The IAM Manager produces a monthly Termination Compliance Report confirming all offboarding tickets were completed within SLA. The report is reviewed by the CISO and retained for 3 years.

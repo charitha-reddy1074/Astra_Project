@@ -1,0 +1,302 @@
+{
+  "_meta": {
+    "document": "Market Assessment — Current State Discovery",
+    "part": 1,
+    "title": "Pre-Assessment Questionnaire",
+    "instructions": "Please complete this questionnaire prior to the scheduled sessions. Answers can be Yes, No, Partial, or a brief tool or technology name. This helps make the best use of session time by walking in informed on your current environment.",
+    "response_options_default": ["Yes", "No", "Partial"],
+    "generated_at": "static"
+  },
+  "questions": [
+    {
+      "number": 1,
+      "question_id": "p1-001",
+      "cluster": "Identity & Access Management (IAM)",
+      "sub_topic": "Identity Lifecycle & Directory",
+      "question_text": "Do you manage user identities separate from corporate platform? If so, what is used?",
+      "response_options": ["Yes", "No"],
+      "detail_prompt": "If so, what is used?",
+      "answer_format": "yes_no_with_detail"
+    },
+    {
+      "number": 2,
+      "question_id": "p1-002",
+      "cluster": "Identity & Access Management (IAM)",
+      "sub_topic": "Identity Lifecycle & Directory",
+      "question_text": "Is any part of the joiner/mover/leaver process automated? (i.e., IGA tool in place)",
+      "response_options": ["Yes", "No", "Partial"],
+      "detail_prompt": "If so, which tool?",
+      "answer_format": "yes_no_partial_with_detail"
+    },
+    {
+      "number": 3,
+      "question_id": "p1-003",
+      "cluster": "Identity & Access Management (IAM)",
+      "sub_topic": "Authentication & MFA",
+      "question_text": "Is Multi-Factor Authentication (MFA) enforced for all users?",
+      "response_options": ["Yes", "No", "Partial"],
+      "detail_prompt": "If yes, which tool?",
+      "answer_format": "yes_no_partial_with_detail"
+    },
+    {
+      "number": 4,
+      "question_id": "p1-004",
+      "cluster": "Identity & Access Management (IAM)",
+      "sub_topic": "Authentication & MFA",
+      "question_text": "Is Single Sign-On (SSO) implemented?",
+      "response_options": ["Yes", "No"],
+      "detail_prompt": "If yes, which platform?",
+      "answer_format": "yes_no_with_detail"
+    },
+    {
+      "number": 5,
+      "question_id": "p1-005",
+      "cluster": "Identity & Access Management (IAM)",
+      "sub_topic": "Privileged Access Management",
+      "question_text": "Is a Privileged Access Management (PAM) tool in use?",
+      "response_options": ["Yes", "No"],
+      "detail_prompt": "If yes, which tool?",
+      "answer_format": "yes_no_with_detail"
+    },
+    {
+      "number": 6,
+      "question_id": "p1-006",
+      "cluster": "Identity & Access Management (IAM)",
+      "sub_topic": "Access Control & Least Privilege",
+      "question_text": "Is there a process in place to periodically review access requests?",
+      "response_options": ["Yes", "No"],
+      "detail_prompt": null,
+      "answer_format": "yes_no"
+    },
+    {
+      "number": 7,
+      "question_id": "p1-007",
+      "cluster": "Network Security",
+      "sub_topic": "Network Architecture & Perimeter",
+      "question_text": "Is a next-generation firewall (NGFW) in use?",
+      "response_options": ["Yes", "No"],
+      "detail_prompt": "If yes, which vendor?",
+      "answer_format": "yes_no_with_detail"
+    },
+    {
+      "number": 8,
+      "question_id": "p1-008",
+      "cluster": "Network Security",
+      "sub_topic": "Network Segmentation",
+      "question_text": "Is your network divided into separate zones to limit what systems can communicate with each other?",
+      "response_options": ["Yes", "No", "Partial"],
+      "detail_prompt": null,
+      "answer_format": "yes_no_partial"
+    },
+    {
+      "number": 9,
+      "question_id": "p1-009",
+      "cluster": "Network Security",
+      "sub_topic": "Remote Access",
+      "question_text": "Is a VPN or Zero Trust Network Access (ZTNA) solution in use for remote access?",
+      "response_options": ["Yes", "No"],
+      "detail_prompt": "If yes, which tool?",
+      "answer_format": "yes_no_with_detail"
+    },
+    {
+      "number": 10,
+      "question_id": "p1-010",
+      "cluster": "Network Security",
+      "sub_topic": "Wireless & Physical Network",
+      "question_text": "Is the corporate wireless network separate from guest and IoT networks?",
+      "response_options": ["Yes", "No", "Partial"],
+      "detail_prompt": null,
+      "answer_format": "yes_no_partial"
+    },
+    {
+      "number": 11,
+      "question_id": "p1-011",
+      "cluster": "Network Security",
+      "sub_topic": "Network Monitoring & Threat Detection",
+      "question_text": "Is a DNS filtering or web gateway tool in use to block malicious sites?",
+      "response_options": ["Yes", "No"],
+      "detail_prompt": "If yes, which tool? (e.g., Cisco Umbrella, Zscaler)",
+      "answer_format": "yes_no_with_detail"
+    },
+    {
+      "number": 12,
+      "question_id": "p1-012",
+      "cluster": "Network Security",
+      "sub_topic": "Network Monitoring & Threat Detection",
+      "question_text": "Is there a tool in place to monitor network traffic for suspicious activity?",
+      "response_options": ["Yes", "No"],
+      "detail_prompt": "If yes, which tool? (e.g., IDS/IPS)",
+      "answer_format": "yes_no_with_detail"
+    },
+    {
+      "number": 13,
+      "question_id": "p1-013",
+      "cluster": "Hosting & Cloud Security",
+      "sub_topic": "Cloud Adoption & Architecture",
+      "question_text": "What cloud providers are in use?",
+      "response_options": ["AWS", "Azure", "GCP", "On-premises only", "Combination"],
+      "detail_prompt": null,
+      "answer_format": "multi_select_or_text"
+    },
+    {
+      "number": 14,
+      "question_id": "p1-014",
+      "cluster": "Hosting & Cloud Security",
+      "sub_topic": "Cloud Adoption & Architecture",
+      "question_text": "Is any data hosted outside of the primary cloud? If so, is it stored on a local server or private cloud?",
+      "response_options": ["Yes", "No"],
+      "detail_prompt": "If yes, please describe.",
+      "answer_format": "yes_no_with_detail"
+    },
+    {
+      "number": 15,
+      "question_id": "p1-015",
+      "cluster": "M365 & Email Security",
+      "sub_topic": "M365 Configuration & Governance",
+      "question_text": "Is Microsoft 365 in use?",
+      "response_options": ["Yes", "No"],
+      "detail_prompt": null,
+      "answer_format": "yes_no"
+    },
+    {
+      "number": 16,
+      "question_id": "p1-016",
+      "cluster": "M365 & Email Security",
+      "sub_topic": "Email Security",
+      "question_text": "Is email security filtering in place beyond native M365 controls?",
+      "response_options": ["Yes", "No"],
+      "detail_prompt": "If yes, which tool? (e.g., Proofpoint)",
+      "answer_format": "yes_no_with_detail"
+    },
+    {
+      "number": 17,
+      "question_id": "p1-017",
+      "cluster": "Endpoint Security",
+      "sub_topic": "Endpoint Protection",
+      "question_text": "Is SentinelOne or another Endpoint Detection and Response (EDR) solution deployed?",
+      "response_options": ["Yes", "No"],
+      "detail_prompt": "If yes, which tool?",
+      "answer_format": "yes_no_with_detail"
+    },
+    {
+      "number": 18,
+      "question_id": "p1-018",
+      "cluster": "Endpoint Security",
+      "sub_topic": "Device Management",
+      "question_text": "Is Tanium, Tenable and/or another formal vulnerability and patch management tool in place?",
+      "response_options": ["Yes", "No", "Partial"],
+      "detail_prompt": "If yes, which tool?",
+      "answer_format": "yes_no_partial_with_detail"
+    },
+    {
+      "number": 19,
+      "question_id": "p1-019",
+      "cluster": "Data & Storage Security",
+      "sub_topic": "Data Classification & Governance",
+      "question_text": "Has sensitive data and crown jewels been identified and documented?",
+      "response_options": ["Yes", "No", "Partial"],
+      "detail_prompt": null,
+      "answer_format": "yes_no_partial"
+    },
+    {
+      "number": 20,
+      "question_id": "p1-020",
+      "cluster": "Data & Storage Security",
+      "sub_topic": "Data Classification & Governance",
+      "question_text": "Is sensitive data encrypted at rest and in transit?",
+      "response_options": ["Yes", "No", "Partial"],
+      "detail_prompt": null,
+      "answer_format": "yes_no_partial"
+    },
+    {
+      "number": 21,
+      "question_id": "p1-021",
+      "cluster": "Data & Storage Security",
+      "sub_topic": "Data Classification & Governance",
+      "question_text": "Is a Data Loss Prevention (DLP) solution in use?",
+      "response_options": ["Yes", "No"],
+      "detail_prompt": "If yes, which tool?",
+      "answer_format": "yes_no_with_detail"
+    },
+    {
+      "number": 22,
+      "question_id": "p1-022",
+      "cluster": "Defense & Response",
+      "sub_topic": "Log Management",
+      "question_text": "Are logs ingested into the Global SOC?",
+      "response_options": ["Yes", "No", "Partial"],
+      "detail_prompt": null,
+      "answer_format": "yes_no_partial"
+    },
+    {
+      "number": 23,
+      "question_id": "p1-023",
+      "cluster": "Defense & Response",
+      "sub_topic": "Incident Response",
+      "question_text": "Is there a documented Incident Response plan?",
+      "response_options": ["Yes", "No"],
+      "detail_prompt": null,
+      "answer_format": "yes_no"
+    },
+    {
+      "number": 24,
+      "question_id": "p1-024",
+      "cluster": "Defense & Response",
+      "sub_topic": "Incident Response",
+      "question_text": "Has a security incident or data breach occurred in the past 24 months?",
+      "response_options": ["Yes", "No", "Prefer not to say"],
+      "detail_prompt": "If yes, please provide high-level details.",
+      "answer_format": "yes_no_prefer_not_to_say_with_detail"
+    },
+    {
+      "number": 25,
+      "question_id": "p1-025",
+      "cluster": "Application Inventory & Security",
+      "sub_topic": "Application Inventory",
+      "question_text": "Do you maintain a list of all applications in use across the organization?",
+      "response_options": ["Yes", "No", "Partial"],
+      "detail_prompt": null,
+      "answer_format": "yes_no_partial"
+    },
+    {
+      "number": 26,
+      "question_id": "p1-026",
+      "cluster": "Application Inventory & Security",
+      "sub_topic": "Application Security",
+      "question_text": "Is application security testing (SAST/DAST) performed as part of the development lifecycle?",
+      "response_options": ["Yes", "No"],
+      "detail_prompt": "If so, which tools?",
+      "answer_format": "yes_no_with_detail"
+    },
+    {
+      "number": 27,
+      "question_id": "p1-027",
+      "cluster": "AI Security",
+      "sub_topic": "AI Usage & Governance",
+      "question_text": "Is AI or generative AI tooling in use across the organization?",
+      "response_options": ["Yes", "No"],
+      "detail_prompt": "If yes, which tools?",
+      "answer_format": "yes_no_with_detail"
+    },
+    {
+      "number": 28,
+      "question_id": "p1-028",
+      "cluster": "Third Party & Vendor Risk",
+      "sub_topic": "TPRM Program",
+      "question_text": "Do you maintain and update an inventory of third parties?",
+      "response_options": ["Yes", "No", "Partial"],
+      "detail_prompt": null,
+      "answer_format": "yes_no_partial"
+    },
+    {
+      "number": 29,
+      "question_id": "p1-029",
+      "cluster": "General",
+      "sub_topic": "Known Gaps",
+      "question_text": "Are there known gaps or active security initiatives underway that we should be aware of before the sessions?",
+      "response_options": null,
+      "detail_prompt": "Please describe.",
+      "answer_format": "free_text"
+    }
+  ]
+}

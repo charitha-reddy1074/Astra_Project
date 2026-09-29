@@ -1,0 +1,2475 @@
+[
+  {
+    "question_id": "MQ-001",
+    "question": "Do you maintain and implement establish and maintain detailed enterprise asset inventory?",
+    "question_type": "YES_NO",
+    "requires_evidence": true,
+    "mapped_controls": {
+      "CIS_CONTROLS_V8": [
+        "1.1"
+      ],
+      "NIST_CSF_2_0": [
+        "ID.AM-01",
+        "ID.AM-08"
+      ]
+    }
+  },
+  {
+    "question_id": "MQ-002",
+    "question": "Do you maintain and implement address unauthorized assets?",
+    "question_type": "YES_NO",
+    "requires_evidence": true,
+    "mapped_controls": {
+      "CIS_CONTROLS_V8": [
+        "1.2"
+      ],
+      "NIST_CSF_2_0": [
+        "PR.PS-03"
+      ]
+    }
+  },
+  {
+    "question_id": "MQ-003",
+    "question": "Do you maintain and implement establish and maintain a software inventory?",
+    "question_type": "YES_NO",
+    "requires_evidence": true,
+    "mapped_controls": {
+      "CIS_CONTROLS_V8": [
+        "2.1"
+      ],
+      "NIST_CSF_2_0": [
+        "ID.AM-02"
+      ]
+    }
+  },
+  {
+    "question_id": "MQ-004",
+    "question": "Do you maintain and implement ensure authorized software is currently supported?",
+    "question_type": "YES_NO",
+    "requires_evidence": true,
+    "mapped_controls": {
+      "CIS_CONTROLS_V8": [
+        "2.2"
+      ],
+      "NIST_CSF_2_0": [
+        "PR.PS-02"
+      ]
+    }
+  },
+  {
+    "question_id": "MQ-005",
+    "question": "Do you maintain and implement address unauthorized software?",
+    "question_type": "YES_NO",
+    "requires_evidence": true,
+    "mapped_controls": {
+      "CIS_CONTROLS_V8": [
+        "2.3"
+      ],
+      "NIST_CSF_2_0": [
+        "PR.PS-02"
+      ]
+    }
+  },
+  {
+    "question_id": "MQ-006",
+    "question": "Do you maintain and implement allowlist authorized software?",
+    "question_type": "YES_NO",
+    "requires_evidence": true,
+    "mapped_controls": {
+      "CIS_CONTROLS_V8": [
+        "2.5"
+      ],
+      "NIST_CSF_2_0": [
+        "PR.PS-05"
+      ]
+    }
+  },
+  {
+    "question_id": "MQ-007",
+    "question": "Do you maintain and implement establish and maintain a data inventory?",
+    "question_type": "YES_NO",
+    "requires_evidence": true,
+    "mapped_controls": {
+      "CIS_CONTROLS_V8": [
+        "3.2"
+      ],
+      "NIST_CSF_2_0": [
+        "ID.AM-07"
+      ]
+    }
+  },
+  {
+    "question_id": "MQ-008",
+    "question": "Do you maintain and implement securely dispose of data?",
+    "question_type": "YES_NO",
+    "requires_evidence": true,
+    "mapped_controls": {
+      "CIS_CONTROLS_V8": [
+        "3.5"
+      ],
+      "NIST_CSF_2_0": [
+        "ID.AM-08"
+      ]
+    }
+  },
+  {
+    "question_id": "MQ-009",
+    "question": "Do you maintain and implement establish and maintain a data classification scheme?",
+    "question_type": "YES_NO",
+    "requires_evidence": true,
+    "mapped_controls": {
+      "CIS_CONTROLS_V8": [
+        "3.7"
+      ],
+      "NIST_CSF_2_0": [
+        "ID.AM-05"
+      ]
+    }
+  },
+  {
+    "question_id": "MQ-010",
+    "question": "Do you maintain and implement document data flows?",
+    "question_type": "YES_NO",
+    "requires_evidence": true,
+    "mapped_controls": {
+      "CIS_CONTROLS_V8": [
+        "3.8"
+      ],
+      "NIST_CSF_2_0": [
+        "ID.AM-03"
+      ]
+    }
+  },
+  {
+    "question_id": "MQ-011",
+    "question": "Do you maintain and implement encrypt sensitive data in transit?",
+    "question_type": "YES_NO",
+    "requires_evidence": true,
+    "mapped_controls": {
+      "CIS_CONTROLS_V8": [
+        "3.1"
+      ],
+      "NIST_CSF_2_0": [
+        "PR.DS-02"
+      ]
+    }
+  },
+  {
+    "question_id": "MQ-012",
+    "question": "Do you maintain and implement encrypt sensitive data at rest?",
+    "question_type": "YES_NO",
+    "requires_evidence": true,
+    "mapped_controls": {
+      "CIS_CONTROLS_V8": [
+        "3.11"
+      ],
+      "NIST_CSF_2_0": [
+        "PR.DS-01"
+      ]
+    }
+  },
+  {
+    "question_id": "MQ-013",
+    "question": "Do you maintain and implement segment data processing and storage based on sensitivity?",
+    "question_type": "YES_NO",
+    "requires_evidence": true,
+    "mapped_controls": {
+      "CIS_CONTROLS_V8": [
+        "3.12"
+      ],
+      "NIST_CSF_2_0": [
+        "PR.IR-01"
+      ]
+    }
+  },
+  {
+    "question_id": "MQ-014",
+    "question": "Do you maintain and implement establish and maintain a secure configuration process?",
+    "question_type": "YES_NO",
+    "requires_evidence": true,
+    "mapped_controls": {
+      "CIS_CONTROLS_V8": [
+        "4.1"
+      ],
+      "NIST_CSF_2_0": [
+        "PR.PS-01"
+      ]
+    }
+  },
+  {
+    "question_id": "MQ-015",
+    "question": "Do you maintain and implement establish and maintain a secure configuration process for network infrastructure?",
+    "question_type": "YES_NO",
+    "requires_evidence": true,
+    "mapped_controls": {
+      "CIS_CONTROLS_V8": [
+        "4.2"
+      ],
+      "NIST_CSF_2_0": [
+        "PR.PS-01"
+      ]
+    }
+  },
+  {
+    "question_id": "MQ-016",
+    "question": "Do you maintain and implement establish and maintain an inventory of accounts?",
+    "question_type": "YES_NO",
+    "requires_evidence": true,
+    "mapped_controls": {
+      "CIS_CONTROLS_V8": [
+        "5.1"
+      ],
+      "NIST_CSF_2_0": [
+        "PR.AA-01",
+        "PR.AA-05"
+      ]
+    }
+  },
+  {
+    "question_id": "MQ-017",
+    "question": "Do you maintain and implement centralize account management?",
+    "question_type": "YES_NO",
+    "requires_evidence": true,
+    "mapped_controls": {
+      "CIS_CONTROLS_V8": [
+        "5.6"
+      ],
+      "NIST_CSF_2_0": [
+        "PR.AA-01"
+      ]
+    }
+  },
+  {
+    "question_id": "MQ-018",
+    "question": "Do you maintain and implement establish an access granting process?",
+    "question_type": "YES_NO",
+    "requires_evidence": true,
+    "mapped_controls": {
+      "CIS_CONTROLS_V8": [
+        "6.1"
+      ],
+      "NIST_CSF_2_0": [
+        "GV.RR-04"
+      ]
+    }
+  },
+  {
+    "question_id": "MQ-019",
+    "question": "Do you maintain and implement establish an access revoking process?",
+    "question_type": "YES_NO",
+    "requires_evidence": true,
+    "mapped_controls": {
+      "CIS_CONTROLS_V8": [
+        "6.2"
+      ],
+      "NIST_CSF_2_0": [
+        "GV.RR-04"
+      ]
+    }
+  },
+  {
+    "question_id": "MQ-020",
+    "question": "Do you maintain and implement define and maintain role-based access control?",
+    "question_type": "YES_NO",
+    "requires_evidence": true,
+    "mapped_controls": {
+      "CIS_CONTROLS_V8": [
+        "6.8"
+      ],
+      "NIST_CSF_2_0": [
+        "PR.AA-05"
+      ]
+    }
+  },
+  {
+    "question_id": "MQ-021",
+    "question": "Do you maintain and implement establish and maintain a vulnerability management process?",
+    "question_type": "YES_NO",
+    "requires_evidence": true,
+    "mapped_controls": {
+      "CIS_CONTROLS_V8": [
+        "7.1"
+      ],
+      "NIST_CSF_2_0": [
+        "ID.RA-01"
+      ]
+    }
+  },
+  {
+    "question_id": "MQ-022",
+    "question": "Do you maintain and implement establish and maintain a remediation process?",
+    "question_type": "YES_NO",
+    "requires_evidence": true,
+    "mapped_controls": {
+      "CIS_CONTROLS_V8": [
+        "7.2"
+      ],
+      "NIST_CSF_2_0": [
+        "ID.IM-02",
+        "ID.RA-08"
+      ]
+    }
+  },
+  {
+    "question_id": "MQ-023",
+    "question": "Do you maintain and implement collect audit logs?",
+    "question_type": "YES_NO",
+    "requires_evidence": true,
+    "mapped_controls": {
+      "CIS_CONTROLS_V8": [
+        "8.2"
+      ],
+      "NIST_CSF_2_0": [
+        "PR.PS-04"
+      ]
+    }
+  },
+  {
+    "question_id": "MQ-024",
+    "question": "Do you maintain and implement conduct audit log reviews?",
+    "question_type": "YES_NO",
+    "requires_evidence": true,
+    "mapped_controls": {
+      "CIS_CONTROLS_V8": [
+        "8.11"
+      ],
+      "NIST_CSF_2_0": [
+        "DE.AE-02"
+      ]
+    }
+  },
+  {
+    "question_id": "MQ-025",
+    "question": "Do you maintain and implement deploy and maintain anti-malware software?",
+    "question_type": "YES_NO",
+    "requires_evidence": true,
+    "mapped_controls": {
+      "CIS_CONTROLS_V8": [
+        "10.1"
+      ],
+      "NIST_CSF_2_0": [
+        "DE.CM-09"
+      ]
+    }
+  },
+  {
+    "question_id": "MQ-026",
+    "question": "Do you maintain and implement use behavior-based anti-malware software?",
+    "question_type": "YES_NO",
+    "requires_evidence": true,
+    "mapped_controls": {
+      "CIS_CONTROLS_V8": [
+        "10.7"
+      ],
+      "NIST_CSF_2_0": [
+        "DE.CM-03"
+      ]
+    }
+  },
+  {
+    "question_id": "MQ-027",
+    "question": "Do you maintain and implement perform automated backups?",
+    "question_type": "YES_NO",
+    "requires_evidence": true,
+    "mapped_controls": {
+      "CIS_CONTROLS_V8": [
+        "11.2"
+      ],
+      "NIST_CSF_2_0": [
+        "PR.DS-11"
+      ]
+    }
+  },
+  {
+    "question_id": "MQ-028",
+    "question": "Do you maintain and implement protect recovery data?",
+    "question_type": "YES_NO",
+    "requires_evidence": true,
+    "mapped_controls": {
+      "CIS_CONTROLS_V8": [
+        "11.3"
+      ],
+      "NIST_CSF_2_0": [
+        "PR.DS-11"
+      ]
+    }
+  },
+  {
+    "question_id": "MQ-029",
+    "question": "Do you maintain and implement test data recovery?",
+    "question_type": "YES_NO",
+    "requires_evidence": true,
+    "mapped_controls": {
+      "CIS_CONTROLS_V8": [
+        "11.5"
+      ],
+      "NIST_CSF_2_0": [
+        "PR.DS-11",
+        "RC.RP-03"
+      ]
+    }
+  },
+  {
+    "question_id": "MQ-030",
+    "question": "Do you maintain and implement establish and maintain a secure network architecture?",
+    "question_type": "YES_NO",
+    "requires_evidence": true,
+    "mapped_controls": {
+      "CIS_CONTROLS_V8": [
+        "12.2"
+      ],
+      "NIST_CSF_2_0": [
+        "PR.IR-01"
+      ]
+    }
+  },
+  {
+    "question_id": "MQ-031",
+    "question": "Do you maintain and implement centralize security event alerting?",
+    "question_type": "YES_NO",
+    "requires_evidence": true,
+    "mapped_controls": {
+      "CIS_CONTROLS_V8": [
+        "13.1"
+      ],
+      "NIST_CSF_2_0": [
+        "DE.CM-01"
+      ]
+    }
+  },
+  {
+    "question_id": "MQ-032",
+    "question": "Do you maintain and implement establish and maintain a security awareness program?",
+    "question_type": "YES_NO",
+    "requires_evidence": true,
+    "mapped_controls": {
+      "CIS_CONTROLS_V8": [
+        "14.1"
+      ],
+      "NIST_CSF_2_0": [
+        "GV.RR-01",
+        "PR.AT-01"
+      ]
+    }
+  },
+  {
+    "question_id": "MQ-033",
+    "question": "Do you maintain and implement conduct role-specific security awareness and skills training?",
+    "question_type": "YES_NO",
+    "requires_evidence": true,
+    "mapped_controls": {
+      "CIS_CONTROLS_V8": [
+        "14.9"
+      ],
+      "NIST_CSF_2_0": [
+        "GV.RR-02",
+        "PR.AT-02"
+      ]
+    }
+  },
+  {
+    "question_id": "MQ-034",
+    "question": "Do you maintain and implement establish and maintain an inventory of service providers?",
+    "question_type": "YES_NO",
+    "requires_evidence": true,
+    "mapped_controls": {
+      "CIS_CONTROLS_V8": [
+        "15.1"
+      ],
+      "NIST_CSF_2_0": [
+        "GV.SC-04",
+        "ID.AM-04"
+      ]
+    }
+  },
+  {
+    "question_id": "MQ-035",
+    "question": "Do you maintain and implement establish and maintain a service provider management policy?",
+    "question_type": "YES_NO",
+    "requires_evidence": true,
+    "mapped_controls": {
+      "CIS_CONTROLS_V8": [
+        "15.2"
+      ],
+      "NIST_CSF_2_0": [
+        "DE.CM-06",
+        "GV.SC-01"
+      ]
+    }
+  },
+  {
+    "question_id": "MQ-036",
+    "question": "Do you maintain and implement classify service providers?",
+    "question_type": "YES_NO",
+    "requires_evidence": true,
+    "mapped_controls": {
+      "CIS_CONTROLS_V8": [
+        "15.3"
+      ],
+      "NIST_CSF_2_0": [
+        "GV.SC-04"
+      ]
+    }
+  },
+  {
+    "question_id": "MQ-037",
+    "question": "Do you maintain and implement ensure service provider contracts include security requirements?",
+    "question_type": "YES_NO",
+    "requires_evidence": true,
+    "mapped_controls": {
+      "CIS_CONTROLS_V8": [
+        "15.4"
+      ],
+      "NIST_CSF_2_0": [
+        "GV.SC-02",
+        "GV.SC-05",
+        "GV.SC-08"
+      ]
+    }
+  },
+  {
+    "question_id": "MQ-038",
+    "question": "Do you maintain and implement assess service providers?",
+    "question_type": "YES_NO",
+    "requires_evidence": true,
+    "mapped_controls": {
+      "CIS_CONTROLS_V8": [
+        "15.5"
+      ],
+      "NIST_CSF_2_0": [
+        "GV.SC-06"
+      ]
+    }
+  },
+  {
+    "question_id": "MQ-039",
+    "question": "Do you maintain and implement monitor service providers?",
+    "question_type": "YES_NO",
+    "requires_evidence": true,
+    "mapped_controls": {
+      "CIS_CONTROLS_V8": [
+        "15.6"
+      ],
+      "NIST_CSF_2_0": [
+        "DE.CM-06",
+        "GV.SC-07",
+        "GV.SC-09"
+      ]
+    }
+  },
+  {
+    "question_id": "MQ-040",
+    "question": "Do you maintain and implement securely decommission service providers?",
+    "question_type": "YES_NO",
+    "requires_evidence": true,
+    "mapped_controls": {
+      "CIS_CONTROLS_V8": [
+        "15.7"
+      ],
+      "NIST_CSF_2_0": [
+        "GV.SC-10"
+      ]
+    }
+  },
+  {
+    "question_id": "MQ-041",
+    "question": "Do you maintain and implement establish and maintain a secure application development process?",
+    "question_type": "YES_NO",
+    "requires_evidence": true,
+    "mapped_controls": {
+      "CIS_CONTROLS_V8": [
+        "16.1"
+      ],
+      "NIST_CSF_2_0": [
+        "PR.PS-06"
+      ]
+    }
+  },
+  {
+    "question_id": "MQ-042",
+    "question": "Do you maintain and implement establish and maintain contact information for reporting security incidents?",
+    "question_type": "YES_NO",
+    "requires_evidence": true,
+    "mapped_controls": {
+      "CIS_CONTROLS_V8": [
+        "17.2"
+      ],
+      "NIST_CSF_2_0": [
+        "RC.CO-04",
+        "RS.CO-02",
+        "RS.CO-03"
+      ]
+    }
+  },
+  {
+    "question_id": "MQ-043",
+    "question": "Do you maintain and implement establish and maintain an incident response process?",
+    "question_type": "YES_NO",
+    "requires_evidence": true,
+    "mapped_controls": {
+      "CIS_CONTROLS_V8": [
+        "17.4"
+      ],
+      "NIST_CSF_2_0": [
+        "RS.MA-01"
+      ]
+    }
+  },
+  {
+    "question_id": "MQ-044",
+    "question": "Do you maintain and implement define mechanisms for communicating during incident response?",
+    "question_type": "YES_NO",
+    "requires_evidence": true,
+    "mapped_controls": {
+      "CIS_CONTROLS_V8": [
+        "17.6"
+      ],
+      "NIST_CSF_2_0": [
+        "RC.CO-04"
+      ]
+    }
+  },
+  {
+    "question_id": "MQ-045",
+    "question": "Do you maintain and implement conduct post-incident reviews?",
+    "question_type": "YES_NO",
+    "requires_evidence": true,
+    "mapped_controls": {
+      "CIS_CONTROLS_V8": [
+        "17.8"
+      ],
+      "NIST_CSF_2_0": [
+        "RS.AN-03"
+      ]
+    }
+  },
+  {
+    "question_id": "MQ-046",
+    "question": "Do you maintain and implement establish and maintain security incident thresholds?",
+    "question_type": "YES_NO",
+    "requires_evidence": true,
+    "mapped_controls": {
+      "CIS_CONTROLS_V8": [
+        "17.9"
+      ],
+      "NIST_CSF_2_0": [
+        "RS.MA-05"
+      ]
+    }
+  },
+  {
+    "question_id": "MQ-047",
+    "question": "Is the organizational mission understood and used to inform cybersecurity risk management decisions?",
+    "question_type": "YES_NO",
+    "requires_evidence": true,
+    "mapped_controls": {
+      "NIST_CSF_2_0": [
+        "GV.OC-01"
+      ]
+    }
+  },
+  {
+    "question_id": "MQ-048",
+    "question": "Are the needs and expectations of internal and external stakeholders regarding cybersecurity risk management identified and considered?",
+    "question_type": "YES_NO",
+    "requires_evidence": true,
+    "mapped_controls": {
+      "NIST_CSF_2_0": [
+        "GV.OC-02"
+      ]
+    }
+  },
+  {
+    "question_id": "MQ-049",
+    "question": "Are legal, regulatory, and contractual cybersecurity requirements, including privacy and civil liberties obligations, understood and managed within the organization?",
+    "question_type": "YES_NO",
+    "requires_evidence": true,
+    "mapped_controls": {
+      "NIST_CSF_2_0": [
+        "GV.OC-03"
+      ]
+    }
+  },
+  {
+    "question_id": "MQ-050",
+    "question": "Are critical objectives, capabilities, and services that external stakeholders depend on or expect from the organization clearly understood and communicated?",
+    "question_type": "YES_NO",
+    "requires_evidence": true,
+    "mapped_controls": {
+      "NIST_CSF_2_0": [
+        "GV.OC-04"
+      ]
+    }
+  },
+  {
+    "question_id": "MQ-051",
+    "question": "Are the organization's dependencies on outcomes, capabilities, and services clearly understood and communicated?",
+    "question_type": "YES_NO",
+    "requires_evidence": true,
+    "mapped_controls": {
+      "NIST_CSF_2_0": [
+        "GV.OC-05"
+      ]
+    }
+  },
+  {
+    "question_id": "MQ-052",
+    "question": "Are risk management objectives established and agreed to by organizational stakeholders?",
+    "question_type": "YES_NO",
+    "requires_evidence": true,
+    "mapped_controls": {
+      "NIST_CSF_2_0": [
+        "GV.RM-01"
+      ]
+    }
+  },
+  {
+    "question_id": "MQ-053",
+    "question": "Are risk appetite and risk tolerance statements established, communicated, and maintained within the organization?",
+    "question_type": "YES_NO",
+    "requires_evidence": true,
+    "mapped_controls": {
+      "NIST_CSF_2_0": [
+        "GV.RM-02"
+      ]
+    }
+  },
+  {
+    "question_id": "MQ-054",
+    "question": "Are cybersecurity risk management activities and outcomes integrated into the organization's overall enterprise risk management processes?",
+    "question_type": "FREE_TEXT",
+    "requires_evidence": true,
+    "mapped_controls": {
+      "NIST_CSF_2_0": [
+        "GV.RM-03"
+      ]
+    }
+  },
+  {
+    "question_id": "MQ-055",
+    "question": "Is strategic direction that describes appropriate risk response options established and communicated throughout the organization?",
+    "question_type": "FREE_TEXT",
+    "requires_evidence": true,
+    "mapped_controls": {
+      "NIST_CSF_2_0": [
+        "GV.RM-04"
+      ]
+    }
+  },
+  {
+    "question_id": "MQ-056",
+    "question": "Are lines of communication established across the organization to address cybersecurity risks, including those originating from suppliers and other third parties?",
+    "question_type": "YES_NO",
+    "requires_evidence": true,
+    "mapped_controls": {
+      "NIST_CSF_2_0": [
+        "GV.RM-05"
+      ]
+    }
+  },
+  {
+    "question_id": "MQ-057",
+    "question": "Is a standardized method for calculating, documenting, categorizing, and prioritizing cybersecurity risks established and communicated throughout the organization?",
+    "question_type": "FREE_TEXT",
+    "requires_evidence": true,
+    "mapped_controls": {
+      "NIST_CSF_2_0": [
+        "GV.RM-06"
+      ]
+    }
+  },
+  {
+    "question_id": "MQ-058",
+    "question": "Are strategic opportunities, or positive risks, identified and incorporated into the organization's cybersecurity risk discussions?",
+    "question_type": "YES_NO",
+    "requires_evidence": true,
+    "mapped_controls": {
+      "NIST_CSF_2_0": [
+        "GV.RM-07"
+      ]
+    }
+  },
+  {
+    "question_id": "MQ-059",
+    "question": "Are adequate resources allocated to support the organization's cybersecurity risk strategy, roles, responsibilities, and policies?",
+    "question_type": "YES_NO",
+    "requires_evidence": true,
+    "mapped_controls": {
+      "NIST_CSF_2_0": [
+        "GV.RR-03"
+      ]
+    }
+  },
+  {
+    "question_id": "MQ-060",
+    "question": "Is a cybersecurity risk management policy established, communicated, and enforced, aligned with the organization's context, strategy, and priorities?",
+    "question_type": "YES_NO",
+    "requires_evidence": true,
+    "mapped_controls": {
+      "NIST_CSF_2_0": [
+        "GV.PO-01"
+      ]
+    }
+  },
+  {
+    "question_id": "MQ-061",
+    "question": "Is the cybersecurity risk management policy regularly reviewed, updated, communicated, and enforced to reflect changes in requirements, threats, technology, and organizational mission?",
+    "question_type": "YES_NO",
+    "requires_evidence": true,
+    "mapped_controls": {
+      "NIST_CSF_2_0": [
+        "GV.PO-02"
+      ]
+    }
+  },
+  {
+    "question_id": "MQ-062",
+    "question": "Are cybersecurity risk management strategy outcomes regularly reviewed to inform and adjust the overall strategy and direction?",
+    "question_type": "YES_NO",
+    "requires_evidence": true,
+    "mapped_controls": {
+      "NIST_CSF_2_0": [
+        "GV.OV-01"
+      ]
+    }
+  },
+  {
+    "question_id": "MQ-063",
+    "question": "Is the cybersecurity risk management strategy regularly reviewed and updated to ensure it adequately addresses organizational requirements and identified risks?",
+    "question_type": "YES_NO",
+    "requires_evidence": true,
+    "mapped_controls": {
+      "NIST_CSF_2_0": [
+        "GV.OV-02"
+      ]
+    }
+  },
+  {
+    "question_id": "MQ-064",
+    "question": "Is the organization's cybersecurity risk management performance regularly evaluated and reviewed to identify necessary adjustments?",
+    "question_type": "YES_NO",
+    "requires_evidence": true,
+    "mapped_controls": {
+      "NIST_CSF_2_0": [
+        "GV.OV-03"
+      ]
+    }
+  },
+  {
+    "question_id": "MQ-065",
+    "question": "Is cybersecurity supply chain risk management integrated into the organization's overall cybersecurity and enterprise risk management, risk assessment, and improvement processes?",
+    "question_type": "FREE_TEXT",
+    "requires_evidence": true,
+    "mapped_controls": {
+      "NIST_CSF_2_0": [
+        "GV.SC-03"
+      ]
+    }
+  },
+  {
+    "question_id": "MQ-066",
+    "question": "Are cyber threat intelligence feeds received from established information sharing forums and sources?",
+    "question_type": "YES_NO",
+    "requires_evidence": true,
+    "mapped_controls": {
+      "NIST_CSF_2_0": [
+        "ID.RA-02"
+      ]
+    }
+  },
+  {
+    "question_id": "MQ-067",
+    "question": "Are internal and external threats to the organization properly identified and documented?",
+    "question_type": "YES_NO",
+    "requires_evidence": true,
+    "mapped_controls": {
+      "NIST_CSF_2_0": [
+        "ID.RA-03"
+      ]
+    }
+  },
+  {
+    "question_id": "MQ-068",
+    "question": "Are potential impacts and likelihoods of threats exploiting vulnerabilities identified and recorded?",
+    "question_type": "YES_NO",
+    "requires_evidence": true,
+    "mapped_controls": {
+      "NIST_CSF_2_0": [
+        "ID.RA-04"
+      ]
+    }
+  },
+  {
+    "question_id": "MQ-069",
+    "question": "Are threats, vulnerabilities, likelihoods, and impacts analyzed to inform the prioritization of risk response activities based on inherent risk?",
+    "question_type": "YES_NO",
+    "requires_evidence": true,
+    "mapped_controls": {
+      "NIST_CSF_2_0": [
+        "ID.RA-05"
+      ]
+    }
+  },
+  {
+    "question_id": "MQ-070",
+    "question": "Are risk responses for cybersecurity threats chosen, prioritized, planned, tracked, and communicated within the organization?",
+    "question_type": "FREE_TEXT",
+    "requires_evidence": true,
+    "mapped_controls": {
+      "NIST_CSF_2_0": [
+        "ID.RA-06"
+      ]
+    }
+  },
+  {
+    "question_id": "MQ-071",
+    "question": "How are changes and exceptions to security controls managed, assessed for risk impact, recorded, and tracked within the organization?",
+    "question_type": "YES_NO",
+    "requires_evidence": true,
+    "mapped_controls": {
+      "NIST_CSF_2_0": [
+        "ID.RA-07"
+      ]
+    }
+  },
+  {
+    "question_id": "MQ-072",
+    "question": "Are the authenticity and integrity of hardware and software verified before they are acquired and used within the enterprise?",
+    "question_type": "YES_NO",
+    "requires_evidence": true,
+    "mapped_controls": {
+      "NIST_CSF_2_0": [
+        "ID.RA-09"
+      ]
+    }
+  },
+  {
+    "question_id": "MQ-073",
+    "question": "Are critical suppliers assessed for potential cybersecurity risks prior to their acquisition?",
+    "question_type": "YES_NO",
+    "requires_evidence": true,
+    "mapped_controls": {
+      "NIST_CSF_2_0": [
+        "ID.RA-10"
+      ]
+    }
+  },
+  {
+    "question_id": "MQ-074",
+    "question": "What improvements have been identified from recent evaluations?",
+    "question_type": "YES_NO",
+    "requires_evidence": true,
+    "mapped_controls": {
+      "NIST_CSF_2_0": [
+        "ID.IM-01"
+      ]
+    }
+  },
+  {
+    "question_id": "MQ-075",
+    "question": "Are improvements identified and implemented based on the execution of operational processes, procedures, and activities?",
+    "question_type": "FREE_TEXT",
+    "requires_evidence": true,
+    "mapped_controls": {
+      "NIST_CSF_2_0": [
+        "ID.IM-03"
+      ]
+    }
+  },
+  {
+    "question_id": "MQ-076",
+    "question": "Are incident response plans and other cybersecurity plans that affect operations established, communicated, maintained, and continually improved?",
+    "question_type": "FREE_TEXT",
+    "requires_evidence": true,
+    "mapped_controls": {
+      "NIST_CSF_2_0": [
+        "ID.IM-04"
+      ]
+    }
+  },
+  {
+    "question_id": "MQ-077",
+    "question": "Are identities verified and associated with their respective credentials in a manner that considers the context of each interaction?",
+    "question_type": "YES_NO",
+    "requires_evidence": true,
+    "mapped_controls": {
+      "NIST_CSF_2_0": [
+        "PR.AA-02"
+      ]
+    }
+  },
+  {
+    "question_id": "MQ-078",
+    "question": "Are all users, services, and hardware authenticated prior to being granted access to enterprise resources?",
+    "question_type": "YES_NO",
+    "requires_evidence": true,
+    "mapped_controls": {
+      "NIST_CSF_2_0": [
+        "PR.AA-03"
+      ]
+    }
+  },
+  {
+    "question_id": "MQ-079",
+    "question": "Are identity assertions adequately protected, conveyed, and verified throughout the enterprise?",
+    "question_type": "YES_NO",
+    "requires_evidence": true,
+    "mapped_controls": {
+      "NIST_CSF_2_0": [
+        "PR.AA-04"
+      ]
+    }
+  },
+  {
+    "question_id": "MQ-080",
+    "question": "Is physical access to enterprise assets managed, monitored, and enforced in a manner that is commensurate with the associated risk?",
+    "question_type": "YES_NO",
+    "requires_evidence": true,
+    "mapped_controls": {
+      "NIST_CSF_2_0": [
+        "PR.AA-06"
+      ]
+    }
+  },
+  {
+    "question_id": "MQ-081",
+    "question": "Are measures in place to protect the confidentiality, integrity, and availability of data while it is being processed?",
+    "question_type": "YES_NO",
+    "requires_evidence": true,
+    "mapped_controls": {
+      "NIST_CSF_2_0": [
+        "PR.DS-10"
+      ]
+    }
+  },
+  {
+    "question_id": "MQ-082",
+    "question": "Are the organization's technology assets adequately protected from environmental threats?",
+    "question_type": "YES_NO",
+    "requires_evidence": true,
+    "mapped_controls": {
+      "NIST_CSF_2_0": [
+        "PR.IR-02"
+      ]
+    }
+  },
+  {
+    "question_id": "MQ-083",
+    "question": "Are mechanisms in place to achieve resilience requirements during both normal and adverse situations?",
+    "question_type": "YES_NO",
+    "requires_evidence": true,
+    "mapped_controls": {
+      "NIST_CSF_2_0": [
+        "PR.IR-03"
+      ]
+    }
+  },
+  {
+    "question_id": "MQ-084",
+    "question": "Does the organization have sufficient resource capacity to maintain system availability?",
+    "question_type": "YES_NO",
+    "requires_evidence": true,
+    "mapped_controls": {
+      "NIST_CSF_2_0": [
+        "PR.IR-04"
+      ]
+    }
+  },
+  {
+    "question_id": "MQ-085",
+    "question": "Is the physical environment continuously monitored to detect and identify potentially adverse events?",
+    "question_type": "YES_NO",
+    "requires_evidence": true,
+    "mapped_controls": {
+      "NIST_CSF_2_0": [
+        "DE.CM-02"
+      ]
+    }
+  },
+  {
+    "question_id": "MQ-086",
+    "question": "Is information from multiple sources correlated to enhance security insights and threat detection?",
+    "question_type": "YES_NO",
+    "requires_evidence": true,
+    "mapped_controls": {
+      "NIST_CSF_2_0": [
+        "DE.AE-03"
+      ]
+    }
+  },
+  {
+    "question_id": "MQ-087",
+    "question": "Are the potential consequences and scope of potential adverse events clearly understood and estimated within the organization?",
+    "question_type": "YES_NO",
+    "requires_evidence": true,
+    "mapped_controls": {
+      "NIST_CSF_2_0": [
+        "DE.AE-04"
+      ]
+    }
+  },
+  {
+    "question_id": "MQ-088",
+    "question": "Are authorized staff and tools receiving information on adverse events?",
+    "question_type": "YES_NO",
+    "requires_evidence": true,
+    "mapped_controls": {
+      "NIST_CSF_2_0": [
+        "DE.AE-06"
+      ]
+    }
+  },
+  {
+    "question_id": "MQ-089",
+    "question": "Is cyber threat intelligence and other contextual information integrated into the analysis of potential security threats?",
+    "question_type": "YES_NO",
+    "requires_evidence": true,
+    "mapped_controls": {
+      "NIST_CSF_2_0": [
+        "DE.AE-07"
+      ]
+    }
+  },
+  {
+    "question_id": "MQ-090",
+    "question": "Are incidents consistently declared when adverse events meet the predefined incident criteria?",
+    "question_type": "YES_NO",
+    "requires_evidence": true,
+    "mapped_controls": {
+      "NIST_CSF_2_0": [
+        "DE.AE-08"
+      ]
+    }
+  },
+  {
+    "question_id": "MQ-091",
+    "question": "Are incident reports properly triaged and validated to ensure accurate and timely response?",
+    "question_type": "YES_NO",
+    "requires_evidence": true,
+    "mapped_controls": {
+      "NIST_CSF_2_0": [
+        "RS.MA-02"
+      ]
+    }
+  },
+  {
+    "question_id": "MQ-092",
+    "question": "Are incidents categorized and prioritized in accordance with established procedures?",
+    "question_type": "YES_NO",
+    "requires_evidence": true,
+    "mapped_controls": {
+      "NIST_CSF_2_0": [
+        "RS.MA-03"
+      ]
+    }
+  },
+  {
+    "question_id": "MQ-093",
+    "question": "Are incidents escalated or elevated in a timely manner as needed to ensure effective response and management?",
+    "question_type": "YES_NO",
+    "requires_evidence": true,
+    "mapped_controls": {
+      "NIST_CSF_2_0": [
+        "RS.MA-04"
+      ]
+    }
+  },
+  {
+    "question_id": "MQ-094",
+    "question": "Are actions performed during an investigation properly recorded, with their integrity and provenance preserved?",
+    "question_type": "YES_NO",
+    "requires_evidence": true,
+    "mapped_controls": {
+      "NIST_CSF_2_0": [
+        "RS.AN-06"
+      ]
+    }
+  },
+  {
+    "question_id": "MQ-095",
+    "question": "Are incident data and metadata collected with their integrity and provenance preserved?",
+    "question_type": "YES_NO",
+    "requires_evidence": true,
+    "mapped_controls": {
+      "NIST_CSF_2_0": [
+        "RS.AN-07"
+      ]
+    }
+  },
+  {
+    "question_id": "MQ-096",
+    "question": "How does the organization estimate and validate the magnitude of incidents?",
+    "question_type": "YES_NO",
+    "requires_evidence": true,
+    "mapped_controls": {
+      "NIST_CSF_2_0": [
+        "RS.AN-08"
+      ]
+    }
+  },
+  {
+    "question_id": "MQ-097",
+    "question": "Are incidents effectively contained to prevent further damage or escalation?",
+    "question_type": "YES_NO",
+    "requires_evidence": true,
+    "mapped_controls": {
+      "NIST_CSF_2_0": [
+        "RS.MI-01"
+      ]
+    }
+  },
+  {
+    "question_id": "MQ-098",
+    "question": "Are all identified incidents fully eradicated to prevent further damage or recurrence?",
+    "question_type": "YES_NO",
+    "requires_evidence": true,
+    "mapped_controls": {
+      "NIST_CSF_2_0": [
+        "RS.MI-02"
+      ]
+    }
+  },
+  {
+    "question_id": "MQ-099",
+    "question": "Is the recovery portion of the incident response plan properly executed when initiated through the incident response process?",
+    "question_type": "FREE_TEXT",
+    "requires_evidence": true,
+    "mapped_controls": {
+      "NIST_CSF_2_0": [
+        "RC.RP-01"
+      ]
+    }
+  },
+  {
+    "question_id": "MQ-100",
+    "question": "Are recovery actions properly selected, scoped, prioritized, and executed when necessary?",
+    "question_type": "YES_NO",
+    "requires_evidence": true,
+    "mapped_controls": {
+      "NIST_CSF_2_0": [
+        "RC.RP-02"
+      ]
+    }
+  },
+  {
+    "question_id": "MQ-101",
+    "question": "Are post-incident operational norms established considering critical mission functions and cybersecurity risk management?",
+    "question_type": "YES_NO",
+    "requires_evidence": true,
+    "mapped_controls": {
+      "NIST_CSF_2_0": [
+        "RC.RP-04"
+      ]
+    }
+  },
+  {
+    "question_id": "MQ-102",
+    "question": "Are restored assets verified for integrity, and are systems and services fully restored to normal operating status?",
+    "question_type": "YES_NO",
+    "requires_evidence": true,
+    "mapped_controls": {
+      "NIST_CSF_2_0": [
+        "RC.RP-05"
+      ]
+    }
+  },
+  {
+    "question_id": "MQ-103",
+    "question": "Are incident recovery efforts formally declared complete based on predefined criteria, with all related documentation finalized?",
+    "question_type": "FREE_TEXT",
+    "requires_evidence": true,
+    "mapped_controls": {
+      "NIST_CSF_2_0": [
+        "RC.RP-06"
+      ]
+    }
+  },
+  {
+    "question_id": "MQ-104",
+    "question": "Are recovery activities and progress in restoring operational capabilities communicated to designated internal and external stakeholders?",
+    "question_type": "YES_NO",
+    "requires_evidence": true,
+    "mapped_controls": {
+      "NIST_CSF_2_0": [
+        "RC.CO-03"
+      ]
+    }
+  },
+  {
+    "question_id": "MQ-105",
+    "question": "Is an active discovery tool utilized to identify assets connected to the enterprise's network, and is it configured to execute at least daily?",
+    "question_type": "YES_NO",
+    "requires_evidence": true,
+    "mapped_controls": {
+      "CIS_CONTROLS_V8": [
+        "1.3"
+      ]
+    }
+  },
+  {
+    "question_id": "MQ-106",
+    "question": "Are DHCP logs from all DHCP servers and IP address management tools reviewed at least weekly to update the enterprise's asset inventory?",
+    "question_type": "YES_NO",
+    "requires_evidence": true,
+    "mapped_controls": {
+      "CIS_CONTROLS_V8": [
+        "1.4"
+      ]
+    }
+  },
+  {
+    "question_id": "MQ-107",
+    "question": "Is the enterprise using a passive discovery tool to identify connected assets and updating its asset inventory at least weekly based on scan results?",
+    "question_type": "YES_NO",
+    "requires_evidence": true,
+    "mapped_controls": {
+      "CIS_CONTROLS_V8": [
+        "1.5"
+      ]
+    }
+  },
+  {
+    "question_id": "MQ-108",
+    "question": "Is the enterprise utilizing software inventory tools to automate the discovery and documentation of installed software throughout the organization?",
+    "question_type": "FREE_TEXT",
+    "requires_evidence": true,
+    "mapped_controls": {
+      "CIS_CONTROLS_V8": [
+        "2.4"
+      ]
+    }
+  },
+  {
+    "question_id": "MQ-109",
+    "question": "Are technical controls in place to restrict system process loading to only authorized software libraries, with reassessments conducted at least bi-annually?",
+    "question_type": "FREE_TEXT",
+    "requires_evidence": true,
+    "mapped_controls": {
+      "CIS_CONTROLS_V8": [
+        "2.6"
+      ]
+    }
+  },
+  {
+    "question_id": "MQ-110",
+    "question": "Are technical controls, such as digital signatures and version control, in place to restrict script execution to only authorized files, with reassessments conducted at least bi-annually?",
+    "question_type": "YES_NO",
+    "requires_evidence": true,
+    "mapped_controls": {
+      "CIS_CONTROLS_V8": [
+        "2.7"
+      ]
+    }
+  },
+  {
+    "question_id": "MQ-111",
+    "question": "Are data access control lists configured and applied to all systems, including local and remote file systems, databases, and applications, based on a user's need to know?",
+    "question_type": "YES_NO",
+    "requires_evidence": true,
+    "mapped_controls": {
+      "CIS_CONTROLS_V8": [
+        "3.3"
+      ]
+    }
+  },
+  {
+    "question_id": "MQ-112",
+    "question": "Does the enterprise retain data in accordance with its documented data management process, including defined minimum and maximum retention timelines?",
+    "question_type": "FREE_TEXT",
+    "requires_evidence": true,
+    "mapped_controls": {
+      "CIS_CONTROLS_V8": [
+        "3.4"
+      ]
+    }
+  },
+  {
+    "question_id": "MQ-113",
+    "question": "Are end-user devices containing sensitive data encrypted using a solution such as Windows BitLocker, Apple FileVault, or Linux dm-crypt?",
+    "question_type": "YES_NO",
+    "requires_evidence": true,
+    "mapped_controls": {
+      "CIS_CONTROLS_V8": [
+        "3.6"
+      ]
+    }
+  },
+  {
+    "question_id": "MQ-114",
+    "question": "Are removable media encrypted to protect sensitive data?",
+    "question_type": "YES_NO",
+    "requires_evidence": true,
+    "mapped_controls": {
+      "CIS_CONTROLS_V8": [
+        "3.9"
+      ]
+    }
+  },
+  {
+    "question_id": "MQ-115",
+    "question": "Are sensitive data transmissions encrypted using protocols such as Transport Layer Security (TLS) or Open Secure Shell (OpenSSH)?",
+    "question_type": "YES_NO",
+    "requires_evidence": true,
+    "mapped_controls": {
+      "CIS_CONTROLS_V8": [
+        "3.10"
+      ]
+    }
+  },
+  {
+    "question_id": "MQ-116",
+    "question": "Is an automated tool, such as a host-based Data Loss Prevention (DLP) tool, implemented to identify and inventory all sensitive data stored, processed, or transmitted through enterprise assets?",
+    "question_type": "FREE_TEXT",
+    "requires_evidence": true,
+    "mapped_controls": {
+      "CIS_CONTROLS_V8": [
+        "3.13"
+      ]
+    }
+  },
+  {
+    "question_id": "MQ-117",
+    "question": "Is sensitive data access, including modification and disposal, being logged and monitored?",
+    "question_type": "YES_NO",
+    "requires_evidence": true,
+    "mapped_controls": {
+      "CIS_CONTROLS_V8": [
+        "3.14"
+      ]
+    }
+  },
+  {
+    "question_id": "MQ-118",
+    "question": "Are automatic session locking mechanisms configured to lock enterprise assets after 15 minutes of inactivity for general purpose operating systems and 2 minutes for mobile end-user devices?",
+    "question_type": "FREE_TEXT",
+    "requires_evidence": true,
+    "mapped_controls": {
+      "CIS_CONTROLS_V8": [
+        "4.3"
+      ]
+    }
+  },
+  {
+    "question_id": "MQ-119",
+    "question": "Are firewalls implemented and managed on servers where supported?",
+    "question_type": "YES_NO",
+    "requires_evidence": true,
+    "mapped_controls": {
+      "CIS_CONTROLS_V8": [
+        "4.4"
+      ]
+    }
+  },
+  {
+    "question_id": "MQ-120",
+    "question": "Are host-based firewalls or port-filtering tools implemented on end-user devices with a default-deny rule that only allows explicitly permitted services and ports?",
+    "question_type": "YES_NO",
+    "requires_evidence": true,
+    "mapped_controls": {
+      "CIS_CONTROLS_V8": [
+        "4.5"
+      ]
+    }
+  },
+  {
+    "question_id": "MQ-121",
+    "question": "Are enterprise assets and software securely managed through controlled configurations and secure network protocols, avoiding insecure management protocols unless operationally essential?",
+    "question_type": "YES_NO",
+    "requires_evidence": true,
+    "mapped_controls": {
+      "CIS_CONTROLS_V8": [
+        "4.6"
+      ]
+    }
+  },
+  {
+    "question_id": "MQ-122",
+    "question": "Are default accounts on enterprise assets and software, such as root and administrator accounts, managed and secured through methods like disabling or rendering them unusable?",
+    "question_type": "YES_NO",
+    "requires_evidence": true,
+    "mapped_controls": {
+      "CIS_CONTROLS_V8": [
+        "4.7"
+      ]
+    }
+  },
+  {
+    "question_id": "MQ-123",
+    "question": "Are all unnecessary services and software, including unused file sharing services, web application modules, and service functions, uninstalled or disabled on enterprise assets?",
+    "question_type": "YES_NO",
+    "requires_evidence": true,
+    "mapped_controls": {
+      "CIS_CONTROLS_V8": [
+        "4.8"
+      ]
+    }
+  },
+  {
+    "question_id": "MQ-124",
+    "question": "Are trusted DNS servers configured on the network infrastructure, using either enterprise-controlled or reputable externally accessible DNS servers?",
+    "question_type": "YES_NO",
+    "requires_evidence": true,
+    "mapped_controls": {
+      "CIS_CONTROLS_V8": [
+        "4.9"
+      ]
+    }
+  },
+  {
+    "question_id": "MQ-125",
+    "question": "Does the organization enforce automatic device lockout on portable end-user devices after a predetermined threshold of local failed authentication attempts, specifically 20 attempts for laptops and 10 attempts for tablets and smartphones?",
+    "question_type": "YES_NO",
+    "requires_evidence": true,
+    "mapped_controls": {
+      "CIS_CONTROLS_V8": [
+        "4.10"
+      ]
+    }
+  },
+  {
+    "question_id": "MQ-126",
+    "question": "Does the enterprise have a process in place to remotely wipe data from enterprise-owned portable end-user devices in cases such as loss, theft, or when an individual's support for the enterprise ends?",
+    "question_type": "YES_NO",
+    "requires_evidence": true,
+    "mapped_controls": {
+      "CIS_CONTROLS_V8": [
+        "4.11"
+      ]
+    }
+  },
+  {
+    "question_id": "MQ-127",
+    "question": "Are separate enterprise workspaces used on mobile end-user devices to isolate enterprise applications and data from personal ones, where technically supported?",
+    "question_type": "YES_NO",
+    "requires_evidence": true,
+    "mapped_controls": {
+      "CIS_CONTROLS_V8": [
+        "4.12"
+      ]
+    }
+  },
+  {
+    "question_id": "MQ-128",
+    "question": "Does the enterprise require unique passwords of at least 8 characters for accounts with Multi-Factor Authentication (MFA) and 14 characters for accounts without MFA for all enterprise assets?",
+    "question_type": "YES_NO",
+    "requires_evidence": true,
+    "mapped_controls": {
+      "CIS_CONTROLS_V8": [
+        "5.2"
+      ]
+    }
+  },
+  {
+    "question_id": "MQ-129",
+    "question": "Are dormant accounts deleted or disabled after 45 days of inactivity, where technically supported?",
+    "question_type": "YES_NO",
+    "requires_evidence": true,
+    "mapped_controls": {
+      "CIS_CONTROLS_V8": [
+        "5.3"
+      ]
+    }
+  },
+  {
+    "question_id": "MQ-130",
+    "question": "Are administrator privileges restricted to dedicated administrator accounts on enterprise assets, with general computing activities conducted from non-privileged user accounts?",
+    "question_type": "YES_NO",
+    "requires_evidence": true,
+    "mapped_controls": {
+      "CIS_CONTROLS_V8": [
+        "5.4"
+      ]
+    }
+  },
+  {
+    "question_id": "MQ-131",
+    "question": "Is a service account inventory maintained, containing at least department owner, review date, and purpose, and are active accounts validated through recurring reviews at least quarterly?",
+    "question_type": "FREE_TEXT",
+    "requires_evidence": true,
+    "mapped_controls": {
+      "CIS_CONTROLS_V8": [
+        "5.5"
+      ]
+    }
+  },
+  {
+    "question_id": "MQ-132",
+    "question": "Are all externally-exposed enterprise or third-party applications that support it configured to enforce Multi-Factor Authentication (MFA), either directly or through a directory service or Single Sign-On (SSO) provider?",
+    "question_type": "YES_NO",
+    "requires_evidence": true,
+    "mapped_controls": {
+      "CIS_CONTROLS_V8": [
+        "6.3"
+      ]
+    }
+  },
+  {
+    "question_id": "MQ-133",
+    "question": "Is Multi-Factor Authentication (MFA) required for all remote network access attempts?",
+    "question_type": "YES_NO",
+    "requires_evidence": true,
+    "mapped_controls": {
+      "CIS_CONTROLS_V8": [
+        "6.4"
+      ]
+    }
+  },
+  {
+    "question_id": "MQ-134",
+    "question": "Are multifactor authentication requirements enforced for all administrative access accounts on all enterprise assets, regardless of management location?",
+    "question_type": "YES_NO",
+    "requires_evidence": true,
+    "mapped_controls": {
+      "CIS_CONTROLS_V8": [
+        "6.5"
+      ]
+    }
+  },
+  {
+    "question_id": "MQ-135",
+    "question": "Is an up-to-date inventory of the enterprise's authentication and authorization systems, including those hosted on-site or at remote service providers, established, maintained, and reviewed at least annually?",
+    "question_type": "FREE_TEXT",
+    "requires_evidence": true,
+    "mapped_controls": {
+      "CIS_CONTROLS_V8": [
+        "6.6"
+      ]
+    }
+  },
+  {
+    "question_id": "MQ-136",
+    "question": "Is access control for all enterprise assets centralized through a directory service or SSO provider, where supported?",
+    "question_type": "YES_NO",
+    "requires_evidence": true,
+    "mapped_controls": {
+      "CIS_CONTROLS_V8": [
+        "6.7"
+      ]
+    }
+  },
+  {
+    "question_id": "MQ-137",
+    "question": "Are operating system updates performed on enterprise assets through automated patch management at least monthly?",
+    "question_type": "YES_NO",
+    "requires_evidence": true,
+    "mapped_controls": {
+      "CIS_CONTROLS_V8": [
+        "7.3"
+      ]
+    }
+  },
+  {
+    "question_id": "MQ-138",
+    "question": "Are application updates performed on enterprise assets through automated patch management at least monthly?",
+    "question_type": "YES_NO",
+    "requires_evidence": true,
+    "mapped_controls": {
+      "CIS_CONTROLS_V8": [
+        "7.4"
+      ]
+    }
+  },
+  {
+    "question_id": "MQ-139",
+    "question": "Are automated vulnerability scans of internal enterprise assets performed at least quarterly, including both authenticated and unauthenticated scans?",
+    "question_type": "YES_NO",
+    "requires_evidence": true,
+    "mapped_controls": {
+      "CIS_CONTROLS_V8": [
+        "7.5"
+      ]
+    }
+  },
+  {
+    "question_id": "MQ-140",
+    "question": "Are automated vulnerability scans of externally-exposed enterprise assets performed at least monthly?",
+    "question_type": "YES_NO",
+    "requires_evidence": true,
+    "mapped_controls": {
+      "CIS_CONTROLS_V8": [
+        "7.6"
+      ]
+    }
+  },
+  {
+    "question_id": "MQ-141",
+    "question": "Are vulnerabilities in software remediated at least monthly through established processes and tooling, in accordance with the defined remediation process?",
+    "question_type": "FREE_TEXT",
+    "requires_evidence": true,
+    "mapped_controls": {
+      "CIS_CONTROLS_V8": [
+        "7.7"
+      ]
+    }
+  },
+  {
+    "question_id": "MQ-142",
+    "question": "Does the enterprise have a documented audit log management process that defines logging requirements, addresses collection, review, and retention of audit logs, and is reviewed and updated at least annually or upon significant enterprise changes?",
+    "question_type": "FREE_TEXT",
+    "requires_evidence": true,
+    "mapped_controls": {
+      "CIS_CONTROLS_V8": [
+        "8.1"
+      ]
+    }
+  },
+  {
+    "question_id": "MQ-143",
+    "question": "Does the logging destination have sufficient storage capacity to support the enterprise's audit log management process requirements?",
+    "question_type": "FREE_TEXT",
+    "requires_evidence": true,
+    "mapped_controls": {
+      "CIS_CONTROLS_V8": [
+        "8.3"
+      ]
+    }
+  },
+  {
+    "question_id": "MQ-144",
+    "question": "Are at least two synchronized time sources configured across enterprise assets, where supported?",
+    "question_type": "YES_NO",
+    "requires_evidence": true,
+    "mapped_controls": {
+      "CIS_CONTROLS_V8": [
+        "8.4"
+      ]
+    }
+  },
+  {
+    "question_id": "MQ-145",
+    "question": "Are detailed audit logs configured for enterprise assets containing sensitive data, capturing event source, date, username, timestamp, source and destination addresses, and other relevant elements to support forensic investigations?",
+    "question_type": "YES_NO",
+    "requires_evidence": true,
+    "mapped_controls": {
+      "CIS_CONTROLS_V8": [
+        "8.5"
+      ]
+    }
+  },
+  {
+    "question_id": "MQ-146",
+    "question": "Are DNS query audit logs being collected on enterprise assets where applicable and technically supported?",
+    "question_type": "YES_NO",
+    "requires_evidence": true,
+    "mapped_controls": {
+      "CIS_CONTROLS_V8": [
+        "8.6"
+      ]
+    }
+  },
+  {
+    "question_id": "MQ-147",
+    "question": "Are URL request audit logs being collected on enterprise assets where appropriate and supported?",
+    "question_type": "YES_NO",
+    "requires_evidence": true,
+    "mapped_controls": {
+      "CIS_CONTROLS_V8": [
+        "8.7"
+      ]
+    }
+  },
+  {
+    "question_id": "MQ-148",
+    "question": "Are command-line audit logs being collected from all relevant sources, including PowerShell, BASH, and remote administrative terminals?",
+    "question_type": "YES_NO",
+    "requires_evidence": true,
+    "mapped_controls": {
+      "CIS_CONTROLS_V8": [
+        "8.8"
+      ]
+    }
+  },
+  {
+    "question_id": "MQ-149",
+    "question": "Is audit log collection and retention centralized across enterprise assets in accordance with the documented audit log management process?",
+    "question_type": "FREE_TEXT",
+    "requires_evidence": true,
+    "mapped_controls": {
+      "CIS_CONTROLS_V8": [
+        "8.9"
+      ]
+    }
+  },
+  {
+    "question_id": "MQ-150",
+    "question": "Are audit logs retained across all enterprise assets for at least 90 days?",
+    "question_type": "YES_NO",
+    "requires_evidence": true,
+    "mapped_controls": {
+      "CIS_CONTROLS_V8": [
+        "8.10"
+      ]
+    }
+  },
+  {
+    "question_id": "MQ-151",
+    "question": "Are service provider logs being collected, including authentication, authorization, data creation, disposal, and user management events, where supported?",
+    "question_type": "YES_NO",
+    "requires_evidence": true,
+    "mapped_controls": {
+      "CIS_CONTROLS_V8": [
+        "8.12"
+      ]
+    }
+  },
+  {
+    "question_id": "MQ-152",
+    "question": "Are only the latest versions of fully supported browsers and email clients, provided through the vendor, allowed to execute within the enterprise?",
+    "question_type": "YES_NO",
+    "requires_evidence": true,
+    "mapped_controls": {
+      "CIS_CONTROLS_V8": [
+        "9.1"
+      ]
+    }
+  },
+  {
+    "question_id": "MQ-153",
+    "question": "Are DNS filtering services used on all end-user devices, including remote and on-premises assets, to block access to known malicious domains?",
+    "question_type": "YES_NO",
+    "requires_evidence": true,
+    "mapped_controls": {
+      "CIS_CONTROLS_V8": [
+        "9.2"
+      ]
+    }
+  },
+  {
+    "question_id": "MQ-154",
+    "question": "Are network-based URL filters enforced and updated to limit enterprise assets from connecting to potentially malicious or unapproved websites?",
+    "question_type": "YES_NO",
+    "requires_evidence": true,
+    "mapped_controls": {
+      "CIS_CONTROLS_V8": [
+        "9.3"
+      ]
+    }
+  },
+  {
+    "question_id": "MQ-155",
+    "question": "Are all unauthorized or unnecessary browser and email client plugins, extensions, and add-on applications restricted through uninstallation or disabling?",
+    "question_type": "YES_NO",
+    "requires_evidence": true,
+    "mapped_controls": {
+      "CIS_CONTROLS_V8": [
+        "9.4"
+      ]
+    }
+  },
+  {
+    "question_id": "MQ-156",
+    "question": "Is a DMARC policy and verification implemented, including Sender Policy Framework (SPF) and DomainKeys Identified Mail (DKIM) standards, to prevent spoofed or modified emails from valid domains?",
+    "question_type": "YES_NO",
+    "requires_evidence": true,
+    "mapped_controls": {
+      "CIS_CONTROLS_V8": [
+        "9.5"
+      ]
+    }
+  },
+  {
+    "question_id": "MQ-157",
+    "question": "Does the enterprise's email gateway effectively block unnecessary file types from entering the network?",
+    "question_type": "YES_NO",
+    "requires_evidence": true,
+    "mapped_controls": {
+      "CIS_CONTROLS_V8": [
+        "9.6"
+      ]
+    }
+  },
+  {
+    "question_id": "MQ-158",
+    "question": "Are email server anti-malware protections, including attachment scanning and/or sandboxing, deployed and maintained?",
+    "question_type": "FREE_TEXT",
+    "requires_evidence": true,
+    "mapped_controls": {
+      "CIS_CONTROLS_V8": [
+        "9.7"
+      ]
+    }
+  },
+  {
+    "question_id": "MQ-159",
+    "question": "Are automatic updates for anti-malware signature files configured on all enterprise assets?",
+    "question_type": "YES_NO",
+    "requires_evidence": true,
+    "mapped_controls": {
+      "CIS_CONTROLS_V8": [
+        "10.2"
+      ]
+    }
+  },
+  {
+    "question_id": "MQ-160",
+    "question": "Are removable media autorun and autoplay auto-execute functionalities disabled to prevent unauthorized code execution?",
+    "question_type": "YES_NO",
+    "requires_evidence": true,
+    "mapped_controls": {
+      "CIS_CONTROLS_V8": [
+        "10.3"
+      ]
+    }
+  },
+  {
+    "question_id": "MQ-161",
+    "question": "Is anti-malware software configured to automatically scan removable media?",
+    "question_type": "YES_NO",
+    "requires_evidence": true,
+    "mapped_controls": {
+      "CIS_CONTROLS_V8": [
+        "10.4"
+      ]
+    }
+  },
+  {
+    "question_id": "MQ-162",
+    "question": "Are anti-exploitation features, such as DEP, WDEG, SIP, and Gatekeeper, enabled on enterprise assets and software where possible?",
+    "question_type": "YES_NO",
+    "requires_evidence": true,
+    "mapped_controls": {
+      "CIS_CONTROLS_V8": [
+        "10.5"
+      ]
+    }
+  },
+  {
+    "question_id": "MQ-163",
+    "question": "Is anti-malware software centrally managed across the enterprise?",
+    "question_type": "YES_NO",
+    "requires_evidence": true,
+    "mapped_controls": {
+      "CIS_CONTROLS_V8": [
+        "10.6"
+      ]
+    }
+  },
+  {
+    "question_id": "MQ-164",
+    "question": "Is a documented data recovery process established and maintained, addressing scope, prioritization, and security of backup data, with annual or event-driven reviews and updates?",
+    "question_type": "FREE_TEXT",
+    "requires_evidence": true,
+    "mapped_controls": {
+      "CIS_CONTROLS_V8": [
+        "11.1"
+      ]
+    }
+  },
+  {
+    "question_id": "MQ-165",
+    "question": "Is an isolated instance of recovery data established and maintained through version-controlled backup destinations, such as offline, cloud, or off-site systems or services?",
+    "question_type": "FREE_TEXT",
+    "requires_evidence": true,
+    "mapped_controls": {
+      "CIS_CONTROLS_V8": [
+        "11.4"
+      ]
+    }
+  },
+  {
+    "question_id": "MQ-166",
+    "question": "Is the network infrastructure maintained with the latest stable software releases and currently supported NaaS offerings, with monthly or more frequent reviews to verify software support?",
+    "question_type": "YES_NO",
+    "requires_evidence": true,
+    "mapped_controls": {
+      "CIS_CONTROLS_V8": [
+        "12.1"
+      ]
+    }
+  },
+  {
+    "question_id": "MQ-167",
+    "question": "Is the network infrastructure securely managed through implementations such as version-controlled infrastructure-as-code and secure network protocols like SSH and HTTPS?",
+    "question_type": "YES_NO",
+    "requires_evidence": true,
+    "mapped_controls": {
+      "CIS_CONTROLS_V8": [
+        "12.3"
+      ]
+    }
+  },
+  {
+    "question_id": "MQ-168",
+    "question": "Are architecture diagram(s) and network system documentation established, maintained, and updated at least annually or upon significant enterprise changes?",
+    "question_type": "FREE_TEXT",
+    "requires_evidence": true,
+    "mapped_controls": {
+      "CIS_CONTROLS_V8": [
+        "12.4"
+      ]
+    }
+  },
+  {
+    "question_id": "MQ-169",
+    "question": "Is network Authentication, Authorization, and Accounting (AAA) centralized?",
+    "question_type": "YES_NO",
+    "requires_evidence": true,
+    "mapped_controls": {
+      "CIS_CONTROLS_V8": [
+        "12.5"
+      ]
+    }
+  },
+  {
+    "question_id": "MQ-170",
+    "question": "Are secure network management and communication protocols, such as 802.1X or WPA2 Enterprise or greater, being used?",
+    "question_type": "YES_NO",
+    "requires_evidence": true,
+    "mapped_controls": {
+      "CIS_CONTROLS_V8": [
+        "12.6"
+      ]
+    }
+  },
+  {
+    "question_id": "MQ-171",
+    "question": "Does the enterprise require users to authenticate to its managed VPN and authentication services before accessing enterprise resources on end-user devices?",
+    "question_type": "YES_NO",
+    "requires_evidence": true,
+    "mapped_controls": {
+      "CIS_CONTROLS_V8": [
+        "12.7"
+      ]
+    }
+  },
+  {
+    "question_id": "MQ-172",
+    "question": "Are dedicated computing resources, physically or logically separated, established and maintained for administrative tasks, segmented from the primary network and restricted from internet access?",
+    "question_type": "FREE_TEXT",
+    "requires_evidence": true,
+    "mapped_controls": {
+      "CIS_CONTROLS_V8": [
+        "12.8"
+      ]
+    }
+  },
+  {
+    "question_id": "MQ-173",
+    "question": "Are host-based intrusion detection solutions deployed on enterprise assets where appropriate and supported?",
+    "question_type": "YES_NO",
+    "requires_evidence": true,
+    "mapped_controls": {
+      "CIS_CONTROLS_V8": [
+        "13.2"
+      ]
+    }
+  },
+  {
+    "question_id": "MQ-174",
+    "question": "Are network intrusion detection solutions, such as NIDS or equivalent CSP services, deployed on enterprise assets where appropriate?",
+    "question_type": "YES_NO",
+    "requires_evidence": true,
+    "mapped_controls": {
+      "CIS_CONTROLS_V8": [
+        "13.3"
+      ]
+    }
+  },
+  {
+    "question_id": "MQ-175",
+    "question": "Are network segments appropriately isolated through traffic filtering controls?",
+    "question_type": "YES_NO",
+    "requires_evidence": true,
+    "mapped_controls": {
+      "CIS_CONTROLS_V8": [
+        "13.4"
+      ]
+    }
+  },
+  {
+    "question_id": "MQ-176",
+    "question": "Does the enterprise manage access control for remote assets based on their compliance with up-to-date anti-malware software, secure configuration, and current operating system and application versions?",
+    "question_type": "FREE_TEXT",
+    "requires_evidence": true,
+    "mapped_controls": {
+      "CIS_CONTROLS_V8": [
+        "13.5"
+      ]
+    }
+  },
+  {
+    "question_id": "MQ-177",
+    "question": "Are network traffic flow logs and/or network traffic from network devices being collected for review and alerting purposes?",
+    "question_type": "YES_NO",
+    "requires_evidence": true,
+    "mapped_controls": {
+      "CIS_CONTROLS_V8": [
+        "13.6"
+      ]
+    }
+  },
+  {
+    "question_id": "MQ-178",
+    "question": "Are host-based intrusion prevention solutions, such as Endpoint Detection and Response (EDR) clients or host-based IPS agents, deployed on enterprise assets where appropriate and supported?",
+    "question_type": "YES_NO",
+    "requires_evidence": true,
+    "mapped_controls": {
+      "CIS_CONTROLS_V8": [
+        "13.7"
+      ]
+    }
+  },
+  {
+    "question_id": "MQ-179",
+    "question": "Is a network intrusion prevention solution, such as a Network Intrusion Prevention System (NIPS) or equivalent CSP service, deployed where appropriate?",
+    "question_type": "YES_NO",
+    "requires_evidence": true,
+    "mapped_controls": {
+      "CIS_CONTROLS_V8": [
+        "13.8"
+      ]
+    }
+  },
+  {
+    "question_id": "MQ-180",
+    "question": "Is port-level access control deployed utilizing 802.1x or similar network access control protocols, including certificates, and incorporating user and/or device authentication?",
+    "question_type": "YES_NO",
+    "requires_evidence": true,
+    "mapped_controls": {
+      "CIS_CONTROLS_V8": [
+        "13.9"
+      ]
+    }
+  },
+  {
+    "question_id": "MQ-181",
+    "question": "Is application layer filtering performed, such as through a filtering proxy, application layer firewall, or gateway?",
+    "question_type": "YES_NO",
+    "requires_evidence": true,
+    "mapped_controls": {
+      "CIS_CONTROLS_V8": [
+        "13.10"
+      ]
+    }
+  },
+  {
+    "question_id": "MQ-182",
+    "question": "Are security event alerting thresholds reviewed and adjusted at least monthly to ensure effective threat detection?",
+    "question_type": "YES_NO",
+    "requires_evidence": true,
+    "mapped_controls": {
+      "CIS_CONTROLS_V8": [
+        "13.11"
+      ]
+    }
+  },
+  {
+    "question_id": "MQ-183",
+    "question": "Are workforce members trained to recognize social engineering attacks, including phishing, business email compromise, pretexting, and tailgating?",
+    "question_type": "YES_NO",
+    "requires_evidence": true,
+    "mapped_controls": {
+      "CIS_CONTROLS_V8": [
+        "14.2"
+      ]
+    }
+  },
+  {
+    "question_id": "MQ-184",
+    "question": "Are workforce members trained on authentication best practices, including MFA, password composition, and credential management?",
+    "question_type": "YES_NO",
+    "requires_evidence": true,
+    "mapped_controls": {
+      "CIS_CONTROLS_V8": [
+        "14.3"
+      ]
+    }
+  },
+  {
+    "question_id": "MQ-185",
+    "question": "Are workforce members adequately trained on handling and securing sensitive data, including proper storage, transfer, archiving, and destruction, as well as clear screen and desk best practices?",
+    "question_type": "YES_NO",
+    "requires_evidence": true,
+    "mapped_controls": {
+      "CIS_CONTROLS_V8": [
+        "14.4"
+      ]
+    }
+  },
+  {
+    "question_id": "MQ-186",
+    "question": "Are workforce members trained to recognize and prevent unintentional data exposure causes, such as mis-delivery, lost devices, or unintended publication?",
+    "question_type": "YES_NO",
+    "requires_evidence": true,
+    "mapped_controls": {
+      "CIS_CONTROLS_V8": [
+        "14.5"
+      ]
+    }
+  },
+  {
+    "question_id": "MQ-187",
+    "question": "Are workforce members trained to recognize and report potential security incidents?",
+    "question_type": "YES_NO",
+    "requires_evidence": true,
+    "mapped_controls": {
+      "CIS_CONTROLS_V8": [
+        "14.6"
+      ]
+    }
+  },
+  {
+    "question_id": "MQ-188",
+    "question": "Are procedures in place to train workforce members to identify and report missing security updates and failures in automated patch management processes?",
+    "question_type": "FREE_TEXT",
+    "requires_evidence": true,
+    "mapped_controls": {
+      "CIS_CONTROLS_V8": [
+        "14.7"
+      ]
+    }
+  },
+  {
+    "question_id": "MQ-189",
+    "question": "Are workforce members adequately trained on the risks of transmitting enterprise data over insecure networks and configuring secure home network infrastructure for remote work?",
+    "question_type": "YES_NO",
+    "requires_evidence": true,
+    "mapped_controls": {
+      "CIS_CONTROLS_V8": [
+        "14.8"
+      ]
+    }
+  },
+  {
+    "question_id": "MQ-190",
+    "question": "Does the enterprise have a established process for accepting and addressing software vulnerability reports, including a vulnerability handling policy, tracking system, and regular review and update procedures?",
+    "question_type": "FREE_TEXT",
+    "requires_evidence": true,
+    "mapped_controls": {
+      "CIS_CONTROLS_V8": [
+        "16.2"
+      ]
+    }
+  },
+  {
+    "question_id": "MQ-191",
+    "question": "Does the organization perform root cause analysis on identified security vulnerabilities to address underlying issues in the code?",
+    "question_type": "YES_NO",
+    "requires_evidence": true,
+    "mapped_controls": {
+      "CIS_CONTROLS_V8": [
+        "16.3"
+      ]
+    }
+  },
+  {
+    "question_id": "MQ-192",
+    "question": "Is an up-to-date inventory of third-party software components, including associated risks, maintained and evaluated at least monthly to ensure ongoing support and identify potential updates or changes?",
+    "question_type": "FREE_TEXT",
+    "requires_evidence": true,
+    "mapped_controls": {
+      "CIS_CONTROLS_V8": [
+        "16.4"
+      ]
+    }
+  },
+  {
+    "question_id": "MQ-193",
+    "question": "Are up-to-date and trusted third-party software components, from established sources, used to minimize vulnerabilities in the enterprise's systems and applications?",
+    "question_type": "FREE_TEXT",
+    "requires_evidence": true,
+    "mapped_controls": {
+      "CIS_CONTROLS_V8": [
+        "16.5"
+      ]
+    }
+  },
+  {
+    "question_id": "MQ-194",
+    "question": "Is a severity rating system and process in place for prioritizing and addressing application vulnerabilities, including a minimum security acceptability threshold for code or application releases, with annual reviews and updates?",
+    "question_type": "FREE_TEXT",
+    "requires_evidence": true,
+    "mapped_controls": {
+      "CIS_CONTROLS_V8": [
+        "16.6"
+      ]
+    }
+  },
+  {
+    "question_id": "MQ-195",
+    "question": "Are standard, industry-recommended hardening configuration templates used for all application infrastructure components, including servers, databases, web servers, cloud containers, PaaS, and SaaS components, without being weakened by in-house developed software?",
+    "question_type": "YES_NO",
+    "requires_evidence": true,
+    "mapped_controls": {
+      "CIS_CONTROLS_V8": [
+        "16.7"
+      ]
+    }
+  },
+  {
+    "question_id": "MQ-196",
+    "question": "Are production and non-production systems maintained in separate environments?",
+    "question_type": "FREE_TEXT",
+    "requires_evidence": true,
+    "mapped_controls": {
+      "CIS_CONTROLS_V8": [
+        "16.8"
+      ]
+    }
+  },
+  {
+    "question_id": "MQ-197",
+    "question": "Are software development personnel provided with annual training on secure coding practices tailored to their specific development environment and responsibilities?",
+    "question_type": "YES_NO",
+    "requires_evidence": true,
+    "mapped_controls": {
+      "CIS_CONTROLS_V8": [
+        "16.9"
+      ]
+    }
+  },
+  {
+    "question_id": "MQ-198",
+    "question": "Are secure design principles, including least privilege and input validation, applied in application architectures to minimize the attack surface?",
+    "question_type": "FREE_TEXT",
+    "requires_evidence": true,
+    "mapped_controls": {
+      "CIS_CONTROLS_V8": [
+        "16.10"
+      ]
+    }
+  },
+  {
+    "question_id": "MQ-199",
+    "question": "Are application security components, such as identity management, encryption, and auditing and logging, implemented using vetted modules or services and standardized operating system features?",
+    "question_type": "FREE_TEXT",
+    "requires_evidence": true,
+    "mapped_controls": {
+      "CIS_CONTROLS_V8": [
+        "16.11"
+      ]
+    }
+  },
+  {
+    "question_id": "MQ-200",
+    "question": "Are static and dynamic analysis tools applied within the application life cycle to verify adherence to secure coding practices?",
+    "question_type": "YES_NO",
+    "requires_evidence": true,
+    "mapped_controls": {
+      "CIS_CONTROLS_V8": [
+        "16.12"
+      ]
+    }
+  },
+  {
+    "question_id": "MQ-201",
+    "question": "Is the organization conducting application penetration testing, including authenticated testing for critical applications, to identify business logic vulnerabilities that may not be detected through automated security testing or code scanning?",
+    "question_type": "YES_NO",
+    "requires_evidence": true,
+    "mapped_controls": {
+      "CIS_CONTROLS_V8": [
+        "16.13"
+      ]
+    }
+  },
+  {
+    "question_id": "MQ-202",
+    "question": "Is threat modeling conducted to identify and address application security design flaws prior to code creation?",
+    "question_type": "FREE_TEXT",
+    "requires_evidence": true,
+    "mapped_controls": {
+      "CIS_CONTROLS_V8": [
+        "16.14"
+      ]
+    }
+  },
+  {
+    "question_id": "MQ-203",
+    "question": "Does the enterprise have designated personnel, including a primary and backup, to manage and oversee the incident handling process, with responsibilities for coordination, documentation, and oversight of incident response and recovery efforts?",
+    "question_type": "FREE_TEXT",
+    "requires_evidence": true,
+    "mapped_controls": {
+      "CIS_CONTROLS_V8": [
+        "17.1"
+      ]
+    }
+  },
+  {
+    "question_id": "MQ-204",
+    "question": "Is there a documented and publicly available enterprise process for reporting security incidents that includes reporting timeframe, personnel, mechanism, and minimum required information, and is reviewed at least annually or upon significant enterprise changes?",
+    "question_type": "FREE_TEXT",
+    "requires_evidence": true,
+    "mapped_controls": {
+      "CIS_CONTROLS_V8": [
+        "17.3"
+      ]
+    }
+  },
+  {
+    "question_id": "MQ-205",
+    "question": "Are key roles and responsibilities for incident response clearly assigned and reviewed at least annually, or when significant enterprise changes occur?",
+    "question_type": "YES_NO",
+    "requires_evidence": true,
+    "mapped_controls": {
+      "CIS_CONTROLS_V8": [
+        "17.5"
+      ]
+    }
+  },
+  {
+    "question_id": "MQ-206",
+    "question": "Are incident response exercises conducted annually with key personnel to test communication channels, decision making, and workflows?",
+    "question_type": "FREE_TEXT",
+    "requires_evidence": true,
+    "mapped_controls": {
+      "CIS_CONTROLS_V8": [
+        "17.7"
+      ]
+    }
+  },
+  {
+    "question_id": "MQ-207",
+    "question": "Does the enterprise have a penetration testing program that aligns with its size, complexity, industry, and maturity, and includes defined scope, frequency, limitations, point of contact information, remediation procedures, and retrospective requirements?",
+    "question_type": "FREE_TEXT",
+    "requires_evidence": true,
+    "mapped_controls": {
+      "CIS_CONTROLS_V8": [
+        "18.1"
+      ]
+    }
+  },
+  {
+    "question_id": "MQ-208",
+    "question": "Are external penetration tests performed at least annually by a qualified party, including enterprise and environmental reconnaissance to detect exploitable information?",
+    "question_type": "YES_NO",
+    "requires_evidence": true,
+    "mapped_controls": {
+      "CIS_CONTROLS_V8": [
+        "18.2"
+      ]
+    }
+  },
+  {
+    "question_id": "MQ-209",
+    "question": "Does the enterprise remediate penetration test findings in accordance with its documented vulnerability remediation process, including determining timeline and level of effort based on impact and prioritization?",
+    "question_type": "FREE_TEXT",
+    "requires_evidence": true,
+    "mapped_controls": {
+      "CIS_CONTROLS_V8": [
+        "18.3"
+      ]
+    }
+  },
+  {
+    "question_id": "MQ-210",
+    "question": "Are security measures validated and updated as necessary after each penetration test to detect techniques used during testing?",
+    "question_type": "YES_NO",
+    "requires_evidence": true,
+    "mapped_controls": {
+      "CIS_CONTROLS_V8": [
+        "18.4"
+      ]
+    }
+  },
+  {
+    "question_id": "MQ-211",
+    "question": "Are internal penetration tests performed at least annually, based on program requirements, to assess system vulnerabilities?",
+    "question_type": "YES_NO",
+    "requires_evidence": true,
+    "mapped_controls": {
+      "CIS_CONTROLS_V8": [
+        "18.5"
+      ]
+    }
+  }
+]

@@ -1,0 +1,29 @@
+Multi-Factor Authentication (MFA) Configuration
+Document ID: CFG-SEC-MFA-2024
+Version: 1.4
+Owner: IT Security — Identity Team
+Last Reviewed: 15 November 2024
+Classification: CONFIDENTIAL
+
+1. Overview
+Multi-factor authentication (MFA) is mandatory for all user accounts accessing Acme Corporation systems. This document defines the MFA configuration standards, supported authenticator types, and system-specific requirements. MFA requirements align with NIST SP 800-63B Authenticator Assurance Level 2 (AAL2).
+
+2. Supported Authenticator Types
+
+3. MFA Configuration by System
+
+4. MFA Enrollment Requirements
+All new employees must enroll MFA on first login — grace period: 0 days
+Minimum 2 authenticator methods registered per account (primary + backup)
+Backup codes generated and stored in password manager (1Password Enterprise)
+MFA re-enrollment required after device loss — verified via identity proofing
+Hardware keys issued to all privileged users and remote workers
+
+5. Exceptions
+MFA exceptions require written approval from the CISO and are time-limited to a maximum of 30 days. No exceptions are permitted for privileged accounts or accounts with access to regulated data (PII, PCI, PHI). All exceptions are logged and reviewed monthly.
+
+6. Monitoring & Alerting
+Failed MFA attempts > 5 within 10 minutes trigger account lockout + SOC alert
+MFA bypass events generate Priority 1 alerts in SIEM
+Monthly MFA coverage report generated from Azure AD Identity Protection
+Accounts without MFA enrollment flagged daily in compliance dashboard

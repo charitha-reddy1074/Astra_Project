@@ -1,0 +1,5 @@
+Date	Activity	Owner
+2026-04-05	Monthly remediation review	Security Team
+2026-05-03	Monthly remediation review	Security Team
+2026-06-01	Monthly remediation review	Security Team
+2026-06-05	Emergency patch deployment	Infrastructure Team

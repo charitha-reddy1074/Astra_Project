@@ -1,0 +1,38 @@
+# Secrets and Config — never commit
+.env
+
+# Python bytecode
+__pycache__/
+*.py[cod]
+
+# Editor history
+.history/
+
+# macOS
+.DS_Store
+
+# Virtual environment
+.venv/
+
+# Node / Next.js
+node_modules/
+.next/
+
+# Local API SQLite DB (regenerable via /frameworks/load-existing)
+*.db
+
+# Old reference copy — fully merged into backend/api + frontend
+LOGICS/
+
+# API working data (regenerable; canonical JSONs ARE kept)
+backend/api/data/raw/
+backend/api/data/chunks/
+backend/api/data/evidence/
+backend/api/data/pre_assessments/
+
+# ChromaDB vector store (regenerable via evidence upload)
+chroma_db/
+
+# Scratch / diff files
+review_diff.txt
+run.txt
