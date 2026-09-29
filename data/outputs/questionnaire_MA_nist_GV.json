@@ -1,0 +1,123 @@
+{
+  "framework_id": "d048b355-a19a-52eb-bf3d-3e2133c57d1e",
+  "framework_name": "NIST CSF 2.0",
+  "domain_id": "GV",
+  "domain_name": "Govern",
+  "sections": [
+    {
+      "sub_topic": "Govern",
+      "control_ids": [
+        "GV.OC-01",
+        "GV.OC-02",
+        "GV.RM-01",
+        "GV.RM-02",
+        "GV.RR-01",
+        "GV.PO-01",
+        "GV.SC-01"
+      ],
+      "part1_question": {
+        "question_id": "f47ac10b-ee9e-43e4-9f9e-5f2e9e9e9e9e",
+        "question_text": "Is a cybersecurity governance framework in place?",
+        "question_type": "yes_no_with_detail",
+        "response_options": "Yes / No / Partial",
+        "detail_prompt": "If yes or partial, specify the tool or technology in use."
+      },
+      "questions": [
+        {
+          "question_id": "4e5f5f5f-5f5f-5f5f-5f5f-5f5f5f5f5f5f",
+          "text": "How does organizational leadership foster a risk-aware culture?",
+          "help_text": "Describe leadership's role",
+          "question_type": "FREE_TEXT",
+          "weight": 4,
+          "maturity_level": 4,
+          "expected_evidence_types": [
+            "training_records",
+            "org_chart"
+          ]
+        },
+        {
+          "question_id": "1a1a1a1a-1a1a-1a1a-1a1a-1a1a1a1a1a1a",
+          "text": "What process is used to establish and agree on risk management objectives?",
+          "help_text": "Explain stakeholder involvement",
+          "question_type": "FREE_TEXT",
+          "weight": 5,
+          "maturity_level": 5,
+          "expected_evidence_types": [
+            "meeting_minutes",
+            "risk_register"
+          ]
+        },
+        {
+          "question_id": "3c3c3c3c-3c3c-3c3c-3c3c-3c3c3c3c3c3c",
+          "text": "How are risk appetite and tolerance statements communicated and maintained?",
+          "help_text": "Describe communication channels",
+          "question_type": "FREE_TEXT",
+          "weight": 4,
+          "maturity_level": 4,
+          "expected_evidence_types": [
+            "risk_appetite_statement",
+            "policy"
+          ]
+        },
+        {
+          "question_id": "2b2b2b2b-2b2b-2b2b-2b2b-2b2b2b2b2b2b",
+          "text": "What is the frequency of reviewing and updating the cybersecurity policy?",
+          "help_text": "Specify review cycle",
+          "question_type": "SCALE_1_5",
+          "choices": [
+            "Annually",
+            "Bi-annually",
+            "Quarterly",
+            "Monthly"
+          ],
+          "weight": 3,
+          "maturity_level": 3,
+          "expected_evidence_types": [
+            "policy",
+            "audit_report"
+          ]
+        },
+        {
+          "question_id": "6d6d6d6d-6d6d-6d6d-6d6d-6d6d6d6d6d6d",
+          "text": "How does the organization ensure that stakeholders understand and adhere to the cybersecurity policy?",
+          "help_text": "Describe training and awareness programs",
+          "question_type": "FREE_TEXT",
+          "weight": 4,
+          "maturity_level": 4,
+          "expected_evidence_types": [
+            "training_records",
+            "policy_acknowledgement"
+          ]
+        }
+      ],
+      "maturity_guide": {
+        "mature": "The organization has a well-established and communicated cybersecurity governance framework, with clear roles and responsibilities, and a culture that is risk-aware and continually improving.",
+        "partial": "The organization has a partially established cybersecurity governance framework, with some roles and responsibilities defined, but lacks a consistent risk-aware culture and has gaps in communication and training.",
+        "critical_gap": "The absence of a cybersecurity governance framework leaves the organization vulnerable to cyber threats, with unclear roles and responsibilities, and a lack of risk awareness, leading to potential financial and reputational damage."
+      },
+      "evidence_to_request": [
+        "mission_statement",
+        "strategic_plan",
+        "risk_policy",
+        "stakeholder_register",
+        "meeting_minutes",
+        "risk_register"
+      ],
+      "red_flags": [
+        {
+          "critical_gap": "The organization lacks a clear and communicated cybersecurity governance framework, leaving it vulnerable to cyber threats.",
+          "recommended_action": "Establish and communicate a comprehensive cybersecurity governance framework, including clear roles and responsibilities, and a risk-aware culture."
+        },
+        {
+          "critical_gap": "The organization has not established and agreed on risk management objectives, leading to a lack of direction and focus in cybersecurity efforts.",
+          "recommended_action": "Establish and agree on risk management objectives, involving all relevant stakeholders, and ensure they are aligned with the organization's overall mission and strategy."
+        },
+        {
+          "critical_gap": "The organization has not established and maintained risk appetite and tolerance statements, leading to unclear risk boundaries and potential over- or under-investment in cybersecurity.",
+          "recommended_action": "Establish and maintain risk appetite and tolerance statements, communicating them clearly to all stakeholders, and ensuring they are regularly reviewed and updated."
+        }
+      ]
+    }
+  ],
+  "generated_at": "2026-06-10T04:33:43.923176+00:00"
+}

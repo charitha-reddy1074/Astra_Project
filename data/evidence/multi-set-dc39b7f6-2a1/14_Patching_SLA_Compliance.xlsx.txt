@@ -1,0 +1,8 @@
+MCD – Patch Management SLA Policy & Compliance Report
+Asset Name	Asset Type	Environment	Severity	CVE ID	SLA (Days)	Date Identified	Patch Due Date	Date Patched	Days to Patch	SLA Met	Compliant
+ecomm-api-prod	Container	Production	Critical	CVE-2024-1234	7	2024-11-01	2024-11-08	—	—	No	No
+payments-svc	Container	Production	High	CVE-2024-5678	14	2024-11-05	2024-11-19	2024-11-18	13	Yes	Yes
+vm-dev-mcd-01	Virtual Machine	Development	High	CVE-2023-9999	30	2024-10-15	2024-11-14	—	—	No	No
+analytics-worker	Container	Production	Medium	CVE-2024-2222	30	2024-11-10	2024-12-10	—	—	N/A	N/A
+Legacy Batch Host	Virtual Machine	Production	Critical	CVE-2023-1111	7	2024-09-01	2024-09-08	—	—	No	Risk Accepted
+identity-svc	Container	Production	Low	CVE-2024-3333	90	2024-10-01	2024-12-30	—	—	N/A	N/A

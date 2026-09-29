@@ -1,0 +1,4024 @@
+[
+  {
+    "question": "Is the organizational mission understood and used to inform cybersecurity risk management decisions?",
+    "question_type": "YES_NO",
+    "requires_evidence": true,
+    "citations": [
+      {
+        "framework": "NIST Cybersecurity Framework",
+        "control_id": "GV.OC-01",
+        "control_name": ""
+      },
+      {
+        "framework": "NIST Cybersecurity Framework",
+        "control_id": "GV.OC-02",
+        "control_name": ""
+      },
+      {
+        "framework": "NIST Cybersecurity Framework",
+        "control_id": "GV.RM-03",
+        "control_name": ""
+      },
+      {
+        "framework": "NIST Cybersecurity Framework",
+        "control_id": "GV.RM-06",
+        "control_name": ""
+      }
+    ],
+    "mapped_controls_count": 4
+  },
+  {
+    "question": "Are legal, regulatory, and contractual cybersecurity requirements, including privacy and civil liberties obligations, understood and managed within the organization?",
+    "question_type": "YES_NO",
+    "requires_evidence": true,
+    "citations": [
+      {
+        "framework": "NIST Cybersecurity Framework",
+        "control_id": "GV.OC-03",
+        "control_name": ""
+      },
+      {
+        "framework": "NIST Cybersecurity Framework",
+        "control_id": "GV.RR-02",
+        "control_name": ""
+      }
+    ],
+    "mapped_controls_count": 2
+  },
+  {
+    "question": "Are critical objectives, capabilities, and services that external stakeholders depend on or expect from the organization clearly understood and communicated?",
+    "question_type": "YES_NO",
+    "requires_evidence": true,
+    "citations": [
+      {
+        "framework": "NIST Cybersecurity Framework",
+        "control_id": "GV.OC-04",
+        "control_name": ""
+      },
+      {
+        "framework": "NIST Cybersecurity Framework",
+        "control_id": "GV.OC-05",
+        "control_name": ""
+      }
+    ],
+    "mapped_controls_count": 2
+  },
+  {
+    "question": "Are risk management objectives established and agreed to by organizational stakeholders?",
+    "question_type": "YES_NO",
+    "requires_evidence": true,
+    "citations": [
+      {
+        "framework": "NIST Cybersecurity Framework",
+        "control_id": "GV.RM-01",
+        "control_name": ""
+      },
+      {
+        "framework": "NIST Cybersecurity Framework",
+        "control_id": "GV.SC-01",
+        "control_name": ""
+      }
+    ],
+    "mapped_controls_count": 2
+  },
+  {
+    "question": "Are risk appetite and risk tolerance statements established, communicated, and maintained within the organization?",
+    "question_type": "YES_NO",
+    "requires_evidence": true,
+    "citations": [
+      {
+        "framework": "NIST Cybersecurity Framework",
+        "control_id": "GV.RM-02",
+        "control_name": ""
+      }
+    ],
+    "mapped_controls_count": 1
+  },
+  {
+    "question": "Is strategic direction that describes appropriate risk response options established and communicated throughout the organization?",
+    "question_type": "FREE_TEXT",
+    "requires_evidence": true,
+    "citations": [
+      {
+        "framework": "NIST Cybersecurity Framework",
+        "control_id": "GV.RM-04",
+        "control_name": ""
+      }
+    ],
+    "mapped_controls_count": 1
+  },
+  {
+    "question": "Are lines of communication established across the organization to address cybersecurity risks, including those originating from suppliers and other third parties?",
+    "question_type": "YES_NO",
+    "requires_evidence": true,
+    "citations": [
+      {
+        "framework": "NIST Cybersecurity Framework",
+        "control_id": "GV.RM-05",
+        "control_name": ""
+      },
+      {
+        "framework": "NIST Cybersecurity Framework",
+        "control_id": "GV.SC-05",
+        "control_name": ""
+      }
+    ],
+    "mapped_controls_count": 2
+  },
+  {
+    "question": "Are strategic opportunities, or positive risks, identified and incorporated into the organization's cybersecurity risk discussions?",
+    "question_type": "YES_NO",
+    "requires_evidence": true,
+    "citations": [
+      {
+        "framework": "NIST Cybersecurity Framework",
+        "control_id": "GV.RM-07",
+        "control_name": ""
+      }
+    ],
+    "mapped_controls_count": 1
+  },
+  {
+    "question": "Is organizational leadership responsible and accountable for cybersecurity risk, and does it foster a culture that is risk-aware, ethical, and continually improving?",
+    "question_type": "YES_NO",
+    "requires_evidence": true,
+    "citations": [
+      {
+        "framework": "NIST Cybersecurity Framework",
+        "control_id": "GV.RR-01",
+        "control_name": ""
+      }
+    ],
+    "mapped_controls_count": 1
+  },
+  {
+    "question": "Are adequate resources allocated to support the organization's cybersecurity risk strategy, roles, responsibilities, and policies?",
+    "question_type": "YES_NO",
+    "requires_evidence": true,
+    "citations": [
+      {
+        "framework": "NIST Cybersecurity Framework",
+        "control_id": "GV.RR-03",
+        "control_name": ""
+      }
+    ],
+    "mapped_controls_count": 1
+  },
+  {
+    "question": "Are cybersecurity considerations integrated into the organization's human resources practices?",
+    "question_type": "YES_NO",
+    "requires_evidence": true,
+    "citations": [
+      {
+        "framework": "NIST Cybersecurity Framework",
+        "control_id": "GV.RR-04",
+        "control_name": ""
+      }
+    ],
+    "mapped_controls_count": 1
+  },
+  {
+    "question": "Is a cybersecurity risk management policy established, communicated, and enforced, aligned with the organization's context, strategy, and priorities?",
+    "question_type": "YES_NO",
+    "requires_evidence": true,
+    "citations": [
+      {
+        "framework": "NIST Cybersecurity Framework",
+        "control_id": "GV.PO-01",
+        "control_name": ""
+      },
+      {
+        "framework": "NIST Cybersecurity Framework",
+        "control_id": "GV.PO-02",
+        "control_name": ""
+      },
+      {
+        "framework": "NIST Cybersecurity Framework",
+        "control_id": "GV.OV-02",
+        "control_name": ""
+      },
+      {
+        "framework": "NIST Cybersecurity Framework",
+        "control_id": "GV.SC-02",
+        "control_name": ""
+      }
+    ],
+    "mapped_controls_count": 4
+  },
+  {
+    "question": "Are cybersecurity risk management strategy outcomes regularly reviewed to inform and adjust the overall strategy and direction?",
+    "question_type": "YES_NO",
+    "requires_evidence": true,
+    "citations": [
+      {
+        "framework": "NIST Cybersecurity Framework",
+        "control_id": "GV.OV-01",
+        "control_name": ""
+      },
+      {
+        "framework": "NIST Cybersecurity Framework",
+        "control_id": "GV.OV-03",
+        "control_name": ""
+      }
+    ],
+    "mapped_controls_count": 2
+  },
+  {
+    "question": "Is cybersecurity supply chain risk management integrated into the organization's overall cybersecurity and enterprise risk management, risk assessment, and improvement processes?",
+    "question_type": "FREE_TEXT",
+    "requires_evidence": true,
+    "citations": [
+      {
+        "framework": "NIST Cybersecurity Framework",
+        "control_id": "GV.SC-03",
+        "control_name": ""
+      },
+      {
+        "framework": "NIST Cybersecurity Framework",
+        "control_id": "GV.SC-09",
+        "control_name": ""
+      },
+      {
+        "framework": "NIST Cybersecurity Framework",
+        "control_id": "GV.SC-10",
+        "control_name": ""
+      }
+    ],
+    "mapped_controls_count": 3
+  },
+  {
+    "question": "Are all suppliers identified and prioritized based on their criticality to the organization?",
+    "question_type": "YES_NO",
+    "requires_evidence": true,
+    "citations": [
+      {
+        "framework": "NIST Cybersecurity Framework",
+        "control_id": "GV.SC-04",
+        "control_name": ""
+      }
+    ],
+    "mapped_controls_count": 1
+  },
+  {
+    "question": "Are planning and due diligence activities conducted to assess and mitigate risks prior to establishing formal relationships with suppliers or other third-party entities?",
+    "question_type": "FREE_TEXT",
+    "requires_evidence": true,
+    "citations": [
+      {
+        "framework": "NIST Cybersecurity Framework",
+        "control_id": "GV.SC-06",
+        "control_name": ""
+      },
+      {
+        "framework": "NIST Cybersecurity Framework",
+        "control_id": "GV.SC-07",
+        "control_name": ""
+      }
+    ],
+    "mapped_controls_count": 2
+  },
+  {
+    "question": "Are incident planning, response, and recovery activities inclusive of relevant suppliers and other third-party stakeholders?",
+    "question_type": "FREE_TEXT",
+    "requires_evidence": true,
+    "citations": [
+      {
+        "framework": "NIST Cybersecurity Framework",
+        "control_id": "GV.SC-08",
+        "control_name": ""
+      }
+    ],
+    "mapped_controls_count": 1
+  },
+  {
+    "question": "Are inventories of organization-managed hardware accurately maintained?",
+    "question_type": "YES_NO",
+    "requires_evidence": true,
+    "citations": [
+      {
+        "framework": "NIST Cybersecurity Framework",
+        "control_id": "ID.AM-01",
+        "control_name": ""
+      },
+      {
+        "framework": "NIST Cybersecurity Framework",
+        "control_id": "ID.AM-02",
+        "control_name": ""
+      }
+    ],
+    "mapped_controls_count": 2
+  },
+  {
+    "question": "Are representations of the organization's authorized network communication and internal and external network data flows maintained?",
+    "question_type": "YES_NO",
+    "requires_evidence": true,
+    "citations": [
+      {
+        "framework": "NIST Cybersecurity Framework",
+        "control_id": "ID.AM-03",
+        "control_name": ""
+      }
+    ],
+    "mapped_controls_count": 1
+  },
+  {
+    "question": "Are inventories of services provided by suppliers properly maintained?",
+    "question_type": "YES_NO",
+    "requires_evidence": true,
+    "citations": [
+      {
+        "framework": "NIST Cybersecurity Framework",
+        "control_id": "ID.AM-04",
+        "control_name": ""
+      }
+    ],
+    "mapped_controls_count": 1
+  },
+  {
+    "question": "Are assets prioritized based on their classification, criticality, resources, and potential impact on the organization's mission?",
+    "question_type": "YES_NO",
+    "requires_evidence": true,
+    "citations": [
+      {
+        "framework": "NIST Cybersecurity Framework",
+        "control_id": "ID.AM-05",
+        "control_name": ""
+      }
+    ],
+    "mapped_controls_count": 1
+  },
+  {
+    "question": "Are inventories of data and corresponding metadata maintained for all designated data types?",
+    "question_type": "YES_NO",
+    "requires_evidence": true,
+    "citations": [
+      {
+        "framework": "NIST Cybersecurity Framework",
+        "control_id": "ID.AM-07",
+        "control_name": ""
+      }
+    ],
+    "mapped_controls_count": 1
+  },
+  {
+    "question": "Are systems, hardware, software, services, and data managed throughout their entire life cycles?",
+    "question_type": "YES_NO",
+    "requires_evidence": true,
+    "citations": [
+      {
+        "framework": "NIST Cybersecurity Framework",
+        "control_id": "ID.AM-08",
+        "control_name": ""
+      }
+    ],
+    "mapped_controls_count": 1
+  },
+  {
+    "question": "Are vulnerabilities in organizational assets identified, validated, and recorded?",
+    "question_type": "YES_NO",
+    "requires_evidence": true,
+    "citations": [
+      {
+        "framework": "NIST Cybersecurity Framework",
+        "control_id": "ID.RA-01",
+        "control_name": ""
+      },
+      {
+        "framework": "NIST Cybersecurity Framework",
+        "control_id": "ID.RA-04",
+        "control_name": ""
+      }
+    ],
+    "mapped_controls_count": 2
+  },
+  {
+    "question": "Are cyber threat intelligence feeds received from established information sharing forums and sources?",
+    "question_type": "YES_NO",
+    "requires_evidence": true,
+    "citations": [
+      {
+        "framework": "NIST Cybersecurity Framework",
+        "control_id": "ID.RA-02",
+        "control_name": ""
+      }
+    ],
+    "mapped_controls_count": 1
+  },
+  {
+    "question": "Are internal and external threats to the organization properly identified and documented?",
+    "question_type": "YES_NO",
+    "requires_evidence": true,
+    "citations": [
+      {
+        "framework": "NIST Cybersecurity Framework",
+        "control_id": "ID.RA-03",
+        "control_name": ""
+      }
+    ],
+    "mapped_controls_count": 1
+  },
+  {
+    "question": "Are threats, vulnerabilities, likelihoods, and impacts analyzed to inform the prioritization of risk response activities based on inherent risk?",
+    "question_type": "YES_NO",
+    "requires_evidence": true,
+    "citations": [
+      {
+        "framework": "NIST Cybersecurity Framework",
+        "control_id": "ID.RA-05",
+        "control_name": ""
+      }
+    ],
+    "mapped_controls_count": 1
+  },
+  {
+    "question": "Are risk responses for cybersecurity threats chosen, prioritized, planned, tracked, and communicated within the organization?",
+    "question_type": "FREE_TEXT",
+    "requires_evidence": true,
+    "citations": [
+      {
+        "framework": "NIST Cybersecurity Framework",
+        "control_id": "ID.RA-06",
+        "control_name": ""
+      }
+    ],
+    "mapped_controls_count": 1
+  },
+  {
+    "question": "How are changes and exceptions to security controls managed, assessed for risk impact, recorded, and tracked within the organization?",
+    "question_type": "YES_NO",
+    "requires_evidence": true,
+    "citations": [
+      {
+        "framework": "NIST Cybersecurity Framework",
+        "control_id": "ID.RA-07",
+        "control_name": ""
+      }
+    ],
+    "mapped_controls_count": 1
+  },
+  {
+    "question": "Are processes in place for receiving, analyzing, and responding to vulnerability disclosures?",
+    "question_type": "FREE_TEXT",
+    "requires_evidence": true,
+    "citations": [
+      {
+        "framework": "NIST Cybersecurity Framework",
+        "control_id": "ID.RA-08",
+        "control_name": ""
+      }
+    ],
+    "mapped_controls_count": 1
+  },
+  {
+    "question": "Are the authenticity and integrity of hardware and software verified before they are acquired and used within the enterprise?",
+    "question_type": "YES_NO",
+    "requires_evidence": true,
+    "citations": [
+      {
+        "framework": "NIST Cybersecurity Framework",
+        "control_id": "ID.RA-09",
+        "control_name": ""
+      }
+    ],
+    "mapped_controls_count": 1
+  },
+  {
+    "question": "Are critical suppliers assessed for potential cybersecurity risks prior to their acquisition?",
+    "question_type": "YES_NO",
+    "requires_evidence": true,
+    "citations": [
+      {
+        "framework": "NIST Cybersecurity Framework",
+        "control_id": "ID.RA-10",
+        "control_name": ""
+      }
+    ],
+    "mapped_controls_count": 1
+  },
+  {
+    "question": "What improvements have been identified from recent evaluations?",
+    "question_type": "YES_NO",
+    "requires_evidence": true,
+    "citations": [
+      {
+        "framework": "NIST Cybersecurity Framework",
+        "control_id": "ID.IM-01",
+        "control_name": ""
+      }
+    ],
+    "mapped_controls_count": 1
+  },
+  {
+    "question": "Are improvements identified from security tests and exercises, including those conducted with suppliers and relevant third parties?",
+    "question_type": "YES_NO",
+    "requires_evidence": true,
+    "citations": [
+      {
+        "framework": "NIST Cybersecurity Framework",
+        "control_id": "ID.IM-02",
+        "control_name": ""
+      }
+    ],
+    "mapped_controls_count": 1
+  },
+  {
+    "question": "Are improvements identified and implemented based on the execution of operational processes, procedures, and activities?",
+    "question_type": "FREE_TEXT",
+    "requires_evidence": true,
+    "citations": [
+      {
+        "framework": "NIST Cybersecurity Framework",
+        "control_id": "ID.IM-03",
+        "control_name": ""
+      }
+    ],
+    "mapped_controls_count": 1
+  },
+  {
+    "question": "Are incident response plans and other cybersecurity plans that affect operations established, communicated, maintained, and continually improved?",
+    "question_type": "FREE_TEXT",
+    "requires_evidence": true,
+    "citations": [
+      {
+        "framework": "NIST Cybersecurity Framework",
+        "control_id": "ID.IM-04",
+        "control_name": ""
+      }
+    ],
+    "mapped_controls_count": 1
+  },
+  {
+    "question": "Is the organization managing identities and credentials for all authorized users, services, and hardware?",
+    "question_type": "YES_NO",
+    "requires_evidence": true,
+    "citations": [
+      {
+        "framework": "NIST Cybersecurity Framework",
+        "control_id": "PR.AA-01",
+        "control_name": ""
+      },
+      {
+        "framework": "NIST Cybersecurity Framework",
+        "control_id": "PR.AA-03",
+        "control_name": ""
+      }
+    ],
+    "mapped_controls_count": 2
+  },
+  {
+    "question": "Are identities verified and associated with their respective credentials in a manner that considers the context of each interaction?",
+    "question_type": "YES_NO",
+    "requires_evidence": true,
+    "citations": [
+      {
+        "framework": "NIST Cybersecurity Framework",
+        "control_id": "PR.AA-02",
+        "control_name": ""
+      },
+      {
+        "framework": "NIST Cybersecurity Framework",
+        "control_id": "PR.AA-04",
+        "control_name": ""
+      }
+    ],
+    "mapped_controls_count": 2
+  },
+  {
+    "question": "Are access permissions, entitlements, and authorizations defined, managed, enforced, and regularly reviewed in accordance with a policy that incorporates the principles of least privilege and separation of duties?",
+    "question_type": "YES_NO",
+    "requires_evidence": true,
+    "citations": [
+      {
+        "framework": "NIST Cybersecurity Framework",
+        "control_id": "PR.AA-05",
+        "control_name": ""
+      }
+    ],
+    "mapped_controls_count": 1
+  },
+  {
+    "question": "Is physical access to enterprise assets managed, monitored, and enforced in a manner that is commensurate with the associated risk?",
+    "question_type": "YES_NO",
+    "requires_evidence": true,
+    "citations": [
+      {
+        "framework": "NIST Cybersecurity Framework",
+        "control_id": "PR.AA-06",
+        "control_name": ""
+      }
+    ],
+    "mapped_controls_count": 1
+  },
+  {
+    "question": "Are personnel provided with adequate awareness and training to perform their tasks with consideration for cybersecurity risks?",
+    "question_type": "YES_NO",
+    "requires_evidence": true,
+    "citations": [
+      {
+        "framework": "NIST Cybersecurity Framework",
+        "control_id": "PR.AT-01",
+        "control_name": ""
+      },
+      {
+        "framework": "NIST Cybersecurity Framework",
+        "control_id": "PR.AT-02",
+        "control_name": ""
+      }
+    ],
+    "mapped_controls_count": 2
+  },
+  {
+    "question": "Are the confidentiality, integrity, and availability of data-at-rest adequately protected within the enterprise?",
+    "question_type": "YES_NO",
+    "requires_evidence": true,
+    "citations": [
+      {
+        "framework": "NIST Cybersecurity Framework",
+        "control_id": "PR.DS-01",
+        "control_name": ""
+      },
+      {
+        "framework": "NIST Cybersecurity Framework",
+        "control_id": "PR.DS-02",
+        "control_name": ""
+      },
+      {
+        "framework": "NIST Cybersecurity Framework",
+        "control_id": "PR.DS-10",
+        "control_name": ""
+      }
+    ],
+    "mapped_controls_count": 3
+  },
+  {
+    "question": "Are backups of data regularly created, protected, maintained, and tested to ensure their integrity and availability?",
+    "question_type": "YES_NO",
+    "requires_evidence": true,
+    "citations": [
+      {
+        "framework": "NIST Cybersecurity Framework",
+        "control_id": "PR.DS-11",
+        "control_name": ""
+      }
+    ],
+    "mapped_controls_count": 1
+  },
+  {
+    "question": "Are configuration management practices established and applied within the organization?",
+    "question_type": "YES_NO",
+    "requires_evidence": true,
+    "citations": [
+      {
+        "framework": "NIST Cybersecurity Framework",
+        "control_id": "PR.PS-01",
+        "control_name": ""
+      }
+    ],
+    "mapped_controls_count": 1
+  },
+  {
+    "question": "Are software maintenance, replacement, and removal activities performed in a manner that aligns with the associated risk?",
+    "question_type": "YES_NO",
+    "requires_evidence": true,
+    "citations": [
+      {
+        "framework": "NIST Cybersecurity Framework",
+        "control_id": "PR.PS-02",
+        "control_name": ""
+      },
+      {
+        "framework": "NIST Cybersecurity Framework",
+        "control_id": "PR.PS-03",
+        "control_name": ""
+      }
+    ],
+    "mapped_controls_count": 2
+  },
+  {
+    "question": "Are log records being generated and made available to support continuous monitoring?",
+    "question_type": "YES_NO",
+    "requires_evidence": true,
+    "citations": [
+      {
+        "framework": "NIST Cybersecurity Framework",
+        "control_id": "PR.PS-04",
+        "control_name": ""
+      }
+    ],
+    "mapped_controls_count": 1
+  },
+  {
+    "question": "Are measures in place to prevent the installation and execution of unauthorized software?",
+    "question_type": "YES_NO",
+    "requires_evidence": true,
+    "citations": [
+      {
+        "framework": "NIST Cybersecurity Framework",
+        "control_id": "PR.PS-05",
+        "control_name": ""
+      }
+    ],
+    "mapped_controls_count": 1
+  },
+  {
+    "question": "Are secure software development practices integrated and monitored throughout the entire software development life cycle?",
+    "question_type": "YES_NO",
+    "requires_evidence": true,
+    "citations": [
+      {
+        "framework": "NIST Cybersecurity Framework",
+        "control_id": "PR.PS-06",
+        "control_name": ""
+      }
+    ],
+    "mapped_controls_count": 1
+  },
+  {
+    "question": "Are networks and environments adequately protected from unauthorized logical access and usage?",
+    "question_type": "YES_NO",
+    "requires_evidence": true,
+    "citations": [
+      {
+        "framework": "NIST Cybersecurity Framework",
+        "control_id": "PR.IR-01",
+        "control_name": ""
+      }
+    ],
+    "mapped_controls_count": 1
+  },
+  {
+    "question": "Are the organization's technology assets adequately protected from environmental threats?",
+    "question_type": "YES_NO",
+    "requires_evidence": true,
+    "citations": [
+      {
+        "framework": "NIST Cybersecurity Framework",
+        "control_id": "PR.IR-02",
+        "control_name": ""
+      }
+    ],
+    "mapped_controls_count": 1
+  },
+  {
+    "question": "Are mechanisms in place to achieve resilience requirements during both normal and adverse situations?",
+    "question_type": "YES_NO",
+    "requires_evidence": true,
+    "citations": [
+      {
+        "framework": "NIST Cybersecurity Framework",
+        "control_id": "PR.IR-03",
+        "control_name": ""
+      }
+    ],
+    "mapped_controls_count": 1
+  },
+  {
+    "question": "Does the organization have sufficient resource capacity to maintain system availability?",
+    "question_type": "YES_NO",
+    "requires_evidence": true,
+    "citations": [
+      {
+        "framework": "NIST Cybersecurity Framework",
+        "control_id": "PR.IR-04",
+        "control_name": ""
+      }
+    ],
+    "mapped_controls_count": 1
+  },
+  {
+    "question": "Are networks and network services being monitored to detect potentially adverse events?",
+    "question_type": "YES_NO",
+    "requires_evidence": true,
+    "citations": [
+      {
+        "framework": "NIST Cybersecurity Framework",
+        "control_id": "DE.CM-01",
+        "control_name": ""
+      },
+      {
+        "framework": "NIST Cybersecurity Framework",
+        "control_id": "DE.CM-03",
+        "control_name": ""
+      },
+      {
+        "framework": "NIST Cybersecurity Framework",
+        "control_id": "DE.CM-06",
+        "control_name": ""
+      },
+      {
+        "framework": "NIST Cybersecurity Framework",
+        "control_id": "DE.CM-09",
+        "control_name": ""
+      }
+    ],
+    "mapped_controls_count": 4
+  },
+  {
+    "question": "Is the physical environment continuously monitored to detect and identify potentially adverse events?",
+    "question_type": "YES_NO",
+    "requires_evidence": true,
+    "citations": [
+      {
+        "framework": "NIST Cybersecurity Framework",
+        "control_id": "DE.CM-02",
+        "control_name": ""
+      }
+    ],
+    "mapped_controls_count": 1
+  },
+  {
+    "question": "Are potentially adverse events analyzed to understand associated activities?",
+    "question_type": "YES_NO",
+    "requires_evidence": true,
+    "citations": [
+      {
+        "framework": "NIST Cybersecurity Framework",
+        "control_id": "DE.AE-02",
+        "control_name": ""
+      },
+      {
+        "framework": "NIST Cybersecurity Framework",
+        "control_id": "DE.AE-04",
+        "control_name": ""
+      }
+    ],
+    "mapped_controls_count": 2
+  },
+  {
+    "question": "Is information from multiple sources correlated to enhance security insights and threat detection?",
+    "question_type": "YES_NO",
+    "requires_evidence": true,
+    "citations": [
+      {
+        "framework": "NIST Cybersecurity Framework",
+        "control_id": "DE.AE-03",
+        "control_name": ""
+      },
+      {
+        "framework": "NIST Cybersecurity Framework",
+        "control_id": "DE.AE-07",
+        "control_name": ""
+      }
+    ],
+    "mapped_controls_count": 2
+  },
+  {
+    "question": "Are authorized staff and tools receiving information on adverse events?",
+    "question_type": "YES_NO",
+    "requires_evidence": true,
+    "citations": [
+      {
+        "framework": "NIST Cybersecurity Framework",
+        "control_id": "DE.AE-06",
+        "control_name": ""
+      }
+    ],
+    "mapped_controls_count": 1
+  },
+  {
+    "question": "Are incidents consistently declared when adverse events meet the predefined incident criteria?",
+    "question_type": "YES_NO",
+    "requires_evidence": true,
+    "citations": [
+      {
+        "framework": "NIST Cybersecurity Framework",
+        "control_id": "DE.AE-08",
+        "control_name": ""
+      }
+    ],
+    "mapped_controls_count": 1
+  },
+  {
+    "question": "Is the incident response plan executed in coordination with relevant third parties when an incident is declared?",
+    "question_type": "FREE_TEXT",
+    "requires_evidence": true,
+    "citations": [
+      {
+        "framework": "NIST Cybersecurity Framework",
+        "control_id": "RS.MA-01",
+        "control_name": ""
+      }
+    ],
+    "mapped_controls_count": 1
+  },
+  {
+    "question": "Are incident reports properly triaged and validated to ensure accurate and timely response?",
+    "question_type": "YES_NO",
+    "requires_evidence": true,
+    "citations": [
+      {
+        "framework": "NIST Cybersecurity Framework",
+        "control_id": "RS.MA-02",
+        "control_name": ""
+      },
+      {
+        "framework": "NIST Cybersecurity Framework",
+        "control_id": "RS.MA-04",
+        "control_name": ""
+      }
+    ],
+    "mapped_controls_count": 2
+  },
+  {
+    "question": "Are incidents categorized and prioritized in accordance with established procedures?",
+    "question_type": "YES_NO",
+    "requires_evidence": true,
+    "citations": [
+      {
+        "framework": "NIST Cybersecurity Framework",
+        "control_id": "RS.MA-03",
+        "control_name": ""
+      }
+    ],
+    "mapped_controls_count": 1
+  },
+  {
+    "question": "What criteria are used to determine when to initiate incident recovery?",
+    "question_type": "YES_NO",
+    "requires_evidence": true,
+    "citations": [
+      {
+        "framework": "NIST Cybersecurity Framework",
+        "control_id": "RS.MA-05",
+        "control_name": ""
+      }
+    ],
+    "mapped_controls_count": 1
+  },
+  {
+    "question": "Is analysis performed to determine the root cause of incidents and establish what has taken place during them?",
+    "question_type": "YES_NO",
+    "requires_evidence": true,
+    "citations": [
+      {
+        "framework": "NIST Cybersecurity Framework",
+        "control_id": "RS.AN-03",
+        "control_name": ""
+      }
+    ],
+    "mapped_controls_count": 1
+  },
+  {
+    "question": "Are actions performed during an investigation properly recorded, with their integrity and provenance preserved?",
+    "question_type": "YES_NO",
+    "requires_evidence": true,
+    "citations": [
+      {
+        "framework": "NIST Cybersecurity Framework",
+        "control_id": "RS.AN-06",
+        "control_name": ""
+      },
+      {
+        "framework": "NIST Cybersecurity Framework",
+        "control_id": "RS.AN-07",
+        "control_name": ""
+      }
+    ],
+    "mapped_controls_count": 2
+  },
+  {
+    "question": "How does the organization estimate and validate the magnitude of incidents?",
+    "question_type": "YES_NO",
+    "requires_evidence": true,
+    "citations": [
+      {
+        "framework": "NIST Cybersecurity Framework",
+        "control_id": "RS.AN-08",
+        "control_name": ""
+      }
+    ],
+    "mapped_controls_count": 1
+  },
+  {
+    "question": "Are internal and external stakeholders notified of incidents in a timely manner?",
+    "question_type": "YES_NO",
+    "requires_evidence": true,
+    "citations": [
+      {
+        "framework": "NIST Cybersecurity Framework",
+        "control_id": "RS.CO-02",
+        "control_name": ""
+      },
+      {
+        "framework": "NIST Cybersecurity Framework",
+        "control_id": "RS.CO-03",
+        "control_name": ""
+      }
+    ],
+    "mapped_controls_count": 2
+  },
+  {
+    "question": "Are incidents effectively contained to prevent further damage or escalation?",
+    "question_type": "YES_NO",
+    "requires_evidence": true,
+    "citations": [
+      {
+        "framework": "NIST Cybersecurity Framework",
+        "control_id": "RS.MI-01",
+        "control_name": ""
+      }
+    ],
+    "mapped_controls_count": 1
+  },
+  {
+    "question": "Are all identified incidents fully eradicated to prevent further damage or recurrence?",
+    "question_type": "YES_NO",
+    "requires_evidence": true,
+    "citations": [
+      {
+        "framework": "NIST Cybersecurity Framework",
+        "control_id": "RS.MI-02",
+        "control_name": ""
+      }
+    ],
+    "mapped_controls_count": 1
+  },
+  {
+    "question": "Is the recovery portion of the incident response plan properly executed when initiated through the incident response process?",
+    "question_type": "FREE_TEXT",
+    "requires_evidence": true,
+    "citations": [
+      {
+        "framework": "NIST Cybersecurity Framework",
+        "control_id": "RC.RP-01",
+        "control_name": ""
+      }
+    ],
+    "mapped_controls_count": 1
+  },
+  {
+    "question": "Are recovery actions properly selected, scoped, prioritized, and executed when necessary?",
+    "question_type": "YES_NO",
+    "requires_evidence": true,
+    "citations": [
+      {
+        "framework": "NIST Cybersecurity Framework",
+        "control_id": "RC.RP-02",
+        "control_name": ""
+      }
+    ],
+    "mapped_controls_count": 1
+  },
+  {
+    "question": "Are backups and restoration assets verified for integrity prior to their use in restoration activities?",
+    "question_type": "YES_NO",
+    "requires_evidence": true,
+    "citations": [
+      {
+        "framework": "NIST Cybersecurity Framework",
+        "control_id": "RC.RP-03",
+        "control_name": ""
+      },
+      {
+        "framework": "NIST Cybersecurity Framework",
+        "control_id": "RC.RP-05",
+        "control_name": ""
+      }
+    ],
+    "mapped_controls_count": 2
+  },
+  {
+    "question": "Are post-incident operational norms established considering critical mission functions and cybersecurity risk management?",
+    "question_type": "YES_NO",
+    "requires_evidence": true,
+    "citations": [
+      {
+        "framework": "NIST Cybersecurity Framework",
+        "control_id": "RC.RP-04",
+        "control_name": ""
+      }
+    ],
+    "mapped_controls_count": 1
+  },
+  {
+    "question": "Are incident recovery efforts formally declared complete based on predefined criteria, with all related documentation finalized?",
+    "question_type": "FREE_TEXT",
+    "requires_evidence": true,
+    "citations": [
+      {
+        "framework": "NIST Cybersecurity Framework",
+        "control_id": "RC.RP-06",
+        "control_name": ""
+      }
+    ],
+    "mapped_controls_count": 1
+  },
+  {
+    "question": "Are recovery activities and progress in restoring operational capabilities communicated to designated internal and external stakeholders?",
+    "question_type": "YES_NO",
+    "requires_evidence": true,
+    "citations": [
+      {
+        "framework": "NIST Cybersecurity Framework",
+        "control_id": "RC.CO-03",
+        "control_name": ""
+      }
+    ],
+    "mapped_controls_count": 1
+  },
+  {
+    "question": "Are public updates on incident recovery shared using approved methods and messaging?",
+    "question_type": "FREE_TEXT",
+    "requires_evidence": true,
+    "citations": [
+      {
+        "framework": "NIST Cybersecurity Framework",
+        "control_id": "RC.CO-04",
+        "control_name": ""
+      }
+    ],
+    "mapped_controls_count": 1
+  },
+  {
+    "question": "Are information security policies and topic-specific policies defined, approved, published, communicated, and reviewed at planned intervals or when significant changes occur?",
+    "question_type": "FREE_TEXT",
+    "requires_evidence": true,
+    "citations": [
+      {
+        "framework": "ISO 27001",
+        "control_id": "5.1",
+        "control_name": "Policies for information security"
+      },
+      {
+        "framework": "ISO 27001",
+        "control_id": "5.36",
+        "control_name": "Compliance with policies, rules and standards for information security"
+      }
+    ],
+    "mapped_controls_count": 2
+  },
+  {
+    "question": "Are information security roles and responsibilities clearly defined and allocated to meet the organization's needs?",
+    "question_type": "FREE_TEXT",
+    "requires_evidence": true,
+    "citations": [
+      {
+        "framework": "ISO 27001",
+        "control_id": "5.2",
+        "control_name": "Information security roles and responsibilities"
+      },
+      {
+        "framework": "ISO 27001",
+        "control_id": "5.24",
+        "control_name": "Information security incident management planning and prepa ration"
+      }
+    ],
+    "mapped_controls_count": 2
+  },
+  {
+    "question": "Are duties and areas of responsibility properly segregated to prevent conflicts of interest?",
+    "question_type": "YES_NO",
+    "requires_evidence": true,
+    "citations": [
+      {
+        "framework": "ISO 27001",
+        "control_id": "5.3",
+        "control_name": "Segregation of duties"
+      }
+    ],
+    "mapped_controls_count": 1
+  },
+  {
+    "question": "Does the organization require all personnel to apply information security in accordance with established information security policies and procedures?",
+    "question_type": "FREE_TEXT",
+    "requires_evidence": true,
+    "citations": [
+      {
+        "framework": "ISO 27001",
+        "control_id": "5.4",
+        "control_name": "Management responsibilities"
+      }
+    ],
+    "mapped_controls_count": 1
+  },
+  {
+    "question": "Does the organization have established and maintained contacts with relevant authorities?",
+    "question_type": "FREE_TEXT",
+    "requires_evidence": true,
+    "citations": [
+      {
+        "framework": "ISO 27001",
+        "control_id": "5.5",
+        "control_name": "Contact with authorities"
+      },
+      {
+        "framework": "ISO 27001",
+        "control_id": "5.6",
+        "control_name": "Contact with special interest groups"
+      }
+    ],
+    "mapped_controls_count": 2
+  },
+  {
+    "question": "Is the organization collecting and analyzing information related to information security threats to produce threat intelligence?",
+    "question_type": "YES_NO",
+    "requires_evidence": true,
+    "citations": [
+      {
+        "framework": "ISO 27001",
+        "control_id": "5.7",
+        "control_name": "Threat intelligence"
+      }
+    ],
+    "mapped_controls_count": 1
+  },
+  {
+    "question": "Is information security integrated into the organization's project management processes?",
+    "question_type": "YES_NO",
+    "requires_evidence": true,
+    "citations": [
+      {
+        "framework": "ISO 27001",
+        "control_id": "5.8",
+        "control_name": "Information security in project management"
+      },
+      {
+        "framework": "ISO 27001",
+        "control_id": "5.21",
+        "control_name": "Managing information security in the information and communication technology (ICT) supply chain"
+      }
+    ],
+    "mapped_controls_count": 2
+  },
+  {
+    "question": "Is an inventory of information and associated assets, including owners, developed and maintained?",
+    "question_type": "FREE_TEXT",
+    "requires_evidence": true,
+    "citations": [
+      {
+        "framework": "ISO 27001",
+        "control_id": "5.9",
+        "control_name": "Inventory of information and other associated assets"
+      }
+    ],
+    "mapped_controls_count": 1
+  },
+  {
+    "question": "Are rules for acceptable use and procedures for handling information and associated assets identified, documented, and implemented?",
+    "question_type": "FREE_TEXT",
+    "requires_evidence": true,
+    "citations": [
+      {
+        "framework": "ISO 27001",
+        "control_id": "5.10",
+        "control_name": "Acceptable use of information and other associated assets"
+      },
+      {
+        "framework": "ISO 27001",
+        "control_id": "5.15",
+        "control_name": "Access control"
+      }
+    ],
+    "mapped_controls_count": 2
+  },
+  {
+    "question": "Are all organization assets returned by personnel and other relevant parties upon change or termination of their employment, contract, or agreement?",
+    "question_type": "YES_NO",
+    "requires_evidence": true,
+    "citations": [
+      {
+        "framework": "ISO 27001",
+        "control_id": "5.11",
+        "control_name": "Return of assets"
+      }
+    ],
+    "mapped_controls_count": 1
+  },
+  {
+    "question": "Is information classified based on the organization's security needs, considering confidentiality, integrity, availability, and relevant stakeholder requirements?",
+    "question_type": "YES_NO",
+    "requires_evidence": true,
+    "citations": [
+      {
+        "framework": "ISO 27001",
+        "control_id": "5.12",
+        "control_name": "Classification of information"
+      }
+    ],
+    "mapped_controls_count": 1
+  },
+  {
+    "question": "Are procedures for information labelling developed and implemented in accordance with the organization's adopted information classification scheme?",
+    "question_type": "FREE_TEXT",
+    "requires_evidence": true,
+    "citations": [
+      {
+        "framework": "ISO 27001",
+        "control_id": "5.13",
+        "control_name": "Labelling of information"
+      }
+    ],
+    "mapped_controls_count": 1
+  },
+  {
+    "question": "Are information transfer rules, procedures, or agreements established for all internal and external transfer facilities within the organization?",
+    "question_type": "FREE_TEXT",
+    "requires_evidence": true,
+    "citations": [
+      {
+        "framework": "ISO 27001",
+        "control_id": "5.14",
+        "control_name": "Information transfer"
+      }
+    ],
+    "mapped_controls_count": 1
+  },
+  {
+    "question": "Is the full life cycle of identities managed within the organization?",
+    "question_type": "YES_NO",
+    "requires_evidence": true,
+    "citations": [
+      {
+        "framework": "ISO 27001",
+        "control_id": "5.16",
+        "control_name": "Identity management"
+      }
+    ],
+    "mapped_controls_count": 1
+  },
+  {
+    "question": "Is there a management process in place to control the allocation and management of authentication information, including guidance to personnel on its appropriate handling?",
+    "question_type": "FREE_TEXT",
+    "requires_evidence": true,
+    "citations": [
+      {
+        "framework": "ISO 27001",
+        "control_id": "5.17",
+        "control_name": "Authentication information"
+      }
+    ],
+    "mapped_controls_count": 1
+  },
+  {
+    "question": "Are access rights to information and associated assets provisioned, reviewed, modified, and removed in accordance with the organization's access control policy and rules?",
+    "question_type": "YES_NO",
+    "requires_evidence": true,
+    "citations": [
+      {
+        "framework": "ISO 27001",
+        "control_id": "5.18",
+        "control_name": "Access rights"
+      }
+    ],
+    "mapped_controls_count": 1
+  },
+  {
+    "question": "Are processes and procedures in place to manage information security risks associated with the use of suppliers' products or services?",
+    "question_type": "FREE_TEXT",
+    "requires_evidence": true,
+    "citations": [
+      {
+        "framework": "ISO 27001",
+        "control_id": "5.19",
+        "control_name": "Information security in supplier relationships"
+      }
+    ],
+    "mapped_controls_count": 1
+  },
+  {
+    "question": "Are relevant information security requirements established and agreed upon with each supplier based on the type of supplier relationship?",
+    "question_type": "YES_NO",
+    "requires_evidence": true,
+    "citations": [
+      {
+        "framework": "ISO 27001",
+        "control_id": "5.20",
+        "control_name": "Addressing information security within supplier agreements"
+      }
+    ],
+    "mapped_controls_count": 1
+  },
+  {
+    "question": "Does the organization regularly monitor, review, evaluate, and manage changes in supplier information security practices and service delivery?",
+    "question_type": "YES_NO",
+    "requires_evidence": true,
+    "citations": [
+      {
+        "framework": "ISO 27001",
+        "control_id": "5.22",
+        "control_name": "Monitoring, review and change management of supplier services"
+      }
+    ],
+    "mapped_controls_count": 1
+  },
+  {
+    "question": "Are processes for acquiring, using, managing, and exiting cloud services established in accordance with the organization's information security requirements?",
+    "question_type": "FREE_TEXT",
+    "requires_evidence": true,
+    "citations": [
+      {
+        "framework": "ISO 27001",
+        "control_id": "5.23",
+        "control_name": "Information security for use of cloud services"
+      }
+    ],
+    "mapped_controls_count": 1
+  },
+  {
+    "question": "Does the organization assess and categorize information security events to determine if they constitute information security incidents?",
+    "question_type": "YES_NO",
+    "requires_evidence": true,
+    "citations": [
+      {
+        "framework": "ISO 27001",
+        "control_id": "5.25",
+        "control_name": "Assessment and decision on in formation security events"
+      },
+      {
+        "framework": "ISO 27001",
+        "control_id": "5.26",
+        "control_name": "Response to information security incidents"
+      }
+    ],
+    "mapped_controls_count": 2
+  },
+  {
+    "question": "Are lessons learned from information security incidents used to enhance and improve existing information security controls?",
+    "question_type": "YES_NO",
+    "requires_evidence": true,
+    "citations": [
+      {
+        "framework": "ISO 27001",
+        "control_id": "5.27",
+        "control_name": "Learning from information se curity incidents"
+      }
+    ],
+    "mapped_controls_count": 1
+  },
+  {
+    "question": "Does the organization have established procedures for identifying, collecting, acquiring, and preserving evidence related to information security events?",
+    "question_type": "FREE_TEXT",
+    "requires_evidence": true,
+    "citations": [
+      {
+        "framework": "ISO 27001",
+        "control_id": "5.28",
+        "control_name": "Collection of evidence"
+      }
+    ],
+    "mapped_controls_count": 1
+  },
+  {
+    "question": "Does the organization have a plan in place to maintain information security at an appropriate level during disruptions?",
+    "question_type": "FREE_TEXT",
+    "requires_evidence": true,
+    "citations": [
+      {
+        "framework": "ISO 27001",
+        "control_id": "5.29",
+        "control_name": "Information security during disruption"
+      }
+    ],
+    "mapped_controls_count": 1
+  },
+  {
+    "question": "Is the organization's ICT readiness planned, implemented, maintained, and tested in accordance with business continuity objectives and ICT continuity requirements?",
+    "question_type": "FREE_TEXT",
+    "requires_evidence": true,
+    "citations": [
+      {
+        "framework": "ISO 27001",
+        "control_id": "5.30",
+        "control_name": "ICT readiness for business con tinuity"
+      }
+    ],
+    "mapped_controls_count": 1
+  },
+  {
+    "question": "Are legal, statutory, regulatory, and contractual information security requirements identified, documented, and regularly updated to reflect the organization's approach to meeting them?",
+    "question_type": "FREE_TEXT",
+    "requires_evidence": true,
+    "citations": [
+      {
+        "framework": "ISO 27001",
+        "control_id": "5.31",
+        "control_name": "Legal, statutory, regulatory and contractual requirements"
+      }
+    ],
+    "mapped_controls_count": 1
+  },
+  {
+    "question": "What procedures are in place to protect the organization's intellectual property rights?",
+    "question_type": "FREE_TEXT",
+    "requires_evidence": true,
+    "citations": [
+      {
+        "framework": "ISO 27001",
+        "control_id": "5.32",
+        "control_name": "Intellectual property rights"
+      }
+    ],
+    "mapped_controls_count": 1
+  },
+  {
+    "question": "Are records adequately protected against loss, destruction, falsification, unauthorized access, and unauthorized release?",
+    "question_type": "YES_NO",
+    "requires_evidence": true,
+    "citations": [
+      {
+        "framework": "ISO 27001",
+        "control_id": "5.33",
+        "control_name": "Protection of records"
+      }
+    ],
+    "mapped_controls_count": 1
+  },
+  {
+    "question": "Does the organization identify and meet all applicable legal, regulatory, and contractual requirements for preserving privacy and protecting Personally Identifiable Information (PII)?",
+    "question_type": "YES_NO",
+    "requires_evidence": true,
+    "citations": [
+      {
+        "framework": "ISO 27001",
+        "control_id": "5.34",
+        "control_name": "Privacy and protection of person al identifiable information (PII)"
+      }
+    ],
+    "mapped_controls_count": 1
+  },
+  {
+    "question": "Is the organization's information security approach, including people, processes, and technologies, subject to independent review at planned intervals or when significant changes occur?",
+    "question_type": "FREE_TEXT",
+    "requires_evidence": true,
+    "citations": [
+      {
+        "framework": "ISO 27001",
+        "control_id": "5.35",
+        "control_name": "Independent review of informa tion security"
+      }
+    ],
+    "mapped_controls_count": 1
+  },
+  {
+    "question": "Are operating procedures for information processing facilities documented and accessible to relevant personnel?",
+    "question_type": "FREE_TEXT",
+    "requires_evidence": true,
+    "citations": [
+      {
+        "framework": "ISO 27001",
+        "control_id": "5.37",
+        "control_name": "Documented operating procedures"
+      }
+    ],
+    "mapped_controls_count": 1
+  },
+  {
+    "question": "Are background verification checks performed on all candidates prior to hiring and on an ongoing basis, considering applicable laws, regulations, and ethics, and proportionate to business requirements, information classification, and perceived risks?",
+    "question_type": "YES_NO",
+    "requires_evidence": true,
+    "citations": [
+      {
+        "framework": "ISO 27001",
+        "control_id": "6.1",
+        "control_name": "Screening"
+      }
+    ],
+    "mapped_controls_count": 1
+  },
+  {
+    "question": "Does the employment contractual agreement explicitly outline the responsibilities of both personnel and the organization regarding information security?",
+    "question_type": "YES_NO",
+    "requires_evidence": true,
+    "citations": [
+      {
+        "framework": "ISO 27001",
+        "control_id": "6.2",
+        "control_name": "Terms and conditions of em ployment"
+      }
+    ],
+    "mapped_controls_count": 1
+  },
+  {
+    "question": "Does the organization provide its personnel and relevant interested parties with appropriate information security awareness, education, and training, as well as regular updates on relevant information security policies and procedures, tailored to their job functions?",
+    "question_type": "FREE_TEXT",
+    "requires_evidence": true,
+    "citations": [
+      {
+        "framework": "ISO 27001",
+        "control_id": "6.3",
+        "control_name": "Information security awareness, education and training"
+      }
+    ],
+    "mapped_controls_count": 1
+  },
+  {
+    "question": "Is there a formalized and communicated disciplinary process in place to address information security policy violations by personnel and other relevant interested parties?",
+    "question_type": "FREE_TEXT",
+    "requires_evidence": true,
+    "citations": [
+      {
+        "framework": "ISO 27001",
+        "control_id": "6.4",
+        "control_name": "Disciplinary process"
+      }
+    ],
+    "mapped_controls_count": 1
+  },
+  {
+    "question": "Are information security responsibilities and duties that remain valid after termination or change of employment clearly defined, enforced, and communicated to relevant personnel and other interested parties?",
+    "question_type": "FREE_TEXT",
+    "requires_evidence": true,
+    "citations": [
+      {
+        "framework": "ISO 27001",
+        "control_id": "6.5",
+        "control_name": "Responsibilities after termination or change of employment"
+      }
+    ],
+    "mapped_controls_count": 1
+  },
+  {
+    "question": "Are confidentiality or non-disclosure agreements in place, documented, regularly reviewed, and signed by personnel and relevant parties to protect organizational information?",
+    "question_type": "FREE_TEXT",
+    "requires_evidence": true,
+    "citations": [
+      {
+        "framework": "ISO 27001",
+        "control_id": "6.6",
+        "control_name": "Confidentiality or non-disclosure agreements"
+      }
+    ],
+    "mapped_controls_count": 1
+  },
+  {
+    "question": "Are security measures in place to protect organizational information when personnel access, process, or store it remotely outside of the organization's premises?",
+    "question_type": "FREE_TEXT",
+    "requires_evidence": true,
+    "citations": [
+      {
+        "framework": "ISO 27001",
+        "control_id": "6.7",
+        "control_name": "Remote working"
+      }
+    ],
+    "mapped_controls_count": 1
+  },
+  {
+    "question": "Does the organization have a established mechanism for personnel to report observed or suspected information security events in a timely manner through appropriate channels?",
+    "question_type": "YES_NO",
+    "requires_evidence": true,
+    "citations": [
+      {
+        "framework": "ISO 27001",
+        "control_id": "6.8",
+        "control_name": "Information security event re porting"
+      }
+    ],
+    "mapped_controls_count": 1
+  },
+  {
+    "question": "Are security perimeters defined and used to protect areas containing information and associated assets?",
+    "question_type": "FREE_TEXT",
+    "requires_evidence": true,
+    "citations": [
+      {
+        "framework": "ISO 27001",
+        "control_id": "7.1",
+        "control_name": "Physical security perimeters"
+      }
+    ],
+    "mapped_controls_count": 1
+  },
+  {
+    "question": "Are secure areas adequately protected by entry controls and access points that restrict unauthorized access?",
+    "question_type": "YES_NO",
+    "requires_evidence": true,
+    "citations": [
+      {
+        "framework": "ISO 27001",
+        "control_id": "7.2",
+        "control_name": "Physical entry"
+      }
+    ],
+    "mapped_controls_count": 1
+  },
+  {
+    "question": "Are physical security measures designed and implemented for offices, rooms, and facilities?",
+    "question_type": "YES_NO",
+    "requires_evidence": true,
+    "citations": [
+      {
+        "framework": "ISO 27001",
+        "control_id": "7.3",
+        "control_name": "Securing offices, rooms and fa cilities"
+      },
+      {
+        "framework": "ISO 27001",
+        "control_id": "7.6",
+        "control_name": "Working in secure areas"
+      }
+    ],
+    "mapped_controls_count": 2
+  },
+  {
+    "question": "Are premises continuously monitored to detect and prevent unauthorized physical access?",
+    "question_type": "YES_NO",
+    "requires_evidence": true,
+    "citations": [
+      {
+        "framework": "ISO 27001",
+        "control_id": "7.4",
+        "control_name": "Physical security monitoring"
+      }
+    ],
+    "mapped_controls_count": 1
+  },
+  {
+    "question": "Are physical and environmental threats, including natural disasters and other intentional or unintentional physical threats to infrastructure, adequately protected against through designed and implemented controls?",
+    "question_type": "YES_NO",
+    "requires_evidence": true,
+    "citations": [
+      {
+        "framework": "ISO 27001",
+        "control_id": "7.5",
+        "control_name": "Protecting against physical and environmental threats"
+      }
+    ],
+    "mapped_controls_count": 1
+  },
+  {
+    "question": "Are clear desk and clear screen policies defined and enforced for all information processing facilities to protect sensitive information?",
+    "question_type": "FREE_TEXT",
+    "requires_evidence": true,
+    "citations": [
+      {
+        "framework": "ISO 27001",
+        "control_id": "7.7",
+        "control_name": "Clear desk and clear screen"
+      }
+    ],
+    "mapped_controls_count": 1
+  },
+  {
+    "question": "Are off-site assets adequately protected to ensure their security?",
+    "question_type": "YES_NO",
+    "requires_evidence": true,
+    "citations": [
+      {
+        "framework": "ISO 27001",
+        "control_id": "7.8",
+        "control_name": "Equipment siting and protection Control Equipment shall be sited securely and protected."
+      }
+    ],
+    "mapped_controls_count": 1
+  },
+  {
+    "question": "Are storage media managed throughout their entire life cycle, from acquisition to disposal, in accordance with the organization's classification scheme and handling requirements?",
+    "question_type": "YES_NO",
+    "requires_evidence": true,
+    "citations": [
+      {
+        "framework": "ISO 27001",
+        "control_id": "7.10",
+        "control_name": "Storage media"
+      }
+    ],
+    "mapped_controls_count": 1
+  },
+  {
+    "question": "Are information processing facilities protected against disruptions caused by power failures and other utility outages?",
+    "question_type": "FREE_TEXT",
+    "requires_evidence": true,
+    "citations": [
+      {
+        "framework": "ISO 27001",
+        "control_id": "7.11",
+        "control_name": "Supporting utilities"
+      }
+    ],
+    "mapped_controls_count": 1
+  },
+  {
+    "question": "Are cables carrying power, data, or supporting information services adequately protected against interception, interference, or damage?",
+    "question_type": "YES_NO",
+    "requires_evidence": true,
+    "citations": [
+      {
+        "framework": "ISO 27001",
+        "control_id": "7.12",
+        "control_name": "Cabling security"
+      }
+    ],
+    "mapped_controls_count": 1
+  },
+  {
+    "question": "Are equipment maintenance procedures in place to ensure the availability, integrity, and confidentiality of information?",
+    "question_type": "FREE_TEXT",
+    "requires_evidence": true,
+    "citations": [
+      {
+        "framework": "ISO 27001",
+        "control_id": "7.13",
+        "control_name": "Equipment maintenance"
+      }
+    ],
+    "mapped_controls_count": 1
+  },
+  {
+    "question": "Are items of equipment containing storage media verified to ensure removal or secure overwriting of sensitive data and licensed software prior to disposal or re-use?",
+    "question_type": "YES_NO",
+    "requires_evidence": true,
+    "citations": [
+      {
+        "framework": "ISO 27001",
+        "control_id": "7.14",
+        "control_name": "Secure disposal or re-use of equipment"
+      }
+    ],
+    "mapped_controls_count": 1
+  },
+  {
+    "question": "Are endpoint devices properly configured to protect information stored on, processed by, or accessible via these devices?",
+    "question_type": "FREE_TEXT",
+    "requires_evidence": true,
+    "citations": [
+      {
+        "framework": "ISO 27001",
+        "control_id": "8.1",
+        "control_name": "User end point devices"
+      }
+    ],
+    "mapped_controls_count": 1
+  },
+  {
+    "question": "Are privileged access rights allocated and used in a restricted and managed manner within the organization?",
+    "question_type": "YES_NO",
+    "requires_evidence": true,
+    "citations": [
+      {
+        "framework": "ISO 27001",
+        "control_id": "8.2",
+        "control_name": "Privileged access rights"
+      }
+    ],
+    "mapped_controls_count": 1
+  },
+  {
+    "question": "Is access to information and associated assets restricted in accordance with the established access control policy?",
+    "question_type": "YES_NO",
+    "requires_evidence": true,
+    "citations": [
+      {
+        "framework": "ISO 27001",
+        "control_id": "8.3",
+        "control_name": "Information access restriction"
+      }
+    ],
+    "mapped_controls_count": 1
+  },
+  {
+    "question": "Are read and write access to source code, development tools, and software libraries appropriately managed within the organization?",
+    "question_type": "YES_NO",
+    "requires_evidence": true,
+    "citations": [
+      {
+        "framework": "ISO 27001",
+        "control_id": "8.4",
+        "control_name": "Access to source code"
+      }
+    ],
+    "mapped_controls_count": 1
+  },
+  {
+    "question": "Are secure authentication technologies and procedures implemented in accordance with information access restrictions and the organization's access control policy?",
+    "question_type": "FREE_TEXT",
+    "requires_evidence": true,
+    "citations": [
+      {
+        "framework": "ISO 27001",
+        "control_id": "8.5",
+        "control_name": "Secure authentication"
+      }
+    ],
+    "mapped_controls_count": 1
+  },
+  {
+    "question": "Are resources being monitored and adjusted to align with current and expected capacity requirements?",
+    "question_type": "YES_NO",
+    "requires_evidence": true,
+    "citations": [
+      {
+        "framework": "ISO 27001",
+        "control_id": "8.6",
+        "control_name": "Capacity management"
+      }
+    ],
+    "mapped_controls_count": 1
+  },
+  {
+    "question": "Is protection against malware implemented and supported by appropriate user awareness within the organization?",
+    "question_type": "YES_NO",
+    "requires_evidence": true,
+    "citations": [
+      {
+        "framework": "ISO 27001",
+        "control_id": "8.7",
+        "control_name": "Protection against malware"
+      }
+    ],
+    "mapped_controls_count": 1
+  },
+  {
+    "question": "Does the organization obtain information about technical vulnerabilities of its information systems, evaluate its exposure, and take appropriate measures to address them?",
+    "question_type": "YES_NO",
+    "requires_evidence": true,
+    "citations": [
+      {
+        "framework": "ISO 27001",
+        "control_id": "8.8",
+        "control_name": "Management of technical vul nerabilities"
+      }
+    ],
+    "mapped_controls_count": 1
+  },
+  {
+    "question": "Are configurations for hardware, software, services, and networks established, documented, implemented, monitored, and reviewed to ensure security?",
+    "question_type": "FREE_TEXT",
+    "requires_evidence": true,
+    "citations": [
+      {
+        "framework": "ISO 27001",
+        "control_id": "8.9",
+        "control_name": "Configuration management"
+      },
+      {
+        "framework": "ISO 27001",
+        "control_id": "8.21",
+        "control_name": "Security of network services"
+      }
+    ],
+    "mapped_controls_count": 2
+  },
+  {
+    "question": "Is information deleted from information systems, devices, and storage media when it is no longer required?",
+    "question_type": "YES_NO",
+    "requires_evidence": true,
+    "citations": [
+      {
+        "framework": "ISO 27001",
+        "control_id": "8.10",
+        "control_name": "Information deletion"
+      }
+    ],
+    "mapped_controls_count": 1
+  },
+  {
+    "question": "Is data masking implemented in accordance with the organization's access control policy, related policies, business requirements, and applicable legislation?",
+    "question_type": "YES_NO",
+    "requires_evidence": true,
+    "citations": [
+      {
+        "framework": "ISO 27001",
+        "control_id": "8.11",
+        "control_name": "Data masking"
+      }
+    ],
+    "mapped_controls_count": 1
+  },
+  {
+    "question": "Are data leakage prevention measures applied to all systems, networks, and devices that process, store, or transmit sensitive information?",
+    "question_type": "FREE_TEXT",
+    "requires_evidence": true,
+    "citations": [
+      {
+        "framework": "ISO 27001",
+        "control_id": "8.12",
+        "control_name": "Data leakage prevention"
+      },
+      {
+        "framework": "ISO 27001",
+        "control_id": "8.20",
+        "control_name": "Networks security"
+      }
+    ],
+    "mapped_controls_count": 2
+  },
+  {
+    "question": "Are backup copies of information, software, and systems regularly maintained and tested in accordance with the organization's topic-specific backup policy?",
+    "question_type": "FREE_TEXT",
+    "requires_evidence": true,
+    "citations": [
+      {
+        "framework": "ISO 27001",
+        "control_id": "8.13",
+        "control_name": "Information backup"
+      }
+    ],
+    "mapped_controls_count": 1
+  },
+  {
+    "question": "Are information processing facilities implemented with sufficient redundancy to meet availability requirements?",
+    "question_type": "FREE_TEXT",
+    "requires_evidence": true,
+    "citations": [
+      {
+        "framework": "ISO 27001",
+        "control_id": "8.14",
+        "control_name": "Redundancy of information pro cessing facilities"
+      }
+    ],
+    "mapped_controls_count": 1
+  },
+  {
+    "question": "Are logs that record activities, exceptions, faults, and other relevant events being produced, stored, protected, and analysed?",
+    "question_type": "YES_NO",
+    "requires_evidence": true,
+    "citations": [
+      {
+        "framework": "ISO 27001",
+        "control_id": "8.15",
+        "control_name": "Logging"
+      }
+    ],
+    "mapped_controls_count": 1
+  },
+  {
+    "question": "Are networks, systems, and applications being monitored for anomalous behaviour, with appropriate actions taken to evaluate potential information security incidents?",
+    "question_type": "YES_NO",
+    "requires_evidence": true,
+    "citations": [
+      {
+        "framework": "ISO 27001",
+        "control_id": "8.16",
+        "control_name": "Monitoring activities"
+      }
+    ],
+    "mapped_controls_count": 1
+  },
+  {
+    "question": "Are the clocks of information processing systems used by the organization synchronized to approved time sources?",
+    "question_type": "FREE_TEXT",
+    "requires_evidence": true,
+    "citations": [
+      {
+        "framework": "ISO 27001",
+        "control_id": "8.17",
+        "control_name": "Clock synchronization"
+      }
+    ],
+    "mapped_controls_count": 1
+  },
+  {
+    "question": "Are procedures and measures in place to securely manage software installation on operational systems?",
+    "question_type": "FREE_TEXT",
+    "requires_evidence": true,
+    "citations": [
+      {
+        "framework": "ISO 27001",
+        "control_id": "8.18",
+        "control_name": "Use of privileged utility programs Control The use of utility programs that can be capable of overriding system and application controls shall be restricted and tightly controlled."
+      }
+    ],
+    "mapped_controls_count": 1
+  },
+  {
+    "question": "Are groups of information services, users, and information systems adequately segregated within the organization's networks?",
+    "question_type": "YES_NO",
+    "requires_evidence": true,
+    "citations": [
+      {
+        "framework": "ISO 27001",
+        "control_id": "8.22",
+        "control_name": "Segregation of networks"
+      }
+    ],
+    "mapped_controls_count": 1
+  },
+  {
+    "question": "Is access to external websites managed to minimize the risk of exposure to malicious content?",
+    "question_type": "YES_NO",
+    "requires_evidence": true,
+    "citations": [
+      {
+        "framework": "ISO 27001",
+        "control_id": "8.23",
+        "control_name": "Web filtering"
+      }
+    ],
+    "mapped_controls_count": 1
+  },
+  {
+    "question": "Are rules for the effective use of cryptography, including cryptographic key management, defined and implemented within the organization?",
+    "question_type": "FREE_TEXT",
+    "requires_evidence": true,
+    "citations": [
+      {
+        "framework": "ISO 27001",
+        "control_id": "8.24",
+        "control_name": "Use of cryptography"
+      }
+    ],
+    "mapped_controls_count": 1
+  },
+  {
+    "question": "Are rules for secure software and system development established and applied within the organization?",
+    "question_type": "YES_NO",
+    "requires_evidence": true,
+    "citations": [
+      {
+        "framework": "ISO 27001",
+        "control_id": "8.25",
+        "control_name": "Secure development life cycle"
+      },
+      {
+        "framework": "ISO 27001",
+        "control_id": "8.27",
+        "control_name": "Secure system architecture and engineering principles"
+      }
+    ],
+    "mapped_controls_count": 2
+  },
+  {
+    "question": "Are information security requirements identified, specified, and approved during the development or acquisition of applications?",
+    "question_type": "YES_NO",
+    "requires_evidence": true,
+    "citations": [
+      {
+        "framework": "ISO 27001",
+        "control_id": "8.26",
+        "control_name": "Application security require ments"
+      }
+    ],
+    "mapped_controls_count": 1
+  },
+  {
+    "question": "Are secure coding principles applied to software development throughout the enterprise?",
+    "question_type": "YES_NO",
+    "requires_evidence": true,
+    "citations": [
+      {
+        "framework": "ISO 27001",
+        "control_id": "8.28",
+        "control_name": "Secure coding"
+      }
+    ],
+    "mapped_controls_count": 1
+  },
+  {
+    "question": "Are security testing processes defined and implemented throughout the development life cycle?",
+    "question_type": "FREE_TEXT",
+    "requires_evidence": true,
+    "citations": [
+      {
+        "framework": "ISO 27001",
+        "control_id": "8.29",
+        "control_name": "Security testing in development and acceptance"
+      }
+    ],
+    "mapped_controls_count": 1
+  },
+  {
+    "question": "Does the organization direct, monitor, and review the activities related to outsourced system development?",
+    "question_type": "YES_NO",
+    "requires_evidence": true,
+    "citations": [
+      {
+        "framework": "ISO 27001",
+        "control_id": "8.30",
+        "control_name": "Outsourced development"
+      }
+    ],
+    "mapped_controls_count": 1
+  },
+  {
+    "question": "Are development, testing, and production environments adequately separated and secured within the organization?",
+    "question_type": "YES_NO",
+    "requires_evidence": true,
+    "citations": [
+      {
+        "framework": "ISO 27001",
+        "control_id": "8.31",
+        "control_name": "Separation of development, test and production environments"
+      }
+    ],
+    "mapped_controls_count": 1
+  },
+  {
+    "question": "Are changes to information processing facilities and information systems subject to established change management procedures?",
+    "question_type": "FREE_TEXT",
+    "requires_evidence": true,
+    "citations": [
+      {
+        "framework": "ISO 27001",
+        "control_id": "8.32",
+        "control_name": "Change management"
+      }
+    ],
+    "mapped_controls_count": 1
+  },
+  {
+    "question": "Are test information assets properly selected, protected, and managed throughout their lifecycle?",
+    "question_type": "YES_NO",
+    "requires_evidence": true,
+    "citations": [
+      {
+        "framework": "ISO 27001",
+        "control_id": "8.33",
+        "control_name": "Test information"
+      }
+    ],
+    "mapped_controls_count": 1
+  },
+  {
+    "question": "Are audit tests and other assurance activities for operational systems planned and agreed upon between the tester and appropriate management?",
+    "question_type": "FREE_TEXT",
+    "requires_evidence": true,
+    "citations": [
+      {
+        "framework": "ISO 27001",
+        "control_id": "8.34",
+        "control_name": "Protection of information sys tems during audit testing"
+      }
+    ],
+    "mapped_controls_count": 1
+  },
+  {
+    "question": "Is an accurate, detailed, and up-to-date inventory of all enterprise assets that can store or process data maintained, including relevant asset details and connection approvals, and reviewed at least bi-annually?",
+    "question_type": "FREE_TEXT",
+    "requires_evidence": true,
+    "citations": [
+      {
+        "framework": "CIS Controls",
+        "control_id": "1.1",
+        "control_name": "Establish and Maintain Detailed Enterprise Asset Inventory"
+      }
+    ],
+    "mapped_controls_count": 1
+  },
+  {
+    "question": "Does the enterprise have a process in place to identify and address unauthorized assets on at least a weekly basis, including options to remove, deny remote access, or quarantine them?",
+    "question_type": "FREE_TEXT",
+    "requires_evidence": true,
+    "citations": [
+      {
+        "framework": "CIS Controls",
+        "control_id": "1.2",
+        "control_name": "Address Unauthorized Assets"
+      }
+    ],
+    "mapped_controls_count": 1
+  },
+  {
+    "question": "Is an active discovery tool utilized to identify assets connected to the enterprise's network, and is it configured to execute at least daily?",
+    "question_type": "YES_NO",
+    "requires_evidence": true,
+    "citations": [
+      {
+        "framework": "CIS Controls",
+        "control_id": "1.3",
+        "control_name": "Utilize an Active Discovery Tool"
+      },
+      {
+        "framework": "CIS Controls",
+        "control_id": "1.5",
+        "control_name": "Use a Passive Asset Discovery Tool"
+      }
+    ],
+    "mapped_controls_count": 2
+  },
+  {
+    "question": "Are DHCP logs from all DHCP servers and IP address management tools reviewed at least weekly to update the enterprise's asset inventory?",
+    "question_type": "YES_NO",
+    "requires_evidence": true,
+    "citations": [
+      {
+        "framework": "CIS Controls",
+        "control_id": "1.4",
+        "control_name": "Use Dynamic Host Configuration Protocol (DHCP) Logging to Update"
+      }
+    ],
+    "mapped_controls_count": 1
+  },
+  {
+    "question": "Is a detailed inventory of all licensed software on enterprise assets maintained, including title, publisher, and business purpose, and reviewed/updated at least bi-annually?",
+    "question_type": "FREE_TEXT",
+    "requires_evidence": true,
+    "citations": [
+      {
+        "framework": "CIS Controls",
+        "control_id": "2.1",
+        "control_name": "Establish and Maintain a Software Inventory"
+      }
+    ],
+    "mapped_controls_count": 1
+  },
+  {
+    "question": "Is all software designated as authorized in the enterprise asset inventory currently supported, or has an exception been documented with mitigating controls and residual risk acceptance for any necessary unsupported software?",
+    "question_type": "FREE_TEXT",
+    "requires_evidence": true,
+    "citations": [
+      {
+        "framework": "CIS Controls",
+        "control_id": "2.2",
+        "control_name": "Ensure Authorized Software is Currently Supported"
+      }
+    ],
+    "mapped_controls_count": 1
+  },
+  {
+    "question": "Are unauthorized software applications removed from enterprise assets or formally exempted through a documented exception process, with reviews conducted at least monthly?",
+    "question_type": "FREE_TEXT",
+    "requires_evidence": true,
+    "citations": [
+      {
+        "framework": "CIS Controls",
+        "control_id": "2.3",
+        "control_name": "Address Unauthorized Software"
+      }
+    ],
+    "mapped_controls_count": 1
+  },
+  {
+    "question": "Is the enterprise utilizing software inventory tools to automate the discovery and documentation of installed software throughout the organization?",
+    "question_type": "FREE_TEXT",
+    "requires_evidence": true,
+    "citations": [
+      {
+        "framework": "CIS Controls",
+        "control_id": "2.4",
+        "control_name": "Utilize Automated Software Inventory Tools"
+      }
+    ],
+    "mapped_controls_count": 1
+  },
+  {
+    "question": "Are technical controls, such as application allowlisting, in place to restrict software execution and access to authorized programs, with reassessments conducted at least bi-annually?",
+    "question_type": "YES_NO",
+    "requires_evidence": true,
+    "citations": [
+      {
+        "framework": "CIS Controls",
+        "control_id": "2.5",
+        "control_name": "Allowlist Authorized Software"
+      },
+      {
+        "framework": "CIS Controls",
+        "control_id": "2.6",
+        "control_name": "Allowlist Authorized Libraries"
+      },
+      {
+        "framework": "CIS Controls",
+        "control_id": "2.7",
+        "control_name": "Allowlist Authorized Scripts"
+      }
+    ],
+    "mapped_controls_count": 3
+  },
+  {
+    "question": "Is a documented data management process established and maintained, addressing data sensitivity, ownership, handling, retention, and disposal, with annual or event-driven reviews and updates?",
+    "question_type": "FREE_TEXT",
+    "requires_evidence": true,
+    "citations": [
+      {
+        "framework": "CIS Controls",
+        "control_id": "3.1",
+        "control_name": "Establish and Maintain a Data Management Process"
+      },
+      {
+        "framework": "CIS Controls",
+        "control_id": "3.2",
+        "control_name": "Establish and Maintain a Data Inventory"
+      }
+    ],
+    "mapped_controls_count": 2
+  },
+  {
+    "question": "Are data access control lists configured and applied to all systems, including local and remote file systems, databases, and applications, based on a user's need to know?",
+    "question_type": "YES_NO",
+    "requires_evidence": true,
+    "citations": [
+      {
+        "framework": "CIS Controls",
+        "control_id": "3.3",
+        "control_name": "Configure Data Access Control Lists"
+      }
+    ],
+    "mapped_controls_count": 1
+  },
+  {
+    "question": "Does the enterprise retain data in accordance with its documented data management process, including defined minimum and maximum retention timelines?",
+    "question_type": "FREE_TEXT",
+    "requires_evidence": true,
+    "citations": [
+      {
+        "framework": "CIS Controls",
+        "control_id": "3.4",
+        "control_name": "Enforce Data Retention"
+      }
+    ],
+    "mapped_controls_count": 1
+  },
+  {
+    "question": "Is the enterprise securely disposing of data in accordance with its documented data management process, using methods commensurate with the data's sensitivity level?",
+    "question_type": "FREE_TEXT",
+    "requires_evidence": true,
+    "citations": [
+      {
+        "framework": "CIS Controls",
+        "control_id": "3.5",
+        "control_name": "Securely Dispose of Data"
+      }
+    ],
+    "mapped_controls_count": 1
+  },
+  {
+    "question": "Are end-user devices containing sensitive data encrypted using a solution such as Windows BitLocker, Apple FileVault, or Linux dm-crypt?",
+    "question_type": "YES_NO",
+    "requires_evidence": true,
+    "citations": [
+      {
+        "framework": "CIS Controls",
+        "control_id": "3.6",
+        "control_name": "Encrypt Data on End-User Devices"
+      }
+    ],
+    "mapped_controls_count": 1
+  },
+  {
+    "question": "Is an overall data classification scheme established and maintained for the enterprise, with regular reviews and updates to ensure it remains relevant and effective?",
+    "question_type": "FREE_TEXT",
+    "requires_evidence": true,
+    "citations": [
+      {
+        "framework": "CIS Controls",
+        "control_id": "3.7",
+        "control_name": "Establish and Maintain a Data Classification Scheme"
+      }
+    ],
+    "mapped_controls_count": 1
+  },
+  {
+    "question": "Is data flow documentation, including service provider data flows, maintained and updated at least annually or when significant enterprise changes occur, based on the enterprise's data management process?",
+    "question_type": "FREE_TEXT",
+    "requires_evidence": true,
+    "citations": [
+      {
+        "framework": "CIS Controls",
+        "control_id": "3.8",
+        "control_name": "Document Data Flows"
+      }
+    ],
+    "mapped_controls_count": 1
+  },
+  {
+    "question": "Are removable media encrypted to protect sensitive data?",
+    "question_type": "YES_NO",
+    "requires_evidence": true,
+    "citations": [
+      {
+        "framework": "CIS Controls",
+        "control_id": "3.9",
+        "control_name": "Encrypt Data on Removable Media"
+      }
+    ],
+    "mapped_controls_count": 1
+  },
+  {
+    "question": "Are sensitive data transmissions encrypted using protocols such as Transport Layer Security (TLS) or Open Secure Shell (OpenSSH)?",
+    "question_type": "YES_NO",
+    "requires_evidence": true,
+    "citations": [
+      {
+        "framework": "CIS Controls",
+        "control_id": "3.10",
+        "control_name": "Encrypt Sensitive Data in Transit"
+      }
+    ],
+    "mapped_controls_count": 1
+  },
+  {
+    "question": "Are sensitive data at rest on servers, applications, and databases encrypted, with storage-layer encryption as a minimum requirement?",
+    "question_type": "FREE_TEXT",
+    "requires_evidence": true,
+    "citations": [
+      {
+        "framework": "CIS Controls",
+        "control_id": "3.11",
+        "control_name": "Encrypt Sensitive Data at Rest"
+      }
+    ],
+    "mapped_controls_count": 1
+  },
+  {
+    "question": "Are enterprise assets properly segmented to separate sensitive data processing and storage from those intended for lower sensitivity data?",
+    "question_type": "FREE_TEXT",
+    "requires_evidence": true,
+    "citations": [
+      {
+        "framework": "CIS Controls",
+        "control_id": "3.12",
+        "control_name": "Segment Data Processing and Storage Based on Sensitivity"
+      }
+    ],
+    "mapped_controls_count": 1
+  },
+  {
+    "question": "Is an automated tool, such as a host-based Data Loss Prevention (DLP) tool, implemented to identify and inventory all sensitive data stored, processed, or transmitted through enterprise assets?",
+    "question_type": "FREE_TEXT",
+    "requires_evidence": true,
+    "citations": [
+      {
+        "framework": "CIS Controls",
+        "control_id": "3.13",
+        "control_name": "Deploy a Data Loss Prevention Solution"
+      }
+    ],
+    "mapped_controls_count": 1
+  },
+  {
+    "question": "Is sensitive data access, including modification and disposal, being logged and monitored?",
+    "question_type": "YES_NO",
+    "requires_evidence": true,
+    "citations": [
+      {
+        "framework": "CIS Controls",
+        "control_id": "3.14",
+        "control_name": "Log Sensitive Data Access"
+      }
+    ],
+    "mapped_controls_count": 1
+  },
+  {
+    "question": "Is a documented secure configuration process established and maintained for all enterprise assets and software, with reviews and updates performed at least annually or upon significant enterprise changes?",
+    "question_type": "FREE_TEXT",
+    "requires_evidence": true,
+    "citations": [
+      {
+        "framework": "CIS Controls",
+        "control_id": "4.1",
+        "control_name": "Establish and Maintain a Secure Configuration Process"
+      },
+      {
+        "framework": "CIS Controls",
+        "control_id": "4.2",
+        "control_name": "Establish and Maintain a Secure Configuration Process for Network"
+      },
+      {
+        "framework": "CIS Controls",
+        "control_id": "4.6",
+        "control_name": "Securely Manage Enterprise Assets and Software"
+      }
+    ],
+    "mapped_controls_count": 3
+  },
+  {
+    "question": "Are automatic session locking mechanisms configured to lock enterprise assets after 15 minutes of inactivity for general purpose operating systems and 2 minutes for mobile end-user devices?",
+    "question_type": "FREE_TEXT",
+    "requires_evidence": true,
+    "citations": [
+      {
+        "framework": "CIS Controls",
+        "control_id": "4.3",
+        "control_name": "Configure Automatic Session Locking on Enterprise Assets"
+      }
+    ],
+    "mapped_controls_count": 1
+  },
+  {
+    "question": "Are firewalls implemented and managed on servers where supported?",
+    "question_type": "YES_NO",
+    "requires_evidence": true,
+    "citations": [
+      {
+        "framework": "CIS Controls",
+        "control_id": "4.4",
+        "control_name": "Implement and Manage a Firewall on Servers"
+      }
+    ],
+    "mapped_controls_count": 1
+  },
+  {
+    "question": "Are host-based firewalls or port-filtering tools implemented on end-user devices with a default-deny rule that only allows explicitly permitted services and ports?",
+    "question_type": "YES_NO",
+    "requires_evidence": true,
+    "citations": [
+      {
+        "framework": "CIS Controls",
+        "control_id": "4.5",
+        "control_name": "Implement and Manage a Firewall on End-User Devices"
+      }
+    ],
+    "mapped_controls_count": 1
+  },
+  {
+    "question": "Are default accounts on enterprise assets and software, such as root and administrator accounts, managed and secured through methods like disabling or rendering them unusable?",
+    "question_type": "YES_NO",
+    "requires_evidence": true,
+    "citations": [
+      {
+        "framework": "CIS Controls",
+        "control_id": "4.7",
+        "control_name": "Manage Default Accounts on Enterprise Assets and Software"
+      }
+    ],
+    "mapped_controls_count": 1
+  },
+  {
+    "question": "Are all unnecessary services and software, including unused file sharing services, web application modules, and service functions, uninstalled or disabled on enterprise assets?",
+    "question_type": "YES_NO",
+    "requires_evidence": true,
+    "citations": [
+      {
+        "framework": "CIS Controls",
+        "control_id": "4.8",
+        "control_name": "Uninstall or Disable Unnecessary Services on Enterprise Assets"
+      }
+    ],
+    "mapped_controls_count": 1
+  },
+  {
+    "question": "Are trusted DNS servers configured on the network infrastructure, using either enterprise-controlled or reputable externally accessible DNS servers?",
+    "question_type": "YES_NO",
+    "requires_evidence": true,
+    "citations": [
+      {
+        "framework": "CIS Controls",
+        "control_id": "4.9",
+        "control_name": "Configure Trusted DNS Servers on Enterprise Assets"
+      }
+    ],
+    "mapped_controls_count": 1
+  },
+  {
+    "question": "Does the organization enforce automatic device lockout on portable end-user devices after a predetermined threshold of local failed authentication attempts, specifically 20 attempts for laptops and 10 attempts for tablets and smartphones?",
+    "question_type": "YES_NO",
+    "requires_evidence": true,
+    "citations": [
+      {
+        "framework": "CIS Controls",
+        "control_id": "4.10",
+        "control_name": "Enforce Automatic Device Lockout on Portable End-User Devices"
+      }
+    ],
+    "mapped_controls_count": 1
+  },
+  {
+    "question": "Does the enterprise have a process in place to remotely wipe data from enterprise-owned portable end-user devices in cases such as loss, theft, or when an individual's support for the enterprise ends?",
+    "question_type": "YES_NO",
+    "requires_evidence": true,
+    "citations": [
+      {
+        "framework": "CIS Controls",
+        "control_id": "4.11",
+        "control_name": "Enforce Remote Wipe Capability on Portable End-User Devices"
+      }
+    ],
+    "mapped_controls_count": 1
+  },
+  {
+    "question": "Are separate enterprise workspaces used on mobile end-user devices to isolate enterprise applications and data from personal ones, where technically supported?",
+    "question_type": "YES_NO",
+    "requires_evidence": true,
+    "citations": [
+      {
+        "framework": "CIS Controls",
+        "control_id": "4.12",
+        "control_name": "Separate Enterprise Workspaces on Mobile End-User Devices"
+      }
+    ],
+    "mapped_controls_count": 1
+  },
+  {
+    "question": "Is an inventory of all enterprise accounts, including user, administrator, and service accounts, maintained with required details and validated at least quarterly to ensure all active accounts are authorized?",
+    "question_type": "FREE_TEXT",
+    "requires_evidence": true,
+    "citations": [
+      {
+        "framework": "CIS Controls",
+        "control_id": "5.1",
+        "control_name": "Establish and Maintain an Inventory of Accounts"
+      },
+      {
+        "framework": "CIS Controls",
+        "control_id": "5.5",
+        "control_name": "Establish and Maintain an Inventory of Service Accounts"
+      }
+    ],
+    "mapped_controls_count": 2
+  },
+  {
+    "question": "Does the enterprise require unique passwords of at least 8 characters for accounts with Multi-Factor Authentication (MFA) and 14 characters for accounts without MFA for all enterprise assets?",
+    "question_type": "YES_NO",
+    "requires_evidence": true,
+    "citations": [
+      {
+        "framework": "CIS Controls",
+        "control_id": "5.2",
+        "control_name": "Use Unique Passwords"
+      }
+    ],
+    "mapped_controls_count": 1
+  },
+  {
+    "question": "Are dormant accounts deleted or disabled after 45 days of inactivity, where technically supported?",
+    "question_type": "YES_NO",
+    "requires_evidence": true,
+    "citations": [
+      {
+        "framework": "CIS Controls",
+        "control_id": "5.3",
+        "control_name": "Disable Dormant Accounts"
+      }
+    ],
+    "mapped_controls_count": 1
+  },
+  {
+    "question": "Are administrator privileges restricted to dedicated administrator accounts on enterprise assets, with general computing activities conducted from non-privileged user accounts?",
+    "question_type": "YES_NO",
+    "requires_evidence": true,
+    "citations": [
+      {
+        "framework": "CIS Controls",
+        "control_id": "5.4",
+        "control_name": "Restrict Administrator Privileges to Dedicated Administrator Accounts"
+      }
+    ],
+    "mapped_controls_count": 1
+  },
+  {
+    "question": "Is account management centralized through a directory or identity service?",
+    "question_type": "YES_NO",
+    "requires_evidence": true,
+    "citations": [
+      {
+        "framework": "CIS Controls",
+        "control_id": "5.6",
+        "control_name": "Centralize Account Management"
+      }
+    ],
+    "mapped_controls_count": 1
+  },
+  {
+    "question": "Is there a documented process in place for granting access to enterprise assets when a new user is hired or an existing user's role changes?",
+    "question_type": "FREE_TEXT",
+    "requires_evidence": true,
+    "citations": [
+      {
+        "framework": "CIS Controls",
+        "control_id": "6.1",
+        "control_name": "Establish an Access Granting Process"
+      }
+    ],
+    "mapped_controls_count": 1
+  },
+  {
+    "question": "Is there a defined and automated process in place to immediately revoke access to enterprise assets by disabling accounts upon user termination, rights revocation, or role change?",
+    "question_type": "FREE_TEXT",
+    "requires_evidence": true,
+    "citations": [
+      {
+        "framework": "CIS Controls",
+        "control_id": "6.2",
+        "control_name": "Establish an Access Revoking Process"
+      }
+    ],
+    "mapped_controls_count": 1
+  },
+  {
+    "question": "Are all externally-exposed enterprise or third-party applications that support it configured to enforce Multi-Factor Authentication (MFA), either directly or through a directory service or Single Sign-On (SSO) provider?",
+    "question_type": "YES_NO",
+    "requires_evidence": true,
+    "citations": [
+      {
+        "framework": "CIS Controls",
+        "control_id": "6.3",
+        "control_name": "Require MFA for Externally-Exposed Applications"
+      },
+      {
+        "framework": "CIS Controls",
+        "control_id": "6.4",
+        "control_name": "Require MFA for Remote Network Access"
+      }
+    ],
+    "mapped_controls_count": 2
+  },
+  {
+    "question": "Are multifactor authentication requirements enforced for all administrative access accounts on all enterprise assets, regardless of management location?",
+    "question_type": "YES_NO",
+    "requires_evidence": true,
+    "citations": [
+      {
+        "framework": "CIS Controls",
+        "control_id": "6.5",
+        "control_name": "Require MFA for Administrative Access"
+      }
+    ],
+    "mapped_controls_count": 1
+  },
+  {
+    "question": "Is an up-to-date inventory of the enterprise's authentication and authorization systems, including those hosted on-site or at remote service providers, established, maintained, and reviewed at least annually?",
+    "question_type": "FREE_TEXT",
+    "requires_evidence": true,
+    "citations": [
+      {
+        "framework": "CIS Controls",
+        "control_id": "6.6",
+        "control_name": "Establish and Maintain an Inventory of Authentication and"
+      }
+    ],
+    "mapped_controls_count": 1
+  },
+  {
+    "question": "Is access control for all enterprise assets centralized through a directory service or SSO provider, where supported?",
+    "question_type": "YES_NO",
+    "requires_evidence": true,
+    "citations": [
+      {
+        "framework": "CIS Controls",
+        "control_id": "6.7",
+        "control_name": "Centralize Access Control"
+      }
+    ],
+    "mapped_controls_count": 1
+  },
+  {
+    "question": "Are role-based access controls defined, documented, and reviewed at least annually to ensure that access rights align with assigned duties and privileges are authorized?",
+    "question_type": "FREE_TEXT",
+    "requires_evidence": true,
+    "citations": [
+      {
+        "framework": "CIS Controls",
+        "control_id": "6.8",
+        "control_name": "Define and Maintain Role-Based Access Control"
+      }
+    ],
+    "mapped_controls_count": 1
+  },
+  {
+    "question": "Is a documented vulnerability management process established and maintained for enterprise assets, with reviews and updates performed at least annually or upon significant enterprise changes?",
+    "question_type": "FREE_TEXT",
+    "requires_evidence": true,
+    "citations": [
+      {
+        "framework": "CIS Controls",
+        "control_id": "7.1",
+        "control_name": "Establish and Maintain a Vulnerability Management Process"
+      },
+      {
+        "framework": "CIS Controls",
+        "control_id": "7.6",
+        "control_name": "Perform Automated Vulnerability Scans of Externally-Exposed"
+      }
+    ],
+    "mapped_controls_count": 2
+  },
+  {
+    "question": "Is a risk-based remediation strategy established, maintained, and reviewed at least monthly as part of a documented remediation process?",
+    "question_type": "FREE_TEXT",
+    "requires_evidence": true,
+    "citations": [
+      {
+        "framework": "CIS Controls",
+        "control_id": "7.2",
+        "control_name": "Establish and Maintain a Remediation Process"
+      }
+    ],
+    "mapped_controls_count": 1
+  },
+  {
+    "question": "Are operating system updates performed on enterprise assets through automated patch management at least monthly?",
+    "question_type": "YES_NO",
+    "requires_evidence": true,
+    "citations": [
+      {
+        "framework": "CIS Controls",
+        "control_id": "7.3",
+        "control_name": "Perform Automated Operating System Patch Management"
+      },
+      {
+        "framework": "CIS Controls",
+        "control_id": "7.4",
+        "control_name": "Perform Automated Application Patch Management"
+      }
+    ],
+    "mapped_controls_count": 2
+  },
+  {
+    "question": "Are automated vulnerability scans of internal enterprise assets performed at least quarterly, including both authenticated and unauthenticated scans?",
+    "question_type": "YES_NO",
+    "requires_evidence": true,
+    "citations": [
+      {
+        "framework": "CIS Controls",
+        "control_id": "7.5",
+        "control_name": "Perform Automated Vulnerability Scans of Internal Enterprise Assets"
+      }
+    ],
+    "mapped_controls_count": 1
+  },
+  {
+    "question": "Are vulnerabilities in software remediated at least monthly through established processes and tooling, in accordance with the defined remediation process?",
+    "question_type": "FREE_TEXT",
+    "requires_evidence": true,
+    "citations": [
+      {
+        "framework": "CIS Controls",
+        "control_id": "7.7",
+        "control_name": "Remediate Detected Vulnerabilities"
+      }
+    ],
+    "mapped_controls_count": 1
+  },
+  {
+    "question": "Does the enterprise have a documented audit log management process that defines logging requirements, addresses collection, review, and retention of audit logs, and is reviewed and updated at least annually or upon significant enterprise changes?",
+    "question_type": "FREE_TEXT",
+    "requires_evidence": true,
+    "citations": [
+      {
+        "framework": "CIS Controls",
+        "control_id": "8.1",
+        "control_name": "Establish and Maintain an Audit Log Management Process"
+      },
+      {
+        "framework": "CIS Controls",
+        "control_id": "8.9",
+        "control_name": "Centralize Audit Logs"
+      }
+    ],
+    "mapped_controls_count": 2
+  },
+  {
+    "question": "Is logging enabled across all enterprise assets in accordance with the enterprise's audit log management process?",
+    "question_type": "FREE_TEXT",
+    "requires_evidence": true,
+    "citations": [
+      {
+        "framework": "CIS Controls",
+        "control_id": "8.2",
+        "control_name": "Collect Audit Logs"
+      },
+      {
+        "framework": "CIS Controls",
+        "control_id": "8.3",
+        "control_name": "Ensure Adequate Audit Log Storage"
+      },
+      {
+        "framework": "CIS Controls",
+        "control_id": "8.7",
+        "control_name": "Collect URL Request Audit Logs"
+      },
+      {
+        "framework": "CIS Controls",
+        "control_id": "8.10",
+        "control_name": "8.Retain Audit Logs"
+      }
+    ],
+    "mapped_controls_count": 4
+  },
+  {
+    "question": "Are at least two synchronized time sources configured across enterprise assets, where supported?",
+    "question_type": "YES_NO",
+    "requires_evidence": true,
+    "citations": [
+      {
+        "framework": "CIS Controls",
+        "control_id": "8.4",
+        "control_name": "Standardize Time Synchronization"
+      }
+    ],
+    "mapped_controls_count": 1
+  },
+  {
+    "question": "Are detailed audit logs configured for enterprise assets containing sensitive data, capturing event source, date, username, timestamp, source and destination addresses, and other relevant elements to support forensic investigations?",
+    "question_type": "YES_NO",
+    "requires_evidence": true,
+    "citations": [
+      {
+        "framework": "CIS Controls",
+        "control_id": "8.5",
+        "control_name": "Collect Detailed Audit Logs"
+      }
+    ],
+    "mapped_controls_count": 1
+  },
+  {
+    "question": "Are DNS query audit logs being collected on enterprise assets where applicable and technically supported?",
+    "question_type": "YES_NO",
+    "requires_evidence": true,
+    "citations": [
+      {
+        "framework": "CIS Controls",
+        "control_id": "8.6",
+        "control_name": "Collect DNS Query Audit Logs"
+      }
+    ],
+    "mapped_controls_count": 1
+  },
+  {
+    "question": "Are command-line audit logs being collected from all relevant sources, including PowerShell, BASH, and remote administrative terminals?",
+    "question_type": "YES_NO",
+    "requires_evidence": true,
+    "citations": [
+      {
+        "framework": "CIS Controls",
+        "control_id": "8.8",
+        "control_name": "Collect Command-Line Audit Logs"
+      }
+    ],
+    "mapped_controls_count": 1
+  },
+  {
+    "question": "Are audit logs reviewed at least weekly to detect anomalies or abnormal events that could indicate potential threats?",
+    "question_type": "YES_NO",
+    "requires_evidence": true,
+    "citations": [
+      {
+        "framework": "CIS Controls",
+        "control_id": "8.11",
+        "control_name": "8.Conduct Audit Log Reviews"
+      }
+    ],
+    "mapped_controls_count": 1
+  },
+  {
+    "question": "Are service provider logs being collected, including authentication, authorization, data creation, disposal, and user management events, where supported?",
+    "question_type": "YES_NO",
+    "requires_evidence": true,
+    "citations": [
+      {
+        "framework": "CIS Controls",
+        "control_id": "8.12",
+        "control_name": "8.Collect Service Provider Logs"
+      }
+    ],
+    "mapped_controls_count": 1
+  },
+  {
+    "question": "Are only the latest versions of fully supported browsers and email clients, provided through the vendor, allowed to execute within the enterprise?",
+    "question_type": "YES_NO",
+    "requires_evidence": true,
+    "citations": [
+      {
+        "framework": "CIS Controls",
+        "control_id": "9.1",
+        "control_name": "Ensure Use of Only Fully Supported Browsers and Email Clients"
+      }
+    ],
+    "mapped_controls_count": 1
+  },
+  {
+    "question": "Are DNS filtering services used on all end-user devices, including remote and on-premises assets, to block access to known malicious domains?",
+    "question_type": "YES_NO",
+    "requires_evidence": true,
+    "citations": [
+      {
+        "framework": "CIS Controls",
+        "control_id": "9.2",
+        "control_name": "Use DNS Filtering Services"
+      },
+      {
+        "framework": "CIS Controls",
+        "control_id": "9.3",
+        "control_name": "Maintain and Enforce Network-Based URL Filters"
+      }
+    ],
+    "mapped_controls_count": 2
+  },
+  {
+    "question": "Are all unauthorized or unnecessary browser and email client plugins, extensions, and add-on applications restricted through uninstallation or disabling?",
+    "question_type": "YES_NO",
+    "requires_evidence": true,
+    "citations": [
+      {
+        "framework": "CIS Controls",
+        "control_id": "9.4",
+        "control_name": "Restrict Unnecessary or Unauthorized Browser and Email"
+      }
+    ],
+    "mapped_controls_count": 1
+  },
+  {
+    "question": "Is a DMARC policy and verification implemented, including Sender Policy Framework (SPF) and DomainKeys Identified Mail (DKIM) standards, to prevent spoofed or modified emails from valid domains?",
+    "question_type": "YES_NO",
+    "requires_evidence": true,
+    "citations": [
+      {
+        "framework": "CIS Controls",
+        "control_id": "9.5",
+        "control_name": "Implement DMARC"
+      }
+    ],
+    "mapped_controls_count": 1
+  },
+  {
+    "question": "Does the enterprise's email gateway effectively block unnecessary file types from entering the network?",
+    "question_type": "YES_NO",
+    "requires_evidence": true,
+    "citations": [
+      {
+        "framework": "CIS Controls",
+        "control_id": "9.6",
+        "control_name": "Block Unnecessary File Types"
+      }
+    ],
+    "mapped_controls_count": 1
+  },
+  {
+    "question": "Are email server anti-malware protections, including attachment scanning and/or sandboxing, deployed and maintained?",
+    "question_type": "FREE_TEXT",
+    "requires_evidence": true,
+    "citations": [
+      {
+        "framework": "CIS Controls",
+        "control_id": "9.7",
+        "control_name": "Deploy and Maintain Email Server Anti-Malware Protections"
+      }
+    ],
+    "mapped_controls_count": 1
+  },
+  {
+    "question": "Are anti-malware software solutions deployed and maintained on all enterprise assets?",
+    "question_type": "FREE_TEXT",
+    "requires_evidence": true,
+    "citations": [
+      {
+        "framework": "CIS Controls",
+        "control_id": "10.1",
+        "control_name": "Deploy and Maintain Anti-Malware Software"
+      },
+      {
+        "framework": "CIS Controls",
+        "control_id": "10.2",
+        "control_name": "Configure Automatic Anti-Malware Signature Updates"
+      },
+      {
+        "framework": "CIS Controls",
+        "control_id": "10.6",
+        "control_name": "Centrally Manage Anti-Malware Software"
+      }
+    ],
+    "mapped_controls_count": 3
+  },
+  {
+    "question": "Are removable media autorun and autoplay auto-execute functionalities disabled to prevent unauthorized code execution?",
+    "question_type": "YES_NO",
+    "requires_evidence": true,
+    "citations": [
+      {
+        "framework": "CIS Controls",
+        "control_id": "10.3",
+        "control_name": "Disable Autorun and Autoplay for Removable Media"
+      }
+    ],
+    "mapped_controls_count": 1
+  },
+  {
+    "question": "Is anti-malware software configured to automatically scan removable media?",
+    "question_type": "YES_NO",
+    "requires_evidence": true,
+    "citations": [
+      {
+        "framework": "CIS Controls",
+        "control_id": "10.4",
+        "control_name": "Configure Automatic Anti-Malware Scanning of Removable Media"
+      }
+    ],
+    "mapped_controls_count": 1
+  },
+  {
+    "question": "Are anti-exploitation features, such as DEP, WDEG, SIP, and Gatekeeper, enabled on enterprise assets and software where possible?",
+    "question_type": "YES_NO",
+    "requires_evidence": true,
+    "citations": [
+      {
+        "framework": "CIS Controls",
+        "control_id": "10.5",
+        "control_name": "Enable Anti-Exploitation Features"
+      }
+    ],
+    "mapped_controls_count": 1
+  },
+  {
+    "question": "Is behavior-based anti-malware software used to detect and prevent malicious activity?",
+    "question_type": "YES_NO",
+    "requires_evidence": true,
+    "citations": [
+      {
+        "framework": "CIS Controls",
+        "control_id": "10.7",
+        "control_name": "Use Behavior-Based Anti-Malware Software"
+      }
+    ],
+    "mapped_controls_count": 1
+  },
+  {
+    "question": "Is a documented data recovery process established and maintained, addressing scope, prioritization, and security of backup data, with annual or event-driven reviews and updates?",
+    "question_type": "FREE_TEXT",
+    "requires_evidence": true,
+    "citations": [
+      {
+        "framework": "CIS Controls",
+        "control_id": "11.1",
+        "control_name": "Establish and Maintain a Data Recovery Process"
+      }
+    ],
+    "mapped_controls_count": 1
+  },
+  {
+    "question": "Are automated backups of in-scope enterprise assets performed at least weekly, or more frequently based on data sensitivity?",
+    "question_type": "YES_NO",
+    "requires_evidence": true,
+    "citations": [
+      {
+        "framework": "CIS Controls",
+        "control_id": "11.2",
+        "control_name": "Perform Automated Backups"
+      }
+    ],
+    "mapped_controls_count": 1
+  },
+  {
+    "question": "Are recovery data protected with equivalent controls to the original data, including measures such as encryption or data separation, as required?",
+    "question_type": "YES_NO",
+    "requires_evidence": true,
+    "citations": [
+      {
+        "framework": "CIS Controls",
+        "control_id": "11.3",
+        "control_name": "Protect Recovery Data"
+      }
+    ],
+    "mapped_controls_count": 1
+  },
+  {
+    "question": "Is an isolated instance of recovery data established and maintained through version-controlled backup destinations, such as offline, cloud, or off-site systems or services?",
+    "question_type": "FREE_TEXT",
+    "requires_evidence": true,
+    "citations": [
+      {
+        "framework": "CIS Controls",
+        "control_id": "11.4",
+        "control_name": "Establish and Maintain an Isolated Instance of Recovery Data"
+      }
+    ],
+    "mapped_controls_count": 1
+  },
+  {
+    "question": "Is the enterprise testing backup recovery at least quarterly for a representative sample of in-scope assets?",
+    "question_type": "YES_NO",
+    "requires_evidence": true,
+    "citations": [
+      {
+        "framework": "CIS Controls",
+        "control_id": "11.5",
+        "control_name": "Test Data Recovery"
+      }
+    ],
+    "mapped_controls_count": 1
+  },
+  {
+    "question": "Is the network infrastructure maintained with the latest stable software releases and currently supported NaaS offerings, with monthly or more frequent reviews to verify software support?",
+    "question_type": "YES_NO",
+    "requires_evidence": true,
+    "citations": [
+      {
+        "framework": "CIS Controls",
+        "control_id": "12.1",
+        "control_name": "Ensure Network Infrastructure is Up-to-Date"
+      }
+    ],
+    "mapped_controls_count": 1
+  },
+  {
+    "question": "Does the current network architecture design and maintenance incorporate segmentation, least privilege, and availability, as evidenced by documentation, policy, and design components?",
+    "question_type": "FREE_TEXT",
+    "requires_evidence": true,
+    "citations": [
+      {
+        "framework": "CIS Controls",
+        "control_id": "12.2",
+        "control_name": "Establish and Maintain a Secure Network Architecture"
+      }
+    ],
+    "mapped_controls_count": 1
+  },
+  {
+    "question": "Is the network infrastructure securely managed through implementations such as version-controlled infrastructure-as-code and secure network protocols like SSH and HTTPS?",
+    "question_type": "YES_NO",
+    "requires_evidence": true,
+    "citations": [
+      {
+        "framework": "CIS Controls",
+        "control_id": "12.3",
+        "control_name": "Securely Manage Network Infrastructure"
+      }
+    ],
+    "mapped_controls_count": 1
+  },
+  {
+    "question": "Are architecture diagram(s) and network system documentation established, maintained, and updated at least annually or upon significant enterprise changes?",
+    "question_type": "FREE_TEXT",
+    "requires_evidence": true,
+    "citations": [
+      {
+        "framework": "CIS Controls",
+        "control_id": "12.4",
+        "control_name": "Establish and Maintain Architecture Diagram(s)"
+      }
+    ],
+    "mapped_controls_count": 1
+  },
+  {
+    "question": "Is network Authentication, Authorization, and Accounting (AAA) centralized?",
+    "question_type": "YES_NO",
+    "requires_evidence": true,
+    "citations": [
+      {
+        "framework": "CIS Controls",
+        "control_id": "12.5",
+        "control_name": "Centralize Network Authentication, Authorization, and Auditing (AAA)"
+      }
+    ],
+    "mapped_controls_count": 1
+  },
+  {
+    "question": "Are secure network management and communication protocols, such as 802.1X or WPA2 Enterprise or greater, being used?",
+    "question_type": "YES_NO",
+    "requires_evidence": true,
+    "citations": [
+      {
+        "framework": "CIS Controls",
+        "control_id": "12.6",
+        "control_name": "Use of Secure Network Management and Communication Protocols"
+      }
+    ],
+    "mapped_controls_count": 1
+  },
+  {
+    "question": "Does the enterprise require users to authenticate to its managed VPN and authentication services before accessing enterprise resources on end-user devices?",
+    "question_type": "YES_NO",
+    "requires_evidence": true,
+    "citations": [
+      {
+        "framework": "CIS Controls",
+        "control_id": "12.7",
+        "control_name": "Ensure Remote Devices Utilize a VPN and are Connecting to an"
+      }
+    ],
+    "mapped_controls_count": 1
+  },
+  {
+    "question": "Are dedicated computing resources, physically or logically separated, established and maintained for administrative tasks, segmented from the primary network and restricted from internet access?",
+    "question_type": "FREE_TEXT",
+    "requires_evidence": true,
+    "citations": [
+      {
+        "framework": "CIS Controls",
+        "control_id": "12.8",
+        "control_name": "Establish and Maintain Dedicated Computing Resources for All"
+      }
+    ],
+    "mapped_controls_count": 1
+  },
+  {
+    "question": "Is a Security Information and Event Management (SIEM) system or a log analytics platform with security-relevant correlation alerts implemented to centralize security event alerting across enterprise assets for log correlation and analysis?",
+    "question_type": "FREE_TEXT",
+    "requires_evidence": true,
+    "citations": [
+      {
+        "framework": "CIS Controls",
+        "control_id": "13.1",
+        "control_name": "Centralize Security Event Alerting"
+      }
+    ],
+    "mapped_controls_count": 1
+  },
+  {
+    "question": "Are host-based intrusion detection solutions deployed on enterprise assets where appropriate and supported?",
+    "question_type": "YES_NO",
+    "requires_evidence": true,
+    "citations": [
+      {
+        "framework": "CIS Controls",
+        "control_id": "13.2",
+        "control_name": "Deploy a Host-Based Intrusion Detection Solution"
+      },
+      {
+        "framework": "CIS Controls",
+        "control_id": "13.3",
+        "control_name": "Deploy a Network Intrusion Detection Solution"
+      },
+      {
+        "framework": "CIS Controls",
+        "control_id": "13.7",
+        "control_name": "Deploy a Host-Based Intrusion Prevention Solution"
+      }
+    ],
+    "mapped_controls_count": 3
+  },
+  {
+    "question": "Are network segments appropriately isolated through traffic filtering controls?",
+    "question_type": "YES_NO",
+    "requires_evidence": true,
+    "citations": [
+      {
+        "framework": "CIS Controls",
+        "control_id": "13.4",
+        "control_name": "Perform Traffic Filtering Between Network Segments"
+      }
+    ],
+    "mapped_controls_count": 1
+  },
+  {
+    "question": "Does the enterprise manage access control for remote assets based on their compliance with up-to-date anti-malware software, secure configuration, and current operating system and application versions?",
+    "question_type": "FREE_TEXT",
+    "requires_evidence": true,
+    "citations": [
+      {
+        "framework": "CIS Controls",
+        "control_id": "13.5",
+        "control_name": "Manage Access Control for Remote Assets"
+      }
+    ],
+    "mapped_controls_count": 1
+  },
+  {
+    "question": "Are network traffic flow logs and/or network traffic from network devices being collected for review and alerting purposes?",
+    "question_type": "YES_NO",
+    "requires_evidence": true,
+    "citations": [
+      {
+        "framework": "CIS Controls",
+        "control_id": "13.6",
+        "control_name": "Collect Network Traffic Flow Logs"
+      }
+    ],
+    "mapped_controls_count": 1
+  },
+  {
+    "question": "Is a network intrusion prevention solution, such as a Network Intrusion Prevention System (NIPS) or equivalent CSP service, deployed where appropriate?",
+    "question_type": "YES_NO",
+    "requires_evidence": true,
+    "citations": [
+      {
+        "framework": "CIS Controls",
+        "control_id": "13.8",
+        "control_name": "Deploy a Network Intrusion Prevention Solution"
+      }
+    ],
+    "mapped_controls_count": 1
+  },
+  {
+    "question": "Is port-level access control deployed utilizing 802.1x or similar network access control protocols, including certificates, and incorporating user and/or device authentication?",
+    "question_type": "YES_NO",
+    "requires_evidence": true,
+    "citations": [
+      {
+        "framework": "CIS Controls",
+        "control_id": "13.9",
+        "control_name": "Deploy Port-Level Access Control"
+      }
+    ],
+    "mapped_controls_count": 1
+  },
+  {
+    "question": "Is application layer filtering performed, such as through a filtering proxy, application layer firewall, or gateway?",
+    "question_type": "YES_NO",
+    "requires_evidence": true,
+    "citations": [
+      {
+        "framework": "CIS Controls",
+        "control_id": "13.10",
+        "control_name": "Perform Application Layer Filtering"
+      }
+    ],
+    "mapped_controls_count": 1
+  },
+  {
+    "question": "Are security event alerting thresholds reviewed and adjusted at least monthly to ensure effective threat detection?",
+    "question_type": "YES_NO",
+    "requires_evidence": true,
+    "citations": [
+      {
+        "framework": "CIS Controls",
+        "control_id": "13.11",
+        "control_name": "Tune Security Event Alerting Thresholds"
+      }
+    ],
+    "mapped_controls_count": 1
+  },
+  {
+    "question": "Does the enterprise have a security awareness program in place that provides regular training to the workforce on secure interaction with enterprise assets and data, with updates at least annually or upon significant enterprise changes?",
+    "question_type": "FREE_TEXT",
+    "requires_evidence": true,
+    "citations": [
+      {
+        "framework": "CIS Controls",
+        "control_id": "14.1",
+        "control_name": "Establish and Maintain a Security Awareness Program"
+      }
+    ],
+    "mapped_controls_count": 1
+  },
+  {
+    "question": "Are workforce members trained to recognize social engineering attacks, including phishing, business email compromise, pretexting, and tailgating?",
+    "question_type": "YES_NO",
+    "requires_evidence": true,
+    "citations": [
+      {
+        "framework": "CIS Controls",
+        "control_id": "14.2",
+        "control_name": "Train Workforce Members to Recognize Social Engineering Attacks"
+      }
+    ],
+    "mapped_controls_count": 1
+  },
+  {
+    "question": "Are workforce members trained on authentication best practices, including MFA, password composition, and credential management?",
+    "question_type": "YES_NO",
+    "requires_evidence": true,
+    "citations": [
+      {
+        "framework": "CIS Controls",
+        "control_id": "14.3",
+        "control_name": "Train Workforce Members on Authentication Best Practices"
+      }
+    ],
+    "mapped_controls_count": 1
+  },
+  {
+    "question": "Are workforce members adequately trained on handling and securing sensitive data, including proper storage, transfer, archiving, and destruction, as well as clear screen and desk best practices?",
+    "question_type": "YES_NO",
+    "requires_evidence": true,
+    "citations": [
+      {
+        "framework": "CIS Controls",
+        "control_id": "14.4",
+        "control_name": "Train Workforce on Data Handling Best Practices"
+      }
+    ],
+    "mapped_controls_count": 1
+  },
+  {
+    "question": "Are workforce members trained to recognize and prevent unintentional data exposure causes, such as mis-delivery, lost devices, or unintended publication?",
+    "question_type": "YES_NO",
+    "requires_evidence": true,
+    "citations": [
+      {
+        "framework": "CIS Controls",
+        "control_id": "14.5",
+        "control_name": "Train Workforce Members on Causes of Unintentional Data Exposure"
+      }
+    ],
+    "mapped_controls_count": 1
+  },
+  {
+    "question": "Are workforce members trained to recognize and report potential security incidents?",
+    "question_type": "YES_NO",
+    "requires_evidence": true,
+    "citations": [
+      {
+        "framework": "CIS Controls",
+        "control_id": "14.6",
+        "control_name": "Train Workforce Members on Recognizing and Reporting"
+      }
+    ],
+    "mapped_controls_count": 1
+  },
+  {
+    "question": "Are procedures in place to train workforce members to identify and report missing security updates and failures in automated patch management processes?",
+    "question_type": "FREE_TEXT",
+    "requires_evidence": true,
+    "citations": [
+      {
+        "framework": "CIS Controls",
+        "control_id": "14.7",
+        "control_name": "Train Workforce on How to Identify and Report if Their Enterprise"
+      }
+    ],
+    "mapped_controls_count": 1
+  },
+  {
+    "question": "Are workforce members adequately trained on the risks of transmitting enterprise data over insecure networks and configuring secure home network infrastructure for remote work?",
+    "question_type": "YES_NO",
+    "requires_evidence": true,
+    "citations": [
+      {
+        "framework": "CIS Controls",
+        "control_id": "14.8",
+        "control_name": "Train Workforce on the Dangers of Connecting to and Transmitting"
+      }
+    ],
+    "mapped_controls_count": 1
+  },
+  {
+    "question": "Are role-specific security awareness and skills training programs in place for employees, such as secure system administration courses for IT professionals and vulnerability awareness training for web application developers?",
+    "question_type": "YES_NO",
+    "requires_evidence": true,
+    "citations": [
+      {
+        "framework": "CIS Controls",
+        "control_id": "14.9",
+        "control_name": "Conduct Role-Specific Security Awareness and Skills Training"
+      }
+    ],
+    "mapped_controls_count": 1
+  },
+  {
+    "question": "Does the enterprise maintain an up-to-date inventory of all service providers, including their classification and a designated enterprise contact, with reviews and updates performed at least annually or upon significant enterprise changes?",
+    "question_type": "FREE_TEXT",
+    "requires_evidence": true,
+    "citations": [
+      {
+        "framework": "CIS Controls",
+        "control_id": "15.1",
+        "control_name": "Establish and Maintain an Inventory of Service Providers"
+      },
+      {
+        "framework": "CIS Controls",
+        "control_id": "15.2",
+        "control_name": "Establish and Maintain a Service Provider Management Policy"
+      }
+    ],
+    "mapped_controls_count": 2
+  },
+  {
+    "question": "Are service providers classified based on characteristics such as data sensitivity, volume, and applicable regulations, with reviews and updates performed at least annually or when significant enterprise changes occur?",
+    "question_type": "YES_NO",
+    "requires_evidence": true,
+    "citations": [
+      {
+        "framework": "CIS Controls",
+        "control_id": "15.3",
+        "control_name": "Classify Service Providers"
+      },
+      {
+        "framework": "CIS Controls",
+        "control_id": "15.5",
+        "control_name": "Assess Service Providers"
+      }
+    ],
+    "mapped_controls_count": 2
+  },
+  {
+    "question": "Are service provider contracts reviewed annually to ensure they include security requirements consistent with the enterprise's service provider management policy?",
+    "question_type": "YES_NO",
+    "requires_evidence": true,
+    "citations": [
+      {
+        "framework": "CIS Controls",
+        "control_id": "15.4",
+        "control_name": "Ensure Service Provider Contracts Include Security Requirements"
+      },
+      {
+        "framework": "CIS Controls",
+        "control_id": "15.6",
+        "control_name": "Monitor Service Providers"
+      }
+    ],
+    "mapped_controls_count": 2
+  },
+  {
+    "question": "Are service providers securely decommissioned, including deactivation of user and service accounts, termination of data flows, and secure disposal of enterprise data within their systems?",
+    "question_type": "YES_NO",
+    "requires_evidence": true,
+    "citations": [
+      {
+        "framework": "CIS Controls",
+        "control_id": "15.7",
+        "control_name": "Securely Decommission Service Providers"
+      }
+    ],
+    "mapped_controls_count": 1
+  },
+  {
+    "question": "Is a secure application development process established and maintained, addressing secure design, coding, training, vulnerability management, third-party code security, and testing, with documentation reviewed and updated at least annually or upon significant enterprise changes?",
+    "question_type": "FREE_TEXT",
+    "requires_evidence": true,
+    "citations": [
+      {
+        "framework": "CIS Controls",
+        "control_id": "16.1",
+        "control_name": "Establish and Maintain a Secure Application Development Process"
+      }
+    ],
+    "mapped_controls_count": 1
+  },
+  {
+    "question": "Does the enterprise have a established process for accepting and addressing software vulnerability reports, including a vulnerability handling policy, tracking system, and regular review and update procedures?",
+    "question_type": "FREE_TEXT",
+    "requires_evidence": true,
+    "citations": [
+      {
+        "framework": "CIS Controls",
+        "control_id": "16.2",
+        "control_name": "Establish and Maintain a Process to Accept and Address Software"
+      }
+    ],
+    "mapped_controls_count": 1
+  },
+  {
+    "question": "Does the organization perform root cause analysis on identified security vulnerabilities to address underlying issues in the code?",
+    "question_type": "YES_NO",
+    "requires_evidence": true,
+    "citations": [
+      {
+        "framework": "CIS Controls",
+        "control_id": "16.3",
+        "control_name": "Perform Root Cause Analysis on Security Vulnerabilities"
+      }
+    ],
+    "mapped_controls_count": 1
+  },
+  {
+    "question": "Is an up-to-date inventory of third-party software components, including associated risks, maintained and evaluated at least monthly to ensure ongoing support and identify potential updates or changes?",
+    "question_type": "FREE_TEXT",
+    "requires_evidence": true,
+    "citations": [
+      {
+        "framework": "CIS Controls",
+        "control_id": "16.4",
+        "control_name": "Establish and Manage an Inventory of Third-Party"
+      }
+    ],
+    "mapped_controls_count": 1
+  },
+  {
+    "question": "Are up-to-date and trusted third-party software components, from established sources, used to minimize vulnerabilities in the enterprise's systems and applications?",
+    "question_type": "FREE_TEXT",
+    "requires_evidence": true,
+    "citations": [
+      {
+        "framework": "CIS Controls",
+        "control_id": "16.5",
+        "control_name": "Use Up-to-Date and Trusted Third-Party Software Components"
+      }
+    ],
+    "mapped_controls_count": 1
+  },
+  {
+    "question": "Is a severity rating system and process in place for prioritizing and addressing application vulnerabilities, including a minimum security acceptability threshold for code or application releases, with annual reviews and updates?",
+    "question_type": "FREE_TEXT",
+    "requires_evidence": true,
+    "citations": [
+      {
+        "framework": "CIS Controls",
+        "control_id": "16.6",
+        "control_name": "Establish and Maintain a Severity Rating System and Process for"
+      }
+    ],
+    "mapped_controls_count": 1
+  },
+  {
+    "question": "Are standard, industry-recommended hardening configuration templates used for all application infrastructure components, including servers, databases, web servers, cloud containers, PaaS, and SaaS components, without being weakened by in-house developed software?",
+    "question_type": "YES_NO",
+    "requires_evidence": true,
+    "citations": [
+      {
+        "framework": "CIS Controls",
+        "control_id": "16.7",
+        "control_name": "Use Standard Hardening Configuration Templates for Application"
+      }
+    ],
+    "mapped_controls_count": 1
+  },
+  {
+    "question": "Are production and non-production systems maintained in separate environments?",
+    "question_type": "FREE_TEXT",
+    "requires_evidence": true,
+    "citations": [
+      {
+        "framework": "CIS Controls",
+        "control_id": "16.8",
+        "control_name": "Separate Production and Non-Production Systems"
+      }
+    ],
+    "mapped_controls_count": 1
+  },
+  {
+    "question": "Are software development personnel provided with annual training on secure coding practices tailored to their specific development environment and responsibilities?",
+    "question_type": "YES_NO",
+    "requires_evidence": true,
+    "citations": [
+      {
+        "framework": "CIS Controls",
+        "control_id": "16.9",
+        "control_name": "Train Developers in Application Security Concepts and Secure Coding"
+      }
+    ],
+    "mapped_controls_count": 1
+  },
+  {
+    "question": "Are secure design principles, including least privilege and input validation, applied in application architectures to minimize the attack surface?",
+    "question_type": "FREE_TEXT",
+    "requires_evidence": true,
+    "citations": [
+      {
+        "framework": "CIS Controls",
+        "control_id": "16.10",
+        "control_name": "Apply Secure Design Principles in Application Architectures"
+      }
+    ],
+    "mapped_controls_count": 1
+  },
+  {
+    "question": "Are application security components, such as identity management, encryption, and auditing and logging, implemented using vetted modules or services and standardized operating system features?",
+    "question_type": "FREE_TEXT",
+    "requires_evidence": true,
+    "citations": [
+      {
+        "framework": "CIS Controls",
+        "control_id": "16.11",
+        "control_name": "Leverage Vetted Modules or Services for Application"
+      }
+    ],
+    "mapped_controls_count": 1
+  },
+  {
+    "question": "Are static and dynamic analysis tools applied within the application life cycle to verify adherence to secure coding practices?",
+    "question_type": "YES_NO",
+    "requires_evidence": true,
+    "citations": [
+      {
+        "framework": "CIS Controls",
+        "control_id": "16.12",
+        "control_name": "Implement Code-Level Security Checks"
+      },
+      {
+        "framework": "CIS Controls",
+        "control_id": "16.14",
+        "control_name": "Conduct Threat Modeling"
+      }
+    ],
+    "mapped_controls_count": 2
+  },
+  {
+    "question": "Is the organization conducting application penetration testing, including authenticated testing for critical applications, to identify business logic vulnerabilities that may not be detected through automated security testing or code scanning?",
+    "question_type": "YES_NO",
+    "requires_evidence": true,
+    "citations": [
+      {
+        "framework": "CIS Controls",
+        "control_id": "16.13",
+        "control_name": "Conduct Application Penetration Testing"
+      }
+    ],
+    "mapped_controls_count": 1
+  },
+  {
+    "question": "Does the enterprise have designated personnel, including a primary and backup, to manage and oversee the incident handling process, with responsibilities for coordination, documentation, and oversight of incident response and recovery efforts?",
+    "question_type": "FREE_TEXT",
+    "requires_evidence": true,
+    "citations": [
+      {
+        "framework": "CIS Controls",
+        "control_id": "17.1",
+        "control_name": "Designate Personnel to Manage Incident Handling"
+      }
+    ],
+    "mapped_controls_count": 1
+  },
+  {
+    "question": "Is contact information for internal staff, service providers, law enforcement, and other relevant stakeholders established, maintained, and verified annually to ensure effective notification in the event of a security incident?",
+    "question_type": "FREE_TEXT",
+    "requires_evidence": true,
+    "citations": [
+      {
+        "framework": "CIS Controls",
+        "control_id": "17.2",
+        "control_name": "Establish and Maintain Contact Information for Reporting"
+      }
+    ],
+    "mapped_controls_count": 1
+  },
+  {
+    "question": "Is there a documented and publicly available enterprise process for reporting security incidents that includes reporting timeframe, personnel, mechanism, and minimum required information, and is reviewed at least annually or upon significant enterprise changes?",
+    "question_type": "FREE_TEXT",
+    "requires_evidence": true,
+    "citations": [
+      {
+        "framework": "CIS Controls",
+        "control_id": "17.3",
+        "control_name": "Establish and Maintain an Enterprise Process for Reporting Incidents"
+      },
+      {
+        "framework": "CIS Controls",
+        "control_id": "17.9",
+        "control_name": "Establish and Maintain Security Incident Thresholds"
+      }
+    ],
+    "mapped_controls_count": 2
+  },
+  {
+    "question": "Is a documented incident response process established and maintained, including defined roles and responsibilities, compliance requirements, and a communication plan, with reviews conducted at least annually or when significant enterprise changes occur?",
+    "question_type": "FREE_TEXT",
+    "requires_evidence": true,
+    "citations": [
+      {
+        "framework": "CIS Controls",
+        "control_id": "17.4",
+        "control_name": "Establish and Maintain an Incident Response Process"
+      },
+      {
+        "framework": "CIS Controls",
+        "control_id": "17.5",
+        "control_name": "Assign Key Roles and Responsibilities"
+      }
+    ],
+    "mapped_controls_count": 2
+  },
+  {
+    "question": "What primary and secondary communication mechanisms will be used to report and communicate during a security incident?",
+    "question_type": "YES_NO",
+    "requires_evidence": true,
+    "citations": [
+      {
+        "framework": "CIS Controls",
+        "control_id": "17.6",
+        "control_name": "Define Mechanisms for Communicating During Incident Response"
+      }
+    ],
+    "mapped_controls_count": 1
+  },
+  {
+    "question": "Are incident response exercises conducted annually with key personnel to test communication channels, decision making, and workflows?",
+    "question_type": "FREE_TEXT",
+    "requires_evidence": true,
+    "citations": [
+      {
+        "framework": "CIS Controls",
+        "control_id": "17.7",
+        "control_name": "Conduct Routine Incident Response Exercises"
+      }
+    ],
+    "mapped_controls_count": 1
+  },
+  {
+    "question": "Are post-incident reviews conducted to identify lessons learned and implement follow-up actions to prevent incident recurrence?",
+    "question_type": "YES_NO",
+    "requires_evidence": true,
+    "citations": [
+      {
+        "framework": "CIS Controls",
+        "control_id": "17.8",
+        "control_name": "Conduct Post-Incident Reviews"
+      }
+    ],
+    "mapped_controls_count": 1
+  },
+  {
+    "question": "Does the enterprise have a penetration testing program that aligns with its size, complexity, industry, and maturity, and includes defined scope, frequency, limitations, point of contact information, remediation procedures, and retrospective requirements?",
+    "question_type": "FREE_TEXT",
+    "requires_evidence": true,
+    "citations": [
+      {
+        "framework": "CIS Controls",
+        "control_id": "18.1",
+        "control_name": "Establish and Maintain a Penetration Testing Program"
+      }
+    ],
+    "mapped_controls_count": 1
+  },
+  {
+    "question": "Are external penetration tests performed at least annually by a qualified party, including enterprise and environmental reconnaissance to detect exploitable information?",
+    "question_type": "YES_NO",
+    "requires_evidence": true,
+    "citations": [
+      {
+        "framework": "CIS Controls",
+        "control_id": "18.2",
+        "control_name": "Perform Periodic External Penetration Tests"
+      }
+    ],
+    "mapped_controls_count": 1
+  },
+  {
+    "question": "Does the enterprise remediate penetration test findings in accordance with its documented vulnerability remediation process, including determining timeline and level of effort based on impact and prioritization?",
+    "question_type": "FREE_TEXT",
+    "requires_evidence": true,
+    "citations": [
+      {
+        "framework": "CIS Controls",
+        "control_id": "18.3",
+        "control_name": "Remediate Penetration Test Findings"
+      }
+    ],
+    "mapped_controls_count": 1
+  },
+  {
+    "question": "Are security measures validated and updated as necessary after each penetration test to detect techniques used during testing?",
+    "question_type": "YES_NO",
+    "requires_evidence": true,
+    "citations": [
+      {
+        "framework": "CIS Controls",
+        "control_id": "18.4",
+        "control_name": "Validate Security Measures"
+      }
+    ],
+    "mapped_controls_count": 1
+  },
+  {
+    "question": "Are internal penetration tests performed at least annually, based on program requirements, to assess system vulnerabilities?",
+    "question_type": "YES_NO",
+    "requires_evidence": true,
+    "citations": [
+      {
+        "framework": "CIS Controls",
+        "control_id": "18.5",
+        "control_name": "Perform Periodic Internal Penetration Tests"
+      }
+    ],
+    "mapped_controls_count": 1
+  }
+]

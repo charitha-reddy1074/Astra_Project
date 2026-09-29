@@ -1,0 +1,6 @@
+Finding ID	Application	Component Name	Component Version	License	CVE ID	CVSS	Severity	Direct / Transitive	Fix Available	Fix Version	Status	Ticket	Notes
+SCA-001	E-Commerce Portal	log4j-core	2.14.1	Apache-2.0	CVE-2021-44228	10.0	Critical	Transitive	Yes	2.17.1	In Remediation	SCA-TICK-001	Log4Shell – upgrade in progress
+SCA-002	Payments Gateway	spring-framework	5.3.18	Apache-2.0	CVE-2022-22965	9.8	Critical	Direct	Yes	5.3.20	Closed	SCA-TICK-002	Spring4Shell – resolved
+SCA-003	E-Commerce Portal	jackson-databind	2.12.3	Apache-2.0	CVE-2022-42003	7.5	High	Transitive	Yes	2.14.0	Open	SCA-TICK-003	Deserialization issue
+SCA-004	Mobile Customer App	okhttp	3.12.0	Apache-2.0	CVE-2023-3635	7.5	High	Direct	Yes	4.11.0	Open	SCA-TICK-004	TLS downgrade vulnerability
+SCA-005	Analytics Dashboard	numpy	1.22.0	BSD-3	CVE-2021-41495	5.5	Medium	Direct	Yes	1.23.0	Open	SCA-TICK-005	Buffer overflow – low exploitability in context

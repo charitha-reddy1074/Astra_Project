@@ -1,0 +1,5 @@
+Platform	Compliance (%)
+Windows	97.2%
+Linux	95.8%
+Applications	94.5%
+Overall	96.1%

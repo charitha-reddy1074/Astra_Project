@@ -1,0 +1,2667 @@
+{
+  "framework_id": "c0a73a89-31f0-4db4-bd23-eba40a6d2bd1",
+  "framework_name": "PCI DSS",
+  "version": "4.0",
+  "source_format": "pdf",
+  "ingested_at": "2026-06-17T09:12:19.660317+00:00",
+  "domains": [
+    {
+      "domain_id": "REQ-7",
+      "domain_name": "Access Control",
+      "sub_domains": [
+        {
+          "sub_domain_id": "99192f26-54e3-4654-b76a-186361ef155b",
+          "sub_domain_name": "Requirement 7.1",
+          "controls": [
+            {
+              "control_id": "7.1",
+              "control_statement": "All security policies and operational procedures that are identified in Requirement 7 are managed in accordance with all elements specified in this requirement.",
+              "maturity_levels": [
+                "Level 1: Ad-hoc - Access control processes are informal and lack standardization.",
+                "Level 2: Repeatable - Access control processes are documented and followed, but may not be consistently applied.",
+                "Level 3: Defined - Access control processes are well-defined, consistently applied, and include access control policies and procedures.",
+                "Level 4: Managed - Access control processes are measured, and feedback is used to improve the access control lifecycle.",
+                "Level 5: Optimized - Access control processes are continuously improved, and access is granted in a timely and effective manner."
+              ],
+              "expected_evidence_types": [
+                "access_control_policies",
+                "access_control_procedures",
+                "access_requests"
+              ],
+              "cross_references": []
+            }
+          ]
+        },
+        {
+          "sub_domain_id": "4d952395-20fe-4d32-bd7a-cbb1bef068c9",
+          "sub_domain_name": "Requirement 7.2",
+          "controls": [
+            {
+              "control_id": "7.2",
+              "control_statement": "An access control model is defined and includes granting access as follows: appropriate access depending on the entity\u00e2\u20ac\u2122s business and access needs.",
+              "maturity_levels": [
+                "Level 1: Ad-hoc - Access control models are informal and lack standardization.",
+                "Level 2: Repeatable - Access control models are documented and followed, but may not be consistently applied.",
+                "Level 3: Defined - Access control models are well-defined, consistently applied, and include access control policies and procedures.",
+                "Level 4: Managed - Access control models are measured, and feedback is used to improve the access control lifecycle.",
+                "Level 5: Optimized - Access control models are continuously improved, and access is granted in a timely and effective manner."
+              ],
+              "expected_evidence_types": [
+                "access_control_models",
+                "access_control_policies",
+                "access_control_procedures"
+              ],
+              "cross_references": []
+            }
+          ]
+        },
+        {
+          "sub_domain_id": "57a00027-a6b1-4f22-9519-8cafeb1037f3",
+          "sub_domain_name": "Requirement 7.3",
+          "controls": [
+            {
+              "control_id": "7.3",
+              "control_statement": "An access control system(s) is in place that restricts access based on a user\u00e2\u20ac\u2122s need to know and covers all system components.",
+              "maturity_levels": [
+                "Level 1: Ad-hoc - Access control systems are informal and lack standardization.",
+                "Level 2: Repeatable - Access control systems are documented and followed, but may not be consistently applied.",
+                "Level 3: Defined - Access control systems are well-defined, consistently applied, and include access control policies and procedures.",
+                "Level 4: Managed - Access control systems are measured, and feedback is used to improve the access control lifecycle.",
+                "Level 5: Optimized - Access control systems are continuously improved, and access is granted in a timely and effective manner."
+              ],
+              "expected_evidence_types": [
+                "access_control_systems",
+                "access_control_policies",
+                "access_control_procedures"
+              ],
+              "cross_references": []
+            }
+          ]
+        }
+      ],
+      "controls": [
+        {
+          "control_id": "7.1",
+          "control_statement": "All security policies and operational procedures that are identified in Requirement 7 are managed in accordance with all elements specified in this requirement.",
+          "maturity_levels": [
+            "Level 1: Ad-hoc - Access control processes are informal and lack standardization.",
+            "Level 2: Repeatable - Access control processes are documented and followed, but may not be consistently applied.",
+            "Level 3: Defined - Access control processes are well-defined, consistently applied, and include access control policies and procedures.",
+            "Level 4: Managed - Access control processes are measured, and feedback is used to improve the access control lifecycle.",
+            "Level 5: Optimized - Access control processes are continuously improved, and access is granted in a timely and effective manner."
+          ],
+          "expected_evidence_types": [
+            "access_control_policies",
+            "access_control_procedures",
+            "access_requests"
+          ],
+          "cross_references": []
+        },
+        {
+          "control_id": "7.2",
+          "control_statement": "An access control model is defined and includes granting access as follows: appropriate access depending on the entity\u00e2\u20ac\u2122s business and access needs.",
+          "maturity_levels": [
+            "Level 1: Ad-hoc - Access control models are informal and lack standardization.",
+            "Level 2: Repeatable - Access control models are documented and followed, but may not be consistently applied.",
+            "Level 3: Defined - Access control models are well-defined, consistently applied, and include access control policies and procedures.",
+            "Level 4: Managed - Access control models are measured, and feedback is used to improve the access control lifecycle.",
+            "Level 5: Optimized - Access control models are continuously improved, and access is granted in a timely and effective manner."
+          ],
+          "expected_evidence_types": [
+            "access_control_models",
+            "access_control_policies",
+            "access_control_procedures"
+          ],
+          "cross_references": []
+        },
+        {
+          "control_id": "7.3",
+          "control_statement": "An access control system(s) is in place that restricts access based on a user\u00e2\u20ac\u2122s need to know and covers all system components.",
+          "maturity_levels": [
+            "Level 1: Ad-hoc - Access control systems are informal and lack standardization.",
+            "Level 2: Repeatable - Access control systems are documented and followed, but may not be consistently applied.",
+            "Level 3: Defined - Access control systems are well-defined, consistently applied, and include access control policies and procedures.",
+            "Level 4: Managed - Access control systems are measured, and feedback is used to improve the access control lifecycle.",
+            "Level 5: Optimized - Access control systems are continuously improved, and access is granted in a timely and effective manner."
+          ],
+          "expected_evidence_types": [
+            "access_control_systems",
+            "access_control_policies",
+            "access_control_procedures"
+          ],
+          "cross_references": []
+        }
+      ]
+    },
+    {
+      "domain_id": "REQ-3",
+      "domain_name": "Account Data Protection",
+      "sub_domains": [
+        {
+          "sub_domain_id": "b2cdfc53-dbbf-4bce-bec6-576702908258",
+          "sub_domain_name": "Requirement 3.1",
+          "controls": [
+            {
+              "control_id": "3.1.1",
+              "control_statement": "All security policies and operational procedures that are identified in Requirement 3 are: Documented, Kept up to date, In use, Known to all affected parties.",
+              "maturity_levels": [
+                "Level 1: Ad-hoc - Security policies and procedures are not well-defined or documented.",
+                "Level 2: Repeatable - Security policies and procedures are documented but not consistently applied.",
+                "Level 3: Defined - Security policies and procedures are well-defined, documented, and consistently applied.",
+                "Level 4: Managed - Security policies and procedures are regularly reviewed and updated to ensure effectiveness.",
+                "Level 5: Optimized - Security policies and procedures are continuously monitored and improved to ensure optimal security posture."
+              ],
+              "expected_evidence_types": [
+                "security_policies",
+                "operational_procedures"
+              ],
+              "cross_references": []
+            },
+            {
+              "control_id": "3.1.2",
+              "control_statement": "Roles and responsibilities for performing activities in Requirement 3 are documented, assigned, and understood.",
+              "maturity_levels": [
+                "Level 1: Ad-hoc - Roles and responsibilities are not clearly defined or documented.",
+                "Level 2: Repeatable - Roles and responsibilities are documented but not consistently applied.",
+                "Level 3: Defined - Roles and responsibilities are well-defined, documented, and consistently applied.",
+                "Level 4: Managed - Roles and responsibilities are regularly reviewed and updated to ensure effectiveness.",
+                "Level 5: Optimized - Roles and responsibilities are continuously monitored and improved to ensure optimal security posture."
+              ],
+              "expected_evidence_types": [
+                "role_definitions",
+                "responsibility_assignments"
+              ],
+              "cross_references": []
+            }
+          ]
+        },
+        {
+          "sub_domain_id": "b89167c1-f2ca-40f1-ab00-087a665ccc6a",
+          "sub_domain_name": "Requirement 3.2",
+          "controls": [
+            {
+              "control_id": "3.2.1",
+              "control_statement": "Account data storage is kept to a minimum through implementation of data retention and disposal policies, procedures, and processes.",
+              "maturity_levels": [
+                "Level 1: Ad-hoc - Account data storage is not managed or minimized.",
+                "Level 2: Repeatable - Account data storage is managed but not consistently minimized.",
+                "Level 3: Defined - Account data storage is well-defined, managed, and minimized.",
+                "Level 4: Managed - Account data storage is regularly reviewed and updated to ensure effectiveness.",
+                "Level 5: Optimized - Account data storage is continuously monitored and improved to ensure optimal security posture."
+              ],
+              "expected_evidence_types": [
+                "data_retention_policies",
+                "data_disposal_procedures"
+              ],
+              "cross_references": []
+            }
+          ]
+        },
+        {
+          "sub_domain_id": "6975cb93-f90c-4ffa-9229-ea004bff803e",
+          "sub_domain_name": "Requirement 3.3",
+          "controls": [
+            {
+              "control_id": "3.3.1",
+              "control_statement": "SAD is not stored after authorization, even if encrypted.",
+              "maturity_levels": [
+                "Level 1: Ad-hoc - SAD is stored after authorization without proper security controls.",
+                "Level 2: Repeatable - SAD is stored after authorization with some security controls but not consistently managed.",
+                "Level 3: Defined - SAD is well-defined, not stored after authorization, and managed with proper security controls.",
+                "Level 4: Managed - SAD storage is regularly reviewed and updated to ensure effectiveness.",
+                "Level 5: Optimized - SAD storage is continuously monitored and improved to ensure optimal security posture."
+              ],
+              "expected_evidence_types": [
+                "SAD_storage_policies",
+                "authorization_procedures"
+              ],
+              "cross_references": []
+            },
+            {
+              "control_id": "3.3.3",
+              "control_statement": "Any storage of sensitive authentication data is: Limited to that which is needed for a legitimate issuing business need and is secured, Encrypted using strong cryptography.",
+              "maturity_levels": [
+                "Level 1: Ad-hoc - Sensitive authentication data storage is not managed or secured.",
+                "Level 2: Repeatable - Sensitive authentication data storage is managed but not consistently secured.",
+                "Level 3: Defined - Sensitive authentication data storage is well-defined, managed, and secured.",
+                "Level 4: Managed - Sensitive authentication data storage is regularly reviewed and updated to ensure effectiveness.",
+                "Level 5: Optimized - Sensitive authentication data storage is continuously monitored and improved to ensure optimal security posture."
+              ],
+              "expected_evidence_types": [
+                "SAD_storage_policies",
+                "encryption_procedures"
+              ],
+              "cross_references": []
+            }
+          ]
+        },
+        {
+          "sub_domain_id": "08ea709b-67c5-483f-ad86-5ab66f8ae86f",
+          "sub_domain_name": "Requirement 3.4",
+          "controls": [
+            {
+              "control_id": "3.4",
+              "control_statement": "PAN is masked when displayed, such that only personnel with a legitimate business need can see the BIN and last four digits of the PAN.",
+              "maturity_levels": [
+                "Level 1: Ad-hoc - PAN display masking is not consistently implemented.",
+                "Level 2: Repeatable - PAN display masking is implemented but not regularly reviewed.",
+                "Level 3: Defined - PAN display masking is implemented and regularly reviewed.",
+                "Level 4: Managed - PAN display masking is implemented, regularly reviewed, and metrics are tracked.",
+                "Level 5: Optimized - PAN display masking is fully automated and continuously monitored."
+              ],
+              "expected_evidence_types": [
+                "access_control_policies",
+                "system_configuration_files"
+              ],
+              "cross_references": []
+            }
+          ]
+        },
+        {
+          "sub_domain_id": "32dbc60c-23dd-4775-a3d0-60414d8ee9ec",
+          "sub_domain_name": "Requirement 3.5",
+          "controls": [
+            {
+              "control_id": "3.5",
+              "control_statement": "PAN is rendered unreadable anywhere it is stored by using any of the following approaches: one-way hashes based on strong cryptography of the entire PAN, truncation, index tokens, or strong cryptography with associated key-management processes and procedures.",
+              "maturity_levels": [
+                "Level 1: Ad-hoc - PAN storage protection is not consistently implemented.",
+                "Level 2: Repeatable - PAN storage protection is implemented but not regularly reviewed.",
+                "Level 3: Defined - PAN storage protection is implemented and regularly reviewed.",
+                "Level 4: Managed - PAN storage protection is implemented, regularly reviewed, and metrics are tracked.",
+                "Level 5: Optimized - PAN storage protection is fully automated and continuously monitored."
+              ],
+              "expected_evidence_types": [
+                "data_storage_policies",
+                "encryption_key_management_policies"
+              ],
+              "cross_references": []
+            }
+          ]
+        },
+        {
+          "sub_domain_id": "a5533989-83e5-4bfe-ba59-34a5cb8e0123",
+          "sub_domain_name": "Requirement 3.6",
+          "controls": [
+            {
+              "control_id": "3.6",
+              "control_statement": "Procedures are defined and implemented to protect cryptographic keys used to protect stored account data against disclosure and misuse.",
+              "maturity_levels": [
+                "Level 1: Ad-hoc - Cryptographic key management is not consistently implemented.",
+                "Level 2: Repeatable - Cryptographic key management is implemented but not regularly reviewed.",
+                "Level 3: Defined - Cryptographic key management is implemented and regularly reviewed.",
+                "Level 4: Managed - Cryptographic key management is implemented, regularly reviewed, and metrics are tracked.",
+                "Level 5: Optimized - Cryptographic key management is fully automated and continuously monitored."
+              ],
+              "expected_evidence_types": [
+                "key_management_policies",
+                "key_storage_policies"
+              ],
+              "cross_references": []
+            }
+          ]
+        },
+        {
+          "sub_domain_id": "d05f7e13-62e6-452c-8d1c-325413d7a08d",
+          "sub_domain_name": "Requirement 3.7",
+          "controls": [
+            {
+              "control_id": "3.7",
+              "control_statement": "Key-management policies and procedures are implemented to include generation of strong cryptographic keys used to protect stored account data.",
+              "maturity_levels": [
+                "Level 1: Ad-hoc - Cryptographic key generation is not consistently implemented.",
+                "Level 2: Repeatable - Cryptographic key generation is implemented but not regularly reviewed.",
+                "Level 3: Defined - Cryptographic key generation is implemented and regularly reviewed.",
+                "Level 4: Managed - Cryptographic key generation is implemented, regularly reviewed, and metrics are tracked.",
+                "Level 5: Optimized - Cryptographic key generation is fully automated and continuously monitored."
+              ],
+              "expected_evidence_types": [
+                "key_generation_policies",
+                "key_management_policies"
+              ],
+              "cross_references": []
+            }
+          ]
+        }
+      ],
+      "controls": [
+        {
+          "control_id": "3.1.1",
+          "control_statement": "All security policies and operational procedures that are identified in Requirement 3 are: Documented, Kept up to date, In use, Known to all affected parties.",
+          "maturity_levels": [
+            "Level 1: Ad-hoc - Security policies and procedures are not well-defined or documented.",
+            "Level 2: Repeatable - Security policies and procedures are documented but not consistently applied.",
+            "Level 3: Defined - Security policies and procedures are well-defined, documented, and consistently applied.",
+            "Level 4: Managed - Security policies and procedures are regularly reviewed and updated to ensure effectiveness.",
+            "Level 5: Optimized - Security policies and procedures are continuously monitored and improved to ensure optimal security posture."
+          ],
+          "expected_evidence_types": [
+            "security_policies",
+            "operational_procedures"
+          ],
+          "cross_references": []
+        },
+        {
+          "control_id": "3.1.2",
+          "control_statement": "Roles and responsibilities for performing activities in Requirement 3 are documented, assigned, and understood.",
+          "maturity_levels": [
+            "Level 1: Ad-hoc - Roles and responsibilities are not clearly defined or documented.",
+            "Level 2: Repeatable - Roles and responsibilities are documented but not consistently applied.",
+            "Level 3: Defined - Roles and responsibilities are well-defined, documented, and consistently applied.",
+            "Level 4: Managed - Roles and responsibilities are regularly reviewed and updated to ensure effectiveness.",
+            "Level 5: Optimized - Roles and responsibilities are continuously monitored and improved to ensure optimal security posture."
+          ],
+          "expected_evidence_types": [
+            "role_definitions",
+            "responsibility_assignments"
+          ],
+          "cross_references": []
+        },
+        {
+          "control_id": "3.2.1",
+          "control_statement": "Account data storage is kept to a minimum through implementation of data retention and disposal policies, procedures, and processes.",
+          "maturity_levels": [
+            "Level 1: Ad-hoc - Account data storage is not managed or minimized.",
+            "Level 2: Repeatable - Account data storage is managed but not consistently minimized.",
+            "Level 3: Defined - Account data storage is well-defined, managed, and minimized.",
+            "Level 4: Managed - Account data storage is regularly reviewed and updated to ensure effectiveness.",
+            "Level 5: Optimized - Account data storage is continuously monitored and improved to ensure optimal security posture."
+          ],
+          "expected_evidence_types": [
+            "data_retention_policies",
+            "data_disposal_procedures"
+          ],
+          "cross_references": []
+        },
+        {
+          "control_id": "3.3.1",
+          "control_statement": "SAD is not stored after authorization, even if encrypted.",
+          "maturity_levels": [
+            "Level 1: Ad-hoc - SAD is stored after authorization without proper security controls.",
+            "Level 2: Repeatable - SAD is stored after authorization with some security controls but not consistently managed.",
+            "Level 3: Defined - SAD is well-defined, not stored after authorization, and managed with proper security controls.",
+            "Level 4: Managed - SAD storage is regularly reviewed and updated to ensure effectiveness.",
+            "Level 5: Optimized - SAD storage is continuously monitored and improved to ensure optimal security posture."
+          ],
+          "expected_evidence_types": [
+            "SAD_storage_policies",
+            "authorization_procedures"
+          ],
+          "cross_references": []
+        },
+        {
+          "control_id": "3.3.3",
+          "control_statement": "Any storage of sensitive authentication data is: Limited to that which is needed for a legitimate issuing business need and is secured, Encrypted using strong cryptography.",
+          "maturity_levels": [
+            "Level 1: Ad-hoc - Sensitive authentication data storage is not managed or secured.",
+            "Level 2: Repeatable - Sensitive authentication data storage is managed but not consistently secured.",
+            "Level 3: Defined - Sensitive authentication data storage is well-defined, managed, and secured.",
+            "Level 4: Managed - Sensitive authentication data storage is regularly reviewed and updated to ensure effectiveness.",
+            "Level 5: Optimized - Sensitive authentication data storage is continuously monitored and improved to ensure optimal security posture."
+          ],
+          "expected_evidence_types": [
+            "SAD_storage_policies",
+            "encryption_procedures"
+          ],
+          "cross_references": []
+        },
+        {
+          "control_id": "3.4",
+          "control_statement": "PAN is masked when displayed, such that only personnel with a legitimate business need can see the BIN and last four digits of the PAN.",
+          "maturity_levels": [
+            "Level 1: Ad-hoc - PAN display masking is not consistently implemented.",
+            "Level 2: Repeatable - PAN display masking is implemented but not regularly reviewed.",
+            "Level 3: Defined - PAN display masking is implemented and regularly reviewed.",
+            "Level 4: Managed - PAN display masking is implemented, regularly reviewed, and metrics are tracked.",
+            "Level 5: Optimized - PAN display masking is fully automated and continuously monitored."
+          ],
+          "expected_evidence_types": [
+            "access_control_policies",
+            "system_configuration_files"
+          ],
+          "cross_references": []
+        },
+        {
+          "control_id": "3.5",
+          "control_statement": "PAN is rendered unreadable anywhere it is stored by using any of the following approaches: one-way hashes based on strong cryptography of the entire PAN, truncation, index tokens, or strong cryptography with associated key-management processes and procedures.",
+          "maturity_levels": [
+            "Level 1: Ad-hoc - PAN storage protection is not consistently implemented.",
+            "Level 2: Repeatable - PAN storage protection is implemented but not regularly reviewed.",
+            "Level 3: Defined - PAN storage protection is implemented and regularly reviewed.",
+            "Level 4: Managed - PAN storage protection is implemented, regularly reviewed, and metrics are tracked.",
+            "Level 5: Optimized - PAN storage protection is fully automated and continuously monitored."
+          ],
+          "expected_evidence_types": [
+            "data_storage_policies",
+            "encryption_key_management_policies"
+          ],
+          "cross_references": []
+        },
+        {
+          "control_id": "3.6",
+          "control_statement": "Procedures are defined and implemented to protect cryptographic keys used to protect stored account data against disclosure and misuse.",
+          "maturity_levels": [
+            "Level 1: Ad-hoc - Cryptographic key management is not consistently implemented.",
+            "Level 2: Repeatable - Cryptographic key management is implemented but not regularly reviewed.",
+            "Level 3: Defined - Cryptographic key management is implemented and regularly reviewed.",
+            "Level 4: Managed - Cryptographic key management is implemented, regularly reviewed, and metrics are tracked.",
+            "Level 5: Optimized - Cryptographic key management is fully automated and continuously monitored."
+          ],
+          "expected_evidence_types": [
+            "key_management_policies",
+            "key_storage_policies"
+          ],
+          "cross_references": []
+        },
+        {
+          "control_id": "3.7",
+          "control_statement": "Key-management policies and procedures are implemented to include generation of strong cryptographic keys used to protect stored account data.",
+          "maturity_levels": [
+            "Level 1: Ad-hoc - Cryptographic key generation is not consistently implemented.",
+            "Level 2: Repeatable - Cryptographic key generation is implemented but not regularly reviewed.",
+            "Level 3: Defined - Cryptographic key generation is implemented and regularly reviewed.",
+            "Level 4: Managed - Cryptographic key generation is implemented, regularly reviewed, and metrics are tracked.",
+            "Level 5: Optimized - Cryptographic key generation is fully automated and continuously monitored."
+          ],
+          "expected_evidence_types": [
+            "key_generation_policies",
+            "key_management_policies"
+          ],
+          "cross_references": []
+        }
+      ]
+    },
+    {
+      "domain_id": "REQ-5",
+      "domain_name": "Anti-Malware",
+      "sub_domains": [
+        {
+          "sub_domain_id": "bd6511c1-7773-4663-8ee2-d94fed316705",
+          "sub_domain_name": "Requirement 5.1",
+          "controls": [
+            {
+              "control_id": "5.1",
+              "control_statement": "All security policies and operational procedures that are identified in Requirement 5 are documented, kept up to date, in use, and known to all affected parties.",
+              "maturity_levels": [
+                "Level 1: Ad-hoc - Anti-malware policies are not consistently implemented.",
+                "Level 2: Repeatable - Anti-malware policies are implemented but not regularly reviewed.",
+                "Level 3: Defined - Anti-malware policies are implemented and regularly reviewed.",
+                "Level 4: Managed - Anti-malware policies are implemented, regularly reviewed, and metrics are tracked.",
+                "Level 5: Optimized - Anti-malware policies are fully automated and continuously monitored."
+              ],
+              "expected_evidence_types": [
+                "anti_malware_policies",
+                "system_configuration_files"
+              ],
+              "cross_references": []
+            }
+          ]
+        },
+        {
+          "sub_domain_id": "c957e488-9bc1-4101-a05e-a8e99a8af787",
+          "sub_domain_name": "Requirement 5.2",
+          "controls": [
+            {
+              "control_id": "5.2",
+              "control_statement": "An anti-malware solution(s) is deployed on all system components, except for those system components identified in periodic evaluations per Requirement 5.2.3 that concludes the system components are not at risk from malware.",
+              "maturity_levels": [
+                "Level 1: Ad-hoc - Anti-malware solutions are not consistently implemented.",
+                "Level 2: Repeatable - Anti-malware solutions are implemented but not regularly reviewed.",
+                "Level 3: Defined - Anti-malware solutions are implemented and regularly reviewed.",
+                "Level 4: Managed - Anti-malware solutions are implemented, regularly reviewed, and metrics are tracked.",
+                "Level 5: Optimized - Anti-malware solutions are fully automated and continuously monitored."
+              ],
+              "expected_evidence_types": [
+                "anti_malware_policies",
+                "system_configuration_files"
+              ],
+              "cross_references": []
+            }
+          ]
+        }
+      ],
+      "controls": [
+        {
+          "control_id": "5.1",
+          "control_statement": "All security policies and operational procedures that are identified in Requirement 5 are documented, kept up to date, in use, and known to all affected parties.",
+          "maturity_levels": [
+            "Level 1: Ad-hoc - Anti-malware policies are not consistently implemented.",
+            "Level 2: Repeatable - Anti-malware policies are implemented but not regularly reviewed.",
+            "Level 3: Defined - Anti-malware policies are implemented and regularly reviewed.",
+            "Level 4: Managed - Anti-malware policies are implemented, regularly reviewed, and metrics are tracked.",
+            "Level 5: Optimized - Anti-malware policies are fully automated and continuously monitored."
+          ],
+          "expected_evidence_types": [
+            "anti_malware_policies",
+            "system_configuration_files"
+          ],
+          "cross_references": []
+        },
+        {
+          "control_id": "5.2",
+          "control_statement": "An anti-malware solution(s) is deployed on all system components, except for those system components identified in periodic evaluations per Requirement 5.2.3 that concludes the system components are not at risk from malware.",
+          "maturity_levels": [
+            "Level 1: Ad-hoc - Anti-malware solutions are not consistently implemented.",
+            "Level 2: Repeatable - Anti-malware solutions are implemented but not regularly reviewed.",
+            "Level 3: Defined - Anti-malware solutions are implemented and regularly reviewed.",
+            "Level 4: Managed - Anti-malware solutions are implemented, regularly reviewed, and metrics are tracked.",
+            "Level 5: Optimized - Anti-malware solutions are fully automated and continuously monitored."
+          ],
+          "expected_evidence_types": [
+            "anti_malware_policies",
+            "system_configuration_files"
+          ],
+          "cross_references": []
+        }
+      ]
+    },
+    {
+      "domain_id": "REQ-8",
+      "domain_name": "Authentication",
+      "sub_domains": [
+        {
+          "sub_domain_id": "22461e61-4833-407b-9cc6-f8934a3adb5e",
+          "sub_domain_name": "Requirement 8.1",
+          "controls": [
+            {
+              "control_id": "8.1",
+              "control_statement": "All security policies and operational procedures that are identified in Requirement 8 are managed in accordance with all elements specified in this requirement.",
+              "maturity_levels": [
+                "Level 1: Ad-hoc - Authentication processes are informal and lack standardization.",
+                "Level 2: Repeatable - Authentication processes are documented and followed, but may not be consistently applied.",
+                "Level 3: Defined - Authentication processes are well-defined, consistently applied, and include authentication policies and procedures.",
+                "Level 4: Managed - Authentication processes are measured, and feedback is used to improve the authentication lifecycle.",
+                "Level 5: Optimized - Authentication processes are continuously improved, and authentication is performed in a timely and effective manner."
+              ],
+              "expected_evidence_types": [
+                "authentication_policies",
+                "authentication_procedures",
+                "authentication_requests"
+              ],
+              "cross_references": []
+            }
+          ]
+        },
+        {
+          "sub_domain_id": "24df51b9-74bf-429c-83a7-3d1a455e862d",
+          "sub_domain_name": "Requirement 8.2",
+          "controls": [
+            {
+              "control_id": "8.2",
+              "control_statement": "All users are assigned a unique ID before access to system components or cardholder data is allowed.",
+              "maturity_levels": [
+                "Level 1: Ad-hoc - User identification processes are informal and lack standardization.",
+                "Level 2: Repeatable - User identification processes are documented and followed, but may not be consistently applied.",
+                "Level 3: Defined - User identification processes are well-defined, consistently applied, and include unique user IDs.",
+                "Level 4: Managed - User identification processes are measured, and feedback is used to improve the user identification lifecycle.",
+                "Level 5: Optimized - User identification processes are continuously improved, and user IDs are assigned in a timely and effective manner."
+              ],
+              "expected_evidence_types": [
+                "user_identification_policies",
+                "user_identification_procedures",
+                "unique_user_ids"
+              ],
+              "cross_references": []
+            }
+          ]
+        },
+        {
+          "sub_domain_id": "3c4c4246-61eb-4e45-b3ef-7ae13c22f80a",
+          "sub_domain_name": "Requirement 8.3",
+          "controls": [
+            {
+              "control_id": "8.3",
+              "control_statement": "All user access to system components for users and administrators is authenticated via at least one of the following authentication factors: something you know, something you have, or something you are.",
+              "maturity_levels": [
+                "Level 1: Ad-hoc - Authentication factors are informal and lack standardization.",
+                "Level 2: Repeatable - Authentication factors are documented and followed, but may not be consistently applied.",
+                "Level 3: Defined - Authentication factors are well-defined, consistently applied, and include at least one of the required authentication factors.",
+                "Level 4: Managed - Authentication factors are measured, and feedback is used to improve the authentication lifecycle.",
+                "Level 5: Optimized - Authentication factors are continuously improved, and authentication is performed in a timely and effective manner."
+              ],
+              "expected_evidence_types": [
+                "authentication_factor_policies",
+                "authentication_factor_procedures",
+                "authentication_factor_requests"
+              ],
+              "cross_references": []
+            }
+          ]
+        },
+        {
+          "sub_domain_id": "d20873d6-7d05-4c2b-b2d6-e426a1ad51ad",
+          "sub_domain_name": "Requirement 8.4",
+          "controls": [
+            {
+              "control_id": "8.4",
+              "control_statement": "MFA is implemented for all non-console access into the CDE for personnel with administrative access.",
+              "maturity_levels": [
+                "Level 1: Ad-hoc - Basic MFA implementation",
+                "Level 2: Repeatable - Standardized MFA process",
+                "Level 3: Defined - MFA integrated with identity management",
+                "Level 4: Managed - Continuous monitoring of MFA",
+                "Level 5: Optimized - Advanced MFA with behavioral analytics"
+              ],
+              "expected_evidence_types": [
+                "policy_document",
+                "access_logs"
+              ],
+              "cross_references": []
+            }
+          ]
+        },
+        {
+          "sub_domain_id": "fa40bb6c-4f03-43a9-944e-d69713c31a07",
+          "sub_domain_name": "Requirement 8.5",
+          "controls": [
+            {
+              "control_id": "8.5",
+              "control_statement": "MFA systems are implemented as follows: The MFA system is not susceptible to replay attacks. MFA systems cannot be bypassed by any users, including administrative users unless specifically documented, and authorized by management on an exception basis, for a limited time period.",
+              "maturity_levels": [
+                "Level 1: Ad-hoc - Basic MFA system",
+                "Level 2: Repeatable - Standardized MFA system configuration",
+                "Level 3: Defined - MFA system integrated with security information and event management",
+                "Level 4: Managed - Continuous monitoring of MFA system",
+                "Level 5: Optimized - Advanced MFA system with machine learning"
+              ],
+              "expected_evidence_types": [
+                "system_configuration",
+                "access_logs"
+              ],
+              "cross_references": []
+            }
+          ]
+        },
+        {
+          "sub_domain_id": "4c416b21-08ea-4cb5-a80b-3386413b9253",
+          "sub_domain_name": "Requirement 8.6",
+          "controls": [
+            {
+              "control_id": "8.6",
+              "control_statement": "If accounts used by systems or applications can be used for interactive login, they are managed as follows: Interactive use is prevented unless needed for an exceptional circumstance.",
+              "maturity_levels": [
+                "Level 1: Ad-hoc - Basic account management",
+                "Level 2: Repeatable - Standardized account management process",
+                "Level 3: Defined - Account management integrated with identity management",
+                "Level 4: Managed - Continuous monitoring of account management",
+                "Level 5: Optimized - Advanced account management with automation"
+              ],
+              "expected_evidence_types": [
+                "account_management_policy",
+                "access_logs"
+              ],
+              "cross_references": []
+            }
+          ]
+        }
+      ],
+      "controls": [
+        {
+          "control_id": "8.1",
+          "control_statement": "All security policies and operational procedures that are identified in Requirement 8 are managed in accordance with all elements specified in this requirement.",
+          "maturity_levels": [
+            "Level 1: Ad-hoc - Authentication processes are informal and lack standardization.",
+            "Level 2: Repeatable - Authentication processes are documented and followed, but may not be consistently applied.",
+            "Level 3: Defined - Authentication processes are well-defined, consistently applied, and include authentication policies and procedures.",
+            "Level 4: Managed - Authentication processes are measured, and feedback is used to improve the authentication lifecycle.",
+            "Level 5: Optimized - Authentication processes are continuously improved, and authentication is performed in a timely and effective manner."
+          ],
+          "expected_evidence_types": [
+            "authentication_policies",
+            "authentication_procedures",
+            "authentication_requests"
+          ],
+          "cross_references": []
+        },
+        {
+          "control_id": "8.2",
+          "control_statement": "All users are assigned a unique ID before access to system components or cardholder data is allowed.",
+          "maturity_levels": [
+            "Level 1: Ad-hoc - User identification processes are informal and lack standardization.",
+            "Level 2: Repeatable - User identification processes are documented and followed, but may not be consistently applied.",
+            "Level 3: Defined - User identification processes are well-defined, consistently applied, and include unique user IDs.",
+            "Level 4: Managed - User identification processes are measured, and feedback is used to improve the user identification lifecycle.",
+            "Level 5: Optimized - User identification processes are continuously improved, and user IDs are assigned in a timely and effective manner."
+          ],
+          "expected_evidence_types": [
+            "user_identification_policies",
+            "user_identification_procedures",
+            "unique_user_ids"
+          ],
+          "cross_references": []
+        },
+        {
+          "control_id": "8.3",
+          "control_statement": "All user access to system components for users and administrators is authenticated via at least one of the following authentication factors: something you know, something you have, or something you are.",
+          "maturity_levels": [
+            "Level 1: Ad-hoc - Authentication factors are informal and lack standardization.",
+            "Level 2: Repeatable - Authentication factors are documented and followed, but may not be consistently applied.",
+            "Level 3: Defined - Authentication factors are well-defined, consistently applied, and include at least one of the required authentication factors.",
+            "Level 4: Managed - Authentication factors are measured, and feedback is used to improve the authentication lifecycle.",
+            "Level 5: Optimized - Authentication factors are continuously improved, and authentication is performed in a timely and effective manner."
+          ],
+          "expected_evidence_types": [
+            "authentication_factor_policies",
+            "authentication_factor_procedures",
+            "authentication_factor_requests"
+          ],
+          "cross_references": []
+        },
+        {
+          "control_id": "8.4",
+          "control_statement": "MFA is implemented for all non-console access into the CDE for personnel with administrative access.",
+          "maturity_levels": [
+            "Level 1: Ad-hoc - Basic MFA implementation",
+            "Level 2: Repeatable - Standardized MFA process",
+            "Level 3: Defined - MFA integrated with identity management",
+            "Level 4: Managed - Continuous monitoring of MFA",
+            "Level 5: Optimized - Advanced MFA with behavioral analytics"
+          ],
+          "expected_evidence_types": [
+            "policy_document",
+            "access_logs"
+          ],
+          "cross_references": []
+        },
+        {
+          "control_id": "8.5",
+          "control_statement": "MFA systems are implemented as follows: The MFA system is not susceptible to replay attacks. MFA systems cannot be bypassed by any users, including administrative users unless specifically documented, and authorized by management on an exception basis, for a limited time period.",
+          "maturity_levels": [
+            "Level 1: Ad-hoc - Basic MFA system",
+            "Level 2: Repeatable - Standardized MFA system configuration",
+            "Level 3: Defined - MFA system integrated with security information and event management",
+            "Level 4: Managed - Continuous monitoring of MFA system",
+            "Level 5: Optimized - Advanced MFA system with machine learning"
+          ],
+          "expected_evidence_types": [
+            "system_configuration",
+            "access_logs"
+          ],
+          "cross_references": []
+        },
+        {
+          "control_id": "8.6",
+          "control_statement": "If accounts used by systems or applications can be used for interactive login, they are managed as follows: Interactive use is prevented unless needed for an exceptional circumstance.",
+          "maturity_levels": [
+            "Level 1: Ad-hoc - Basic account management",
+            "Level 2: Repeatable - Standardized account management process",
+            "Level 3: Defined - Account management integrated with identity management",
+            "Level 4: Managed - Continuous monitoring of account management",
+            "Level 5: Optimized - Advanced account management with automation"
+          ],
+          "expected_evidence_types": [
+            "account_management_policy",
+            "access_logs"
+          ],
+          "cross_references": []
+        }
+      ]
+    },
+    {
+      "domain_id": "REQ-4",
+      "domain_name": "Cryptography in Transit",
+      "sub_domains": [
+        {
+          "sub_domain_id": "4fc82710-5557-4d1d-bcec-3fa7b04e9fcb",
+          "sub_domain_name": "Requirement 4.1",
+          "controls": [
+            {
+              "control_id": "4.1",
+              "control_statement": "Processes and mechanisms for protecting cardholder data with strong cryptography during transmission are defined and understood.",
+              "maturity_levels": [
+                "Level 1: Ad-hoc - Cryptography in transit is not consistently implemented.",
+                "Level 2: Repeatable - Cryptography in transit is implemented but not regularly reviewed.",
+                "Level 3: Defined - Cryptography in transit is implemented and regularly reviewed.",
+                "Level 4: Managed - Cryptography in transit is implemented, regularly reviewed, and metrics are tracked.",
+                "Level 5: Optimized - Cryptography in transit is fully automated and continuously monitored."
+              ],
+              "expected_evidence_types": [
+                "transmission_policies",
+                "encryption_key_management_policies"
+              ],
+              "cross_references": []
+            }
+          ]
+        },
+        {
+          "sub_domain_id": "ede0c857-e37e-4bc9-8347-52e739eea9a1",
+          "sub_domain_name": "Requirement 4.2",
+          "controls": [
+            {
+              "control_id": "4.2",
+              "control_statement": "PAN is protected with strong cryptography during transmission over open, public networks.",
+              "maturity_levels": [
+                "Level 1: Ad-hoc - PAN transmission protection is not consistently implemented.",
+                "Level 2: Repeatable - PAN transmission protection is implemented but not regularly reviewed.",
+                "Level 3: Defined - PAN transmission protection is implemented and regularly reviewed.",
+                "Level 4: Managed - PAN transmission protection is implemented, regularly reviewed, and metrics are tracked.",
+                "Level 5: Optimized - PAN transmission protection is fully automated and continuously monitored."
+              ],
+              "expected_evidence_types": [
+                "transmission_policies",
+                "encryption_key_management_policies"
+              ],
+              "cross_references": []
+            }
+          ]
+        }
+      ],
+      "controls": [
+        {
+          "control_id": "4.1",
+          "control_statement": "Processes and mechanisms for protecting cardholder data with strong cryptography during transmission are defined and understood.",
+          "maturity_levels": [
+            "Level 1: Ad-hoc - Cryptography in transit is not consistently implemented.",
+            "Level 2: Repeatable - Cryptography in transit is implemented but not regularly reviewed.",
+            "Level 3: Defined - Cryptography in transit is implemented and regularly reviewed.",
+            "Level 4: Managed - Cryptography in transit is implemented, regularly reviewed, and metrics are tracked.",
+            "Level 5: Optimized - Cryptography in transit is fully automated and continuously monitored."
+          ],
+          "expected_evidence_types": [
+            "transmission_policies",
+            "encryption_key_management_policies"
+          ],
+          "cross_references": []
+        },
+        {
+          "control_id": "4.2",
+          "control_statement": "PAN is protected with strong cryptography during transmission over open, public networks.",
+          "maturity_levels": [
+            "Level 1: Ad-hoc - PAN transmission protection is not consistently implemented.",
+            "Level 2: Repeatable - PAN transmission protection is implemented but not regularly reviewed.",
+            "Level 3: Defined - PAN transmission protection is implemented and regularly reviewed.",
+            "Level 4: Managed - PAN transmission protection is implemented, regularly reviewed, and metrics are tracked.",
+            "Level 5: Optimized - PAN transmission protection is fully automated and continuously monitored."
+          ],
+          "expected_evidence_types": [
+            "transmission_policies",
+            "encryption_key_management_policies"
+          ],
+          "cross_references": []
+        }
+      ]
+    },
+    {
+      "domain_id": "REQ-12",
+      "domain_name": "Information Security Policies",
+      "sub_domains": [
+        {
+          "sub_domain_id": "d87bc241-00be-43f4-bebf-71955afd86d9",
+          "sub_domain_name": "Requirement 12.1",
+          "controls": [
+            {
+              "control_id": "12.1",
+              "control_statement": "An overall information security policy is: Established, Published, Maintained, and Disseminated to all relevant personnel, as well as to relevant vendors and business partners.",
+              "maturity_levels": [
+                "Level 1: Ad-hoc - Basic security policies are established but not consistently enforced.",
+                "Level 2: Repeatable - Security policies are documented and communicated to personnel, but not regularly reviewed.",
+                "Level 3: Defined - Security policies are well-defined, communicated, and regularly reviewed, with clear roles and responsibilities.",
+                "Level 4: Managed - Security policies are integrated into the organization's overall governance framework, with metrics to measure effectiveness.",
+                "Level 5: Optimized - Security policies are continuously monitored, evaluated, and improved, with a culture of security awareness throughout the organization."
+              ],
+              "expected_evidence_types": [
+                "policy_document",
+                "training_records"
+              ],
+              "cross_references": []
+            }
+          ]
+        },
+        {
+          "sub_domain_id": "d6adbe49-2d9e-4bed-896e-14f9131853e2",
+          "sub_domain_name": "Requirement 12.2",
+          "controls": [
+            {
+              "control_id": "12.2",
+              "control_statement": "Acceptable use policies for end-user technologies are defined and implemented, including explicit approval by authorized parties, acceptable uses of the technology, and a list of products approved by the company for employee use.",
+              "maturity_levels": [
+                "Level 1: Ad-hoc - Basic acceptable use policies are established but not consistently enforced.",
+                "Level 2: Repeatable - Acceptable use policies are documented and communicated to personnel, but not regularly reviewed.",
+                "Level 3: Defined - Acceptable use policies are well-defined, communicated, and regularly reviewed, with clear roles and responsibilities.",
+                "Level 4: Managed - Acceptable use policies are integrated into the organization's overall governance framework, with metrics to measure effectiveness.",
+                "Level 5: Optimized - Acceptable use policies are continuously monitored, evaluated, and improved, with a culture of security awareness throughout the organization."
+              ],
+              "expected_evidence_types": [
+                "policy_document",
+                "training_records"
+              ],
+              "cross_references": []
+            }
+          ]
+        },
+        {
+          "sub_domain_id": "8ec9df02-258a-4540-9adb-5dc37cf0868f",
+          "sub_domain_name": "Requirement 12.3",
+          "controls": [
+            {
+              "control_id": "12.3",
+              "control_statement": "Risks to the cardholder data environment are formally identified, evaluated, and managed, including identification of assets, threats, and factors that contribute to the likelihood and/or impact of a threat being realized.",
+              "maturity_levels": [
+                "Level 1: Ad-hoc - Basic risk management processes are established but not consistently enforced.",
+                "Level 2: Repeatable - Risk management processes are documented and communicated to personnel, but not regularly reviewed.",
+                "Level 3: Defined - Risk management processes are well-defined, communicated, and regularly reviewed, with clear roles and responsibilities.",
+                "Level 4: Managed - Risk management processes are integrated into the organization's overall governance framework, with metrics to measure effectiveness.",
+                "Level 5: Optimized - Risk management processes are continuously monitored, evaluated, and improved, with a culture of risk awareness throughout the organization."
+              ],
+              "expected_evidence_types": [
+                "risk_register",
+                "risk_assessment_reports"
+              ],
+              "cross_references": []
+            }
+          ]
+        },
+        {
+          "sub_domain_id": "7830d206-b1d8-4829-8f69-c5e62ef4614a",
+          "sub_domain_name": "Requirement 12.4",
+          "controls": [
+            {
+              "control_id": "12.4",
+              "control_statement": "PCI DSS compliance is managed, including overall accountability for maintaining PCI DSS compliance and defining a charter for a PCI DSS compliance program.",
+              "maturity_levels": [
+                "Level 1: Ad-hoc - Basic compliance processes are established but not consistently enforced.",
+                "Level 2: Repeatable - Compliance processes are documented and communicated to personnel, but not regularly reviewed.",
+                "Level 3: Defined - Compliance processes are well-defined, communicated, and regularly reviewed, with clear roles and responsibilities.",
+                "Level 4: Managed - Compliance processes are integrated into the organization's overall governance framework, with metrics to measure effectiveness.",
+                "Level 5: Optimized - Compliance processes are continuously monitored, evaluated, and improved, with a culture of compliance awareness throughout the organization."
+              ],
+              "expected_evidence_types": [
+                "compliance_reports",
+                "audit_reports"
+              ],
+              "cross_references": []
+            }
+          ]
+        },
+        {
+          "sub_domain_id": "c9c906ec-bf1a-4097-84a7-226c25d8aebe",
+          "sub_domain_name": "Requirement 12.5",
+          "controls": [
+            {
+              "control_id": "12.5",
+              "control_statement": "PCI DSS scope is documented and validated, including an inventory of system components that are in scope for PCI DSS, and a description of function/use for each.",
+              "maturity_levels": [
+                "Level 1: Ad-hoc - Basic scope documentation is established but not consistently enforced.",
+                "Level 2: Repeatable - Scope documentation is documented and communicated to personnel, but not regularly reviewed.",
+                "Level 3: Defined - Scope documentation is well-defined, communicated, and regularly reviewed, with clear roles and responsibilities.",
+                "Level 4: Managed - Scope documentation is integrated into the organization's overall governance framework, with metrics to measure effectiveness.",
+                "Level 5: Optimized - Scope documentation is continuously monitored, evaluated, and improved, with a culture of scope awareness throughout the organization."
+              ],
+              "expected_evidence_types": [
+                "scope_documentation",
+                "inventory_reports"
+              ],
+              "cross_references": []
+            }
+          ]
+        },
+        {
+          "sub_domain_id": "9d036980-7909-4cd6-a1a6-3d31bc3e2cd6",
+          "sub_domain_name": "Requirement 12.6",
+          "controls": [
+            {
+              "control_id": "12.6",
+              "control_statement": "Security awareness education is an ongoing process, including a formal security awareness program that makes all personnel aware of the entity's information security policy and procedures.",
+              "maturity_levels": [
+                "Level 1: Ad-hoc - Basic security awareness training is provided but not consistently enforced.",
+                "Level 2: Repeatable - Security awareness training is documented and communicated to personnel, but not regularly reviewed.",
+                "Level 3: Defined - Security awareness training is well-defined, communicated, and regularly reviewed, with clear roles and responsibilities.",
+                "Level 4: Managed - Security awareness training is integrated into the organization's overall governance framework, with metrics to measure effectiveness.",
+                "Level 5: Optimized - Security awareness training is continuously monitored, evaluated, and improved, with a culture of security awareness throughout the organization."
+              ],
+              "expected_evidence_types": [
+                "training_records",
+                "security_awareness_program"
+              ],
+              "cross_references": []
+            }
+          ]
+        },
+        {
+          "sub_domain_id": "68310b76-d78b-42e8-884a-9974e2dd4120",
+          "sub_domain_name": "Requirement 12.7",
+          "controls": [
+            {
+              "control_id": "12.7",
+              "control_statement": "Personnel are screened to reduce risks from insider threats, including potential personnel who will have access to the CDE.",
+              "maturity_levels": [
+                "Level 1: Ad-hoc - Basic screening processes are established but not consistently enforced.",
+                "Level 2: Repeatable - Screening processes are documented and communicated to personnel, but not regularly reviewed.",
+                "Level 3: Defined - Screening processes are well-defined, communicated, and regularly reviewed, with clear roles and responsibilities.",
+                "Level 4: Managed - Screening processes are integrated into the organization's overall governance framework, with metrics to measure effectiveness.",
+                "Level 5: Optimized - Screening processes are continuously monitored, evaluated, and improved, with a culture of security awareness throughout the organization."
+              ],
+              "expected_evidence_types": [
+                "background_check_reports",
+                "screening_procedures"
+              ],
+              "cross_references": []
+            }
+          ]
+        },
+        {
+          "sub_domain_id": "46ef7b4d-1f4c-4d9b-b675-1c0e03f87cdc",
+          "sub_domain_name": "Requirement 12.8",
+          "controls": [
+            {
+              "control_id": "12.8",
+              "control_statement": "Risk to information assets associated with third-party service providers is managed, including a list of all third-party service providers with which account data is shared or that could affect the security of account data.",
+              "maturity_levels": [
+                "Level 1: Ad-hoc - Basic third-party risk management processes are established but not consistently enforced.",
+                "Level 2: Repeatable - Third-party risk management processes are documented and communicated to personnel, but not regularly reviewed.",
+                "Level 3: Defined - Third-party risk management processes are well-defined, communicated, and regularly reviewed, with clear roles and responsibilities.",
+                "Level 4: Managed - Third-party risk management processes are integrated into the organization's overall governance framework, with metrics to measure effectiveness.",
+                "Level 5: Optimized - Third-party risk management processes are continuously monitored, evaluated, and improved, with a culture of third-party risk awareness throughout the organization."
+              ],
+              "expected_evidence_types": [
+                "third_party_risk_assessment_reports",
+                "contractual_agreements"
+              ],
+              "cross_references": []
+            }
+          ]
+        },
+        {
+          "sub_domain_id": "1781e302-7737-44c7-8694-ddba76621205",
+          "sub_domain_name": "Requirement 12.9",
+          "controls": [
+            {
+              "control_id": "12.9.1",
+              "control_statement": "TPSPs provide written agreements to customers that include acknowledgments that TPSPs are responsible for the security of account data the TPSP possesses or otherwise stores, processes, or transmits on behalf of the customer, or to the extent that the TPSP could impact the security of the customer\u00e2\u20ac\u2122s cardholder data and/or sensitive authentication data.",
+              "maturity_levels": [
+                "Level 1: Ad-hoc - Basic agreements are in place but lack formal security responsibilities",
+                "Level 2: Repeatable - Standardized agreements include security responsibilities but may not be consistently applied",
+                "Level 3: Defined - Formal agreements with clear security responsibilities are consistently applied to all customers",
+                "Level 4: Managed - Agreements are regularly reviewed and updated to ensure ongoing security responsibilities",
+                "Level 5: Optimized - Automated processes ensure that agreements are consistently applied and updated in real-time"
+              ],
+              "expected_evidence_types": [
+                "written_agreements",
+                "service_level_agreements"
+              ],
+              "cross_references": []
+            }
+          ]
+        },
+        {
+          "sub_domain_id": "75f37bcd-eb13-4d24-a9f1-09c9f6f52e74",
+          "sub_domain_name": "Requirement 12.10",
+          "controls": [
+            {
+              "control_id": "12.10",
+              "control_statement": "An incident response plan exists and is ready to be activated in the event of a suspected or confirmed security incident.",
+              "maturity_levels": [
+                "Level 1: Ad-hoc - Basic incident response plan is in place but lacks formal procedures",
+                "Level 2: Repeatable - Standardized incident response plan includes basic procedures but may not be consistently applied",
+                "Level 3: Defined - Formal incident response plan with clear procedures is consistently applied to all incidents",
+                "Level 4: Managed - Incident response plan is regularly reviewed and updated to ensure ongoing effectiveness",
+                "Level 5: Optimized - Automated processes ensure that incident response plan is consistently applied and updated in real-time"
+              ],
+              "expected_evidence_types": [
+                "incident_response_plan",
+                "incident_response_procedures"
+              ],
+              "cross_references": []
+            }
+          ]
+        }
+      ],
+      "controls": [
+        {
+          "control_id": "12.1",
+          "control_statement": "An overall information security policy is: Established, Published, Maintained, and Disseminated to all relevant personnel, as well as to relevant vendors and business partners.",
+          "maturity_levels": [
+            "Level 1: Ad-hoc - Basic security policies are established but not consistently enforced.",
+            "Level 2: Repeatable - Security policies are documented and communicated to personnel, but not regularly reviewed.",
+            "Level 3: Defined - Security policies are well-defined, communicated, and regularly reviewed, with clear roles and responsibilities.",
+            "Level 4: Managed - Security policies are integrated into the organization's overall governance framework, with metrics to measure effectiveness.",
+            "Level 5: Optimized - Security policies are continuously monitored, evaluated, and improved, with a culture of security awareness throughout the organization."
+          ],
+          "expected_evidence_types": [
+            "policy_document",
+            "training_records"
+          ],
+          "cross_references": []
+        },
+        {
+          "control_id": "12.2",
+          "control_statement": "Acceptable use policies for end-user technologies are defined and implemented, including explicit approval by authorized parties, acceptable uses of the technology, and a list of products approved by the company for employee use.",
+          "maturity_levels": [
+            "Level 1: Ad-hoc - Basic acceptable use policies are established but not consistently enforced.",
+            "Level 2: Repeatable - Acceptable use policies are documented and communicated to personnel, but not regularly reviewed.",
+            "Level 3: Defined - Acceptable use policies are well-defined, communicated, and regularly reviewed, with clear roles and responsibilities.",
+            "Level 4: Managed - Acceptable use policies are integrated into the organization's overall governance framework, with metrics to measure effectiveness.",
+            "Level 5: Optimized - Acceptable use policies are continuously monitored, evaluated, and improved, with a culture of security awareness throughout the organization."
+          ],
+          "expected_evidence_types": [
+            "policy_document",
+            "training_records"
+          ],
+          "cross_references": []
+        },
+        {
+          "control_id": "12.3",
+          "control_statement": "Risks to the cardholder data environment are formally identified, evaluated, and managed, including identification of assets, threats, and factors that contribute to the likelihood and/or impact of a threat being realized.",
+          "maturity_levels": [
+            "Level 1: Ad-hoc - Basic risk management processes are established but not consistently enforced.",
+            "Level 2: Repeatable - Risk management processes are documented and communicated to personnel, but not regularly reviewed.",
+            "Level 3: Defined - Risk management processes are well-defined, communicated, and regularly reviewed, with clear roles and responsibilities.",
+            "Level 4: Managed - Risk management processes are integrated into the organization's overall governance framework, with metrics to measure effectiveness.",
+            "Level 5: Optimized - Risk management processes are continuously monitored, evaluated, and improved, with a culture of risk awareness throughout the organization."
+          ],
+          "expected_evidence_types": [
+            "risk_register",
+            "risk_assessment_reports"
+          ],
+          "cross_references": []
+        },
+        {
+          "control_id": "12.4",
+          "control_statement": "PCI DSS compliance is managed, including overall accountability for maintaining PCI DSS compliance and defining a charter for a PCI DSS compliance program.",
+          "maturity_levels": [
+            "Level 1: Ad-hoc - Basic compliance processes are established but not consistently enforced.",
+            "Level 2: Repeatable - Compliance processes are documented and communicated to personnel, but not regularly reviewed.",
+            "Level 3: Defined - Compliance processes are well-defined, communicated, and regularly reviewed, with clear roles and responsibilities.",
+            "Level 4: Managed - Compliance processes are integrated into the organization's overall governance framework, with metrics to measure effectiveness.",
+            "Level 5: Optimized - Compliance processes are continuously monitored, evaluated, and improved, with a culture of compliance awareness throughout the organization."
+          ],
+          "expected_evidence_types": [
+            "compliance_reports",
+            "audit_reports"
+          ],
+          "cross_references": []
+        },
+        {
+          "control_id": "12.5",
+          "control_statement": "PCI DSS scope is documented and validated, including an inventory of system components that are in scope for PCI DSS, and a description of function/use for each.",
+          "maturity_levels": [
+            "Level 1: Ad-hoc - Basic scope documentation is established but not consistently enforced.",
+            "Level 2: Repeatable - Scope documentation is documented and communicated to personnel, but not regularly reviewed.",
+            "Level 3: Defined - Scope documentation is well-defined, communicated, and regularly reviewed, with clear roles and responsibilities.",
+            "Level 4: Managed - Scope documentation is integrated into the organization's overall governance framework, with metrics to measure effectiveness.",
+            "Level 5: Optimized - Scope documentation is continuously monitored, evaluated, and improved, with a culture of scope awareness throughout the organization."
+          ],
+          "expected_evidence_types": [
+            "scope_documentation",
+            "inventory_reports"
+          ],
+          "cross_references": []
+        },
+        {
+          "control_id": "12.6",
+          "control_statement": "Security awareness education is an ongoing process, including a formal security awareness program that makes all personnel aware of the entity's information security policy and procedures.",
+          "maturity_levels": [
+            "Level 1: Ad-hoc - Basic security awareness training is provided but not consistently enforced.",
+            "Level 2: Repeatable - Security awareness training is documented and communicated to personnel, but not regularly reviewed.",
+            "Level 3: Defined - Security awareness training is well-defined, communicated, and regularly reviewed, with clear roles and responsibilities.",
+            "Level 4: Managed - Security awareness training is integrated into the organization's overall governance framework, with metrics to measure effectiveness.",
+            "Level 5: Optimized - Security awareness training is continuously monitored, evaluated, and improved, with a culture of security awareness throughout the organization."
+          ],
+          "expected_evidence_types": [
+            "training_records",
+            "security_awareness_program"
+          ],
+          "cross_references": []
+        },
+        {
+          "control_id": "12.7",
+          "control_statement": "Personnel are screened to reduce risks from insider threats, including potential personnel who will have access to the CDE.",
+          "maturity_levels": [
+            "Level 1: Ad-hoc - Basic screening processes are established but not consistently enforced.",
+            "Level 2: Repeatable - Screening processes are documented and communicated to personnel, but not regularly reviewed.",
+            "Level 3: Defined - Screening processes are well-defined, communicated, and regularly reviewed, with clear roles and responsibilities.",
+            "Level 4: Managed - Screening processes are integrated into the organization's overall governance framework, with metrics to measure effectiveness.",
+            "Level 5: Optimized - Screening processes are continuously monitored, evaluated, and improved, with a culture of security awareness throughout the organization."
+          ],
+          "expected_evidence_types": [
+            "background_check_reports",
+            "screening_procedures"
+          ],
+          "cross_references": []
+        },
+        {
+          "control_id": "12.8",
+          "control_statement": "Risk to information assets associated with third-party service providers is managed, including a list of all third-party service providers with which account data is shared or that could affect the security of account data.",
+          "maturity_levels": [
+            "Level 1: Ad-hoc - Basic third-party risk management processes are established but not consistently enforced.",
+            "Level 2: Repeatable - Third-party risk management processes are documented and communicated to personnel, but not regularly reviewed.",
+            "Level 3: Defined - Third-party risk management processes are well-defined, communicated, and regularly reviewed, with clear roles and responsibilities.",
+            "Level 4: Managed - Third-party risk management processes are integrated into the organization's overall governance framework, with metrics to measure effectiveness.",
+            "Level 5: Optimized - Third-party risk management processes are continuously monitored, evaluated, and improved, with a culture of third-party risk awareness throughout the organization."
+          ],
+          "expected_evidence_types": [
+            "third_party_risk_assessment_reports",
+            "contractual_agreements"
+          ],
+          "cross_references": []
+        },
+        {
+          "control_id": "12.9.1",
+          "control_statement": "TPSPs provide written agreements to customers that include acknowledgments that TPSPs are responsible for the security of account data the TPSP possesses or otherwise stores, processes, or transmits on behalf of the customer, or to the extent that the TPSP could impact the security of the customer\u00e2\u20ac\u2122s cardholder data and/or sensitive authentication data.",
+          "maturity_levels": [
+            "Level 1: Ad-hoc - Basic agreements are in place but lack formal security responsibilities",
+            "Level 2: Repeatable - Standardized agreements include security responsibilities but may not be consistently applied",
+            "Level 3: Defined - Formal agreements with clear security responsibilities are consistently applied to all customers",
+            "Level 4: Managed - Agreements are regularly reviewed and updated to ensure ongoing security responsibilities",
+            "Level 5: Optimized - Automated processes ensure that agreements are consistently applied and updated in real-time"
+          ],
+          "expected_evidence_types": [
+            "written_agreements",
+            "service_level_agreements"
+          ],
+          "cross_references": []
+        },
+        {
+          "control_id": "12.10",
+          "control_statement": "An incident response plan exists and is ready to be activated in the event of a suspected or confirmed security incident.",
+          "maturity_levels": [
+            "Level 1: Ad-hoc - Basic incident response plan is in place but lacks formal procedures",
+            "Level 2: Repeatable - Standardized incident response plan includes basic procedures but may not be consistently applied",
+            "Level 3: Defined - Formal incident response plan with clear procedures is consistently applied to all incidents",
+            "Level 4: Managed - Incident response plan is regularly reviewed and updated to ensure ongoing effectiveness",
+            "Level 5: Optimized - Automated processes ensure that incident response plan is consistently applied and updated in real-time"
+          ],
+          "expected_evidence_types": [
+            "incident_response_plan",
+            "incident_response_procedures"
+          ],
+          "cross_references": []
+        }
+      ]
+    },
+    {
+      "domain_id": "REQ-10",
+      "domain_name": "Log Management",
+      "sub_domains": [
+        {
+          "sub_domain_id": "8441d5f9-65f2-40e7-b3aa-4b34d85906d4",
+          "sub_domain_name": "Requirement 10.1",
+          "controls": [
+            {
+              "control_id": "10.1",
+              "control_statement": "All security policies and operational procedures that are identified in Requirement 10 are: Documented. Kept up to date. In use. Known to all affected parties.",
+              "maturity_levels": [
+                "Level 1: Ad-hoc - Basic log management",
+                "Level 2: Repeatable - Standardized log management process",
+                "Level 3: Defined - Log management integrated with security information and event management",
+                "Level 4: Managed - Continuous monitoring of log management",
+                "Level 5: Optimized - Advanced log management with automation"
+              ],
+              "expected_evidence_types": [
+                "log_management_policy",
+                "access_logs"
+              ],
+              "cross_references": []
+            }
+          ]
+        },
+        {
+          "sub_domain_id": "ce15faa8-5810-4653-ad13-c0f54b514aa1",
+          "sub_domain_name": "Requirement 10.2",
+          "controls": [
+            {
+              "control_id": "10.2",
+              "control_statement": "Audit logs are enabled and active for all system components and cardholder data.",
+              "maturity_levels": [
+                "Level 1: Ad-hoc - Basic audit logging",
+                "Level 2: Repeatable - Standardized audit logging process",
+                "Level 3: Defined - Audit logging integrated with security information and event management",
+                "Level 4: Managed - Continuous monitoring of audit logging",
+                "Level 5: Optimized - Advanced audit logging with automation"
+              ],
+              "expected_evidence_types": [
+                "audit_logging_policy",
+                "access_logs"
+              ],
+              "cross_references": []
+            }
+          ]
+        },
+        {
+          "sub_domain_id": "a444a0b5-31ef-42f6-aaaa-a64040d3e938",
+          "sub_domain_name": "Requirement 10.3",
+          "controls": [
+            {
+              "control_id": "10.3",
+              "control_statement": "Read access to audit logs files is limited to those with a job-related need.",
+              "maturity_levels": [
+                "Level 1: Ad-hoc - Basic audit log access control",
+                "Level 2: Repeatable - Standardized audit log access control process",
+                "Level 3: Defined - Audit log access control integrated with security information and event management",
+                "Level 4: Managed - Continuous monitoring of audit log access control",
+                "Level 5: Optimized - Advanced audit log access control with automation"
+              ],
+              "expected_evidence_types": [
+                "audit_log_access_control_policy",
+                "access_logs"
+              ],
+              "cross_references": []
+            }
+          ]
+        },
+        {
+          "sub_domain_id": "33ad5d1f-7da7-46ab-86a3-61f96344d25c",
+          "sub_domain_name": "Requirement 10.4",
+          "controls": [
+            {
+              "control_id": "10.4",
+              "control_statement": "The following audit logs are reviewed at least once daily: All security events.",
+              "maturity_levels": [
+                "Level 1: Ad-hoc - Basic audit log review",
+                "Level 2: Repeatable - Standardized audit log review process",
+                "Level 3: Defined - Audit log review integrated with security information and event management",
+                "Level 4: Managed - Continuous monitoring of audit log review",
+                "Level 5: Optimized - Advanced audit log review with automation"
+              ],
+              "expected_evidence_types": [
+                "audit_log_review_policy",
+                "access_logs"
+              ],
+              "cross_references": []
+            }
+          ]
+        },
+        {
+          "sub_domain_id": "b929d0db-2b9f-4e70-b956-ab2128288ee0",
+          "sub_domain_name": "Requirement 10.5",
+          "controls": [
+            {
+              "control_id": "10.5",
+              "control_statement": "Audit log history is retained and available for at least 12 months, with at least the most recent three months immediately available for analysis.",
+              "maturity_levels": [
+                "Level 1: Ad-hoc - Log history is retained but not consistently reviewed or analyzed.",
+                "Level 2: Repeatable - Log history is regularly reviewed and analyzed, but only for specific security incidents.",
+                "Level 3: Defined - Log history is retained and regularly reviewed and analyzed as part of a defined security monitoring process.",
+                "Level 4: Managed - Log history is retained, reviewed, and analyzed in real-time, with automated alerts for suspicious activity.",
+                "Level 5: Optimized - Log history is retained, reviewed, and analyzed in real-time, with automated alerts and response mechanisms for suspicious activity."
+              ],
+              "expected_evidence_types": [
+                "audit_logs",
+                "log_retention_policies"
+              ],
+              "cross_references": []
+            }
+          ]
+        },
+        {
+          "sub_domain_id": "67ed8a41-2924-4a86-ad58-53e49e414904",
+          "sub_domain_name": "Requirement 10.6",
+          "controls": [
+            {
+              "control_id": "10.6",
+              "control_statement": "System clocks and time are synchronized using time-synchronization technology.",
+              "maturity_levels": [
+                "Level 1: Ad-hoc - Time synchronization is not consistently implemented or monitored.",
+                "Level 2: Repeatable - Time synchronization is implemented, but not regularly monitored or updated.",
+                "Level 3: Defined - Time synchronization is implemented and regularly monitored, with a defined process for updates and maintenance.",
+                "Level 4: Managed - Time synchronization is implemented, monitored, and maintained in real-time, with automated alerts for discrepancies.",
+                "Level 5: Optimized - Time synchronization is implemented, monitored, and maintained in real-time, with automated alerts and response mechanisms for discrepancies."
+              ],
+              "expected_evidence_types": [
+                "time_synchronization_policies",
+                "system_clock_configurations"
+              ],
+              "cross_references": []
+            }
+          ]
+        },
+        {
+          "sub_domain_id": "b67527c6-3016-48cd-9dcf-8cde5d918cf6",
+          "sub_domain_name": "Requirement 10.7",
+          "controls": [
+            {
+              "control_id": "10.7",
+              "control_statement": "Failures of critical security control systems are detected, alerted, and addressed promptly.",
+              "maturity_levels": [
+                "Level 1: Ad-hoc - Critical security control system failures are not consistently detected or addressed.",
+                "Level 2: Repeatable - Critical security control system failures are detected, but not consistently addressed or resolved.",
+                "Level 3: Defined - Critical security control system failures are detected, addressed, and resolved, with a defined process for incident response.",
+                "Level 4: Managed - Critical security control system failures are detected, addressed, and resolved in real-time, with automated alerts and response mechanisms.",
+                "Level 5: Optimized - Critical security control system failures are detected, addressed, and resolved in real-time, with automated alerts, response mechanisms, and continuous monitoring."
+              ],
+              "expected_evidence_types": [
+                "incident_response_policies",
+                "system_failure_reports"
+              ],
+              "cross_references": []
+            }
+          ]
+        }
+      ],
+      "controls": [
+        {
+          "control_id": "10.1",
+          "control_statement": "All security policies and operational procedures that are identified in Requirement 10 are: Documented. Kept up to date. In use. Known to all affected parties.",
+          "maturity_levels": [
+            "Level 1: Ad-hoc - Basic log management",
+            "Level 2: Repeatable - Standardized log management process",
+            "Level 3: Defined - Log management integrated with security information and event management",
+            "Level 4: Managed - Continuous monitoring of log management",
+            "Level 5: Optimized - Advanced log management with automation"
+          ],
+          "expected_evidence_types": [
+            "log_management_policy",
+            "access_logs"
+          ],
+          "cross_references": []
+        },
+        {
+          "control_id": "10.2",
+          "control_statement": "Audit logs are enabled and active for all system components and cardholder data.",
+          "maturity_levels": [
+            "Level 1: Ad-hoc - Basic audit logging",
+            "Level 2: Repeatable - Standardized audit logging process",
+            "Level 3: Defined - Audit logging integrated with security information and event management",
+            "Level 4: Managed - Continuous monitoring of audit logging",
+            "Level 5: Optimized - Advanced audit logging with automation"
+          ],
+          "expected_evidence_types": [
+            "audit_logging_policy",
+            "access_logs"
+          ],
+          "cross_references": []
+        },
+        {
+          "control_id": "10.3",
+          "control_statement": "Read access to audit logs files is limited to those with a job-related need.",
+          "maturity_levels": [
+            "Level 1: Ad-hoc - Basic audit log access control",
+            "Level 2: Repeatable - Standardized audit log access control process",
+            "Level 3: Defined - Audit log access control integrated with security information and event management",
+            "Level 4: Managed - Continuous monitoring of audit log access control",
+            "Level 5: Optimized - Advanced audit log access control with automation"
+          ],
+          "expected_evidence_types": [
+            "audit_log_access_control_policy",
+            "access_logs"
+          ],
+          "cross_references": []
+        },
+        {
+          "control_id": "10.4",
+          "control_statement": "The following audit logs are reviewed at least once daily: All security events.",
+          "maturity_levels": [
+            "Level 1: Ad-hoc - Basic audit log review",
+            "Level 2: Repeatable - Standardized audit log review process",
+            "Level 3: Defined - Audit log review integrated with security information and event management",
+            "Level 4: Managed - Continuous monitoring of audit log review",
+            "Level 5: Optimized - Advanced audit log review with automation"
+          ],
+          "expected_evidence_types": [
+            "audit_log_review_policy",
+            "access_logs"
+          ],
+          "cross_references": []
+        },
+        {
+          "control_id": "10.5",
+          "control_statement": "Audit log history is retained and available for at least 12 months, with at least the most recent three months immediately available for analysis.",
+          "maturity_levels": [
+            "Level 1: Ad-hoc - Log history is retained but not consistently reviewed or analyzed.",
+            "Level 2: Repeatable - Log history is regularly reviewed and analyzed, but only for specific security incidents.",
+            "Level 3: Defined - Log history is retained and regularly reviewed and analyzed as part of a defined security monitoring process.",
+            "Level 4: Managed - Log history is retained, reviewed, and analyzed in real-time, with automated alerts for suspicious activity.",
+            "Level 5: Optimized - Log history is retained, reviewed, and analyzed in real-time, with automated alerts and response mechanisms for suspicious activity."
+          ],
+          "expected_evidence_types": [
+            "audit_logs",
+            "log_retention_policies"
+          ],
+          "cross_references": []
+        },
+        {
+          "control_id": "10.6",
+          "control_statement": "System clocks and time are synchronized using time-synchronization technology.",
+          "maturity_levels": [
+            "Level 1: Ad-hoc - Time synchronization is not consistently implemented or monitored.",
+            "Level 2: Repeatable - Time synchronization is implemented, but not regularly monitored or updated.",
+            "Level 3: Defined - Time synchronization is implemented and regularly monitored, with a defined process for updates and maintenance.",
+            "Level 4: Managed - Time synchronization is implemented, monitored, and maintained in real-time, with automated alerts for discrepancies.",
+            "Level 5: Optimized - Time synchronization is implemented, monitored, and maintained in real-time, with automated alerts and response mechanisms for discrepancies."
+          ],
+          "expected_evidence_types": [
+            "time_synchronization_policies",
+            "system_clock_configurations"
+          ],
+          "cross_references": []
+        },
+        {
+          "control_id": "10.7",
+          "control_statement": "Failures of critical security control systems are detected, alerted, and addressed promptly.",
+          "maturity_levels": [
+            "Level 1: Ad-hoc - Critical security control system failures are not consistently detected or addressed.",
+            "Level 2: Repeatable - Critical security control system failures are detected, but not consistently addressed or resolved.",
+            "Level 3: Defined - Critical security control system failures are detected, addressed, and resolved, with a defined process for incident response.",
+            "Level 4: Managed - Critical security control system failures are detected, addressed, and resolved in real-time, with automated alerts and response mechanisms.",
+            "Level 5: Optimized - Critical security control system failures are detected, addressed, and resolved in real-time, with automated alerts, response mechanisms, and continuous monitoring."
+          ],
+          "expected_evidence_types": [
+            "incident_response_policies",
+            "system_failure_reports"
+          ],
+          "cross_references": []
+        }
+      ]
+    },
+    {
+      "domain_id": "REQ-1",
+      "domain_name": "Network Security Controls",
+      "sub_domains": [
+        {
+          "sub_domain_id": "d0fea3eb-e923-4cd7-931f-c915a2f4d661",
+          "sub_domain_name": "Requirement 1.1",
+          "controls": [
+            {
+              "control_id": "1.1.1",
+              "control_statement": "All security policies and operational procedures that are identified in Requirement 1 are: Documented, Kept up to date, In use, Known to all affected parties.",
+              "maturity_levels": [
+                "Level 1: Ad-hoc - Security policies and procedures are not well-defined or documented.",
+                "Level 2: Repeatable - Security policies and procedures are documented but not consistently applied.",
+                "Level 3: Defined - Security policies and procedures are well-defined, documented, and consistently applied.",
+                "Level 4: Managed - Security policies and procedures are regularly reviewed and updated to ensure effectiveness.",
+                "Level 5: Optimized - Security policies and procedures are continuously monitored and improved to ensure optimal security posture."
+              ],
+              "expected_evidence_types": [
+                "security_policies",
+                "operational_procedures"
+              ],
+              "cross_references": []
+            },
+            {
+              "control_id": "1.1.2",
+              "control_statement": "Roles and responsibilities for performing activities in Requirement 1 are documented, assigned, and understood.",
+              "maturity_levels": [
+                "Level 1: Ad-hoc - Roles and responsibilities are not clearly defined or documented.",
+                "Level 2: Repeatable - Roles and responsibilities are documented but not consistently applied.",
+                "Level 3: Defined - Roles and responsibilities are well-defined, documented, and consistently applied.",
+                "Level 4: Managed - Roles and responsibilities are regularly reviewed and updated to ensure effectiveness.",
+                "Level 5: Optimized - Roles and responsibilities are continuously monitored and improved to ensure optimal security posture."
+              ],
+              "expected_evidence_types": [
+                "role_definitions",
+                "responsibility_assignments"
+              ],
+              "cross_references": []
+            }
+          ]
+        },
+        {
+          "sub_domain_id": "c3da86a4-a9fa-494e-8b4e-3b86a0208875",
+          "sub_domain_name": "Requirement 1.2",
+          "controls": [
+            {
+              "control_id": "1.2.1",
+              "control_statement": "Configuration standards for NSC rulesets are: Defined, Implemented, Maintained.",
+              "maturity_levels": [
+                "Level 1: Ad-hoc - Configuration standards are not well-defined or documented.",
+                "Level 2: Repeatable - Configuration standards are documented but not consistently applied.",
+                "Level 3: Defined - Configuration standards are well-defined, documented, and consistently applied.",
+                "Level 4: Managed - Configuration standards are regularly reviewed and updated to ensure effectiveness.",
+                "Level 5: Optimized - Configuration standards are continuously monitored and improved to ensure optimal security posture."
+              ],
+              "expected_evidence_types": [
+                "configuration_standards",
+                "NSC_rulesets"
+              ],
+              "cross_references": []
+            },
+            {
+              "control_id": "1.2.2",
+              "control_statement": "All changes to network connections and to configurations of NSCs are approved and managed in accordance with the change control process defined at Requirement 6.5.1.",
+              "maturity_levels": [
+                "Level 1: Ad-hoc - Changes to network connections and NSC configurations are not managed or approved.",
+                "Level 2: Repeatable - Changes to network connections and NSC configurations are managed but not consistently approved.",
+                "Level 3: Defined - Changes to network connections and NSC configurations are well-defined, managed, and approved.",
+                "Level 4: Managed - Changes to network connections and NSC configurations are regularly reviewed and updated to ensure effectiveness.",
+                "Level 5: Optimized - Changes to network connections and NSC configurations are continuously monitored and improved to ensure optimal security posture."
+              ],
+              "expected_evidence_types": [
+                "change_control_procedures",
+                "approval_records"
+              ],
+              "cross_references": []
+            }
+          ]
+        },
+        {
+          "sub_domain_id": "fa59cf51-5edb-4d37-9454-f7efe859db94",
+          "sub_domain_name": "Requirement 1.3",
+          "controls": [
+            {
+              "control_id": "1.3.1",
+              "control_statement": "Inbound traffic to the CDE is restricted as follows: To only traffic that is necessary, All other traffic is specifically denied.",
+              "maturity_levels": [
+                "Level 1: Ad-hoc - Inbound traffic to the CDE is not restricted or managed.",
+                "Level 2: Repeatable - Inbound traffic to the CDE is restricted but not consistently managed.",
+                "Level 3: Defined - Inbound traffic to the CDE is well-defined, restricted, and managed.",
+                "Level 4: Managed - Inbound traffic to the CDE is regularly reviewed and updated to ensure effectiveness.",
+                "Level 5: Optimized - Inbound traffic to the CDE is continuously monitored and improved to ensure optimal security posture."
+              ],
+              "expected_evidence_types": [
+                "traffic_restrictions",
+                "access_controls"
+              ],
+              "cross_references": []
+            },
+            {
+              "control_id": "1.3.2",
+              "control_statement": "Outbound traffic from the CDE is restricted as follows: To only traffic that is necessary, All other traffic is specifically denied.",
+              "maturity_levels": [
+                "Level 1: Ad-hoc - Outbound traffic from the CDE is not restricted or managed.",
+                "Level 2: Repeatable - Outbound traffic from the CDE is restricted but not consistently managed.",
+                "Level 3: Defined - Outbound traffic from the CDE is well-defined, restricted, and managed.",
+                "Level 4: Managed - Outbound traffic from the CDE is regularly reviewed and updated to ensure effectiveness.",
+                "Level 5: Optimized - Outbound traffic from the CDE is continuously monitored and improved to ensure optimal security posture."
+              ],
+              "expected_evidence_types": [
+                "traffic_restrictions",
+                "access_controls"
+              ],
+              "cross_references": []
+            },
+            {
+              "control_id": "1.3.3",
+              "control_statement": "NSCs are installed between all wireless networks and the CDE.",
+              "maturity_levels": [
+                "Level 1: Ad-hoc - NSCs are not installed or managed between wireless networks and the CDE.",
+                "Level 2: Repeatable - NSCs are installed but not consistently managed between wireless networks and the CDE.",
+                "Level 3: Defined - NSCs are well-defined, installed, and managed between wireless networks and the CDE.",
+                "Level 4: Managed - NSCs are regularly reviewed and updated to ensure effectiveness between wireless networks and the CDE.",
+                "Level 5: Optimized - NSCs are continuously monitored and improved to ensure optimal security posture between wireless networks and the CDE."
+              ],
+              "expected_evidence_types": [
+                "NSC_installations",
+                "wireless_network_configurations"
+              ],
+              "cross_references": []
+            }
+          ]
+        },
+        {
+          "sub_domain_id": "97f8b856-2f7a-466c-9fa7-807d5f02e670",
+          "sub_domain_name": "Requirement 1.4",
+          "controls": [
+            {
+              "control_id": "1.4.1",
+              "control_statement": "NSCs are implemented between trusted and untrusted networks.",
+              "maturity_levels": [
+                "Level 1: Ad-hoc - NSCs are not implemented or managed between trusted and untrusted networks.",
+                "Level 2: Repeatable - NSCs are implemented but not consistently managed between trusted and untrusted networks.",
+                "Level 3: Defined - NSCs are well-defined, implemented, and managed between trusted and untrusted networks.",
+                "Level 4: Managed - NSCs are regularly reviewed and updated to ensure effectiveness between trusted and untrusted networks.",
+                "Level 5: Optimized - NSCs are continuously monitored and improved to ensure optimal security posture between trusted and untrusted networks."
+              ],
+              "expected_evidence_types": [
+                "NSC_implementations",
+                "network_segmentations"
+              ],
+              "cross_references": []
+            }
+          ]
+        },
+        {
+          "sub_domain_id": "d988b26a-e935-4139-92ee-bd488a0f3f28",
+          "sub_domain_name": "Requirement 1.5",
+          "controls": [
+            {
+              "control_id": "1.5.1",
+              "control_statement": "Security controls are implemented on any computing devices, including company- and employee-owned devices, that connect to both untrusted networks and the CDE.",
+              "maturity_levels": [
+                "Level 1: Ad-hoc - Security controls are not implemented or managed on computing devices that connect to untrusted networks and the CDE.",
+                "Level 2: Repeatable - Security controls are implemented but not consistently managed on computing devices that connect to untrusted networks and the CDE.",
+                "Level 3: Defined - Security controls are well-defined, implemented, and managed on computing devices that connect to untrusted networks and the CDE.",
+                "Level 4: Managed - Security controls are regularly reviewed and updated to ensure effectiveness on computing devices that connect to untrusted networks and the CDE.",
+                "Level 5: Optimized - Security controls are continuously monitored and improved to ensure optimal security posture on computing devices that connect to untrusted networks and the CDE."
+              ],
+              "expected_evidence_types": [
+                "security_control_implementations",
+                "device_configurations"
+              ],
+              "cross_references": []
+            }
+          ]
+        }
+      ],
+      "controls": [
+        {
+          "control_id": "1.1.1",
+          "control_statement": "All security policies and operational procedures that are identified in Requirement 1 are: Documented, Kept up to date, In use, Known to all affected parties.",
+          "maturity_levels": [
+            "Level 1: Ad-hoc - Security policies and procedures are not well-defined or documented.",
+            "Level 2: Repeatable - Security policies and procedures are documented but not consistently applied.",
+            "Level 3: Defined - Security policies and procedures are well-defined, documented, and consistently applied.",
+            "Level 4: Managed - Security policies and procedures are regularly reviewed and updated to ensure effectiveness.",
+            "Level 5: Optimized - Security policies and procedures are continuously monitored and improved to ensure optimal security posture."
+          ],
+          "expected_evidence_types": [
+            "security_policies",
+            "operational_procedures"
+          ],
+          "cross_references": []
+        },
+        {
+          "control_id": "1.1.2",
+          "control_statement": "Roles and responsibilities for performing activities in Requirement 1 are documented, assigned, and understood.",
+          "maturity_levels": [
+            "Level 1: Ad-hoc - Roles and responsibilities are not clearly defined or documented.",
+            "Level 2: Repeatable - Roles and responsibilities are documented but not consistently applied.",
+            "Level 3: Defined - Roles and responsibilities are well-defined, documented, and consistently applied.",
+            "Level 4: Managed - Roles and responsibilities are regularly reviewed and updated to ensure effectiveness.",
+            "Level 5: Optimized - Roles and responsibilities are continuously monitored and improved to ensure optimal security posture."
+          ],
+          "expected_evidence_types": [
+            "role_definitions",
+            "responsibility_assignments"
+          ],
+          "cross_references": []
+        },
+        {
+          "control_id": "1.2.1",
+          "control_statement": "Configuration standards for NSC rulesets are: Defined, Implemented, Maintained.",
+          "maturity_levels": [
+            "Level 1: Ad-hoc - Configuration standards are not well-defined or documented.",
+            "Level 2: Repeatable - Configuration standards are documented but not consistently applied.",
+            "Level 3: Defined - Configuration standards are well-defined, documented, and consistently applied.",
+            "Level 4: Managed - Configuration standards are regularly reviewed and updated to ensure effectiveness.",
+            "Level 5: Optimized - Configuration standards are continuously monitored and improved to ensure optimal security posture."
+          ],
+          "expected_evidence_types": [
+            "configuration_standards",
+            "NSC_rulesets"
+          ],
+          "cross_references": []
+        },
+        {
+          "control_id": "1.2.2",
+          "control_statement": "All changes to network connections and to configurations of NSCs are approved and managed in accordance with the change control process defined at Requirement 6.5.1.",
+          "maturity_levels": [
+            "Level 1: Ad-hoc - Changes to network connections and NSC configurations are not managed or approved.",
+            "Level 2: Repeatable - Changes to network connections and NSC configurations are managed but not consistently approved.",
+            "Level 3: Defined - Changes to network connections and NSC configurations are well-defined, managed, and approved.",
+            "Level 4: Managed - Changes to network connections and NSC configurations are regularly reviewed and updated to ensure effectiveness.",
+            "Level 5: Optimized - Changes to network connections and NSC configurations are continuously monitored and improved to ensure optimal security posture."
+          ],
+          "expected_evidence_types": [
+            "change_control_procedures",
+            "approval_records"
+          ],
+          "cross_references": []
+        },
+        {
+          "control_id": "1.3.1",
+          "control_statement": "Inbound traffic to the CDE is restricted as follows: To only traffic that is necessary, All other traffic is specifically denied.",
+          "maturity_levels": [
+            "Level 1: Ad-hoc - Inbound traffic to the CDE is not restricted or managed.",
+            "Level 2: Repeatable - Inbound traffic to the CDE is restricted but not consistently managed.",
+            "Level 3: Defined - Inbound traffic to the CDE is well-defined, restricted, and managed.",
+            "Level 4: Managed - Inbound traffic to the CDE is regularly reviewed and updated to ensure effectiveness.",
+            "Level 5: Optimized - Inbound traffic to the CDE is continuously monitored and improved to ensure optimal security posture."
+          ],
+          "expected_evidence_types": [
+            "traffic_restrictions",
+            "access_controls"
+          ],
+          "cross_references": []
+        },
+        {
+          "control_id": "1.3.2",
+          "control_statement": "Outbound traffic from the CDE is restricted as follows: To only traffic that is necessary, All other traffic is specifically denied.",
+          "maturity_levels": [
+            "Level 1: Ad-hoc - Outbound traffic from the CDE is not restricted or managed.",
+            "Level 2: Repeatable - Outbound traffic from the CDE is restricted but not consistently managed.",
+            "Level 3: Defined - Outbound traffic from the CDE is well-defined, restricted, and managed.",
+            "Level 4: Managed - Outbound traffic from the CDE is regularly reviewed and updated to ensure effectiveness.",
+            "Level 5: Optimized - Outbound traffic from the CDE is continuously monitored and improved to ensure optimal security posture."
+          ],
+          "expected_evidence_types": [
+            "traffic_restrictions",
+            "access_controls"
+          ],
+          "cross_references": []
+        },
+        {
+          "control_id": "1.3.3",
+          "control_statement": "NSCs are installed between all wireless networks and the CDE.",
+          "maturity_levels": [
+            "Level 1: Ad-hoc - NSCs are not installed or managed between wireless networks and the CDE.",
+            "Level 2: Repeatable - NSCs are installed but not consistently managed between wireless networks and the CDE.",
+            "Level 3: Defined - NSCs are well-defined, installed, and managed between wireless networks and the CDE.",
+            "Level 4: Managed - NSCs are regularly reviewed and updated to ensure effectiveness between wireless networks and the CDE.",
+            "Level 5: Optimized - NSCs are continuously monitored and improved to ensure optimal security posture between wireless networks and the CDE."
+          ],
+          "expected_evidence_types": [
+            "NSC_installations",
+            "wireless_network_configurations"
+          ],
+          "cross_references": []
+        },
+        {
+          "control_id": "1.4.1",
+          "control_statement": "NSCs are implemented between trusted and untrusted networks.",
+          "maturity_levels": [
+            "Level 1: Ad-hoc - NSCs are not implemented or managed between trusted and untrusted networks.",
+            "Level 2: Repeatable - NSCs are implemented but not consistently managed between trusted and untrusted networks.",
+            "Level 3: Defined - NSCs are well-defined, implemented, and managed between trusted and untrusted networks.",
+            "Level 4: Managed - NSCs are regularly reviewed and updated to ensure effectiveness between trusted and untrusted networks.",
+            "Level 5: Optimized - NSCs are continuously monitored and improved to ensure optimal security posture between trusted and untrusted networks."
+          ],
+          "expected_evidence_types": [
+            "NSC_implementations",
+            "network_segmentations"
+          ],
+          "cross_references": []
+        },
+        {
+          "control_id": "1.5.1",
+          "control_statement": "Security controls are implemented on any computing devices, including company- and employee-owned devices, that connect to both untrusted networks and the CDE.",
+          "maturity_levels": [
+            "Level 1: Ad-hoc - Security controls are not implemented or managed on computing devices that connect to untrusted networks and the CDE.",
+            "Level 2: Repeatable - Security controls are implemented but not consistently managed on computing devices that connect to untrusted networks and the CDE.",
+            "Level 3: Defined - Security controls are well-defined, implemented, and managed on computing devices that connect to untrusted networks and the CDE.",
+            "Level 4: Managed - Security controls are regularly reviewed and updated to ensure effectiveness on computing devices that connect to untrusted networks and the CDE.",
+            "Level 5: Optimized - Security controls are continuously monitored and improved to ensure optimal security posture on computing devices that connect to untrusted networks and the CDE."
+          ],
+          "expected_evidence_types": [
+            "security_control_implementations",
+            "device_configurations"
+          ],
+          "cross_references": []
+        }
+      ]
+    },
+    {
+      "domain_id": "REQ-9",
+      "domain_name": "Physical Access",
+      "sub_domains": [
+        {
+          "sub_domain_id": "bc7d34fa-e085-4ae7-8b77-0c058fa9a516",
+          "sub_domain_name": "Requirement 9.1",
+          "controls": [
+            {
+              "control_id": "9.1",
+              "control_statement": "Processes and mechanisms for restricting physical access to cardholder data are defined and implemented.",
+              "maturity_levels": [
+                "Level 1: Ad-hoc - Basic physical access control",
+                "Level 2: Repeatable - Standardized physical access control process",
+                "Level 3: Defined - Physical access control integrated with security information and event management",
+                "Level 4: Managed - Continuous monitoring of physical access control",
+                "Level 5: Optimized - Advanced physical access control with biometrics"
+              ],
+              "expected_evidence_types": [
+                "physical_access_control_policy",
+                "access_logs"
+              ],
+              "cross_references": []
+            }
+          ]
+        },
+        {
+          "sub_domain_id": "e951bcd9-ab89-495d-b34d-950dca93f152",
+          "sub_domain_name": "Requirement 9.2",
+          "controls": [
+            {
+              "control_id": "9.2",
+              "control_statement": "Appropriate facility entry controls are in place to restrict physical access to systems in the CDE.",
+              "maturity_levels": [
+                "Level 1: Ad-hoc - Basic facility entry control",
+                "Level 2: Repeatable - Standardized facility entry control process",
+                "Level 3: Defined - Facility entry control integrated with security information and event management",
+                "Level 4: Managed - Continuous monitoring of facility entry control",
+                "Level 5: Optimized - Advanced facility entry control with automation"
+              ],
+              "expected_evidence_types": [
+                "facility_entry_control_policy",
+                "access_logs"
+              ],
+              "cross_references": []
+            }
+          ]
+        },
+        {
+          "sub_domain_id": "975b387f-2a0e-47e5-a782-6e11aef9fbfb",
+          "sub_domain_name": "Requirement 9.3",
+          "controls": [
+            {
+              "control_id": "9.3",
+              "control_statement": "Procedures are implemented for authorizing and managing physical access of personnel to the CDE.",
+              "maturity_levels": [
+                "Level 1: Ad-hoc - Basic physical access management",
+                "Level 2: Repeatable - Standardized physical access management process",
+                "Level 3: Defined - Physical access management integrated with identity management",
+                "Level 4: Managed - Continuous monitoring of physical access management",
+                "Level 5: Optimized - Advanced physical access management with automation"
+              ],
+              "expected_evidence_types": [
+                "physical_access_management_policy",
+                "access_logs"
+              ],
+              "cross_references": []
+            }
+          ]
+        },
+        {
+          "sub_domain_id": "7237647d-ce22-4b9e-ae2f-fc3171bbc6b4",
+          "sub_domain_name": "Requirement 9.4",
+          "controls": [
+            {
+              "control_id": "9.4",
+              "control_statement": "All media with cardholder data is physically secured.",
+              "maturity_levels": [
+                "Level 1: Ad-hoc - Basic media security",
+                "Level 2: Repeatable - Standardized media security process",
+                "Level 3: Defined - Media security integrated with security information and event management",
+                "Level 4: Managed - Continuous monitoring of media security",
+                "Level 5: Optimized - Advanced media security with encryption"
+              ],
+              "expected_evidence_types": [
+                "media_security_policy",
+                "access_logs"
+              ],
+              "cross_references": []
+            }
+          ]
+        },
+        {
+          "sub_domain_id": "c35868dd-173f-4486-981f-2264c8fda189",
+          "sub_domain_name": "Requirement 9.5",
+          "controls": [
+            {
+              "control_id": "9.5",
+              "control_statement": "POI devices that capture payment card data via direct physical interaction with the payment card form factor are protected from tampering and unauthorized substitution.",
+              "maturity_levels": [
+                "Level 1: Ad-hoc - Basic POI device security",
+                "Level 2: Repeatable - Standardized POI device security process",
+                "Level 3: Defined - POI device security integrated with security information and event management",
+                "Level 4: Managed - Continuous monitoring of POI device security",
+                "Level 5: Optimized - Advanced POI device security with automation"
+              ],
+              "expected_evidence_types": [
+                "POI_device_security_policy",
+                "access_logs"
+              ],
+              "cross_references": []
+            }
+          ]
+        }
+      ],
+      "controls": [
+        {
+          "control_id": "9.1",
+          "control_statement": "Processes and mechanisms for restricting physical access to cardholder data are defined and implemented.",
+          "maturity_levels": [
+            "Level 1: Ad-hoc - Basic physical access control",
+            "Level 2: Repeatable - Standardized physical access control process",
+            "Level 3: Defined - Physical access control integrated with security information and event management",
+            "Level 4: Managed - Continuous monitoring of physical access control",
+            "Level 5: Optimized - Advanced physical access control with biometrics"
+          ],
+          "expected_evidence_types": [
+            "physical_access_control_policy",
+            "access_logs"
+          ],
+          "cross_references": []
+        },
+        {
+          "control_id": "9.2",
+          "control_statement": "Appropriate facility entry controls are in place to restrict physical access to systems in the CDE.",
+          "maturity_levels": [
+            "Level 1: Ad-hoc - Basic facility entry control",
+            "Level 2: Repeatable - Standardized facility entry control process",
+            "Level 3: Defined - Facility entry control integrated with security information and event management",
+            "Level 4: Managed - Continuous monitoring of facility entry control",
+            "Level 5: Optimized - Advanced facility entry control with automation"
+          ],
+          "expected_evidence_types": [
+            "facility_entry_control_policy",
+            "access_logs"
+          ],
+          "cross_references": []
+        },
+        {
+          "control_id": "9.3",
+          "control_statement": "Procedures are implemented for authorizing and managing physical access of personnel to the CDE.",
+          "maturity_levels": [
+            "Level 1: Ad-hoc - Basic physical access management",
+            "Level 2: Repeatable - Standardized physical access management process",
+            "Level 3: Defined - Physical access management integrated with identity management",
+            "Level 4: Managed - Continuous monitoring of physical access management",
+            "Level 5: Optimized - Advanced physical access management with automation"
+          ],
+          "expected_evidence_types": [
+            "physical_access_management_policy",
+            "access_logs"
+          ],
+          "cross_references": []
+        },
+        {
+          "control_id": "9.4",
+          "control_statement": "All media with cardholder data is physically secured.",
+          "maturity_levels": [
+            "Level 1: Ad-hoc - Basic media security",
+            "Level 2: Repeatable - Standardized media security process",
+            "Level 3: Defined - Media security integrated with security information and event management",
+            "Level 4: Managed - Continuous monitoring of media security",
+            "Level 5: Optimized - Advanced media security with encryption"
+          ],
+          "expected_evidence_types": [
+            "media_security_policy",
+            "access_logs"
+          ],
+          "cross_references": []
+        },
+        {
+          "control_id": "9.5",
+          "control_statement": "POI devices that capture payment card data via direct physical interaction with the payment card form factor are protected from tampering and unauthorized substitution.",
+          "maturity_levels": [
+            "Level 1: Ad-hoc - Basic POI device security",
+            "Level 2: Repeatable - Standardized POI device security process",
+            "Level 3: Defined - POI device security integrated with security information and event management",
+            "Level 4: Managed - Continuous monitoring of POI device security",
+            "Level 5: Optimized - Advanced POI device security with automation"
+          ],
+          "expected_evidence_types": [
+            "POI_device_security_policy",
+            "access_logs"
+          ],
+          "cross_references": []
+        }
+      ]
+    },
+    {
+      "domain_id": "REQ-2",
+      "domain_name": "Secure Configurations",
+      "sub_domains": [
+        {
+          "sub_domain_id": "5a97443e-2cdd-414c-b539-741e4af0ba3f",
+          "sub_domain_name": "Requirement 2.1",
+          "controls": [
+            {
+              "control_id": "2.1.1",
+              "control_statement": "All security policies and operational procedures that are identified in Requirement 2 are: Documented, Kept up to date, In use, Known to all affected parties.",
+              "maturity_levels": [
+                "Level 1: Ad-hoc - Security policies and procedures are not well-defined or documented.",
+                "Level 2: Repeatable - Security policies and procedures are documented but not consistently applied.",
+                "Level 3: Defined - Security policies and procedures are well-defined, documented, and consistently applied.",
+                "Level 4: Managed - Security policies and procedures are regularly reviewed and updated to ensure effectiveness.",
+                "Level 5: Optimized - Security policies and procedures are continuously monitored and improved to ensure optimal security posture."
+              ],
+              "expected_evidence_types": [
+                "security_policies",
+                "operational_procedures"
+              ],
+              "cross_references": []
+            },
+            {
+              "control_id": "2.1.2",
+              "control_statement": "Roles and responsibilities for performing activities in Requirement 2 are documented, assigned, and understood.",
+              "maturity_levels": [
+                "Level 1: Ad-hoc - Roles and responsibilities are not clearly defined or documented.",
+                "Level 2: Repeatable - Roles and responsibilities are documented but not consistently applied.",
+                "Level 3: Defined - Roles and responsibilities are well-defined, documented, and consistently applied.",
+                "Level 4: Managed - Roles and responsibilities are regularly reviewed and updated to ensure effectiveness.",
+                "Level 5: Optimized - Roles and responsibilities are continuously monitored and improved to ensure optimal security posture."
+              ],
+              "expected_evidence_types": [
+                "role_definitions",
+                "responsibility_assignments"
+              ],
+              "cross_references": []
+            }
+          ]
+        },
+        {
+          "sub_domain_id": "1ae936d7-75a0-494e-aec5-83bedc6f147d",
+          "sub_domain_name": "Requirement 2.2",
+          "controls": [
+            {
+              "control_id": "2.2.1",
+              "control_statement": "Configuration standards are developed, implemented, and maintained to: Cover all system components, Address all known security vulnerabilities, Be consistent with industry-accepted system hardening standards or vendor hardening recommendations.",
+              "maturity_levels": [
+                "Level 1: Ad-hoc - Configuration standards are not well-defined or documented.",
+                "Level 2: Repeatable - Configuration standards are documented but not consistently applied.",
+                "Level 3: Defined - Configuration standards are well-defined, documented, and consistently applied.",
+                "Level 4: Managed - Configuration standards are regularly reviewed and updated to ensure effectiveness.",
+                "Level 5: Optimized - Configuration standards are continuously monitored and improved to ensure optimal security posture."
+              ],
+              "expected_evidence_types": [
+                "configuration_standards",
+                "system_component_configurations"
+              ],
+              "cross_references": []
+            }
+          ]
+        },
+        {
+          "sub_domain_id": "3354321a-1c14-4f8f-b508-74f2acefad83",
+          "sub_domain_name": "Requirement 2.3",
+          "controls": [
+            {
+              "control_id": "2.3.1",
+              "control_statement": "For wireless environments connected to the CDE or transmitting account data, all wireless vendor defaults are changed at installation or are confirmed to be secure.",
+              "maturity_levels": [
+                "Level 1: Ad-hoc - Wireless vendor defaults are not changed or confirmed to be secure.",
+                "Level 2: Repeatable - Wireless vendor defaults are changed but not consistently confirmed to be secure.",
+                "Level 3: Defined - Wireless vendor defaults are well-defined, changed, and confirmed to be secure.",
+                "Level 4: Managed - Wireless vendor defaults are regularly reviewed and updated to ensure effectiveness.",
+                "Level 5: Optimized - Wireless vendor defaults are continuously monitored and improved to ensure optimal security posture."
+              ],
+              "expected_evidence_types": [
+                "wireless_vendor_defaults",
+                "security_configurations"
+              ],
+              "cross_references": []
+            }
+          ]
+        }
+      ],
+      "controls": [
+        {
+          "control_id": "2.1.1",
+          "control_statement": "All security policies and operational procedures that are identified in Requirement 2 are: Documented, Kept up to date, In use, Known to all affected parties.",
+          "maturity_levels": [
+            "Level 1: Ad-hoc - Security policies and procedures are not well-defined or documented.",
+            "Level 2: Repeatable - Security policies and procedures are documented but not consistently applied.",
+            "Level 3: Defined - Security policies and procedures are well-defined, documented, and consistently applied.",
+            "Level 4: Managed - Security policies and procedures are regularly reviewed and updated to ensure effectiveness.",
+            "Level 5: Optimized - Security policies and procedures are continuously monitored and improved to ensure optimal security posture."
+          ],
+          "expected_evidence_types": [
+            "security_policies",
+            "operational_procedures"
+          ],
+          "cross_references": []
+        },
+        {
+          "control_id": "2.1.2",
+          "control_statement": "Roles and responsibilities for performing activities in Requirement 2 are documented, assigned, and understood.",
+          "maturity_levels": [
+            "Level 1: Ad-hoc - Roles and responsibilities are not clearly defined or documented.",
+            "Level 2: Repeatable - Roles and responsibilities are documented but not consistently applied.",
+            "Level 3: Defined - Roles and responsibilities are well-defined, documented, and consistently applied.",
+            "Level 4: Managed - Roles and responsibilities are regularly reviewed and updated to ensure effectiveness.",
+            "Level 5: Optimized - Roles and responsibilities are continuously monitored and improved to ensure optimal security posture."
+          ],
+          "expected_evidence_types": [
+            "role_definitions",
+            "responsibility_assignments"
+          ],
+          "cross_references": []
+        },
+        {
+          "control_id": "2.2.1",
+          "control_statement": "Configuration standards are developed, implemented, and maintained to: Cover all system components, Address all known security vulnerabilities, Be consistent with industry-accepted system hardening standards or vendor hardening recommendations.",
+          "maturity_levels": [
+            "Level 1: Ad-hoc - Configuration standards are not well-defined or documented.",
+            "Level 2: Repeatable - Configuration standards are documented but not consistently applied.",
+            "Level 3: Defined - Configuration standards are well-defined, documented, and consistently applied.",
+            "Level 4: Managed - Configuration standards are regularly reviewed and updated to ensure effectiveness.",
+            "Level 5: Optimized - Configuration standards are continuously monitored and improved to ensure optimal security posture."
+          ],
+          "expected_evidence_types": [
+            "configuration_standards",
+            "system_component_configurations"
+          ],
+          "cross_references": []
+        },
+        {
+          "control_id": "2.3.1",
+          "control_statement": "For wireless environments connected to the CDE or transmitting account data, all wireless vendor defaults are changed at installation or are confirmed to be secure.",
+          "maturity_levels": [
+            "Level 1: Ad-hoc - Wireless vendor defaults are not changed or confirmed to be secure.",
+            "Level 2: Repeatable - Wireless vendor defaults are changed but not consistently confirmed to be secure.",
+            "Level 3: Defined - Wireless vendor defaults are well-defined, changed, and confirmed to be secure.",
+            "Level 4: Managed - Wireless vendor defaults are regularly reviewed and updated to ensure effectiveness.",
+            "Level 5: Optimized - Wireless vendor defaults are continuously monitored and improved to ensure optimal security posture."
+          ],
+          "expected_evidence_types": [
+            "wireless_vendor_defaults",
+            "security_configurations"
+          ],
+          "cross_references": []
+        }
+      ]
+    },
+    {
+      "domain_id": "REQ-6",
+      "domain_name": "Secure Development",
+      "sub_domains": [
+        {
+          "sub_domain_id": "5e8b0f07-d514-47a0-99f8-fe59b114eddc",
+          "sub_domain_name": "Requirement 6.1",
+          "controls": [
+            {
+              "control_id": "6.1",
+              "control_statement": "All security policies and operational procedures that are identified in Requirement 6 are documented, kept up to date, in use, and known to all affected parties.",
+              "maturity_levels": [
+                "Level 1: Ad-hoc - Secure development policies are not consistently implemented.",
+                "Level 2: Repeatable - Secure development policies are implemented but not regularly reviewed.",
+                "Level 3: Defined - Secure development policies are implemented and regularly reviewed.",
+                "Level 4: Managed - Secure development policies are implemented, regularly reviewed, and metrics are tracked.",
+                "Level 5: Optimized - Secure development policies are fully automated and continuously monitored."
+              ],
+              "expected_evidence_types": [
+                "secure_development_policies",
+                "system_configuration_files"
+              ],
+              "cross_references": []
+            }
+          ]
+        },
+        {
+          "sub_domain_id": "3f407225-b486-4a17-aeda-fb3198352e7f",
+          "sub_domain_name": "Requirement 6.2",
+          "controls": [
+            {
+              "control_id": "6.2",
+              "control_statement": "Bespoke and custom software is developed in accordance with PCI DSS and secure development processes throughout the software lifecycle.",
+              "maturity_levels": [
+                "Level 1: Ad-hoc - Development processes are informal and lack standardization.",
+                "Level 2: Repeatable - Development processes are documented and followed, but may not be consistently applied.",
+                "Level 3: Defined - Development processes are well-defined, consistently applied, and include secure coding practices.",
+                "Level 4: Managed - Development processes are measured, and feedback is used to improve the development lifecycle.",
+                "Level 5: Optimized - Development processes are continuously improved, and security is integrated into every stage of the software development lifecycle."
+              ],
+              "expected_evidence_types": [
+                "secure_development_policies",
+                "software_development_lifecycle_documents",
+                "secure_coding_practices_guidelines"
+              ],
+              "cross_references": []
+            }
+          ]
+        },
+        {
+          "sub_domain_id": "2d5612fe-8cf0-485a-ac96-41278168db21",
+          "sub_domain_name": "Requirement 6.3",
+          "controls": [
+            {
+              "control_id": "6.3",
+              "control_statement": "Security vulnerabilities are identified and managed as follows: new security vulnerabilities are identified using industry-recognized sources for security vulnerability information.",
+              "maturity_levels": [
+                "Level 1: Ad-hoc - Vulnerability identification and management processes are informal and lack standardization.",
+                "Level 2: Repeatable - Vulnerability identification and management processes are documented and followed, but may not be consistently applied.",
+                "Level 3: Defined - Vulnerability identification and management processes are well-defined, consistently applied, and include regular vulnerability scans.",
+                "Level 4: Managed - Vulnerability identification and management processes are measured, and feedback is used to improve the vulnerability management lifecycle.",
+                "Level 5: Optimized - Vulnerability identification and management processes are continuously improved, and vulnerabilities are addressed in a timely and effective manner."
+              ],
+              "expected_evidence_types": [
+                "vulnerability_scan_reports",
+                "vulnerability_management_policies",
+                "patch_management_documents"
+              ],
+              "cross_references": []
+            }
+          ]
+        },
+        {
+          "sub_domain_id": "c1561039-d360-4826-b071-6d74ee2e0d20",
+          "sub_domain_name": "Requirement 6.4",
+          "controls": [
+            {
+              "control_id": "6.4",
+              "control_statement": "Public-facing web applications are protected against known attacks as follows: reviewing public-facing web applications via manual or automated application vulnerability security assessment tools or methods.",
+              "maturity_levels": [
+                "Level 1: Ad-hoc - Web application security is informal and lacks standardization.",
+                "Level 2: Repeatable - Web application security processes are documented and followed, but may not be consistently applied.",
+                "Level 3: Defined - Web application security processes are well-defined, consistently applied, and include regular security assessments.",
+                "Level 4: Managed - Web application security processes are measured, and feedback is used to improve the security of web applications.",
+                "Level 5: Optimized - Web application security processes are continuously improved, and security is integrated into every stage of the web application development lifecycle."
+              ],
+              "expected_evidence_types": [
+                "web_application_security_policies",
+                "web_application_vulnerability_scan_reports",
+                "secure_coding_practices_guidelines"
+              ],
+              "cross_references": []
+            }
+          ]
+        },
+        {
+          "sub_domain_id": "2aa30843-2636-4aeb-945a-ac95302a3076",
+          "sub_domain_name": "Requirement 6.5",
+          "controls": [
+            {
+              "control_id": "6.5",
+              "control_statement": "Changes to all system components in the production environment are made according to established procedures that include reason for, and description of, the change.",
+              "maturity_levels": [
+                "Level 1: Ad-hoc - Change management processes are informal and lack standardization.",
+                "Level 2: Repeatable - Change management processes are documented and followed, but may not be consistently applied.",
+                "Level 3: Defined - Change management processes are well-defined, consistently applied, and include approval and testing procedures.",
+                "Level 4: Managed - Change management processes are measured, and feedback is used to improve the change management lifecycle.",
+                "Level 5: Optimized - Change management processes are continuously improved, and changes are made in a timely and effective manner."
+              ],
+              "expected_evidence_types": [
+                "change_management_policies",
+                "change_requests",
+                "change_approval_documents"
+              ],
+              "cross_references": []
+            }
+          ]
+        }
+      ],
+      "controls": [
+        {
+          "control_id": "6.1",
+          "control_statement": "All security policies and operational procedures that are identified in Requirement 6 are documented, kept up to date, in use, and known to all affected parties.",
+          "maturity_levels": [
+            "Level 1: Ad-hoc - Secure development policies are not consistently implemented.",
+            "Level 2: Repeatable - Secure development policies are implemented but not regularly reviewed.",
+            "Level 3: Defined - Secure development policies are implemented and regularly reviewed.",
+            "Level 4: Managed - Secure development policies are implemented, regularly reviewed, and metrics are tracked.",
+            "Level 5: Optimized - Secure development policies are fully automated and continuously monitored."
+          ],
+          "expected_evidence_types": [
+            "secure_development_policies",
+            "system_configuration_files"
+          ],
+          "cross_references": []
+        },
+        {
+          "control_id": "6.2",
+          "control_statement": "Bespoke and custom software is developed in accordance with PCI DSS and secure development processes throughout the software lifecycle.",
+          "maturity_levels": [
+            "Level 1: Ad-hoc - Development processes are informal and lack standardization.",
+            "Level 2: Repeatable - Development processes are documented and followed, but may not be consistently applied.",
+            "Level 3: Defined - Development processes are well-defined, consistently applied, and include secure coding practices.",
+            "Level 4: Managed - Development processes are measured, and feedback is used to improve the development lifecycle.",
+            "Level 5: Optimized - Development processes are continuously improved, and security is integrated into every stage of the software development lifecycle."
+          ],
+          "expected_evidence_types": [
+            "secure_development_policies",
+            "software_development_lifecycle_documents",
+            "secure_coding_practices_guidelines"
+          ],
+          "cross_references": []
+        },
+        {
+          "control_id": "6.3",
+          "control_statement": "Security vulnerabilities are identified and managed as follows: new security vulnerabilities are identified using industry-recognized sources for security vulnerability information.",
+          "maturity_levels": [
+            "Level 1: Ad-hoc - Vulnerability identification and management processes are informal and lack standardization.",
+            "Level 2: Repeatable - Vulnerability identification and management processes are documented and followed, but may not be consistently applied.",
+            "Level 3: Defined - Vulnerability identification and management processes are well-defined, consistently applied, and include regular vulnerability scans.",
+            "Level 4: Managed - Vulnerability identification and management processes are measured, and feedback is used to improve the vulnerability management lifecycle.",
+            "Level 5: Optimized - Vulnerability identification and management processes are continuously improved, and vulnerabilities are addressed in a timely and effective manner."
+          ],
+          "expected_evidence_types": [
+            "vulnerability_scan_reports",
+            "vulnerability_management_policies",
+            "patch_management_documents"
+          ],
+          "cross_references": []
+        },
+        {
+          "control_id": "6.4",
+          "control_statement": "Public-facing web applications are protected against known attacks as follows: reviewing public-facing web applications via manual or automated application vulnerability security assessment tools or methods.",
+          "maturity_levels": [
+            "Level 1: Ad-hoc - Web application security is informal and lacks standardization.",
+            "Level 2: Repeatable - Web application security processes are documented and followed, but may not be consistently applied.",
+            "Level 3: Defined - Web application security processes are well-defined, consistently applied, and include regular security assessments.",
+            "Level 4: Managed - Web application security processes are measured, and feedback is used to improve the security of web applications.",
+            "Level 5: Optimized - Web application security processes are continuously improved, and security is integrated into every stage of the web application development lifecycle."
+          ],
+          "expected_evidence_types": [
+            "web_application_security_policies",
+            "web_application_vulnerability_scan_reports",
+            "secure_coding_practices_guidelines"
+          ],
+          "cross_references": []
+        },
+        {
+          "control_id": "6.5",
+          "control_statement": "Changes to all system components in the production environment are made according to established procedures that include reason for, and description of, the change.",
+          "maturity_levels": [
+            "Level 1: Ad-hoc - Change management processes are informal and lack standardization.",
+            "Level 2: Repeatable - Change management processes are documented and followed, but may not be consistently applied.",
+            "Level 3: Defined - Change management processes are well-defined, consistently applied, and include approval and testing procedures.",
+            "Level 4: Managed - Change management processes are measured, and feedback is used to improve the change management lifecycle.",
+            "Level 5: Optimized - Change management processes are continuously improved, and changes are made in a timely and effective manner."
+          ],
+          "expected_evidence_types": [
+            "change_management_policies",
+            "change_requests",
+            "change_approval_documents"
+          ],
+          "cross_references": []
+        }
+      ]
+    },
+    {
+      "domain_id": "REQ-11",
+      "domain_name": "Security Testing",
+      "sub_domains": [
+        {
+          "sub_domain_id": "a51c4084-5285-432f-b529-110126b82771",
+          "sub_domain_name": "Requirement 11.1",
+          "controls": [
+            {
+              "control_id": "11.1",
+              "control_statement": "Processes and mechanisms for regularly testing security of systems and networks are defined.",
+              "maturity_levels": [
+                "Level 1: Ad-hoc - Security testing is not consistently performed or documented.",
+                "Level 2: Repeatable - Security testing is performed, but not consistently documented or reviewed.",
+                "Level 3: Defined - Security testing is performed, documented, and reviewed, with a defined process for testing and evaluation.",
+                "Level 4: Managed - Security testing is performed, documented, and reviewed in real-time, with automated alerts and response mechanisms for vulnerabilities.",
+                "Level 5: Optimized - Security testing is performed, documented, and reviewed in real-time, with automated alerts, response mechanisms, and continuous monitoring for vulnerabilities."
+              ],
+              "expected_evidence_types": [
+                "security_testing_policies",
+                "test_results"
+              ],
+              "cross_references": []
+            }
+          ]
+        },
+        {
+          "sub_domain_id": "3c73ada9-05cb-4f3e-8fb8-2d70ac50bb0f",
+          "sub_domain_name": "Requirement 11.2",
+          "controls": [
+            {
+              "control_id": "11.2",
+              "control_statement": "Wireless access points are identified and monitored.",
+              "maturity_levels": [
+                "Level 1: Ad-hoc - Wireless access points are not consistently identified or monitored.",
+                "Level 2: Repeatable - Wireless access points are identified, but not consistently monitored or secured.",
+                "Level 3: Defined - Wireless access points are identified, monitored, and secured, with a defined process for wireless security.",
+                "Level 4: Managed - Wireless access points are identified, monitored, and secured in real-time, with automated alerts for unauthorized access points.",
+                "Level 5: Optimized - Wireless access points are identified, monitored, and secured in real-time, with automated alerts, response mechanisms, and continuous monitoring for unauthorized access points."
+              ],
+              "expected_evidence_types": [
+                "wireless_access_point_inventories",
+                "wireless_security_policies"
+              ],
+              "cross_references": []
+            }
+          ]
+        },
+        {
+          "sub_domain_id": "255cf01a-055b-4c43-ac60-973df089d879",
+          "sub_domain_name": "Requirement 11.3",
+          "controls": [
+            {
+              "control_id": "11.3",
+              "control_statement": "Internal and external vulnerabilities are regularly identified and addressed.",
+              "maturity_levels": [
+                "Level 1: Ad-hoc - Vulnerabilities are not consistently identified or addressed.",
+                "Level 2: Repeatable - Vulnerabilities are identified, but not consistently addressed or resolved.",
+                "Level 3: Defined - Vulnerabilities are identified, addressed, and resolved, with a defined process for vulnerability management.",
+                "Level 4: Managed - Vulnerabilities are identified, addressed, and resolved in real-time, with automated alerts and response mechanisms.",
+                "Level 5: Optimized - Vulnerabilities are identified, addressed, and resolved in real-time, with automated alerts, response mechanisms, and continuous monitoring."
+              ],
+              "expected_evidence_types": [
+                "vulnerability_scan_reports",
+                "patch_management_policies"
+              ],
+              "cross_references": []
+            }
+          ]
+        },
+        {
+          "sub_domain_id": "0c28bca5-3808-484b-a4bb-c8023af7ba60",
+          "sub_domain_name": "Requirement 11.4",
+          "controls": [
+            {
+              "control_id": "11.4",
+              "control_statement": "External and internal penetration testing is regularly performed.",
+              "maturity_levels": [
+                "Level 1: Ad-hoc - Penetration testing is not consistently performed or documented.",
+                "Level 2: Repeatable - Penetration testing is performed, but not consistently documented or reviewed.",
+                "Level 3: Defined - Penetration testing is performed, documented, and reviewed, with a defined process for testing and evaluation.",
+                "Level 4: Managed - Penetration testing is performed, documented, and reviewed in real-time, with automated alerts and response mechanisms for vulnerabilities.",
+                "Level 5: Optimized - Penetration testing is performed, documented, and reviewed in real-time, with automated alerts, response mechanisms, and continuous monitoring for vulnerabilities."
+              ],
+              "expected_evidence_types": [
+                "penetration_testing_reports",
+                "test_results"
+              ],
+              "cross_references": []
+            }
+          ]
+        },
+        {
+          "sub_domain_id": "70dc90e4-1f7b-4cf7-bb90-3c1c6f725b2f",
+          "sub_domain_name": "Requirement 11.5",
+          "controls": [
+            {
+              "control_id": "11.5",
+              "control_statement": "Network intrusions and unexpected file changes are detected and addressed.",
+              "maturity_levels": [
+                "Level 1: Ad-hoc - Network intrusions and unexpected file changes are not consistently detected or addressed.",
+                "Level 2: Repeatable - Network intrusions and unexpected file changes are detected, but not consistently addressed or resolved.",
+                "Level 3: Defined - Network intrusions and unexpected file changes are detected, addressed, and resolved, with a defined process for incident response.",
+                "Level 4: Managed - Network intrusions and unexpected file changes are detected, addressed, and resolved in real-time, with automated alerts and response mechanisms.",
+                "Level 5: Optimized - Network intrusions and unexpected file changes are detected, addressed, and resolved in real-time, with automated alerts, response mechanisms, and continuous monitoring."
+              ],
+              "expected_evidence_types": [
+                "intrusion_detection_system_logs",
+                "incident_response_policies"
+              ],
+              "cross_references": []
+            }
+          ]
+        },
+        {
+          "sub_domain_id": "1647fe17-06c1-4a84-9c16-047b851d9897",
+          "sub_domain_name": "Requirement 11.6",
+          "controls": [
+            {
+              "control_id": "11.6",
+              "control_statement": "A change- and tamper-detection mechanism is deployed to alert personnel to unauthorized modification to the security-impacting HTTP headers and the script contents of payment pages as received by the consumer browser.",
+              "maturity_levels": [
+                "Level 1: Ad-hoc - Basic change detection processes are established but not consistently enforced.",
+                "Level 2: Repeatable - Change detection processes are documented and communicated to personnel, but not regularly reviewed.",
+                "Level 3: Defined - Change detection processes are well-defined, communicated, and regularly reviewed, with clear roles and responsibilities.",
+                "Level 4: Managed - Change detection processes are integrated into the organization's overall governance framework, with metrics to measure effectiveness.",
+                "Level 5: Optimized - Change detection processes are continuously monitored, evaluated, and improved, with a culture of change detection awareness throughout the organization."
+              ],
+              "expected_evidence_types": [
+                "change_detection_reports",
+                "incident_response_plans"
+              ],
+              "cross_references": []
+            }
+          ]
+        }
+      ],
+      "controls": [
+        {
+          "control_id": "11.1",
+          "control_statement": "Processes and mechanisms for regularly testing security of systems and networks are defined.",
+          "maturity_levels": [
+            "Level 1: Ad-hoc - Security testing is not consistently performed or documented.",
+            "Level 2: Repeatable - Security testing is performed, but not consistently documented or reviewed.",
+            "Level 3: Defined - Security testing is performed, documented, and reviewed, with a defined process for testing and evaluation.",
+            "Level 4: Managed - Security testing is performed, documented, and reviewed in real-time, with automated alerts and response mechanisms for vulnerabilities.",
+            "Level 5: Optimized - Security testing is performed, documented, and reviewed in real-time, with automated alerts, response mechanisms, and continuous monitoring for vulnerabilities."
+          ],
+          "expected_evidence_types": [
+            "security_testing_policies",
+            "test_results"
+          ],
+          "cross_references": []
+        },
+        {
+          "control_id": "11.2",
+          "control_statement": "Wireless access points are identified and monitored.",
+          "maturity_levels": [
+            "Level 1: Ad-hoc - Wireless access points are not consistently identified or monitored.",
+            "Level 2: Repeatable - Wireless access points are identified, but not consistently monitored or secured.",
+            "Level 3: Defined - Wireless access points are identified, monitored, and secured, with a defined process for wireless security.",
+            "Level 4: Managed - Wireless access points are identified, monitored, and secured in real-time, with automated alerts for unauthorized access points.",
+            "Level 5: Optimized - Wireless access points are identified, monitored, and secured in real-time, with automated alerts, response mechanisms, and continuous monitoring for unauthorized access points."
+          ],
+          "expected_evidence_types": [
+            "wireless_access_point_inventories",
+            "wireless_security_policies"
+          ],
+          "cross_references": []
+        },
+        {
+          "control_id": "11.3",
+          "control_statement": "Internal and external vulnerabilities are regularly identified and addressed.",
+          "maturity_levels": [
+            "Level 1: Ad-hoc - Vulnerabilities are not consistently identified or addressed.",
+            "Level 2: Repeatable - Vulnerabilities are identified, but not consistently addressed or resolved.",
+            "Level 3: Defined - Vulnerabilities are identified, addressed, and resolved, with a defined process for vulnerability management.",
+            "Level 4: Managed - Vulnerabilities are identified, addressed, and resolved in real-time, with automated alerts and response mechanisms.",
+            "Level 5: Optimized - Vulnerabilities are identified, addressed, and resolved in real-time, with automated alerts, response mechanisms, and continuous monitoring."
+          ],
+          "expected_evidence_types": [
+            "vulnerability_scan_reports",
+            "patch_management_policies"
+          ],
+          "cross_references": []
+        },
+        {
+          "control_id": "11.4",
+          "control_statement": "External and internal penetration testing is regularly performed.",
+          "maturity_levels": [
+            "Level 1: Ad-hoc - Penetration testing is not consistently performed or documented.",
+            "Level 2: Repeatable - Penetration testing is performed, but not consistently documented or reviewed.",
+            "Level 3: Defined - Penetration testing is performed, documented, and reviewed, with a defined process for testing and evaluation.",
+            "Level 4: Managed - Penetration testing is performed, documented, and reviewed in real-time, with automated alerts and response mechanisms for vulnerabilities.",
+            "Level 5: Optimized - Penetration testing is performed, documented, and reviewed in real-time, with automated alerts, response mechanisms, and continuous monitoring for vulnerabilities."
+          ],
+          "expected_evidence_types": [
+            "penetration_testing_reports",
+            "test_results"
+          ],
+          "cross_references": []
+        },
+        {
+          "control_id": "11.5",
+          "control_statement": "Network intrusions and unexpected file changes are detected and addressed.",
+          "maturity_levels": [
+            "Level 1: Ad-hoc - Network intrusions and unexpected file changes are not consistently detected or addressed.",
+            "Level 2: Repeatable - Network intrusions and unexpected file changes are detected, but not consistently addressed or resolved.",
+            "Level 3: Defined - Network intrusions and unexpected file changes are detected, addressed, and resolved, with a defined process for incident response.",
+            "Level 4: Managed - Network intrusions and unexpected file changes are detected, addressed, and resolved in real-time, with automated alerts and response mechanisms.",
+            "Level 5: Optimized - Network intrusions and unexpected file changes are detected, addressed, and resolved in real-time, with automated alerts, response mechanisms, and continuous monitoring."
+          ],
+          "expected_evidence_types": [
+            "intrusion_detection_system_logs",
+            "incident_response_policies"
+          ],
+          "cross_references": []
+        },
+        {
+          "control_id": "11.6",
+          "control_statement": "A change- and tamper-detection mechanism is deployed to alert personnel to unauthorized modification to the security-impacting HTTP headers and the script contents of payment pages as received by the consumer browser.",
+          "maturity_levels": [
+            "Level 1: Ad-hoc - Basic change detection processes are established but not consistently enforced.",
+            "Level 2: Repeatable - Change detection processes are documented and communicated to personnel, but not regularly reviewed.",
+            "Level 3: Defined - Change detection processes are well-defined, communicated, and regularly reviewed, with clear roles and responsibilities.",
+            "Level 4: Managed - Change detection processes are integrated into the organization's overall governance framework, with metrics to measure effectiveness.",
+            "Level 5: Optimized - Change detection processes are continuously monitored, evaluated, and improved, with a culture of change detection awareness throughout the organization."
+          ],
+          "expected_evidence_types": [
+            "change_detection_reports",
+            "incident_response_plans"
+          ],
+          "cross_references": []
+        }
+      ]
+    }
+  ]
+}

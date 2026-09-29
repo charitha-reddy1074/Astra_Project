@@ -1,0 +1,4 @@
+App ID	Application Name	Business Unit	App Owner	EOL Date	Days Past EOL	EOL Component	Risk Rating	Data Hosted	Internet Facing	Remediation Plan	Target Remediation Date	Status	Approved Risk Exception	Exception Expiry	Notes
+APP-004	Legacy Reporting Tool	Finance	Mark Green	2024-06-30	Application (no vendor support)	High	Internal	No	Migrate to Power BI	2025-02-28	In Progress	Yes	2025-03-01	Migration project underway
+APP-007	Java 8 Runtime (batch)	Technology	IT Ops	2023-12-31	Java 8 EOL	Critical	Internal	No	Upgrade to Java 21	2024-12-31	Delayed	Yes	2024-12-31	Dependencies blocking upgrade
+APP-008	CentOS 7 Batch Host	IT Ops	IT Ops	2024-06-30	OS (CentOS 7)	High	Internal	No	Migrate to RHEL 8	2025-01-15	In Progress	Yes	2025-02-01	Workload migration in UAT

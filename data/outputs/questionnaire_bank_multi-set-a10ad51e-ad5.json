@@ -1,0 +1,3256 @@
+{
+  "questionnaire_id": "multi-set-a10ad51e-ad5",
+  "questionnaire_type": "multi_framework",
+  "framework_id": "1e4eb506-3cd6-5aa2-851e-bc6c194310e9",
+  "name": "NIST CSF 2.0 (Govern) + ISO/IEC 27001:2022 (Organizational controls)",
+  "framework_names": [
+    "NIST CSF 2.0",
+    "ISO/IEC 27001:2022"
+  ],
+  "framework_summary": "NIST CSF 2.0 + ISO/IEC 27001:2022",
+  "version": "1.0",
+  "source_format": "multi_framework_merged",
+  "question_count": 28,
+  "part1_checklist": [
+    {
+      "question_id": "d75fe35d-bf7a-5fd2-a600-20a5efaec301",
+      "question_text": "Is the organization implementing and operating the control: The organizational mission is understood and informs cybersecurity risk management?",
+      "sub_topic": "",
+      "domain_name": "Govern",
+      "framework_name": "NIST CSF 2.0",
+      "control_id": "GV.OC-01",
+      "answer_format": "yes_no_with_detail",
+      "response_options": "Yes / No / Partial",
+      "detail_prompt": "If yes or partial, specify the tool or technology in use.",
+      "number": 1
+    },
+    {
+      "question_id": "e9c6a50e-0cad-51ae-a1c5-64944ab4168f",
+      "question_text": "Is the organization implementing and operating the control: Internal and external stakeholders are understood, and their needs and expectations regarding cybersecurity risk management are understood and considered?",
+      "sub_topic": "",
+      "domain_name": "Govern",
+      "framework_name": "NIST CSF 2.0",
+      "control_id": "GV.OC-02",
+      "answer_format": "yes_no_with_detail",
+      "response_options": "Yes / No / Partial",
+      "detail_prompt": "If yes or partial, specify the tool or technology in use.",
+      "number": 2
+    },
+    {
+      "question_id": "43d24ca9-2a7b-59b5-9074-623db2dcfc09",
+      "question_text": "Is the organization implementing and operating the control: Risk management objectives are established and agreed to by organizational stakeholders?",
+      "sub_topic": "",
+      "domain_name": "Govern",
+      "framework_name": "NIST CSF 2.0",
+      "control_id": "GV.RM-01",
+      "answer_format": "yes_no_with_detail",
+      "response_options": "Yes / No / Partial",
+      "detail_prompt": "If yes or partial, specify the tool or technology in use.",
+      "number": 3
+    },
+    {
+      "question_id": "9821770f-fd02-5a0f-b2ae-fc576670b6f0",
+      "question_text": "Is the organization implementing and operating the control: Risk appetite and risk tolerance statements are established, communicated, and maintained?",
+      "sub_topic": "",
+      "domain_name": "Govern",
+      "framework_name": "NIST CSF 2.0",
+      "control_id": "GV.RM-02",
+      "answer_format": "yes_no_with_detail",
+      "response_options": "Yes / No / Partial",
+      "detail_prompt": "If yes or partial, specify the tool or technology in use.",
+      "number": 4
+    },
+    {
+      "question_id": "06dfc677-b2dd-532c-a6c8-ca4df13d655b",
+      "question_text": "Is the organization implementing and operating the control: A cybersecurity supply chain risk management program, strategy, objectives, policies, and processes are established and agreed to by organizational stakeholders?",
+      "sub_topic": "",
+      "domain_name": "Govern",
+      "framework_name": "NIST CSF 2.0",
+      "control_id": "GV.SC-01",
+      "answer_format": "yes_no_with_detail",
+      "response_options": "Yes / No / Partial",
+      "detail_prompt": "If yes or partial, specify the tool or technology in use.",
+      "number": 5
+    },
+    {
+      "question_id": "9c872a74-6021-5d73-a6ef-15103ea4b232",
+      "question_text": "Is policies for information secu rity: information security policy and topic-specific policies shall be de fined, approved  implemented and operational?",
+      "sub_topic": "",
+      "domain_name": "Organizational controls",
+      "framework_name": "ISO/IEC 27001:2022",
+      "control_id": "5.1",
+      "answer_format": "yes_no_with_detail",
+      "response_options": "Yes / No / Partial",
+      "detail_prompt": "If yes or partial, specify the tool or technology in use.",
+      "number": 6
+    },
+    {
+      "question_id": "b08f7f3b-36ec-5cdc-ac4b-0aa4d71cfa00",
+      "question_text": "Is the organization implementing and operating the control: Acceptable use of information and other associated assets: Rules for the acceptable use and procedures for handling information and other associated assets shall be identified, documented and implemented?",
+      "sub_topic": "",
+      "domain_name": "Organizational controls",
+      "framework_name": "ISO/IEC 27001:2022",
+      "control_id": "5.10",
+      "answer_format": "yes_no_with_detail",
+      "response_options": "Yes / No / Partial",
+      "detail_prompt": "If yes or partial, specify the tool or technology in use.",
+      "number": 7
+    },
+    {
+      "question_id": "12f8926d-848d-533a-801a-2c52b1037896",
+      "question_text": "Is the organization implementing and operating the control: Return of assets Control: Personnel and other interested parties as appropriate shall return all the organization's assets in their possession upon change or termination of their employment, contract or agreement. © ISO/IEC 2022 - All rights reserved?",
+      "sub_topic": "",
+      "domain_name": "Organizational controls",
+      "framework_name": "ISO/IEC 27001:2022",
+      "control_id": "5.11",
+      "answer_format": "yes_no_with_detail",
+      "response_options": "Yes / No / Partial",
+      "detail_prompt": "If yes or partial, specify the tool or technology in use.",
+      "number": 8
+    },
+    {
+      "question_id": "94459799-227a-5835-ac84-9daf2c2abee4",
+      "question_text": "Is the organization implementing and operating the control: Classification of information Control: Information shall be classified according to the information security needs of the organization based on confidentiality, integrity, availability and relevant interested party requirements?",
+      "sub_topic": "",
+      "domain_name": "Organizational controls",
+      "framework_name": "ISO/IEC 27001:2022",
+      "control_id": "5.12",
+      "answer_format": "yes_no_with_detail",
+      "response_options": "Yes / No / Partial",
+      "detail_prompt": "If yes or partial, specify the tool or technology in use.",
+      "number": 9
+    },
+    {
+      "question_id": "545d2795-7fc6-55c1-9a9a-b2930f48f999",
+      "question_text": "Is the organization implementing and operating the control: Labelling of information Control: An appropriate set of procedures for information labelling shall be developed and implemented in accordance with the information clas sification scheme adopted by the organization?",
+      "sub_topic": "",
+      "domain_name": "Organizational controls",
+      "framework_name": "ISO/IEC 27001:2022",
+      "control_id": "5.13",
+      "answer_format": "yes_no_with_detail",
+      "response_options": "Yes / No / Partial",
+      "detail_prompt": "If yes or partial, specify the tool or technology in use.",
+      "number": 10
+    }
+  ],
+  "question_groups": [
+    {
+      "framework_id": "d048b355-a19a-52eb-bf3d-3e2133c57d1e",
+      "framework_key": "nist-csf-2-0",
+      "framework_name": "NIST CSF 2.0",
+      "domain_id": "GV",
+      "domain_name": "Govern",
+      "domain_description": "",
+      "question_count": 5,
+      "questions": [
+        {
+          "item_id": "542a1573-5bd4-5239-92f0-53315ba7375c",
+          "question_id": "542a1573-5bd4-5239-92f0-53315ba7375c",
+          "question_text": "Is the organization implementing and operating the control: The organizational mission is understood and informs cybersecurity risk management?",
+          "question_type": "merged",
+          "answer_formats": [
+            "yes_no",
+            "evidence_upload"
+          ],
+          "framework_name": "NIST CSF 2.0",
+          "framework_key": "nist-csf-2-0",
+          "domain_id": "GV",
+          "domain_name": "Govern",
+          "control_id": "GV.OC-01",
+          "control_statement": "The organizational mission is understood and informs cybersecurity risk management.",
+          "expected_evidence": "mission_statement, strategic_plan, risk_policy",
+          "maturity_level": "Initial",
+          "merge_reason": "Merged by control fallback because LLM output was unavailable or invalid.",
+          "source_item_ids": [
+            "e6719a4b-1fe7-5eed-9d3e-54425817a5dc",
+            "cfc335cc-ab61-5065-93f4-e37867e5132e"
+          ],
+          "source_questions": [
+            {
+              "question_id": "47daacfc-3411-5a88-a498-399247bc23b9",
+              "question_text": "Is the organization implementing and operating the control: The organizational mission is understood and informs cybersecurity risk management?",
+              "question_type": "yes_no",
+              "framework_name": "NIST CSF 2.0",
+              "framework_key": "nist-csf-2-0",
+              "domain_id": "GV",
+              "domain_name": "Govern",
+              "control_id": "GV.OC-01",
+              "cross_references": [
+                {
+                  "other_framework_id": "nist-sp-800-39",
+                  "other_control_id": "2.1"
+                },
+                {
+                  "other_framework_id": "iso-27001-2022",
+                  "other_control_id": "4.1"
+                }
+              ],
+              "expected_evidence": "mission_statement, strategic_plan, risk_policy"
+            },
+            {
+              "question_id": "0684ada2-6fe3-5186-ab71-3d28cd9c2989",
+              "question_text": "Upload evidence such as mission_statement, strategic_plan, risk_policy that demonstrates: The organizational mission is understood and informs cybersecurity risk management.",
+              "question_type": "evidence_upload",
+              "framework_name": "NIST CSF 2.0",
+              "framework_key": "nist-csf-2-0",
+              "domain_id": "GV",
+              "domain_name": "Govern",
+              "control_id": "GV.OC-01",
+              "cross_references": [
+                {
+                  "other_framework_id": "nist-sp-800-39",
+                  "other_control_id": "2.1"
+                },
+                {
+                  "other_framework_id": "iso-27001-2022",
+                  "other_control_id": "4.1"
+                }
+              ],
+              "expected_evidence": "mission_statement, strategic_plan, risk_policy"
+            }
+          ],
+          "cross_references": [
+            {
+              "other_framework_id": "nist-sp-800-39",
+              "other_control_id": "2.1"
+            },
+            {
+              "other_framework_id": "iso-27001-2022",
+              "other_control_id": "4.1"
+            }
+          ]
+        },
+        {
+          "item_id": "67688a51-5b9d-5732-848d-a675a3e2b582",
+          "question_id": "67688a51-5b9d-5732-848d-a675a3e2b582",
+          "question_text": "Is the organization implementing and operating the control: Internal and external stakeholders are understood, and their needs and expectations regarding cybersecurity risk management are understood and considered?",
+          "question_type": "merged",
+          "answer_formats": [
+            "yes_no",
+            "evidence_upload"
+          ],
+          "framework_name": "NIST CSF 2.0",
+          "framework_key": "nist-csf-2-0",
+          "domain_id": "GV",
+          "domain_name": "Govern",
+          "control_id": "GV.OC-02",
+          "control_statement": "Internal and external stakeholders are understood, and their needs and expectations regarding cybersecurity risk management are understood and considered.",
+          "expected_evidence": "stakeholder_register, meeting_minutes, risk_register",
+          "maturity_level": "Initial",
+          "merge_reason": "Merged by control fallback because LLM output was unavailable or invalid.",
+          "source_item_ids": [
+            "a9ab9478-9716-5c08-b403-77e7eeaa354d",
+            "88a4e607-3e6a-577a-8f2c-6be63f28fa37"
+          ],
+          "source_questions": [
+            {
+              "question_id": "55ca2d89-bd58-5161-9089-65073102dbce",
+              "question_text": "Is the organization implementing and operating the control: Internal and external stakeholders are understood, and their needs and expectations regarding cybersecurity risk management are understood and considered?",
+              "question_type": "yes_no",
+              "framework_name": "NIST CSF 2.0",
+              "framework_key": "nist-csf-2-0",
+              "domain_id": "GV",
+              "domain_name": "Govern",
+              "control_id": "GV.OC-02",
+              "cross_references": [
+                {
+                  "other_framework_id": "iso-27001-2022",
+                  "other_control_id": "4.2"
+                },
+                {
+                  "other_framework_id": "nist-sp-800-39",
+                  "other_control_id": "2.2"
+                }
+              ],
+              "expected_evidence": "stakeholder_register, meeting_minutes, risk_register"
+            },
+            {
+              "question_id": "aa0ce65b-8e20-5d1b-b7ef-0d2f5c9782c4",
+              "question_text": "Upload evidence such as stakeholder_register, meeting_minutes, risk_register that demonstrates: Internal and external stakeholders are understood, and their needs and expectations regarding cybersecurity risk management are understood and considered.",
+              "question_type": "evidence_upload",
+              "framework_name": "NIST CSF 2.0",
+              "framework_key": "nist-csf-2-0",
+              "domain_id": "GV",
+              "domain_name": "Govern",
+              "control_id": "GV.OC-02",
+              "cross_references": [
+                {
+                  "other_framework_id": "iso-27001-2022",
+                  "other_control_id": "4.2"
+                },
+                {
+                  "other_framework_id": "nist-sp-800-39",
+                  "other_control_id": "2.2"
+                }
+              ],
+              "expected_evidence": "stakeholder_register, meeting_minutes, risk_register"
+            }
+          ],
+          "cross_references": [
+            {
+              "other_framework_id": "iso-27001-2022",
+              "other_control_id": "4.2"
+            },
+            {
+              "other_framework_id": "nist-sp-800-39",
+              "other_control_id": "2.2"
+            }
+          ]
+        },
+        {
+          "item_id": "db5a20ef-c717-5d2b-8779-f521cbc33e7f",
+          "question_id": "db5a20ef-c717-5d2b-8779-f521cbc33e7f",
+          "question_text": "Is the organization implementing and operating the control: Risk management objectives are established and agreed to by organizational stakeholders?",
+          "question_type": "merged",
+          "answer_formats": [
+            "yes_no",
+            "evidence_upload"
+          ],
+          "framework_name": "NIST CSF 2.0",
+          "framework_key": "nist-csf-2-0",
+          "domain_id": "GV",
+          "domain_name": "Govern",
+          "control_id": "GV.RM-01",
+          "control_statement": "Risk management objectives are established and agreed to by organizational stakeholders.",
+          "expected_evidence": "risk_appetite_statement, board_minutes, policy",
+          "maturity_level": "Initial",
+          "merge_reason": "Merged by control fallback because LLM output was unavailable or invalid.",
+          "source_item_ids": [
+            "d790dce1-2d26-52d8-b641-45f033d314df",
+            "82668137-1691-57cc-a3ed-acb6348dfc36"
+          ],
+          "source_questions": [
+            {
+              "question_id": "cae23586-63fe-53f3-a40d-97ce03de0f9a",
+              "question_text": "Is the organization implementing and operating the control: Risk management objectives are established and agreed to by organizational stakeholders?",
+              "question_type": "yes_no",
+              "framework_name": "NIST CSF 2.0",
+              "framework_key": "nist-csf-2-0",
+              "domain_id": "GV",
+              "domain_name": "Govern",
+              "control_id": "GV.RM-01",
+              "cross_references": [
+                {
+                  "other_framework_id": "nist-sp-800-39",
+                  "other_control_id": "2.2"
+                },
+                {
+                  "other_framework_id": "iso-27001-2022",
+                  "other_control_id": "6.1"
+                }
+              ],
+              "expected_evidence": "risk_appetite_statement, board_minutes, policy"
+            },
+            {
+              "question_id": "ce351cec-7174-5ae4-a4cf-f55d97ef094c",
+              "question_text": "Upload evidence such as risk_appetite_statement, board_minutes, policy that demonstrates: Risk management objectives are established and agreed to by organizational stakeholders.",
+              "question_type": "evidence_upload",
+              "framework_name": "NIST CSF 2.0",
+              "framework_key": "nist-csf-2-0",
+              "domain_id": "GV",
+              "domain_name": "Govern",
+              "control_id": "GV.RM-01",
+              "cross_references": [
+                {
+                  "other_framework_id": "nist-sp-800-39",
+                  "other_control_id": "2.2"
+                },
+                {
+                  "other_framework_id": "iso-27001-2022",
+                  "other_control_id": "6.1"
+                }
+              ],
+              "expected_evidence": "risk_appetite_statement, board_minutes, policy"
+            }
+          ],
+          "cross_references": [
+            {
+              "other_framework_id": "nist-sp-800-39",
+              "other_control_id": "2.2"
+            },
+            {
+              "other_framework_id": "iso-27001-2022",
+              "other_control_id": "6.1"
+            }
+          ]
+        },
+        {
+          "item_id": "59debff0-f8a1-5d7f-9e7d-244bcbbbe264",
+          "question_id": "59debff0-f8a1-5d7f-9e7d-244bcbbbe264",
+          "question_text": "Is the organization implementing and operating the control: Risk appetite and risk tolerance statements are established, communicated, and maintained?",
+          "question_type": "merged",
+          "answer_formats": [
+            "yes_no",
+            "evidence_upload"
+          ],
+          "framework_name": "NIST CSF 2.0",
+          "framework_key": "nist-csf-2-0",
+          "domain_id": "GV",
+          "domain_name": "Govern",
+          "control_id": "GV.RM-02",
+          "control_statement": "Risk appetite and risk tolerance statements are established, communicated, and maintained.",
+          "expected_evidence": "risk_appetite_document, policy, training_records",
+          "maturity_level": "Initial",
+          "merge_reason": "Merged by control fallback because LLM output was unavailable or invalid.",
+          "source_item_ids": [
+            "5da07bb7-782e-58d4-b86d-0ea92053d202",
+            "d6498224-cc9d-5268-9719-800a5b33309c"
+          ],
+          "source_questions": [
+            {
+              "question_id": "ae053d32-7e5c-56df-ac63-6009f2688cbc",
+              "question_text": "Is the organization implementing and operating the control: Risk appetite and risk tolerance statements are established, communicated, and maintained?",
+              "question_type": "yes_no",
+              "framework_name": "NIST CSF 2.0",
+              "framework_key": "nist-csf-2-0",
+              "domain_id": "GV",
+              "domain_name": "Govern",
+              "control_id": "GV.RM-02",
+              "cross_references": [
+                {
+                  "other_framework_id": "nist-sp-800-39",
+                  "other_control_id": ""
+                },
+                {
+                  "other_framework_id": "iso-27005-2022",
+                  "other_control_id": "6.3"
+                }
+              ],
+              "expected_evidence": "risk_appetite_document, policy, training_records"
+            },
+            {
+              "question_id": "9a26860a-4047-5266-a85d-68da372ad881",
+              "question_text": "Upload evidence such as risk_appetite_document, policy, training_records that demonstrates: Risk appetite and risk tolerance statements are established, communicated, and maintained.",
+              "question_type": "evidence_upload",
+              "framework_name": "NIST CSF 2.0",
+              "framework_key": "nist-csf-2-0",
+              "domain_id": "GV",
+              "domain_name": "Govern",
+              "control_id": "GV.RM-02",
+              "cross_references": [
+                {
+                  "other_framework_id": "nist-sp-800-39",
+                  "other_control_id": ""
+                },
+                {
+                  "other_framework_id": "iso-27005-2022",
+                  "other_control_id": "6.3"
+                }
+              ],
+              "expected_evidence": "risk_appetite_document, policy, training_records"
+            }
+          ],
+          "cross_references": [
+            {
+              "other_framework_id": "nist-sp-800-39",
+              "other_control_id": ""
+            },
+            {
+              "other_framework_id": "iso-27005-2022",
+              "other_control_id": "6.3"
+            }
+          ]
+        },
+        {
+          "item_id": "262ad289-c797-5bd5-94ba-ff2ea423a66d",
+          "question_id": "262ad289-c797-5bd5-94ba-ff2ea423a66d",
+          "question_text": "Is the organization implementing and operating the control: A cybersecurity supply chain risk management program, strategy, objectives, policies, and processes are established and agreed to by organizational stakeholders?",
+          "question_type": "merged",
+          "answer_formats": [
+            "yes_no",
+            "evidence_upload"
+          ],
+          "framework_name": "NIST CSF 2.0",
+          "framework_key": "nist-csf-2-0",
+          "domain_id": "GV",
+          "domain_name": "Govern",
+          "control_id": "GV.SC-01",
+          "control_statement": "A cybersecurity supply chain risk management program, strategy, objectives, policies, and processes are established and agreed to by organizational stakeholders.",
+          "expected_evidence": "vendor_risk_policy, vendor_contracts, supplier_assessments",
+          "maturity_level": "Initial",
+          "merge_reason": "Merged by control fallback because LLM output was unavailable or invalid.",
+          "source_item_ids": [
+            "58eef5d6-2ba7-560e-81a9-fc94cedeff76",
+            "0bcf5530-85be-5315-9847-62a7a6366fd2"
+          ],
+          "source_questions": [
+            {
+              "question_id": "75b492ba-01b0-5bdf-ac99-ab15f98ddabf",
+              "question_text": "Is the organization implementing and operating the control: A cybersecurity supply chain risk management program, strategy, objectives, policies, and processes are established and agreed to by organizational stakeholders?",
+              "question_type": "yes_no",
+              "framework_name": "NIST CSF 2.0",
+              "framework_key": "nist-csf-2-0",
+              "domain_id": "GV",
+              "domain_name": "Govern",
+              "control_id": "GV.SC-01",
+              "cross_references": [
+                {
+                  "other_framework_id": "nist-sp-800-161",
+                  "other_control_id": ""
+                },
+                {
+                  "other_framework_id": "iso-27036",
+                  "other_control_id": ""
+                }
+              ],
+              "expected_evidence": "vendor_risk_policy, vendor_contracts, supplier_assessments"
+            },
+            {
+              "question_id": "f4157996-1732-5659-9418-a3d0d122b458",
+              "question_text": "Upload evidence such as vendor_risk_policy, vendor_contracts, supplier_assessments that demonstrates: A cybersecurity supply chain risk management program, strategy, objectives, policies, and processes are established and agreed to by organizational stakeholders.",
+              "question_type": "evidence_upload",
+              "framework_name": "NIST CSF 2.0",
+              "framework_key": "nist-csf-2-0",
+              "domain_id": "GV",
+              "domain_name": "Govern",
+              "control_id": "GV.SC-01",
+              "cross_references": [
+                {
+                  "other_framework_id": "nist-sp-800-161",
+                  "other_control_id": ""
+                },
+                {
+                  "other_framework_id": "iso-27036",
+                  "other_control_id": ""
+                }
+              ],
+              "expected_evidence": "vendor_risk_policy, vendor_contracts, supplier_assessments"
+            }
+          ],
+          "cross_references": [
+            {
+              "other_framework_id": "nist-sp-800-161",
+              "other_control_id": ""
+            },
+            {
+              "other_framework_id": "iso-27036",
+              "other_control_id": ""
+            }
+          ]
+        }
+      ],
+      "sub_topics": [
+        {
+          "sub_topic": "Govern",
+          "control_ids": [
+            "GV.OC-01",
+            "GV.OC-02",
+            "GV.RM-01",
+            "GV.RM-02",
+            "GV.SC-01"
+          ],
+          "part1_question": {
+            "question_id": "f47ac10b-ee9e-43e4-9b9d-13a41f2e5c11",
+            "question_text": "Is a cybersecurity governance framework in place?",
+            "question_type": "yes_no_with_detail",
+            "response_options": "Yes / No / Partial",
+            "detail_prompt": "If yes or partial, specify the tool or technology in use."
+          },
+          "questions": [
+            {
+              "question_id": "4b6c1c4d-0e6e-4c9f-8c9f-3a5e2f2c3b3b",
+              "text": "How does the organizational mission inform cybersecurity risk management?",
+              "help_text": "Explain the connection",
+              "question_type": "FREE_TEXT",
+              "weight": 4,
+              "maturity_level": 4,
+              "expected_evidence_types": [
+                "mission_statement",
+                "strategic_plan"
+              ]
+            },
+            {
+              "question_id": "2f5g6h7j-0e6e-4c9f-8c9f-3a5e2f2c3b3b",
+              "text": "Who are the internal and external stakeholders considered in cybersecurity risk management?",
+              "help_text": "List stakeholders",
+              "question_type": "FREE_TEXT",
+              "weight": 3,
+              "maturity_level": 3,
+              "expected_evidence_types": [
+                "stakeholder_register",
+                "meeting_minutes"
+              ]
+            },
+            {
+              "question_id": "1a2b3c4d-0e6e-4c9f-8c9f-3a5e2f2c3b3b",
+              "text": "How are risk management objectives established and agreed upon?",
+              "help_text": "Describe the process",
+              "question_type": "FREE_TEXT",
+              "weight": 5,
+              "maturity_level": 5,
+              "expected_evidence_types": [
+                "risk_policy",
+                "risk_register"
+              ]
+            },
+            {
+              "question_id": "5t6y7u8i-0e6e-4c9f-8c9f-3a5e2f2c3b3b",
+              "text": "What is the process for establishing and communicating risk appetite and tolerance?",
+              "help_text": "Explain the steps",
+              "question_type": "FREE_TEXT",
+              "weight": 4,
+              "maturity_level": 4,
+              "expected_evidence_types": [
+                "risk_appetite_statement",
+                "board_minutes"
+              ]
+            },
+            {
+              "question_id": "9o8i7u6y-0e6e-4c9f-8c9f-3a5e2f2c3b3b",
+              "text": "How is the cybersecurity supply chain risk management program implemented?",
+              "help_text": "Describe the program",
+              "question_type": "FREE_TEXT",
+              "weight": 5,
+              "maturity_level": 5,
+              "expected_evidence_types": [
+                "vendor_risk_policy",
+                "vendor_contracts",
+                "supplier_assessments"
+              ]
+            },
+            {
+              "question_id": "3s2d1f4g-0e6e-4c9f-8c9f-3a5e2f2c3b3b",
+              "text": "Are stakeholders trained on cybersecurity risk management policies and procedures?",
+              "help_text": "Yes/No",
+              "question_type": "YES_NO",
+              "weight": 2,
+              "maturity_level": 2,
+              "expected_evidence_types": [
+                "training_records"
+              ]
+            },
+            {
+              "question_id": "7q6w5e4r-0e6e-4c9f-8c9f-3a5e2f2c3b3b",
+              "text": "How often are risk management policies and procedures reviewed and updated?",
+              "help_text": "Specify frequency",
+              "question_type": "SCALE_1_5",
+              "weight": 3,
+              "maturity_level": 3,
+              "expected_evidence_types": [
+                "policy",
+                "meeting_minutes"
+              ]
+            },
+            {
+              "question_id": "0p9o8i7u-0e6e-4c9f-8c9f-3a5e2f2c3b3b",
+              "text": "What is the process for identifying and assessing cybersecurity supply chain risks?",
+              "help_text": "Describe the process",
+              "question_type": "FREE_TEXT",
+              "weight": 5,
+              "maturity_level": 5,
+              "expected_evidence_types": [
+                "vendor_risk_policy",
+                "supplier_assessments"
+              ]
+            },
+            {
+              "question_id": "4t5y6u7i-0e6e-4c9f-8c9f-3a5e2f2c3b3b",
+              "text": "How are cybersecurity risk management decisions communicated to stakeholders?",
+              "help_text": "Explain the communication process",
+              "question_type": "FREE_TEXT",
+              "weight": 4,
+              "maturity_level": 4,
+              "expected_evidence_types": [
+                "meeting_minutes",
+                "board_minutes"
+              ]
+            },
+            {
+              "question_id": "2a3s4d5f-0e6e-4c9f-8c9f-3a5e2f2c3b3b",
+              "text": "What is the level of stakeholder engagement in cybersecurity risk management?",
+              "help_text": "Choose one",
+              "question_type": "MULTI_CHOICE",
+              "choices": [
+                "Low",
+                "Medium",
+                "High"
+              ],
+              "weight": 3,
+              "maturity_level": 3,
+              "expected_evidence_types": [
+                "stakeholder_register",
+                "meeting_minutes"
+              ]
+            }
+          ],
+          "maturity_guide": {
+            "mature": "The organization has a well-established and maintained cybersecurity governance framework that informs risk management decisions and is regularly reviewed and updated.",
+            "partial": "The organization has some elements of a cybersecurity governance framework in place, but there are gaps in implementation, review, and update processes.",
+            "critical_gap": "The absence of a cybersecurity governance framework leaves the organization vulnerable to unmanaged cybersecurity risks, which can have significant financial, reputational, and operational consequences."
+          },
+          "evidence_to_request": [
+            "mission_statement",
+            "strategic_plan",
+            "risk_policy",
+            "stakeholder_register",
+            "meeting_minutes",
+            "risk_register",
+            "risk_appetite_statement"
+          ],
+          "red_flags": [
+            {
+              "critical_gap": "The organization lacks a clear and communicated cybersecurity governance framework.",
+              "recommended_action": "Establish and communicate a cybersecurity governance framework that informs risk management decisions."
+            },
+            {
+              "critical_gap": "Risk management objectives are not established or agreed upon by stakeholders.",
+              "recommended_action": "Establish and agree upon risk management objectives with stakeholders."
+            },
+            {
+              "critical_gap": "The organization does not have a process for identifying and assessing cybersecurity supply chain risks.",
+              "recommended_action": "Establish a process for identifying and assessing cybersecurity supply chain risks."
+            }
+          ]
+        }
+      ],
+      "evidence_to_request": [
+        "mission_statement",
+        "strategic_plan",
+        "risk_policy",
+        "stakeholder_register",
+        "meeting_minutes",
+        "risk_register",
+        "risk_appetite_statement"
+      ],
+      "red_flags": [
+        {
+          "critical_gap": "The organization lacks a clear and communicated cybersecurity governance framework.",
+          "recommended_action": "Establish and communicate a cybersecurity governance framework that informs risk management decisions."
+        },
+        {
+          "critical_gap": "Risk management objectives are not established or agreed upon by stakeholders.",
+          "recommended_action": "Establish and agree upon risk management objectives with stakeholders."
+        },
+        {
+          "critical_gap": "The organization does not have a process for identifying and assessing cybersecurity supply chain risks.",
+          "recommended_action": "Establish a process for identifying and assessing cybersecurity supply chain risks."
+        }
+      ],
+      "maturity_guide": {
+        "mature": "The organization has a well-established and maintained cybersecurity governance framework that informs risk management decisions and is regularly reviewed and updated.",
+        "partial": "The organization has some elements of a cybersecurity governance framework in place, but there are gaps in implementation, review, and update processes.",
+        "critical_gap": "The absence of a cybersecurity governance framework leaves the organization vulnerable to unmanaged cybersecurity risks, which can have significant financial, reputational, and operational consequences."
+      }
+    },
+    {
+      "framework_id": "iso-iec-27001-2022",
+      "framework_key": "iso-27001-2022",
+      "framework_name": "ISO/IEC 27001:2022",
+      "domain_id": "5",
+      "domain_name": "Organizational controls",
+      "domain_description": "",
+      "question_count": 39,
+      "questions": [
+        {
+          "item_id": "50625088-c3de-57ac-93d5-b39aa8f8cf20",
+          "question_id": "50625088-c3de-57ac-93d5-b39aa8f8cf20",
+          "question_text": "Upload evidence such as policy, procedure, approval_record that demonstrates: Policies for information security: Information security policy and topic-specific policies shall be defined, approved by management, published, communicated to and acknowledged by relevant personnel and relevant interested parties, and reviewed at planned intervals and if significant changes occur. Additionally, confirm if the organization is implementing and operating the control: Policies for information security: Information security policy and topic-specific policies shall be defined, approved by management, published, communicated to and acknowledged by relevant personnel and relevant interested parties, and reviewed at planned intervals and if significant changes occur.",
+          "question_type": "merged",
+          "answer_formats": [
+            "evidence_upload"
+          ],
+          "framework_name": "ISO/IEC 27001:2022",
+          "framework_key": "iso-27001-2022",
+          "domain_id": "5",
+          "domain_name": "Organizational controls",
+          "control_id": "5.1",
+          "control_statement": "Policies for information secu rity: Information security policy and topic-specific policies shall be de fined, approved by management, published, communicated to and acknowledged by relevant personnel and relevant interested parties, and reviewed at planned intervals and if significant changes occur.",
+          "expected_evidence": "policy, procedure, approval_record",
+          "maturity_level": "Initial",
+          "merge_reason": "Both questions are related to information security policies and are from the same framework (ISO/IEC 27001:2022) and domain (Organizational controls).",
+          "source_item_ids": [
+            "ea4b1db1-2dcd-5771-a532-6bbf37a2e313"
+          ],
+          "source_questions": [
+            {
+              "question_id": "535bb535-ced7-56f6-b0c9-b435bc4b4235",
+              "question_text": "Upload evidence such as policy, procedure, approval_record that demonstrates: Policies for information secu rity: Information security policy and topic-specific policies shall be de fined, approved by management, published, communicated to and acknowledged by relevant personnel and relevant interested parties, and reviewed at planned intervals and if significant changes occur.",
+              "question_type": "evidence_upload",
+              "framework_name": "ISO/IEC 27001:2022",
+              "framework_key": "iso-27001-2022",
+              "domain_id": "5",
+              "domain_name": "Organizational controls",
+              "control_id": "5.1",
+              "cross_references": [],
+              "expected_evidence": "policy, procedure, approval_record"
+            }
+          ],
+          "cross_references": []
+        },
+        {
+          "item_id": "50625088-c3de-57ac-93d5-b39aa8f8cf20",
+          "question_id": "50625088-c3de-57ac-93d5-b39aa8f8cf20",
+          "question_text": "Upload evidence such as org_chart, role_definitions, board_minutes that demonstrates: Organizational leadership is responsible and accountable for cybersecurity risk and fosters a culture that is risk-aware, ethical, and continually improving. Additionally, confirm if the organization is implementing and operating the control: Organizational leadership is responsible and accountable for cybersecurity risk and fosters a culture that is risk-aware, ethical, and continually improving.",
+          "question_type": "merged",
+          "answer_formats": [
+            "evidence_upload"
+          ],
+          "framework_name": "ISO/IEC 27001:2022",
+          "framework_key": "iso-27001-2022",
+          "domain_id": "5",
+          "domain_name": "Organizational controls",
+          "control_id": "5.1",
+          "control_statement": "Policies for information secu rity: Information security policy and topic-specific policies shall be de fined, approved by management, published, communicated to and acknowledged by relevant personnel and relevant interested parties, and reviewed at planned intervals and if significant changes occur.",
+          "expected_evidence": "policy, procedure, approval_record",
+          "maturity_level": "Initial",
+          "merge_reason": "Both questions are related to organizational leadership and cybersecurity risk, and are from the same framework (NIST CSF 2.0) and domain (Govern).",
+          "source_item_ids": [
+            "ea4b1db1-2dcd-5771-a532-6bbf37a2e313"
+          ],
+          "source_questions": [
+            {
+              "question_id": "535bb535-ced7-56f6-b0c9-b435bc4b4235",
+              "question_text": "Upload evidence such as policy, procedure, approval_record that demonstrates: Policies for information secu rity: Information security policy and topic-specific policies shall be de fined, approved by management, published, communicated to and acknowledged by relevant personnel and relevant interested parties, and reviewed at planned intervals and if significant changes occur.",
+              "question_type": "evidence_upload",
+              "framework_name": "ISO/IEC 27001:2022",
+              "framework_key": "iso-27001-2022",
+              "domain_id": "5",
+              "domain_name": "Organizational controls",
+              "control_id": "5.1",
+              "cross_references": [],
+              "expected_evidence": "policy, procedure, approval_record"
+            }
+          ],
+          "cross_references": []
+        },
+        {
+          "item_id": "286f8c59-c46e-5123-8dac-a4113ca9495d",
+          "question_id": "286f8c59-c46e-5123-8dac-a4113ca9495d",
+          "question_text": "Is the organization implementing and operating the control: Acceptable use of information and other associated assets: Rules for the acceptable use and procedures for handling information and other associated assets shall be identified, documented and implemented?",
+          "question_type": "merged",
+          "answer_formats": [
+            "yes_no",
+            "evidence_upload"
+          ],
+          "framework_name": "ISO/IEC 27001:2022",
+          "framework_key": "iso-27001-2022",
+          "domain_id": "5",
+          "domain_name": "Organizational controls",
+          "control_id": "5.10",
+          "control_statement": "Acceptable use of information and other associated assets: Rules for the acceptable use and procedures for handling information and other associated assets shall be identified, documented and implemented.",
+          "expected_evidence": "policy, procedure, approval_record",
+          "maturity_level": "Initial",
+          "merge_reason": "Merged by control fallback because LLM output was unavailable or invalid.",
+          "source_item_ids": [
+            "8cd99d7e-10b0-50e2-b6e3-602e9fde20af",
+            "103f3142-3368-5722-9162-597427a39b39"
+          ],
+          "source_questions": [
+            {
+              "question_id": "a20bc9dd-c434-51af-aa0b-2af266ca1b4a",
+              "question_text": "Is the organization implementing and operating the control: Acceptable use of information and other associated assets: Rules for the acceptable use and procedures for handling information and other associated assets shall be identified, documented and implemented?",
+              "question_type": "yes_no",
+              "framework_name": "ISO/IEC 27001:2022",
+              "framework_key": "iso-27001-2022",
+              "domain_id": "5",
+              "domain_name": "Organizational controls",
+              "control_id": "5.10",
+              "cross_references": [],
+              "expected_evidence": "policy, procedure, approval_record"
+            },
+            {
+              "question_id": "26ccb054-b30c-51c0-84d4-797225a1b71c",
+              "question_text": "Upload evidence such as policy, procedure, approval_record that demonstrates: Acceptable use of information and other associated assets: Rules for the acceptable use and procedures for handling information and other associated assets shall be identified, documented and implemented.",
+              "question_type": "evidence_upload",
+              "framework_name": "ISO/IEC 27001:2022",
+              "framework_key": "iso-27001-2022",
+              "domain_id": "5",
+              "domain_name": "Organizational controls",
+              "control_id": "5.10",
+              "cross_references": [],
+              "expected_evidence": "policy, procedure, approval_record"
+            }
+          ],
+          "cross_references": []
+        },
+        {
+          "item_id": "79954b32-9ed7-52c1-97d4-a17e8b4e8dd8",
+          "question_id": "79954b32-9ed7-52c1-97d4-a17e8b4e8dd8",
+          "question_text": "Is the organization implementing and operating the control: Return of assets Control: Personnel and other interested parties as appropriate shall return all the organization's assets in their possession upon change or termination of their employment, contract or agreement. © ISO/IEC 2022 - All rights reserved?",
+          "question_type": "merged",
+          "answer_formats": [
+            "yes_no",
+            "evidence_upload"
+          ],
+          "framework_name": "ISO/IEC 27001:2022",
+          "framework_key": "iso-27001-2022",
+          "domain_id": "5",
+          "domain_name": "Organizational controls",
+          "control_id": "5.11",
+          "control_statement": "Return of assets Control: Personnel and other interested parties as appropriate shall return all the organization's assets in their possession upon change or termination of their employment, contract or agreement. © ISO/IEC 2022 - All rights reserved",
+          "expected_evidence": "project_record, change_ticket, engineering_standard",
+          "maturity_level": "Initial",
+          "merge_reason": "Merged by control fallback because LLM output was unavailable or invalid.",
+          "source_item_ids": [
+            "a2c2f91b-777a-5873-93c2-4eeb50f6a4bf",
+            "79b94422-e0aa-5690-bacb-15e2cf1e0c39"
+          ],
+          "source_questions": [
+            {
+              "question_id": "c0ee401f-354f-568c-9e7f-e58d4e966271",
+              "question_text": "Is the organization implementing and operating the control: Return of assets Control: Personnel and other interested parties as appropriate shall return all the organization's assets in their possession upon change or termination of their employment, contract or agreement. © ISO/IEC 2022 - All rights reserved?",
+              "question_type": "yes_no",
+              "framework_name": "ISO/IEC 27001:2022",
+              "framework_key": "iso-27001-2022",
+              "domain_id": "5",
+              "domain_name": "Organizational controls",
+              "control_id": "5.11",
+              "cross_references": [],
+              "expected_evidence": "project_record, change_ticket, engineering_standard"
+            },
+            {
+              "question_id": "d3503fd1-2fbf-51da-a6fd-a89ff6a7bedd",
+              "question_text": "Upload evidence such as project_record, change_ticket, engineering_standard that demonstrates: Return of assets Control: Personnel and other interested parties as appropriate shall return all the organization's assets in their possession upon change or termination of their employment, contract or agreement. © ISO/IEC 2022 - All rights reserved.",
+              "question_type": "evidence_upload",
+              "framework_name": "ISO/IEC 27001:2022",
+              "framework_key": "iso-27001-2022",
+              "domain_id": "5",
+              "domain_name": "Organizational controls",
+              "control_id": "5.11",
+              "cross_references": [],
+              "expected_evidence": "project_record, change_ticket, engineering_standard"
+            }
+          ],
+          "cross_references": []
+        },
+        {
+          "item_id": "15496b21-0ea6-57d6-9a8e-3dd35dd65a8c",
+          "question_id": "15496b21-0ea6-57d6-9a8e-3dd35dd65a8c",
+          "question_text": "Is the organization implementing and operating the control: Classification of information Control: Information shall be classified according to the information security needs of the organization based on confidentiality, integrity, availability and relevant interested party requirements?",
+          "question_type": "merged",
+          "answer_formats": [
+            "yes_no",
+            "evidence_upload"
+          ],
+          "framework_name": "ISO/IEC 27001:2022",
+          "framework_key": "iso-27001-2022",
+          "domain_id": "5",
+          "domain_name": "Organizational controls",
+          "control_id": "5.12",
+          "control_statement": "Classification of information Control: Information shall be classified according to the information security needs of the organization based on confidentiality, integrity, availability and relevant interested party requirements.",
+          "expected_evidence": "classification_standard, labeling_procedure",
+          "maturity_level": "Initial",
+          "merge_reason": "Merged by control fallback because LLM output was unavailable or invalid.",
+          "source_item_ids": [
+            "f25c692b-8ecd-50c5-9222-c618abb013fd",
+            "eace0f9d-95e4-5824-9689-987641ec23c4"
+          ],
+          "source_questions": [
+            {
+              "question_id": "6091e198-e76b-5116-be86-ba163f1c4d3a",
+              "question_text": "Is the organization implementing and operating the control: Classification of information Control: Information shall be classified according to the information security needs of the organization based on confidentiality, integrity, availability and relevant interested party requirements?",
+              "question_type": "yes_no",
+              "framework_name": "ISO/IEC 27001:2022",
+              "framework_key": "iso-27001-2022",
+              "domain_id": "5",
+              "domain_name": "Organizational controls",
+              "control_id": "5.12",
+              "cross_references": [],
+              "expected_evidence": "classification_standard, labeling_procedure"
+            },
+            {
+              "question_id": "6263c5d2-cb2f-5aeb-9d1a-ad0d33dfff1d",
+              "question_text": "Upload evidence such as classification_standard, labeling_procedure that demonstrates: Classification of information Control: Information shall be classified according to the information security needs of the organization based on confidentiality, integrity, availability and relevant interested party requirements.",
+              "question_type": "evidence_upload",
+              "framework_name": "ISO/IEC 27001:2022",
+              "framework_key": "iso-27001-2022",
+              "domain_id": "5",
+              "domain_name": "Organizational controls",
+              "control_id": "5.12",
+              "cross_references": [],
+              "expected_evidence": "classification_standard, labeling_procedure"
+            }
+          ],
+          "cross_references": []
+        },
+        {
+          "item_id": "c2427199-5880-5e0c-8e51-51dfa710f72b",
+          "question_id": "c2427199-5880-5e0c-8e51-51dfa710f72b",
+          "question_text": "Is the organization implementing and operating the control: Labelling of information Control: An appropriate set of procedures for information labelling shall be developed and implemented in accordance with the information clas sification scheme adopted by the organization?",
+          "question_type": "merged",
+          "answer_formats": [
+            "yes_no",
+            "evidence_upload"
+          ],
+          "framework_name": "ISO/IEC 27001:2022",
+          "framework_key": "iso-27001-2022",
+          "domain_id": "5",
+          "domain_name": "Organizational controls",
+          "control_id": "5.13",
+          "control_statement": "Labelling of information Control: An appropriate set of procedures for information labelling shall be developed and implemented in accordance with the information clas sification scheme adopted by the organization.",
+          "expected_evidence": "policy, procedure, approval_record",
+          "maturity_level": "Initial",
+          "merge_reason": "Merged by control fallback because LLM output was unavailable or invalid.",
+          "source_item_ids": [
+            "01e7342c-530b-5f1a-ba74-f52638775537",
+            "8991559b-145e-54ae-bc2e-e056d93ecdef"
+          ],
+          "source_questions": [
+            {
+              "question_id": "c650318b-36f5-57a5-a0eb-80cbec1b86bd",
+              "question_text": "Is the organization implementing and operating the control: Labelling of information Control: An appropriate set of procedures for information labelling shall be developed and implemented in accordance with the information clas sification scheme adopted by the organization?",
+              "question_type": "yes_no",
+              "framework_name": "ISO/IEC 27001:2022",
+              "framework_key": "iso-27001-2022",
+              "domain_id": "5",
+              "domain_name": "Organizational controls",
+              "control_id": "5.13",
+              "cross_references": [],
+              "expected_evidence": "policy, procedure, approval_record"
+            },
+            {
+              "question_id": "d8a4d8c1-bbfd-52ca-8b0a-5e5ac4e7eb2d",
+              "question_text": "Upload evidence such as policy, procedure, approval_record that demonstrates: Labelling of information Control: An appropriate set of procedures for information labelling shall be developed and implemented in accordance with the information clas sification scheme adopted by the organization.",
+              "question_type": "evidence_upload",
+              "framework_name": "ISO/IEC 27001:2022",
+              "framework_key": "iso-27001-2022",
+              "domain_id": "5",
+              "domain_name": "Organizational controls",
+              "control_id": "5.13",
+              "cross_references": [],
+              "expected_evidence": "policy, procedure, approval_record"
+            }
+          ],
+          "cross_references": []
+        },
+        {
+          "item_id": "0ad3eadc-c015-5892-93b4-8e3b340ce1b3",
+          "question_id": "0ad3eadc-c015-5892-93b4-8e3b340ce1b3",
+          "question_text": "Is the organization implementing and operating the control: Information transfer Control: Information transfer rules, procedures, or agreements shall be in place for all types of transfer facilities within the organization and between the organization and other parties?",
+          "question_type": "merged",
+          "answer_formats": [
+            "yes_no",
+            "evidence_upload"
+          ],
+          "framework_name": "ISO/IEC 27001:2022",
+          "framework_key": "iso-27001-2022",
+          "domain_id": "5",
+          "domain_name": "Organizational controls",
+          "control_id": "5.14",
+          "control_statement": "Information transfer Control: Information transfer rules, procedures, or agreements shall be in place for all types of transfer facilities within the organization and between the organization and other parties.",
+          "expected_evidence": "policy, procedure, approval_record",
+          "maturity_level": "Initial",
+          "merge_reason": "Merged by control fallback because LLM output was unavailable or invalid.",
+          "source_item_ids": [
+            "dfa1027e-18df-5e63-8c6f-742acb4016f3",
+            "9175800c-84a0-54ad-94a8-5ae4aa67b44f"
+          ],
+          "source_questions": [
+            {
+              "question_id": "51fde23a-b31a-5524-9de2-b5593ee21708",
+              "question_text": "Is the organization implementing and operating the control: Information transfer Control: Information transfer rules, procedures, or agreements shall be in place for all types of transfer facilities within the organization and between the organization and other parties?",
+              "question_type": "yes_no",
+              "framework_name": "ISO/IEC 27001:2022",
+              "framework_key": "iso-27001-2022",
+              "domain_id": "5",
+              "domain_name": "Organizational controls",
+              "control_id": "5.14",
+              "cross_references": [],
+              "expected_evidence": "policy, procedure, approval_record"
+            },
+            {
+              "question_id": "47e87ac6-65ff-51ad-bfb4-a7d1223bef47",
+              "question_text": "Upload evidence such as policy, procedure, approval_record that demonstrates: Information transfer Control: Information transfer rules, procedures, or agreements shall be in place for all types of transfer facilities within the organization and between the organization and other parties.",
+              "question_type": "evidence_upload",
+              "framework_name": "ISO/IEC 27001:2022",
+              "framework_key": "iso-27001-2022",
+              "domain_id": "5",
+              "domain_name": "Organizational controls",
+              "control_id": "5.14",
+              "cross_references": [],
+              "expected_evidence": "policy, procedure, approval_record"
+            }
+          ],
+          "cross_references": []
+        },
+        {
+          "item_id": "2e36d98d-3106-5557-b8c6-64026590603a",
+          "question_id": "2e36d98d-3106-5557-b8c6-64026590603a",
+          "question_text": "Is the organization implementing and operating the control: Access control Control: Rules to control physical and logical access to information and other associated assets shall be established and implemented based on busi ness and information security requirements?",
+          "question_type": "merged",
+          "answer_formats": [
+            "yes_no",
+            "evidence_upload"
+          ],
+          "framework_name": "ISO/IEC 27001:2022",
+          "framework_key": "iso-27001-2022",
+          "domain_id": "5",
+          "domain_name": "Organizational controls",
+          "control_id": "5.15",
+          "control_statement": "Access control Control: Rules to control physical and logical access to information and other associated assets shall be established and implemented based on busi ness and information security requirements.",
+          "expected_evidence": "inventory, asset_register, owner_register",
+          "maturity_level": "Initial",
+          "merge_reason": "Merged by control fallback because LLM output was unavailable or invalid.",
+          "source_item_ids": [
+            "9501305d-0901-50d4-ab07-d7b86a2b80b7",
+            "df1ebb65-e2b2-59c6-8760-9b4f319bb1fe"
+          ],
+          "source_questions": [
+            {
+              "question_id": "30862383-bad0-5380-8f6c-07894540346e",
+              "question_text": "Is the organization implementing and operating the control: Access control Control: Rules to control physical and logical access to information and other associated assets shall be established and implemented based on busi ness and information security requirements?",
+              "question_type": "yes_no",
+              "framework_name": "ISO/IEC 27001:2022",
+              "framework_key": "iso-27001-2022",
+              "domain_id": "5",
+              "domain_name": "Organizational controls",
+              "control_id": "5.15",
+              "cross_references": [],
+              "expected_evidence": "inventory, asset_register, owner_register"
+            },
+            {
+              "question_id": "e54d169a-1cfb-5f60-add9-a482f2b9d9fe",
+              "question_text": "Upload evidence such as inventory, asset_register, owner_register that demonstrates: Access control Control: Rules to control physical and logical access to information and other associated assets shall be established and implemented based on busi ness and information security requirements.",
+              "question_type": "evidence_upload",
+              "framework_name": "ISO/IEC 27001:2022",
+              "framework_key": "iso-27001-2022",
+              "domain_id": "5",
+              "domain_name": "Organizational controls",
+              "control_id": "5.15",
+              "cross_references": [],
+              "expected_evidence": "inventory, asset_register, owner_register"
+            }
+          ],
+          "cross_references": []
+        },
+        {
+          "item_id": "63280fef-76bc-54f4-8ec1-3466fc7baf1d",
+          "question_id": "63280fef-76bc-54f4-8ec1-3466fc7baf1d",
+          "question_text": "Is the organization implementing and operating the control: Identity management Control: The full life cycle of identities shall be managed?",
+          "question_type": "merged",
+          "answer_formats": [
+            "yes_no",
+            "evidence_upload"
+          ],
+          "framework_name": "ISO/IEC 27001:2022",
+          "framework_key": "iso-27001-2022",
+          "domain_id": "5",
+          "domain_name": "Organizational controls",
+          "control_id": "5.16",
+          "control_statement": "Identity management Control: The full life cycle of identities shall be managed.",
+          "expected_evidence": "role_matrix, org_chart, responsibility_assignment",
+          "maturity_level": "Initial",
+          "merge_reason": "Merged by control fallback because LLM output was unavailable or invalid.",
+          "source_item_ids": [
+            "de8f7938-e4a0-5d8c-be28-b5e84b99c2aa",
+            "9b4d7ebd-ad48-5498-9efe-dd7155c9caad"
+          ],
+          "source_questions": [
+            {
+              "question_id": "268ebcec-c2b9-5a93-ab2b-5b2e99a7367a",
+              "question_text": "Is the organization implementing and operating the control: Identity management Control: The full life cycle of identities shall be managed?",
+              "question_type": "yes_no",
+              "framework_name": "ISO/IEC 27001:2022",
+              "framework_key": "iso-27001-2022",
+              "domain_id": "5",
+              "domain_name": "Organizational controls",
+              "control_id": "5.16",
+              "cross_references": [],
+              "expected_evidence": "role_matrix, org_chart, responsibility_assignment"
+            },
+            {
+              "question_id": "72beb703-2277-554f-8c15-8adbd0205342",
+              "question_text": "Upload evidence such as role_matrix, org_chart, responsibility_assignment that demonstrates: Identity management Control: The full life cycle of identities shall be managed.",
+              "question_type": "evidence_upload",
+              "framework_name": "ISO/IEC 27001:2022",
+              "framework_key": "iso-27001-2022",
+              "domain_id": "5",
+              "domain_name": "Organizational controls",
+              "control_id": "5.16",
+              "cross_references": [],
+              "expected_evidence": "role_matrix, org_chart, responsibility_assignment"
+            }
+          ],
+          "cross_references": []
+        },
+        {
+          "item_id": "881a64af-2d6a-5950-8c53-af1e248e686a",
+          "question_id": "881a64af-2d6a-5950-8c53-af1e248e686a",
+          "question_text": "Is the organization implementing and operating the control: Authentication information Control: Allocation and management of authentication information shall be controlled by a management process, including advising personnel on appropriate handling of authentication information?",
+          "question_type": "merged",
+          "answer_formats": [
+            "yes_no",
+            "evidence_upload"
+          ],
+          "framework_name": "ISO/IEC 27001:2022",
+          "framework_key": "iso-27001-2022",
+          "domain_id": "5",
+          "domain_name": "Organizational controls",
+          "control_id": "5.17",
+          "control_statement": "Authentication information Control: Allocation and management of authentication information shall be controlled by a management process, including advising personnel on appropriate handling of authentication information.",
+          "expected_evidence": "role_matrix, org_chart, responsibility_assignment",
+          "maturity_level": "Initial",
+          "merge_reason": "Merged by control fallback because LLM output was unavailable or invalid.",
+          "source_item_ids": [
+            "0e122f11-ee35-5830-af38-8d093d6d2ab1",
+            "3aa95cd0-a122-55ce-8ca8-cfee87fdc452"
+          ],
+          "source_questions": [
+            {
+              "question_id": "bd2038a4-70a2-59f8-99f0-6c13c446cd3a",
+              "question_text": "Is the organization implementing and operating the control: Authentication information Control: Allocation and management of authentication information shall be controlled by a management process, including advising personnel on appropriate handling of authentication information?",
+              "question_type": "yes_no",
+              "framework_name": "ISO/IEC 27001:2022",
+              "framework_key": "iso-27001-2022",
+              "domain_id": "5",
+              "domain_name": "Organizational controls",
+              "control_id": "5.17",
+              "cross_references": [],
+              "expected_evidence": "role_matrix, org_chart, responsibility_assignment"
+            },
+            {
+              "question_id": "d6e55a2a-7283-5b0a-a89d-16b9887fd2d2",
+              "question_text": "Upload evidence such as role_matrix, org_chart, responsibility_assignment that demonstrates: Authentication information Control: Allocation and management of authentication information shall be controlled by a management process, including advising personnel on appropriate handling of authentication information.",
+              "question_type": "evidence_upload",
+              "framework_name": "ISO/IEC 27001:2022",
+              "framework_key": "iso-27001-2022",
+              "domain_id": "5",
+              "domain_name": "Organizational controls",
+              "control_id": "5.17",
+              "cross_references": [],
+              "expected_evidence": "role_matrix, org_chart, responsibility_assignment"
+            }
+          ],
+          "cross_references": []
+        }
+      ],
+      "sub_topics": [
+        {
+          "sub_topic": "Organizational controls",
+          "control_ids": [
+            "5.1",
+            "5.10",
+            "5.11",
+            "5.12",
+            "5.13",
+            "5.14",
+            "5.15",
+            "5.16",
+            "5.17",
+            "5.18",
+            "5.19",
+            "5.2",
+            "5.20",
+            "5.21",
+            "5.22",
+            "5.23",
+            "5.24",
+            "5.25",
+            "5.26",
+            "5.27",
+            "5.28",
+            "5.29",
+            "5.3",
+            "5.30",
+            "5.31",
+            "5.32",
+            "5.33",
+            "5.34",
+            "5.35",
+            "5.36",
+            "5.37",
+            "5.4",
+            "5.5",
+            "5.6",
+            "5.7",
+            "5.8",
+            "5.9"
+          ],
+          "part1_question": {
+            "question_id": "f47ac10b-ee9e-43a5-9b7d-3bfe7a4d3f4b",
+            "question_text": "Is an Information Security Policy in place?",
+            "question_type": "yes_no_with_detail",
+            "response_options": "Yes / No / Partial",
+            "detail_prompt": "If yes or partial, specify the tool or technology in use."
+          },
+          "questions": [
+            {
+              "question_id": "5c9c2f3d-5f4e-4678-9c5b-6d7e8f9g0h1i",
+              "text": "How are information security roles and responsibilities defined and allocated?",
+              "help_text": "Review of role matrix and org chart",
+              "question_type": "FREE_TEXT",
+              "weight": 4,
+              "maturity_level": 4,
+              "expected_evidence_types": [
+                "role_matrix",
+                "org_chart"
+              ]
+            },
+            {
+              "question_id": "2a3b4c5d-6e7f-8g9h-0i1j-2k3l4m5n6o",
+              "text": "What process triggers immediate credential revocation when an employee leaves?",
+              "help_text": "Review of access rights review process",
+              "question_type": "FREE_TEXT",
+              "weight": 5,
+              "maturity_level": 5,
+              "expected_evidence_types": [
+                "access_rights_review_log",
+                "termination_procedure"
+              ]
+            },
+            {
+              "question_id": "1p2q3r4s-5t6u7v-8w9x-0y1z-2a3b4c5d",
+              "text": "How frequently are privileged account access rights reviewed and by whom?",
+              "help_text": "Review of access rights review schedule",
+              "question_type": "FREE_TEXT",
+              "weight": 4,
+              "maturity_level": 4,
+              "expected_evidence_types": [
+                "access_rights_review_log",
+                "privilege_account_list"
+              ]
+            },
+            {
+              "question_id": "9i8h7g6f-5e4d3c2b-1a0z9y8x-7w6v5u4t",
+              "text": "What is the process for addressing information security within supplier agreements?",
+              "help_text": "Review of supplier contract and assessment",
+              "question_type": "FREE_TEXT",
+              "weight": 4,
+              "maturity_level": 4,
+              "expected_evidence_types": [
+                "supplier_contract",
+                "supplier_assessment"
+              ]
+            },
+            {
+              "question_id": "6d5c4b3a-2s1r9t-8y7u6o-5p4q3w-2v1x0z",
+              "text": "How does the organization ensure compliance with policies, rules, and standards for information security?",
+              "help_text": "Review of compliance review and audit schedule",
+              "question_type": "FREE_TEXT",
+              "weight": 5,
+              "maturity_level": 5,
+              "expected_evidence_types": [
+                "compliance_review",
+                "audit_log"
+              ]
+            }
+          ],
+          "maturity_guide": {
+            "mature": "The organization has a well-established and well-governed information security management system, with clear roles and responsibilities, and a robust process for managing information security risks.",
+            "partial": "The organization has some information security controls in place, but they are not well-governed or consistently applied, and there are gaps in the management of information security risks.",
+            "critical_gap": "The organization lacks a formal information security management system, and information security risks are not properly identified or managed, leaving the organization vulnerable to security breaches and data losses."
+          },
+          "evidence_to_request": [
+            "information_security_policy",
+            "role_matrix",
+            "org_chart",
+            "access_rights_review_log",
+            "supplier_contract",
+            "compliance_review"
+          ],
+          "red_flags": [
+            {
+              "critical_gap": "The organization lacks a formal information security policy, leaving it vulnerable to security breaches and data losses.",
+              "recommended_action": "Develop and implement a comprehensive information security policy that outlines the organization's approach to managing information security risks."
+            },
+            {
+              "critical_gap": "The organization has not defined and allocated information security roles and responsibilities, leading to confusion and a lack of accountability.",
+              "recommended_action": "Define and allocate information security roles and responsibilities, and ensure that all personnel understand their responsibilities and are held accountable for their actions."
+            },
+            {
+              "critical_gap": "The organization has not established a process for managing information security incidents, leaving it unprepared to respond to security breaches and data losses.",
+              "recommended_action": "Establish a process for managing information security incidents, including incident detection, response, and recovery, and ensure that all personnel are trained to respond to security incidents."
+            }
+          ]
+        }
+      ],
+      "evidence_to_request": [
+        "information_security_policy",
+        "role_matrix",
+        "org_chart",
+        "access_rights_review_log",
+        "supplier_contract",
+        "compliance_review"
+      ],
+      "red_flags": [
+        {
+          "critical_gap": "The organization lacks a formal information security policy, leaving it vulnerable to security breaches and data losses.",
+          "recommended_action": "Develop and implement a comprehensive information security policy that outlines the organization's approach to managing information security risks."
+        },
+        {
+          "critical_gap": "The organization has not defined and allocated information security roles and responsibilities, leading to confusion and a lack of accountability.",
+          "recommended_action": "Define and allocate information security roles and responsibilities, and ensure that all personnel understand their responsibilities and are held accountable for their actions."
+        },
+        {
+          "critical_gap": "The organization has not established a process for managing information security incidents, leaving it unprepared to respond to security breaches and data losses.",
+          "recommended_action": "Establish a process for managing information security incidents, including incident detection, response, and recovery, and ensure that all personnel are trained to respond to security incidents."
+        }
+      ],
+      "maturity_guide": {
+        "mature": "The organization has a well-established and well-governed information security management system, with clear roles and responsibilities, and a robust process for managing information security risks.",
+        "partial": "The organization has some information security controls in place, but they are not well-governed or consistently applied, and there are gaps in the management of information security risks.",
+        "critical_gap": "The organization lacks a formal information security management system, and information security risks are not properly identified or managed, leaving the organization vulnerable to security breaches and data losses."
+      }
+    }
+  ],
+  "questions": [
+    {
+      "question_id": "47daacfc-3411-5a88-a498-399247bc23b9",
+      "question_text": "Is the organization implementing and operating the control: The organizational mission is understood and informs cybersecurity risk management?",
+      "question_type": "yes_no",
+      "framework_name": "NIST CSF 2.0",
+      "framework_key": "nist-csf-2-0",
+      "domain_id": "GV",
+      "domain_name": "Govern",
+      "control_id": "GV.OC-01",
+      "cross_references": [
+        {
+          "other_framework_id": "nist-sp-800-39",
+          "other_control_id": "2.1"
+        },
+        {
+          "other_framework_id": "iso-27001-2022",
+          "other_control_id": "4.1"
+        }
+      ],
+      "expected_evidence": "mission_statement, strategic_plan, risk_policy"
+    },
+    {
+      "question_id": "0684ada2-6fe3-5186-ab71-3d28cd9c2989",
+      "question_text": "Upload evidence such as mission_statement, strategic_plan, risk_policy that demonstrates: The organizational mission is understood and informs cybersecurity risk management.",
+      "question_type": "evidence_upload",
+      "framework_name": "NIST CSF 2.0",
+      "framework_key": "nist-csf-2-0",
+      "domain_id": "GV",
+      "domain_name": "Govern",
+      "control_id": "GV.OC-01",
+      "cross_references": [
+        {
+          "other_framework_id": "nist-sp-800-39",
+          "other_control_id": "2.1"
+        },
+        {
+          "other_framework_id": "iso-27001-2022",
+          "other_control_id": "4.1"
+        }
+      ],
+      "expected_evidence": "mission_statement, strategic_plan, risk_policy"
+    },
+    {
+      "question_id": "55ca2d89-bd58-5161-9089-65073102dbce",
+      "question_text": "Is the organization implementing and operating the control: Internal and external stakeholders are understood, and their needs and expectations regarding cybersecurity risk management are understood and considered?",
+      "question_type": "yes_no",
+      "framework_name": "NIST CSF 2.0",
+      "framework_key": "nist-csf-2-0",
+      "domain_id": "GV",
+      "domain_name": "Govern",
+      "control_id": "GV.OC-02",
+      "cross_references": [
+        {
+          "other_framework_id": "iso-27001-2022",
+          "other_control_id": "4.2"
+        },
+        {
+          "other_framework_id": "nist-sp-800-39",
+          "other_control_id": "2.2"
+        }
+      ],
+      "expected_evidence": "stakeholder_register, meeting_minutes, risk_register"
+    },
+    {
+      "question_id": "aa0ce65b-8e20-5d1b-b7ef-0d2f5c9782c4",
+      "question_text": "Upload evidence such as stakeholder_register, meeting_minutes, risk_register that demonstrates: Internal and external stakeholders are understood, and their needs and expectations regarding cybersecurity risk management are understood and considered.",
+      "question_type": "evidence_upload",
+      "framework_name": "NIST CSF 2.0",
+      "framework_key": "nist-csf-2-0",
+      "domain_id": "GV",
+      "domain_name": "Govern",
+      "control_id": "GV.OC-02",
+      "cross_references": [
+        {
+          "other_framework_id": "iso-27001-2022",
+          "other_control_id": "4.2"
+        },
+        {
+          "other_framework_id": "nist-sp-800-39",
+          "other_control_id": "2.2"
+        }
+      ],
+      "expected_evidence": "stakeholder_register, meeting_minutes, risk_register"
+    },
+    {
+      "question_id": "cae23586-63fe-53f3-a40d-97ce03de0f9a",
+      "question_text": "Is the organization implementing and operating the control: Risk management objectives are established and agreed to by organizational stakeholders?",
+      "question_type": "yes_no",
+      "framework_name": "NIST CSF 2.0",
+      "framework_key": "nist-csf-2-0",
+      "domain_id": "GV",
+      "domain_name": "Govern",
+      "control_id": "GV.RM-01",
+      "cross_references": [
+        {
+          "other_framework_id": "nist-sp-800-39",
+          "other_control_id": "2.2"
+        },
+        {
+          "other_framework_id": "iso-27001-2022",
+          "other_control_id": "6.1"
+        }
+      ],
+      "expected_evidence": "risk_appetite_statement, board_minutes, policy"
+    },
+    {
+      "question_id": "ce351cec-7174-5ae4-a4cf-f55d97ef094c",
+      "question_text": "Upload evidence such as risk_appetite_statement, board_minutes, policy that demonstrates: Risk management objectives are established and agreed to by organizational stakeholders.",
+      "question_type": "evidence_upload",
+      "framework_name": "NIST CSF 2.0",
+      "framework_key": "nist-csf-2-0",
+      "domain_id": "GV",
+      "domain_name": "Govern",
+      "control_id": "GV.RM-01",
+      "cross_references": [
+        {
+          "other_framework_id": "nist-sp-800-39",
+          "other_control_id": "2.2"
+        },
+        {
+          "other_framework_id": "iso-27001-2022",
+          "other_control_id": "6.1"
+        }
+      ],
+      "expected_evidence": "risk_appetite_statement, board_minutes, policy"
+    },
+    {
+      "question_id": "ae053d32-7e5c-56df-ac63-6009f2688cbc",
+      "question_text": "Is the organization implementing and operating the control: Risk appetite and risk tolerance statements are established, communicated, and maintained?",
+      "question_type": "yes_no",
+      "framework_name": "NIST CSF 2.0",
+      "framework_key": "nist-csf-2-0",
+      "domain_id": "GV",
+      "domain_name": "Govern",
+      "control_id": "GV.RM-02",
+      "cross_references": [
+        {
+          "other_framework_id": "nist-sp-800-39",
+          "other_control_id": ""
+        },
+        {
+          "other_framework_id": "iso-27005-2022",
+          "other_control_id": "6.3"
+        }
+      ],
+      "expected_evidence": "risk_appetite_document, policy, training_records"
+    },
+    {
+      "question_id": "9a26860a-4047-5266-a85d-68da372ad881",
+      "question_text": "Upload evidence such as risk_appetite_document, policy, training_records that demonstrates: Risk appetite and risk tolerance statements are established, communicated, and maintained.",
+      "question_type": "evidence_upload",
+      "framework_name": "NIST CSF 2.0",
+      "framework_key": "nist-csf-2-0",
+      "domain_id": "GV",
+      "domain_name": "Govern",
+      "control_id": "GV.RM-02",
+      "cross_references": [
+        {
+          "other_framework_id": "nist-sp-800-39",
+          "other_control_id": ""
+        },
+        {
+          "other_framework_id": "iso-27005-2022",
+          "other_control_id": "6.3"
+        }
+      ],
+      "expected_evidence": "risk_appetite_document, policy, training_records"
+    },
+    {
+      "question_id": "75b492ba-01b0-5bdf-ac99-ab15f98ddabf",
+      "question_text": "Is the organization implementing and operating the control: A cybersecurity supply chain risk management program, strategy, objectives, policies, and processes are established and agreed to by organizational stakeholders?",
+      "question_type": "yes_no",
+      "framework_name": "NIST CSF 2.0",
+      "framework_key": "nist-csf-2-0",
+      "domain_id": "GV",
+      "domain_name": "Govern",
+      "control_id": "GV.SC-01",
+      "cross_references": [
+        {
+          "other_framework_id": "nist-sp-800-161",
+          "other_control_id": ""
+        },
+        {
+          "other_framework_id": "iso-27036",
+          "other_control_id": ""
+        }
+      ],
+      "expected_evidence": "vendor_risk_policy, vendor_contracts, supplier_assessments"
+    },
+    {
+      "question_id": "f4157996-1732-5659-9418-a3d0d122b458",
+      "question_text": "Upload evidence such as vendor_risk_policy, vendor_contracts, supplier_assessments that demonstrates: A cybersecurity supply chain risk management program, strategy, objectives, policies, and processes are established and agreed to by organizational stakeholders.",
+      "question_type": "evidence_upload",
+      "framework_name": "NIST CSF 2.0",
+      "framework_key": "nist-csf-2-0",
+      "domain_id": "GV",
+      "domain_name": "Govern",
+      "control_id": "GV.SC-01",
+      "cross_references": [
+        {
+          "other_framework_id": "nist-sp-800-161",
+          "other_control_id": ""
+        },
+        {
+          "other_framework_id": "iso-27036",
+          "other_control_id": ""
+        }
+      ],
+      "expected_evidence": "vendor_risk_policy, vendor_contracts, supplier_assessments"
+    },
+    {
+      "question_id": "535bb535-ced7-56f6-b0c9-b435bc4b4235",
+      "question_text": "Upload evidence such as policy, procedure, approval_record that demonstrates: Policies for information secu rity: Information security policy and topic-specific policies shall be de fined, approved by management, published, communicated to and acknowledged by relevant personnel and relevant interested parties, and reviewed at planned intervals and if significant changes occur.",
+      "question_type": "evidence_upload",
+      "framework_name": "ISO/IEC 27001:2022",
+      "framework_key": "iso-27001-2022",
+      "domain_id": "5",
+      "domain_name": "Organizational controls",
+      "control_id": "5.1",
+      "cross_references": [],
+      "expected_evidence": "policy, procedure, approval_record"
+    },
+    {
+      "question_id": "535bb535-ced7-56f6-b0c9-b435bc4b4235",
+      "question_text": "Upload evidence such as policy, procedure, approval_record that demonstrates: Policies for information secu rity: Information security policy and topic-specific policies shall be de fined, approved by management, published, communicated to and acknowledged by relevant personnel and relevant interested parties, and reviewed at planned intervals and if significant changes occur.",
+      "question_type": "evidence_upload",
+      "framework_name": "ISO/IEC 27001:2022",
+      "framework_key": "iso-27001-2022",
+      "domain_id": "5",
+      "domain_name": "Organizational controls",
+      "control_id": "5.1",
+      "cross_references": [],
+      "expected_evidence": "policy, procedure, approval_record"
+    },
+    {
+      "question_id": "a20bc9dd-c434-51af-aa0b-2af266ca1b4a",
+      "question_text": "Is the organization implementing and operating the control: Acceptable use of information and other associated assets: Rules for the acceptable use and procedures for handling information and other associated assets shall be identified, documented and implemented?",
+      "question_type": "yes_no",
+      "framework_name": "ISO/IEC 27001:2022",
+      "framework_key": "iso-27001-2022",
+      "domain_id": "5",
+      "domain_name": "Organizational controls",
+      "control_id": "5.10",
+      "cross_references": [],
+      "expected_evidence": "policy, procedure, approval_record"
+    },
+    {
+      "question_id": "26ccb054-b30c-51c0-84d4-797225a1b71c",
+      "question_text": "Upload evidence such as policy, procedure, approval_record that demonstrates: Acceptable use of information and other associated assets: Rules for the acceptable use and procedures for handling information and other associated assets shall be identified, documented and implemented.",
+      "question_type": "evidence_upload",
+      "framework_name": "ISO/IEC 27001:2022",
+      "framework_key": "iso-27001-2022",
+      "domain_id": "5",
+      "domain_name": "Organizational controls",
+      "control_id": "5.10",
+      "cross_references": [],
+      "expected_evidence": "policy, procedure, approval_record"
+    },
+    {
+      "question_id": "c0ee401f-354f-568c-9e7f-e58d4e966271",
+      "question_text": "Is the organization implementing and operating the control: Return of assets Control: Personnel and other interested parties as appropriate shall return all the organization's assets in their possession upon change or termination of their employment, contract or agreement. © ISO/IEC 2022 - All rights reserved?",
+      "question_type": "yes_no",
+      "framework_name": "ISO/IEC 27001:2022",
+      "framework_key": "iso-27001-2022",
+      "domain_id": "5",
+      "domain_name": "Organizational controls",
+      "control_id": "5.11",
+      "cross_references": [],
+      "expected_evidence": "project_record, change_ticket, engineering_standard"
+    },
+    {
+      "question_id": "d3503fd1-2fbf-51da-a6fd-a89ff6a7bedd",
+      "question_text": "Upload evidence such as project_record, change_ticket, engineering_standard that demonstrates: Return of assets Control: Personnel and other interested parties as appropriate shall return all the organization's assets in their possession upon change or termination of their employment, contract or agreement. © ISO/IEC 2022 - All rights reserved.",
+      "question_type": "evidence_upload",
+      "framework_name": "ISO/IEC 27001:2022",
+      "framework_key": "iso-27001-2022",
+      "domain_id": "5",
+      "domain_name": "Organizational controls",
+      "control_id": "5.11",
+      "cross_references": [],
+      "expected_evidence": "project_record, change_ticket, engineering_standard"
+    },
+    {
+      "question_id": "6091e198-e76b-5116-be86-ba163f1c4d3a",
+      "question_text": "Is the organization implementing and operating the control: Classification of information Control: Information shall be classified according to the information security needs of the organization based on confidentiality, integrity, availability and relevant interested party requirements?",
+      "question_type": "yes_no",
+      "framework_name": "ISO/IEC 27001:2022",
+      "framework_key": "iso-27001-2022",
+      "domain_id": "5",
+      "domain_name": "Organizational controls",
+      "control_id": "5.12",
+      "cross_references": [],
+      "expected_evidence": "classification_standard, labeling_procedure"
+    },
+    {
+      "question_id": "6263c5d2-cb2f-5aeb-9d1a-ad0d33dfff1d",
+      "question_text": "Upload evidence such as classification_standard, labeling_procedure that demonstrates: Classification of information Control: Information shall be classified according to the information security needs of the organization based on confidentiality, integrity, availability and relevant interested party requirements.",
+      "question_type": "evidence_upload",
+      "framework_name": "ISO/IEC 27001:2022",
+      "framework_key": "iso-27001-2022",
+      "domain_id": "5",
+      "domain_name": "Organizational controls",
+      "control_id": "5.12",
+      "cross_references": [],
+      "expected_evidence": "classification_standard, labeling_procedure"
+    },
+    {
+      "question_id": "c650318b-36f5-57a5-a0eb-80cbec1b86bd",
+      "question_text": "Is the organization implementing and operating the control: Labelling of information Control: An appropriate set of procedures for information labelling shall be developed and implemented in accordance with the information clas sification scheme adopted by the organization?",
+      "question_type": "yes_no",
+      "framework_name": "ISO/IEC 27001:2022",
+      "framework_key": "iso-27001-2022",
+      "domain_id": "5",
+      "domain_name": "Organizational controls",
+      "control_id": "5.13",
+      "cross_references": [],
+      "expected_evidence": "policy, procedure, approval_record"
+    },
+    {
+      "question_id": "d8a4d8c1-bbfd-52ca-8b0a-5e5ac4e7eb2d",
+      "question_text": "Upload evidence such as policy, procedure, approval_record that demonstrates: Labelling of information Control: An appropriate set of procedures for information labelling shall be developed and implemented in accordance with the information clas sification scheme adopted by the organization.",
+      "question_type": "evidence_upload",
+      "framework_name": "ISO/IEC 27001:2022",
+      "framework_key": "iso-27001-2022",
+      "domain_id": "5",
+      "domain_name": "Organizational controls",
+      "control_id": "5.13",
+      "cross_references": [],
+      "expected_evidence": "policy, procedure, approval_record"
+    },
+    {
+      "question_id": "51fde23a-b31a-5524-9de2-b5593ee21708",
+      "question_text": "Is the organization implementing and operating the control: Information transfer Control: Information transfer rules, procedures, or agreements shall be in place for all types of transfer facilities within the organization and between the organization and other parties?",
+      "question_type": "yes_no",
+      "framework_name": "ISO/IEC 27001:2022",
+      "framework_key": "iso-27001-2022",
+      "domain_id": "5",
+      "domain_name": "Organizational controls",
+      "control_id": "5.14",
+      "cross_references": [],
+      "expected_evidence": "policy, procedure, approval_record"
+    },
+    {
+      "question_id": "47e87ac6-65ff-51ad-bfb4-a7d1223bef47",
+      "question_text": "Upload evidence such as policy, procedure, approval_record that demonstrates: Information transfer Control: Information transfer rules, procedures, or agreements shall be in place for all types of transfer facilities within the organization and between the organization and other parties.",
+      "question_type": "evidence_upload",
+      "framework_name": "ISO/IEC 27001:2022",
+      "framework_key": "iso-27001-2022",
+      "domain_id": "5",
+      "domain_name": "Organizational controls",
+      "control_id": "5.14",
+      "cross_references": [],
+      "expected_evidence": "policy, procedure, approval_record"
+    },
+    {
+      "question_id": "30862383-bad0-5380-8f6c-07894540346e",
+      "question_text": "Is the organization implementing and operating the control: Access control Control: Rules to control physical and logical access to information and other associated assets shall be established and implemented based on busi ness and information security requirements?",
+      "question_type": "yes_no",
+      "framework_name": "ISO/IEC 27001:2022",
+      "framework_key": "iso-27001-2022",
+      "domain_id": "5",
+      "domain_name": "Organizational controls",
+      "control_id": "5.15",
+      "cross_references": [],
+      "expected_evidence": "inventory, asset_register, owner_register"
+    },
+    {
+      "question_id": "e54d169a-1cfb-5f60-add9-a482f2b9d9fe",
+      "question_text": "Upload evidence such as inventory, asset_register, owner_register that demonstrates: Access control Control: Rules to control physical and logical access to information and other associated assets shall be established and implemented based on busi ness and information security requirements.",
+      "question_type": "evidence_upload",
+      "framework_name": "ISO/IEC 27001:2022",
+      "framework_key": "iso-27001-2022",
+      "domain_id": "5",
+      "domain_name": "Organizational controls",
+      "control_id": "5.15",
+      "cross_references": [],
+      "expected_evidence": "inventory, asset_register, owner_register"
+    },
+    {
+      "question_id": "268ebcec-c2b9-5a93-ab2b-5b2e99a7367a",
+      "question_text": "Is the organization implementing and operating the control: Identity management Control: The full life cycle of identities shall be managed?",
+      "question_type": "yes_no",
+      "framework_name": "ISO/IEC 27001:2022",
+      "framework_key": "iso-27001-2022",
+      "domain_id": "5",
+      "domain_name": "Organizational controls",
+      "control_id": "5.16",
+      "cross_references": [],
+      "expected_evidence": "role_matrix, org_chart, responsibility_assignment"
+    },
+    {
+      "question_id": "72beb703-2277-554f-8c15-8adbd0205342",
+      "question_text": "Upload evidence such as role_matrix, org_chart, responsibility_assignment that demonstrates: Identity management Control: The full life cycle of identities shall be managed.",
+      "question_type": "evidence_upload",
+      "framework_name": "ISO/IEC 27001:2022",
+      "framework_key": "iso-27001-2022",
+      "domain_id": "5",
+      "domain_name": "Organizational controls",
+      "control_id": "5.16",
+      "cross_references": [],
+      "expected_evidence": "role_matrix, org_chart, responsibility_assignment"
+    },
+    {
+      "question_id": "bd2038a4-70a2-59f8-99f0-6c13c446cd3a",
+      "question_text": "Is the organization implementing and operating the control: Authentication information Control: Allocation and management of authentication information shall be controlled by a management process, including advising personnel on appropriate handling of authentication information?",
+      "question_type": "yes_no",
+      "framework_name": "ISO/IEC 27001:2022",
+      "framework_key": "iso-27001-2022",
+      "domain_id": "5",
+      "domain_name": "Organizational controls",
+      "control_id": "5.17",
+      "cross_references": [],
+      "expected_evidence": "role_matrix, org_chart, responsibility_assignment"
+    },
+    {
+      "question_id": "d6e55a2a-7283-5b0a-a89d-16b9887fd2d2",
+      "question_text": "Upload evidence such as role_matrix, org_chart, responsibility_assignment that demonstrates: Authentication information Control: Allocation and management of authentication information shall be controlled by a management process, including advising personnel on appropriate handling of authentication information.",
+      "question_type": "evidence_upload",
+      "framework_name": "ISO/IEC 27001:2022",
+      "framework_key": "iso-27001-2022",
+      "domain_id": "5",
+      "domain_name": "Organizational controls",
+      "control_id": "5.17",
+      "cross_references": [],
+      "expected_evidence": "role_matrix, org_chart, responsibility_assignment"
+    }
+  ],
+  "part3_tracker": [
+    {
+      "framework": "NIST CSF 2.0",
+      "domain": "Govern",
+      "sub_topic": "Govern",
+      "control_id": "GV.OC-01, GV.OC-02, GV.RM-01, GV.RM-02, GV.SC-01",
+      "evidence_request": "mission_statement",
+      "answer_format": "status_text",
+      "status": ""
+    },
+    {
+      "framework": "NIST CSF 2.0",
+      "domain": "Govern",
+      "sub_topic": "Govern",
+      "control_id": "GV.OC-01, GV.OC-02, GV.RM-01, GV.RM-02, GV.SC-01",
+      "evidence_request": "strategic_plan",
+      "answer_format": "status_text",
+      "status": ""
+    },
+    {
+      "framework": "NIST CSF 2.0",
+      "domain": "Govern",
+      "sub_topic": "Govern",
+      "control_id": "GV.OC-01, GV.OC-02, GV.RM-01, GV.RM-02, GV.SC-01",
+      "evidence_request": "risk_policy",
+      "answer_format": "status_text",
+      "status": ""
+    },
+    {
+      "framework": "NIST CSF 2.0",
+      "domain": "Govern",
+      "sub_topic": "Govern",
+      "control_id": "GV.OC-01, GV.OC-02, GV.RM-01, GV.RM-02, GV.SC-01",
+      "evidence_request": "stakeholder_register",
+      "answer_format": "status_text",
+      "status": ""
+    },
+    {
+      "framework": "NIST CSF 2.0",
+      "domain": "Govern",
+      "sub_topic": "Govern",
+      "control_id": "GV.OC-01, GV.OC-02, GV.RM-01, GV.RM-02, GV.SC-01",
+      "evidence_request": "meeting_minutes",
+      "answer_format": "status_text",
+      "status": ""
+    },
+    {
+      "framework": "NIST CSF 2.0",
+      "domain": "Govern",
+      "sub_topic": "Govern",
+      "control_id": "GV.OC-01, GV.OC-02, GV.RM-01, GV.RM-02, GV.SC-01",
+      "evidence_request": "risk_register",
+      "answer_format": "status_text",
+      "status": ""
+    },
+    {
+      "framework": "NIST CSF 2.0",
+      "domain": "Govern",
+      "sub_topic": "Govern",
+      "control_id": "GV.OC-01, GV.OC-02, GV.RM-01, GV.RM-02, GV.SC-01",
+      "evidence_request": "risk_appetite_statement",
+      "answer_format": "status_text",
+      "status": ""
+    },
+    {
+      "framework": "ISO/IEC 27001:2022",
+      "domain": "Organizational controls",
+      "sub_topic": "Organizational controls",
+      "control_id": "5.1, 5.10, 5.11, 5.12, 5.13, 5.14, 5.15, 5.16, 5.17, 5.18, 5.19, 5.2, 5.20, 5.21, 5.22, 5.23, 5.24, 5.25, 5.26, 5.27, 5.28, 5.29, 5.3, 5.30, 5.31, 5.32, 5.33, 5.34, 5.35, 5.36, 5.37, 5.4, 5.5, 5.6, 5.7, 5.8, 5.9",
+      "evidence_request": "information_security_policy",
+      "answer_format": "status_text",
+      "status": ""
+    },
+    {
+      "framework": "ISO/IEC 27001:2022",
+      "domain": "Organizational controls",
+      "sub_topic": "Organizational controls",
+      "control_id": "5.1, 5.10, 5.11, 5.12, 5.13, 5.14, 5.15, 5.16, 5.17, 5.18, 5.19, 5.2, 5.20, 5.21, 5.22, 5.23, 5.24, 5.25, 5.26, 5.27, 5.28, 5.29, 5.3, 5.30, 5.31, 5.32, 5.33, 5.34, 5.35, 5.36, 5.37, 5.4, 5.5, 5.6, 5.7, 5.8, 5.9",
+      "evidence_request": "role_matrix",
+      "answer_format": "status_text",
+      "status": ""
+    },
+    {
+      "framework": "ISO/IEC 27001:2022",
+      "domain": "Organizational controls",
+      "sub_topic": "Organizational controls",
+      "control_id": "5.1, 5.10, 5.11, 5.12, 5.13, 5.14, 5.15, 5.16, 5.17, 5.18, 5.19, 5.2, 5.20, 5.21, 5.22, 5.23, 5.24, 5.25, 5.26, 5.27, 5.28, 5.29, 5.3, 5.30, 5.31, 5.32, 5.33, 5.34, 5.35, 5.36, 5.37, 5.4, 5.5, 5.6, 5.7, 5.8, 5.9",
+      "evidence_request": "org_chart",
+      "answer_format": "status_text",
+      "status": ""
+    },
+    {
+      "framework": "ISO/IEC 27001:2022",
+      "domain": "Organizational controls",
+      "sub_topic": "Organizational controls",
+      "control_id": "5.1, 5.10, 5.11, 5.12, 5.13, 5.14, 5.15, 5.16, 5.17, 5.18, 5.19, 5.2, 5.20, 5.21, 5.22, 5.23, 5.24, 5.25, 5.26, 5.27, 5.28, 5.29, 5.3, 5.30, 5.31, 5.32, 5.33, 5.34, 5.35, 5.36, 5.37, 5.4, 5.5, 5.6, 5.7, 5.8, 5.9",
+      "evidence_request": "access_rights_review_log",
+      "answer_format": "status_text",
+      "status": ""
+    },
+    {
+      "framework": "ISO/IEC 27001:2022",
+      "domain": "Organizational controls",
+      "sub_topic": "Organizational controls",
+      "control_id": "5.1, 5.10, 5.11, 5.12, 5.13, 5.14, 5.15, 5.16, 5.17, 5.18, 5.19, 5.2, 5.20, 5.21, 5.22, 5.23, 5.24, 5.25, 5.26, 5.27, 5.28, 5.29, 5.3, 5.30, 5.31, 5.32, 5.33, 5.34, 5.35, 5.36, 5.37, 5.4, 5.5, 5.6, 5.7, 5.8, 5.9",
+      "evidence_request": "supplier_contract",
+      "answer_format": "status_text",
+      "status": ""
+    },
+    {
+      "framework": "ISO/IEC 27001:2022",
+      "domain": "Organizational controls",
+      "sub_topic": "Organizational controls",
+      "control_id": "5.1, 5.10, 5.11, 5.12, 5.13, 5.14, 5.15, 5.16, 5.17, 5.18, 5.19, 5.2, 5.20, 5.21, 5.22, 5.23, 5.24, 5.25, 5.26, 5.27, 5.28, 5.29, 5.3, 5.30, 5.31, 5.32, 5.33, 5.34, 5.35, 5.36, 5.37, 5.4, 5.5, 5.6, 5.7, 5.8, 5.9",
+      "evidence_request": "compliance_review",
+      "answer_format": "status_text",
+      "status": ""
+    }
+  ],
+  "red_flags_by_domain": [
+    {
+      "domain_name": "Govern",
+      "framework_name": "NIST CSF 2.0",
+      "red_flags": [
+        {
+          "critical_gap": "The organization lacks a clear and communicated cybersecurity governance framework.",
+          "recommended_action": "Establish and communicate a cybersecurity governance framework that informs risk management decisions."
+        },
+        {
+          "critical_gap": "Risk management objectives are not established or agreed upon by stakeholders.",
+          "recommended_action": "Establish and agree upon risk management objectives with stakeholders."
+        },
+        {
+          "critical_gap": "The organization does not have a process for identifying and assessing cybersecurity supply chain risks.",
+          "recommended_action": "Establish a process for identifying and assessing cybersecurity supply chain risks."
+        }
+      ]
+    },
+    {
+      "domain_name": "Organizational controls",
+      "framework_name": "ISO/IEC 27001:2022",
+      "red_flags": [
+        {
+          "critical_gap": "The organization lacks a formal information security policy, leaving it vulnerable to security breaches and data losses.",
+          "recommended_action": "Develop and implement a comprehensive information security policy that outlines the organization's approach to managing information security risks."
+        },
+        {
+          "critical_gap": "The organization has not defined and allocated information security roles and responsibilities, leading to confusion and a lack of accountability.",
+          "recommended_action": "Define and allocate information security roles and responsibilities, and ensure that all personnel understand their responsibilities and are held accountable for their actions."
+        },
+        {
+          "critical_gap": "The organization has not established a process for managing information security incidents, leaving it unprepared to respond to security breaches and data losses.",
+          "recommended_action": "Establish a process for managing information security incidents, including incident detection, response, and recovery, and ensure that all personnel are trained to respond to security incidents."
+        }
+      ]
+    }
+  ],
+  "selected_domain_keys": [
+    "nist-csf-2-0:GV",
+    "iso-27001-2022:5"
+  ],
+  "ingested_at": "2026-06-17T09:08:22.027965+00:00",
+  "maturity_levels": [
+    {
+      "level": 1,
+      "code": "INITIAL",
+      "name": "Initial",
+      "description": "Ad hoc and undocumented."
+    },
+    {
+      "level": 2,
+      "code": "REPEATABLE",
+      "name": "Repeatable",
+      "description": "Basic processes established and repeated."
+    },
+    {
+      "level": 3,
+      "code": "DEFINED",
+      "name": "Defined",
+      "description": "Processes documented, standardised, and communicated."
+    },
+    {
+      "level": 4,
+      "code": "MANAGED",
+      "name": "Managed",
+      "description": "Processes measured and controlled with quantitative data."
+    },
+    {
+      "level": 5,
+      "code": "OPTIMIZING",
+      "name": "Optimizing",
+      "description": "Continuous improvement driven by metrics and feedback."
+    }
+  ],
+  "domains": [
+    {
+      "code": "GV",
+      "name": "Govern",
+      "categories": [
+        {
+          "code": "GV.OC",
+          "name": "GV.OC",
+          "controls": [
+            {
+              "code": "GV.OC-01",
+              "statement": "The organizational mission is understood and informs cybersecurity risk management.",
+              "cross_refs": [
+                {
+                  "framework": "nist-sp-800-39",
+                  "version": "",
+                  "code": "2.1"
+                },
+                {
+                  "framework": "iso-27001-2022",
+                  "version": "",
+                  "code": "4.1"
+                }
+              ],
+              "questions": [
+                {
+                  "question_id": "4b6c1c4d-0e6e-4c9f-8c9f-3a5e2f2c3b3b",
+                  "text": "How does the organizational mission inform cybersecurity risk management?",
+                  "question_type": "FREE_TEXT",
+                  "weight": 4,
+                  "maturity_level": 4,
+                  "help_text": "Explain the connection",
+                  "choices": []
+                },
+                {
+                  "question_id": "2f5g6h7j-0e6e-4c9f-8c9f-3a5e2f2c3b3b",
+                  "text": "Who are the internal and external stakeholders considered in cybersecurity risk management?",
+                  "question_type": "FREE_TEXT",
+                  "weight": 3,
+                  "maturity_level": 3,
+                  "help_text": "List stakeholders",
+                  "choices": []
+                },
+                {
+                  "question_id": "1a2b3c4d-0e6e-4c9f-8c9f-3a5e2f2c3b3b",
+                  "text": "How are risk management objectives established and agreed upon?",
+                  "question_type": "FREE_TEXT",
+                  "weight": 5,
+                  "maturity_level": 5,
+                  "help_text": "Describe the process",
+                  "choices": []
+                },
+                {
+                  "question_id": "5t6y7u8i-0e6e-4c9f-8c9f-3a5e2f2c3b3b",
+                  "text": "What is the process for establishing and communicating risk appetite and tolerance?",
+                  "question_type": "FREE_TEXT",
+                  "weight": 4,
+                  "maturity_level": 4,
+                  "help_text": "Explain the steps",
+                  "choices": []
+                },
+                {
+                  "question_id": "9o8i7u6y-0e6e-4c9f-8c9f-3a5e2f2c3b3b",
+                  "text": "How is the cybersecurity supply chain risk management program implemented?",
+                  "question_type": "FREE_TEXT",
+                  "weight": 5,
+                  "maturity_level": 5,
+                  "help_text": "Describe the program",
+                  "choices": []
+                },
+                {
+                  "question_id": "3s2d1f4g-0e6e-4c9f-8c9f-3a5e2f2c3b3b",
+                  "text": "Are stakeholders trained on cybersecurity risk management policies and procedures?",
+                  "question_type": "YES_NO",
+                  "weight": 2,
+                  "maturity_level": 2,
+                  "help_text": "Yes/No",
+                  "choices": []
+                },
+                {
+                  "question_id": "7q6w5e4r-0e6e-4c9f-8c9f-3a5e2f2c3b3b",
+                  "text": "How often are risk management policies and procedures reviewed and updated?",
+                  "question_type": "SCALE_1_5",
+                  "weight": 3,
+                  "maturity_level": 3,
+                  "help_text": "Specify frequency",
+                  "choices": []
+                },
+                {
+                  "question_id": "0p9o8i7u-0e6e-4c9f-8c9f-3a5e2f2c3b3b",
+                  "text": "What is the process for identifying and assessing cybersecurity supply chain risks?",
+                  "question_type": "FREE_TEXT",
+                  "weight": 5,
+                  "maturity_level": 5,
+                  "help_text": "Describe the process",
+                  "choices": []
+                },
+                {
+                  "question_id": "4t5y6u7i-0e6e-4c9f-8c9f-3a5e2f2c3b3b",
+                  "text": "How are cybersecurity risk management decisions communicated to stakeholders?",
+                  "question_type": "FREE_TEXT",
+                  "weight": 4,
+                  "maturity_level": 4,
+                  "help_text": "Explain the communication process",
+                  "choices": []
+                },
+                {
+                  "question_id": "2a3s4d5f-0e6e-4c9f-8c9f-3a5e2f2c3b3b",
+                  "text": "What is the level of stakeholder engagement in cybersecurity risk management?",
+                  "question_type": "MULTI_CHOICE",
+                  "weight": 3,
+                  "maturity_level": 3,
+                  "help_text": "Choose one",
+                  "choices": [
+                    "Low",
+                    "Medium",
+                    "High"
+                  ]
+                }
+              ]
+            },
+            {
+              "code": "GV.OC-02",
+              "statement": "Internal and external stakeholders are understood, and their needs and expectations regarding cybersecurity risk management are understood and considered.",
+              "cross_refs": [
+                {
+                  "framework": "iso-27001-2022",
+                  "version": "",
+                  "code": "4.2"
+                },
+                {
+                  "framework": "nist-sp-800-39",
+                  "version": "",
+                  "code": "2.2"
+                }
+              ],
+              "questions": [
+                {
+                  "question_id": "4b6c1c4d-0e6e-4c9f-8c9f-3a5e2f2c3b3b",
+                  "text": "How does the organizational mission inform cybersecurity risk management?",
+                  "question_type": "FREE_TEXT",
+                  "weight": 4,
+                  "maturity_level": 4,
+                  "help_text": "Explain the connection",
+                  "choices": []
+                },
+                {
+                  "question_id": "2f5g6h7j-0e6e-4c9f-8c9f-3a5e2f2c3b3b",
+                  "text": "Who are the internal and external stakeholders considered in cybersecurity risk management?",
+                  "question_type": "FREE_TEXT",
+                  "weight": 3,
+                  "maturity_level": 3,
+                  "help_text": "List stakeholders",
+                  "choices": []
+                },
+                {
+                  "question_id": "1a2b3c4d-0e6e-4c9f-8c9f-3a5e2f2c3b3b",
+                  "text": "How are risk management objectives established and agreed upon?",
+                  "question_type": "FREE_TEXT",
+                  "weight": 5,
+                  "maturity_level": 5,
+                  "help_text": "Describe the process",
+                  "choices": []
+                },
+                {
+                  "question_id": "5t6y7u8i-0e6e-4c9f-8c9f-3a5e2f2c3b3b",
+                  "text": "What is the process for establishing and communicating risk appetite and tolerance?",
+                  "question_type": "FREE_TEXT",
+                  "weight": 4,
+                  "maturity_level": 4,
+                  "help_text": "Explain the steps",
+                  "choices": []
+                },
+                {
+                  "question_id": "9o8i7u6y-0e6e-4c9f-8c9f-3a5e2f2c3b3b",
+                  "text": "How is the cybersecurity supply chain risk management program implemented?",
+                  "question_type": "FREE_TEXT",
+                  "weight": 5,
+                  "maturity_level": 5,
+                  "help_text": "Describe the program",
+                  "choices": []
+                },
+                {
+                  "question_id": "3s2d1f4g-0e6e-4c9f-8c9f-3a5e2f2c3b3b",
+                  "text": "Are stakeholders trained on cybersecurity risk management policies and procedures?",
+                  "question_type": "YES_NO",
+                  "weight": 2,
+                  "maturity_level": 2,
+                  "help_text": "Yes/No",
+                  "choices": []
+                },
+                {
+                  "question_id": "7q6w5e4r-0e6e-4c9f-8c9f-3a5e2f2c3b3b",
+                  "text": "How often are risk management policies and procedures reviewed and updated?",
+                  "question_type": "SCALE_1_5",
+                  "weight": 3,
+                  "maturity_level": 3,
+                  "help_text": "Specify frequency",
+                  "choices": []
+                },
+                {
+                  "question_id": "0p9o8i7u-0e6e-4c9f-8c9f-3a5e2f2c3b3b",
+                  "text": "What is the process for identifying and assessing cybersecurity supply chain risks?",
+                  "question_type": "FREE_TEXT",
+                  "weight": 5,
+                  "maturity_level": 5,
+                  "help_text": "Describe the process",
+                  "choices": []
+                },
+                {
+                  "question_id": "4t5y6u7i-0e6e-4c9f-8c9f-3a5e2f2c3b3b",
+                  "text": "How are cybersecurity risk management decisions communicated to stakeholders?",
+                  "question_type": "FREE_TEXT",
+                  "weight": 4,
+                  "maturity_level": 4,
+                  "help_text": "Explain the communication process",
+                  "choices": []
+                },
+                {
+                  "question_id": "2a3s4d5f-0e6e-4c9f-8c9f-3a5e2f2c3b3b",
+                  "text": "What is the level of stakeholder engagement in cybersecurity risk management?",
+                  "question_type": "MULTI_CHOICE",
+                  "weight": 3,
+                  "maturity_level": 3,
+                  "help_text": "Choose one",
+                  "choices": [
+                    "Low",
+                    "Medium",
+                    "High"
+                  ]
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "code": "GV.RM",
+          "name": "GV.RM",
+          "controls": [
+            {
+              "code": "GV.RM-01",
+              "statement": "Risk management objectives are established and agreed to by organizational stakeholders.",
+              "cross_refs": [
+                {
+                  "framework": "nist-sp-800-39",
+                  "version": "",
+                  "code": "2.2"
+                },
+                {
+                  "framework": "iso-27001-2022",
+                  "version": "",
+                  "code": "6.1"
+                }
+              ],
+              "questions": [
+                {
+                  "question_id": "4b6c1c4d-0e6e-4c9f-8c9f-3a5e2f2c3b3b",
+                  "text": "How does the organizational mission inform cybersecurity risk management?",
+                  "question_type": "FREE_TEXT",
+                  "weight": 4,
+                  "maturity_level": 4,
+                  "help_text": "Explain the connection",
+                  "choices": []
+                },
+                {
+                  "question_id": "2f5g6h7j-0e6e-4c9f-8c9f-3a5e2f2c3b3b",
+                  "text": "Who are the internal and external stakeholders considered in cybersecurity risk management?",
+                  "question_type": "FREE_TEXT",
+                  "weight": 3,
+                  "maturity_level": 3,
+                  "help_text": "List stakeholders",
+                  "choices": []
+                },
+                {
+                  "question_id": "1a2b3c4d-0e6e-4c9f-8c9f-3a5e2f2c3b3b",
+                  "text": "How are risk management objectives established and agreed upon?",
+                  "question_type": "FREE_TEXT",
+                  "weight": 5,
+                  "maturity_level": 5,
+                  "help_text": "Describe the process",
+                  "choices": []
+                },
+                {
+                  "question_id": "5t6y7u8i-0e6e-4c9f-8c9f-3a5e2f2c3b3b",
+                  "text": "What is the process for establishing and communicating risk appetite and tolerance?",
+                  "question_type": "FREE_TEXT",
+                  "weight": 4,
+                  "maturity_level": 4,
+                  "help_text": "Explain the steps",
+                  "choices": []
+                },
+                {
+                  "question_id": "9o8i7u6y-0e6e-4c9f-8c9f-3a5e2f2c3b3b",
+                  "text": "How is the cybersecurity supply chain risk management program implemented?",
+                  "question_type": "FREE_TEXT",
+                  "weight": 5,
+                  "maturity_level": 5,
+                  "help_text": "Describe the program",
+                  "choices": []
+                },
+                {
+                  "question_id": "3s2d1f4g-0e6e-4c9f-8c9f-3a5e2f2c3b3b",
+                  "text": "Are stakeholders trained on cybersecurity risk management policies and procedures?",
+                  "question_type": "YES_NO",
+                  "weight": 2,
+                  "maturity_level": 2,
+                  "help_text": "Yes/No",
+                  "choices": []
+                },
+                {
+                  "question_id": "7q6w5e4r-0e6e-4c9f-8c9f-3a5e2f2c3b3b",
+                  "text": "How often are risk management policies and procedures reviewed and updated?",
+                  "question_type": "SCALE_1_5",
+                  "weight": 3,
+                  "maturity_level": 3,
+                  "help_text": "Specify frequency",
+                  "choices": []
+                },
+                {
+                  "question_id": "0p9o8i7u-0e6e-4c9f-8c9f-3a5e2f2c3b3b",
+                  "text": "What is the process for identifying and assessing cybersecurity supply chain risks?",
+                  "question_type": "FREE_TEXT",
+                  "weight": 5,
+                  "maturity_level": 5,
+                  "help_text": "Describe the process",
+                  "choices": []
+                },
+                {
+                  "question_id": "4t5y6u7i-0e6e-4c9f-8c9f-3a5e2f2c3b3b",
+                  "text": "How are cybersecurity risk management decisions communicated to stakeholders?",
+                  "question_type": "FREE_TEXT",
+                  "weight": 4,
+                  "maturity_level": 4,
+                  "help_text": "Explain the communication process",
+                  "choices": []
+                },
+                {
+                  "question_id": "2a3s4d5f-0e6e-4c9f-8c9f-3a5e2f2c3b3b",
+                  "text": "What is the level of stakeholder engagement in cybersecurity risk management?",
+                  "question_type": "MULTI_CHOICE",
+                  "weight": 3,
+                  "maturity_level": 3,
+                  "help_text": "Choose one",
+                  "choices": [
+                    "Low",
+                    "Medium",
+                    "High"
+                  ]
+                }
+              ]
+            },
+            {
+              "code": "GV.RM-02",
+              "statement": "Risk appetite and risk tolerance statements are established, communicated, and maintained.",
+              "cross_refs": [
+                {
+                  "framework": "nist-sp-800-39",
+                  "version": "",
+                  "code": ""
+                },
+                {
+                  "framework": "iso-27005-2022",
+                  "version": "",
+                  "code": "6.3"
+                }
+              ],
+              "questions": [
+                {
+                  "question_id": "4b6c1c4d-0e6e-4c9f-8c9f-3a5e2f2c3b3b",
+                  "text": "How does the organizational mission inform cybersecurity risk management?",
+                  "question_type": "FREE_TEXT",
+                  "weight": 4,
+                  "maturity_level": 4,
+                  "help_text": "Explain the connection",
+                  "choices": []
+                },
+                {
+                  "question_id": "2f5g6h7j-0e6e-4c9f-8c9f-3a5e2f2c3b3b",
+                  "text": "Who are the internal and external stakeholders considered in cybersecurity risk management?",
+                  "question_type": "FREE_TEXT",
+                  "weight": 3,
+                  "maturity_level": 3,
+                  "help_text": "List stakeholders",
+                  "choices": []
+                },
+                {
+                  "question_id": "1a2b3c4d-0e6e-4c9f-8c9f-3a5e2f2c3b3b",
+                  "text": "How are risk management objectives established and agreed upon?",
+                  "question_type": "FREE_TEXT",
+                  "weight": 5,
+                  "maturity_level": 5,
+                  "help_text": "Describe the process",
+                  "choices": []
+                },
+                {
+                  "question_id": "5t6y7u8i-0e6e-4c9f-8c9f-3a5e2f2c3b3b",
+                  "text": "What is the process for establishing and communicating risk appetite and tolerance?",
+                  "question_type": "FREE_TEXT",
+                  "weight": 4,
+                  "maturity_level": 4,
+                  "help_text": "Explain the steps",
+                  "choices": []
+                },
+                {
+                  "question_id": "9o8i7u6y-0e6e-4c9f-8c9f-3a5e2f2c3b3b",
+                  "text": "How is the cybersecurity supply chain risk management program implemented?",
+                  "question_type": "FREE_TEXT",
+                  "weight": 5,
+                  "maturity_level": 5,
+                  "help_text": "Describe the program",
+                  "choices": []
+                },
+                {
+                  "question_id": "3s2d1f4g-0e6e-4c9f-8c9f-3a5e2f2c3b3b",
+                  "text": "Are stakeholders trained on cybersecurity risk management policies and procedures?",
+                  "question_type": "YES_NO",
+                  "weight": 2,
+                  "maturity_level": 2,
+                  "help_text": "Yes/No",
+                  "choices": []
+                },
+                {
+                  "question_id": "7q6w5e4r-0e6e-4c9f-8c9f-3a5e2f2c3b3b",
+                  "text": "How often are risk management policies and procedures reviewed and updated?",
+                  "question_type": "SCALE_1_5",
+                  "weight": 3,
+                  "maturity_level": 3,
+                  "help_text": "Specify frequency",
+                  "choices": []
+                },
+                {
+                  "question_id": "0p9o8i7u-0e6e-4c9f-8c9f-3a5e2f2c3b3b",
+                  "text": "What is the process for identifying and assessing cybersecurity supply chain risks?",
+                  "question_type": "FREE_TEXT",
+                  "weight": 5,
+                  "maturity_level": 5,
+                  "help_text": "Describe the process",
+                  "choices": []
+                },
+                {
+                  "question_id": "4t5y6u7i-0e6e-4c9f-8c9f-3a5e2f2c3b3b",
+                  "text": "How are cybersecurity risk management decisions communicated to stakeholders?",
+                  "question_type": "FREE_TEXT",
+                  "weight": 4,
+                  "maturity_level": 4,
+                  "help_text": "Explain the communication process",
+                  "choices": []
+                },
+                {
+                  "question_id": "2a3s4d5f-0e6e-4c9f-8c9f-3a5e2f2c3b3b",
+                  "text": "What is the level of stakeholder engagement in cybersecurity risk management?",
+                  "question_type": "MULTI_CHOICE",
+                  "weight": 3,
+                  "maturity_level": 3,
+                  "help_text": "Choose one",
+                  "choices": [
+                    "Low",
+                    "Medium",
+                    "High"
+                  ]
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "code": "GV.SC",
+          "name": "GV.SC",
+          "controls": [
+            {
+              "code": "GV.SC-01",
+              "statement": "A cybersecurity supply chain risk management program, strategy, objectives, policies, and processes are established and agreed to by organizational stakeholders.",
+              "cross_refs": [
+                {
+                  "framework": "nist-sp-800-161",
+                  "version": "",
+                  "code": ""
+                },
+                {
+                  "framework": "iso-27036",
+                  "version": "",
+                  "code": ""
+                }
+              ],
+              "questions": [
+                {
+                  "question_id": "4b6c1c4d-0e6e-4c9f-8c9f-3a5e2f2c3b3b",
+                  "text": "How does the organizational mission inform cybersecurity risk management?",
+                  "question_type": "FREE_TEXT",
+                  "weight": 4,
+                  "maturity_level": 4,
+                  "help_text": "Explain the connection",
+                  "choices": []
+                },
+                {
+                  "question_id": "2f5g6h7j-0e6e-4c9f-8c9f-3a5e2f2c3b3b",
+                  "text": "Who are the internal and external stakeholders considered in cybersecurity risk management?",
+                  "question_type": "FREE_TEXT",
+                  "weight": 3,
+                  "maturity_level": 3,
+                  "help_text": "List stakeholders",
+                  "choices": []
+                },
+                {
+                  "question_id": "1a2b3c4d-0e6e-4c9f-8c9f-3a5e2f2c3b3b",
+                  "text": "How are risk management objectives established and agreed upon?",
+                  "question_type": "FREE_TEXT",
+                  "weight": 5,
+                  "maturity_level": 5,
+                  "help_text": "Describe the process",
+                  "choices": []
+                },
+                {
+                  "question_id": "5t6y7u8i-0e6e-4c9f-8c9f-3a5e2f2c3b3b",
+                  "text": "What is the process for establishing and communicating risk appetite and tolerance?",
+                  "question_type": "FREE_TEXT",
+                  "weight": 4,
+                  "maturity_level": 4,
+                  "help_text": "Explain the steps",
+                  "choices": []
+                },
+                {
+                  "question_id": "9o8i7u6y-0e6e-4c9f-8c9f-3a5e2f2c3b3b",
+                  "text": "How is the cybersecurity supply chain risk management program implemented?",
+                  "question_type": "FREE_TEXT",
+                  "weight": 5,
+                  "maturity_level": 5,
+                  "help_text": "Describe the program",
+                  "choices": []
+                },
+                {
+                  "question_id": "3s2d1f4g-0e6e-4c9f-8c9f-3a5e2f2c3b3b",
+                  "text": "Are stakeholders trained on cybersecurity risk management policies and procedures?",
+                  "question_type": "YES_NO",
+                  "weight": 2,
+                  "maturity_level": 2,
+                  "help_text": "Yes/No",
+                  "choices": []
+                },
+                {
+                  "question_id": "7q6w5e4r-0e6e-4c9f-8c9f-3a5e2f2c3b3b",
+                  "text": "How often are risk management policies and procedures reviewed and updated?",
+                  "question_type": "SCALE_1_5",
+                  "weight": 3,
+                  "maturity_level": 3,
+                  "help_text": "Specify frequency",
+                  "choices": []
+                },
+                {
+                  "question_id": "0p9o8i7u-0e6e-4c9f-8c9f-3a5e2f2c3b3b",
+                  "text": "What is the process for identifying and assessing cybersecurity supply chain risks?",
+                  "question_type": "FREE_TEXT",
+                  "weight": 5,
+                  "maturity_level": 5,
+                  "help_text": "Describe the process",
+                  "choices": []
+                },
+                {
+                  "question_id": "4t5y6u7i-0e6e-4c9f-8c9f-3a5e2f2c3b3b",
+                  "text": "How are cybersecurity risk management decisions communicated to stakeholders?",
+                  "question_type": "FREE_TEXT",
+                  "weight": 4,
+                  "maturity_level": 4,
+                  "help_text": "Explain the communication process",
+                  "choices": []
+                },
+                {
+                  "question_id": "2a3s4d5f-0e6e-4c9f-8c9f-3a5e2f2c3b3b",
+                  "text": "What is the level of stakeholder engagement in cybersecurity risk management?",
+                  "question_type": "MULTI_CHOICE",
+                  "weight": 3,
+                  "maturity_level": 3,
+                  "help_text": "Choose one",
+                  "choices": [
+                    "Low",
+                    "Medium",
+                    "High"
+                  ]
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "code": "5",
+      "name": "Organizational controls",
+      "categories": [
+        {
+          "code": "5.1",
+          "name": "5.1",
+          "controls": [
+            {
+              "code": "5.1",
+              "statement": "Policies for information secu rity: Information security policy and topic-specific policies shall be de fined, approved by management, published, communicated to and acknowledged by relevant personnel and relevant interested parties, and reviewed at planned intervals and if significant changes occur.",
+              "cross_refs": [],
+              "questions": [
+                {
+                  "question_id": "5c9c2f3d-5f4e-4678-9c5b-6d7e8f9g0h1i",
+                  "text": "How are information security roles and responsibilities defined and allocated?",
+                  "question_type": "FREE_TEXT",
+                  "weight": 4,
+                  "maturity_level": 4,
+                  "help_text": "Review of role matrix and org chart",
+                  "choices": []
+                },
+                {
+                  "question_id": "2a3b4c5d-6e7f-8g9h-0i1j-2k3l4m5n6o",
+                  "text": "What process triggers immediate credential revocation when an employee leaves?",
+                  "question_type": "FREE_TEXT",
+                  "weight": 5,
+                  "maturity_level": 5,
+                  "help_text": "Review of access rights review process",
+                  "choices": []
+                },
+                {
+                  "question_id": "1p2q3r4s-5t6u7v-8w9x-0y1z-2a3b4c5d",
+                  "text": "How frequently are privileged account access rights reviewed and by whom?",
+                  "question_type": "FREE_TEXT",
+                  "weight": 4,
+                  "maturity_level": 4,
+                  "help_text": "Review of access rights review schedule",
+                  "choices": []
+                },
+                {
+                  "question_id": "9i8h7g6f-5e4d3c2b-1a0z9y8x-7w6v5u4t",
+                  "text": "What is the process for addressing information security within supplier agreements?",
+                  "question_type": "FREE_TEXT",
+                  "weight": 4,
+                  "maturity_level": 4,
+                  "help_text": "Review of supplier contract and assessment",
+                  "choices": []
+                },
+                {
+                  "question_id": "6d5c4b3a-2s1r9t-8y7u6o-5p4q3w-2v1x0z",
+                  "text": "How does the organization ensure compliance with policies, rules, and standards for information security?",
+                  "question_type": "FREE_TEXT",
+                  "weight": 5,
+                  "maturity_level": 5,
+                  "help_text": "Review of compliance review and audit schedule",
+                  "choices": []
+                }
+              ]
+            },
+            {
+              "code": "5.1",
+              "statement": "Policies for information secu rity: Information security policy and topic-specific policies shall be de fined, approved by management, published, communicated to and acknowledged by relevant personnel and relevant interested parties, and reviewed at planned intervals and if significant changes occur.",
+              "cross_refs": [],
+              "questions": [
+                {
+                  "question_id": "5c9c2f3d-5f4e-4678-9c5b-6d7e8f9g0h1i",
+                  "text": "How are information security roles and responsibilities defined and allocated?",
+                  "question_type": "FREE_TEXT",
+                  "weight": 4,
+                  "maturity_level": 4,
+                  "help_text": "Review of role matrix and org chart",
+                  "choices": []
+                },
+                {
+                  "question_id": "2a3b4c5d-6e7f-8g9h-0i1j-2k3l4m5n6o",
+                  "text": "What process triggers immediate credential revocation when an employee leaves?",
+                  "question_type": "FREE_TEXT",
+                  "weight": 5,
+                  "maturity_level": 5,
+                  "help_text": "Review of access rights review process",
+                  "choices": []
+                },
+                {
+                  "question_id": "1p2q3r4s-5t6u7v-8w9x-0y1z-2a3b4c5d",
+                  "text": "How frequently are privileged account access rights reviewed and by whom?",
+                  "question_type": "FREE_TEXT",
+                  "weight": 4,
+                  "maturity_level": 4,
+                  "help_text": "Review of access rights review schedule",
+                  "choices": []
+                },
+                {
+                  "question_id": "9i8h7g6f-5e4d3c2b-1a0z9y8x-7w6v5u4t",
+                  "text": "What is the process for addressing information security within supplier agreements?",
+                  "question_type": "FREE_TEXT",
+                  "weight": 4,
+                  "maturity_level": 4,
+                  "help_text": "Review of supplier contract and assessment",
+                  "choices": []
+                },
+                {
+                  "question_id": "6d5c4b3a-2s1r9t-8y7u6o-5p4q3w-2v1x0z",
+                  "text": "How does the organization ensure compliance with policies, rules, and standards for information security?",
+                  "question_type": "FREE_TEXT",
+                  "weight": 5,
+                  "maturity_level": 5,
+                  "help_text": "Review of compliance review and audit schedule",
+                  "choices": []
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "code": "5.10",
+          "name": "5.10",
+          "controls": [
+            {
+              "code": "5.10",
+              "statement": "Acceptable use of information and other associated assets: Rules for the acceptable use and procedures for handling information and other associated assets shall be identified, documented and implemented.",
+              "cross_refs": [],
+              "questions": [
+                {
+                  "question_id": "5c9c2f3d-5f4e-4678-9c5b-6d7e8f9g0h1i",
+                  "text": "How are information security roles and responsibilities defined and allocated?",
+                  "question_type": "FREE_TEXT",
+                  "weight": 4,
+                  "maturity_level": 4,
+                  "help_text": "Review of role matrix and org chart",
+                  "choices": []
+                },
+                {
+                  "question_id": "2a3b4c5d-6e7f-8g9h-0i1j-2k3l4m5n6o",
+                  "text": "What process triggers immediate credential revocation when an employee leaves?",
+                  "question_type": "FREE_TEXT",
+                  "weight": 5,
+                  "maturity_level": 5,
+                  "help_text": "Review of access rights review process",
+                  "choices": []
+                },
+                {
+                  "question_id": "1p2q3r4s-5t6u7v-8w9x-0y1z-2a3b4c5d",
+                  "text": "How frequently are privileged account access rights reviewed and by whom?",
+                  "question_type": "FREE_TEXT",
+                  "weight": 4,
+                  "maturity_level": 4,
+                  "help_text": "Review of access rights review schedule",
+                  "choices": []
+                },
+                {
+                  "question_id": "9i8h7g6f-5e4d3c2b-1a0z9y8x-7w6v5u4t",
+                  "text": "What is the process for addressing information security within supplier agreements?",
+                  "question_type": "FREE_TEXT",
+                  "weight": 4,
+                  "maturity_level": 4,
+                  "help_text": "Review of supplier contract and assessment",
+                  "choices": []
+                },
+                {
+                  "question_id": "6d5c4b3a-2s1r9t-8y7u6o-5p4q3w-2v1x0z",
+                  "text": "How does the organization ensure compliance with policies, rules, and standards for information security?",
+                  "question_type": "FREE_TEXT",
+                  "weight": 5,
+                  "maturity_level": 5,
+                  "help_text": "Review of compliance review and audit schedule",
+                  "choices": []
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "code": "5.11",
+          "name": "5.11",
+          "controls": [
+            {
+              "code": "5.11",
+              "statement": "Return of assets Control: Personnel and other interested parties as appropriate shall return all the organization's assets in their possession upon change or termination of their employment, contract or agreement. © ISO/IEC 2022 - All rights reserved",
+              "cross_refs": [],
+              "questions": [
+                {
+                  "question_id": "5c9c2f3d-5f4e-4678-9c5b-6d7e8f9g0h1i",
+                  "text": "How are information security roles and responsibilities defined and allocated?",
+                  "question_type": "FREE_TEXT",
+                  "weight": 4,
+                  "maturity_level": 4,
+                  "help_text": "Review of role matrix and org chart",
+                  "choices": []
+                },
+                {
+                  "question_id": "2a3b4c5d-6e7f-8g9h-0i1j-2k3l4m5n6o",
+                  "text": "What process triggers immediate credential revocation when an employee leaves?",
+                  "question_type": "FREE_TEXT",
+                  "weight": 5,
+                  "maturity_level": 5,
+                  "help_text": "Review of access rights review process",
+                  "choices": []
+                },
+                {
+                  "question_id": "1p2q3r4s-5t6u7v-8w9x-0y1z-2a3b4c5d",
+                  "text": "How frequently are privileged account access rights reviewed and by whom?",
+                  "question_type": "FREE_TEXT",
+                  "weight": 4,
+                  "maturity_level": 4,
+                  "help_text": "Review of access rights review schedule",
+                  "choices": []
+                },
+                {
+                  "question_id": "9i8h7g6f-5e4d3c2b-1a0z9y8x-7w6v5u4t",
+                  "text": "What is the process for addressing information security within supplier agreements?",
+                  "question_type": "FREE_TEXT",
+                  "weight": 4,
+                  "maturity_level": 4,
+                  "help_text": "Review of supplier contract and assessment",
+                  "choices": []
+                },
+                {
+                  "question_id": "6d5c4b3a-2s1r9t-8y7u6o-5p4q3w-2v1x0z",
+                  "text": "How does the organization ensure compliance with policies, rules, and standards for information security?",
+                  "question_type": "FREE_TEXT",
+                  "weight": 5,
+                  "maturity_level": 5,
+                  "help_text": "Review of compliance review and audit schedule",
+                  "choices": []
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "code": "5.12",
+          "name": "5.12",
+          "controls": [
+            {
+              "code": "5.12",
+              "statement": "Classification of information Control: Information shall be classified according to the information security needs of the organization based on confidentiality, integrity, availability and relevant interested party requirements.",
+              "cross_refs": [],
+              "questions": [
+                {
+                  "question_id": "5c9c2f3d-5f4e-4678-9c5b-6d7e8f9g0h1i",
+                  "text": "How are information security roles and responsibilities defined and allocated?",
+                  "question_type": "FREE_TEXT",
+                  "weight": 4,
+                  "maturity_level": 4,
+                  "help_text": "Review of role matrix and org chart",
+                  "choices": []
+                },
+                {
+                  "question_id": "2a3b4c5d-6e7f-8g9h-0i1j-2k3l4m5n6o",
+                  "text": "What process triggers immediate credential revocation when an employee leaves?",
+                  "question_type": "FREE_TEXT",
+                  "weight": 5,
+                  "maturity_level": 5,
+                  "help_text": "Review of access rights review process",
+                  "choices": []
+                },
+                {
+                  "question_id": "1p2q3r4s-5t6u7v-8w9x-0y1z-2a3b4c5d",
+                  "text": "How frequently are privileged account access rights reviewed and by whom?",
+                  "question_type": "FREE_TEXT",
+                  "weight": 4,
+                  "maturity_level": 4,
+                  "help_text": "Review of access rights review schedule",
+                  "choices": []
+                },
+                {
+                  "question_id": "9i8h7g6f-5e4d3c2b-1a0z9y8x-7w6v5u4t",
+                  "text": "What is the process for addressing information security within supplier agreements?",
+                  "question_type": "FREE_TEXT",
+                  "weight": 4,
+                  "maturity_level": 4,
+                  "help_text": "Review of supplier contract and assessment",
+                  "choices": []
+                },
+                {
+                  "question_id": "6d5c4b3a-2s1r9t-8y7u6o-5p4q3w-2v1x0z",
+                  "text": "How does the organization ensure compliance with policies, rules, and standards for information security?",
+                  "question_type": "FREE_TEXT",
+                  "weight": 5,
+                  "maturity_level": 5,
+                  "help_text": "Review of compliance review and audit schedule",
+                  "choices": []
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "code": "5.13",
+          "name": "5.13",
+          "controls": [
+            {
+              "code": "5.13",
+              "statement": "Labelling of information Control: An appropriate set of procedures for information labelling shall be developed and implemented in accordance with the information clas sification scheme adopted by the organization.",
+              "cross_refs": [],
+              "questions": [
+                {
+                  "question_id": "5c9c2f3d-5f4e-4678-9c5b-6d7e8f9g0h1i",
+                  "text": "How are information security roles and responsibilities defined and allocated?",
+                  "question_type": "FREE_TEXT",
+                  "weight": 4,
+                  "maturity_level": 4,
+                  "help_text": "Review of role matrix and org chart",
+                  "choices": []
+                },
+                {
+                  "question_id": "2a3b4c5d-6e7f-8g9h-0i1j-2k3l4m5n6o",
+                  "text": "What process triggers immediate credential revocation when an employee leaves?",
+                  "question_type": "FREE_TEXT",
+                  "weight": 5,
+                  "maturity_level": 5,
+                  "help_text": "Review of access rights review process",
+                  "choices": []
+                },
+                {
+                  "question_id": "1p2q3r4s-5t6u7v-8w9x-0y1z-2a3b4c5d",
+                  "text": "How frequently are privileged account access rights reviewed and by whom?",
+                  "question_type": "FREE_TEXT",
+                  "weight": 4,
+                  "maturity_level": 4,
+                  "help_text": "Review of access rights review schedule",
+                  "choices": []
+                },
+                {
+                  "question_id": "9i8h7g6f-5e4d3c2b-1a0z9y8x-7w6v5u4t",
+                  "text": "What is the process for addressing information security within supplier agreements?",
+                  "question_type": "FREE_TEXT",
+                  "weight": 4,
+                  "maturity_level": 4,
+                  "help_text": "Review of supplier contract and assessment",
+                  "choices": []
+                },
+                {
+                  "question_id": "6d5c4b3a-2s1r9t-8y7u6o-5p4q3w-2v1x0z",
+                  "text": "How does the organization ensure compliance with policies, rules, and standards for information security?",
+                  "question_type": "FREE_TEXT",
+                  "weight": 5,
+                  "maturity_level": 5,
+                  "help_text": "Review of compliance review and audit schedule",
+                  "choices": []
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "code": "5.14",
+          "name": "5.14",
+          "controls": [
+            {
+              "code": "5.14",
+              "statement": "Information transfer Control: Information transfer rules, procedures, or agreements shall be in place for all types of transfer facilities within the organization and between the organization and other parties.",
+              "cross_refs": [],
+              "questions": [
+                {
+                  "question_id": "5c9c2f3d-5f4e-4678-9c5b-6d7e8f9g0h1i",
+                  "text": "How are information security roles and responsibilities defined and allocated?",
+                  "question_type": "FREE_TEXT",
+                  "weight": 4,
+                  "maturity_level": 4,
+                  "help_text": "Review of role matrix and org chart",
+                  "choices": []
+                },
+                {
+                  "question_id": "2a3b4c5d-6e7f-8g9h-0i1j-2k3l4m5n6o",
+                  "text": "What process triggers immediate credential revocation when an employee leaves?",
+                  "question_type": "FREE_TEXT",
+                  "weight": 5,
+                  "maturity_level": 5,
+                  "help_text": "Review of access rights review process",
+                  "choices": []
+                },
+                {
+                  "question_id": "1p2q3r4s-5t6u7v-8w9x-0y1z-2a3b4c5d",
+                  "text": "How frequently are privileged account access rights reviewed and by whom?",
+                  "question_type": "FREE_TEXT",
+                  "weight": 4,
+                  "maturity_level": 4,
+                  "help_text": "Review of access rights review schedule",
+                  "choices": []
+                },
+                {
+                  "question_id": "9i8h7g6f-5e4d3c2b-1a0z9y8x-7w6v5u4t",
+                  "text": "What is the process for addressing information security within supplier agreements?",
+                  "question_type": "FREE_TEXT",
+                  "weight": 4,
+                  "maturity_level": 4,
+                  "help_text": "Review of supplier contract and assessment",
+                  "choices": []
+                },
+                {
+                  "question_id": "6d5c4b3a-2s1r9t-8y7u6o-5p4q3w-2v1x0z",
+                  "text": "How does the organization ensure compliance with policies, rules, and standards for information security?",
+                  "question_type": "FREE_TEXT",
+                  "weight": 5,
+                  "maturity_level": 5,
+                  "help_text": "Review of compliance review and audit schedule",
+                  "choices": []
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "code": "5.15",
+          "name": "5.15",
+          "controls": [
+            {
+              "code": "5.15",
+              "statement": "Access control Control: Rules to control physical and logical access to information and other associated assets shall be established and implemented based on busi ness and information security requirements.",
+              "cross_refs": [],
+              "questions": [
+                {
+                  "question_id": "5c9c2f3d-5f4e-4678-9c5b-6d7e8f9g0h1i",
+                  "text": "How are information security roles and responsibilities defined and allocated?",
+                  "question_type": "FREE_TEXT",
+                  "weight": 4,
+                  "maturity_level": 4,
+                  "help_text": "Review of role matrix and org chart",
+                  "choices": []
+                },
+                {
+                  "question_id": "2a3b4c5d-6e7f-8g9h-0i1j-2k3l4m5n6o",
+                  "text": "What process triggers immediate credential revocation when an employee leaves?",
+                  "question_type": "FREE_TEXT",
+                  "weight": 5,
+                  "maturity_level": 5,
+                  "help_text": "Review of access rights review process",
+                  "choices": []
+                },
+                {
+                  "question_id": "1p2q3r4s-5t6u7v-8w9x-0y1z-2a3b4c5d",
+                  "text": "How frequently are privileged account access rights reviewed and by whom?",
+                  "question_type": "FREE_TEXT",
+                  "weight": 4,
+                  "maturity_level": 4,
+                  "help_text": "Review of access rights review schedule",
+                  "choices": []
+                },
+                {
+                  "question_id": "9i8h7g6f-5e4d3c2b-1a0z9y8x-7w6v5u4t",
+                  "text": "What is the process for addressing information security within supplier agreements?",
+                  "question_type": "FREE_TEXT",
+                  "weight": 4,
+                  "maturity_level": 4,
+                  "help_text": "Review of supplier contract and assessment",
+                  "choices": []
+                },
+                {
+                  "question_id": "6d5c4b3a-2s1r9t-8y7u6o-5p4q3w-2v1x0z",
+                  "text": "How does the organization ensure compliance with policies, rules, and standards for information security?",
+                  "question_type": "FREE_TEXT",
+                  "weight": 5,
+                  "maturity_level": 5,
+                  "help_text": "Review of compliance review and audit schedule",
+                  "choices": []
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "code": "5.16",
+          "name": "5.16",
+          "controls": [
+            {
+              "code": "5.16",
+              "statement": "Identity management Control: The full life cycle of identities shall be managed.",
+              "cross_refs": [],
+              "questions": [
+                {
+                  "question_id": "5c9c2f3d-5f4e-4678-9c5b-6d7e8f9g0h1i",
+                  "text": "How are information security roles and responsibilities defined and allocated?",
+                  "question_type": "FREE_TEXT",
+                  "weight": 4,
+                  "maturity_level": 4,
+                  "help_text": "Review of role matrix and org chart",
+                  "choices": []
+                },
+                {
+                  "question_id": "2a3b4c5d-6e7f-8g9h-0i1j-2k3l4m5n6o",
+                  "text": "What process triggers immediate credential revocation when an employee leaves?",
+                  "question_type": "FREE_TEXT",
+                  "weight": 5,
+                  "maturity_level": 5,
+                  "help_text": "Review of access rights review process",
+                  "choices": []
+                },
+                {
+                  "question_id": "1p2q3r4s-5t6u7v-8w9x-0y1z-2a3b4c5d",
+                  "text": "How frequently are privileged account access rights reviewed and by whom?",
+                  "question_type": "FREE_TEXT",
+                  "weight": 4,
+                  "maturity_level": 4,
+                  "help_text": "Review of access rights review schedule",
+                  "choices": []
+                },
+                {
+                  "question_id": "9i8h7g6f-5e4d3c2b-1a0z9y8x-7w6v5u4t",
+                  "text": "What is the process for addressing information security within supplier agreements?",
+                  "question_type": "FREE_TEXT",
+                  "weight": 4,
+                  "maturity_level": 4,
+                  "help_text": "Review of supplier contract and assessment",
+                  "choices": []
+                },
+                {
+                  "question_id": "6d5c4b3a-2s1r9t-8y7u6o-5p4q3w-2v1x0z",
+                  "text": "How does the organization ensure compliance with policies, rules, and standards for information security?",
+                  "question_type": "FREE_TEXT",
+                  "weight": 5,
+                  "maturity_level": 5,
+                  "help_text": "Review of compliance review and audit schedule",
+                  "choices": []
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "code": "5.17",
+          "name": "5.17",
+          "controls": [
+            {
+              "code": "5.17",
+              "statement": "Authentication information Control: Allocation and management of authentication information shall be controlled by a management process, including advising personnel on appropriate handling of authentication information.",
+              "cross_refs": [],
+              "questions": [
+                {
+                  "question_id": "5c9c2f3d-5f4e-4678-9c5b-6d7e8f9g0h1i",
+                  "text": "How are information security roles and responsibilities defined and allocated?",
+                  "question_type": "FREE_TEXT",
+                  "weight": 4,
+                  "maturity_level": 4,
+                  "help_text": "Review of role matrix and org chart",
+                  "choices": []
+                },
+                {
+                  "question_id": "2a3b4c5d-6e7f-8g9h-0i1j-2k3l4m5n6o",
+                  "text": "What process triggers immediate credential revocation when an employee leaves?",
+                  "question_type": "FREE_TEXT",
+                  "weight": 5,
+                  "maturity_level": 5,
+                  "help_text": "Review of access rights review process",
+                  "choices": []
+                },
+                {
+                  "question_id": "1p2q3r4s-5t6u7v-8w9x-0y1z-2a3b4c5d",
+                  "text": "How frequently are privileged account access rights reviewed and by whom?",
+                  "question_type": "FREE_TEXT",
+                  "weight": 4,
+                  "maturity_level": 4,
+                  "help_text": "Review of access rights review schedule",
+                  "choices": []
+                },
+                {
+                  "question_id": "9i8h7g6f-5e4d3c2b-1a0z9y8x-7w6v5u4t",
+                  "text": "What is the process for addressing information security within supplier agreements?",
+                  "question_type": "FREE_TEXT",
+                  "weight": 4,
+                  "maturity_level": 4,
+                  "help_text": "Review of supplier contract and assessment",
+                  "choices": []
+                },
+                {
+                  "question_id": "6d5c4b3a-2s1r9t-8y7u6o-5p4q3w-2v1x0z",
+                  "text": "How does the organization ensure compliance with policies, rules, and standards for information security?",
+                  "question_type": "FREE_TEXT",
+                  "weight": 5,
+                  "maturity_level": 5,
+                  "help_text": "Review of compliance review and audit schedule",
+                  "choices": []
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    }
+  ],
+  "mappings": [
+    {
+      "source_control": "GV.OC-01",
+      "target_framework": "nist-sp-800-39",
+      "target_framework_version": "",
+      "target_control": "2.1",
+      "relationship": "RELATED",
+      "notes": ""
+    },
+    {
+      "source_control": "GV.OC-01",
+      "target_framework": "iso-27001-2022",
+      "target_framework_version": "",
+      "target_control": "4.1",
+      "relationship": "RELATED",
+      "notes": ""
+    },
+    {
+      "source_control": "GV.OC-02",
+      "target_framework": "iso-27001-2022",
+      "target_framework_version": "",
+      "target_control": "4.2",
+      "relationship": "RELATED",
+      "notes": ""
+    },
+    {
+      "source_control": "GV.OC-02",
+      "target_framework": "nist-sp-800-39",
+      "target_framework_version": "",
+      "target_control": "2.2",
+      "relationship": "RELATED",
+      "notes": ""
+    },
+    {
+      "source_control": "GV.RM-01",
+      "target_framework": "nist-sp-800-39",
+      "target_framework_version": "",
+      "target_control": "2.2",
+      "relationship": "RELATED",
+      "notes": ""
+    },
+    {
+      "source_control": "GV.RM-01",
+      "target_framework": "iso-27001-2022",
+      "target_framework_version": "",
+      "target_control": "6.1",
+      "relationship": "RELATED",
+      "notes": ""
+    },
+    {
+      "source_control": "GV.RM-02",
+      "target_framework": "nist-sp-800-39",
+      "target_framework_version": "",
+      "target_control": "",
+      "relationship": "RELATED",
+      "notes": ""
+    },
+    {
+      "source_control": "GV.RM-02",
+      "target_framework": "iso-27005-2022",
+      "target_framework_version": "",
+      "target_control": "6.3",
+      "relationship": "RELATED",
+      "notes": ""
+    },
+    {
+      "source_control": "GV.SC-01",
+      "target_framework": "nist-sp-800-161",
+      "target_framework_version": "",
+      "target_control": "",
+      "relationship": "RELATED",
+      "notes": ""
+    },
+    {
+      "source_control": "GV.SC-01",
+      "target_framework": "iso-27036",
+      "target_framework_version": "",
+      "target_control": "",
+      "relationship": "RELATED",
+      "notes": ""
+    }
+  ]
+}

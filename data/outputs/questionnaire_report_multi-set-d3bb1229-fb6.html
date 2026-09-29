@@ -1,0 +1,1224 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Security Assessment Report — multi-set-d3bb1229-fb6</title>
+  <style>
+    *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+
+    :root {
+      --c-bg:      #f0f2f5;
+      --c-surface: #ffffff;
+      --c-border:  #e2e6ed;
+      --c-text:    #1a2332;
+      --c-muted:   #6b7a90;
+      --c-accent:  #3a7bd5;
+      --r-sm: 8px;
+      --r-md: 12px;
+      --shadow: 0 1px 3px rgba(0,0,0,.07), 0 4px 12px rgba(0,0,0,.05);
+    }
+
+    body {
+      font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
+      background: var(--c-bg);
+      color: var(--c-text);
+      font-size: 14px;
+      line-height: 1.5;
+    }
+
+    /* ── Header ───────────────────────────────────────────────────────── */
+    .report-header {
+      background: linear-gradient(135deg, #0f1923 0%, #17324d 100%);
+      color: #e8edf3;
+      padding: 2rem 2.5rem 1.75rem;
+    }
+    .report-header h1 {
+      font-size: 1.5rem;
+      font-weight: 700;
+      color: #fff;
+      margin-bottom: 0.4rem;
+    }
+    .header-meta {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 1.25rem;
+      font-size: 0.82rem;
+      color: #7a9ab8;
+      margin-top: 0.75rem;
+    }
+    .header-meta span strong { color: #c8d8e8; font-weight: 600; }
+    .badge-mode {
+      display: inline-block;
+      background: rgba(255,255,255,.1);
+      border: 1px solid rgba(255,255,255,.15);
+      border-radius: 20px;
+      padding: 2px 10px;
+      font-size: 0.72rem;
+      font-weight: 600;
+      letter-spacing: 0.06em;
+      text-transform: uppercase;
+      color: #a8c4e0;
+    }
+
+    /* ── Section wrapper ──────────────────────────────────────────────── */
+    .section { padding: 2rem 2.5rem; }
+    .section + .section { padding-top: 0; }
+    .section-title {
+      font-size: 0.72rem;
+      font-weight: 700;
+      letter-spacing: 0.1em;
+      text-transform: uppercase;
+      color: var(--c-muted);
+      margin-bottom: 1rem;
+    }
+
+    /* ── Dashboard row ────────────────────────────────────────────────── */
+    .dashboard-row {
+      display: grid;
+      grid-template-columns: 240px 1fr 220px;
+      gap: 1.25rem;
+      padding: 2rem 2.5rem 1rem;
+    }
+    @media (max-width: 900px) {
+      .dashboard-row { grid-template-columns: 1fr; }
+    }
+
+    .widget {
+      background: var(--c-surface);
+      border: 1px solid var(--c-border);
+      border-radius: var(--r-md);
+      box-shadow: var(--shadow);
+      padding: 1.4rem;
+    }
+    .widget-title {
+      font-size: 0.72rem;
+      font-weight: 700;
+      letter-spacing: 0.1em;
+      text-transform: uppercase;
+      color: var(--c-muted);
+      margin-bottom: 1rem;
+    }
+
+    /* ── Security Level Gauge widget ──────────────────────────────────── */
+    .widget-security {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      text-align: center;
+    }
+    .gauge-wrap {
+      position: relative;
+      width: 148px;
+      height: 148px;
+      border-radius: 50%;
+      background: conic-gradient(
+        #ca8a04 284.2deg,
+        #e5e7eb 284.2deg
+      );
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      margin-bottom: 1rem;
+    }
+    .gauge-inner {
+      position: absolute;
+      width: 110px;
+      height: 110px;
+      border-radius: 50%;
+      background: var(--c-surface);
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+    }
+    .gauge-score {
+      font-size: 1.9rem;
+      font-weight: 800;
+      color: #ca8a04;
+      line-height: 1;
+    }
+    .gauge-label {
+      font-size: 0.65rem;
+      font-weight: 600;
+      color: var(--c-muted);
+      letter-spacing: 0.06em;
+      text-transform: uppercase;
+      margin-top: 2px;
+    }
+    .security-label {
+      font-size: 1rem;
+      font-weight: 700;
+      color: #ca8a04;
+      margin-bottom: 0.35rem;
+    }
+    .maturity-chip {
+      display: inline-block;
+      background: #f0f4ff;
+      color: var(--c-accent);
+      border: 1px solid #c7d9f7;
+      border-radius: 20px;
+      padding: 3px 12px;
+      font-size: 0.75rem;
+      font-weight: 600;
+    }
+
+    /* ── Top 3 Vulnerabilities widget ────────────────────────────────── */
+    .vuln-list { list-style: none; display: flex; flex-direction: column; gap: 0.75rem; }
+    .vuln-item {
+      display: flex;
+      gap: 0.75rem;
+      align-items: flex-start;
+      background: #fff8f7;
+      border: 1px solid #fce0dc;
+      border-left: 4px solid #dc2626;
+      border-radius: var(--r-sm);
+      padding: 0.75rem;
+    }
+    .vuln-num {
+      flex-shrink: 0;
+      width: 22px;
+      height: 22px;
+      border-radius: 50%;
+      background: #dc2626;
+      color: #fff;
+      font-size: 0.72rem;
+      font-weight: 700;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+    }
+    .vuln-body { flex: 1; min-width: 0; }
+    .vuln-title {
+      font-size: 0.82rem;
+      font-weight: 600;
+      color: #7f1d1d;
+      margin-bottom: 2px;
+      word-break: break-word;
+    }
+    .vuln-obs {
+      font-size: 0.76rem;
+      color: #991b1b;
+      opacity: 0.85;
+    }
+    .vuln-score {
+      flex-shrink: 0;
+      font-size: 0.75rem;
+      font-weight: 700;
+      color: #dc2626;
+      background: #fee2e2;
+      border-radius: 20px;
+      padding: 2px 8px;
+      align-self: flex-start;
+    }
+    .no-vulns {
+      font-size: 0.85rem;
+      color: #16a34a;
+      background: #f0fdf4;
+      border: 1px solid #bbf7d0;
+      border-radius: var(--r-sm);
+      padding: 0.75rem 1rem;
+      font-weight: 600;
+    }
+
+    /* ── At-a-Glance stats widget ─────────────────────────────────────── */
+    .stat-grid { display: flex; flex-direction: column; gap: 0.5rem; }
+    .stat-row {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      font-size: 0.82rem;
+      padding: 4px 0;
+      border-bottom: 1px solid var(--c-border);
+    }
+    .stat-row:last-child { border-bottom: none; }
+    .stat-lbl { color: var(--c-muted); }
+    .stat-val {
+      font-weight: 700;
+      font-size: 0.88rem;
+      border-radius: 4px;
+      padding: 1px 7px;
+    }
+    .stat-val.s-strong  { background: #dcfce7; color: #15803d; }
+    .stat-val.s-partial { background: #fef9c3; color: #a16207; }
+    .stat-val.s-weak    { background: #ffedd5; color: #c2410c; }
+    .stat-val.s-missing { background: #fee2e2; color: #b91c1c; }
+
+    /* ── Domain summary banner ────────────────────────────────────────── */
+    .summary-banner {
+      background: #f0f7ff;
+      border: 1px solid #bfdbfe;
+      border-radius: var(--r-sm);
+      padding: 0.85rem 1.25rem;
+      font-size: 0.88rem;
+      color: #1e3a5f;
+      margin: 0 2.5rem 1rem;
+    }
+
+    /* ── Per-question table ───────────────────────────────────────────── */
+    .table-wrap {
+      overflow-x: auto;
+      border: 1px solid var(--c-border);
+      border-radius: var(--r-md);
+      box-shadow: var(--shadow);
+      margin: 0 2.5rem 2rem;
+      background: var(--c-surface);
+    }
+    table.q-table {
+      width: 100%;
+      border-collapse: collapse;
+    }
+    .q-table th {
+      background: #f7f9fc;
+      font-size: 0.72rem;
+      font-weight: 700;
+      letter-spacing: 0.06em;
+      text-transform: uppercase;
+      color: var(--c-muted);
+      padding: 10px 12px;
+      text-align: left;
+      border-bottom: 1px solid var(--c-border);
+      white-space: nowrap;
+    }
+    .q-table td {
+      padding: 10px 12px;
+      vertical-align: top;
+      border-bottom: 1px solid #f0f2f5;
+      font-size: 0.83rem;
+    }
+    .q-table tr:last-child td { border-bottom: none; }
+    .q-table tr:hover td { background: #f9fafb; }
+
+    .q-num {
+      color: var(--c-muted);
+      font-weight: 600;
+      font-size: 0.78rem;
+      white-space: nowrap;
+    }
+    .q-text { font-weight: 500; color: var(--c-text); max-width: 260px; }
+    .q-response {
+      color: #374151;
+      max-width: 180px;
+      word-break: break-word;
+    }
+    .q-obs {
+      color: #4b5563;
+      font-style: italic;
+      max-width: 260px;
+    }
+
+    /* gap flags */
+    .gap-flag {
+      display: inline-block;
+      border-radius: 20px;
+      padding: 3px 10px;
+      font-size: 0.73rem;
+      font-weight: 700;
+      white-space: nowrap;
+    }
+    .gap-addressed { background: #dcfce7; color: #15803d; }
+    .gap-partial   { background: #fef9c3; color: #a16207; }
+    .gap-missing   { background: #fee2e2; color: #b91c1c; }
+
+    /* score bar */
+    .score-cell { min-width: 120px; }
+    .score-bar-wrap {
+      display: flex;
+      align-items: center;
+      gap: 8px;
+    }
+    .score-bar-track {
+      flex: 1;
+      height: 6px;
+      background: #e5e7eb;
+      border-radius: 3px;
+      overflow: hidden;
+    }
+    .score-bar-fill {
+      height: 100%;
+      border-radius: 3px;
+      transition: width 0.3s ease;
+    }
+    .score-num {
+      font-size: 0.78rem;
+      font-weight: 700;
+      color: var(--c-text);
+      min-width: 28px;
+    }
+
+    /* row tinting by verdict */
+    tr.row-strong  td { border-left: 3px solid #16a34a; }
+    tr.row-partial td { border-left: 3px solid #ca8a04; }
+    tr.row-weak    td { border-left: 3px solid #ea580c; }
+    tr.row-missing td { border-left: 3px solid #dc2626; }
+
+    /* ── Strengths & Gaps ─────────────────────────────────────────────── */
+    .sg-grid {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 1.25rem;
+      margin: 0 2.5rem 2rem;
+    }
+    @media (max-width: 700px) { .sg-grid { grid-template-columns: 1fr; } }
+
+    .sg-card {
+      background: var(--c-surface);
+      border: 1px solid var(--c-border);
+      border-radius: var(--r-md);
+      box-shadow: var(--shadow);
+      padding: 1.25rem;
+    }
+    .sg-card h3 {
+      font-size: 0.85rem;
+      font-weight: 700;
+      margin-bottom: 0.85rem;
+      display: flex;
+      align-items: center;
+      gap: 6px;
+    }
+    .sg-card.strengths h3 { color: #15803d; }
+    .sg-card.gaps      h3 { color: #b91c1c; }
+    .sg-list { list-style: none; display: flex; flex-direction: column; gap: 0.5rem; }
+    .sg-item {
+      font-size: 0.82rem;
+      padding: 0.5rem 0.75rem;
+      border-radius: 6px;
+      line-height: 1.45;
+    }
+    .strengths .sg-item { background: #f0fdf4; color: #14532d; border-left: 3px solid #16a34a; }
+    .gaps      .sg-item { background: #fff7f7; color: #7f1d1d; border-left: 3px solid #dc2626; }
+    .sg-empty { font-size: 0.82rem; color: var(--c-muted); font-style: italic; padding: 0.4rem 0; }
+
+    /* ── Score Distribution Chart ─────────────────────────────────────── */
+    .dist-section {
+      margin: 0 2.5rem 2.5rem;
+      background: var(--c-surface);
+      border: 1px solid var(--c-border);
+      border-radius: var(--r-md);
+      box-shadow: var(--shadow);
+      padding: 1.4rem;
+    }
+    .dist-bars {
+      display: flex;
+      align-items: flex-end;
+      gap: 12px;
+      height: 80px;
+      margin-top: 1rem;
+    }
+    .dist-col {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      flex: 1;
+    }
+    .dist-bar {
+      width: 100%;
+      border-radius: 4px 4px 0 0;
+      background: var(--c-accent);
+      min-height: 4px;
+      transition: height 0.3s ease;
+    }
+    .dist-range {
+      font-size: 0.68rem;
+      color: var(--c-muted);
+      margin-top: 4px;
+      white-space: nowrap;
+    }
+    .dist-count {
+      font-size: 0.72rem;
+      font-weight: 700;
+      color: var(--c-text);
+      margin-bottom: 3px;
+    }
+
+    /* ── Footer ───────────────────────────────────────────────────────── */
+    .report-footer {
+      background: #f7f9fc;
+      border-top: 1px solid var(--c-border);
+      padding: 1rem 2.5rem;
+      font-size: 0.75rem;
+      color: var(--c-muted);
+      display: flex;
+      justify-content: space-between;
+    }
+
+    @media print {
+      .report-header { -webkit-print-color-adjust: exact; print-color-adjust: exact; }
+      .widget { break-inside: avoid; }
+    }
+  </style>
+</head>
+<body>
+
+<!-- ── Report Header ──────────────────────────────────────────────────────── -->
+<div class="report-header">
+  <h1>Security Assessment Report</h1>
+  <div class="header-meta">
+    <span><strong>ID:</strong> multi-set-d3bb1229-fb6</span>
+    <span><strong>Scope:</strong> —</span>
+    <span><strong>Framework:</strong> NIST CSF 2.0 (Protect) + CIS Controls v8.1.2 (Access Control Management)</span>
+    <span><strong>Auditor:</strong> web-auditor</span>
+    <span><strong>Date:</strong> —</span>
+    <span class="badge-mode">fallback-deterministic</span>
+  </div>
+</div>
+
+<!-- ── Dashboard Row ──────────────────────────────────────────────────────── -->
+<div class="dashboard-row">
+
+  <!-- Widget 1 — Security Level Gauge -->
+  <div class="widget widget-security">
+    <div class="widget-title">Security Level Attained</div>
+    <div class="gauge-wrap">
+      <div class="gauge-inner">
+        <span class="gauge-score">79.0%</span>
+        <span class="gauge-label">Score</span>
+      </div>
+    </div>
+    <div class="security-label">Medium Risk</div>
+    <div class="maturity-chip">IG2</div>
+  </div>
+
+  <!-- Widget 2 — Top 3 Vulnerabilities / Gaps -->
+  <div class="widget">
+    <div class="widget-title">Top 3 Vulnerabilities / Gaps Identified</div>
+    
+    <ol class="vuln-list">
+      
+      <li class="vuln-item">
+        <div class="vuln-num">1</div>
+        <div class="vuln-body">
+          <div class="vuln-title">Are all externally-exposed applications using MFA?</div>
+          
+          <div class="vuln-obs">Not confirmed — this control may not be in place.</div>
+          
+        </div>
+        <div class="vuln-score">0</div>
+      </li>
+      
+      <li class="vuln-item">
+        <div class="vuln-num">2</div>
+        <div class="vuln-body">
+          <div class="vuln-title">Is access control centralized through a directory service?</div>
+          
+          <div class="vuln-obs">Not confirmed — this control may not be in place.</div>
+          
+        </div>
+        <div class="vuln-score">0</div>
+      </li>
+      
+      <li class="vuln-item">
+        <div class="vuln-num">3</div>
+        <div class="vuln-body">
+          <div class="vuln-title">How often are access logs reviewed?</div>
+          
+          <div class="vuln-obs">Response is very brief and may lack sufficient detail.</div>
+          
+        </div>
+        <div class="vuln-score">50</div>
+      </li>
+      
+    </ol>
+    
+  </div>
+
+  <!-- Widget 3 — At a Glance -->
+  <div class="widget">
+    <div class="widget-title">At a Glance</div>
+    <div class="stat-grid">
+      <div class="stat-row">
+        <span class="stat-lbl">Addressed</span>
+        <span class="stat-val s-strong">1</span>
+      </div>
+      <div class="stat-row">
+        <span class="stat-lbl">Partial</span>
+        <span class="stat-val s-partial">17</span>
+      </div>
+      <div class="stat-row">
+        <span class="stat-lbl">Weak</span>
+        <span class="stat-val s-weak">2</span>
+      </div>
+      <div class="stat-row">
+        <span class="stat-lbl">Missing</span>
+        <span class="stat-val s-missing">0</span>
+      </div>
+      
+      <div class="stat-row">
+        <span class="stat-lbl">Yes/No confirmed</span>
+        <span class="stat-val s-strong">1/3</span>
+      </div>
+      
+      
+      
+      <div class="stat-row">
+        <span class="stat-lbl">Total questions</span>
+        <span class="stat-val" style="background:#f0f4ff;color:#3a7bd5">20</span>
+      </div>
+    </div>
+  </div>
+
+</div><!-- /dashboard-row -->
+
+<!-- ── Domain Summary ─────────────────────────────────────────────────────── -->
+
+<div class="summary-banner">
+  <strong>Assessment summary:</strong> 1 of 3 yes/no controls were confirmed.
+</div>
+
+
+<!-- ── Per-question Detail Table ──────────────────────────────────────────── -->
+<div class="section-title" style="padding: 0 2.5rem 0.5rem;">
+  Question-by-Question Review
+</div>
+<div class="table-wrap">
+  <table class="q-table">
+    <thead>
+      <tr>
+        <th style="width:36px">#</th>
+        <th>Question</th>
+        <th>Answer</th>
+        <th>Observation</th>
+        <th>Status</th>
+        <th class="score-cell">Score</th>
+        <th style="width:48px">Wt</th>
+      </tr>
+    </thead>
+    <tbody>
+      
+      
+      <tr class="row-partial">
+        <td class="q-num">1</td>
+        <td class="q-text">How frequently are user account audits performed?</td>
+        <td class="q-response">
+          
+          
+            User account audits are performed twice per year for critical systems. Some business applications are reviewed annually,…
+          
+        </td>
+        <td class="q-obs">Response addresses the question with relevant context.</td>
+        <td><span class="gap-flag gap-addressed">✓ Addressed</span></td>
+        <td class="score-cell">
+          <div class="score-bar-wrap">
+            <div class="score-bar-track">
+              
+              
+                
+              
+              <div class="score-bar-fill"
+                   style="width:90.0%;background:#16a34a"></div>
+            </div>
+            <span class="score-num">90</span>
+          </div>
+        </td>
+        <td style="color:var(--c-muted);font-size:0.78rem;text-align:center">4</td>
+      </tr>
+      
+      
+      <tr class="row-partial">
+        <td class="q-num">2</td>
+        <td class="q-text">What identity proofing procedure is used?</td>
+        <td class="q-response">
+          
+          
+            New employees provide government-issued identification and employment documentation during onboarding. Identity verifica…
+          
+        </td>
+        <td class="q-obs">Response addresses the question with relevant context.</td>
+        <td><span class="gap-flag gap-addressed">✓ Addressed</span></td>
+        <td class="score-cell">
+          <div class="score-bar-wrap">
+            <div class="score-bar-track">
+              
+              
+                
+              
+              <div class="score-bar-fill"
+                   style="width:92.5%;background:#16a34a"></div>
+            </div>
+            <span class="score-num">92</span>
+          </div>
+        </td>
+        <td style="color:var(--c-muted);font-size:0.78rem;text-align:center">5</td>
+      </tr>
+      
+      
+      <tr class="row-partial">
+        <td class="q-num">3</td>
+        <td class="q-text">How are personnel trained on cybersecurity risks?</td>
+        <td class="q-response">
+          
+          
+            Employees receive cybersecurity awareness training during onboarding and annual refresher training. Periodic security aw…
+          
+        </td>
+        <td class="q-obs">Response provided but may not directly address the specific question.</td>
+        <td><span class="gap-flag gap-addressed">✓ Addressed</span></td>
+        <td class="score-cell">
+          <div class="score-bar-wrap">
+            <div class="score-bar-track">
+              
+              
+                
+              
+              <div class="score-bar-fill"
+                   style="width:87.5%;background:#16a34a"></div>
+            </div>
+            <span class="score-num">88</span>
+          </div>
+        </td>
+        <td style="color:var(--c-muted);font-size:0.78rem;text-align:center">3</td>
+      </tr>
+      
+      
+      <tr class="row-partial">
+        <td class="q-num">4</td>
+        <td class="q-text">What data-at-rest protection measures are in place?</td>
+        <td class="q-response">
+          
+          
+            Full-disk encryption is enabled on most corporate laptops using BitLocker. Sensitive databases use encryption features p…
+          
+        </td>
+        <td class="q-obs">Response provided but may not directly address the specific question.</td>
+        <td><span class="gap-flag gap-addressed">✓ Addressed</span></td>
+        <td class="score-cell">
+          <div class="score-bar-wrap">
+            <div class="score-bar-track">
+              
+              
+                
+              
+              <div class="score-bar-fill"
+                   style="width:100.0%;background:#16a34a"></div>
+            </div>
+            <span class="score-num">100</span>
+          </div>
+        </td>
+        <td style="color:var(--c-muted);font-size:0.78rem;text-align:center">5</td>
+      </tr>
+      
+      
+      <tr class="row-partial">
+        <td class="q-num">5</td>
+        <td class="q-text">How is data-in-transit protected?</td>
+        <td class="q-response">
+          
+          
+            Data transmitted over public networks is protected using HTTPS with TLS 1.2 or higher. VPN connections are used for remo…
+          
+        </td>
+        <td class="q-obs">Response addresses the question with relevant context.</td>
+        <td><span class="gap-flag gap-addressed">✓ Addressed</span></td>
+        <td class="score-cell">
+          <div class="score-bar-wrap">
+            <div class="score-bar-track">
+              
+              
+                
+              
+              <div class="score-bar-fill"
+                   style="width:100.0%;background:#16a34a"></div>
+            </div>
+            <span class="score-num">100</span>
+          </div>
+        </td>
+        <td style="color:var(--c-muted);font-size:0.78rem;text-align:center">5</td>
+      </tr>
+      
+      
+      <tr class="row-partial">
+        <td class="q-num">6</td>
+        <td class="q-text">What network segmentation is in place?</td>
+        <td class="q-response">
+          
+          
+            The network is segmented into separate VLANs for users, servers, and management systems. Firewall rules restrict communi…
+          
+        </td>
+        <td class="q-obs">Response addresses the question with relevant context.</td>
+        <td><span class="gap-flag gap-addressed">✓ Addressed</span></td>
+        <td class="score-cell">
+          <div class="score-bar-wrap">
+            <div class="score-bar-track">
+              
+              
+                
+              
+              <div class="score-bar-fill"
+                   style="width:100.0%;background:#16a34a"></div>
+            </div>
+            <span class="score-num">100</span>
+          </div>
+        </td>
+        <td style="color:var(--c-muted);font-size:0.78rem;text-align:center">4</td>
+      </tr>
+      
+      
+      <tr class="row-partial">
+        <td class="q-num">7</td>
+        <td class="q-text">How often are access logs reviewed?</td>
+        <td class="q-response">
+          
+          
+            3
+          
+        </td>
+        <td class="q-obs">Response is very brief and may lack sufficient detail.</td>
+        <td><span class="gap-flag gap-partial">⚠ Partial</span></td>
+        <td class="score-cell">
+          <div class="score-bar-wrap">
+            <div class="score-bar-track">
+              
+              
+                
+              
+              <div class="score-bar-fill"
+                   style="width:50.0%;background:#ca8a04"></div>
+            </div>
+            <span class="score-num">50</span>
+          </div>
+        </td>
+        <td style="color:var(--c-muted);font-size:0.78rem;text-align:center">3</td>
+      </tr>
+      
+      
+      <tr class="row-partial">
+        <td class="q-num">8</td>
+        <td class="q-text">What configuration management practices are used?</td>
+        <td class="q-response">
+          
+          
+            Standard baseline configurations are documented for servers and workstations. Configuration changes follow a change mana…
+          
+        </td>
+        <td class="q-obs">Response addresses the question with relevant context.</td>
+        <td><span class="gap-flag gap-addressed">✓ Addressed</span></td>
+        <td class="score-cell">
+          <div class="score-bar-wrap">
+            <div class="score-bar-track">
+              
+              
+                
+              
+              <div class="score-bar-fill"
+                   style="width:92.5%;background:#16a34a"></div>
+            </div>
+            <span class="score-num">92</span>
+          </div>
+        </td>
+        <td style="color:var(--c-muted);font-size:0.78rem;text-align:center">4</td>
+      </tr>
+      
+      
+      <tr class="row-partial">
+        <td class="q-num">9</td>
+        <td class="q-text">How are changes to baseline configurations tracked?</td>
+        <td class="q-response">
+          
+          
+            Configuration changes are documented through change requests and ticketing systems. Approved changes are recorded, but a…
+          
+        </td>
+        <td class="q-obs">Response provided but may not directly address the specific question.</td>
+        <td><span class="gap-flag gap-addressed">✓ Addressed</span></td>
+        <td class="score-cell">
+          <div class="score-bar-wrap">
+            <div class="score-bar-track">
+              
+              
+                
+              
+              <div class="score-bar-fill"
+                   style="width:92.5%;background:#16a34a"></div>
+            </div>
+            <span class="score-num">92</span>
+          </div>
+        </td>
+        <td style="color:var(--c-muted);font-size:0.78rem;text-align:center">3</td>
+      </tr>
+      
+      
+      <tr class="row-partial">
+        <td class="q-num">10</td>
+        <td class="q-text">What is the primary method of authentication?</td>
+        <td class="q-response">
+          
+          
+            mfa
+          
+        </td>
+        <td class="q-obs">Response is very brief and may lack sufficient detail.</td>
+        <td><span class="gap-flag gap-partial">⚠ Partial</span></td>
+        <td class="score-cell">
+          <div class="score-bar-wrap">
+            <div class="score-bar-track">
+              
+              
+                
+              
+              <div class="score-bar-fill"
+                   style="width:70.0%;background:#ca8a04"></div>
+            </div>
+            <span class="score-num">70</span>
+          </div>
+        </td>
+        <td style="color:var(--c-muted);font-size:0.78rem;text-align:center">5</td>
+      </tr>
+      
+      
+      <tr class="row-partial">
+        <td class="q-num">11</td>
+        <td class="q-text">How frequently are access rights reviewed?</td>
+        <td class="q-response">
+          
+          
+            Access rights are reviewed semi-annually by department managers and the IT team. Reviews are conducted for critical syst…
+          
+        </td>
+        <td class="q-obs">Response addresses the question with relevant context.</td>
+        <td><span class="gap-flag gap-addressed">✓ Addressed</span></td>
+        <td class="score-cell">
+          <div class="score-bar-wrap">
+            <div class="score-bar-track">
+              
+              
+                
+              
+              <div class="score-bar-fill"
+                   style="width:95.0%;background:#16a34a"></div>
+            </div>
+            <span class="score-num">95</span>
+          </div>
+        </td>
+        <td style="color:var(--c-muted);font-size:0.78rem;text-align:center">4</td>
+      </tr>
+      
+      
+      <tr class="row-partial">
+        <td class="q-num">12</td>
+        <td class="q-text">What process triggers immediate credential revocation?</td>
+        <td class="q-response">
+          
+          
+            Access rights are reviewed semi-annually by department managers and the IT team. Reviews are conducted for critical syst…
+          
+        </td>
+        <td class="q-obs">Response provided but may not directly address the specific question.</td>
+        <td><span class="gap-flag gap-addressed">✓ Addressed</span></td>
+        <td class="score-cell">
+          <div class="score-bar-wrap">
+            <div class="score-bar-track">
+              
+              
+                
+              
+              <div class="score-bar-fill"
+                   style="width:95.0%;background:#16a34a"></div>
+            </div>
+            <span class="score-num">95</span>
+          </div>
+        </td>
+        <td style="color:var(--c-muted);font-size:0.78rem;text-align:center">5</td>
+      </tr>
+      
+      
+      <tr class="row-weak">
+        <td class="q-num">13</td>
+        <td class="q-text">Are all externally-exposed applications using MFA?</td>
+        <td class="q-response">
+          
+          
+            partial
+          
+        </td>
+        <td class="q-obs">Not confirmed — this control may not be in place.</td>
+        <td><span class="gap-flag gap-missing">✗ Missing</span></td>
+        <td class="score-cell">
+          <div class="score-bar-wrap">
+            <div class="score-bar-track">
+              
+              
+                
+              
+              <div class="score-bar-fill"
+                   style="width:0.0%;background:#dc2626"></div>
+            </div>
+            <span class="score-num">0</span>
+          </div>
+        </td>
+        <td style="color:var(--c-muted);font-size:0.78rem;text-align:center">3</td>
+      </tr>
+      
+      
+      <tr class="row-partial">
+        <td class="q-num">14</td>
+        <td class="q-text">How is role-based access control defined and maintained?</td>
+        <td class="q-response">
+          
+          
+            RBAC roles are defined based on job functions and department requirements. Access roles are documented for major systems…
+          
+        </td>
+        <td class="q-obs">Response addresses the question with relevant context.</td>
+        <td><span class="gap-flag gap-addressed">✓ Addressed</span></td>
+        <td class="score-cell">
+          <div class="score-bar-wrap">
+            <div class="score-bar-track">
+              
+              
+                
+              
+              <div class="score-bar-fill"
+                   style="width:100.0%;background:#16a34a"></div>
+            </div>
+            <span class="score-num">100</span>
+          </div>
+        </td>
+        <td style="color:var(--c-muted);font-size:0.78rem;text-align:center">4</td>
+      </tr>
+      
+      
+      <tr class="row-partial">
+        <td class="q-num">15</td>
+        <td class="q-text">What is the process for granting access to new hires?</td>
+        <td class="q-response">
+          
+          
+            Managers submit access requests during onboarding. IT provisions accounts based on approved requests and standard role t…
+          
+        </td>
+        <td class="q-obs">Response provided but may not directly address the specific question.</td>
+        <td><span class="gap-flag gap-addressed">✓ Addressed</span></td>
+        <td class="score-cell">
+          <div class="score-bar-wrap">
+            <div class="score-bar-track">
+              
+              
+                
+              
+              <div class="score-bar-fill"
+                   style="width:92.5%;background:#16a34a"></div>
+            </div>
+            <span class="score-num">92</span>
+          </div>
+        </td>
+        <td style="color:var(--c-muted);font-size:0.78rem;text-align:center">3</td>
+      </tr>
+      
+      
+      <tr class="row-weak">
+        <td class="q-num">16</td>
+        <td class="q-text">Is access control centralized through a directory service?</td>
+        <td class="q-response">
+          
+          
+            partial
+          
+        </td>
+        <td class="q-obs">Not confirmed — this control may not be in place.</td>
+        <td><span class="gap-flag gap-missing">✗ Missing</span></td>
+        <td class="score-cell">
+          <div class="score-bar-wrap">
+            <div class="score-bar-track">
+              
+              
+                
+              
+              <div class="score-bar-fill"
+                   style="width:0.0%;background:#dc2626"></div>
+            </div>
+            <span class="score-num">0</span>
+          </div>
+        </td>
+        <td style="color:var(--c-muted);font-size:0.78rem;text-align:center">4</td>
+      </tr>
+      
+      
+      <tr class="row-partial">
+        <td class="q-num">17</td>
+        <td class="q-text">How often is the inventory of authentication and authorization systems reviewed?</td>
+        <td class="q-response">
+          
+          
+            3
+          
+        </td>
+        <td class="q-obs">Response is very brief and may lack sufficient detail.</td>
+        <td><span class="gap-flag gap-partial">⚠ Partial</span></td>
+        <td class="score-cell">
+          <div class="score-bar-wrap">
+            <div class="score-bar-track">
+              
+              
+                
+              
+              <div class="score-bar-fill"
+                   style="width:50.0%;background:#ca8a04"></div>
+            </div>
+            <span class="score-num">50</span>
+          </div>
+        </td>
+        <td style="color:var(--c-muted);font-size:0.78rem;text-align:center">3</td>
+      </tr>
+      
+      
+      <tr class="row-partial">
+        <td class="q-num">18</td>
+        <td class="q-text">What is the process for revoking access upon termination?</td>
+        <td class="q-response">
+          
+          
+            HR notifies IT of employee departures. User accounts are disabled, VPN access is removed, and access to critical applica…
+          
+        </td>
+        <td class="q-obs">Response addresses the question with relevant context.</td>
+        <td><span class="gap-flag gap-addressed">✓ Addressed</span></td>
+        <td class="score-cell">
+          <div class="score-bar-wrap">
+            <div class="score-bar-track">
+              
+              
+                
+              
+              <div class="score-bar-fill"
+                   style="width:100.0%;background:#16a34a"></div>
+            </div>
+            <span class="score-num">100</span>
+          </div>
+        </td>
+        <td style="color:var(--c-muted);font-size:0.78rem;text-align:center">5</td>
+      </tr>
+      
+      
+      <tr class="row-partial">
+        <td class="q-num">19</td>
+        <td class="q-text">How is MFA enforced for administrative access?</td>
+        <td class="q-response">
+          
+          
+            through_a_directory_service
+          
+        </td>
+        <td class="q-obs">Response provided but may not directly address the specific question.</td>
+        <td><span class="gap-flag gap-partial">⚠ Partial</span></td>
+        <td class="score-cell">
+          <div class="score-bar-wrap">
+            <div class="score-bar-track">
+              
+              
+                
+              
+              <div class="score-bar-fill"
+                   style="width:70.0%;background:#ca8a04"></div>
+            </div>
+            <span class="score-num">70</span>
+          </div>
+        </td>
+        <td style="color:var(--c-muted);font-size:0.78rem;text-align:center">4</td>
+      </tr>
+      
+      
+      <tr class="row-strong">
+        <td class="q-num">20</td>
+        <td class="q-text">Is there a defined process for granting access to enterprise assets?</td>
+        <td class="q-response">
+          
+          
+            yes
+          
+        </td>
+        <td class="q-obs">Organisation confirmed: Is there a defined process for granting access to enterprise assets.</td>
+        <td><span class="gap-flag gap-addressed">✓ Addressed</span></td>
+        <td class="score-cell">
+          <div class="score-bar-wrap">
+            <div class="score-bar-track">
+              
+              
+                
+              
+              <div class="score-bar-fill"
+                   style="width:100.0%;background:#16a34a"></div>
+            </div>
+            <span class="score-num">100</span>
+          </div>
+        </td>
+        <td style="color:var(--c-muted);font-size:0.78rem;text-align:center">3</td>
+      </tr>
+      
+    </tbody>
+  </table>
+</div>
+
+<!-- ── Strengths & Gaps ───────────────────────────────────────────────────── -->
+<div class="sg-grid">
+  <div class="sg-card strengths">
+    <h3>✓ Strengths</h3>
+    
+    <ul class="sg-list">
+      
+      <li class="sg-item">Is there a defined process for granting access to enterprise assets?</li>
+      
+    </ul>
+    
+  </div>
+  <div class="sg-card gaps">
+    <h3>✗ Gaps &amp; Weaknesses</h3>
+    
+    <ul class="sg-list">
+      
+      <li class="sg-item">Majority of yes/no controls not confirmed as implemented (2/3).</li>
+      
+    </ul>
+    
+  </div>
+</div>
+
+<!-- ── Score Distribution ─────────────────────────────────────────────────── -->
+
+<div class="dist-section">
+  <div class="section-title">Score Distribution</div>
+  <div class="dist-bars">
+    
+    <div class="dist-col">
+      <div class="dist-count">2</div>
+      <div class="dist-bar" style="height:14%"></div>
+      <div class="dist-range">0–20</div>
+    </div>
+    
+    <div class="dist-col">
+      <div class="dist-count">0</div>
+      <div class="dist-bar" style="height:0%"></div>
+      <div class="dist-range">21–40</div>
+    </div>
+    
+    <div class="dist-col">
+      <div class="dist-count">2</div>
+      <div class="dist-bar" style="height:14%"></div>
+      <div class="dist-range">41–60</div>
+    </div>
+    
+    <div class="dist-col">
+      <div class="dist-count">2</div>
+      <div class="dist-bar" style="height:14%"></div>
+      <div class="dist-range">61–80</div>
+    </div>
+    
+    <div class="dist-col">
+      <div class="dist-count">14</div>
+      <div class="dist-bar" style="height:100%"></div>
+      <div class="dist-range">81–100</div>
+    </div>
+    
+  </div>
+</div>
+
+
+<!-- ── Footer ─────────────────────────────────────────────────────────────── -->
+<div class="report-footer">
+  <span>Generated by NIST CSF 2.0 RAG Assessment Pipeline</span>
+  <span>Scoring mode: fallback-deterministic · Questions reviewed: 20</span>
+</div>
+
+</body>
+</html>

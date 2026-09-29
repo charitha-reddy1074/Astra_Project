@@ -1,0 +1,2534 @@
+{
+  "questionnaire_id": "multi-nist-csf-2-0-gv-nist-csf-2-0-rc-cis-controls-v8-1-2-1-iso-27001-2022-7",
+  "framework_id": "44345f5e-d85e-5206-98d9-f985d78dde4f",
+  "name": "NIST CSF 2.0 (Govern) + NIST CSF 2.0 (Recover) + CIS Controls v8.1.2 (Inventory and Control of Enterprise Assets) + ISO/IEC 27001:2022 (Physical controls)",
+  "version": "1.0",
+  "source_format": "multi_framework_merged",
+  "question_count": 54,
+  "question_groups": [
+    {
+      "framework_id": "d048b355-a19a-52eb-bf3d-3e2133c57d1e",
+      "framework_key": "nist-csf-2-0",
+      "framework_name": "NIST CSF 2.0",
+      "domain_id": "GV",
+      "domain_name": "Govern",
+      "domain_description": "Set cybersecurity strategy, policy, governance, and risk accountability.",
+      "question_count": 7,
+      "questions": [
+        {
+          "item_id": "542a1573-5bd4-5239-92f0-53315ba7375c",
+          "question_id": "542a1573-5bd4-5239-92f0-53315ba7375c",
+          "question_text": "Is the organization implementing and operating the control: The organizational mission is understood and informs cybersecurity risk management?",
+          "question_type": "merged",
+          "answer_formats": [
+            "yes_no",
+            "evidence_upload"
+          ],
+          "framework_name": "NIST CSF 2.0",
+          "framework_key": "nist-csf-2-0",
+          "domain_id": "GV",
+          "domain_name": "Govern",
+          "control_id": "GV.OC-01",
+          "control_statement": "The organizational mission is understood and informs cybersecurity risk management.",
+          "expected_evidence": "mission_statement, strategic_plan, risk_policy",
+          "maturity_level": "Initial",
+          "merge_reason": "Merged by control fallback because LLM output was unavailable or invalid.",
+          "source_item_ids": [
+            "e6719a4b-1fe7-5eed-9d3e-54425817a5dc",
+            "cfc335cc-ab61-5065-93f4-e37867e5132e"
+          ],
+          "source_questions": [
+            {
+              "question_id": "47daacfc-3411-5a88-a498-399247bc23b9",
+              "question_text": "Is the organization implementing and operating the control: The organizational mission is understood and informs cybersecurity risk management?",
+              "question_type": "yes_no",
+              "framework_name": "NIST CSF 2.0",
+              "framework_key": "nist-csf-2-0",
+              "domain_id": "GV",
+              "domain_name": "Govern",
+              "control_id": "GV.OC-01",
+              "cross_references": [
+                {
+                  "other_framework_id": "nist-sp-800-39",
+                  "other_control_id": "2.1"
+                },
+                {
+                  "other_framework_id": "iso-27001-2022",
+                  "other_control_id": "4.1"
+                }
+              ],
+              "expected_evidence": "mission_statement, strategic_plan, risk_policy"
+            },
+            {
+              "question_id": "0684ada2-6fe3-5186-ab71-3d28cd9c2989",
+              "question_text": "Upload evidence such as mission_statement, strategic_plan, risk_policy that demonstrates: The organizational mission is understood and informs cybersecurity risk management.",
+              "question_type": "evidence_upload",
+              "framework_name": "NIST CSF 2.0",
+              "framework_key": "nist-csf-2-0",
+              "domain_id": "GV",
+              "domain_name": "Govern",
+              "control_id": "GV.OC-01",
+              "cross_references": [
+                {
+                  "other_framework_id": "nist-sp-800-39",
+                  "other_control_id": "2.1"
+                },
+                {
+                  "other_framework_id": "iso-27001-2022",
+                  "other_control_id": "4.1"
+                }
+              ],
+              "expected_evidence": "mission_statement, strategic_plan, risk_policy"
+            }
+          ],
+          "cross_references": [
+            {
+              "other_framework_id": "nist-sp-800-39",
+              "other_control_id": "2.1"
+            },
+            {
+              "other_framework_id": "iso-27001-2022",
+              "other_control_id": "4.1"
+            }
+          ]
+        },
+        {
+          "item_id": "67688a51-5b9d-5732-848d-a675a3e2b582",
+          "question_id": "67688a51-5b9d-5732-848d-a675a3e2b582",
+          "question_text": "Is the organization implementing and operating the control: Internal and external stakeholders are understood, and their needs and expectations regarding cybersecurity risk management are understood and considered?",
+          "question_type": "merged",
+          "answer_formats": [
+            "yes_no",
+            "evidence_upload"
+          ],
+          "framework_name": "NIST CSF 2.0",
+          "framework_key": "nist-csf-2-0",
+          "domain_id": "GV",
+          "domain_name": "Govern",
+          "control_id": "GV.OC-02",
+          "control_statement": "Internal and external stakeholders are understood, and their needs and expectations regarding cybersecurity risk management are understood and considered.",
+          "expected_evidence": "stakeholder_register, meeting_minutes, risk_register",
+          "maturity_level": "Initial",
+          "merge_reason": "Merged by control fallback because LLM output was unavailable or invalid.",
+          "source_item_ids": [
+            "a9ab9478-9716-5c08-b403-77e7eeaa354d",
+            "88a4e607-3e6a-577a-8f2c-6be63f28fa37"
+          ],
+          "source_questions": [
+            {
+              "question_id": "55ca2d89-bd58-5161-9089-65073102dbce",
+              "question_text": "Is the organization implementing and operating the control: Internal and external stakeholders are understood, and their needs and expectations regarding cybersecurity risk management are understood and considered?",
+              "question_type": "yes_no",
+              "framework_name": "NIST CSF 2.0",
+              "framework_key": "nist-csf-2-0",
+              "domain_id": "GV",
+              "domain_name": "Govern",
+              "control_id": "GV.OC-02",
+              "cross_references": [
+                {
+                  "other_framework_id": "iso-27001-2022",
+                  "other_control_id": "4.2"
+                },
+                {
+                  "other_framework_id": "nist-sp-800-39",
+                  "other_control_id": "2.2"
+                }
+              ],
+              "expected_evidence": "stakeholder_register, meeting_minutes, risk_register"
+            },
+            {
+              "question_id": "aa0ce65b-8e20-5d1b-b7ef-0d2f5c9782c4",
+              "question_text": "Upload evidence such as stakeholder_register, meeting_minutes, risk_register that demonstrates: Internal and external stakeholders are understood, and their needs and expectations regarding cybersecurity risk management are understood and considered.",
+              "question_type": "evidence_upload",
+              "framework_name": "NIST CSF 2.0",
+              "framework_key": "nist-csf-2-0",
+              "domain_id": "GV",
+              "domain_name": "Govern",
+              "control_id": "GV.OC-02",
+              "cross_references": [
+                {
+                  "other_framework_id": "iso-27001-2022",
+                  "other_control_id": "4.2"
+                },
+                {
+                  "other_framework_id": "nist-sp-800-39",
+                  "other_control_id": "2.2"
+                }
+              ],
+              "expected_evidence": "stakeholder_register, meeting_minutes, risk_register"
+            }
+          ],
+          "cross_references": [
+            {
+              "other_framework_id": "iso-27001-2022",
+              "other_control_id": "4.2"
+            },
+            {
+              "other_framework_id": "nist-sp-800-39",
+              "other_control_id": "2.2"
+            }
+          ]
+        },
+        {
+          "item_id": "0c424962-b457-5385-a0df-d1742814748f",
+          "question_id": "0c424962-b457-5385-a0df-d1742814748f",
+          "question_text": "Is the organization implementing and operating the control: Policy for managing cybersecurity risks is established based on organizational context, cybersecurity strategy, and priorities and is communicated and enforced?",
+          "question_type": "merged",
+          "answer_formats": [
+            "yes_no",
+            "evidence_upload"
+          ],
+          "framework_name": "NIST CSF 2.0",
+          "framework_key": "nist-csf-2-0",
+          "domain_id": "GV",
+          "domain_name": "Govern",
+          "control_id": "GV.PO-01",
+          "control_statement": "Policy for managing cybersecurity risks is established based on organizational context, cybersecurity strategy, and priorities and is communicated and enforced.",
+          "expected_evidence": "cybersecurity_policy, policy_acknowledgement, audit_report",
+          "maturity_level": "Initial",
+          "merge_reason": "Merged by control fallback because LLM output was unavailable or invalid.",
+          "source_item_ids": [
+            "9b1e252a-4b4f-5756-b8ae-1076985f9550",
+            "03331d63-c787-5b7d-abb7-b89fc80d4e4e"
+          ],
+          "source_questions": [
+            {
+              "question_id": "5e2ea289-6782-59fb-ba71-4c8d3299a75e",
+              "question_text": "Is the organization implementing and operating the control: Policy for managing cybersecurity risks is established based on organizational context, cybersecurity strategy, and priorities and is communicated and enforced?",
+              "question_type": "yes_no",
+              "framework_name": "NIST CSF 2.0",
+              "framework_key": "nist-csf-2-0",
+              "domain_id": "GV",
+              "domain_name": "Govern",
+              "control_id": "GV.PO-01",
+              "cross_references": [
+                {
+                  "other_framework_id": "iso-27001-2022",
+                  "other_control_id": "5.2"
+                },
+                {
+                  "other_framework_id": "nist-sp-800-53",
+                  "other_control_id": "PL-1"
+                }
+              ],
+              "expected_evidence": "cybersecurity_policy, policy_acknowledgement, audit_report"
+            },
+            {
+              "question_id": "130e9c14-310c-5c53-9c82-a5a70e0f4902",
+              "question_text": "Upload evidence such as cybersecurity_policy, policy_acknowledgement, audit_report that demonstrates: Policy for managing cybersecurity risks is established based on organizational context, cybersecurity strategy, and priorities and is communicated and enforced.",
+              "question_type": "evidence_upload",
+              "framework_name": "NIST CSF 2.0",
+              "framework_key": "nist-csf-2-0",
+              "domain_id": "GV",
+              "domain_name": "Govern",
+              "control_id": "GV.PO-01",
+              "cross_references": [
+                {
+                  "other_framework_id": "iso-27001-2022",
+                  "other_control_id": "5.2"
+                },
+                {
+                  "other_framework_id": "nist-sp-800-53",
+                  "other_control_id": "PL-1"
+                }
+              ],
+              "expected_evidence": "cybersecurity_policy, policy_acknowledgement, audit_report"
+            }
+          ],
+          "cross_references": [
+            {
+              "other_framework_id": "iso-27001-2022",
+              "other_control_id": "5.2"
+            },
+            {
+              "other_framework_id": "nist-sp-800-53",
+              "other_control_id": "PL-1"
+            }
+          ]
+        },
+        {
+          "item_id": "db5a20ef-c717-5d2b-8779-f521cbc33e7f",
+          "question_id": "db5a20ef-c717-5d2b-8779-f521cbc33e7f",
+          "question_text": "Is the organization implementing and operating the control: Risk management objectives are established and agreed to by organizational stakeholders?",
+          "question_type": "merged",
+          "answer_formats": [
+            "yes_no",
+            "evidence_upload"
+          ],
+          "framework_name": "NIST CSF 2.0",
+          "framework_key": "nist-csf-2-0",
+          "domain_id": "GV",
+          "domain_name": "Govern",
+          "control_id": "GV.RM-01",
+          "control_statement": "Risk management objectives are established and agreed to by organizational stakeholders.",
+          "expected_evidence": "risk_appetite_statement, board_minutes, policy",
+          "maturity_level": "Initial",
+          "merge_reason": "Merged by control fallback because LLM output was unavailable or invalid.",
+          "source_item_ids": [
+            "d790dce1-2d26-52d8-b641-45f033d314df",
+            "82668137-1691-57cc-a3ed-acb6348dfc36"
+          ],
+          "source_questions": [
+            {
+              "question_id": "cae23586-63fe-53f3-a40d-97ce03de0f9a",
+              "question_text": "Is the organization implementing and operating the control: Risk management objectives are established and agreed to by organizational stakeholders?",
+              "question_type": "yes_no",
+              "framework_name": "NIST CSF 2.0",
+              "framework_key": "nist-csf-2-0",
+              "domain_id": "GV",
+              "domain_name": "Govern",
+              "control_id": "GV.RM-01",
+              "cross_references": [
+                {
+                  "other_framework_id": "nist-sp-800-39",
+                  "other_control_id": "2.2"
+                },
+                {
+                  "other_framework_id": "iso-27001-2022",
+                  "other_control_id": "6.1"
+                }
+              ],
+              "expected_evidence": "risk_appetite_statement, board_minutes, policy"
+            },
+            {
+              "question_id": "ce351cec-7174-5ae4-a4cf-f55d97ef094c",
+              "question_text": "Upload evidence such as risk_appetite_statement, board_minutes, policy that demonstrates: Risk management objectives are established and agreed to by organizational stakeholders.",
+              "question_type": "evidence_upload",
+              "framework_name": "NIST CSF 2.0",
+              "framework_key": "nist-csf-2-0",
+              "domain_id": "GV",
+              "domain_name": "Govern",
+              "control_id": "GV.RM-01",
+              "cross_references": [
+                {
+                  "other_framework_id": "nist-sp-800-39",
+                  "other_control_id": "2.2"
+                },
+                {
+                  "other_framework_id": "iso-27001-2022",
+                  "other_control_id": "6.1"
+                }
+              ],
+              "expected_evidence": "risk_appetite_statement, board_minutes, policy"
+            }
+          ],
+          "cross_references": [
+            {
+              "other_framework_id": "nist-sp-800-39",
+              "other_control_id": "2.2"
+            },
+            {
+              "other_framework_id": "iso-27001-2022",
+              "other_control_id": "6.1"
+            }
+          ]
+        },
+        {
+          "item_id": "59debff0-f8a1-5d7f-9e7d-244bcbbbe264",
+          "question_id": "59debff0-f8a1-5d7f-9e7d-244bcbbbe264",
+          "question_text": "Is the organization implementing and operating the control: Risk appetite and risk tolerance statements are established, communicated, and maintained?",
+          "question_type": "merged",
+          "answer_formats": [
+            "yes_no",
+            "evidence_upload"
+          ],
+          "framework_name": "NIST CSF 2.0",
+          "framework_key": "nist-csf-2-0",
+          "domain_id": "GV",
+          "domain_name": "Govern",
+          "control_id": "GV.RM-02",
+          "control_statement": "Risk appetite and risk tolerance statements are established, communicated, and maintained.",
+          "expected_evidence": "risk_appetite_document, policy, training_records",
+          "maturity_level": "Initial",
+          "merge_reason": "Merged by control fallback because LLM output was unavailable or invalid.",
+          "source_item_ids": [
+            "5da07bb7-782e-58d4-b86d-0ea92053d202",
+            "d6498224-cc9d-5268-9719-800a5b33309c"
+          ],
+          "source_questions": [
+            {
+              "question_id": "ae053d32-7e5c-56df-ac63-6009f2688cbc",
+              "question_text": "Is the organization implementing and operating the control: Risk appetite and risk tolerance statements are established, communicated, and maintained?",
+              "question_type": "yes_no",
+              "framework_name": "NIST CSF 2.0",
+              "framework_key": "nist-csf-2-0",
+              "domain_id": "GV",
+              "domain_name": "Govern",
+              "control_id": "GV.RM-02",
+              "cross_references": [
+                {
+                  "other_framework_id": "nist-sp-800-39",
+                  "other_control_id": ""
+                },
+                {
+                  "other_framework_id": "iso-27005-2022",
+                  "other_control_id": "6.3"
+                }
+              ],
+              "expected_evidence": "risk_appetite_document, policy, training_records"
+            },
+            {
+              "question_id": "9a26860a-4047-5266-a85d-68da372ad881",
+              "question_text": "Upload evidence such as risk_appetite_document, policy, training_records that demonstrates: Risk appetite and risk tolerance statements are established, communicated, and maintained.",
+              "question_type": "evidence_upload",
+              "framework_name": "NIST CSF 2.0",
+              "framework_key": "nist-csf-2-0",
+              "domain_id": "GV",
+              "domain_name": "Govern",
+              "control_id": "GV.RM-02",
+              "cross_references": [
+                {
+                  "other_framework_id": "nist-sp-800-39",
+                  "other_control_id": ""
+                },
+                {
+                  "other_framework_id": "iso-27005-2022",
+                  "other_control_id": "6.3"
+                }
+              ],
+              "expected_evidence": "risk_appetite_document, policy, training_records"
+            }
+          ],
+          "cross_references": [
+            {
+              "other_framework_id": "nist-sp-800-39",
+              "other_control_id": ""
+            },
+            {
+              "other_framework_id": "iso-27005-2022",
+              "other_control_id": "6.3"
+            }
+          ]
+        },
+        {
+          "item_id": "a66b6851-7ff9-5f6b-be20-5fa087fa7f54",
+          "question_id": "a66b6851-7ff9-5f6b-be20-5fa087fa7f54",
+          "question_text": "Is the organization implementing and operating the control: Organizational leadership is responsible and accountable for cybersecurity risk and fosters a culture that is risk-aware, ethical, and continually improving?",
+          "question_type": "merged",
+          "answer_formats": [
+            "yes_no",
+            "evidence_upload"
+          ],
+          "framework_name": "NIST CSF 2.0",
+          "framework_key": "nist-csf-2-0",
+          "domain_id": "GV",
+          "domain_name": "Govern",
+          "control_id": "GV.RR-01",
+          "control_statement": "Organizational leadership is responsible and accountable for cybersecurity risk and fosters a culture that is risk-aware, ethical, and continually improving.",
+          "expected_evidence": "org_chart, role_definitions, board_minutes",
+          "maturity_level": "Initial",
+          "merge_reason": "Merged by control fallback because LLM output was unavailable or invalid.",
+          "source_item_ids": [
+            "aba1fec4-729e-5671-aa92-ce8abbe8c312",
+            "e58a9f70-6dd1-56aa-9883-d5dfc4ea6878"
+          ],
+          "source_questions": [
+            {
+              "question_id": "646d38a4-ee3b-50d8-a998-2e9fc8ff0e95",
+              "question_text": "Is the organization implementing and operating the control: Organizational leadership is responsible and accountable for cybersecurity risk and fosters a culture that is risk-aware, ethical, and continually improving?",
+              "question_type": "yes_no",
+              "framework_name": "NIST CSF 2.0",
+              "framework_key": "nist-csf-2-0",
+              "domain_id": "GV",
+              "domain_name": "Govern",
+              "control_id": "GV.RR-01",
+              "cross_references": [
+                {
+                  "other_framework_id": "iso-27001-2022",
+                  "other_control_id": "5.1"
+                },
+                {
+                  "other_framework_id": "nist-sp-800-100",
+                  "other_control_id": ""
+                }
+              ],
+              "expected_evidence": "org_chart, role_definitions, board_minutes"
+            },
+            {
+              "question_id": "ba278eba-748d-5126-a70f-fc658ed98456",
+              "question_text": "Upload evidence such as org_chart, role_definitions, board_minutes that demonstrates: Organizational leadership is responsible and accountable for cybersecurity risk and fosters a culture that is risk-aware, ethical, and continually improving.",
+              "question_type": "evidence_upload",
+              "framework_name": "NIST CSF 2.0",
+              "framework_key": "nist-csf-2-0",
+              "domain_id": "GV",
+              "domain_name": "Govern",
+              "control_id": "GV.RR-01",
+              "cross_references": [
+                {
+                  "other_framework_id": "iso-27001-2022",
+                  "other_control_id": "5.1"
+                },
+                {
+                  "other_framework_id": "nist-sp-800-100",
+                  "other_control_id": ""
+                }
+              ],
+              "expected_evidence": "org_chart, role_definitions, board_minutes"
+            }
+          ],
+          "cross_references": [
+            {
+              "other_framework_id": "iso-27001-2022",
+              "other_control_id": "5.1"
+            },
+            {
+              "other_framework_id": "nist-sp-800-100",
+              "other_control_id": ""
+            }
+          ]
+        },
+        {
+          "item_id": "262ad289-c797-5bd5-94ba-ff2ea423a66d",
+          "question_id": "262ad289-c797-5bd5-94ba-ff2ea423a66d",
+          "question_text": "Is the organization implementing and operating the control: A cybersecurity supply chain risk management program, strategy, objectives, policies, and processes are established and agreed to by organizational stakeholders?",
+          "question_type": "merged",
+          "answer_formats": [
+            "yes_no",
+            "evidence_upload"
+          ],
+          "framework_name": "NIST CSF 2.0",
+          "framework_key": "nist-csf-2-0",
+          "domain_id": "GV",
+          "domain_name": "Govern",
+          "control_id": "GV.SC-01",
+          "control_statement": "A cybersecurity supply chain risk management program, strategy, objectives, policies, and processes are established and agreed to by organizational stakeholders.",
+          "expected_evidence": "vendor_risk_policy, vendor_contracts, supplier_assessments",
+          "maturity_level": "Initial",
+          "merge_reason": "Merged by control fallback because LLM output was unavailable or invalid.",
+          "source_item_ids": [
+            "58eef5d6-2ba7-560e-81a9-fc94cedeff76",
+            "0bcf5530-85be-5315-9847-62a7a6366fd2"
+          ],
+          "source_questions": [
+            {
+              "question_id": "75b492ba-01b0-5bdf-ac99-ab15f98ddabf",
+              "question_text": "Is the organization implementing and operating the control: A cybersecurity supply chain risk management program, strategy, objectives, policies, and processes are established and agreed to by organizational stakeholders?",
+              "question_type": "yes_no",
+              "framework_name": "NIST CSF 2.0",
+              "framework_key": "nist-csf-2-0",
+              "domain_id": "GV",
+              "domain_name": "Govern",
+              "control_id": "GV.SC-01",
+              "cross_references": [
+                {
+                  "other_framework_id": "nist-sp-800-161",
+                  "other_control_id": ""
+                },
+                {
+                  "other_framework_id": "iso-27036",
+                  "other_control_id": ""
+                }
+              ],
+              "expected_evidence": "vendor_risk_policy, vendor_contracts, supplier_assessments"
+            },
+            {
+              "question_id": "f4157996-1732-5659-9418-a3d0d122b458",
+              "question_text": "Upload evidence such as vendor_risk_policy, vendor_contracts, supplier_assessments that demonstrates: A cybersecurity supply chain risk management program, strategy, objectives, policies, and processes are established and agreed to by organizational stakeholders.",
+              "question_type": "evidence_upload",
+              "framework_name": "NIST CSF 2.0",
+              "framework_key": "nist-csf-2-0",
+              "domain_id": "GV",
+              "domain_name": "Govern",
+              "control_id": "GV.SC-01",
+              "cross_references": [
+                {
+                  "other_framework_id": "nist-sp-800-161",
+                  "other_control_id": ""
+                },
+                {
+                  "other_framework_id": "iso-27036",
+                  "other_control_id": ""
+                }
+              ],
+              "expected_evidence": "vendor_risk_policy, vendor_contracts, supplier_assessments"
+            }
+          ],
+          "cross_references": [
+            {
+              "other_framework_id": "nist-sp-800-161",
+              "other_control_id": ""
+            },
+            {
+              "other_framework_id": "iso-27036",
+              "other_control_id": ""
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "framework_id": "d048b355-a19a-52eb-bf3d-3e2133c57d1e",
+      "framework_key": "nist-csf-2-0",
+      "framework_name": "NIST CSF 2.0",
+      "domain_id": "RC",
+      "domain_name": "Recover",
+      "domain_description": "Recover services and restore operations after an incident.",
+      "question_count": 3,
+      "questions": [
+        {
+          "item_id": "faebdf40-a463-565c-a90e-384a5f1f0ee8",
+          "question_id": "faebdf40-a463-565c-a90e-384a5f1f0ee8",
+          "question_text": "Is the organization implementing and operating the control: Recovery activities and progress in restoring operational capabilities are communicated to designated internal and external stakeholders?",
+          "question_type": "merged",
+          "answer_formats": [
+            "yes_no",
+            "evidence_upload"
+          ],
+          "framework_name": "NIST CSF 2.0",
+          "framework_key": "nist-csf-2-0",
+          "domain_id": "RC",
+          "domain_name": "Recover",
+          "control_id": "RC.CO-03",
+          "control_statement": "Recovery activities and progress in restoring operational capabilities are communicated to designated internal and external stakeholders.",
+          "expected_evidence": "stakeholder_communication_log, status_reports, incident_closure_report",
+          "maturity_level": "Initial",
+          "merge_reason": "Merged by control fallback because LLM output was unavailable or invalid.",
+          "source_item_ids": [
+            "f148e1bb-cd76-5b10-b39a-7d094273a9cd",
+            "8ed69a9a-e011-555e-b23c-93baadfd7ac4"
+          ],
+          "source_questions": [
+            {
+              "question_id": "0de9e18e-ebe5-5a1c-9484-b7e7af0fb651",
+              "question_text": "Is the organization implementing and operating the control: Recovery activities and progress in restoring operational capabilities are communicated to designated internal and external stakeholders?",
+              "question_type": "yes_no",
+              "framework_name": "NIST CSF 2.0",
+              "framework_key": "nist-csf-2-0",
+              "domain_id": "RC",
+              "domain_name": "Recover",
+              "control_id": "RC.CO-03",
+              "cross_references": [
+                {
+                  "other_framework_id": "iso-27001-2022",
+                  "other_control_id": "A.5.26"
+                },
+                {
+                  "other_framework_id": "nist-sp-800-61",
+                  "other_control_id": "3.4"
+                }
+              ],
+              "expected_evidence": "stakeholder_communication_log, status_reports, incident_closure_report"
+            },
+            {
+              "question_id": "945f6f7d-879e-586d-9209-c56e488b14e5",
+              "question_text": "Upload evidence such as stakeholder_communication_log, status_reports, incident_closure_report that demonstrates: Recovery activities and progress in restoring operational capabilities are communicated to designated internal and external stakeholders.",
+              "question_type": "evidence_upload",
+              "framework_name": "NIST CSF 2.0",
+              "framework_key": "nist-csf-2-0",
+              "domain_id": "RC",
+              "domain_name": "Recover",
+              "control_id": "RC.CO-03",
+              "cross_references": [
+                {
+                  "other_framework_id": "iso-27001-2022",
+                  "other_control_id": "A.5.26"
+                },
+                {
+                  "other_framework_id": "nist-sp-800-61",
+                  "other_control_id": "3.4"
+                }
+              ],
+              "expected_evidence": "stakeholder_communication_log, status_reports, incident_closure_report"
+            }
+          ],
+          "cross_references": [
+            {
+              "other_framework_id": "iso-27001-2022",
+              "other_control_id": "A.5.26"
+            },
+            {
+              "other_framework_id": "nist-sp-800-61",
+              "other_control_id": "3.4"
+            }
+          ]
+        },
+        {
+          "item_id": "185241c0-e229-525b-89a7-519b1af0373b",
+          "question_id": "185241c0-e229-525b-89a7-519b1af0373b",
+          "question_text": "Is the organization implementing and operating the control: The recovery portion of the incident response plan is executed once initiated from the incident response process?",
+          "question_type": "merged",
+          "answer_formats": [
+            "yes_no",
+            "evidence_upload"
+          ],
+          "framework_name": "NIST CSF 2.0",
+          "framework_key": "nist-csf-2-0",
+          "domain_id": "RC",
+          "domain_name": "Recover",
+          "control_id": "RC.RP-01",
+          "control_statement": "The recovery portion of the incident response plan is executed once initiated from the incident response process.",
+          "expected_evidence": "recovery_plan, rto_rpo_doc, dr_test_report",
+          "maturity_level": "Initial",
+          "merge_reason": "Merged by control fallback because LLM output was unavailable or invalid.",
+          "source_item_ids": [
+            "3ab41e2d-a039-55c3-b72d-20c96b5290f0",
+            "f2b6a24e-2114-5559-8f36-0fab61e58c60"
+          ],
+          "source_questions": [
+            {
+              "question_id": "9d30102f-2391-54ee-b081-72220be90fad",
+              "question_text": "Is the organization implementing and operating the control: The recovery portion of the incident response plan is executed once initiated from the incident response process?",
+              "question_type": "yes_no",
+              "framework_name": "NIST CSF 2.0",
+              "framework_key": "nist-csf-2-0",
+              "domain_id": "RC",
+              "domain_name": "Recover",
+              "control_id": "RC.RP-01",
+              "cross_references": [
+                {
+                  "other_framework_id": "nist-sp-800-34",
+                  "other_control_id": ""
+                },
+                {
+                  "other_framework_id": "iso-27001-2022",
+                  "other_control_id": "A.5.30"
+                }
+              ],
+              "expected_evidence": "recovery_plan, rto_rpo_doc, dr_test_report"
+            },
+            {
+              "question_id": "31256400-40d5-5caf-93a7-06ce934f2fbd",
+              "question_text": "Upload evidence such as recovery_plan, rto_rpo_doc, dr_test_report that demonstrates: The recovery portion of the incident response plan is executed once initiated from the incident response process.",
+              "question_type": "evidence_upload",
+              "framework_name": "NIST CSF 2.0",
+              "framework_key": "nist-csf-2-0",
+              "domain_id": "RC",
+              "domain_name": "Recover",
+              "control_id": "RC.RP-01",
+              "cross_references": [
+                {
+                  "other_framework_id": "nist-sp-800-34",
+                  "other_control_id": ""
+                },
+                {
+                  "other_framework_id": "iso-27001-2022",
+                  "other_control_id": "A.5.30"
+                }
+              ],
+              "expected_evidence": "recovery_plan, rto_rpo_doc, dr_test_report"
+            }
+          ],
+          "cross_references": [
+            {
+              "other_framework_id": "nist-sp-800-34",
+              "other_control_id": ""
+            },
+            {
+              "other_framework_id": "iso-27001-2022",
+              "other_control_id": "A.5.30"
+            }
+          ]
+        },
+        {
+          "item_id": "81a3640c-c663-5866-ac50-d8af84f5a9b3",
+          "question_id": "81a3640c-c663-5866-ac50-d8af84f5a9b3",
+          "question_text": "Is the organization implementing and operating the control: The integrity of backups and other restoration assets is verified before using them for restoration?",
+          "question_type": "merged",
+          "answer_formats": [
+            "yes_no",
+            "evidence_upload"
+          ],
+          "framework_name": "NIST CSF 2.0",
+          "framework_key": "nist-csf-2-0",
+          "domain_id": "RC",
+          "domain_name": "Recover",
+          "control_id": "RC.RP-03",
+          "control_statement": "The integrity of backups and other restoration assets is verified before using them for restoration.",
+          "expected_evidence": "backup_test_report, restore_log, integrity_check_log",
+          "maturity_level": "Initial",
+          "merge_reason": "Merged by control fallback because LLM output was unavailable or invalid.",
+          "source_item_ids": [
+            "8f2821a6-c00c-5124-88ca-feb526d28d4d",
+            "96eee650-8ad8-590c-8650-d047fad142e7"
+          ],
+          "source_questions": [
+            {
+              "question_id": "7d851c6a-87db-5576-8fe9-60cd1d03fedb",
+              "question_text": "Is the organization implementing and operating the control: The integrity of backups and other restoration assets is verified before using them for restoration?",
+              "question_type": "yes_no",
+              "framework_name": "NIST CSF 2.0",
+              "framework_key": "nist-csf-2-0",
+              "domain_id": "RC",
+              "domain_name": "Recover",
+              "control_id": "RC.RP-03",
+              "cross_references": [
+                {
+                  "other_framework_id": "nist-sp-800-53",
+                  "other_control_id": "CP-9"
+                },
+                {
+                  "other_framework_id": "iso-27001-2022",
+                  "other_control_id": "A.8.13"
+                }
+              ],
+              "expected_evidence": "backup_test_report, restore_log, integrity_check_log"
+            },
+            {
+              "question_id": "930e23ab-d7a2-5c77-81fd-68ed7e17ef04",
+              "question_text": "Upload evidence such as backup_test_report, restore_log, integrity_check_log that demonstrates: The integrity of backups and other restoration assets is verified before using them for restoration.",
+              "question_type": "evidence_upload",
+              "framework_name": "NIST CSF 2.0",
+              "framework_key": "nist-csf-2-0",
+              "domain_id": "RC",
+              "domain_name": "Recover",
+              "control_id": "RC.RP-03",
+              "cross_references": [
+                {
+                  "other_framework_id": "nist-sp-800-53",
+                  "other_control_id": "CP-9"
+                },
+                {
+                  "other_framework_id": "iso-27001-2022",
+                  "other_control_id": "A.8.13"
+                }
+              ],
+              "expected_evidence": "backup_test_report, restore_log, integrity_check_log"
+            }
+          ],
+          "cross_references": [
+            {
+              "other_framework_id": "nist-sp-800-53",
+              "other_control_id": "CP-9"
+            },
+            {
+              "other_framework_id": "iso-27001-2022",
+              "other_control_id": "A.8.13"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "framework_id": "8ac1d180-5b22-5cf6-8a0b-df10e87ebad8",
+      "framework_key": "cis-controls-v8-1-2",
+      "framework_name": "CIS Controls v8.1.2",
+      "domain_id": "1",
+      "domain_name": "Inventory and Control of Enterprise Assets",
+      "domain_description": "",
+      "question_count": 5,
+      "questions": [
+        {
+          "item_id": "00754263-22e4-5048-b478-9eacb5532b39",
+          "question_id": "00754263-22e4-5048-b478-9eacb5532b39",
+          "question_text": "Is the organization implementing and operating the control: Establish and Maintain Detailed Enterprise Asset Inventory: Establish and maintain an accurate, detailed, and up-to-date inventory of all enterprise assets with the potential to store or process data, to include: end-user devices (including portable and mobile), network devices, non-computing/IoT devices, and servers. Ensure the inventory records the network address (if static), hardware address, machine name, enterprise asset owner, department for each asset, and whether the asset has been approved to connect to the network. For mobile end-user devices, MDM type tools can support this process, where appropriate. This inventory includes assets connected to the infrastructure physically, virtually, remotely, and those within cloud environments. Additionally, it includes assets that are regularly connected to the enterprise's network infrastructure, even if they are not under control of the enterprise. Review and update the inventory of all enterprise assets bi-annually, or more frequently?",
+          "question_type": "merged",
+          "answer_formats": [
+            "yes_no",
+            "evidence_upload"
+          ],
+          "framework_name": "CIS Controls v8.1.2",
+          "framework_key": "cis-controls-v8-1-2",
+          "domain_id": "1",
+          "domain_name": "Inventory and Control of Enterprise Assets",
+          "control_id": "1.1",
+          "control_statement": "Establish and Maintain Detailed Enterprise Asset Inventory: Establish and maintain an accurate, detailed, and up-to-date inventory of all enterprise assets with the potential to store or process data, to include: end-user devices (including portable and mobile), network devices, non-computing/IoT devices, and servers. Ensure the inventory records the network address (if static), hardware address, machine name, enterprise asset owner, department for each asset, and whether the asset has been approved to connect to the network. For mobile end-user devices, MDM type tools can support this process, where appropriate. This inventory includes assets connected to the infrastructure physically, virtually, remotely, and those within cloud environments. Additionally, it includes assets that are regularly connected to the enterprise's network infrastructure, even if they are not under control of the enterprise. Review and update the inventory of all enterprise assets bi-annually, or more frequently.",
+          "expected_evidence": "inventory, asset_register, owner_register",
+          "maturity_level": "Defined",
+          "merge_reason": "Merged by control fallback because LLM output was unavailable or invalid.",
+          "source_item_ids": [
+            "7fcc1b17-ec66-5769-872f-9f195a7441ca",
+            "ea6f8003-3888-5d06-aff6-191ceea771c2"
+          ],
+          "source_questions": [
+            {
+              "question_id": "6764bfd4-b9f3-5483-a707-2248fa774a24",
+              "question_text": "Is the organization implementing and operating the control: Establish and Maintain Detailed Enterprise Asset Inventory: Establish and maintain an accurate, detailed, and up-to-date inventory of all enterprise assets with the potential to store or process data, to include: end-user devices (including portable and mobile), network devices, non-computing/IoT devices, and servers. Ensure the inventory records the network address (if static), hardware address, machine name, enterprise asset owner, department for each asset, and whether the asset has been approved to connect to the network. For mobile end-user devices, MDM type tools can support this process, where appropriate. This inventory includes assets connected to the infrastructure physically, virtually, remotely, and those within cloud environments. Additionally, it includes assets that are regularly connected to the enterprise's network infrastructure, even if they are not under control of the enterprise. Review and update the inventory of all enterprise assets bi-annually, or more frequently?",
+              "question_type": "yes_no",
+              "framework_name": "CIS Controls v8.1.2",
+              "framework_key": "cis-controls-v8-1-2",
+              "domain_id": "1",
+              "domain_name": "Inventory and Control of Enterprise Assets",
+              "control_id": "1.1",
+              "cross_references": [
+                {
+                  "other_framework_id": "nist-csf-2-0",
+                  "other_control_id": "ID.AM-01",
+                  "relationship": "Equivalent",
+                  "description": "Inventories of hardware managed by the organization are maintained"
+                },
+                {
+                  "other_framework_id": "nist-csf-2-0",
+                  "other_control_id": "ID.AM-08",
+                  "relationship": "Subset",
+                  "description": "Systems, hardware, software, services, and data are managed throughout their life cycles"
+                }
+              ],
+              "expected_evidence": "inventory, asset_register, owner_register"
+            },
+            {
+              "question_id": "afebca38-085f-56a3-8a56-f8c475c19a4d",
+              "question_text": "Upload evidence such as inventory, asset_register, owner_register that demonstrates: Establish and Maintain Detailed Enterprise Asset Inventory: Establish and maintain an accurate, detailed, and up-to-date inventory of all enterprise assets with the potential to store or process data, to include: end-user devices (including portable and mobile), network devices, non-computing/IoT devices, and servers. Ensure the inventory records the network address (if static), hardware address, machine name, enterprise asset owner, department for each asset, and whether the asset has been approved to connect to the network. For mobile end-user devices, MDM type tools can support this process, where appropriate. This inventory includes assets connected to the infrastructure physically, virtually, remotely, and those within cloud environments. Additionally, it includes assets that are regularly connected to the enterprise's network infrastructure, even if they are not under control of the enterprise. Review and update the inventory of all enterprise assets bi-annually, or more frequently.",
+              "question_type": "evidence_upload",
+              "framework_name": "CIS Controls v8.1.2",
+              "framework_key": "cis-controls-v8-1-2",
+              "domain_id": "1",
+              "domain_name": "Inventory and Control of Enterprise Assets",
+              "control_id": "1.1",
+              "cross_references": [
+                {
+                  "other_framework_id": "nist-csf-2-0",
+                  "other_control_id": "ID.AM-01",
+                  "relationship": "Equivalent",
+                  "description": "Inventories of hardware managed by the organization are maintained"
+                },
+                {
+                  "other_framework_id": "nist-csf-2-0",
+                  "other_control_id": "ID.AM-08",
+                  "relationship": "Subset",
+                  "description": "Systems, hardware, software, services, and data are managed throughout their life cycles"
+                }
+              ],
+              "expected_evidence": "inventory, asset_register, owner_register"
+            }
+          ],
+          "cross_references": [
+            {
+              "other_framework_id": "nist-csf-2-0",
+              "other_control_id": "ID.AM-01"
+            },
+            {
+              "other_framework_id": "nist-csf-2-0",
+              "other_control_id": "ID.AM-08"
+            }
+          ]
+        },
+        {
+          "item_id": "5b59bf8a-be78-509f-92cc-de94af2fe6c6",
+          "question_id": "5b59bf8a-be78-509f-92cc-de94af2fe6c6",
+          "question_text": "Is the organization implementing and operating the control: Address Unauthorized Assets: Ensure that a process exists to address unauthorized assets on a weekly basis. The enterprise may choose to remove the asset from the network, deny the asset from connecting remotely to the network, or quarantine the asset?",
+          "question_type": "merged",
+          "answer_formats": [
+            "yes_no",
+            "evidence_upload"
+          ],
+          "framework_name": "CIS Controls v8.1.2",
+          "framework_key": "cis-controls-v8-1-2",
+          "domain_id": "1",
+          "domain_name": "Inventory and Control of Enterprise Assets",
+          "control_id": "1.2",
+          "control_statement": "Address Unauthorized Assets: Ensure that a process exists to address unauthorized assets on a weekly basis. The enterprise may choose to remove the asset from the network, deny the asset from connecting remotely to the network, or quarantine the asset.",
+          "expected_evidence": "inventory, asset_register, owner_register",
+          "maturity_level": "Defined",
+          "merge_reason": "Merged by control fallback because LLM output was unavailable or invalid.",
+          "source_item_ids": [
+            "138b1d81-35dd-5cf1-8594-8e9eb3e36e00",
+            "4937e6b5-9f10-54ef-bc3b-717ccef5a1e4"
+          ],
+          "source_questions": [
+            {
+              "question_id": "5541a257-fc63-5a76-a742-a32740352276",
+              "question_text": "Is the organization implementing and operating the control: Address Unauthorized Assets: Ensure that a process exists to address unauthorized assets on a weekly basis. The enterprise may choose to remove the asset from the network, deny the asset from connecting remotely to the network, or quarantine the asset?",
+              "question_type": "yes_no",
+              "framework_name": "CIS Controls v8.1.2",
+              "framework_key": "cis-controls-v8-1-2",
+              "domain_id": "1",
+              "domain_name": "Inventory and Control of Enterprise Assets",
+              "control_id": "1.2",
+              "cross_references": [
+                {
+                  "other_framework_id": "nist-csf-2-0",
+                  "other_control_id": "PR.PS-03",
+                  "relationship": "Subset",
+                  "description": "Hardware is maintained, replaced, and removed commensurate with risk"
+                }
+              ],
+              "expected_evidence": "inventory, asset_register, owner_register"
+            },
+            {
+              "question_id": "3c9b72ff-df4a-542a-96f4-2f4b809ec231",
+              "question_text": "Upload evidence such as inventory, asset_register, owner_register that demonstrates: Address Unauthorized Assets: Ensure that a process exists to address unauthorized assets on a weekly basis. The enterprise may choose to remove the asset from the network, deny the asset from connecting remotely to the network, or quarantine the asset.",
+              "question_type": "evidence_upload",
+              "framework_name": "CIS Controls v8.1.2",
+              "framework_key": "cis-controls-v8-1-2",
+              "domain_id": "1",
+              "domain_name": "Inventory and Control of Enterprise Assets",
+              "control_id": "1.2",
+              "cross_references": [
+                {
+                  "other_framework_id": "nist-csf-2-0",
+                  "other_control_id": "PR.PS-03",
+                  "relationship": "Subset",
+                  "description": "Hardware is maintained, replaced, and removed commensurate with risk"
+                }
+              ],
+              "expected_evidence": "inventory, asset_register, owner_register"
+            }
+          ],
+          "cross_references": [
+            {
+              "other_framework_id": "nist-csf-2-0",
+              "other_control_id": "PR.PS-03"
+            }
+          ]
+        },
+        {
+          "item_id": "0538ce22-7f0a-5ccc-b682-9ab041379cf1",
+          "question_id": "0538ce22-7f0a-5ccc-b682-9ab041379cf1",
+          "question_text": "Is the organization implementing and operating the control: Utilize an Active Discovery Tool: Utilize an active discovery tool to identify assets connected to the enterprise's network. Configure the active discovery tool to execute daily, or more frequently?",
+          "question_type": "merged",
+          "answer_formats": [
+            "yes_no",
+            "evidence_upload"
+          ],
+          "framework_name": "CIS Controls v8.1.2",
+          "framework_key": "cis-controls-v8-1-2",
+          "domain_id": "1",
+          "domain_name": "Inventory and Control of Enterprise Assets",
+          "control_id": "1.3",
+          "control_statement": "Utilize an Active Discovery Tool: Utilize an active discovery tool to identify assets connected to the enterprise's network. Configure the active discovery tool to execute daily, or more frequently.",
+          "expected_evidence": "inventory, asset_register, owner_register",
+          "maturity_level": "Defined",
+          "merge_reason": "Merged by control fallback because LLM output was unavailable or invalid.",
+          "source_item_ids": [
+            "b41e0eea-fcde-53cb-be02-cf0f063b1a3d",
+            "bfe4ffd2-0938-5377-8fef-0a6c5425a506"
+          ],
+          "source_questions": [
+            {
+              "question_id": "bb2ba956-1058-5103-8d77-7061ec7be297",
+              "question_text": "Is the organization implementing and operating the control: Utilize an Active Discovery Tool: Utilize an active discovery tool to identify assets connected to the enterprise's network. Configure the active discovery tool to execute daily, or more frequently?",
+              "question_type": "yes_no",
+              "framework_name": "CIS Controls v8.1.2",
+              "framework_key": "cis-controls-v8-1-2",
+              "domain_id": "1",
+              "domain_name": "Inventory and Control of Enterprise Assets",
+              "control_id": "1.3",
+              "cross_references": [],
+              "expected_evidence": "inventory, asset_register, owner_register"
+            },
+            {
+              "question_id": "10677175-5386-5b89-9a9b-be5a5c8bbeae",
+              "question_text": "Upload evidence such as inventory, asset_register, owner_register that demonstrates: Utilize an Active Discovery Tool: Utilize an active discovery tool to identify assets connected to the enterprise's network. Configure the active discovery tool to execute daily, or more frequently.",
+              "question_type": "evidence_upload",
+              "framework_name": "CIS Controls v8.1.2",
+              "framework_key": "cis-controls-v8-1-2",
+              "domain_id": "1",
+              "domain_name": "Inventory and Control of Enterprise Assets",
+              "control_id": "1.3",
+              "cross_references": [],
+              "expected_evidence": "inventory, asset_register, owner_register"
+            }
+          ],
+          "cross_references": []
+        },
+        {
+          "item_id": "d20d8129-96b0-5a99-890c-c6038d61af27",
+          "question_id": "d20d8129-96b0-5a99-890c-c6038d61af27",
+          "question_text": "Is the organization implementing and operating the control: Use Dynamic Host Configuration Protocol (DHCP) Logging to Update Enterprise Asset Inventory: Use DHCP logging on all DHCP servers or Internet Protocol (IP) address management tools to update the enterprise's asset inventory. Review and use logs to update the enterprise's asset inventory weekly, or more frequently?",
+          "question_type": "merged",
+          "answer_formats": [
+            "yes_no",
+            "evidence_upload"
+          ],
+          "framework_name": "CIS Controls v8.1.2",
+          "framework_key": "cis-controls-v8-1-2",
+          "domain_id": "1",
+          "domain_name": "Inventory and Control of Enterprise Assets",
+          "control_id": "1.4",
+          "control_statement": "Use Dynamic Host Configuration Protocol (DHCP) Logging to Update Enterprise Asset Inventory: Use DHCP logging on all DHCP servers or Internet Protocol (IP) address management tools to update the enterprise's asset inventory. Review and use logs to update the enterprise's asset inventory weekly, or more frequently.",
+          "expected_evidence": "role_matrix, org_chart, responsibility_assignment",
+          "maturity_level": "Defined",
+          "merge_reason": "Merged by control fallback because LLM output was unavailable or invalid.",
+          "source_item_ids": [
+            "b0ef052d-ae4b-53da-a953-667d677bccc1",
+            "26fe14e6-9605-5a07-9ec0-0fbdca29271f"
+          ],
+          "source_questions": [
+            {
+              "question_id": "e2ec184d-512c-5977-a871-c901ee98483c",
+              "question_text": "Is the organization implementing and operating the control: Use Dynamic Host Configuration Protocol (DHCP) Logging to Update Enterprise Asset Inventory: Use DHCP logging on all DHCP servers or Internet Protocol (IP) address management tools to update the enterprise's asset inventory. Review and use logs to update the enterprise's asset inventory weekly, or more frequently?",
+              "question_type": "yes_no",
+              "framework_name": "CIS Controls v8.1.2",
+              "framework_key": "cis-controls-v8-1-2",
+              "domain_id": "1",
+              "domain_name": "Inventory and Control of Enterprise Assets",
+              "control_id": "1.4",
+              "cross_references": [],
+              "expected_evidence": "role_matrix, org_chart, responsibility_assignment"
+            },
+            {
+              "question_id": "f481ef28-9a5a-5369-a36e-79b30df54a7a",
+              "question_text": "Upload evidence such as role_matrix, org_chart, responsibility_assignment that demonstrates: Use Dynamic Host Configuration Protocol (DHCP) Logging to Update Enterprise Asset Inventory: Use DHCP logging on all DHCP servers or Internet Protocol (IP) address management tools to update the enterprise's asset inventory. Review and use logs to update the enterprise's asset inventory weekly, or more frequently.",
+              "question_type": "evidence_upload",
+              "framework_name": "CIS Controls v8.1.2",
+              "framework_key": "cis-controls-v8-1-2",
+              "domain_id": "1",
+              "domain_name": "Inventory and Control of Enterprise Assets",
+              "control_id": "1.4",
+              "cross_references": [],
+              "expected_evidence": "role_matrix, org_chart, responsibility_assignment"
+            }
+          ],
+          "cross_references": []
+        },
+        {
+          "item_id": "a676d2c6-da24-5b8b-9aee-eca837cecf05",
+          "question_id": "a676d2c6-da24-5b8b-9aee-eca837cecf05",
+          "question_text": "Is the organization implementing and operating the control: Use a Passive Asset Discovery Tool: Use a passive discovery tool to identify assets connected to the enterprise's network. Review and use scans to update the enterprise's asset inventory at least weekly, or more frequently?",
+          "question_type": "merged",
+          "answer_formats": [
+            "yes_no",
+            "evidence_upload"
+          ],
+          "framework_name": "CIS Controls v8.1.2",
+          "framework_key": "cis-controls-v8-1-2",
+          "domain_id": "1",
+          "domain_name": "Inventory and Control of Enterprise Assets",
+          "control_id": "1.5",
+          "control_statement": "Use a Passive Asset Discovery Tool: Use a passive discovery tool to identify assets connected to the enterprise's network. Review and use scans to update the enterprise's asset inventory at least weekly, or more frequently.",
+          "expected_evidence": "inventory, asset_register, owner_register",
+          "maturity_level": "Defined",
+          "merge_reason": "Merged by control fallback because LLM output was unavailable or invalid.",
+          "source_item_ids": [
+            "5b37ad2a-54a4-55a9-9e47-3a0860f8ad66",
+            "ee6737b5-aab2-5407-ba24-6c50fb504219"
+          ],
+          "source_questions": [
+            {
+              "question_id": "60bf103e-9e41-5af6-ad6b-b170eaffddd0",
+              "question_text": "Is the organization implementing and operating the control: Use a Passive Asset Discovery Tool: Use a passive discovery tool to identify assets connected to the enterprise's network. Review and use scans to update the enterprise's asset inventory at least weekly, or more frequently?",
+              "question_type": "yes_no",
+              "framework_name": "CIS Controls v8.1.2",
+              "framework_key": "cis-controls-v8-1-2",
+              "domain_id": "1",
+              "domain_name": "Inventory and Control of Enterprise Assets",
+              "control_id": "1.5",
+              "cross_references": [],
+              "expected_evidence": "inventory, asset_register, owner_register"
+            },
+            {
+              "question_id": "8b2c1dcf-a5cb-55c6-b148-3bb532dbdca6",
+              "question_text": "Upload evidence such as inventory, asset_register, owner_register that demonstrates: Use a Passive Asset Discovery Tool: Use a passive discovery tool to identify assets connected to the enterprise's network. Review and use scans to update the enterprise's asset inventory at least weekly, or more frequently.",
+              "question_type": "evidence_upload",
+              "framework_name": "CIS Controls v8.1.2",
+              "framework_key": "cis-controls-v8-1-2",
+              "domain_id": "1",
+              "domain_name": "Inventory and Control of Enterprise Assets",
+              "control_id": "1.5",
+              "cross_references": [],
+              "expected_evidence": "inventory, asset_register, owner_register"
+            }
+          ],
+          "cross_references": []
+        }
+      ]
+    },
+    {
+      "framework_id": "iso-iec-27001-2022",
+      "framework_key": "iso-27001-2022",
+      "framework_name": "ISO/IEC 27001:2022",
+      "domain_id": "7",
+      "domain_name": "Physical controls",
+      "domain_description": "",
+      "question_count": 12,
+      "questions": [
+        {
+          "item_id": "f414002a-86f5-5f7b-ad0e-d1b986a7b8f6",
+          "question_id": "f414002a-86f5-5f7b-ad0e-d1b986a7b8f6",
+          "question_text": "Is the organization implementing and operating the control: Physical security perimeters Control: Security perimeters shall be defined and used to protect areas that contain information and other associated assets?",
+          "question_type": "merged",
+          "answer_formats": [
+            "yes_no",
+            "evidence_upload"
+          ],
+          "framework_name": "ISO/IEC 27001:2022",
+          "framework_key": "iso-27001-2022",
+          "domain_id": "7",
+          "domain_name": "Physical controls",
+          "control_id": "7.1",
+          "control_statement": "Physical security perimeters Control: Security perimeters shall be defined and used to protect areas that contain information and other associated assets.",
+          "expected_evidence": "inventory, asset_register, owner_register",
+          "maturity_level": "Initial",
+          "merge_reason": "Merged by control fallback because LLM output was unavailable or invalid.",
+          "source_item_ids": [
+            "46601521-425a-57bb-973e-46ebf24dac08",
+            "95b433a4-1294-5228-8367-5069a5b40b5e"
+          ],
+          "source_questions": [
+            {
+              "question_id": "02eeb767-46ff-5a31-9814-bcf34b785056",
+              "question_text": "Is the organization implementing and operating the control: Physical security perimeters Control: Security perimeters shall be defined and used to protect areas that contain information and other associated assets?",
+              "question_type": "yes_no",
+              "framework_name": "ISO/IEC 27001:2022",
+              "framework_key": "iso-27001-2022",
+              "domain_id": "7",
+              "domain_name": "Physical controls",
+              "control_id": "7.1",
+              "cross_references": [],
+              "expected_evidence": "inventory, asset_register, owner_register"
+            },
+            {
+              "question_id": "0fff8c2f-486c-5b75-bb75-59d029f759e0",
+              "question_text": "Upload evidence such as inventory, asset_register, owner_register that demonstrates: Physical security perimeters Control: Security perimeters shall be defined and used to protect areas that contain information and other associated assets.",
+              "question_type": "evidence_upload",
+              "framework_name": "ISO/IEC 27001:2022",
+              "framework_key": "iso-27001-2022",
+              "domain_id": "7",
+              "domain_name": "Physical controls",
+              "control_id": "7.1",
+              "cross_references": [],
+              "expected_evidence": "inventory, asset_register, owner_register"
+            }
+          ],
+          "cross_references": []
+        },
+        {
+          "item_id": "d5806357-f7ac-5018-ac0d-91c0d8d62ad2",
+          "question_id": "d5806357-f7ac-5018-ac0d-91c0d8d62ad2",
+          "question_text": "Is the organization implementing and operating the control: Storage media Control: Storage media shall be managed through their life cycle of acquisition, use, transportation and disposal in accordance with the organization's classification scheme and handling requirements?",
+          "question_type": "merged",
+          "answer_formats": [
+            "yes_no",
+            "evidence_upload"
+          ],
+          "framework_name": "ISO/IEC 27001:2022",
+          "framework_key": "iso-27001-2022",
+          "domain_id": "7",
+          "domain_name": "Physical controls",
+          "control_id": "7.10",
+          "control_statement": "Storage media Control: Storage media shall be managed through their life cycle of acquisition, use, transportation and disposal in accordance with the organization's classification scheme and handling requirements.",
+          "expected_evidence": "acceptable_use_policy, user_acknowledgement, procedure",
+          "maturity_level": "Initial",
+          "merge_reason": "Merged by control fallback because LLM output was unavailable or invalid.",
+          "source_item_ids": [
+            "98e2f370-a524-5ddc-99b4-4a11b6379cb1",
+            "bb5ae202-1b2f-551f-97ae-6d1fee82c36c"
+          ],
+          "source_questions": [
+            {
+              "question_id": "ed1e3836-c0ee-5d68-9d64-ee112bfc581c",
+              "question_text": "Is the organization implementing and operating the control: Storage media Control: Storage media shall be managed through their life cycle of acquisition, use, transportation and disposal in accordance with the organization's classification scheme and handling requirements?",
+              "question_type": "yes_no",
+              "framework_name": "ISO/IEC 27001:2022",
+              "framework_key": "iso-27001-2022",
+              "domain_id": "7",
+              "domain_name": "Physical controls",
+              "control_id": "7.10",
+              "cross_references": [],
+              "expected_evidence": "acceptable_use_policy, user_acknowledgement, procedure"
+            },
+            {
+              "question_id": "57b06179-ce5a-532a-a992-fa0f1af05767",
+              "question_text": "Upload evidence such as acceptable_use_policy, user_acknowledgement, procedure that demonstrates: Storage media Control: Storage media shall be managed through their life cycle of acquisition, use, transportation and disposal in accordance with the organization's classification scheme and handling requirements.",
+              "question_type": "evidence_upload",
+              "framework_name": "ISO/IEC 27001:2022",
+              "framework_key": "iso-27001-2022",
+              "domain_id": "7",
+              "domain_name": "Physical controls",
+              "control_id": "7.10",
+              "cross_references": [],
+              "expected_evidence": "acceptable_use_policy, user_acknowledgement, procedure"
+            }
+          ],
+          "cross_references": []
+        },
+        {
+          "item_id": "01e6f7cc-b6c6-5d2f-9278-b148279269c6",
+          "question_id": "01e6f7cc-b6c6-5d2f-9278-b148279269c6",
+          "question_text": "Is the organization implementing and operating the control: Supporting utilities Control: Information processing facilities shall be protected from power failures and other disruptions caused by failures in supporting utilities?",
+          "question_type": "merged",
+          "answer_formats": [
+            "yes_no",
+            "evidence_upload"
+          ],
+          "framework_name": "ISO/IEC 27001:2022",
+          "framework_key": "iso-27001-2022",
+          "domain_id": "7",
+          "domain_name": "Physical controls",
+          "control_id": "7.11",
+          "control_statement": "Supporting utilities Control: Information processing facilities shall be protected from power failures and other disruptions caused by failures in supporting utilities.",
+          "expected_evidence": "backup_test, continuity_plan, recovery_test",
+          "maturity_level": "Initial",
+          "merge_reason": "Merged by control fallback because LLM output was unavailable or invalid.",
+          "source_item_ids": [
+            "2c674664-22c9-528a-a54f-7827e0e677fc",
+            "db977711-aa8c-5d8c-ad22-318ce42d27ec"
+          ],
+          "source_questions": [
+            {
+              "question_id": "97629836-2f93-5360-a6ca-02eac707182a",
+              "question_text": "Is the organization implementing and operating the control: Supporting utilities Control: Information processing facilities shall be protected from power failures and other disruptions caused by failures in supporting utilities?",
+              "question_type": "yes_no",
+              "framework_name": "ISO/IEC 27001:2022",
+              "framework_key": "iso-27001-2022",
+              "domain_id": "7",
+              "domain_name": "Physical controls",
+              "control_id": "7.11",
+              "cross_references": [],
+              "expected_evidence": "backup_test, continuity_plan, recovery_test"
+            },
+            {
+              "question_id": "67214cd5-e456-5ae5-a948-d7a58edc0ce8",
+              "question_text": "Upload evidence such as backup_test, continuity_plan, recovery_test that demonstrates: Supporting utilities Control: Information processing facilities shall be protected from power failures and other disruptions caused by failures in supporting utilities.",
+              "question_type": "evidence_upload",
+              "framework_name": "ISO/IEC 27001:2022",
+              "framework_key": "iso-27001-2022",
+              "domain_id": "7",
+              "domain_name": "Physical controls",
+              "control_id": "7.11",
+              "cross_references": [],
+              "expected_evidence": "backup_test, continuity_plan, recovery_test"
+            }
+          ],
+          "cross_references": []
+        },
+        {
+          "item_id": "89d1a235-0356-5b1b-ae72-91794b947bf7",
+          "question_id": "89d1a235-0356-5b1b-ae72-91794b947bf7",
+          "question_text": "Is the organization implementing and operating the control: Cabling security Control: Cables carrying power, data or supporting information services shall be protected from interception, interference or damage?",
+          "question_type": "merged",
+          "answer_formats": [
+            "yes_no",
+            "evidence_upload"
+          ],
+          "framework_name": "ISO/IEC 27001:2022",
+          "framework_key": "iso-27001-2022",
+          "domain_id": "7",
+          "domain_name": "Physical controls",
+          "control_id": "7.12",
+          "control_statement": "Cabling security Control: Cables carrying power, data or supporting information services shall be protected from interception, interference or damage.",
+          "expected_evidence": "facility_record, access_log, maintenance_log",
+          "maturity_level": "Initial",
+          "merge_reason": "Merged by control fallback because LLM output was unavailable or invalid.",
+          "source_item_ids": [
+            "10f10ca5-3efd-5e07-9977-b90dda552c9b",
+            "6dde0163-23da-53a1-aaf7-ac5728c6b4e7"
+          ],
+          "source_questions": [
+            {
+              "question_id": "f070f0f9-46ca-511d-9c77-565e77bb1d1e",
+              "question_text": "Is the organization implementing and operating the control: Cabling security Control: Cables carrying power, data or supporting information services shall be protected from interception, interference or damage?",
+              "question_type": "yes_no",
+              "framework_name": "ISO/IEC 27001:2022",
+              "framework_key": "iso-27001-2022",
+              "domain_id": "7",
+              "domain_name": "Physical controls",
+              "control_id": "7.12",
+              "cross_references": [],
+              "expected_evidence": "facility_record, access_log, maintenance_log"
+            },
+            {
+              "question_id": "9976586e-2037-5852-a901-5f2d9b492e45",
+              "question_text": "Upload evidence such as facility_record, access_log, maintenance_log that demonstrates: Cabling security Control: Cables carrying power, data or supporting information services shall be protected from interception, interference or damage.",
+              "question_type": "evidence_upload",
+              "framework_name": "ISO/IEC 27001:2022",
+              "framework_key": "iso-27001-2022",
+              "domain_id": "7",
+              "domain_name": "Physical controls",
+              "control_id": "7.12",
+              "cross_references": [],
+              "expected_evidence": "facility_record, access_log, maintenance_log"
+            }
+          ],
+          "cross_references": []
+        },
+        {
+          "item_id": "e8f60d60-ce78-55da-aad1-ea155d538ac8",
+          "question_id": "e8f60d60-ce78-55da-aad1-ea155d538ac8",
+          "question_text": "Is the organization implementing and operating the control: Equipment maintenance Control: Equipment shall be maintained correctly to ensure availability, integrity and confidentiality of information?",
+          "question_type": "merged",
+          "answer_formats": [
+            "yes_no",
+            "evidence_upload"
+          ],
+          "framework_name": "ISO/IEC 27001:2022",
+          "framework_key": "iso-27001-2022",
+          "domain_id": "7",
+          "domain_name": "Physical controls",
+          "control_id": "7.13",
+          "control_statement": "Equipment maintenance Control: Equipment shall be maintained correctly to ensure availability, integrity and confidentiality of information.",
+          "expected_evidence": "facility_record, access_log, maintenance_log",
+          "maturity_level": "Initial",
+          "merge_reason": "Merged by control fallback because LLM output was unavailable or invalid.",
+          "source_item_ids": [
+            "3abb74ca-57ce-58a6-b001-639cbbd66156",
+            "0314a28f-a7c4-547e-bf13-46fd3781938c"
+          ],
+          "source_questions": [
+            {
+              "question_id": "1354c600-d5a8-5b5b-b8be-2fbde1e1fefe",
+              "question_text": "Is the organization implementing and operating the control: Equipment maintenance Control: Equipment shall be maintained correctly to ensure availability, integrity and confidentiality of information?",
+              "question_type": "yes_no",
+              "framework_name": "ISO/IEC 27001:2022",
+              "framework_key": "iso-27001-2022",
+              "domain_id": "7",
+              "domain_name": "Physical controls",
+              "control_id": "7.13",
+              "cross_references": [],
+              "expected_evidence": "facility_record, access_log, maintenance_log"
+            },
+            {
+              "question_id": "09f965d0-92ec-5eb7-834b-c8cfad6497a5",
+              "question_text": "Upload evidence such as facility_record, access_log, maintenance_log that demonstrates: Equipment maintenance Control: Equipment shall be maintained correctly to ensure availability, integrity and confidentiality of information.",
+              "question_type": "evidence_upload",
+              "framework_name": "ISO/IEC 27001:2022",
+              "framework_key": "iso-27001-2022",
+              "domain_id": "7",
+              "domain_name": "Physical controls",
+              "control_id": "7.13",
+              "cross_references": [],
+              "expected_evidence": "facility_record, access_log, maintenance_log"
+            }
+          ],
+          "cross_references": []
+        },
+        {
+          "item_id": "308ad3b4-b8da-51a4-a9a1-633f430ade7b",
+          "question_id": "308ad3b4-b8da-51a4-a9a1-633f430ade7b",
+          "question_text": "Is the organization implementing and operating the control: Secure disposal or re-use of equipment: Items of equipment containing storage media shall be verified to en sure that any sensitive data and licensed software has been removed or securely overwritten prior to disposal or re-use?",
+          "question_type": "merged",
+          "answer_formats": [
+            "yes_no",
+            "evidence_upload"
+          ],
+          "framework_name": "ISO/IEC 27001:2022",
+          "framework_key": "iso-27001-2022",
+          "domain_id": "7",
+          "domain_name": "Physical controls",
+          "control_id": "7.14",
+          "control_statement": "Secure disposal or re-use of equipment: Items of equipment containing storage media shall be verified to en sure that any sensitive data and licensed software has been removed or securely overwritten prior to disposal or re-use.",
+          "expected_evidence": "project_record, change_ticket, engineering_standard",
+          "maturity_level": "Initial",
+          "merge_reason": "Merged by control fallback because LLM output was unavailable or invalid.",
+          "source_item_ids": [
+            "af800426-b56a-5e23-ac61-6a08a53bb4cd",
+            "29f9574d-ad72-5355-aae3-9067598253dd"
+          ],
+          "source_questions": [
+            {
+              "question_id": "8bae8ab1-4d00-5497-ba51-ee4f48471bd3",
+              "question_text": "Is the organization implementing and operating the control: Secure disposal or re-use of equipment: Items of equipment containing storage media shall be verified to en sure that any sensitive data and licensed software has been removed or securely overwritten prior to disposal or re-use?",
+              "question_type": "yes_no",
+              "framework_name": "ISO/IEC 27001:2022",
+              "framework_key": "iso-27001-2022",
+              "domain_id": "7",
+              "domain_name": "Physical controls",
+              "control_id": "7.14",
+              "cross_references": [],
+              "expected_evidence": "project_record, change_ticket, engineering_standard"
+            },
+            {
+              "question_id": "fd7e72f3-f34a-5398-a005-746db84eeac7",
+              "question_text": "Upload evidence such as project_record, change_ticket, engineering_standard that demonstrates: Secure disposal or re-use of equipment: Items of equipment containing storage media shall be verified to en sure that any sensitive data and licensed software has been removed or securely overwritten prior to disposal or re-use.",
+              "question_type": "evidence_upload",
+              "framework_name": "ISO/IEC 27001:2022",
+              "framework_key": "iso-27001-2022",
+              "domain_id": "7",
+              "domain_name": "Physical controls",
+              "control_id": "7.14",
+              "cross_references": [],
+              "expected_evidence": "project_record, change_ticket, engineering_standard"
+            }
+          ],
+          "cross_references": []
+        },
+        {
+          "item_id": "6f835884-83d9-54bd-9c96-23ce2c2e1133",
+          "question_id": "6f835884-83d9-54bd-9c96-23ce2c2e1133",
+          "question_text": "Is the organization implementing and operating the control: Physical entry Control Secure areas shall be protected by appropriate entry controls and access points. 7. 3 Securing offices, rooms and fa cilities: Physical security for offices, rooms and facilities shall be designed and implemented?",
+          "question_type": "merged",
+          "answer_formats": [
+            "yes_no",
+            "evidence_upload"
+          ],
+          "framework_name": "ISO/IEC 27001:2022",
+          "framework_key": "iso-27001-2022",
+          "domain_id": "7",
+          "domain_name": "Physical controls",
+          "control_id": "7.2",
+          "control_statement": "Physical entry Control Secure areas shall be protected by appropriate entry controls and access points. 7. 3 Securing offices, rooms and fa cilities: Physical security for offices, rooms and facilities shall be designed and implemented.",
+          "expected_evidence": "facility_record, access_log, maintenance_log",
+          "maturity_level": "Initial",
+          "merge_reason": "Merged by control fallback because LLM output was unavailable or invalid.",
+          "source_item_ids": [
+            "8cbcccbc-5e38-5bb6-ba8e-a1aa9f2d7cf7",
+            "807e2c43-8701-5753-87dd-9abf7a580bb2"
+          ],
+          "source_questions": [
+            {
+              "question_id": "c996350e-9c59-556d-9d7d-4aebe54917d7",
+              "question_text": "Is the organization implementing and operating the control: Physical entry Control Secure areas shall be protected by appropriate entry controls and access points. 7. 3 Securing offices, rooms and fa cilities: Physical security for offices, rooms and facilities shall be designed and implemented?",
+              "question_type": "yes_no",
+              "framework_name": "ISO/IEC 27001:2022",
+              "framework_key": "iso-27001-2022",
+              "domain_id": "7",
+              "domain_name": "Physical controls",
+              "control_id": "7.2",
+              "cross_references": [],
+              "expected_evidence": "facility_record, access_log, maintenance_log"
+            },
+            {
+              "question_id": "86261cf8-0586-5763-9bc4-aa12c92e2f10",
+              "question_text": "Upload evidence such as facility_record, access_log, maintenance_log that demonstrates: Physical entry Control Secure areas shall be protected by appropriate entry controls and access points. 7. 3 Securing offices, rooms and fa cilities: Physical security for offices, rooms and facilities shall be designed and implemented.",
+              "question_type": "evidence_upload",
+              "framework_name": "ISO/IEC 27001:2022",
+              "framework_key": "iso-27001-2022",
+              "domain_id": "7",
+              "domain_name": "Physical controls",
+              "control_id": "7.2",
+              "cross_references": [],
+              "expected_evidence": "facility_record, access_log, maintenance_log"
+            }
+          ],
+          "cross_references": []
+        },
+        {
+          "item_id": "06d87acb-419f-535c-b3a5-6074d7084ad4",
+          "question_id": "06d87acb-419f-535c-b3a5-6074d7084ad4",
+          "question_text": "Is the organization implementing and operating the control: Physical security monitoring Control Premises shall be continuously monitored for unauthorized physical access. © ISO/IEC 2022 - All rights reserved 7. 5 Protecting against physical and environmental threats: Protection against physical and environmental threats, such as natural disasters and other intentional or unintentional physical threats to infrastructure shall be designed and implemented?",
+          "question_type": "merged",
+          "answer_formats": [
+            "yes_no",
+            "evidence_upload"
+          ],
+          "framework_name": "ISO/IEC 27001:2022",
+          "framework_key": "iso-27001-2022",
+          "domain_id": "7",
+          "domain_name": "Physical controls",
+          "control_id": "7.4",
+          "control_statement": "Physical security monitoring Control Premises shall be continuously monitored for unauthorized physical access. © ISO/IEC 2022 - All rights reserved 7. 5 Protecting against physical and environmental threats: Protection against physical and environmental threats, such as natural disasters and other intentional or unintentional physical threats to infrastructure shall be designed and implemented.",
+          "expected_evidence": "threat_report, intel_feed, analysis_note",
+          "maturity_level": "Initial",
+          "merge_reason": "Merged by control fallback because LLM output was unavailable or invalid.",
+          "source_item_ids": [
+            "a135074e-e066-587d-8adb-71a210a89820",
+            "b68b3ebf-1a47-5e7b-ac86-430fb541844c"
+          ],
+          "source_questions": [
+            {
+              "question_id": "3dbd1e4a-6f50-50fc-b609-5ace54e9b7ce",
+              "question_text": "Is the organization implementing and operating the control: Physical security monitoring Control Premises shall be continuously monitored for unauthorized physical access. © ISO/IEC 2022 - All rights reserved 7. 5 Protecting against physical and environmental threats: Protection against physical and environmental threats, such as natural disasters and other intentional or unintentional physical threats to infrastructure shall be designed and implemented?",
+              "question_type": "yes_no",
+              "framework_name": "ISO/IEC 27001:2022",
+              "framework_key": "iso-27001-2022",
+              "domain_id": "7",
+              "domain_name": "Physical controls",
+              "control_id": "7.4",
+              "cross_references": [],
+              "expected_evidence": "threat_report, intel_feed, analysis_note"
+            },
+            {
+              "question_id": "2f7ffd75-9b65-59d8-af60-2b725b199088",
+              "question_text": "Upload evidence such as threat_report, intel_feed, analysis_note that demonstrates: Physical security monitoring Control Premises shall be continuously monitored for unauthorized physical access. © ISO/IEC 2022 - All rights reserved 7. 5 Protecting against physical and environmental threats: Protection against physical and environmental threats, such as natural disasters and other intentional or unintentional physical threats to infrastructure shall be designed and implemented.",
+              "question_type": "evidence_upload",
+              "framework_name": "ISO/IEC 27001:2022",
+              "framework_key": "iso-27001-2022",
+              "domain_id": "7",
+              "domain_name": "Physical controls",
+              "control_id": "7.4",
+              "cross_references": [],
+              "expected_evidence": "threat_report, intel_feed, analysis_note"
+            }
+          ],
+          "cross_references": []
+        },
+        {
+          "item_id": "f2160087-6736-5d24-8157-1c3df0e7f5c5",
+          "question_id": "f2160087-6736-5d24-8157-1c3df0e7f5c5",
+          "question_text": "Is the organization implementing and operating the control: Working in secure areas Control: Security measures for working in secure areas shall be designed and implemented?",
+          "question_type": "merged",
+          "answer_formats": [
+            "yes_no",
+            "evidence_upload"
+          ],
+          "framework_name": "ISO/IEC 27001:2022",
+          "framework_key": "iso-27001-2022",
+          "domain_id": "7",
+          "domain_name": "Physical controls",
+          "control_id": "7.6",
+          "control_statement": "Working in secure areas Control: Security measures for working in secure areas shall be designed and implemented.",
+          "expected_evidence": "implementation_evidence, operational_record",
+          "maturity_level": "Initial",
+          "merge_reason": "Merged by control fallback because LLM output was unavailable or invalid.",
+          "source_item_ids": [
+            "82cd04a1-7e3e-577b-ba75-23952bee78f9",
+            "ddfb3427-445c-5e23-9bfa-e0d16a35c93a"
+          ],
+          "source_questions": [
+            {
+              "question_id": "88951a5f-de2d-5d04-ae75-c95a1b140f59",
+              "question_text": "Is the organization implementing and operating the control: Working in secure areas Control: Security measures for working in secure areas shall be designed and implemented?",
+              "question_type": "yes_no",
+              "framework_name": "ISO/IEC 27001:2022",
+              "framework_key": "iso-27001-2022",
+              "domain_id": "7",
+              "domain_name": "Physical controls",
+              "control_id": "7.6",
+              "cross_references": [],
+              "expected_evidence": "implementation_evidence, operational_record"
+            },
+            {
+              "question_id": "85434b5e-f576-56a3-804c-9f85086f9155",
+              "question_text": "Upload evidence such as implementation_evidence, operational_record that demonstrates: Working in secure areas Control: Security measures for working in secure areas shall be designed and implemented.",
+              "question_type": "evidence_upload",
+              "framework_name": "ISO/IEC 27001:2022",
+              "framework_key": "iso-27001-2022",
+              "domain_id": "7",
+              "domain_name": "Physical controls",
+              "control_id": "7.6",
+              "cross_references": [],
+              "expected_evidence": "implementation_evidence, operational_record"
+            }
+          ],
+          "cross_references": []
+        },
+        {
+          "item_id": "e7822088-36bf-5fb9-88e3-d799911561f0",
+          "question_id": "e7822088-36bf-5fb9-88e3-d799911561f0",
+          "question_text": "Is the organization implementing and operating the control: Clear desk and clear screen Control: Clear desk rules for papers and removable storage media and clear screen rules for information processing facilities shall be defined and appropriately enforced?",
+          "question_type": "merged",
+          "answer_formats": [
+            "yes_no",
+            "evidence_upload"
+          ],
+          "framework_name": "ISO/IEC 27001:2022",
+          "framework_key": "iso-27001-2022",
+          "domain_id": "7",
+          "domain_name": "Physical controls",
+          "control_id": "7.7",
+          "control_statement": "Clear desk and clear screen Control: Clear desk rules for papers and removable storage media and clear screen rules for information processing facilities shall be defined and appropriately enforced.",
+          "expected_evidence": "facility_record, access_log, maintenance_log",
+          "maturity_level": "Initial",
+          "merge_reason": "Merged by control fallback because LLM output was unavailable or invalid.",
+          "source_item_ids": [
+            "25811f8d-c1ca-5bd9-a8f8-8643f1dbb2a2",
+            "78f322d4-0464-50c3-b6cb-4108b407f925"
+          ],
+          "source_questions": [
+            {
+              "question_id": "7f6db657-9cfd-5bd3-b233-759b43d24afb",
+              "question_text": "Is the organization implementing and operating the control: Clear desk and clear screen Control: Clear desk rules for papers and removable storage media and clear screen rules for information processing facilities shall be defined and appropriately enforced?",
+              "question_type": "yes_no",
+              "framework_name": "ISO/IEC 27001:2022",
+              "framework_key": "iso-27001-2022",
+              "domain_id": "7",
+              "domain_name": "Physical controls",
+              "control_id": "7.7",
+              "cross_references": [],
+              "expected_evidence": "facility_record, access_log, maintenance_log"
+            },
+            {
+              "question_id": "b3d5dbae-ba1a-5c35-8cfd-6ac5671f0552",
+              "question_text": "Upload evidence such as facility_record, access_log, maintenance_log that demonstrates: Clear desk and clear screen Control: Clear desk rules for papers and removable storage media and clear screen rules for information processing facilities shall be defined and appropriately enforced.",
+              "question_type": "evidence_upload",
+              "framework_name": "ISO/IEC 27001:2022",
+              "framework_key": "iso-27001-2022",
+              "domain_id": "7",
+              "domain_name": "Physical controls",
+              "control_id": "7.7",
+              "cross_references": [],
+              "expected_evidence": "facility_record, access_log, maintenance_log"
+            }
+          ],
+          "cross_references": []
+        },
+        {
+          "item_id": "e2dcf852-74ed-5f6b-b4cf-5ccb22874214",
+          "question_id": "e2dcf852-74ed-5f6b-b4cf-5ccb22874214",
+          "question_text": "Is the organization implementing and operating the control: Equipment siting and protection Control: Equipment shall be sited securely and protected?",
+          "question_type": "merged",
+          "answer_formats": [
+            "yes_no",
+            "evidence_upload"
+          ],
+          "framework_name": "ISO/IEC 27001:2022",
+          "framework_key": "iso-27001-2022",
+          "domain_id": "7",
+          "domain_name": "Physical controls",
+          "control_id": "7.8",
+          "control_statement": "Equipment siting and protection Control: Equipment shall be sited securely and protected.",
+          "expected_evidence": "facility_record, access_log, maintenance_log",
+          "maturity_level": "Initial",
+          "merge_reason": "Merged by control fallback because LLM output was unavailable or invalid.",
+          "source_item_ids": [
+            "3a6e66f2-f20d-5a0c-9d9d-d770fe890015",
+            "f3c9ce4f-2967-5cf9-9d81-ce99d346a9b3"
+          ],
+          "source_questions": [
+            {
+              "question_id": "f104cd42-1986-552f-b0ce-30e3fb46a230",
+              "question_text": "Is the organization implementing and operating the control: Equipment siting and protection Control: Equipment shall be sited securely and protected?",
+              "question_type": "yes_no",
+              "framework_name": "ISO/IEC 27001:2022",
+              "framework_key": "iso-27001-2022",
+              "domain_id": "7",
+              "domain_name": "Physical controls",
+              "control_id": "7.8",
+              "cross_references": [],
+              "expected_evidence": "facility_record, access_log, maintenance_log"
+            },
+            {
+              "question_id": "ba802b24-24f8-5678-b9c3-8ab882cd3c6d",
+              "question_text": "Upload evidence such as facility_record, access_log, maintenance_log that demonstrates: Equipment siting and protection Control: Equipment shall be sited securely and protected.",
+              "question_type": "evidence_upload",
+              "framework_name": "ISO/IEC 27001:2022",
+              "framework_key": "iso-27001-2022",
+              "domain_id": "7",
+              "domain_name": "Physical controls",
+              "control_id": "7.8",
+              "cross_references": [],
+              "expected_evidence": "facility_record, access_log, maintenance_log"
+            }
+          ],
+          "cross_references": []
+        },
+        {
+          "item_id": "2cc9a9e7-86db-558f-89a7-0a8067eafd68",
+          "question_id": "2cc9a9e7-86db-558f-89a7-0a8067eafd68",
+          "question_text": "Is the organization implementing and operating the control: Security of assets off-premises Control: Off-site assets shall be protected?",
+          "question_type": "merged",
+          "answer_formats": [
+            "yes_no",
+            "evidence_upload"
+          ],
+          "framework_name": "ISO/IEC 27001:2022",
+          "framework_key": "iso-27001-2022",
+          "domain_id": "7",
+          "domain_name": "Physical controls",
+          "control_id": "7.9",
+          "control_statement": "Security of assets off-premises Control: Off-site assets shall be protected.",
+          "expected_evidence": "inventory, asset_register, owner_register",
+          "maturity_level": "Initial",
+          "merge_reason": "Merged by control fallback because LLM output was unavailable or invalid.",
+          "source_item_ids": [
+            "7f124334-bc22-5fb9-8a6d-5c71d9180379",
+            "fb5d5e6b-d9b2-5c51-beaa-466d99449578"
+          ],
+          "source_questions": [
+            {
+              "question_id": "4144a4fe-5069-5c49-8241-710a99127a7f",
+              "question_text": "Is the organization implementing and operating the control: Security of assets off-premises Control: Off-site assets shall be protected?",
+              "question_type": "yes_no",
+              "framework_name": "ISO/IEC 27001:2022",
+              "framework_key": "iso-27001-2022",
+              "domain_id": "7",
+              "domain_name": "Physical controls",
+              "control_id": "7.9",
+              "cross_references": [],
+              "expected_evidence": "inventory, asset_register, owner_register"
+            },
+            {
+              "question_id": "cfda481a-7377-5b11-964b-253e2e7594e5",
+              "question_text": "Upload evidence such as inventory, asset_register, owner_register that demonstrates: Security of assets off-premises Control: Off-site assets shall be protected.",
+              "question_type": "evidence_upload",
+              "framework_name": "ISO/IEC 27001:2022",
+              "framework_key": "iso-27001-2022",
+              "domain_id": "7",
+              "domain_name": "Physical controls",
+              "control_id": "7.9",
+              "cross_references": [],
+              "expected_evidence": "inventory, asset_register, owner_register"
+            }
+          ],
+          "cross_references": []
+        }
+      ]
+    }
+  ],
+  "ingested_at": "2026-06-05T11:46:13.621146+00:00",
+  "Domains": [
+    {
+      "domain_id": "GV",
+      "domain_name": "Govern",
+      "Controls": [
+        {
+          "control_id": "GV.OC-01",
+          "control_statement": "The organizational mission is understood and informs cybersecurity risk management.",
+          "maturity_levels": [
+            "Initial"
+          ],
+          "expected_evidence_types": [
+            "mission_statement, strategic_plan, risk_policy"
+          ],
+          "cross_references": [
+            {
+              "other_framework_id": "nist-sp-800-39",
+              "other_control_id": "2.1"
+            },
+            {
+              "other_framework_id": "iso-27001-2022",
+              "other_control_id": "4.1"
+            }
+          ],
+          "Questions": [
+            {
+              "question_id": "47daacfc-3411-5a88-a498-399247bc23b9",
+              "question_text": "Is the organization implementing and operating the control: The organizational mission is understood and informs cybersecurity risk management?",
+              "question_type": "yes_no",
+              "weight": 3
+            },
+            {
+              "question_id": "0684ada2-6fe3-5186-ab71-3d28cd9c2989",
+              "question_text": "Upload evidence such as mission_statement, strategic_plan, risk_policy that demonstrates: The organizational mission is understood and informs cybersecurity risk management.",
+              "question_type": "evidence_upload",
+              "weight": 3
+            }
+          ]
+        },
+        {
+          "control_id": "GV.OC-02",
+          "control_statement": "Internal and external stakeholders are understood, and their needs and expectations regarding cybersecurity risk management are understood and considered.",
+          "maturity_levels": [
+            "Initial"
+          ],
+          "expected_evidence_types": [
+            "stakeholder_register, meeting_minutes, risk_register"
+          ],
+          "cross_references": [
+            {
+              "other_framework_id": "iso-27001-2022",
+              "other_control_id": "4.2"
+            },
+            {
+              "other_framework_id": "nist-sp-800-39",
+              "other_control_id": "2.2"
+            }
+          ],
+          "Questions": [
+            {
+              "question_id": "55ca2d89-bd58-5161-9089-65073102dbce",
+              "question_text": "Is the organization implementing and operating the control: Internal and external stakeholders are understood, and their needs and expectations regarding cybersecurity risk management are understood and considered?",
+              "question_type": "yes_no",
+              "weight": 3
+            },
+            {
+              "question_id": "aa0ce65b-8e20-5d1b-b7ef-0d2f5c9782c4",
+              "question_text": "Upload evidence such as stakeholder_register, meeting_minutes, risk_register that demonstrates: Internal and external stakeholders are understood, and their needs and expectations regarding cybersecurity risk management are understood and considered.",
+              "question_type": "evidence_upload",
+              "weight": 3
+            }
+          ]
+        },
+        {
+          "control_id": "GV.PO-01",
+          "control_statement": "Policy for managing cybersecurity risks is established based on organizational context, cybersecurity strategy, and priorities and is communicated and enforced.",
+          "maturity_levels": [
+            "Initial"
+          ],
+          "expected_evidence_types": [
+            "cybersecurity_policy, policy_acknowledgement, audit_report"
+          ],
+          "cross_references": [
+            {
+              "other_framework_id": "iso-27001-2022",
+              "other_control_id": "5.2"
+            },
+            {
+              "other_framework_id": "nist-sp-800-53",
+              "other_control_id": "PL-1"
+            }
+          ],
+          "Questions": [
+            {
+              "question_id": "5e2ea289-6782-59fb-ba71-4c8d3299a75e",
+              "question_text": "Is the organization implementing and operating the control: Policy for managing cybersecurity risks is established based on organizational context, cybersecurity strategy, and priorities and is communicated and enforced?",
+              "question_type": "yes_no",
+              "weight": 3
+            },
+            {
+              "question_id": "130e9c14-310c-5c53-9c82-a5a70e0f4902",
+              "question_text": "Upload evidence such as cybersecurity_policy, policy_acknowledgement, audit_report that demonstrates: Policy for managing cybersecurity risks is established based on organizational context, cybersecurity strategy, and priorities and is communicated and enforced.",
+              "question_type": "evidence_upload",
+              "weight": 3
+            }
+          ]
+        },
+        {
+          "control_id": "GV.RM-01",
+          "control_statement": "Risk management objectives are established and agreed to by organizational stakeholders.",
+          "maturity_levels": [
+            "Initial"
+          ],
+          "expected_evidence_types": [
+            "risk_appetite_statement, board_minutes, policy"
+          ],
+          "cross_references": [
+            {
+              "other_framework_id": "nist-sp-800-39",
+              "other_control_id": "2.2"
+            },
+            {
+              "other_framework_id": "iso-27001-2022",
+              "other_control_id": "6.1"
+            }
+          ],
+          "Questions": [
+            {
+              "question_id": "cae23586-63fe-53f3-a40d-97ce03de0f9a",
+              "question_text": "Is the organization implementing and operating the control: Risk management objectives are established and agreed to by organizational stakeholders?",
+              "question_type": "yes_no",
+              "weight": 3
+            },
+            {
+              "question_id": "ce351cec-7174-5ae4-a4cf-f55d97ef094c",
+              "question_text": "Upload evidence such as risk_appetite_statement, board_minutes, policy that demonstrates: Risk management objectives are established and agreed to by organizational stakeholders.",
+              "question_type": "evidence_upload",
+              "weight": 3
+            }
+          ]
+        },
+        {
+          "control_id": "GV.RM-02",
+          "control_statement": "Risk appetite and risk tolerance statements are established, communicated, and maintained.",
+          "maturity_levels": [
+            "Initial"
+          ],
+          "expected_evidence_types": [
+            "risk_appetite_document, policy, training_records"
+          ],
+          "cross_references": [
+            {
+              "other_framework_id": "nist-sp-800-39",
+              "other_control_id": ""
+            },
+            {
+              "other_framework_id": "iso-27005-2022",
+              "other_control_id": "6.3"
+            }
+          ],
+          "Questions": [
+            {
+              "question_id": "ae053d32-7e5c-56df-ac63-6009f2688cbc",
+              "question_text": "Is the organization implementing and operating the control: Risk appetite and risk tolerance statements are established, communicated, and maintained?",
+              "question_type": "yes_no",
+              "weight": 3
+            },
+            {
+              "question_id": "9a26860a-4047-5266-a85d-68da372ad881",
+              "question_text": "Upload evidence such as risk_appetite_document, policy, training_records that demonstrates: Risk appetite and risk tolerance statements are established, communicated, and maintained.",
+              "question_type": "evidence_upload",
+              "weight": 3
+            }
+          ]
+        },
+        {
+          "control_id": "GV.RR-01",
+          "control_statement": "Organizational leadership is responsible and accountable for cybersecurity risk and fosters a culture that is risk-aware, ethical, and continually improving.",
+          "maturity_levels": [
+            "Initial"
+          ],
+          "expected_evidence_types": [
+            "org_chart, role_definitions, board_minutes"
+          ],
+          "cross_references": [
+            {
+              "other_framework_id": "iso-27001-2022",
+              "other_control_id": "5.1"
+            },
+            {
+              "other_framework_id": "nist-sp-800-100",
+              "other_control_id": ""
+            }
+          ],
+          "Questions": [
+            {
+              "question_id": "646d38a4-ee3b-50d8-a998-2e9fc8ff0e95",
+              "question_text": "Is the organization implementing and operating the control: Organizational leadership is responsible and accountable for cybersecurity risk and fosters a culture that is risk-aware, ethical, and continually improving?",
+              "question_type": "yes_no",
+              "weight": 3
+            },
+            {
+              "question_id": "ba278eba-748d-5126-a70f-fc658ed98456",
+              "question_text": "Upload evidence such as org_chart, role_definitions, board_minutes that demonstrates: Organizational leadership is responsible and accountable for cybersecurity risk and fosters a culture that is risk-aware, ethical, and continually improving.",
+              "question_type": "evidence_upload",
+              "weight": 3
+            }
+          ]
+        },
+        {
+          "control_id": "GV.SC-01",
+          "control_statement": "A cybersecurity supply chain risk management program, strategy, objectives, policies, and processes are established and agreed to by organizational stakeholders.",
+          "maturity_levels": [
+            "Initial"
+          ],
+          "expected_evidence_types": [
+            "vendor_risk_policy, vendor_contracts, supplier_assessments"
+          ],
+          "cross_references": [
+            {
+              "other_framework_id": "nist-sp-800-161",
+              "other_control_id": ""
+            },
+            {
+              "other_framework_id": "iso-27036",
+              "other_control_id": ""
+            }
+          ],
+          "Questions": [
+            {
+              "question_id": "75b492ba-01b0-5bdf-ac99-ab15f98ddabf",
+              "question_text": "Is the organization implementing and operating the control: A cybersecurity supply chain risk management program, strategy, objectives, policies, and processes are established and agreed to by organizational stakeholders?",
+              "question_type": "yes_no",
+              "weight": 3
+            },
+            {
+              "question_id": "f4157996-1732-5659-9418-a3d0d122b458",
+              "question_text": "Upload evidence such as vendor_risk_policy, vendor_contracts, supplier_assessments that demonstrates: A cybersecurity supply chain risk management program, strategy, objectives, policies, and processes are established and agreed to by organizational stakeholders.",
+              "question_type": "evidence_upload",
+              "weight": 3
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "domain_id": "RC",
+      "domain_name": "Recover",
+      "Controls": [
+        {
+          "control_id": "RC.CO-03",
+          "control_statement": "Recovery activities and progress in restoring operational capabilities are communicated to designated internal and external stakeholders.",
+          "maturity_levels": [
+            "Initial"
+          ],
+          "expected_evidence_types": [
+            "stakeholder_communication_log, status_reports, incident_closure_report"
+          ],
+          "cross_references": [
+            {
+              "other_framework_id": "iso-27001-2022",
+              "other_control_id": "A.5.26"
+            },
+            {
+              "other_framework_id": "nist-sp-800-61",
+              "other_control_id": "3.4"
+            }
+          ],
+          "Questions": [
+            {
+              "question_id": "0de9e18e-ebe5-5a1c-9484-b7e7af0fb651",
+              "question_text": "Is the organization implementing and operating the control: Recovery activities and progress in restoring operational capabilities are communicated to designated internal and external stakeholders?",
+              "question_type": "yes_no",
+              "weight": 3
+            },
+            {
+              "question_id": "945f6f7d-879e-586d-9209-c56e488b14e5",
+              "question_text": "Upload evidence such as stakeholder_communication_log, status_reports, incident_closure_report that demonstrates: Recovery activities and progress in restoring operational capabilities are communicated to designated internal and external stakeholders.",
+              "question_type": "evidence_upload",
+              "weight": 3
+            }
+          ]
+        },
+        {
+          "control_id": "RC.RP-01",
+          "control_statement": "The recovery portion of the incident response plan is executed once initiated from the incident response process.",
+          "maturity_levels": [
+            "Initial"
+          ],
+          "expected_evidence_types": [
+            "recovery_plan, rto_rpo_doc, dr_test_report"
+          ],
+          "cross_references": [
+            {
+              "other_framework_id": "nist-sp-800-34",
+              "other_control_id": ""
+            },
+            {
+              "other_framework_id": "iso-27001-2022",
+              "other_control_id": "A.5.30"
+            }
+          ],
+          "Questions": [
+            {
+              "question_id": "9d30102f-2391-54ee-b081-72220be90fad",
+              "question_text": "Is the organization implementing and operating the control: The recovery portion of the incident response plan is executed once initiated from the incident response process?",
+              "question_type": "yes_no",
+              "weight": 3
+            },
+            {
+              "question_id": "31256400-40d5-5caf-93a7-06ce934f2fbd",
+              "question_text": "Upload evidence such as recovery_plan, rto_rpo_doc, dr_test_report that demonstrates: The recovery portion of the incident response plan is executed once initiated from the incident response process.",
+              "question_type": "evidence_upload",
+              "weight": 3
+            }
+          ]
+        },
+        {
+          "control_id": "RC.RP-03",
+          "control_statement": "The integrity of backups and other restoration assets is verified before using them for restoration.",
+          "maturity_levels": [
+            "Initial"
+          ],
+          "expected_evidence_types": [
+            "backup_test_report, restore_log, integrity_check_log"
+          ],
+          "cross_references": [
+            {
+              "other_framework_id": "nist-sp-800-53",
+              "other_control_id": "CP-9"
+            },
+            {
+              "other_framework_id": "iso-27001-2022",
+              "other_control_id": "A.8.13"
+            }
+          ],
+          "Questions": [
+            {
+              "question_id": "7d851c6a-87db-5576-8fe9-60cd1d03fedb",
+              "question_text": "Is the organization implementing and operating the control: The integrity of backups and other restoration assets is verified before using them for restoration?",
+              "question_type": "yes_no",
+              "weight": 3
+            },
+            {
+              "question_id": "930e23ab-d7a2-5c77-81fd-68ed7e17ef04",
+              "question_text": "Upload evidence such as backup_test_report, restore_log, integrity_check_log that demonstrates: The integrity of backups and other restoration assets is verified before using them for restoration.",
+              "question_type": "evidence_upload",
+              "weight": 3
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "domain_id": "1",
+      "domain_name": "Inventory and Control of Enterprise Assets",
+      "Controls": [
+        {
+          "control_id": "1.1",
+          "control_statement": "Establish and Maintain Detailed Enterprise Asset Inventory: Establish and maintain an accurate, detailed, and up-to-date inventory of all enterprise assets with the potential to store or process data, to include: end-user devices (including portable and mobile), network devices, non-computing/IoT devices, and servers. Ensure the inventory records the network address (if static), hardware address, machine name, enterprise asset owner, department for each asset, and whether the asset has been approved to connect to the network. For mobile end-user devices, MDM type tools can support this process, where appropriate. This inventory includes assets connected to the infrastructure physically, virtually, remotely, and those within cloud environments. Additionally, it includes assets that are regularly connected to the enterprise's network infrastructure, even if they are not under control of the enterprise. Review and update the inventory of all enterprise assets bi-annually, or more frequently.",
+          "maturity_levels": [
+            "Defined"
+          ],
+          "expected_evidence_types": [
+            "inventory, asset_register, owner_register"
+          ],
+          "cross_references": [
+            {
+              "other_framework_id": "nist-csf-2-0",
+              "other_control_id": "ID.AM-01"
+            },
+            {
+              "other_framework_id": "nist-csf-2-0",
+              "other_control_id": "ID.AM-08"
+            }
+          ],
+          "Questions": [
+            {
+              "question_id": "6764bfd4-b9f3-5483-a707-2248fa774a24",
+              "question_text": "Is the organization implementing and operating the control: Establish and Maintain Detailed Enterprise Asset Inventory: Establish and maintain an accurate, detailed, and up-to-date inventory of all enterprise assets with the potential to store or process data, to include: end-user devices (including portable and mobile), network devices, non-computing/IoT devices, and servers. Ensure the inventory records the network address (if static), hardware address, machine name, enterprise asset owner, department for each asset, and whether the asset has been approved to connect to the network. For mobile end-user devices, MDM type tools can support this process, where appropriate. This inventory includes assets connected to the infrastructure physically, virtually, remotely, and those within cloud environments. Additionally, it includes assets that are regularly connected to the enterprise's network infrastructure, even if they are not under control of the enterprise. Review and update the inventory of all enterprise assets bi-annually, or more frequently?",
+              "question_type": "yes_no",
+              "weight": 3
+            },
+            {
+              "question_id": "afebca38-085f-56a3-8a56-f8c475c19a4d",
+              "question_text": "Upload evidence such as inventory, asset_register, owner_register that demonstrates: Establish and Maintain Detailed Enterprise Asset Inventory: Establish and maintain an accurate, detailed, and up-to-date inventory of all enterprise assets with the potential to store or process data, to include: end-user devices (including portable and mobile), network devices, non-computing/IoT devices, and servers. Ensure the inventory records the network address (if static), hardware address, machine name, enterprise asset owner, department for each asset, and whether the asset has been approved to connect to the network. For mobile end-user devices, MDM type tools can support this process, where appropriate. This inventory includes assets connected to the infrastructure physically, virtually, remotely, and those within cloud environments. Additionally, it includes assets that are regularly connected to the enterprise's network infrastructure, even if they are not under control of the enterprise. Review and update the inventory of all enterprise assets bi-annually, or more frequently.",
+              "question_type": "evidence_upload",
+              "weight": 3
+            }
+          ]
+        },
+        {
+          "control_id": "1.2",
+          "control_statement": "Address Unauthorized Assets: Ensure that a process exists to address unauthorized assets on a weekly basis. The enterprise may choose to remove the asset from the network, deny the asset from connecting remotely to the network, or quarantine the asset.",
+          "maturity_levels": [
+            "Defined"
+          ],
+          "expected_evidence_types": [
+            "inventory, asset_register, owner_register"
+          ],
+          "cross_references": [
+            {
+              "other_framework_id": "nist-csf-2-0",
+              "other_control_id": "PR.PS-03"
+            }
+          ],
+          "Questions": [
+            {
+              "question_id": "5541a257-fc63-5a76-a742-a32740352276",
+              "question_text": "Is the organization implementing and operating the control: Address Unauthorized Assets: Ensure that a process exists to address unauthorized assets on a weekly basis. The enterprise may choose to remove the asset from the network, deny the asset from connecting remotely to the network, or quarantine the asset?",
+              "question_type": "yes_no",
+              "weight": 3
+            },
+            {
+              "question_id": "3c9b72ff-df4a-542a-96f4-2f4b809ec231",
+              "question_text": "Upload evidence such as inventory, asset_register, owner_register that demonstrates: Address Unauthorized Assets: Ensure that a process exists to address unauthorized assets on a weekly basis. The enterprise may choose to remove the asset from the network, deny the asset from connecting remotely to the network, or quarantine the asset.",
+              "question_type": "evidence_upload",
+              "weight": 3
+            }
+          ]
+        },
+        {
+          "control_id": "1.3",
+          "control_statement": "Utilize an Active Discovery Tool: Utilize an active discovery tool to identify assets connected to the enterprise's network. Configure the active discovery tool to execute daily, or more frequently.",
+          "maturity_levels": [
+            "Defined"
+          ],
+          "expected_evidence_types": [
+            "inventory, asset_register, owner_register"
+          ],
+          "cross_references": [],
+          "Questions": [
+            {
+              "question_id": "bb2ba956-1058-5103-8d77-7061ec7be297",
+              "question_text": "Is the organization implementing and operating the control: Utilize an Active Discovery Tool: Utilize an active discovery tool to identify assets connected to the enterprise's network. Configure the active discovery tool to execute daily, or more frequently?",
+              "question_type": "yes_no",
+              "weight": 3
+            },
+            {
+              "question_id": "10677175-5386-5b89-9a9b-be5a5c8bbeae",
+              "question_text": "Upload evidence such as inventory, asset_register, owner_register that demonstrates: Utilize an Active Discovery Tool: Utilize an active discovery tool to identify assets connected to the enterprise's network. Configure the active discovery tool to execute daily, or more frequently.",
+              "question_type": "evidence_upload",
+              "weight": 3
+            }
+          ]
+        },
+        {
+          "control_id": "1.4",
+          "control_statement": "Use Dynamic Host Configuration Protocol (DHCP) Logging to Update Enterprise Asset Inventory: Use DHCP logging on all DHCP servers or Internet Protocol (IP) address management tools to update the enterprise's asset inventory. Review and use logs to update the enterprise's asset inventory weekly, or more frequently.",
+          "maturity_levels": [
+            "Defined"
+          ],
+          "expected_evidence_types": [
+            "role_matrix, org_chart, responsibility_assignment"
+          ],
+          "cross_references": [],
+          "Questions": [
+            {
+              "question_id": "e2ec184d-512c-5977-a871-c901ee98483c",
+              "question_text": "Is the organization implementing and operating the control: Use Dynamic Host Configuration Protocol (DHCP) Logging to Update Enterprise Asset Inventory: Use DHCP logging on all DHCP servers or Internet Protocol (IP) address management tools to update the enterprise's asset inventory. Review and use logs to update the enterprise's asset inventory weekly, or more frequently?",
+              "question_type": "yes_no",
+              "weight": 3
+            },
+            {
+              "question_id": "f481ef28-9a5a-5369-a36e-79b30df54a7a",
+              "question_text": "Upload evidence such as role_matrix, org_chart, responsibility_assignment that demonstrates: Use Dynamic Host Configuration Protocol (DHCP) Logging to Update Enterprise Asset Inventory: Use DHCP logging on all DHCP servers or Internet Protocol (IP) address management tools to update the enterprise's asset inventory. Review and use logs to update the enterprise's asset inventory weekly, or more frequently.",
+              "question_type": "evidence_upload",
+              "weight": 3
+            }
+          ]
+        },
+        {
+          "control_id": "1.5",
+          "control_statement": "Use a Passive Asset Discovery Tool: Use a passive discovery tool to identify assets connected to the enterprise's network. Review and use scans to update the enterprise's asset inventory at least weekly, or more frequently.",
+          "maturity_levels": [
+            "Defined"
+          ],
+          "expected_evidence_types": [
+            "inventory, asset_register, owner_register"
+          ],
+          "cross_references": [],
+          "Questions": [
+            {
+              "question_id": "60bf103e-9e41-5af6-ad6b-b170eaffddd0",
+              "question_text": "Is the organization implementing and operating the control: Use a Passive Asset Discovery Tool: Use a passive discovery tool to identify assets connected to the enterprise's network. Review and use scans to update the enterprise's asset inventory at least weekly, or more frequently?",
+              "question_type": "yes_no",
+              "weight": 3
+            },
+            {
+              "question_id": "8b2c1dcf-a5cb-55c6-b148-3bb532dbdca6",
+              "question_text": "Upload evidence such as inventory, asset_register, owner_register that demonstrates: Use a Passive Asset Discovery Tool: Use a passive discovery tool to identify assets connected to the enterprise's network. Review and use scans to update the enterprise's asset inventory at least weekly, or more frequently.",
+              "question_type": "evidence_upload",
+              "weight": 3
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "domain_id": "7",
+      "domain_name": "Physical controls",
+      "Controls": [
+        {
+          "control_id": "7.1",
+          "control_statement": "Physical security perimeters Control: Security perimeters shall be defined and used to protect areas that contain information and other associated assets.",
+          "maturity_levels": [
+            "Initial"
+          ],
+          "expected_evidence_types": [
+            "inventory, asset_register, owner_register"
+          ],
+          "cross_references": [],
+          "Questions": [
+            {
+              "question_id": "02eeb767-46ff-5a31-9814-bcf34b785056",
+              "question_text": "Is the organization implementing and operating the control: Physical security perimeters Control: Security perimeters shall be defined and used to protect areas that contain information and other associated assets?",
+              "question_type": "yes_no",
+              "weight": 3
+            },
+            {
+              "question_id": "0fff8c2f-486c-5b75-bb75-59d029f759e0",
+              "question_text": "Upload evidence such as inventory, asset_register, owner_register that demonstrates: Physical security perimeters Control: Security perimeters shall be defined and used to protect areas that contain information and other associated assets.",
+              "question_type": "evidence_upload",
+              "weight": 3
+            }
+          ]
+        },
+        {
+          "control_id": "7.10",
+          "control_statement": "Storage media Control: Storage media shall be managed through their life cycle of acquisition, use, transportation and disposal in accordance with the organization's classification scheme and handling requirements.",
+          "maturity_levels": [
+            "Initial"
+          ],
+          "expected_evidence_types": [
+            "acceptable_use_policy, user_acknowledgement, procedure"
+          ],
+          "cross_references": [],
+          "Questions": [
+            {
+              "question_id": "ed1e3836-c0ee-5d68-9d64-ee112bfc581c",
+              "question_text": "Is the organization implementing and operating the control: Storage media Control: Storage media shall be managed through their life cycle of acquisition, use, transportation and disposal in accordance with the organization's classification scheme and handling requirements?",
+              "question_type": "yes_no",
+              "weight": 3
+            },
+            {
+              "question_id": "57b06179-ce5a-532a-a992-fa0f1af05767",
+              "question_text": "Upload evidence such as acceptable_use_policy, user_acknowledgement, procedure that demonstrates: Storage media Control: Storage media shall be managed through their life cycle of acquisition, use, transportation and disposal in accordance with the organization's classification scheme and handling requirements.",
+              "question_type": "evidence_upload",
+              "weight": 3
+            }
+          ]
+        },
+        {
+          "control_id": "7.11",
+          "control_statement": "Supporting utilities Control: Information processing facilities shall be protected from power failures and other disruptions caused by failures in supporting utilities.",
+          "maturity_levels": [
+            "Initial"
+          ],
+          "expected_evidence_types": [
+            "backup_test, continuity_plan, recovery_test"
+          ],
+          "cross_references": [],
+          "Questions": [
+            {
+              "question_id": "97629836-2f93-5360-a6ca-02eac707182a",
+              "question_text": "Is the organization implementing and operating the control: Supporting utilities Control: Information processing facilities shall be protected from power failures and other disruptions caused by failures in supporting utilities?",
+              "question_type": "yes_no",
+              "weight": 3
+            },
+            {
+              "question_id": "67214cd5-e456-5ae5-a948-d7a58edc0ce8",
+              "question_text": "Upload evidence such as backup_test, continuity_plan, recovery_test that demonstrates: Supporting utilities Control: Information processing facilities shall be protected from power failures and other disruptions caused by failures in supporting utilities.",
+              "question_type": "evidence_upload",
+              "weight": 3
+            }
+          ]
+        },
+        {
+          "control_id": "7.12",
+          "control_statement": "Cabling security Control: Cables carrying power, data or supporting information services shall be protected from interception, interference or damage.",
+          "maturity_levels": [
+            "Initial"
+          ],
+          "expected_evidence_types": [
+            "facility_record, access_log, maintenance_log"
+          ],
+          "cross_references": [],
+          "Questions": [
+            {
+              "question_id": "f070f0f9-46ca-511d-9c77-565e77bb1d1e",
+              "question_text": "Is the organization implementing and operating the control: Cabling security Control: Cables carrying power, data or supporting information services shall be protected from interception, interference or damage?",
+              "question_type": "yes_no",
+              "weight": 3
+            },
+            {
+              "question_id": "9976586e-2037-5852-a901-5f2d9b492e45",
+              "question_text": "Upload evidence such as facility_record, access_log, maintenance_log that demonstrates: Cabling security Control: Cables carrying power, data or supporting information services shall be protected from interception, interference or damage.",
+              "question_type": "evidence_upload",
+              "weight": 3
+            }
+          ]
+        },
+        {
+          "control_id": "7.13",
+          "control_statement": "Equipment maintenance Control: Equipment shall be maintained correctly to ensure availability, integrity and confidentiality of information.",
+          "maturity_levels": [
+            "Initial"
+          ],
+          "expected_evidence_types": [
+            "facility_record, access_log, maintenance_log"
+          ],
+          "cross_references": [],
+          "Questions": [
+            {
+              "question_id": "1354c600-d5a8-5b5b-b8be-2fbde1e1fefe",
+              "question_text": "Is the organization implementing and operating the control: Equipment maintenance Control: Equipment shall be maintained correctly to ensure availability, integrity and confidentiality of information?",
+              "question_type": "yes_no",
+              "weight": 3
+            },
+            {
+              "question_id": "09f965d0-92ec-5eb7-834b-c8cfad6497a5",
+              "question_text": "Upload evidence such as facility_record, access_log, maintenance_log that demonstrates: Equipment maintenance Control: Equipment shall be maintained correctly to ensure availability, integrity and confidentiality of information.",
+              "question_type": "evidence_upload",
+              "weight": 3
+            }
+          ]
+        },
+        {
+          "control_id": "7.14",
+          "control_statement": "Secure disposal or re-use of equipment: Items of equipment containing storage media shall be verified to en sure that any sensitive data and licensed software has been removed or securely overwritten prior to disposal or re-use.",
+          "maturity_levels": [
+            "Initial"
+          ],
+          "expected_evidence_types": [
+            "project_record, change_ticket, engineering_standard"
+          ],
+          "cross_references": [],
+          "Questions": [
+            {
+              "question_id": "8bae8ab1-4d00-5497-ba51-ee4f48471bd3",
+              "question_text": "Is the organization implementing and operating the control: Secure disposal or re-use of equipment: Items of equipment containing storage media shall be verified to en sure that any sensitive data and licensed software has been removed or securely overwritten prior to disposal or re-use?",
+              "question_type": "yes_no",
+              "weight": 3
+            },
+            {
+              "question_id": "fd7e72f3-f34a-5398-a005-746db84eeac7",
+              "question_text": "Upload evidence such as project_record, change_ticket, engineering_standard that demonstrates: Secure disposal or re-use of equipment: Items of equipment containing storage media shall be verified to en sure that any sensitive data and licensed software has been removed or securely overwritten prior to disposal or re-use.",
+              "question_type": "evidence_upload",
+              "weight": 3
+            }
+          ]
+        },
+        {
+          "control_id": "7.2",
+          "control_statement": "Physical entry Control Secure areas shall be protected by appropriate entry controls and access points. 7. 3 Securing offices, rooms and fa cilities: Physical security for offices, rooms and facilities shall be designed and implemented.",
+          "maturity_levels": [
+            "Initial"
+          ],
+          "expected_evidence_types": [
+            "facility_record, access_log, maintenance_log"
+          ],
+          "cross_references": [],
+          "Questions": [
+            {
+              "question_id": "c996350e-9c59-556d-9d7d-4aebe54917d7",
+              "question_text": "Is the organization implementing and operating the control: Physical entry Control Secure areas shall be protected by appropriate entry controls and access points. 7. 3 Securing offices, rooms and fa cilities: Physical security for offices, rooms and facilities shall be designed and implemented?",
+              "question_type": "yes_no",
+              "weight": 3
+            },
+            {
+              "question_id": "86261cf8-0586-5763-9bc4-aa12c92e2f10",
+              "question_text": "Upload evidence such as facility_record, access_log, maintenance_log that demonstrates: Physical entry Control Secure areas shall be protected by appropriate entry controls and access points. 7. 3 Securing offices, rooms and fa cilities: Physical security for offices, rooms and facilities shall be designed and implemented.",
+              "question_type": "evidence_upload",
+              "weight": 3
+            }
+          ]
+        },
+        {
+          "control_id": "7.4",
+          "control_statement": "Physical security monitoring Control Premises shall be continuously monitored for unauthorized physical access. © ISO/IEC 2022 - All rights reserved 7. 5 Protecting against physical and environmental threats: Protection against physical and environmental threats, such as natural disasters and other intentional or unintentional physical threats to infrastructure shall be designed and implemented.",
+          "maturity_levels": [
+            "Initial"
+          ],
+          "expected_evidence_types": [
+            "threat_report, intel_feed, analysis_note"
+          ],
+          "cross_references": [],
+          "Questions": [
+            {
+              "question_id": "3dbd1e4a-6f50-50fc-b609-5ace54e9b7ce",
+              "question_text": "Is the organization implementing and operating the control: Physical security monitoring Control Premises shall be continuously monitored for unauthorized physical access. © ISO/IEC 2022 - All rights reserved 7. 5 Protecting against physical and environmental threats: Protection against physical and environmental threats, such as natural disasters and other intentional or unintentional physical threats to infrastructure shall be designed and implemented?",
+              "question_type": "yes_no",
+              "weight": 3
+            },
+            {
+              "question_id": "2f7ffd75-9b65-59d8-af60-2b725b199088",
+              "question_text": "Upload evidence such as threat_report, intel_feed, analysis_note that demonstrates: Physical security monitoring Control Premises shall be continuously monitored for unauthorized physical access. © ISO/IEC 2022 - All rights reserved 7. 5 Protecting against physical and environmental threats: Protection against physical and environmental threats, such as natural disasters and other intentional or unintentional physical threats to infrastructure shall be designed and implemented.",
+              "question_type": "evidence_upload",
+              "weight": 3
+            }
+          ]
+        },
+        {
+          "control_id": "7.6",
+          "control_statement": "Working in secure areas Control: Security measures for working in secure areas shall be designed and implemented.",
+          "maturity_levels": [
+            "Initial"
+          ],
+          "expected_evidence_types": [
+            "implementation_evidence, operational_record"
+          ],
+          "cross_references": [],
+          "Questions": [
+            {
+              "question_id": "88951a5f-de2d-5d04-ae75-c95a1b140f59",
+              "question_text": "Is the organization implementing and operating the control: Working in secure areas Control: Security measures for working in secure areas shall be designed and implemented?",
+              "question_type": "yes_no",
+              "weight": 3
+            },
+            {
+              "question_id": "85434b5e-f576-56a3-804c-9f85086f9155",
+              "question_text": "Upload evidence such as implementation_evidence, operational_record that demonstrates: Working in secure areas Control: Security measures for working in secure areas shall be designed and implemented.",
+              "question_type": "evidence_upload",
+              "weight": 3
+            }
+          ]
+        },
+        {
+          "control_id": "7.7",
+          "control_statement": "Clear desk and clear screen Control: Clear desk rules for papers and removable storage media and clear screen rules for information processing facilities shall be defined and appropriately enforced.",
+          "maturity_levels": [
+            "Initial"
+          ],
+          "expected_evidence_types": [
+            "facility_record, access_log, maintenance_log"
+          ],
+          "cross_references": [],
+          "Questions": [
+            {
+              "question_id": "7f6db657-9cfd-5bd3-b233-759b43d24afb",
+              "question_text": "Is the organization implementing and operating the control: Clear desk and clear screen Control: Clear desk rules for papers and removable storage media and clear screen rules for information processing facilities shall be defined and appropriately enforced?",
+              "question_type": "yes_no",
+              "weight": 3
+            },
+            {
+              "question_id": "b3d5dbae-ba1a-5c35-8cfd-6ac5671f0552",
+              "question_text": "Upload evidence such as facility_record, access_log, maintenance_log that demonstrates: Clear desk and clear screen Control: Clear desk rules for papers and removable storage media and clear screen rules for information processing facilities shall be defined and appropriately enforced.",
+              "question_type": "evidence_upload",
+              "weight": 3
+            }
+          ]
+        },
+        {
+          "control_id": "7.8",
+          "control_statement": "Equipment siting and protection Control: Equipment shall be sited securely and protected.",
+          "maturity_levels": [
+            "Initial"
+          ],
+          "expected_evidence_types": [
+            "facility_record, access_log, maintenance_log"
+          ],
+          "cross_references": [],
+          "Questions": [
+            {
+              "question_id": "f104cd42-1986-552f-b0ce-30e3fb46a230",
+              "question_text": "Is the organization implementing and operating the control: Equipment siting and protection Control: Equipment shall be sited securely and protected?",
+              "question_type": "yes_no",
+              "weight": 3
+            },
+            {
+              "question_id": "ba802b24-24f8-5678-b9c3-8ab882cd3c6d",
+              "question_text": "Upload evidence such as facility_record, access_log, maintenance_log that demonstrates: Equipment siting and protection Control: Equipment shall be sited securely and protected.",
+              "question_type": "evidence_upload",
+              "weight": 3
+            }
+          ]
+        },
+        {
+          "control_id": "7.9",
+          "control_statement": "Security of assets off-premises Control: Off-site assets shall be protected.",
+          "maturity_levels": [
+            "Initial"
+          ],
+          "expected_evidence_types": [
+            "inventory, asset_register, owner_register"
+          ],
+          "cross_references": [],
+          "Questions": [
+            {
+              "question_id": "4144a4fe-5069-5c49-8241-710a99127a7f",
+              "question_text": "Is the organization implementing and operating the control: Security of assets off-premises Control: Off-site assets shall be protected?",
+              "question_type": "yes_no",
+              "weight": 3
+            },
+            {
+              "question_id": "cfda481a-7377-5b11-964b-253e2e7594e5",
+              "question_text": "Upload evidence such as inventory, asset_register, owner_register that demonstrates: Security of assets off-premises Control: Off-site assets shall be protected.",
+              "question_type": "evidence_upload",
+              "weight": 3
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

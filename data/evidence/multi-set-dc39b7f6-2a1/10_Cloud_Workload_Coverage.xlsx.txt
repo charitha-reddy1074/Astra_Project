@@ -1,0 +1,6 @@
+Workload ID	Workload Name	Provider	Account ID	Instance / Resource ID	OS / Runtime	Endpoint Agent Installed	Patching Group	Last Patch Date	Patch Compliance (%)	EDR Tool	EDR Status	Vulnerability Scanner	Last Vuln Scan	Open Critical Vulns	Owner
+WL-001	Web App Server 01	AWS	123456789012	i-0abc123def	Amazon Linux 2	Yes	Monthly-Prod	2024-11-15	98%	CrowdStrike Falcon	Active	Qualys	2024-11-16	0	Platform Eng
+WL-002	Payments API Server	AWS	123456789012	i-0def456ghi	RHEL 8.6	Yes	Monthly-Prod	2024-11-15	100%	CrowdStrike Falcon	Active	Qualys	2024-11-16	0	Platform Eng
+WL-003	Dev VM 01	Azure	sub-0987abcd	vm-dev-mcd-01	Windows Server 2019	Yes	Quarterly-Dev	2024-10-01	85%	CrowdStrike Falcon	Active	Qualys	2024-10-02	2	DevOps
+WL-004	Analytics Worker	GCP	gcp-proj-321	instance-gke-wk-01	Debian 11	Yes	Monthly-Prod	2024-11-14	96%	CrowdStrike Falcon	Active	Wiz	2024-11-15	1	Data Eng
+WL-005	Legacy Batch Server	AWS	234567890123	i-0xyz789jkl	CentOS 7 (EOL)	Yes	Ad-hoc	2024-09-01	72%	CrowdStrike Falcon	Active	Qualys	2024-09-02	5	IT Ops

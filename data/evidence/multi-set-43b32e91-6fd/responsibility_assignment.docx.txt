@@ -1,0 +1,26 @@
+Vulnerability Management Program
+Responsibility Assignment Document
+
+Document Details
+
+Security Team Responsibilities
+
+Perform authenticated and unauthenticated vulnerability scans across all asset classes
+Review and triage scan findings within 48 hours of scan completion
+Generate weekly and monthly vulnerability management reports
+Maintain and update the vulnerability tracking register
+Coordinate remediation activities with asset owners and infrastructure teams
+
+Infrastructure Team Responsibilities
+
+Patch operating systems in accordance with defined SLA timelines
+Validate remediation effectiveness post-patching
+Report patch deployment status to the Vulnerability Management team
+Maintain patch deployment logs for audit purposes
+
+Application Owners
+
+Remediate application-layer vulnerabilities within agreed SLAs
+Submit and document exception requests through the approved process
+Confirm remediation completion and provide evidence to Security team
+Maintain application inventory in the asset register

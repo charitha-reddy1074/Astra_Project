@@ -1,0 +1,2153 @@
+{
+  "questionnaire_id": "multi-set-2129c2d7-fe2",
+  "questionnaire_type": "multi_framework",
+  "framework_id": "750fe81b-c96c-5b75-905f-df2d6ebc401f",
+  "name": "CIS Controls v8.1.2 (Access Control Management) + ISO/IEC 27001:2022 (Physical controls)",
+  "framework_names": [
+    "CIS Controls v8.1.2",
+    "ISO/IEC 27001:2022"
+  ],
+  "framework_summary": "CIS Controls v8.1.2 + ISO/IEC 27001:2022",
+  "version": "1.0",
+  "source_format": "multi_framework_merged",
+  "question_count": 40,
+  "questions": [
+    {
+      "question_id": "3c3409ca-4333-5cdd-b58d-149cf81c8b06",
+      "question_text": "Is the organization implementing and operating the control: Establish an Access Granting Process: Establish and follow a documented process, preferably automated, for granting access to enterprise assets upon new hire or role change of a user?",
+      "question_type": "yes_no",
+      "framework_name": "CIS Controls v8.1.2",
+      "framework_key": "cis-controls-v8-1-2",
+      "domain_id": "6",
+      "domain_name": "Access Control Management",
+      "control_id": "6.1",
+      "cross_references": [
+        {
+          "other_framework_id": "nist-csf-2-0",
+          "other_control_id": "GV.RR-04",
+          "relationship": "Subset",
+          "description": "Cybersecurity is included in human resources practices"
+        }
+      ],
+      "expected_evidence": "project_record, change_ticket, engineering_standard"
+    },
+    {
+      "question_id": "dcb8acfe-a69a-5333-98f5-ae000fc99a59",
+      "question_text": "Upload evidence such as project_record, change_ticket, engineering_standard that demonstrates: Establish an Access Granting Process: Establish and follow a documented process, preferably automated, for granting access to enterprise assets upon new hire or role change of a user.",
+      "question_type": "evidence_upload",
+      "framework_name": "CIS Controls v8.1.2",
+      "framework_key": "cis-controls-v8-1-2",
+      "domain_id": "6",
+      "domain_name": "Access Control Management",
+      "control_id": "6.1",
+      "cross_references": [
+        {
+          "other_framework_id": "nist-csf-2-0",
+          "other_control_id": "GV.RR-04",
+          "relationship": "Subset",
+          "description": "Cybersecurity is included in human resources practices"
+        }
+      ],
+      "expected_evidence": "project_record, change_ticket, engineering_standard"
+    },
+    {
+      "question_id": "d9066a00-4c16-56fe-9880-d4fc0b23ffa9",
+      "question_text": "Is the organization implementing and operating the control: Establish an Access Revoking Process: Establish and follow a process, preferably automated, for revoking access to enterprise assets, through disabling accounts immediately upon termination, rights revocation, or role change of a user. Disabling accounts, instead of deleting accounts, may be necessary to preserve audit trails?",
+      "question_type": "yes_no",
+      "framework_name": "CIS Controls v8.1.2",
+      "framework_key": "cis-controls-v8-1-2",
+      "domain_id": "6",
+      "domain_name": "Access Control Management",
+      "control_id": "6.2",
+      "cross_references": [
+        {
+          "other_framework_id": "nist-csf-2-0",
+          "other_control_id": "GV.RR-04",
+          "relationship": "Subset",
+          "description": "Cybersecurity is included in human resources practices"
+        }
+      ],
+      "expected_evidence": "project_record, change_ticket, engineering_standard"
+    },
+    {
+      "question_id": "31563fef-e845-57e3-b954-f73875dac99b",
+      "question_text": "Upload evidence such as project_record, change_ticket, engineering_standard that demonstrates: Establish an Access Revoking Process: Establish and follow a process, preferably automated, for revoking access to enterprise assets, through disabling accounts immediately upon termination, rights revocation, or role change of a user. Disabling accounts, instead of deleting accounts, may be necessary to preserve audit trails.",
+      "question_type": "evidence_upload",
+      "framework_name": "CIS Controls v8.1.2",
+      "framework_key": "cis-controls-v8-1-2",
+      "domain_id": "6",
+      "domain_name": "Access Control Management",
+      "control_id": "6.2",
+      "cross_references": [
+        {
+          "other_framework_id": "nist-csf-2-0",
+          "other_control_id": "GV.RR-04",
+          "relationship": "Subset",
+          "description": "Cybersecurity is included in human resources practices"
+        }
+      ],
+      "expected_evidence": "project_record, change_ticket, engineering_standard"
+    },
+    {
+      "question_id": "5f7630d0-809a-5075-ac9b-ad9fcd19605c",
+      "question_text": "Is the organization implementing and operating the control: Require MFA for Externally-Exposed Applications: Require all externally-exposed enterprise or third-party applications to enforce MFA, where supported. Enforcing MFA through a directory service or SSO provider is a satisfactory implementation of this Safeguard?",
+      "question_type": "yes_no",
+      "framework_name": "CIS Controls v8.1.2",
+      "framework_key": "cis-controls-v8-1-2",
+      "domain_id": "6",
+      "domain_name": "Access Control Management",
+      "control_id": "6.3",
+      "cross_references": [],
+      "expected_evidence": "implementation_evidence, operational_record"
+    },
+    {
+      "question_id": "ba4601bd-d221-5033-9fe2-94cdd5740637",
+      "question_text": "Upload evidence such as implementation_evidence, operational_record that demonstrates: Require MFA for Externally-Exposed Applications: Require all externally-exposed enterprise or third-party applications to enforce MFA, where supported. Enforcing MFA through a directory service or SSO provider is a satisfactory implementation of this Safeguard.",
+      "question_type": "evidence_upload",
+      "framework_name": "CIS Controls v8.1.2",
+      "framework_key": "cis-controls-v8-1-2",
+      "domain_id": "6",
+      "domain_name": "Access Control Management",
+      "control_id": "6.3",
+      "cross_references": [],
+      "expected_evidence": "implementation_evidence, operational_record"
+    },
+    {
+      "question_id": "64873bab-2460-5df5-9af8-0c5337268649",
+      "question_text": "Is the organization implementing and operating the control: Require MFA for Remote Network Access: Require MFA for remote network access?",
+      "question_type": "yes_no",
+      "framework_name": "CIS Controls v8.1.2",
+      "framework_key": "cis-controls-v8-1-2",
+      "domain_id": "6",
+      "domain_name": "Access Control Management",
+      "control_id": "6.4",
+      "cross_references": [],
+      "expected_evidence": "technical_control_record, system_config, monitoring_report"
+    },
+    {
+      "question_id": "46bc11c9-7564-59f4-ba9a-db4f198a0b58",
+      "question_text": "Upload evidence such as technical_control_record, system_config, monitoring_report that demonstrates: Require MFA for Remote Network Access: Require MFA for remote network access.",
+      "question_type": "evidence_upload",
+      "framework_name": "CIS Controls v8.1.2",
+      "framework_key": "cis-controls-v8-1-2",
+      "domain_id": "6",
+      "domain_name": "Access Control Management",
+      "control_id": "6.4",
+      "cross_references": [],
+      "expected_evidence": "technical_control_record, system_config, monitoring_report"
+    },
+    {
+      "question_id": "476fa11c-8989-59e9-ba2d-7e3759639293",
+      "question_text": "Is the organization implementing and operating the control: Require MFA for Administrative Access: Require MFA for all administrative access accounts, where supported, on all enterprise assets, whether managed on-site or through a service provider?",
+      "question_type": "yes_no",
+      "framework_name": "CIS Controls v8.1.2",
+      "framework_key": "cis-controls-v8-1-2",
+      "domain_id": "6",
+      "domain_name": "Access Control Management",
+      "control_id": "6.5",
+      "cross_references": [],
+      "expected_evidence": "inventory, asset_register, owner_register"
+    },
+    {
+      "question_id": "1e970cfe-7c77-5d60-a3d9-02eb7dc90f44",
+      "question_text": "Upload evidence such as inventory, asset_register, owner_register that demonstrates: Require MFA for Administrative Access: Require MFA for all administrative access accounts, where supported, on all enterprise assets, whether managed on-site or through a service provider.",
+      "question_type": "evidence_upload",
+      "framework_name": "CIS Controls v8.1.2",
+      "framework_key": "cis-controls-v8-1-2",
+      "domain_id": "6",
+      "domain_name": "Access Control Management",
+      "control_id": "6.5",
+      "cross_references": [],
+      "expected_evidence": "inventory, asset_register, owner_register"
+    },
+    {
+      "question_id": "2c90a078-4eb8-5fb7-b39c-09ce9d1f1d6e",
+      "question_text": "Is the organization implementing and operating the control: Establish and Maintain an Inventory of Authentication and Authorization Systems: Establish and maintain an inventory of the enterprise's authentication and authorization systems, including those hosted on-site or at a remote service provider. Review and update the inventory, at a minimum, annually, or more frequently?",
+      "question_type": "yes_no",
+      "framework_name": "CIS Controls v8.1.2",
+      "framework_key": "cis-controls-v8-1-2",
+      "domain_id": "6",
+      "domain_name": "Access Control Management",
+      "control_id": "6.6",
+      "cross_references": [],
+      "expected_evidence": "project_record, change_ticket, engineering_standard"
+    },
+    {
+      "question_id": "b13be3b6-10aa-5b3f-bdb4-cb7951607daa",
+      "question_text": "Upload evidence such as project_record, change_ticket, engineering_standard that demonstrates: Establish and Maintain an Inventory of Authentication and Authorization Systems: Establish and maintain an inventory of the enterprise's authentication and authorization systems, including those hosted on-site or at a remote service provider. Review and update the inventory, at a minimum, annually, or more frequently.",
+      "question_type": "evidence_upload",
+      "framework_name": "CIS Controls v8.1.2",
+      "framework_key": "cis-controls-v8-1-2",
+      "domain_id": "6",
+      "domain_name": "Access Control Management",
+      "control_id": "6.6",
+      "cross_references": [],
+      "expected_evidence": "project_record, change_ticket, engineering_standard"
+    },
+    {
+      "question_id": "9c578377-13ff-5031-b98a-c6f8f47d2ff1",
+      "question_text": "Is the organization implementing and operating the control: Centralize Access Control: Centralize access control for all enterprise assets through a directory service or SSO provider, where supported?",
+      "question_type": "yes_no",
+      "framework_name": "CIS Controls v8.1.2",
+      "framework_key": "cis-controls-v8-1-2",
+      "domain_id": "6",
+      "domain_name": "Access Control Management",
+      "control_id": "6.7",
+      "cross_references": [],
+      "expected_evidence": "inventory, asset_register, owner_register"
+    },
+    {
+      "question_id": "1f5b39cd-893c-59f8-819a-f57aa116fdd8",
+      "question_text": "Upload evidence such as inventory, asset_register, owner_register that demonstrates: Centralize Access Control: Centralize access control for all enterprise assets through a directory service or SSO provider, where supported.",
+      "question_type": "evidence_upload",
+      "framework_name": "CIS Controls v8.1.2",
+      "framework_key": "cis-controls-v8-1-2",
+      "domain_id": "6",
+      "domain_name": "Access Control Management",
+      "control_id": "6.7",
+      "cross_references": [],
+      "expected_evidence": "inventory, asset_register, owner_register"
+    },
+    {
+      "question_id": "fa20e132-359e-5bd9-ad44-a8cf14c36432",
+      "question_text": "Is the organization implementing and operating the control: Define and Maintain Role-Based Access Control: Define and maintain role-based access control, through determining and documenting the access rights necessary for each role within the enterprise to successfully carry out its assigned duties. Perform access control reviews of enterprise assets to validate that all privileges are authorized, on a recurring schedule at a minimum annually, or more frequently?",
+      "question_type": "yes_no",
+      "framework_name": "CIS Controls v8.1.2",
+      "framework_key": "cis-controls-v8-1-2",
+      "domain_id": "6",
+      "domain_name": "Access Control Management",
+      "control_id": "6.8",
+      "cross_references": [
+        {
+          "other_framework_id": "nist-csf-2-0",
+          "other_control_id": "PR.AA-05",
+          "relationship": "Equivalent",
+          "description": "Access permissions, entitlements, and authorizations are defined in a policy, managed, enforced, and reviewed, and incorporate the principles of least privilege and separation of duties"
+        }
+      ],
+      "expected_evidence": "inventory, asset_register, owner_register"
+    },
+    {
+      "question_id": "de5843aa-fcfb-56a0-b128-8f6cb2b1bb75",
+      "question_text": "Upload evidence such as inventory, asset_register, owner_register that demonstrates: Define and Maintain Role-Based Access Control: Define and maintain role-based access control, through determining and documenting the access rights necessary for each role within the enterprise to successfully carry out its assigned duties. Perform access control reviews of enterprise assets to validate that all privileges are authorized, on a recurring schedule at a minimum annually, or more frequently.",
+      "question_type": "evidence_upload",
+      "framework_name": "CIS Controls v8.1.2",
+      "framework_key": "cis-controls-v8-1-2",
+      "domain_id": "6",
+      "domain_name": "Access Control Management",
+      "control_id": "6.8",
+      "cross_references": [
+        {
+          "other_framework_id": "nist-csf-2-0",
+          "other_control_id": "PR.AA-05",
+          "relationship": "Equivalent",
+          "description": "Access permissions, entitlements, and authorizations are defined in a policy, managed, enforced, and reviewed, and incorporate the principles of least privilege and separation of duties"
+        }
+      ],
+      "expected_evidence": "inventory, asset_register, owner_register"
+    },
+    {
+      "question_id": "02eeb767-46ff-5a31-9814-bcf34b785056",
+      "question_text": "Is the organization implementing and operating the control: Physical security perimeters Control: Security perimeters shall be defined and used to protect areas that contain information and other associated assets?",
+      "question_type": "yes_no",
+      "framework_name": "ISO/IEC 27001:2022",
+      "framework_key": "iso-27001-2022",
+      "domain_id": "7",
+      "domain_name": "Physical controls",
+      "control_id": "7.1",
+      "cross_references": [],
+      "expected_evidence": "inventory, asset_register, owner_register"
+    },
+    {
+      "question_id": "0fff8c2f-486c-5b75-bb75-59d029f759e0",
+      "question_text": "Upload evidence such as inventory, asset_register, owner_register that demonstrates: Physical security perimeters Control: Security perimeters shall be defined and used to protect areas that contain information and other associated assets.",
+      "question_type": "evidence_upload",
+      "framework_name": "ISO/IEC 27001:2022",
+      "framework_key": "iso-27001-2022",
+      "domain_id": "7",
+      "domain_name": "Physical controls",
+      "control_id": "7.1",
+      "cross_references": [],
+      "expected_evidence": "inventory, asset_register, owner_register"
+    },
+    {
+      "question_id": "ed1e3836-c0ee-5d68-9d64-ee112bfc581c",
+      "question_text": "Is the organization implementing and operating the control: Storage media Control: Storage media shall be managed through their life cycle of acquisition, use, transportation and disposal in accordance with the organization's classification scheme and handling requirements?",
+      "question_type": "yes_no",
+      "framework_name": "ISO/IEC 27001:2022",
+      "framework_key": "iso-27001-2022",
+      "domain_id": "7",
+      "domain_name": "Physical controls",
+      "control_id": "7.10",
+      "cross_references": [],
+      "expected_evidence": "acceptable_use_policy, user_acknowledgement, procedure"
+    },
+    {
+      "question_id": "57b06179-ce5a-532a-a992-fa0f1af05767",
+      "question_text": "Upload evidence such as acceptable_use_policy, user_acknowledgement, procedure that demonstrates: Storage media Control: Storage media shall be managed through their life cycle of acquisition, use, transportation and disposal in accordance with the organization's classification scheme and handling requirements.",
+      "question_type": "evidence_upload",
+      "framework_name": "ISO/IEC 27001:2022",
+      "framework_key": "iso-27001-2022",
+      "domain_id": "7",
+      "domain_name": "Physical controls",
+      "control_id": "7.10",
+      "cross_references": [],
+      "expected_evidence": "acceptable_use_policy, user_acknowledgement, procedure"
+    },
+    {
+      "question_id": "97629836-2f93-5360-a6ca-02eac707182a",
+      "question_text": "Is the organization implementing and operating the control: Supporting utilities Control: Information processing facilities shall be protected from power failures and other disruptions caused by failures in supporting utilities?",
+      "question_type": "yes_no",
+      "framework_name": "ISO/IEC 27001:2022",
+      "framework_key": "iso-27001-2022",
+      "domain_id": "7",
+      "domain_name": "Physical controls",
+      "control_id": "7.11",
+      "cross_references": [],
+      "expected_evidence": "backup_test, continuity_plan, recovery_test"
+    },
+    {
+      "question_id": "67214cd5-e456-5ae5-a948-d7a58edc0ce8",
+      "question_text": "Upload evidence such as backup_test, continuity_plan, recovery_test that demonstrates: Supporting utilities Control: Information processing facilities shall be protected from power failures and other disruptions caused by failures in supporting utilities.",
+      "question_type": "evidence_upload",
+      "framework_name": "ISO/IEC 27001:2022",
+      "framework_key": "iso-27001-2022",
+      "domain_id": "7",
+      "domain_name": "Physical controls",
+      "control_id": "7.11",
+      "cross_references": [],
+      "expected_evidence": "backup_test, continuity_plan, recovery_test"
+    },
+    {
+      "question_id": "f070f0f9-46ca-511d-9c77-565e77bb1d1e",
+      "question_text": "Is the organization implementing and operating the control: Cabling security Control: Cables carrying power, data or supporting information services shall be protected from interception, interference or damage?",
+      "question_type": "yes_no",
+      "framework_name": "ISO/IEC 27001:2022",
+      "framework_key": "iso-27001-2022",
+      "domain_id": "7",
+      "domain_name": "Physical controls",
+      "control_id": "7.12",
+      "cross_references": [],
+      "expected_evidence": "facility_record, access_log, maintenance_log"
+    },
+    {
+      "question_id": "9976586e-2037-5852-a901-5f2d9b492e45",
+      "question_text": "Upload evidence such as facility_record, access_log, maintenance_log that demonstrates: Cabling security Control: Cables carrying power, data or supporting information services shall be protected from interception, interference or damage.",
+      "question_type": "evidence_upload",
+      "framework_name": "ISO/IEC 27001:2022",
+      "framework_key": "iso-27001-2022",
+      "domain_id": "7",
+      "domain_name": "Physical controls",
+      "control_id": "7.12",
+      "cross_references": [],
+      "expected_evidence": "facility_record, access_log, maintenance_log"
+    },
+    {
+      "question_id": "1354c600-d5a8-5b5b-b8be-2fbde1e1fefe",
+      "question_text": "Is the organization implementing and operating the control: Equipment maintenance Control: Equipment shall be maintained correctly to ensure availability, integrity and confidentiality of information?",
+      "question_type": "yes_no",
+      "framework_name": "ISO/IEC 27001:2022",
+      "framework_key": "iso-27001-2022",
+      "domain_id": "7",
+      "domain_name": "Physical controls",
+      "control_id": "7.13",
+      "cross_references": [],
+      "expected_evidence": "facility_record, access_log, maintenance_log"
+    },
+    {
+      "question_id": "09f965d0-92ec-5eb7-834b-c8cfad6497a5",
+      "question_text": "Upload evidence such as facility_record, access_log, maintenance_log that demonstrates: Equipment maintenance Control: Equipment shall be maintained correctly to ensure availability, integrity and confidentiality of information.",
+      "question_type": "evidence_upload",
+      "framework_name": "ISO/IEC 27001:2022",
+      "framework_key": "iso-27001-2022",
+      "domain_id": "7",
+      "domain_name": "Physical controls",
+      "control_id": "7.13",
+      "cross_references": [],
+      "expected_evidence": "facility_record, access_log, maintenance_log"
+    },
+    {
+      "question_id": "8bae8ab1-4d00-5497-ba51-ee4f48471bd3",
+      "question_text": "Is the organization implementing and operating the control: Secure disposal or re-use of equipment: Items of equipment containing storage media shall be verified to en sure that any sensitive data and licensed software has been removed or securely overwritten prior to disposal or re-use?",
+      "question_type": "yes_no",
+      "framework_name": "ISO/IEC 27001:2022",
+      "framework_key": "iso-27001-2022",
+      "domain_id": "7",
+      "domain_name": "Physical controls",
+      "control_id": "7.14",
+      "cross_references": [],
+      "expected_evidence": "project_record, change_ticket, engineering_standard"
+    },
+    {
+      "question_id": "fd7e72f3-f34a-5398-a005-746db84eeac7",
+      "question_text": "Upload evidence such as project_record, change_ticket, engineering_standard that demonstrates: Secure disposal or re-use of equipment: Items of equipment containing storage media shall be verified to en sure that any sensitive data and licensed software has been removed or securely overwritten prior to disposal or re-use.",
+      "question_type": "evidence_upload",
+      "framework_name": "ISO/IEC 27001:2022",
+      "framework_key": "iso-27001-2022",
+      "domain_id": "7",
+      "domain_name": "Physical controls",
+      "control_id": "7.14",
+      "cross_references": [],
+      "expected_evidence": "project_record, change_ticket, engineering_standard"
+    },
+    {
+      "question_id": "c996350e-9c59-556d-9d7d-4aebe54917d7",
+      "question_text": "Is the organization implementing and operating the control: Physical entry Control Secure areas shall be protected by appropriate entry controls and access points. 7. 3 Securing offices, rooms and fa cilities: Physical security for offices, rooms and facilities shall be designed and implemented?",
+      "question_type": "yes_no",
+      "framework_name": "ISO/IEC 27001:2022",
+      "framework_key": "iso-27001-2022",
+      "domain_id": "7",
+      "domain_name": "Physical controls",
+      "control_id": "7.2",
+      "cross_references": [],
+      "expected_evidence": "facility_record, access_log, maintenance_log"
+    },
+    {
+      "question_id": "86261cf8-0586-5763-9bc4-aa12c92e2f10",
+      "question_text": "Upload evidence such as facility_record, access_log, maintenance_log that demonstrates: Physical entry Control Secure areas shall be protected by appropriate entry controls and access points. 7. 3 Securing offices, rooms and fa cilities: Physical security for offices, rooms and facilities shall be designed and implemented.",
+      "question_type": "evidence_upload",
+      "framework_name": "ISO/IEC 27001:2022",
+      "framework_key": "iso-27001-2022",
+      "domain_id": "7",
+      "domain_name": "Physical controls",
+      "control_id": "7.2",
+      "cross_references": [],
+      "expected_evidence": "facility_record, access_log, maintenance_log"
+    },
+    {
+      "question_id": "3dbd1e4a-6f50-50fc-b609-5ace54e9b7ce",
+      "question_text": "Is the organization implementing and operating the control: Physical security monitoring Control Premises shall be continuously monitored for unauthorized physical access. © ISO/IEC 2022 - All rights reserved 7. 5 Protecting against physical and environmental threats: Protection against physical and environmental threats, such as natural disasters and other intentional or unintentional physical threats to infrastructure shall be designed and implemented?",
+      "question_type": "yes_no",
+      "framework_name": "ISO/IEC 27001:2022",
+      "framework_key": "iso-27001-2022",
+      "domain_id": "7",
+      "domain_name": "Physical controls",
+      "control_id": "7.4",
+      "cross_references": [],
+      "expected_evidence": "threat_report, intel_feed, analysis_note"
+    },
+    {
+      "question_id": "2f7ffd75-9b65-59d8-af60-2b725b199088",
+      "question_text": "Upload evidence such as threat_report, intel_feed, analysis_note that demonstrates: Physical security monitoring Control Premises shall be continuously monitored for unauthorized physical access. © ISO/IEC 2022 - All rights reserved 7. 5 Protecting against physical and environmental threats: Protection against physical and environmental threats, such as natural disasters and other intentional or unintentional physical threats to infrastructure shall be designed and implemented.",
+      "question_type": "evidence_upload",
+      "framework_name": "ISO/IEC 27001:2022",
+      "framework_key": "iso-27001-2022",
+      "domain_id": "7",
+      "domain_name": "Physical controls",
+      "control_id": "7.4",
+      "cross_references": [],
+      "expected_evidence": "threat_report, intel_feed, analysis_note"
+    },
+    {
+      "question_id": "88951a5f-de2d-5d04-ae75-c95a1b140f59",
+      "question_text": "Is the organization implementing and operating the control: Working in secure areas Control: Security measures for working in secure areas shall be designed and implemented?",
+      "question_type": "yes_no",
+      "framework_name": "ISO/IEC 27001:2022",
+      "framework_key": "iso-27001-2022",
+      "domain_id": "7",
+      "domain_name": "Physical controls",
+      "control_id": "7.6",
+      "cross_references": [],
+      "expected_evidence": "implementation_evidence, operational_record"
+    },
+    {
+      "question_id": "85434b5e-f576-56a3-804c-9f85086f9155",
+      "question_text": "Upload evidence such as implementation_evidence, operational_record that demonstrates: Working in secure areas Control: Security measures for working in secure areas shall be designed and implemented.",
+      "question_type": "evidence_upload",
+      "framework_name": "ISO/IEC 27001:2022",
+      "framework_key": "iso-27001-2022",
+      "domain_id": "7",
+      "domain_name": "Physical controls",
+      "control_id": "7.6",
+      "cross_references": [],
+      "expected_evidence": "implementation_evidence, operational_record"
+    },
+    {
+      "question_id": "7f6db657-9cfd-5bd3-b233-759b43d24afb",
+      "question_text": "Is the organization implementing and operating the control: Clear desk and clear screen Control: Clear desk rules for papers and removable storage media and clear screen rules for information processing facilities shall be defined and appropriately enforced?",
+      "question_type": "yes_no",
+      "framework_name": "ISO/IEC 27001:2022",
+      "framework_key": "iso-27001-2022",
+      "domain_id": "7",
+      "domain_name": "Physical controls",
+      "control_id": "7.7",
+      "cross_references": [],
+      "expected_evidence": "facility_record, access_log, maintenance_log"
+    },
+    {
+      "question_id": "b3d5dbae-ba1a-5c35-8cfd-6ac5671f0552",
+      "question_text": "Upload evidence such as facility_record, access_log, maintenance_log that demonstrates: Clear desk and clear screen Control: Clear desk rules for papers and removable storage media and clear screen rules for information processing facilities shall be defined and appropriately enforced.",
+      "question_type": "evidence_upload",
+      "framework_name": "ISO/IEC 27001:2022",
+      "framework_key": "iso-27001-2022",
+      "domain_id": "7",
+      "domain_name": "Physical controls",
+      "control_id": "7.7",
+      "cross_references": [],
+      "expected_evidence": "facility_record, access_log, maintenance_log"
+    },
+    {
+      "question_id": "f104cd42-1986-552f-b0ce-30e3fb46a230",
+      "question_text": "Is the organization implementing and operating the control: Equipment siting and protection Control: Equipment shall be sited securely and protected?",
+      "question_type": "yes_no",
+      "framework_name": "ISO/IEC 27001:2022",
+      "framework_key": "iso-27001-2022",
+      "domain_id": "7",
+      "domain_name": "Physical controls",
+      "control_id": "7.8",
+      "cross_references": [],
+      "expected_evidence": "facility_record, access_log, maintenance_log"
+    },
+    {
+      "question_id": "ba802b24-24f8-5678-b9c3-8ab882cd3c6d",
+      "question_text": "Upload evidence such as facility_record, access_log, maintenance_log that demonstrates: Equipment siting and protection Control: Equipment shall be sited securely and protected.",
+      "question_type": "evidence_upload",
+      "framework_name": "ISO/IEC 27001:2022",
+      "framework_key": "iso-27001-2022",
+      "domain_id": "7",
+      "domain_name": "Physical controls",
+      "control_id": "7.8",
+      "cross_references": [],
+      "expected_evidence": "facility_record, access_log, maintenance_log"
+    },
+    {
+      "question_id": "4144a4fe-5069-5c49-8241-710a99127a7f",
+      "question_text": "Is the organization implementing and operating the control: Security of assets off-premises Control: Off-site assets shall be protected?",
+      "question_type": "yes_no",
+      "framework_name": "ISO/IEC 27001:2022",
+      "framework_key": "iso-27001-2022",
+      "domain_id": "7",
+      "domain_name": "Physical controls",
+      "control_id": "7.9",
+      "cross_references": [],
+      "expected_evidence": "inventory, asset_register, owner_register"
+    },
+    {
+      "question_id": "cfda481a-7377-5b11-964b-253e2e7594e5",
+      "question_text": "Upload evidence such as inventory, asset_register, owner_register that demonstrates: Security of assets off-premises Control: Off-site assets shall be protected.",
+      "question_type": "evidence_upload",
+      "framework_name": "ISO/IEC 27001:2022",
+      "framework_key": "iso-27001-2022",
+      "domain_id": "7",
+      "domain_name": "Physical controls",
+      "control_id": "7.9",
+      "cross_references": [],
+      "expected_evidence": "inventory, asset_register, owner_register"
+    }
+  ],
+  "question_groups": [
+    {
+      "framework_id": "8ac1d180-5b22-5cf6-8a0b-df10e87ebad8",
+      "framework_key": "cis-controls-v8-1-2",
+      "framework_name": "CIS Controls v8.1.2",
+      "domain_id": "6",
+      "domain_name": "Access Control Management",
+      "domain_description": "",
+      "question_count": 8,
+      "questions": [
+        {
+          "item_id": "6ee81765-423b-5dd6-8bb1-90493c9006c6",
+          "question_id": "6ee81765-423b-5dd6-8bb1-90493c9006c6",
+          "question_text": "Is the organization implementing and operating the control: Establish an Access Granting Process: Establish and follow a documented process, preferably automated, for granting access to enterprise assets upon new hire or role change of a user?",
+          "question_type": "merged",
+          "answer_formats": [
+            "yes_no",
+            "evidence_upload"
+          ],
+          "framework_name": "CIS Controls v8.1.2",
+          "framework_key": "cis-controls-v8-1-2",
+          "domain_id": "6",
+          "domain_name": "Access Control Management",
+          "control_id": "6.1",
+          "control_statement": "Establish an Access Granting Process: Establish and follow a documented process, preferably automated, for granting access to enterprise assets upon new hire or role change of a user.",
+          "expected_evidence": "project_record, change_ticket, engineering_standard",
+          "maturity_level": "Defined",
+          "merge_reason": "Merged by control fallback because LLM output was unavailable or invalid.",
+          "source_item_ids": [
+            "25b8fa5e-b141-570c-be17-1e484c115eef",
+            "36144490-88e7-5e7c-a599-a3cb0017ed2d"
+          ],
+          "source_questions": [
+            {
+              "question_id": "3c3409ca-4333-5cdd-b58d-149cf81c8b06",
+              "question_text": "Is the organization implementing and operating the control: Establish an Access Granting Process: Establish and follow a documented process, preferably automated, for granting access to enterprise assets upon new hire or role change of a user?",
+              "question_type": "yes_no",
+              "framework_name": "CIS Controls v8.1.2",
+              "framework_key": "cis-controls-v8-1-2",
+              "domain_id": "6",
+              "domain_name": "Access Control Management",
+              "control_id": "6.1",
+              "cross_references": [
+                {
+                  "other_framework_id": "nist-csf-2-0",
+                  "other_control_id": "GV.RR-04",
+                  "relationship": "Subset",
+                  "description": "Cybersecurity is included in human resources practices"
+                }
+              ],
+              "expected_evidence": "project_record, change_ticket, engineering_standard"
+            },
+            {
+              "question_id": "dcb8acfe-a69a-5333-98f5-ae000fc99a59",
+              "question_text": "Upload evidence such as project_record, change_ticket, engineering_standard that demonstrates: Establish an Access Granting Process: Establish and follow a documented process, preferably automated, for granting access to enterprise assets upon new hire or role change of a user.",
+              "question_type": "evidence_upload",
+              "framework_name": "CIS Controls v8.1.2",
+              "framework_key": "cis-controls-v8-1-2",
+              "domain_id": "6",
+              "domain_name": "Access Control Management",
+              "control_id": "6.1",
+              "cross_references": [
+                {
+                  "other_framework_id": "nist-csf-2-0",
+                  "other_control_id": "GV.RR-04",
+                  "relationship": "Subset",
+                  "description": "Cybersecurity is included in human resources practices"
+                }
+              ],
+              "expected_evidence": "project_record, change_ticket, engineering_standard"
+            }
+          ],
+          "cross_references": [
+            {
+              "other_framework_id": "nist-csf-2-0",
+              "other_control_id": "GV.RR-04"
+            }
+          ]
+        },
+        {
+          "item_id": "8bdfdef2-75f1-5417-94ce-537b7525ffb7",
+          "question_id": "8bdfdef2-75f1-5417-94ce-537b7525ffb7",
+          "question_text": "Is the organization implementing and operating the control: Establish an Access Revoking Process: Establish and follow a process, preferably automated, for revoking access to enterprise assets, through disabling accounts immediately upon termination, rights revocation, or role change of a user. Disabling accounts, instead of deleting accounts, may be necessary to preserve audit trails?",
+          "question_type": "merged",
+          "answer_formats": [
+            "yes_no",
+            "evidence_upload"
+          ],
+          "framework_name": "CIS Controls v8.1.2",
+          "framework_key": "cis-controls-v8-1-2",
+          "domain_id": "6",
+          "domain_name": "Access Control Management",
+          "control_id": "6.2",
+          "control_statement": "Establish an Access Revoking Process: Establish and follow a process, preferably automated, for revoking access to enterprise assets, through disabling accounts immediately upon termination, rights revocation, or role change of a user. Disabling accounts, instead of deleting accounts, may be necessary to preserve audit trails.",
+          "expected_evidence": "project_record, change_ticket, engineering_standard",
+          "maturity_level": "Defined",
+          "merge_reason": "Merged by control fallback because LLM output was unavailable or invalid.",
+          "source_item_ids": [
+            "b543e95a-f985-56b8-bfdd-9c120c31b643",
+            "cf3a5784-fd7d-5138-b45b-47e7f128d1a5"
+          ],
+          "source_questions": [
+            {
+              "question_id": "d9066a00-4c16-56fe-9880-d4fc0b23ffa9",
+              "question_text": "Is the organization implementing and operating the control: Establish an Access Revoking Process: Establish and follow a process, preferably automated, for revoking access to enterprise assets, through disabling accounts immediately upon termination, rights revocation, or role change of a user. Disabling accounts, instead of deleting accounts, may be necessary to preserve audit trails?",
+              "question_type": "yes_no",
+              "framework_name": "CIS Controls v8.1.2",
+              "framework_key": "cis-controls-v8-1-2",
+              "domain_id": "6",
+              "domain_name": "Access Control Management",
+              "control_id": "6.2",
+              "cross_references": [
+                {
+                  "other_framework_id": "nist-csf-2-0",
+                  "other_control_id": "GV.RR-04",
+                  "relationship": "Subset",
+                  "description": "Cybersecurity is included in human resources practices"
+                }
+              ],
+              "expected_evidence": "project_record, change_ticket, engineering_standard"
+            },
+            {
+              "question_id": "31563fef-e845-57e3-b954-f73875dac99b",
+              "question_text": "Upload evidence such as project_record, change_ticket, engineering_standard that demonstrates: Establish an Access Revoking Process: Establish and follow a process, preferably automated, for revoking access to enterprise assets, through disabling accounts immediately upon termination, rights revocation, or role change of a user. Disabling accounts, instead of deleting accounts, may be necessary to preserve audit trails.",
+              "question_type": "evidence_upload",
+              "framework_name": "CIS Controls v8.1.2",
+              "framework_key": "cis-controls-v8-1-2",
+              "domain_id": "6",
+              "domain_name": "Access Control Management",
+              "control_id": "6.2",
+              "cross_references": [
+                {
+                  "other_framework_id": "nist-csf-2-0",
+                  "other_control_id": "GV.RR-04",
+                  "relationship": "Subset",
+                  "description": "Cybersecurity is included in human resources practices"
+                }
+              ],
+              "expected_evidence": "project_record, change_ticket, engineering_standard"
+            }
+          ],
+          "cross_references": [
+            {
+              "other_framework_id": "nist-csf-2-0",
+              "other_control_id": "GV.RR-04"
+            }
+          ]
+        },
+        {
+          "item_id": "a67788cc-d6d0-5ad3-8076-d01b12ad05cf",
+          "question_id": "a67788cc-d6d0-5ad3-8076-d01b12ad05cf",
+          "question_text": "Is the organization implementing and operating the control: Require MFA for Externally-Exposed Applications: Require all externally-exposed enterprise or third-party applications to enforce MFA, where supported. Enforcing MFA through a directory service or SSO provider is a satisfactory implementation of this Safeguard?",
+          "question_type": "merged",
+          "answer_formats": [
+            "yes_no",
+            "evidence_upload"
+          ],
+          "framework_name": "CIS Controls v8.1.2",
+          "framework_key": "cis-controls-v8-1-2",
+          "domain_id": "6",
+          "domain_name": "Access Control Management",
+          "control_id": "6.3",
+          "control_statement": "Require MFA for Externally-Exposed Applications: Require all externally-exposed enterprise or third-party applications to enforce MFA, where supported. Enforcing MFA through a directory service or SSO provider is a satisfactory implementation of this Safeguard.",
+          "expected_evidence": "implementation_evidence, operational_record",
+          "maturity_level": "Defined",
+          "merge_reason": "Merged by control fallback because LLM output was unavailable or invalid.",
+          "source_item_ids": [
+            "fae27342-32aa-53bf-9f2b-c5f328cb91af",
+            "432d4c7b-512a-5ac4-bc64-d40db3af0807"
+          ],
+          "source_questions": [
+            {
+              "question_id": "5f7630d0-809a-5075-ac9b-ad9fcd19605c",
+              "question_text": "Is the organization implementing and operating the control: Require MFA for Externally-Exposed Applications: Require all externally-exposed enterprise or third-party applications to enforce MFA, where supported. Enforcing MFA through a directory service or SSO provider is a satisfactory implementation of this Safeguard?",
+              "question_type": "yes_no",
+              "framework_name": "CIS Controls v8.1.2",
+              "framework_key": "cis-controls-v8-1-2",
+              "domain_id": "6",
+              "domain_name": "Access Control Management",
+              "control_id": "6.3",
+              "cross_references": [],
+              "expected_evidence": "implementation_evidence, operational_record"
+            },
+            {
+              "question_id": "ba4601bd-d221-5033-9fe2-94cdd5740637",
+              "question_text": "Upload evidence such as implementation_evidence, operational_record that demonstrates: Require MFA for Externally-Exposed Applications: Require all externally-exposed enterprise or third-party applications to enforce MFA, where supported. Enforcing MFA through a directory service or SSO provider is a satisfactory implementation of this Safeguard.",
+              "question_type": "evidence_upload",
+              "framework_name": "CIS Controls v8.1.2",
+              "framework_key": "cis-controls-v8-1-2",
+              "domain_id": "6",
+              "domain_name": "Access Control Management",
+              "control_id": "6.3",
+              "cross_references": [],
+              "expected_evidence": "implementation_evidence, operational_record"
+            }
+          ],
+          "cross_references": []
+        },
+        {
+          "item_id": "ca8f297f-8fd6-58f4-b200-973876ad7a87",
+          "question_id": "ca8f297f-8fd6-58f4-b200-973876ad7a87",
+          "question_text": "Is the organization implementing and operating the control: Require MFA for Remote Network Access: Require MFA for remote network access?",
+          "question_type": "merged",
+          "answer_formats": [
+            "yes_no",
+            "evidence_upload"
+          ],
+          "framework_name": "CIS Controls v8.1.2",
+          "framework_key": "cis-controls-v8-1-2",
+          "domain_id": "6",
+          "domain_name": "Access Control Management",
+          "control_id": "6.4",
+          "control_statement": "Require MFA for Remote Network Access: Require MFA for remote network access.",
+          "expected_evidence": "technical_control_record, system_config, monitoring_report",
+          "maturity_level": "Defined",
+          "merge_reason": "Merged by control fallback because LLM output was unavailable or invalid.",
+          "source_item_ids": [
+            "3bb79659-b347-514f-9ef9-d0421f33c63a",
+            "a12641f0-ea31-56b2-a4ec-30a7ce05f003"
+          ],
+          "source_questions": [
+            {
+              "question_id": "64873bab-2460-5df5-9af8-0c5337268649",
+              "question_text": "Is the organization implementing and operating the control: Require MFA for Remote Network Access: Require MFA for remote network access?",
+              "question_type": "yes_no",
+              "framework_name": "CIS Controls v8.1.2",
+              "framework_key": "cis-controls-v8-1-2",
+              "domain_id": "6",
+              "domain_name": "Access Control Management",
+              "control_id": "6.4",
+              "cross_references": [],
+              "expected_evidence": "technical_control_record, system_config, monitoring_report"
+            },
+            {
+              "question_id": "46bc11c9-7564-59f4-ba9a-db4f198a0b58",
+              "question_text": "Upload evidence such as technical_control_record, system_config, monitoring_report that demonstrates: Require MFA for Remote Network Access: Require MFA for remote network access.",
+              "question_type": "evidence_upload",
+              "framework_name": "CIS Controls v8.1.2",
+              "framework_key": "cis-controls-v8-1-2",
+              "domain_id": "6",
+              "domain_name": "Access Control Management",
+              "control_id": "6.4",
+              "cross_references": [],
+              "expected_evidence": "technical_control_record, system_config, monitoring_report"
+            }
+          ],
+          "cross_references": []
+        },
+        {
+          "item_id": "3d104e72-1e66-55c5-81bb-17fa0f285586",
+          "question_id": "3d104e72-1e66-55c5-81bb-17fa0f285586",
+          "question_text": "Is the organization implementing and operating the control: Require MFA for Administrative Access: Require MFA for all administrative access accounts, where supported, on all enterprise assets, whether managed on-site or through a service provider?",
+          "question_type": "merged",
+          "answer_formats": [
+            "yes_no",
+            "evidence_upload"
+          ],
+          "framework_name": "CIS Controls v8.1.2",
+          "framework_key": "cis-controls-v8-1-2",
+          "domain_id": "6",
+          "domain_name": "Access Control Management",
+          "control_id": "6.5",
+          "control_statement": "Require MFA for Administrative Access: Require MFA for all administrative access accounts, where supported, on all enterprise assets, whether managed on-site or through a service provider.",
+          "expected_evidence": "inventory, asset_register, owner_register",
+          "maturity_level": "Defined",
+          "merge_reason": "Merged by control fallback because LLM output was unavailable or invalid.",
+          "source_item_ids": [
+            "35a166ba-e0cc-5eea-9653-3a3e331c677d",
+            "5b23c1ff-e0f0-58cc-9759-e6659e9e3de8"
+          ],
+          "source_questions": [
+            {
+              "question_id": "476fa11c-8989-59e9-ba2d-7e3759639293",
+              "question_text": "Is the organization implementing and operating the control: Require MFA for Administrative Access: Require MFA for all administrative access accounts, where supported, on all enterprise assets, whether managed on-site or through a service provider?",
+              "question_type": "yes_no",
+              "framework_name": "CIS Controls v8.1.2",
+              "framework_key": "cis-controls-v8-1-2",
+              "domain_id": "6",
+              "domain_name": "Access Control Management",
+              "control_id": "6.5",
+              "cross_references": [],
+              "expected_evidence": "inventory, asset_register, owner_register"
+            },
+            {
+              "question_id": "1e970cfe-7c77-5d60-a3d9-02eb7dc90f44",
+              "question_text": "Upload evidence such as inventory, asset_register, owner_register that demonstrates: Require MFA for Administrative Access: Require MFA for all administrative access accounts, where supported, on all enterprise assets, whether managed on-site or through a service provider.",
+              "question_type": "evidence_upload",
+              "framework_name": "CIS Controls v8.1.2",
+              "framework_key": "cis-controls-v8-1-2",
+              "domain_id": "6",
+              "domain_name": "Access Control Management",
+              "control_id": "6.5",
+              "cross_references": [],
+              "expected_evidence": "inventory, asset_register, owner_register"
+            }
+          ],
+          "cross_references": []
+        },
+        {
+          "item_id": "c15f906c-30a8-5e03-8b6e-913abd78ffd5",
+          "question_id": "c15f906c-30a8-5e03-8b6e-913abd78ffd5",
+          "question_text": "Is the organization implementing and operating the control: Establish and Maintain an Inventory of Authentication and Authorization Systems: Establish and maintain an inventory of the enterprise's authentication and authorization systems, including those hosted on-site or at a remote service provider. Review and update the inventory, at a minimum, annually, or more frequently?",
+          "question_type": "merged",
+          "answer_formats": [
+            "yes_no",
+            "evidence_upload"
+          ],
+          "framework_name": "CIS Controls v8.1.2",
+          "framework_key": "cis-controls-v8-1-2",
+          "domain_id": "6",
+          "domain_name": "Access Control Management",
+          "control_id": "6.6",
+          "control_statement": "Establish and Maintain an Inventory of Authentication and Authorization Systems: Establish and maintain an inventory of the enterprise's authentication and authorization systems, including those hosted on-site or at a remote service provider. Review and update the inventory, at a minimum, annually, or more frequently.",
+          "expected_evidence": "project_record, change_ticket, engineering_standard",
+          "maturity_level": "Defined",
+          "merge_reason": "Merged by control fallback because LLM output was unavailable or invalid.",
+          "source_item_ids": [
+            "4847af5e-2246-5b98-b9df-4bd7b71fa774",
+            "00baae45-a2f7-5c13-a7eb-00f1d163f738"
+          ],
+          "source_questions": [
+            {
+              "question_id": "2c90a078-4eb8-5fb7-b39c-09ce9d1f1d6e",
+              "question_text": "Is the organization implementing and operating the control: Establish and Maintain an Inventory of Authentication and Authorization Systems: Establish and maintain an inventory of the enterprise's authentication and authorization systems, including those hosted on-site or at a remote service provider. Review and update the inventory, at a minimum, annually, or more frequently?",
+              "question_type": "yes_no",
+              "framework_name": "CIS Controls v8.1.2",
+              "framework_key": "cis-controls-v8-1-2",
+              "domain_id": "6",
+              "domain_name": "Access Control Management",
+              "control_id": "6.6",
+              "cross_references": [],
+              "expected_evidence": "project_record, change_ticket, engineering_standard"
+            },
+            {
+              "question_id": "b13be3b6-10aa-5b3f-bdb4-cb7951607daa",
+              "question_text": "Upload evidence such as project_record, change_ticket, engineering_standard that demonstrates: Establish and Maintain an Inventory of Authentication and Authorization Systems: Establish and maintain an inventory of the enterprise's authentication and authorization systems, including those hosted on-site or at a remote service provider. Review and update the inventory, at a minimum, annually, or more frequently.",
+              "question_type": "evidence_upload",
+              "framework_name": "CIS Controls v8.1.2",
+              "framework_key": "cis-controls-v8-1-2",
+              "domain_id": "6",
+              "domain_name": "Access Control Management",
+              "control_id": "6.6",
+              "cross_references": [],
+              "expected_evidence": "project_record, change_ticket, engineering_standard"
+            }
+          ],
+          "cross_references": []
+        },
+        {
+          "item_id": "1da27384-c553-5e23-8428-0ba99a85da14",
+          "question_id": "1da27384-c553-5e23-8428-0ba99a85da14",
+          "question_text": "Is the organization implementing and operating the control: Centralize Access Control: Centralize access control for all enterprise assets through a directory service or SSO provider, where supported?",
+          "question_type": "merged",
+          "answer_formats": [
+            "yes_no",
+            "evidence_upload"
+          ],
+          "framework_name": "CIS Controls v8.1.2",
+          "framework_key": "cis-controls-v8-1-2",
+          "domain_id": "6",
+          "domain_name": "Access Control Management",
+          "control_id": "6.7",
+          "control_statement": "Centralize Access Control: Centralize access control for all enterprise assets through a directory service or SSO provider, where supported.",
+          "expected_evidence": "inventory, asset_register, owner_register",
+          "maturity_level": "Defined",
+          "merge_reason": "Merged by control fallback because LLM output was unavailable or invalid.",
+          "source_item_ids": [
+            "f9a5bffd-6d81-5c96-ba7f-ab5baeba2e56",
+            "4a85ab2f-274f-55be-acb8-865a5dae04c0"
+          ],
+          "source_questions": [
+            {
+              "question_id": "9c578377-13ff-5031-b98a-c6f8f47d2ff1",
+              "question_text": "Is the organization implementing and operating the control: Centralize Access Control: Centralize access control for all enterprise assets through a directory service or SSO provider, where supported?",
+              "question_type": "yes_no",
+              "framework_name": "CIS Controls v8.1.2",
+              "framework_key": "cis-controls-v8-1-2",
+              "domain_id": "6",
+              "domain_name": "Access Control Management",
+              "control_id": "6.7",
+              "cross_references": [],
+              "expected_evidence": "inventory, asset_register, owner_register"
+            },
+            {
+              "question_id": "1f5b39cd-893c-59f8-819a-f57aa116fdd8",
+              "question_text": "Upload evidence such as inventory, asset_register, owner_register that demonstrates: Centralize Access Control: Centralize access control for all enterprise assets through a directory service or SSO provider, where supported.",
+              "question_type": "evidence_upload",
+              "framework_name": "CIS Controls v8.1.2",
+              "framework_key": "cis-controls-v8-1-2",
+              "domain_id": "6",
+              "domain_name": "Access Control Management",
+              "control_id": "6.7",
+              "cross_references": [],
+              "expected_evidence": "inventory, asset_register, owner_register"
+            }
+          ],
+          "cross_references": []
+        },
+        {
+          "item_id": "64a0c401-46a3-5d8f-a8f6-fdb0f91e0d73",
+          "question_id": "64a0c401-46a3-5d8f-a8f6-fdb0f91e0d73",
+          "question_text": "Is the organization implementing and operating the control: Define and Maintain Role-Based Access Control: Define and maintain role-based access control, through determining and documenting the access rights necessary for each role within the enterprise to successfully carry out its assigned duties. Perform access control reviews of enterprise assets to validate that all privileges are authorized, on a recurring schedule at a minimum annually, or more frequently?",
+          "question_type": "merged",
+          "answer_formats": [
+            "yes_no",
+            "evidence_upload"
+          ],
+          "framework_name": "CIS Controls v8.1.2",
+          "framework_key": "cis-controls-v8-1-2",
+          "domain_id": "6",
+          "domain_name": "Access Control Management",
+          "control_id": "6.8",
+          "control_statement": "Define and Maintain Role-Based Access Control: Define and maintain role-based access control, through determining and documenting the access rights necessary for each role within the enterprise to successfully carry out its assigned duties. Perform access control reviews of enterprise assets to validate that all privileges are authorized, on a recurring schedule at a minimum annually, or more frequently.",
+          "expected_evidence": "inventory, asset_register, owner_register",
+          "maturity_level": "Defined",
+          "merge_reason": "Merged by control fallback because LLM output was unavailable or invalid.",
+          "source_item_ids": [
+            "136bb6c5-8e7f-5188-93b2-f36cd6eaca19",
+            "3898b9fe-eeb5-53e6-a534-698be608e27f"
+          ],
+          "source_questions": [
+            {
+              "question_id": "fa20e132-359e-5bd9-ad44-a8cf14c36432",
+              "question_text": "Is the organization implementing and operating the control: Define and Maintain Role-Based Access Control: Define and maintain role-based access control, through determining and documenting the access rights necessary for each role within the enterprise to successfully carry out its assigned duties. Perform access control reviews of enterprise assets to validate that all privileges are authorized, on a recurring schedule at a minimum annually, or more frequently?",
+              "question_type": "yes_no",
+              "framework_name": "CIS Controls v8.1.2",
+              "framework_key": "cis-controls-v8-1-2",
+              "domain_id": "6",
+              "domain_name": "Access Control Management",
+              "control_id": "6.8",
+              "cross_references": [
+                {
+                  "other_framework_id": "nist-csf-2-0",
+                  "other_control_id": "PR.AA-05",
+                  "relationship": "Equivalent",
+                  "description": "Access permissions, entitlements, and authorizations are defined in a policy, managed, enforced, and reviewed, and incorporate the principles of least privilege and separation of duties"
+                }
+              ],
+              "expected_evidence": "inventory, asset_register, owner_register"
+            },
+            {
+              "question_id": "de5843aa-fcfb-56a0-b128-8f6cb2b1bb75",
+              "question_text": "Upload evidence such as inventory, asset_register, owner_register that demonstrates: Define and Maintain Role-Based Access Control: Define and maintain role-based access control, through determining and documenting the access rights necessary for each role within the enterprise to successfully carry out its assigned duties. Perform access control reviews of enterprise assets to validate that all privileges are authorized, on a recurring schedule at a minimum annually, or more frequently.",
+              "question_type": "evidence_upload",
+              "framework_name": "CIS Controls v8.1.2",
+              "framework_key": "cis-controls-v8-1-2",
+              "domain_id": "6",
+              "domain_name": "Access Control Management",
+              "control_id": "6.8",
+              "cross_references": [
+                {
+                  "other_framework_id": "nist-csf-2-0",
+                  "other_control_id": "PR.AA-05",
+                  "relationship": "Equivalent",
+                  "description": "Access permissions, entitlements, and authorizations are defined in a policy, managed, enforced, and reviewed, and incorporate the principles of least privilege and separation of duties"
+                }
+              ],
+              "expected_evidence": "inventory, asset_register, owner_register"
+            }
+          ],
+          "cross_references": [
+            {
+              "other_framework_id": "nist-csf-2-0",
+              "other_control_id": "PR.AA-05"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "framework_id": "iso-iec-27001-2022",
+      "framework_key": "iso-27001-2022",
+      "framework_name": "ISO/IEC 27001:2022",
+      "domain_id": "7",
+      "domain_name": "Physical controls",
+      "domain_description": "",
+      "question_count": 12,
+      "questions": [
+        {
+          "item_id": "f414002a-86f5-5f7b-ad0e-d1b986a7b8f6",
+          "question_id": "f414002a-86f5-5f7b-ad0e-d1b986a7b8f6",
+          "question_text": "Is the organization implementing and operating the control: Physical security perimeters Control: Security perimeters shall be defined and used to protect areas that contain information and other associated assets?",
+          "question_type": "merged",
+          "answer_formats": [
+            "yes_no",
+            "evidence_upload"
+          ],
+          "framework_name": "ISO/IEC 27001:2022",
+          "framework_key": "iso-27001-2022",
+          "domain_id": "7",
+          "domain_name": "Physical controls",
+          "control_id": "7.1",
+          "control_statement": "Physical security perimeters Control: Security perimeters shall be defined and used to protect areas that contain information and other associated assets.",
+          "expected_evidence": "inventory, asset_register, owner_register",
+          "maturity_level": "Initial",
+          "merge_reason": "Merged by control fallback because LLM output was unavailable or invalid.",
+          "source_item_ids": [
+            "46601521-425a-57bb-973e-46ebf24dac08",
+            "95b433a4-1294-5228-8367-5069a5b40b5e"
+          ],
+          "source_questions": [
+            {
+              "question_id": "02eeb767-46ff-5a31-9814-bcf34b785056",
+              "question_text": "Is the organization implementing and operating the control: Physical security perimeters Control: Security perimeters shall be defined and used to protect areas that contain information and other associated assets?",
+              "question_type": "yes_no",
+              "framework_name": "ISO/IEC 27001:2022",
+              "framework_key": "iso-27001-2022",
+              "domain_id": "7",
+              "domain_name": "Physical controls",
+              "control_id": "7.1",
+              "cross_references": [],
+              "expected_evidence": "inventory, asset_register, owner_register"
+            },
+            {
+              "question_id": "0fff8c2f-486c-5b75-bb75-59d029f759e0",
+              "question_text": "Upload evidence such as inventory, asset_register, owner_register that demonstrates: Physical security perimeters Control: Security perimeters shall be defined and used to protect areas that contain information and other associated assets.",
+              "question_type": "evidence_upload",
+              "framework_name": "ISO/IEC 27001:2022",
+              "framework_key": "iso-27001-2022",
+              "domain_id": "7",
+              "domain_name": "Physical controls",
+              "control_id": "7.1",
+              "cross_references": [],
+              "expected_evidence": "inventory, asset_register, owner_register"
+            }
+          ],
+          "cross_references": []
+        },
+        {
+          "item_id": "d5806357-f7ac-5018-ac0d-91c0d8d62ad2",
+          "question_id": "d5806357-f7ac-5018-ac0d-91c0d8d62ad2",
+          "question_text": "Is the organization implementing and operating the control: Storage media Control: Storage media shall be managed through their life cycle of acquisition, use, transportation and disposal in accordance with the organization's classification scheme and handling requirements?",
+          "question_type": "merged",
+          "answer_formats": [
+            "yes_no",
+            "evidence_upload"
+          ],
+          "framework_name": "ISO/IEC 27001:2022",
+          "framework_key": "iso-27001-2022",
+          "domain_id": "7",
+          "domain_name": "Physical controls",
+          "control_id": "7.10",
+          "control_statement": "Storage media Control: Storage media shall be managed through their life cycle of acquisition, use, transportation and disposal in accordance with the organization's classification scheme and handling requirements.",
+          "expected_evidence": "acceptable_use_policy, user_acknowledgement, procedure",
+          "maturity_level": "Initial",
+          "merge_reason": "Merged by control fallback because LLM output was unavailable or invalid.",
+          "source_item_ids": [
+            "98e2f370-a524-5ddc-99b4-4a11b6379cb1",
+            "bb5ae202-1b2f-551f-97ae-6d1fee82c36c"
+          ],
+          "source_questions": [
+            {
+              "question_id": "ed1e3836-c0ee-5d68-9d64-ee112bfc581c",
+              "question_text": "Is the organization implementing and operating the control: Storage media Control: Storage media shall be managed through their life cycle of acquisition, use, transportation and disposal in accordance with the organization's classification scheme and handling requirements?",
+              "question_type": "yes_no",
+              "framework_name": "ISO/IEC 27001:2022",
+              "framework_key": "iso-27001-2022",
+              "domain_id": "7",
+              "domain_name": "Physical controls",
+              "control_id": "7.10",
+              "cross_references": [],
+              "expected_evidence": "acceptable_use_policy, user_acknowledgement, procedure"
+            },
+            {
+              "question_id": "57b06179-ce5a-532a-a992-fa0f1af05767",
+              "question_text": "Upload evidence such as acceptable_use_policy, user_acknowledgement, procedure that demonstrates: Storage media Control: Storage media shall be managed through their life cycle of acquisition, use, transportation and disposal in accordance with the organization's classification scheme and handling requirements.",
+              "question_type": "evidence_upload",
+              "framework_name": "ISO/IEC 27001:2022",
+              "framework_key": "iso-27001-2022",
+              "domain_id": "7",
+              "domain_name": "Physical controls",
+              "control_id": "7.10",
+              "cross_references": [],
+              "expected_evidence": "acceptable_use_policy, user_acknowledgement, procedure"
+            }
+          ],
+          "cross_references": []
+        },
+        {
+          "item_id": "01e6f7cc-b6c6-5d2f-9278-b148279269c6",
+          "question_id": "01e6f7cc-b6c6-5d2f-9278-b148279269c6",
+          "question_text": "Is the organization implementing and operating the control: Supporting utilities Control: Information processing facilities shall be protected from power failures and other disruptions caused by failures in supporting utilities?",
+          "question_type": "merged",
+          "answer_formats": [
+            "yes_no",
+            "evidence_upload"
+          ],
+          "framework_name": "ISO/IEC 27001:2022",
+          "framework_key": "iso-27001-2022",
+          "domain_id": "7",
+          "domain_name": "Physical controls",
+          "control_id": "7.11",
+          "control_statement": "Supporting utilities Control: Information processing facilities shall be protected from power failures and other disruptions caused by failures in supporting utilities.",
+          "expected_evidence": "backup_test, continuity_plan, recovery_test",
+          "maturity_level": "Initial",
+          "merge_reason": "Merged by control fallback because LLM output was unavailable or invalid.",
+          "source_item_ids": [
+            "2c674664-22c9-528a-a54f-7827e0e677fc",
+            "db977711-aa8c-5d8c-ad22-318ce42d27ec"
+          ],
+          "source_questions": [
+            {
+              "question_id": "97629836-2f93-5360-a6ca-02eac707182a",
+              "question_text": "Is the organization implementing and operating the control: Supporting utilities Control: Information processing facilities shall be protected from power failures and other disruptions caused by failures in supporting utilities?",
+              "question_type": "yes_no",
+              "framework_name": "ISO/IEC 27001:2022",
+              "framework_key": "iso-27001-2022",
+              "domain_id": "7",
+              "domain_name": "Physical controls",
+              "control_id": "7.11",
+              "cross_references": [],
+              "expected_evidence": "backup_test, continuity_plan, recovery_test"
+            },
+            {
+              "question_id": "67214cd5-e456-5ae5-a948-d7a58edc0ce8",
+              "question_text": "Upload evidence such as backup_test, continuity_plan, recovery_test that demonstrates: Supporting utilities Control: Information processing facilities shall be protected from power failures and other disruptions caused by failures in supporting utilities.",
+              "question_type": "evidence_upload",
+              "framework_name": "ISO/IEC 27001:2022",
+              "framework_key": "iso-27001-2022",
+              "domain_id": "7",
+              "domain_name": "Physical controls",
+              "control_id": "7.11",
+              "cross_references": [],
+              "expected_evidence": "backup_test, continuity_plan, recovery_test"
+            }
+          ],
+          "cross_references": []
+        },
+        {
+          "item_id": "89d1a235-0356-5b1b-ae72-91794b947bf7",
+          "question_id": "89d1a235-0356-5b1b-ae72-91794b947bf7",
+          "question_text": "Is the organization implementing and operating the control: Cabling security Control: Cables carrying power, data or supporting information services shall be protected from interception, interference or damage?",
+          "question_type": "merged",
+          "answer_formats": [
+            "yes_no",
+            "evidence_upload"
+          ],
+          "framework_name": "ISO/IEC 27001:2022",
+          "framework_key": "iso-27001-2022",
+          "domain_id": "7",
+          "domain_name": "Physical controls",
+          "control_id": "7.12",
+          "control_statement": "Cabling security Control: Cables carrying power, data or supporting information services shall be protected from interception, interference or damage.",
+          "expected_evidence": "facility_record, access_log, maintenance_log",
+          "maturity_level": "Initial",
+          "merge_reason": "Merged by control fallback because LLM output was unavailable or invalid.",
+          "source_item_ids": [
+            "10f10ca5-3efd-5e07-9977-b90dda552c9b",
+            "6dde0163-23da-53a1-aaf7-ac5728c6b4e7"
+          ],
+          "source_questions": [
+            {
+              "question_id": "f070f0f9-46ca-511d-9c77-565e77bb1d1e",
+              "question_text": "Is the organization implementing and operating the control: Cabling security Control: Cables carrying power, data or supporting information services shall be protected from interception, interference or damage?",
+              "question_type": "yes_no",
+              "framework_name": "ISO/IEC 27001:2022",
+              "framework_key": "iso-27001-2022",
+              "domain_id": "7",
+              "domain_name": "Physical controls",
+              "control_id": "7.12",
+              "cross_references": [],
+              "expected_evidence": "facility_record, access_log, maintenance_log"
+            },
+            {
+              "question_id": "9976586e-2037-5852-a901-5f2d9b492e45",
+              "question_text": "Upload evidence such as facility_record, access_log, maintenance_log that demonstrates: Cabling security Control: Cables carrying power, data or supporting information services shall be protected from interception, interference or damage.",
+              "question_type": "evidence_upload",
+              "framework_name": "ISO/IEC 27001:2022",
+              "framework_key": "iso-27001-2022",
+              "domain_id": "7",
+              "domain_name": "Physical controls",
+              "control_id": "7.12",
+              "cross_references": [],
+              "expected_evidence": "facility_record, access_log, maintenance_log"
+            }
+          ],
+          "cross_references": []
+        },
+        {
+          "item_id": "e8f60d60-ce78-55da-aad1-ea155d538ac8",
+          "question_id": "e8f60d60-ce78-55da-aad1-ea155d538ac8",
+          "question_text": "Is the organization implementing and operating the control: Equipment maintenance Control: Equipment shall be maintained correctly to ensure availability, integrity and confidentiality of information?",
+          "question_type": "merged",
+          "answer_formats": [
+            "yes_no",
+            "evidence_upload"
+          ],
+          "framework_name": "ISO/IEC 27001:2022",
+          "framework_key": "iso-27001-2022",
+          "domain_id": "7",
+          "domain_name": "Physical controls",
+          "control_id": "7.13",
+          "control_statement": "Equipment maintenance Control: Equipment shall be maintained correctly to ensure availability, integrity and confidentiality of information.",
+          "expected_evidence": "facility_record, access_log, maintenance_log",
+          "maturity_level": "Initial",
+          "merge_reason": "Merged by control fallback because LLM output was unavailable or invalid.",
+          "source_item_ids": [
+            "3abb74ca-57ce-58a6-b001-639cbbd66156",
+            "0314a28f-a7c4-547e-bf13-46fd3781938c"
+          ],
+          "source_questions": [
+            {
+              "question_id": "1354c600-d5a8-5b5b-b8be-2fbde1e1fefe",
+              "question_text": "Is the organization implementing and operating the control: Equipment maintenance Control: Equipment shall be maintained correctly to ensure availability, integrity and confidentiality of information?",
+              "question_type": "yes_no",
+              "framework_name": "ISO/IEC 27001:2022",
+              "framework_key": "iso-27001-2022",
+              "domain_id": "7",
+              "domain_name": "Physical controls",
+              "control_id": "7.13",
+              "cross_references": [],
+              "expected_evidence": "facility_record, access_log, maintenance_log"
+            },
+            {
+              "question_id": "09f965d0-92ec-5eb7-834b-c8cfad6497a5",
+              "question_text": "Upload evidence such as facility_record, access_log, maintenance_log that demonstrates: Equipment maintenance Control: Equipment shall be maintained correctly to ensure availability, integrity and confidentiality of information.",
+              "question_type": "evidence_upload",
+              "framework_name": "ISO/IEC 27001:2022",
+              "framework_key": "iso-27001-2022",
+              "domain_id": "7",
+              "domain_name": "Physical controls",
+              "control_id": "7.13",
+              "cross_references": [],
+              "expected_evidence": "facility_record, access_log, maintenance_log"
+            }
+          ],
+          "cross_references": []
+        },
+        {
+          "item_id": "308ad3b4-b8da-51a4-a9a1-633f430ade7b",
+          "question_id": "308ad3b4-b8da-51a4-a9a1-633f430ade7b",
+          "question_text": "Is the organization implementing and operating the control: Secure disposal or re-use of equipment: Items of equipment containing storage media shall be verified to en sure that any sensitive data and licensed software has been removed or securely overwritten prior to disposal or re-use?",
+          "question_type": "merged",
+          "answer_formats": [
+            "yes_no",
+            "evidence_upload"
+          ],
+          "framework_name": "ISO/IEC 27001:2022",
+          "framework_key": "iso-27001-2022",
+          "domain_id": "7",
+          "domain_name": "Physical controls",
+          "control_id": "7.14",
+          "control_statement": "Secure disposal or re-use of equipment: Items of equipment containing storage media shall be verified to en sure that any sensitive data and licensed software has been removed or securely overwritten prior to disposal or re-use.",
+          "expected_evidence": "project_record, change_ticket, engineering_standard",
+          "maturity_level": "Initial",
+          "merge_reason": "Merged by control fallback because LLM output was unavailable or invalid.",
+          "source_item_ids": [
+            "af800426-b56a-5e23-ac61-6a08a53bb4cd",
+            "29f9574d-ad72-5355-aae3-9067598253dd"
+          ],
+          "source_questions": [
+            {
+              "question_id": "8bae8ab1-4d00-5497-ba51-ee4f48471bd3",
+              "question_text": "Is the organization implementing and operating the control: Secure disposal or re-use of equipment: Items of equipment containing storage media shall be verified to en sure that any sensitive data and licensed software has been removed or securely overwritten prior to disposal or re-use?",
+              "question_type": "yes_no",
+              "framework_name": "ISO/IEC 27001:2022",
+              "framework_key": "iso-27001-2022",
+              "domain_id": "7",
+              "domain_name": "Physical controls",
+              "control_id": "7.14",
+              "cross_references": [],
+              "expected_evidence": "project_record, change_ticket, engineering_standard"
+            },
+            {
+              "question_id": "fd7e72f3-f34a-5398-a005-746db84eeac7",
+              "question_text": "Upload evidence such as project_record, change_ticket, engineering_standard that demonstrates: Secure disposal or re-use of equipment: Items of equipment containing storage media shall be verified to en sure that any sensitive data and licensed software has been removed or securely overwritten prior to disposal or re-use.",
+              "question_type": "evidence_upload",
+              "framework_name": "ISO/IEC 27001:2022",
+              "framework_key": "iso-27001-2022",
+              "domain_id": "7",
+              "domain_name": "Physical controls",
+              "control_id": "7.14",
+              "cross_references": [],
+              "expected_evidence": "project_record, change_ticket, engineering_standard"
+            }
+          ],
+          "cross_references": []
+        },
+        {
+          "item_id": "6f835884-83d9-54bd-9c96-23ce2c2e1133",
+          "question_id": "6f835884-83d9-54bd-9c96-23ce2c2e1133",
+          "question_text": "Is the organization implementing and operating the control: Physical entry Control Secure areas shall be protected by appropriate entry controls and access points. 7. 3 Securing offices, rooms and fa cilities: Physical security for offices, rooms and facilities shall be designed and implemented?",
+          "question_type": "merged",
+          "answer_formats": [
+            "yes_no",
+            "evidence_upload"
+          ],
+          "framework_name": "ISO/IEC 27001:2022",
+          "framework_key": "iso-27001-2022",
+          "domain_id": "7",
+          "domain_name": "Physical controls",
+          "control_id": "7.2",
+          "control_statement": "Physical entry Control Secure areas shall be protected by appropriate entry controls and access points. 7. 3 Securing offices, rooms and fa cilities: Physical security for offices, rooms and facilities shall be designed and implemented.",
+          "expected_evidence": "facility_record, access_log, maintenance_log",
+          "maturity_level": "Initial",
+          "merge_reason": "Merged by control fallback because LLM output was unavailable or invalid.",
+          "source_item_ids": [
+            "8cbcccbc-5e38-5bb6-ba8e-a1aa9f2d7cf7",
+            "807e2c43-8701-5753-87dd-9abf7a580bb2"
+          ],
+          "source_questions": [
+            {
+              "question_id": "c996350e-9c59-556d-9d7d-4aebe54917d7",
+              "question_text": "Is the organization implementing and operating the control: Physical entry Control Secure areas shall be protected by appropriate entry controls and access points. 7. 3 Securing offices, rooms and fa cilities: Physical security for offices, rooms and facilities shall be designed and implemented?",
+              "question_type": "yes_no",
+              "framework_name": "ISO/IEC 27001:2022",
+              "framework_key": "iso-27001-2022",
+              "domain_id": "7",
+              "domain_name": "Physical controls",
+              "control_id": "7.2",
+              "cross_references": [],
+              "expected_evidence": "facility_record, access_log, maintenance_log"
+            },
+            {
+              "question_id": "86261cf8-0586-5763-9bc4-aa12c92e2f10",
+              "question_text": "Upload evidence such as facility_record, access_log, maintenance_log that demonstrates: Physical entry Control Secure areas shall be protected by appropriate entry controls and access points. 7. 3 Securing offices, rooms and fa cilities: Physical security for offices, rooms and facilities shall be designed and implemented.",
+              "question_type": "evidence_upload",
+              "framework_name": "ISO/IEC 27001:2022",
+              "framework_key": "iso-27001-2022",
+              "domain_id": "7",
+              "domain_name": "Physical controls",
+              "control_id": "7.2",
+              "cross_references": [],
+              "expected_evidence": "facility_record, access_log, maintenance_log"
+            }
+          ],
+          "cross_references": []
+        },
+        {
+          "item_id": "06d87acb-419f-535c-b3a5-6074d7084ad4",
+          "question_id": "06d87acb-419f-535c-b3a5-6074d7084ad4",
+          "question_text": "Is the organization implementing and operating the control: Physical security monitoring Control Premises shall be continuously monitored for unauthorized physical access. © ISO/IEC 2022 - All rights reserved 7. 5 Protecting against physical and environmental threats: Protection against physical and environmental threats, such as natural disasters and other intentional or unintentional physical threats to infrastructure shall be designed and implemented?",
+          "question_type": "merged",
+          "answer_formats": [
+            "yes_no",
+            "evidence_upload"
+          ],
+          "framework_name": "ISO/IEC 27001:2022",
+          "framework_key": "iso-27001-2022",
+          "domain_id": "7",
+          "domain_name": "Physical controls",
+          "control_id": "7.4",
+          "control_statement": "Physical security monitoring Control Premises shall be continuously monitored for unauthorized physical access. © ISO/IEC 2022 - All rights reserved 7. 5 Protecting against physical and environmental threats: Protection against physical and environmental threats, such as natural disasters and other intentional or unintentional physical threats to infrastructure shall be designed and implemented.",
+          "expected_evidence": "threat_report, intel_feed, analysis_note",
+          "maturity_level": "Initial",
+          "merge_reason": "Merged by control fallback because LLM output was unavailable or invalid.",
+          "source_item_ids": [
+            "a135074e-e066-587d-8adb-71a210a89820",
+            "b68b3ebf-1a47-5e7b-ac86-430fb541844c"
+          ],
+          "source_questions": [
+            {
+              "question_id": "3dbd1e4a-6f50-50fc-b609-5ace54e9b7ce",
+              "question_text": "Is the organization implementing and operating the control: Physical security monitoring Control Premises shall be continuously monitored for unauthorized physical access. © ISO/IEC 2022 - All rights reserved 7. 5 Protecting against physical and environmental threats: Protection against physical and environmental threats, such as natural disasters and other intentional or unintentional physical threats to infrastructure shall be designed and implemented?",
+              "question_type": "yes_no",
+              "framework_name": "ISO/IEC 27001:2022",
+              "framework_key": "iso-27001-2022",
+              "domain_id": "7",
+              "domain_name": "Physical controls",
+              "control_id": "7.4",
+              "cross_references": [],
+              "expected_evidence": "threat_report, intel_feed, analysis_note"
+            },
+            {
+              "question_id": "2f7ffd75-9b65-59d8-af60-2b725b199088",
+              "question_text": "Upload evidence such as threat_report, intel_feed, analysis_note that demonstrates: Physical security monitoring Control Premises shall be continuously monitored for unauthorized physical access. © ISO/IEC 2022 - All rights reserved 7. 5 Protecting against physical and environmental threats: Protection against physical and environmental threats, such as natural disasters and other intentional or unintentional physical threats to infrastructure shall be designed and implemented.",
+              "question_type": "evidence_upload",
+              "framework_name": "ISO/IEC 27001:2022",
+              "framework_key": "iso-27001-2022",
+              "domain_id": "7",
+              "domain_name": "Physical controls",
+              "control_id": "7.4",
+              "cross_references": [],
+              "expected_evidence": "threat_report, intel_feed, analysis_note"
+            }
+          ],
+          "cross_references": []
+        },
+        {
+          "item_id": "f2160087-6736-5d24-8157-1c3df0e7f5c5",
+          "question_id": "f2160087-6736-5d24-8157-1c3df0e7f5c5",
+          "question_text": "Is the organization implementing and operating the control: Working in secure areas Control: Security measures for working in secure areas shall be designed and implemented?",
+          "question_type": "merged",
+          "answer_formats": [
+            "yes_no",
+            "evidence_upload"
+          ],
+          "framework_name": "ISO/IEC 27001:2022",
+          "framework_key": "iso-27001-2022",
+          "domain_id": "7",
+          "domain_name": "Physical controls",
+          "control_id": "7.6",
+          "control_statement": "Working in secure areas Control: Security measures for working in secure areas shall be designed and implemented.",
+          "expected_evidence": "implementation_evidence, operational_record",
+          "maturity_level": "Initial",
+          "merge_reason": "Merged by control fallback because LLM output was unavailable or invalid.",
+          "source_item_ids": [
+            "82cd04a1-7e3e-577b-ba75-23952bee78f9",
+            "ddfb3427-445c-5e23-9bfa-e0d16a35c93a"
+          ],
+          "source_questions": [
+            {
+              "question_id": "88951a5f-de2d-5d04-ae75-c95a1b140f59",
+              "question_text": "Is the organization implementing and operating the control: Working in secure areas Control: Security measures for working in secure areas shall be designed and implemented?",
+              "question_type": "yes_no",
+              "framework_name": "ISO/IEC 27001:2022",
+              "framework_key": "iso-27001-2022",
+              "domain_id": "7",
+              "domain_name": "Physical controls",
+              "control_id": "7.6",
+              "cross_references": [],
+              "expected_evidence": "implementation_evidence, operational_record"
+            },
+            {
+              "question_id": "85434b5e-f576-56a3-804c-9f85086f9155",
+              "question_text": "Upload evidence such as implementation_evidence, operational_record that demonstrates: Working in secure areas Control: Security measures for working in secure areas shall be designed and implemented.",
+              "question_type": "evidence_upload",
+              "framework_name": "ISO/IEC 27001:2022",
+              "framework_key": "iso-27001-2022",
+              "domain_id": "7",
+              "domain_name": "Physical controls",
+              "control_id": "7.6",
+              "cross_references": [],
+              "expected_evidence": "implementation_evidence, operational_record"
+            }
+          ],
+          "cross_references": []
+        },
+        {
+          "item_id": "e7822088-36bf-5fb9-88e3-d799911561f0",
+          "question_id": "e7822088-36bf-5fb9-88e3-d799911561f0",
+          "question_text": "Is the organization implementing and operating the control: Clear desk and clear screen Control: Clear desk rules for papers and removable storage media and clear screen rules for information processing facilities shall be defined and appropriately enforced?",
+          "question_type": "merged",
+          "answer_formats": [
+            "yes_no",
+            "evidence_upload"
+          ],
+          "framework_name": "ISO/IEC 27001:2022",
+          "framework_key": "iso-27001-2022",
+          "domain_id": "7",
+          "domain_name": "Physical controls",
+          "control_id": "7.7",
+          "control_statement": "Clear desk and clear screen Control: Clear desk rules for papers and removable storage media and clear screen rules for information processing facilities shall be defined and appropriately enforced.",
+          "expected_evidence": "facility_record, access_log, maintenance_log",
+          "maturity_level": "Initial",
+          "merge_reason": "Merged by control fallback because LLM output was unavailable or invalid.",
+          "source_item_ids": [
+            "25811f8d-c1ca-5bd9-a8f8-8643f1dbb2a2",
+            "78f322d4-0464-50c3-b6cb-4108b407f925"
+          ],
+          "source_questions": [
+            {
+              "question_id": "7f6db657-9cfd-5bd3-b233-759b43d24afb",
+              "question_text": "Is the organization implementing and operating the control: Clear desk and clear screen Control: Clear desk rules for papers and removable storage media and clear screen rules for information processing facilities shall be defined and appropriately enforced?",
+              "question_type": "yes_no",
+              "framework_name": "ISO/IEC 27001:2022",
+              "framework_key": "iso-27001-2022",
+              "domain_id": "7",
+              "domain_name": "Physical controls",
+              "control_id": "7.7",
+              "cross_references": [],
+              "expected_evidence": "facility_record, access_log, maintenance_log"
+            },
+            {
+              "question_id": "b3d5dbae-ba1a-5c35-8cfd-6ac5671f0552",
+              "question_text": "Upload evidence such as facility_record, access_log, maintenance_log that demonstrates: Clear desk and clear screen Control: Clear desk rules for papers and removable storage media and clear screen rules for information processing facilities shall be defined and appropriately enforced.",
+              "question_type": "evidence_upload",
+              "framework_name": "ISO/IEC 27001:2022",
+              "framework_key": "iso-27001-2022",
+              "domain_id": "7",
+              "domain_name": "Physical controls",
+              "control_id": "7.7",
+              "cross_references": [],
+              "expected_evidence": "facility_record, access_log, maintenance_log"
+            }
+          ],
+          "cross_references": []
+        },
+        {
+          "item_id": "e2dcf852-74ed-5f6b-b4cf-5ccb22874214",
+          "question_id": "e2dcf852-74ed-5f6b-b4cf-5ccb22874214",
+          "question_text": "Is the organization implementing and operating the control: Equipment siting and protection Control: Equipment shall be sited securely and protected?",
+          "question_type": "merged",
+          "answer_formats": [
+            "yes_no",
+            "evidence_upload"
+          ],
+          "framework_name": "ISO/IEC 27001:2022",
+          "framework_key": "iso-27001-2022",
+          "domain_id": "7",
+          "domain_name": "Physical controls",
+          "control_id": "7.8",
+          "control_statement": "Equipment siting and protection Control: Equipment shall be sited securely and protected.",
+          "expected_evidence": "facility_record, access_log, maintenance_log",
+          "maturity_level": "Initial",
+          "merge_reason": "Merged by control fallback because LLM output was unavailable or invalid.",
+          "source_item_ids": [
+            "3a6e66f2-f20d-5a0c-9d9d-d770fe890015",
+            "f3c9ce4f-2967-5cf9-9d81-ce99d346a9b3"
+          ],
+          "source_questions": [
+            {
+              "question_id": "f104cd42-1986-552f-b0ce-30e3fb46a230",
+              "question_text": "Is the organization implementing and operating the control: Equipment siting and protection Control: Equipment shall be sited securely and protected?",
+              "question_type": "yes_no",
+              "framework_name": "ISO/IEC 27001:2022",
+              "framework_key": "iso-27001-2022",
+              "domain_id": "7",
+              "domain_name": "Physical controls",
+              "control_id": "7.8",
+              "cross_references": [],
+              "expected_evidence": "facility_record, access_log, maintenance_log"
+            },
+            {
+              "question_id": "ba802b24-24f8-5678-b9c3-8ab882cd3c6d",
+              "question_text": "Upload evidence such as facility_record, access_log, maintenance_log that demonstrates: Equipment siting and protection Control: Equipment shall be sited securely and protected.",
+              "question_type": "evidence_upload",
+              "framework_name": "ISO/IEC 27001:2022",
+              "framework_key": "iso-27001-2022",
+              "domain_id": "7",
+              "domain_name": "Physical controls",
+              "control_id": "7.8",
+              "cross_references": [],
+              "expected_evidence": "facility_record, access_log, maintenance_log"
+            }
+          ],
+          "cross_references": []
+        },
+        {
+          "item_id": "2cc9a9e7-86db-558f-89a7-0a8067eafd68",
+          "question_id": "2cc9a9e7-86db-558f-89a7-0a8067eafd68",
+          "question_text": "Is the organization implementing and operating the control: Security of assets off-premises Control: Off-site assets shall be protected?",
+          "question_type": "merged",
+          "answer_formats": [
+            "yes_no",
+            "evidence_upload"
+          ],
+          "framework_name": "ISO/IEC 27001:2022",
+          "framework_key": "iso-27001-2022",
+          "domain_id": "7",
+          "domain_name": "Physical controls",
+          "control_id": "7.9",
+          "control_statement": "Security of assets off-premises Control: Off-site assets shall be protected.",
+          "expected_evidence": "inventory, asset_register, owner_register",
+          "maturity_level": "Initial",
+          "merge_reason": "Merged by control fallback because LLM output was unavailable or invalid.",
+          "source_item_ids": [
+            "7f124334-bc22-5fb9-8a6d-5c71d9180379",
+            "fb5d5e6b-d9b2-5c51-beaa-466d99449578"
+          ],
+          "source_questions": [
+            {
+              "question_id": "4144a4fe-5069-5c49-8241-710a99127a7f",
+              "question_text": "Is the organization implementing and operating the control: Security of assets off-premises Control: Off-site assets shall be protected?",
+              "question_type": "yes_no",
+              "framework_name": "ISO/IEC 27001:2022",
+              "framework_key": "iso-27001-2022",
+              "domain_id": "7",
+              "domain_name": "Physical controls",
+              "control_id": "7.9",
+              "cross_references": [],
+              "expected_evidence": "inventory, asset_register, owner_register"
+            },
+            {
+              "question_id": "cfda481a-7377-5b11-964b-253e2e7594e5",
+              "question_text": "Upload evidence such as inventory, asset_register, owner_register that demonstrates: Security of assets off-premises Control: Off-site assets shall be protected.",
+              "question_type": "evidence_upload",
+              "framework_name": "ISO/IEC 27001:2022",
+              "framework_key": "iso-27001-2022",
+              "domain_id": "7",
+              "domain_name": "Physical controls",
+              "control_id": "7.9",
+              "cross_references": [],
+              "expected_evidence": "inventory, asset_register, owner_register"
+            }
+          ],
+          "cross_references": []
+        }
+      ]
+    }
+  ],
+  "selected_domain_keys": [
+    "cis-controls-v8-1-2:6",
+    "iso-27001-2022:7"
+  ],
+  "ingested_at": "2026-06-08T05:39:20.113041+00:00",
+  "Domains": [
+    {
+      "domain_id": "6",
+      "domain_name": "Access Control Management",
+      "Controls": [
+        {
+          "control_id": "6.1",
+          "control_statement": "Establish an Access Granting Process: Establish and follow a documented process, preferably automated, for granting access to enterprise assets upon new hire or role change of a user.",
+          "maturity_levels": [
+            "Defined"
+          ],
+          "expected_evidence_types": [
+            "project_record, change_ticket, engineering_standard"
+          ],
+          "cross_references": [
+            {
+              "other_framework_id": "nist-csf-2-0",
+              "other_control_id": "GV.RR-04"
+            }
+          ],
+          "Questions": [
+            {
+              "question_id": "3c3409ca-4333-5cdd-b58d-149cf81c8b06",
+              "question_text": "Is the organization implementing and operating the control: Establish an Access Granting Process: Establish and follow a documented process, preferably automated, for granting access to enterprise assets upon new hire or role change of a user?",
+              "question_type": "yes_no",
+              "weight": 3
+            },
+            {
+              "question_id": "dcb8acfe-a69a-5333-98f5-ae000fc99a59",
+              "question_text": "Upload evidence such as project_record, change_ticket, engineering_standard that demonstrates: Establish an Access Granting Process: Establish and follow a documented process, preferably automated, for granting access to enterprise assets upon new hire or role change of a user.",
+              "question_type": "evidence_upload",
+              "weight": 3
+            }
+          ]
+        },
+        {
+          "control_id": "6.2",
+          "control_statement": "Establish an Access Revoking Process: Establish and follow a process, preferably automated, for revoking access to enterprise assets, through disabling accounts immediately upon termination, rights revocation, or role change of a user. Disabling accounts, instead of deleting accounts, may be necessary to preserve audit trails.",
+          "maturity_levels": [
+            "Defined"
+          ],
+          "expected_evidence_types": [
+            "project_record, change_ticket, engineering_standard"
+          ],
+          "cross_references": [
+            {
+              "other_framework_id": "nist-csf-2-0",
+              "other_control_id": "GV.RR-04"
+            }
+          ],
+          "Questions": [
+            {
+              "question_id": "d9066a00-4c16-56fe-9880-d4fc0b23ffa9",
+              "question_text": "Is the organization implementing and operating the control: Establish an Access Revoking Process: Establish and follow a process, preferably automated, for revoking access to enterprise assets, through disabling accounts immediately upon termination, rights revocation, or role change of a user. Disabling accounts, instead of deleting accounts, may be necessary to preserve audit trails?",
+              "question_type": "yes_no",
+              "weight": 3
+            },
+            {
+              "question_id": "31563fef-e845-57e3-b954-f73875dac99b",
+              "question_text": "Upload evidence such as project_record, change_ticket, engineering_standard that demonstrates: Establish an Access Revoking Process: Establish and follow a process, preferably automated, for revoking access to enterprise assets, through disabling accounts immediately upon termination, rights revocation, or role change of a user. Disabling accounts, instead of deleting accounts, may be necessary to preserve audit trails.",
+              "question_type": "evidence_upload",
+              "weight": 3
+            }
+          ]
+        },
+        {
+          "control_id": "6.3",
+          "control_statement": "Require MFA for Externally-Exposed Applications: Require all externally-exposed enterprise or third-party applications to enforce MFA, where supported. Enforcing MFA through a directory service or SSO provider is a satisfactory implementation of this Safeguard.",
+          "maturity_levels": [
+            "Defined"
+          ],
+          "expected_evidence_types": [
+            "implementation_evidence, operational_record"
+          ],
+          "cross_references": [],
+          "Questions": [
+            {
+              "question_id": "5f7630d0-809a-5075-ac9b-ad9fcd19605c",
+              "question_text": "Is the organization implementing and operating the control: Require MFA for Externally-Exposed Applications: Require all externally-exposed enterprise or third-party applications to enforce MFA, where supported. Enforcing MFA through a directory service or SSO provider is a satisfactory implementation of this Safeguard?",
+              "question_type": "yes_no",
+              "weight": 3
+            },
+            {
+              "question_id": "ba4601bd-d221-5033-9fe2-94cdd5740637",
+              "question_text": "Upload evidence such as implementation_evidence, operational_record that demonstrates: Require MFA for Externally-Exposed Applications: Require all externally-exposed enterprise or third-party applications to enforce MFA, where supported. Enforcing MFA through a directory service or SSO provider is a satisfactory implementation of this Safeguard.",
+              "question_type": "evidence_upload",
+              "weight": 3
+            }
+          ]
+        },
+        {
+          "control_id": "6.4",
+          "control_statement": "Require MFA for Remote Network Access: Require MFA for remote network access.",
+          "maturity_levels": [
+            "Defined"
+          ],
+          "expected_evidence_types": [
+            "technical_control_record, system_config, monitoring_report"
+          ],
+          "cross_references": [],
+          "Questions": [
+            {
+              "question_id": "64873bab-2460-5df5-9af8-0c5337268649",
+              "question_text": "Is the organization implementing and operating the control: Require MFA for Remote Network Access: Require MFA for remote network access?",
+              "question_type": "yes_no",
+              "weight": 3
+            },
+            {
+              "question_id": "46bc11c9-7564-59f4-ba9a-db4f198a0b58",
+              "question_text": "Upload evidence such as technical_control_record, system_config, monitoring_report that demonstrates: Require MFA for Remote Network Access: Require MFA for remote network access.",
+              "question_type": "evidence_upload",
+              "weight": 3
+            }
+          ]
+        },
+        {
+          "control_id": "6.5",
+          "control_statement": "Require MFA for Administrative Access: Require MFA for all administrative access accounts, where supported, on all enterprise assets, whether managed on-site or through a service provider.",
+          "maturity_levels": [
+            "Defined"
+          ],
+          "expected_evidence_types": [
+            "inventory, asset_register, owner_register"
+          ],
+          "cross_references": [],
+          "Questions": [
+            {
+              "question_id": "476fa11c-8989-59e9-ba2d-7e3759639293",
+              "question_text": "Is the organization implementing and operating the control: Require MFA for Administrative Access: Require MFA for all administrative access accounts, where supported, on all enterprise assets, whether managed on-site or through a service provider?",
+              "question_type": "yes_no",
+              "weight": 3
+            },
+            {
+              "question_id": "1e970cfe-7c77-5d60-a3d9-02eb7dc90f44",
+              "question_text": "Upload evidence such as inventory, asset_register, owner_register that demonstrates: Require MFA for Administrative Access: Require MFA for all administrative access accounts, where supported, on all enterprise assets, whether managed on-site or through a service provider.",
+              "question_type": "evidence_upload",
+              "weight": 3
+            }
+          ]
+        },
+        {
+          "control_id": "6.6",
+          "control_statement": "Establish and Maintain an Inventory of Authentication and Authorization Systems: Establish and maintain an inventory of the enterprise's authentication and authorization systems, including those hosted on-site or at a remote service provider. Review and update the inventory, at a minimum, annually, or more frequently.",
+          "maturity_levels": [
+            "Defined"
+          ],
+          "expected_evidence_types": [
+            "project_record, change_ticket, engineering_standard"
+          ],
+          "cross_references": [],
+          "Questions": [
+            {
+              "question_id": "2c90a078-4eb8-5fb7-b39c-09ce9d1f1d6e",
+              "question_text": "Is the organization implementing and operating the control: Establish and Maintain an Inventory of Authentication and Authorization Systems: Establish and maintain an inventory of the enterprise's authentication and authorization systems, including those hosted on-site or at a remote service provider. Review and update the inventory, at a minimum, annually, or more frequently?",
+              "question_type": "yes_no",
+              "weight": 3
+            },
+            {
+              "question_id": "b13be3b6-10aa-5b3f-bdb4-cb7951607daa",
+              "question_text": "Upload evidence such as project_record, change_ticket, engineering_standard that demonstrates: Establish and Maintain an Inventory of Authentication and Authorization Systems: Establish and maintain an inventory of the enterprise's authentication and authorization systems, including those hosted on-site or at a remote service provider. Review and update the inventory, at a minimum, annually, or more frequently.",
+              "question_type": "evidence_upload",
+              "weight": 3
+            }
+          ]
+        },
+        {
+          "control_id": "6.7",
+          "control_statement": "Centralize Access Control: Centralize access control for all enterprise assets through a directory service or SSO provider, where supported.",
+          "maturity_levels": [
+            "Defined"
+          ],
+          "expected_evidence_types": [
+            "inventory, asset_register, owner_register"
+          ],
+          "cross_references": [],
+          "Questions": [
+            {
+              "question_id": "9c578377-13ff-5031-b98a-c6f8f47d2ff1",
+              "question_text": "Is the organization implementing and operating the control: Centralize Access Control: Centralize access control for all enterprise assets through a directory service or SSO provider, where supported?",
+              "question_type": "yes_no",
+              "weight": 3
+            },
+            {
+              "question_id": "1f5b39cd-893c-59f8-819a-f57aa116fdd8",
+              "question_text": "Upload evidence such as inventory, asset_register, owner_register that demonstrates: Centralize Access Control: Centralize access control for all enterprise assets through a directory service or SSO provider, where supported.",
+              "question_type": "evidence_upload",
+              "weight": 3
+            }
+          ]
+        },
+        {
+          "control_id": "6.8",
+          "control_statement": "Define and Maintain Role-Based Access Control: Define and maintain role-based access control, through determining and documenting the access rights necessary for each role within the enterprise to successfully carry out its assigned duties. Perform access control reviews of enterprise assets to validate that all privileges are authorized, on a recurring schedule at a minimum annually, or more frequently.",
+          "maturity_levels": [
+            "Defined"
+          ],
+          "expected_evidence_types": [
+            "inventory, asset_register, owner_register"
+          ],
+          "cross_references": [
+            {
+              "other_framework_id": "nist-csf-2-0",
+              "other_control_id": "PR.AA-05"
+            }
+          ],
+          "Questions": [
+            {
+              "question_id": "fa20e132-359e-5bd9-ad44-a8cf14c36432",
+              "question_text": "Is the organization implementing and operating the control: Define and Maintain Role-Based Access Control: Define and maintain role-based access control, through determining and documenting the access rights necessary for each role within the enterprise to successfully carry out its assigned duties. Perform access control reviews of enterprise assets to validate that all privileges are authorized, on a recurring schedule at a minimum annually, or more frequently?",
+              "question_type": "yes_no",
+              "weight": 3
+            },
+            {
+              "question_id": "de5843aa-fcfb-56a0-b128-8f6cb2b1bb75",
+              "question_text": "Upload evidence such as inventory, asset_register, owner_register that demonstrates: Define and Maintain Role-Based Access Control: Define and maintain role-based access control, through determining and documenting the access rights necessary for each role within the enterprise to successfully carry out its assigned duties. Perform access control reviews of enterprise assets to validate that all privileges are authorized, on a recurring schedule at a minimum annually, or more frequently.",
+              "question_type": "evidence_upload",
+              "weight": 3
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "domain_id": "7",
+      "domain_name": "Physical controls",
+      "Controls": [
+        {
+          "control_id": "7.1",
+          "control_statement": "Physical security perimeters Control: Security perimeters shall be defined and used to protect areas that contain information and other associated assets.",
+          "maturity_levels": [
+            "Initial"
+          ],
+          "expected_evidence_types": [
+            "inventory, asset_register, owner_register"
+          ],
+          "cross_references": [],
+          "Questions": [
+            {
+              "question_id": "02eeb767-46ff-5a31-9814-bcf34b785056",
+              "question_text": "Is the organization implementing and operating the control: Physical security perimeters Control: Security perimeters shall be defined and used to protect areas that contain information and other associated assets?",
+              "question_type": "yes_no",
+              "weight": 3
+            },
+            {
+              "question_id": "0fff8c2f-486c-5b75-bb75-59d029f759e0",
+              "question_text": "Upload evidence such as inventory, asset_register, owner_register that demonstrates: Physical security perimeters Control: Security perimeters shall be defined and used to protect areas that contain information and other associated assets.",
+              "question_type": "evidence_upload",
+              "weight": 3
+            }
+          ]
+        },
+        {
+          "control_id": "7.10",
+          "control_statement": "Storage media Control: Storage media shall be managed through their life cycle of acquisition, use, transportation and disposal in accordance with the organization's classification scheme and handling requirements.",
+          "maturity_levels": [
+            "Initial"
+          ],
+          "expected_evidence_types": [
+            "acceptable_use_policy, user_acknowledgement, procedure"
+          ],
+          "cross_references": [],
+          "Questions": [
+            {
+              "question_id": "ed1e3836-c0ee-5d68-9d64-ee112bfc581c",
+              "question_text": "Is the organization implementing and operating the control: Storage media Control: Storage media shall be managed through their life cycle of acquisition, use, transportation and disposal in accordance with the organization's classification scheme and handling requirements?",
+              "question_type": "yes_no",
+              "weight": 3
+            },
+            {
+              "question_id": "57b06179-ce5a-532a-a992-fa0f1af05767",
+              "question_text": "Upload evidence such as acceptable_use_policy, user_acknowledgement, procedure that demonstrates: Storage media Control: Storage media shall be managed through their life cycle of acquisition, use, transportation and disposal in accordance with the organization's classification scheme and handling requirements.",
+              "question_type": "evidence_upload",
+              "weight": 3
+            }
+          ]
+        },
+        {
+          "control_id": "7.11",
+          "control_statement": "Supporting utilities Control: Information processing facilities shall be protected from power failures and other disruptions caused by failures in supporting utilities.",
+          "maturity_levels": [
+            "Initial"
+          ],
+          "expected_evidence_types": [
+            "backup_test, continuity_plan, recovery_test"
+          ],
+          "cross_references": [],
+          "Questions": [
+            {
+              "question_id": "97629836-2f93-5360-a6ca-02eac707182a",
+              "question_text": "Is the organization implementing and operating the control: Supporting utilities Control: Information processing facilities shall be protected from power failures and other disruptions caused by failures in supporting utilities?",
+              "question_type": "yes_no",
+              "weight": 3
+            },
+            {
+              "question_id": "67214cd5-e456-5ae5-a948-d7a58edc0ce8",
+              "question_text": "Upload evidence such as backup_test, continuity_plan, recovery_test that demonstrates: Supporting utilities Control: Information processing facilities shall be protected from power failures and other disruptions caused by failures in supporting utilities.",
+              "question_type": "evidence_upload",
+              "weight": 3
+            }
+          ]
+        },
+        {
+          "control_id": "7.12",
+          "control_statement": "Cabling security Control: Cables carrying power, data or supporting information services shall be protected from interception, interference or damage.",
+          "maturity_levels": [
+            "Initial"
+          ],
+          "expected_evidence_types": [
+            "facility_record, access_log, maintenance_log"
+          ],
+          "cross_references": [],
+          "Questions": [
+            {
+              "question_id": "f070f0f9-46ca-511d-9c77-565e77bb1d1e",
+              "question_text": "Is the organization implementing and operating the control: Cabling security Control: Cables carrying power, data or supporting information services shall be protected from interception, interference or damage?",
+              "question_type": "yes_no",
+              "weight": 3
+            },
+            {
+              "question_id": "9976586e-2037-5852-a901-5f2d9b492e45",
+              "question_text": "Upload evidence such as facility_record, access_log, maintenance_log that demonstrates: Cabling security Control: Cables carrying power, data or supporting information services shall be protected from interception, interference or damage.",
+              "question_type": "evidence_upload",
+              "weight": 3
+            }
+          ]
+        },
+        {
+          "control_id": "7.13",
+          "control_statement": "Equipment maintenance Control: Equipment shall be maintained correctly to ensure availability, integrity and confidentiality of information.",
+          "maturity_levels": [
+            "Initial"
+          ],
+          "expected_evidence_types": [
+            "facility_record, access_log, maintenance_log"
+          ],
+          "cross_references": [],
+          "Questions": [
+            {
+              "question_id": "1354c600-d5a8-5b5b-b8be-2fbde1e1fefe",
+              "question_text": "Is the organization implementing and operating the control: Equipment maintenance Control: Equipment shall be maintained correctly to ensure availability, integrity and confidentiality of information?",
+              "question_type": "yes_no",
+              "weight": 3
+            },
+            {
+              "question_id": "09f965d0-92ec-5eb7-834b-c8cfad6497a5",
+              "question_text": "Upload evidence such as facility_record, access_log, maintenance_log that demonstrates: Equipment maintenance Control: Equipment shall be maintained correctly to ensure availability, integrity and confidentiality of information.",
+              "question_type": "evidence_upload",
+              "weight": 3
+            }
+          ]
+        },
+        {
+          "control_id": "7.14",
+          "control_statement": "Secure disposal or re-use of equipment: Items of equipment containing storage media shall be verified to en sure that any sensitive data and licensed software has been removed or securely overwritten prior to disposal or re-use.",
+          "maturity_levels": [
+            "Initial"
+          ],
+          "expected_evidence_types": [
+            "project_record, change_ticket, engineering_standard"
+          ],
+          "cross_references": [],
+          "Questions": [
+            {
+              "question_id": "8bae8ab1-4d00-5497-ba51-ee4f48471bd3",
+              "question_text": "Is the organization implementing and operating the control: Secure disposal or re-use of equipment: Items of equipment containing storage media shall be verified to en sure that any sensitive data and licensed software has been removed or securely overwritten prior to disposal or re-use?",
+              "question_type": "yes_no",
+              "weight": 3
+            },
+            {
+              "question_id": "fd7e72f3-f34a-5398-a005-746db84eeac7",
+              "question_text": "Upload evidence such as project_record, change_ticket, engineering_standard that demonstrates: Secure disposal or re-use of equipment: Items of equipment containing storage media shall be verified to en sure that any sensitive data and licensed software has been removed or securely overwritten prior to disposal or re-use.",
+              "question_type": "evidence_upload",
+              "weight": 3
+            }
+          ]
+        },
+        {
+          "control_id": "7.2",
+          "control_statement": "Physical entry Control Secure areas shall be protected by appropriate entry controls and access points. 7. 3 Securing offices, rooms and fa cilities: Physical security for offices, rooms and facilities shall be designed and implemented.",
+          "maturity_levels": [
+            "Initial"
+          ],
+          "expected_evidence_types": [
+            "facility_record, access_log, maintenance_log"
+          ],
+          "cross_references": [],
+          "Questions": [
+            {
+              "question_id": "c996350e-9c59-556d-9d7d-4aebe54917d7",
+              "question_text": "Is the organization implementing and operating the control: Physical entry Control Secure areas shall be protected by appropriate entry controls and access points. 7. 3 Securing offices, rooms and fa cilities: Physical security for offices, rooms and facilities shall be designed and implemented?",
+              "question_type": "yes_no",
+              "weight": 3
+            },
+            {
+              "question_id": "86261cf8-0586-5763-9bc4-aa12c92e2f10",
+              "question_text": "Upload evidence such as facility_record, access_log, maintenance_log that demonstrates: Physical entry Control Secure areas shall be protected by appropriate entry controls and access points. 7. 3 Securing offices, rooms and fa cilities: Physical security for offices, rooms and facilities shall be designed and implemented.",
+              "question_type": "evidence_upload",
+              "weight": 3
+            }
+          ]
+        },
+        {
+          "control_id": "7.4",
+          "control_statement": "Physical security monitoring Control Premises shall be continuously monitored for unauthorized physical access. © ISO/IEC 2022 - All rights reserved 7. 5 Protecting against physical and environmental threats: Protection against physical and environmental threats, such as natural disasters and other intentional or unintentional physical threats to infrastructure shall be designed and implemented.",
+          "maturity_levels": [
+            "Initial"
+          ],
+          "expected_evidence_types": [
+            "threat_report, intel_feed, analysis_note"
+          ],
+          "cross_references": [],
+          "Questions": [
+            {
+              "question_id": "3dbd1e4a-6f50-50fc-b609-5ace54e9b7ce",
+              "question_text": "Is the organization implementing and operating the control: Physical security monitoring Control Premises shall be continuously monitored for unauthorized physical access. © ISO/IEC 2022 - All rights reserved 7. 5 Protecting against physical and environmental threats: Protection against physical and environmental threats, such as natural disasters and other intentional or unintentional physical threats to infrastructure shall be designed and implemented?",
+              "question_type": "yes_no",
+              "weight": 3
+            },
+            {
+              "question_id": "2f7ffd75-9b65-59d8-af60-2b725b199088",
+              "question_text": "Upload evidence such as threat_report, intel_feed, analysis_note that demonstrates: Physical security monitoring Control Premises shall be continuously monitored for unauthorized physical access. © ISO/IEC 2022 - All rights reserved 7. 5 Protecting against physical and environmental threats: Protection against physical and environmental threats, such as natural disasters and other intentional or unintentional physical threats to infrastructure shall be designed and implemented.",
+              "question_type": "evidence_upload",
+              "weight": 3
+            }
+          ]
+        },
+        {
+          "control_id": "7.6",
+          "control_statement": "Working in secure areas Control: Security measures for working in secure areas shall be designed and implemented.",
+          "maturity_levels": [
+            "Initial"
+          ],
+          "expected_evidence_types": [
+            "implementation_evidence, operational_record"
+          ],
+          "cross_references": [],
+          "Questions": [
+            {
+              "question_id": "88951a5f-de2d-5d04-ae75-c95a1b140f59",
+              "question_text": "Is the organization implementing and operating the control: Working in secure areas Control: Security measures for working in secure areas shall be designed and implemented?",
+              "question_type": "yes_no",
+              "weight": 3
+            },
+            {
+              "question_id": "85434b5e-f576-56a3-804c-9f85086f9155",
+              "question_text": "Upload evidence such as implementation_evidence, operational_record that demonstrates: Working in secure areas Control: Security measures for working in secure areas shall be designed and implemented.",
+              "question_type": "evidence_upload",
+              "weight": 3
+            }
+          ]
+        },
+        {
+          "control_id": "7.7",
+          "control_statement": "Clear desk and clear screen Control: Clear desk rules for papers and removable storage media and clear screen rules for information processing facilities shall be defined and appropriately enforced.",
+          "maturity_levels": [
+            "Initial"
+          ],
+          "expected_evidence_types": [
+            "facility_record, access_log, maintenance_log"
+          ],
+          "cross_references": [],
+          "Questions": [
+            {
+              "question_id": "7f6db657-9cfd-5bd3-b233-759b43d24afb",
+              "question_text": "Is the organization implementing and operating the control: Clear desk and clear screen Control: Clear desk rules for papers and removable storage media and clear screen rules for information processing facilities shall be defined and appropriately enforced?",
+              "question_type": "yes_no",
+              "weight": 3
+            },
+            {
+              "question_id": "b3d5dbae-ba1a-5c35-8cfd-6ac5671f0552",
+              "question_text": "Upload evidence such as facility_record, access_log, maintenance_log that demonstrates: Clear desk and clear screen Control: Clear desk rules for papers and removable storage media and clear screen rules for information processing facilities shall be defined and appropriately enforced.",
+              "question_type": "evidence_upload",
+              "weight": 3
+            }
+          ]
+        },
+        {
+          "control_id": "7.8",
+          "control_statement": "Equipment siting and protection Control: Equipment shall be sited securely and protected.",
+          "maturity_levels": [
+            "Initial"
+          ],
+          "expected_evidence_types": [
+            "facility_record, access_log, maintenance_log"
+          ],
+          "cross_references": [],
+          "Questions": [
+            {
+              "question_id": "f104cd42-1986-552f-b0ce-30e3fb46a230",
+              "question_text": "Is the organization implementing and operating the control: Equipment siting and protection Control: Equipment shall be sited securely and protected?",
+              "question_type": "yes_no",
+              "weight": 3
+            },
+            {
+              "question_id": "ba802b24-24f8-5678-b9c3-8ab882cd3c6d",
+              "question_text": "Upload evidence such as facility_record, access_log, maintenance_log that demonstrates: Equipment siting and protection Control: Equipment shall be sited securely and protected.",
+              "question_type": "evidence_upload",
+              "weight": 3
+            }
+          ]
+        },
+        {
+          "control_id": "7.9",
+          "control_statement": "Security of assets off-premises Control: Off-site assets shall be protected.",
+          "maturity_levels": [
+            "Initial"
+          ],
+          "expected_evidence_types": [
+            "inventory, asset_register, owner_register"
+          ],
+          "cross_references": [],
+          "Questions": [
+            {
+              "question_id": "4144a4fe-5069-5c49-8241-710a99127a7f",
+              "question_text": "Is the organization implementing and operating the control: Security of assets off-premises Control: Off-site assets shall be protected?",
+              "question_type": "yes_no",
+              "weight": 3
+            },
+            {
+              "question_id": "cfda481a-7377-5b11-964b-253e2e7594e5",
+              "question_text": "Upload evidence such as inventory, asset_register, owner_register that demonstrates: Security of assets off-premises Control: Off-site assets shall be protected.",
+              "question_type": "evidence_upload",
+              "weight": 3
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

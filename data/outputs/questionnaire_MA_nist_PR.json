@@ -1,0 +1,132 @@
+{
+  "framework_id": "d048b355-a19a-52eb-bf3d-3e2133c57d1e",
+  "framework_name": "NIST CSF 2.0",
+  "domain_id": "PR",
+  "domain_name": "Protect",
+  "sections": [
+    {
+      "sub_topic": "Protect",
+      "control_ids": [
+        "PR.AA-01",
+        "PR.AA-02",
+        "PR.AA-03",
+        "PR.AA-05",
+        "PR.AT-01",
+        "PR.DS-01",
+        "PR.DS-02",
+        "PR.PS-01",
+        "PR.IR-01"
+      ],
+      "part1_question": {
+        "question_id": "f47ac10b-58cc-4372-a567-0e02b2c3d479",
+        "question_text": "Is MFA enforced?",
+        "question_type": "yes_no_with_detail",
+        "response_options": "Yes / No / Partial",
+        "detail_prompt": "If yes or partial, specify the tool or technology in use."
+      },
+      "questions": [
+        {
+          "question_id": "4b6c1c4d-5e6f-4789-0a1b-2c3d4e5f6a7b",
+          "text": "How frequently are access permissions reviewed?",
+          "help_text": "Provide review frequency",
+          "question_type": "FREE_TEXT",
+          "weight": 4,
+          "maturity_level": 4,
+          "expected_evidence_types": [
+            "access_review_report",
+            "rbac_matrix"
+          ]
+        },
+        {
+          "question_id": "8a7b6c5d-4e3f-2d1c-0b9a-8f7e6d5c4b3a",
+          "text": "What process triggers immediate credential revocation?",
+          "help_text": "Describe revocation process",
+          "question_type": "FREE_TEXT",
+          "weight": 5,
+          "maturity_level": 5,
+          "expected_evidence_types": [
+            "provisioning_records",
+            "user_account_audit"
+          ]
+        },
+        {
+          "question_id": "2c3d4e5f-6a7b-8c9d-0e1f-2a3b4c5d6e",
+          "text": "How are identities proofed and bound to credentials?",
+          "help_text": "Explain identity proofing",
+          "question_type": "FREE_TEXT",
+          "weight": 4,
+          "maturity_level": 4,
+          "expected_evidence_types": [
+            "identity_proofing_procedure",
+            "mfa_config"
+          ]
+        },
+        {
+          "question_id": "9f8e7d6c-5b4a-3c2b-1a0f-9e8d7c6b5a4",
+          "text": "What training is provided to personnel on cybersecurity risks?",
+          "help_text": "Describe training program",
+          "question_type": "FREE_TEXT",
+          "weight": 3,
+          "maturity_level": 3,
+          "expected_evidence_types": [
+            "security_awareness_program",
+            "quiz_results"
+          ]
+        },
+        {
+          "question_id": "1a2b3c4d-5e6f-7g8h-9i0j-1k2l3m4n5o",
+          "text": "How are data-at-rest and data-in-transit protected?",
+          "help_text": "Explain data protection",
+          "question_type": "FREE_TEXT",
+          "weight": 5,
+          "maturity_level": 5,
+          "expected_evidence_types": [
+            "encryption_policy",
+            "tls_config"
+          ]
+        },
+        {
+          "question_id": "6f5e4d3c-2b1a-0c9d-8f7e-6d5c4b3a2b1",
+          "text": "What configuration management practices are in place?",
+          "help_text": "Describe config management",
+          "question_type": "FREE_TEXT",
+          "weight": 4,
+          "maturity_level": 4,
+          "expected_evidence_types": [
+            "config_management_policy",
+            "baseline_configs"
+          ]
+        }
+      ],
+      "maturity_guide": {
+        "mature": "Identities and credentials are fully managed, with robust identity proofing, authentication, and access control in place, and regular reviews and training are conducted.",
+        "partial": "Identities and credentials are partially managed, with some gaps in identity proofing, authentication, and access control, and limited reviews and training are conducted.",
+        "critical_gap": "Identities and credentials are not managed, leaving the organization vulnerable to unauthorized access and data breaches."
+      },
+      "evidence_to_request": [
+        "iam_policy",
+        "user_account_audit",
+        "provisioning_records",
+        "identity_proofing_procedure",
+        "mfa_config",
+        "access_control_policy",
+        "rbac_matrix"
+      ],
+      "red_flags": [
+        {
+          "critical_gap": "Identities and credentials are not managed, leaving the organization vulnerable to unauthorized access and data breaches.",
+          "recommended_action": "Implement a comprehensive identity and access management system, including robust identity proofing, authentication, and access control."
+        },
+        {
+          "critical_gap": "Access permissions are not regularly reviewed, leading to potential unauthorized access.",
+          "recommended_action": "Conduct regular access reviews and implement a least privilege access model."
+        },
+        {
+          "critical_gap": "Data-at-rest and data-in-transit are not protected, leaving sensitive data vulnerable to unauthorized access.",
+          "recommended_action": "Implement robust data protection measures, including encryption and secure data transmission protocols."
+        }
+      ]
+    }
+  ],
+  "generated_at": "2026-06-10T04:33:50.455762+00:00"
+}

@@ -1,0 +1,129 @@
+{
+  "framework_id": "d048b355-a19a-52eb-bf3d-3e2133c57d1e",
+  "framework_name": "NIST CSF 2.0",
+  "domain_id": "ID",
+  "domain_name": "Identify",
+  "sections": [
+    {
+      "sub_topic": "Asset Management",
+      "control_ids": [
+        "ID.AM-01",
+        "ID.AM-02",
+        "ID.AM-05",
+        "ID.RA-01",
+        "ID.RA-02",
+        "ID.RA-06",
+        "ID.IM-01"
+      ],
+      "part1_question": {
+        "question_id": "f47ac10b-ee9e-43e4-9b95-13f5f33b8c12",
+        "question_text": "Is asset inventory management in place?",
+        "question_type": "yes_no_with_detail",
+        "response_options": "Yes / No / Partial",
+        "detail_prompt": "If yes or partial, specify the tool or technology in use."
+      },
+      "questions": [
+        {
+          "question_id": "5c5a5c5c-5c5c-5c5c-5c5c-5c5c5c5c5c5c",
+          "text": "How frequently are asset inventories updated?",
+          "help_text": "Provide update schedule",
+          "question_type": "FREE_TEXT",
+          "weight": 4,
+          "maturity_level": 3,
+          "expected_evidence_types": [
+            "asset_inventory",
+            "cmdb_export"
+          ]
+        },
+        {
+          "question_id": "2b2b2b2b-2b2b-2b2b-2b2b-2b2b2b2b2b2b",
+          "text": "What process is used to prioritize assets?",
+          "help_text": "Explain prioritization criteria",
+          "question_type": "FREE_TEXT",
+          "weight": 5,
+          "maturity_level": 4,
+          "expected_evidence_types": [
+            "asset_classification_policy",
+            "bia_report"
+          ]
+        },
+        {
+          "question_id": "8d8d8d8d-8d8d-8d8d-8d8d-8d8d8d8d8d8d",
+          "text": "How are vulnerabilities identified and recorded?",
+          "help_text": "Describe vulnerability management process",
+          "question_type": "FREE_TEXT",
+          "weight": 5,
+          "maturity_level": 4,
+          "expected_evidence_types": [
+            "vulnerability_scan_report",
+            "cve_tracker"
+          ]
+        },
+        {
+          "question_id": "1a1a1a1a-1a1a-1a1a-1a1a-1a1a1a1a1a1a",
+          "text": "What sources are used for cyber threat intelligence?",
+          "help_text": "List intelligence sources",
+          "question_type": "FREE_TEXT",
+          "weight": 4,
+          "maturity_level": 3,
+          "expected_evidence_types": [
+            "threat_intel_feeds",
+            "isac_membership"
+          ]
+        },
+        {
+          "question_id": "3c3c3c3c-3c3c-3c3c-3c3c-3c3c3c3c3c3c",
+          "text": "How are risk responses chosen and prioritized?",
+          "help_text": "Explain risk response process",
+          "question_type": "FREE_TEXT",
+          "weight": 5,
+          "maturity_level": 4,
+          "expected_evidence_types": [
+            "risk_treatment_plan",
+            "risk_register"
+          ]
+        },
+        {
+          "question_id": "6e6e6e6e-6e6e-6e6e-6e6e-6e6e6e6e6e6e",
+          "text": "What improvements have been identified from evaluations?",
+          "help_text": "Provide examples of improvements",
+          "question_type": "FREE_TEXT",
+          "weight": 4,
+          "maturity_level": 3,
+          "expected_evidence_types": [
+            "lessons_learned",
+            "improvement_log"
+          ]
+        }
+      ],
+      "maturity_guide": {
+        "mature": "Asset management is fully integrated with risk management and incident response, with automated inventory updates and vulnerability scanning.",
+        "partial": "Asset management is partially implemented, with some manual processes and incomplete inventory data, but with some vulnerability scanning and risk assessment.",
+        "critical_gap": "No asset management is in place, leaving the organization vulnerable to unmanaged assets and unpatched vulnerabilities."
+      },
+      "evidence_to_request": [
+        "asset_inventory",
+        "cmdb_export",
+        "vulnerability_scan_report",
+        "cve_tracker",
+        "threat_intel_feeds",
+        "risk_treatment_plan"
+      ],
+      "red_flags": [
+        {
+          "critical_gap": "No asset inventory is maintained, leaving the organization unable to track and manage its assets.",
+          "recommended_action": "Implement an asset inventory management system and conduct regular inventory updates."
+        },
+        {
+          "critical_gap": "No vulnerability scanning is performed, leaving the organization vulnerable to unpatched vulnerabilities.",
+          "recommended_action": "Implement vulnerability scanning and patch management processes."
+        },
+        {
+          "critical_gap": "No risk assessment is conducted, leaving the organization unable to prioritize and mitigate risks.",
+          "recommended_action": "Conduct regular risk assessments and implement risk mitigation strategies."
+        }
+      ]
+    }
+  ],
+  "generated_at": "2026-06-10T04:33:46.981760+00:00"
+}

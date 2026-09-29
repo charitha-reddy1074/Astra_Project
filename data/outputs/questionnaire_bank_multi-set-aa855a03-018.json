@@ -1,0 +1,1757 @@
+{
+  "questionnaire_id": "multi-set-aa855a03-018",
+  "questionnaire_type": "multi_framework",
+  "framework_id": "d6735bb3-cf10-52fd-ac01-d103712a58ff",
+  "name": "PCI DSS 4.0 (Cryptography in Transit) + PCI DSS 4.0 (Secure Configurations)",
+  "framework_names": [
+    "PCI DSS 4.0"
+  ],
+  "framework_summary": "PCI DSS 4.0",
+  "version": "1.0",
+  "source_format": "multi_framework_merged",
+  "question_count": 12,
+  "part1_checklist": [
+    {
+      "question_id": "cbeaeebb-9564-5347-9f34-f39832afe6cf",
+      "question_text": "Is the organization implementing and operating the control: Processes and mechanisms for protecting cardholder data with strong cryptography during transmission are defined and understood?",
+      "sub_topic": "",
+      "domain_name": "Cryptography in Transit",
+      "framework_name": "PCI DSS 4.0",
+      "control_id": "4.1",
+      "answer_format": "yes_no_with_detail",
+      "response_options": "Yes / No / Partial",
+      "detail_prompt": "If yes or partial, specify the tool or technology in use.",
+      "number": 1
+    },
+    {
+      "question_id": "ef4f8d2f-fa0b-547f-87e7-a28fc321cfca",
+      "question_text": "Is the organization implementing and operating the control: PAN is protected with strong cryptography during transmission over open, public networks?",
+      "sub_topic": "",
+      "domain_name": "Cryptography in Transit",
+      "framework_name": "PCI DSS 4.0",
+      "control_id": "4.2",
+      "answer_format": "yes_no_with_detail",
+      "response_options": "Yes / No / Partial",
+      "detail_prompt": "If yes or partial, specify the tool or technology in use.",
+      "number": 2
+    },
+    {
+      "question_id": "3e616ac8-d217-5a3f-b529-776300a68c12",
+      "question_text": "Is the organization implementing and operating the control: All security policies and operational procedures that are identified in Requirement 2 are: Documented, Kept up to date, In use, Known to all affected parties?",
+      "sub_topic": "",
+      "domain_name": "Secure Configurations",
+      "framework_name": "PCI DSS 4.0",
+      "control_id": "2.1.1",
+      "answer_format": "yes_no_with_detail",
+      "response_options": "Yes / No / Partial",
+      "detail_prompt": "If yes or partial, specify the tool or technology in use.",
+      "number": 3
+    },
+    {
+      "question_id": "98749c70-d651-51ba-8964-87142b42cf7b",
+      "question_text": "Is the organization implementing and operating the control: Roles and responsibilities for performing activities in Requirement 2 are documented, assigned, and understood?",
+      "sub_topic": "",
+      "domain_name": "Secure Configurations",
+      "framework_name": "PCI DSS 4.0",
+      "control_id": "2.1.2",
+      "answer_format": "yes_no_with_detail",
+      "response_options": "Yes / No / Partial",
+      "detail_prompt": "If yes or partial, specify the tool or technology in use.",
+      "number": 4
+    },
+    {
+      "question_id": "567126d6-30c6-5f03-b8e8-a132ce97808f",
+      "question_text": "Is the organization implementing and operating the control: Configuration standards are developed, implemented, and maintained to: Cover all system components, Address all known security vulnerabilities, Be consistent with industry-accepted system hardening standards or vendor hardening recommendations?",
+      "sub_topic": "",
+      "domain_name": "Secure Configurations",
+      "framework_name": "PCI DSS 4.0",
+      "control_id": "2.2.1",
+      "answer_format": "yes_no_with_detail",
+      "response_options": "Yes / No / Partial",
+      "detail_prompt": "If yes or partial, specify the tool or technology in use.",
+      "number": 5
+    },
+    {
+      "question_id": "1f8c9abf-81de-5f57-8cc5-114c2283b7fe",
+      "question_text": "Is the organization implementing and operating the control: For wireless environments connected to the CDE or transmitting account data, all wireless vendor defaults are changed at installation or are confirmed to be secure?",
+      "sub_topic": "",
+      "domain_name": "Secure Configurations",
+      "framework_name": "PCI DSS 4.0",
+      "control_id": "2.3.1",
+      "answer_format": "yes_no_with_detail",
+      "response_options": "Yes / No / Partial",
+      "detail_prompt": "If yes or partial, specify the tool or technology in use.",
+      "number": 6
+    }
+  ],
+  "question_groups": [
+    {
+      "framework_id": "c0a73a89-31f0-4db4-bd23-eba40a6d2bd1",
+      "framework_key": "framework_pci_dss_4_0",
+      "framework_name": "PCI DSS 4.0",
+      "domain_id": "REQ-4",
+      "domain_name": "Cryptography in Transit",
+      "domain_description": "",
+      "question_count": 2,
+      "questions": [
+        {
+          "item_id": "3130306c-b8ae-5b8d-975a-6efebaaa302e",
+          "question_id": "3130306c-b8ae-5b8d-975a-6efebaaa302e",
+          "question_text": "Is the organization implementing and operating the control: Processes and mechanisms for protecting cardholder data with strong cryptography during transmission are defined and understood?",
+          "question_type": "merged",
+          "answer_formats": [
+            "yes_no",
+            "evidence_upload"
+          ],
+          "framework_name": "PCI DSS 4.0",
+          "framework_key": "framework_pci_dss_4_0",
+          "domain_id": "REQ-4",
+          "domain_name": "Cryptography in Transit",
+          "control_id": "4.1",
+          "control_statement": "Processes and mechanisms for protecting cardholder data with strong cryptography during transmission are defined and understood.",
+          "expected_evidence": "transmission_policies, encryption_key_management_policies",
+          "maturity_level": "Level 1: Ad-hoc - Cryptography in transit is not consistently implemented.",
+          "merge_reason": "Merged by control fallback because LLM output was unavailable or invalid.",
+          "source_item_ids": [
+            "dc3992e9-2c84-5648-895d-cd67f2e58a7d",
+            "59d932c1-faf7-5072-bacf-e7e1f8e97ed5"
+          ],
+          "source_questions": [
+            {
+              "question_id": "2985606f-c9fe-5113-ac5f-4b6b2697988f",
+              "question_text": "Is the organization implementing and operating the control: Processes and mechanisms for protecting cardholder data with strong cryptography during transmission are defined and understood?",
+              "question_type": "yes_no",
+              "framework_name": "PCI DSS 4.0",
+              "framework_key": "framework_pci_dss_4_0",
+              "domain_id": "REQ-4",
+              "domain_name": "Cryptography in Transit",
+              "control_id": "4.1",
+              "cross_references": [],
+              "expected_evidence": "transmission_policies, encryption_key_management_policies"
+            },
+            {
+              "question_id": "0360a34b-aea5-5751-ab3d-e291642605d0",
+              "question_text": "Upload evidence such as transmission_policies, encryption_key_management_policies that demonstrates: Processes and mechanisms for protecting cardholder data with strong cryptography during transmission are defined and understood.",
+              "question_type": "evidence_upload",
+              "framework_name": "PCI DSS 4.0",
+              "framework_key": "framework_pci_dss_4_0",
+              "domain_id": "REQ-4",
+              "domain_name": "Cryptography in Transit",
+              "control_id": "4.1",
+              "cross_references": [],
+              "expected_evidence": "transmission_policies, encryption_key_management_policies"
+            }
+          ],
+          "cross_references": []
+        },
+        {
+          "item_id": "633d3b29-43d8-59a4-a14b-0852b851ba7b",
+          "question_id": "633d3b29-43d8-59a4-a14b-0852b851ba7b",
+          "question_text": "Is the organization implementing and operating the control: PAN is protected with strong cryptography during transmission over open, public networks?",
+          "question_type": "merged",
+          "answer_formats": [
+            "yes_no",
+            "evidence_upload"
+          ],
+          "framework_name": "PCI DSS 4.0",
+          "framework_key": "framework_pci_dss_4_0",
+          "domain_id": "REQ-4",
+          "domain_name": "Cryptography in Transit",
+          "control_id": "4.2",
+          "control_statement": "PAN is protected with strong cryptography during transmission over open, public networks.",
+          "expected_evidence": "transmission_policies, encryption_key_management_policies",
+          "maturity_level": "Level 1: Ad-hoc - PAN transmission protection is not consistently implemented.",
+          "merge_reason": "Merged by control fallback because LLM output was unavailable or invalid.",
+          "source_item_ids": [
+            "907af639-c1b9-5b48-8626-f534bb2b0c03",
+            "e5bd1ee4-c144-5b14-a890-86c9c51baa0b"
+          ],
+          "source_questions": [
+            {
+              "question_id": "5061708c-3121-5080-adf5-794db0201a2a",
+              "question_text": "Is the organization implementing and operating the control: PAN is protected with strong cryptography during transmission over open, public networks?",
+              "question_type": "yes_no",
+              "framework_name": "PCI DSS 4.0",
+              "framework_key": "framework_pci_dss_4_0",
+              "domain_id": "REQ-4",
+              "domain_name": "Cryptography in Transit",
+              "control_id": "4.2",
+              "cross_references": [],
+              "expected_evidence": "transmission_policies, encryption_key_management_policies"
+            },
+            {
+              "question_id": "83b32659-c961-5fd0-a5cc-4c88f2f91ad8",
+              "question_text": "Upload evidence such as transmission_policies, encryption_key_management_policies that demonstrates: PAN is protected with strong cryptography during transmission over open, public networks.",
+              "question_type": "evidence_upload",
+              "framework_name": "PCI DSS 4.0",
+              "framework_key": "framework_pci_dss_4_0",
+              "domain_id": "REQ-4",
+              "domain_name": "Cryptography in Transit",
+              "control_id": "4.2",
+              "cross_references": [],
+              "expected_evidence": "transmission_policies, encryption_key_management_policies"
+            }
+          ],
+          "cross_references": []
+        }
+      ],
+      "sub_topics": [
+        {
+          "sub_topic": "Cryptography in Transit",
+          "control_ids": [
+            "4.1",
+            "4.2"
+          ],
+          "part1_question": {
+            "question_id": "f47ac10b-ee9e-43b4-93c9-5244c822bf4a",
+            "question_text": "Is TLS used?",
+            "question_type": "yes_no_with_detail",
+            "response_options": "Yes / No / Partial",
+            "detail_prompt": "If yes or partial, specify the tool or technology in use."
+          },
+          "questions": [
+            {
+              "question_id": "4c5a5c7d-5f4e-4678-9f5e-4a5e6f7g8h9",
+              "text": "How are encryption keys managed?",
+              "help_text": "Key lifecycle",
+              "question_type": "FREE_TEXT",
+              "weight": 4,
+              "maturity_level": 4,
+              "expected_evidence_types": [
+                "encryption_key_management_policies",
+                "key_rotation_logs"
+              ]
+            },
+            {
+              "question_id": "1a2b3c4d-5d6e-7f8g-9h0i-1j2k3l4m5",
+              "text": "What cipher suites are used for TLS?",
+              "help_text": "Check protocol versions",
+              "question_type": "FREE_TEXT",
+              "weight": 3,
+              "maturity_level": 3,
+              "expected_evidence_types": [
+                "tls_config",
+                "cipher_suite_list"
+              ]
+            },
+            {
+              "question_id": "6g7h8i9j-0k1l2m3-4n5o6p7",
+              "text": "Are transmission policies reviewed annually?",
+              "help_text": "Check review frequency",
+              "question_type": "YES_NO",
+              "weight": 2,
+              "maturity_level": 2,
+              "expected_evidence_types": [
+                "transmission_policies",
+                "review_records"
+              ]
+            },
+            {
+              "question_id": "2c3d4e5f-6g7h8i9-0j1k2l3",
+              "text": "How are exceptions to encryption handled?",
+              "help_text": "Check exception process",
+              "question_type": "FREE_TEXT",
+              "weight": 4,
+              "maturity_level": 4,
+              "expected_evidence_types": [
+                "exception_policies",
+                "exception_logs"
+              ]
+            },
+            {
+              "question_id": "8i9j0k1-2l3m4n5-6o7p8q9",
+              "text": "What is the process for updating TLS configurations?",
+              "help_text": "Check update procedure",
+              "question_type": "FREE_TEXT",
+              "weight": 3,
+              "maturity_level": 3,
+              "expected_evidence_types": [
+                "tls_config",
+                "update_procedure"
+              ]
+            },
+            {
+              "question_id": "5n6m7l8-9k0j1i2-3h4g5f6",
+              "text": "Are encryption protocols regularly assessed?",
+              "help_text": "Check assessment frequency",
+              "question_type": "SCALE_1_5",
+              "weight": 4,
+              "maturity_level": 4,
+              "expected_evidence_types": [
+                "assessment_records",
+                "protocol_evaluation"
+              ]
+            },
+            {
+              "question_id": "9p0o8i7-6n5m4l3-2k1j0h9",
+              "text": "How are cryptographic vulnerabilities addressed?",
+              "help_text": "Check vulnerability management",
+              "question_type": "FREE_TEXT",
+              "weight": 5,
+              "maturity_level": 5,
+              "expected_evidence_types": [
+                "vulnerability_scan",
+                "patch_management"
+              ]
+            },
+            {
+              "question_id": "1k2l3m4-5n6o7p8-9q0r1s2",
+              "text": "What training is provided for cryptographic key management?",
+              "help_text": "Check training program",
+              "question_type": "FREE_TEXT",
+              "weight": 2,
+              "maturity_level": 2,
+              "expected_evidence_types": [
+                "training_records",
+                "key_management_procedures"
+              ]
+            },
+            {
+              "question_id": "7d6c5b4-3a2s1d0-9f8g7h6",
+              "text": "Which of the following best describes your TLS configuration?",
+              "help_text": "Check protocol versions",
+              "question_type": "MULTI_CHOICE",
+              "choices": [
+                "TLS 1.2",
+                "TLS 1.3",
+                "Both"
+              ],
+              "weight": 3,
+              "maturity_level": 3,
+              "expected_evidence_types": [
+                "tls_config",
+                "protocol_version"
+              ]
+            },
+            {
+              "question_id": "4e5r6t7-8y9u0i1-2o3p4q5",
+              "text": "How are cryptographic controls monitored for compliance?",
+              "help_text": "Check monitoring process",
+              "question_type": "FREE_TEXT",
+              "weight": 4,
+              "maturity_level": 4,
+              "expected_evidence_types": [
+                "compliance_monitoring",
+                "audit_logs"
+              ]
+            }
+          ],
+          "maturity_guide": {
+            "mature": "Strong cryptography is consistently used to protect cardholder data during transmission, with well-defined and regularly reviewed policies and procedures in place.",
+            "partial": "Cryptography is used, but policies and procedures may be incomplete, outdated, or not consistently followed, leaving some gaps in protection.",
+            "critical_gap": "Cardholder data is transmitted without adequate cryptographic protection, leaving it vulnerable to interception and unauthorized access."
+          },
+          "evidence_to_request": [
+            "transmission_policies",
+            "encryption_key_management_policies",
+            "tls_config",
+            "cipher_suite_list",
+            "key_rotation_logs"
+          ],
+          "red_flags": [
+            {
+              "critical_gap": "Cardholder data is transmitted in plaintext over open, public networks.",
+              "recommended_action": "Implement strong cryptography, such as TLS, to protect cardholder data during transmission."
+            },
+            {
+              "critical_gap": "Encryption keys are not properly managed, leaving them vulnerable to unauthorized access.",
+              "recommended_action": "Implement a robust key management process, including secure key generation, distribution, and rotation."
+            },
+            {
+              "critical_gap": "TLS configurations are not regularly updated or patched, leaving them vulnerable to known vulnerabilities.",
+              "recommended_action": "Regularly review and update TLS configurations to ensure they are up-to-date and secure."
+            }
+          ]
+        }
+      ],
+      "evidence_to_request": [
+        "transmission_policies",
+        "encryption_key_management_policies",
+        "tls_config",
+        "cipher_suite_list",
+        "key_rotation_logs"
+      ],
+      "red_flags": [
+        {
+          "critical_gap": "Cardholder data is transmitted in plaintext over open, public networks.",
+          "recommended_action": "Implement strong cryptography, such as TLS, to protect cardholder data during transmission."
+        },
+        {
+          "critical_gap": "Encryption keys are not properly managed, leaving them vulnerable to unauthorized access.",
+          "recommended_action": "Implement a robust key management process, including secure key generation, distribution, and rotation."
+        },
+        {
+          "critical_gap": "TLS configurations are not regularly updated or patched, leaving them vulnerable to known vulnerabilities.",
+          "recommended_action": "Regularly review and update TLS configurations to ensure they are up-to-date and secure."
+        }
+      ],
+      "maturity_guide": {
+        "mature": "Strong cryptography is consistently used to protect cardholder data during transmission, with well-defined and regularly reviewed policies and procedures in place.",
+        "partial": "Cryptography is used, but policies and procedures may be incomplete, outdated, or not consistently followed, leaving some gaps in protection.",
+        "critical_gap": "Cardholder data is transmitted without adequate cryptographic protection, leaving it vulnerable to interception and unauthorized access."
+      }
+    },
+    {
+      "framework_id": "c0a73a89-31f0-4db4-bd23-eba40a6d2bd1",
+      "framework_key": "framework_pci_dss_4_0",
+      "framework_name": "PCI DSS 4.0",
+      "domain_id": "REQ-2",
+      "domain_name": "Secure Configurations",
+      "domain_description": "",
+      "question_count": 4,
+      "questions": [
+        {
+          "item_id": "9e32a037-5c1f-5254-9520-760ac5db9988",
+          "question_id": "9e32a037-5c1f-5254-9520-760ac5db9988",
+          "question_text": "Is the organization implementing and operating the control: All security policies and operational procedures that are identified in Requirement 2 are: Documented, Kept up to date, In use, Known to all affected parties?",
+          "question_type": "merged",
+          "answer_formats": [
+            "yes_no",
+            "evidence_upload"
+          ],
+          "framework_name": "PCI DSS 4.0",
+          "framework_key": "framework_pci_dss_4_0",
+          "domain_id": "REQ-2",
+          "domain_name": "Secure Configurations",
+          "control_id": "2.1.1",
+          "control_statement": "All security policies and operational procedures that are identified in Requirement 2 are: Documented, Kept up to date, In use, Known to all affected parties.",
+          "expected_evidence": "security_policies, operational_procedures",
+          "maturity_level": "Level 1: Ad-hoc - Security policies and procedures are not well-defined or documented.",
+          "merge_reason": "Merged by control fallback because LLM output was unavailable or invalid.",
+          "source_item_ids": [
+            "295a1cb0-0092-555f-9bcc-eb41d997dc2a",
+            "22b60b02-41b9-57fe-b191-101fa910302c"
+          ],
+          "source_questions": [
+            {
+              "question_id": "709c6a99-f56b-508e-b051-fb8ac0043f81",
+              "question_text": "Is the organization implementing and operating the control: All security policies and operational procedures that are identified in Requirement 2 are: Documented, Kept up to date, In use, Known to all affected parties?",
+              "question_type": "yes_no",
+              "framework_name": "PCI DSS 4.0",
+              "framework_key": "framework_pci_dss_4_0",
+              "domain_id": "REQ-2",
+              "domain_name": "Secure Configurations",
+              "control_id": "2.1.1",
+              "cross_references": [],
+              "expected_evidence": "security_policies, operational_procedures"
+            },
+            {
+              "question_id": "ff900bfa-5e1b-5718-a3f5-99463943fa1c",
+              "question_text": "Upload evidence such as security_policies, operational_procedures that demonstrates: All security policies and operational procedures that are identified in Requirement 2 are: Documented, Kept up to date, In use, Known to all affected parties.",
+              "question_type": "evidence_upload",
+              "framework_name": "PCI DSS 4.0",
+              "framework_key": "framework_pci_dss_4_0",
+              "domain_id": "REQ-2",
+              "domain_name": "Secure Configurations",
+              "control_id": "2.1.1",
+              "cross_references": [],
+              "expected_evidence": "security_policies, operational_procedures"
+            }
+          ],
+          "cross_references": []
+        },
+        {
+          "item_id": "a4176fdf-b49b-58a1-8401-0b796cecfaf1",
+          "question_id": "a4176fdf-b49b-58a1-8401-0b796cecfaf1",
+          "question_text": "Is the organization implementing and operating the control: Roles and responsibilities for performing activities in Requirement 2 are documented, assigned, and understood?",
+          "question_type": "merged",
+          "answer_formats": [
+            "yes_no",
+            "evidence_upload"
+          ],
+          "framework_name": "PCI DSS 4.0",
+          "framework_key": "framework_pci_dss_4_0",
+          "domain_id": "REQ-2",
+          "domain_name": "Secure Configurations",
+          "control_id": "2.1.2",
+          "control_statement": "Roles and responsibilities for performing activities in Requirement 2 are documented, assigned, and understood.",
+          "expected_evidence": "role_definitions, responsibility_assignments",
+          "maturity_level": "Level 1: Ad-hoc - Roles and responsibilities are not clearly defined or documented.",
+          "merge_reason": "Merged by control fallback because LLM output was unavailable or invalid.",
+          "source_item_ids": [
+            "039789c9-b181-56f8-b30f-fd06b0334fb9",
+            "015c669a-657a-5d3c-9e9f-dc009598b7ac"
+          ],
+          "source_questions": [
+            {
+              "question_id": "f95f0242-7d41-5680-ac6c-e08c6e24fb55",
+              "question_text": "Is the organization implementing and operating the control: Roles and responsibilities for performing activities in Requirement 2 are documented, assigned, and understood?",
+              "question_type": "yes_no",
+              "framework_name": "PCI DSS 4.0",
+              "framework_key": "framework_pci_dss_4_0",
+              "domain_id": "REQ-2",
+              "domain_name": "Secure Configurations",
+              "control_id": "2.1.2",
+              "cross_references": [],
+              "expected_evidence": "role_definitions, responsibility_assignments"
+            },
+            {
+              "question_id": "4e76a35c-9c76-5268-acd8-f99c2705d658",
+              "question_text": "Upload evidence such as role_definitions, responsibility_assignments that demonstrates: Roles and responsibilities for performing activities in Requirement 2 are documented, assigned, and understood.",
+              "question_type": "evidence_upload",
+              "framework_name": "PCI DSS 4.0",
+              "framework_key": "framework_pci_dss_4_0",
+              "domain_id": "REQ-2",
+              "domain_name": "Secure Configurations",
+              "control_id": "2.1.2",
+              "cross_references": [],
+              "expected_evidence": "role_definitions, responsibility_assignments"
+            }
+          ],
+          "cross_references": []
+        },
+        {
+          "item_id": "555a9b4e-6561-564a-9486-cc9dae4e7615",
+          "question_id": "555a9b4e-6561-564a-9486-cc9dae4e7615",
+          "question_text": "Is the organization implementing and operating the control: Configuration standards are developed, implemented, and maintained to: Cover all system components, Address all known security vulnerabilities, Be consistent with industry-accepted system hardening standards or vendor hardening recommendations?",
+          "question_type": "merged",
+          "answer_formats": [
+            "yes_no",
+            "evidence_upload"
+          ],
+          "framework_name": "PCI DSS 4.0",
+          "framework_key": "framework_pci_dss_4_0",
+          "domain_id": "REQ-2",
+          "domain_name": "Secure Configurations",
+          "control_id": "2.2.1",
+          "control_statement": "Configuration standards are developed, implemented, and maintained to: Cover all system components, Address all known security vulnerabilities, Be consistent with industry-accepted system hardening standards or vendor hardening recommendations.",
+          "expected_evidence": "configuration_standards, system_component_configurations",
+          "maturity_level": "Level 1: Ad-hoc - Configuration standards are not well-defined or documented.",
+          "merge_reason": "Merged by control fallback because LLM output was unavailable or invalid.",
+          "source_item_ids": [
+            "2e394cfe-c553-5915-b730-85108beae750",
+            "e964c6de-7517-545b-bbdc-f4af63511b3d"
+          ],
+          "source_questions": [
+            {
+              "question_id": "4ba10bc9-8ecf-584f-9077-27eacfcf6660",
+              "question_text": "Is the organization implementing and operating the control: Configuration standards are developed, implemented, and maintained to: Cover all system components, Address all known security vulnerabilities, Be consistent with industry-accepted system hardening standards or vendor hardening recommendations?",
+              "question_type": "yes_no",
+              "framework_name": "PCI DSS 4.0",
+              "framework_key": "framework_pci_dss_4_0",
+              "domain_id": "REQ-2",
+              "domain_name": "Secure Configurations",
+              "control_id": "2.2.1",
+              "cross_references": [],
+              "expected_evidence": "configuration_standards, system_component_configurations"
+            },
+            {
+              "question_id": "f7add040-b108-58c3-adc8-3c5cbfb6a5fa",
+              "question_text": "Upload evidence such as configuration_standards, system_component_configurations that demonstrates: Configuration standards are developed, implemented, and maintained to: Cover all system components, Address all known security vulnerabilities, Be consistent with industry-accepted system hardening standards or vendor hardening recommendations.",
+              "question_type": "evidence_upload",
+              "framework_name": "PCI DSS 4.0",
+              "framework_key": "framework_pci_dss_4_0",
+              "domain_id": "REQ-2",
+              "domain_name": "Secure Configurations",
+              "control_id": "2.2.1",
+              "cross_references": [],
+              "expected_evidence": "configuration_standards, system_component_configurations"
+            }
+          ],
+          "cross_references": []
+        },
+        {
+          "item_id": "330cc897-8e1b-5676-99b0-c72b67f4e201",
+          "question_id": "330cc897-8e1b-5676-99b0-c72b67f4e201",
+          "question_text": "Is the organization implementing and operating the control: For wireless environments connected to the CDE or transmitting account data, all wireless vendor defaults are changed at installation or are confirmed to be secure?",
+          "question_type": "merged",
+          "answer_formats": [
+            "yes_no",
+            "evidence_upload"
+          ],
+          "framework_name": "PCI DSS 4.0",
+          "framework_key": "framework_pci_dss_4_0",
+          "domain_id": "REQ-2",
+          "domain_name": "Secure Configurations",
+          "control_id": "2.3.1",
+          "control_statement": "For wireless environments connected to the CDE or transmitting account data, all wireless vendor defaults are changed at installation or are confirmed to be secure.",
+          "expected_evidence": "wireless_vendor_defaults, security_configurations",
+          "maturity_level": "Level 1: Ad-hoc - Wireless vendor defaults are not changed or confirmed to be secure.",
+          "merge_reason": "Merged by control fallback because LLM output was unavailable or invalid.",
+          "source_item_ids": [
+            "ff44aa4e-f971-59aa-9170-3e034930252e",
+            "06b528a7-a6f4-5ae7-8541-af4add279212"
+          ],
+          "source_questions": [
+            {
+              "question_id": "4a704f3a-d185-50fd-994b-8b4a1d44032a",
+              "question_text": "Is the organization implementing and operating the control: For wireless environments connected to the CDE or transmitting account data, all wireless vendor defaults are changed at installation or are confirmed to be secure?",
+              "question_type": "yes_no",
+              "framework_name": "PCI DSS 4.0",
+              "framework_key": "framework_pci_dss_4_0",
+              "domain_id": "REQ-2",
+              "domain_name": "Secure Configurations",
+              "control_id": "2.3.1",
+              "cross_references": [],
+              "expected_evidence": "wireless_vendor_defaults, security_configurations"
+            },
+            {
+              "question_id": "3ccb71e3-f04b-58a3-935d-5d4466cd95ee",
+              "question_text": "Upload evidence such as wireless_vendor_defaults, security_configurations that demonstrates: For wireless environments connected to the CDE or transmitting account data, all wireless vendor defaults are changed at installation or are confirmed to be secure.",
+              "question_type": "evidence_upload",
+              "framework_name": "PCI DSS 4.0",
+              "framework_key": "framework_pci_dss_4_0",
+              "domain_id": "REQ-2",
+              "domain_name": "Secure Configurations",
+              "control_id": "2.3.1",
+              "cross_references": [],
+              "expected_evidence": "wireless_vendor_defaults, security_configurations"
+            }
+          ],
+          "cross_references": []
+        }
+      ],
+      "sub_topics": [
+        {
+          "sub_topic": "Secure Configurations",
+          "control_ids": [
+            "2.1.1",
+            "2.1.2",
+            "2.2.1",
+            "2.3.1"
+          ],
+          "part1_question": {
+            "question_id": "f47ac10b-ee9e-43e5-93a6-7befe4f5f2e5",
+            "question_text": "Are security policies documented?",
+            "question_type": "yes_no_with_detail",
+            "response_options": "Yes / No / Partial",
+            "detail_prompt": "If yes or partial, specify the tool or technology in use."
+          },
+          "questions": [
+            {
+              "question_id": "4c85b6a5-2a4b-4d8f-8f4e-5c4e5f6g7h8",
+              "text": "How are security policies reviewed and updated?",
+              "help_text": "Provide review process details",
+              "question_type": "FREE_TEXT",
+              "weight": 4,
+              "maturity_level": 4,
+              "expected_evidence_types": [
+                "security_policies",
+                "operational_procedures"
+              ]
+            },
+            {
+              "question_id": "1a2b3c4d-5e6f-7g8h-9i0j-1k2l3m4n5o",
+              "text": "What roles are responsible for maintaining configuration standards?",
+              "help_text": "List specific roles",
+              "question_type": "FREE_TEXT",
+              "weight": 3,
+              "maturity_level": 3,
+              "expected_evidence_types": [
+                "role_definitions",
+                "responsibility_assignments"
+              ]
+            },
+            {
+              "question_id": "6f5g4h3j2k1l0i9u8y7t6r5e4",
+              "text": "How are system components configured to address security vulnerabilities?",
+              "help_text": "Describe configuration process",
+              "question_type": "FREE_TEXT",
+              "weight": 5,
+              "maturity_level": 5,
+              "expected_evidence_types": [
+                "configuration_standards",
+                "system_component_configurations"
+              ]
+            },
+            {
+              "question_id": "8i9j0k1l2m3n4o5p6q7r8s9",
+              "text": "Are wireless vendor defaults changed or confirmed secure?",
+              "help_text": "Provide wireless security details",
+              "question_type": "YES_NO",
+              "weight": 2,
+              "maturity_level": 2,
+              "expected_evidence_types": [
+                "wireless_vendor_defaults"
+              ]
+            },
+            {
+              "question_id": "5t4r3e2w1q0p9o8i7u6y5t",
+              "text": "How often are security configurations reviewed and updated?",
+              "help_text": "Provide review frequency",
+              "question_type": "SCALE_1_5",
+              "weight": 4,
+              "maturity_level": 4,
+              "expected_evidence_types": [
+                "security_configurations"
+              ]
+            },
+            {
+              "question_id": "9i8u7y6t5r4e3w2q1p0o",
+              "text": "What industry-accepted system hardening standards are used?",
+              "help_text": "List specific standards",
+              "question_type": "FREE_TEXT",
+              "weight": 3,
+              "maturity_level": 3,
+              "expected_evidence_types": [
+                "configuration_standards"
+              ]
+            },
+            {
+              "question_id": "1p0o9i8u7y6t5r4e3w2q",
+              "text": "How are changes to security policies and procedures communicated?",
+              "help_text": "Describe communication process",
+              "question_type": "FREE_TEXT",
+              "weight": 4,
+              "maturity_level": 4,
+              "expected_evidence_types": [
+                "security_policies",
+                "operational_procedures"
+              ]
+            },
+            {
+              "question_id": "2q1w3e4r5t6y7u8i9o0p",
+              "text": "What is the process for assigning roles and responsibilities?",
+              "help_text": "Describe role assignment process",
+              "question_type": "FREE_TEXT",
+              "weight": 3,
+              "maturity_level": 3,
+              "expected_evidence_types": [
+                "role_definitions",
+                "responsibility_assignments"
+              ]
+            },
+            {
+              "question_id": "3e4r5t6y7u8i9o0p1q2w",
+              "text": "How are security configurations monitored and enforced?",
+              "help_text": "Describe monitoring and enforcement process",
+              "question_type": "FREE_TEXT",
+              "weight": 5,
+              "maturity_level": 5,
+              "expected_evidence_types": [
+                "security_configurations"
+              ]
+            },
+            {
+              "question_id": "4t5r6y7u8i9o0p1q2w3e",
+              "text": "What are the consequences of not following security policies and procedures?",
+              "help_text": "Describe consequences",
+              "question_type": "MULTI_CHOICE",
+              "choices": [
+                "Financial loss",
+                "Reputation damage",
+                "Regulatory non-compliance"
+              ],
+              "weight": 4,
+              "maturity_level": 4,
+              "expected_evidence_types": [
+                "security_policies",
+                "operational_procedures"
+              ]
+            }
+          ],
+          "maturity_guide": {
+            "mature": "Security policies and configurations are well-documented, up-to-date, and consistently enforced, with clear roles and responsibilities assigned.",
+            "partial": "Security policies and configurations are partially documented and enforced, with some roles and responsibilities assigned, but with gaps in coverage and consistency.",
+            "critical_gap": "Lack of security policies and configurations, or inadequate enforcement, poses a significant risk to the security of the organization's systems and data."
+          },
+          "evidence_to_request": [
+            "security_policies",
+            "operational_procedures",
+            "role_definitions",
+            "responsibility_assignments",
+            "configuration_standards"
+          ],
+          "red_flags": [
+            {
+              "critical_gap": "Inadequate security policies and configurations pose a significant risk to the organization's systems and data.",
+              "recommended_action": "Develop and implement comprehensive security policies and configurations, and assign clear roles and responsibilities."
+            },
+            {
+              "critical_gap": "Lack of enforcement of security policies and configurations poses a significant risk to the organization's systems and data.",
+              "recommended_action": "Establish a process for monitoring and enforcing security policies and configurations, and provide training to personnel on their roles and responsibilities."
+            }
+          ]
+        }
+      ],
+      "evidence_to_request": [
+        "security_policies",
+        "operational_procedures",
+        "role_definitions",
+        "responsibility_assignments",
+        "configuration_standards"
+      ],
+      "red_flags": [
+        {
+          "critical_gap": "Inadequate security policies and configurations pose a significant risk to the organization's systems and data.",
+          "recommended_action": "Develop and implement comprehensive security policies and configurations, and assign clear roles and responsibilities."
+        },
+        {
+          "critical_gap": "Lack of enforcement of security policies and configurations poses a significant risk to the organization's systems and data.",
+          "recommended_action": "Establish a process for monitoring and enforcing security policies and configurations, and provide training to personnel on their roles and responsibilities."
+        }
+      ],
+      "maturity_guide": {
+        "mature": "Security policies and configurations are well-documented, up-to-date, and consistently enforced, with clear roles and responsibilities assigned.",
+        "partial": "Security policies and configurations are partially documented and enforced, with some roles and responsibilities assigned, but with gaps in coverage and consistency.",
+        "critical_gap": "Lack of security policies and configurations, or inadequate enforcement, poses a significant risk to the security of the organization's systems and data."
+      }
+    }
+  ],
+  "questions": [
+    {
+      "question_id": "2985606f-c9fe-5113-ac5f-4b6b2697988f",
+      "question_text": "Is the organization implementing and operating the control: Processes and mechanisms for protecting cardholder data with strong cryptography during transmission are defined and understood?",
+      "question_type": "yes_no",
+      "framework_name": "PCI DSS 4.0",
+      "framework_key": "framework_pci_dss_4_0",
+      "domain_id": "REQ-4",
+      "domain_name": "Cryptography in Transit",
+      "control_id": "4.1",
+      "cross_references": [],
+      "expected_evidence": "transmission_policies, encryption_key_management_policies"
+    },
+    {
+      "question_id": "0360a34b-aea5-5751-ab3d-e291642605d0",
+      "question_text": "Upload evidence such as transmission_policies, encryption_key_management_policies that demonstrates: Processes and mechanisms for protecting cardholder data with strong cryptography during transmission are defined and understood.",
+      "question_type": "evidence_upload",
+      "framework_name": "PCI DSS 4.0",
+      "framework_key": "framework_pci_dss_4_0",
+      "domain_id": "REQ-4",
+      "domain_name": "Cryptography in Transit",
+      "control_id": "4.1",
+      "cross_references": [],
+      "expected_evidence": "transmission_policies, encryption_key_management_policies"
+    },
+    {
+      "question_id": "5061708c-3121-5080-adf5-794db0201a2a",
+      "question_text": "Is the organization implementing and operating the control: PAN is protected with strong cryptography during transmission over open, public networks?",
+      "question_type": "yes_no",
+      "framework_name": "PCI DSS 4.0",
+      "framework_key": "framework_pci_dss_4_0",
+      "domain_id": "REQ-4",
+      "domain_name": "Cryptography in Transit",
+      "control_id": "4.2",
+      "cross_references": [],
+      "expected_evidence": "transmission_policies, encryption_key_management_policies"
+    },
+    {
+      "question_id": "83b32659-c961-5fd0-a5cc-4c88f2f91ad8",
+      "question_text": "Upload evidence such as transmission_policies, encryption_key_management_policies that demonstrates: PAN is protected with strong cryptography during transmission over open, public networks.",
+      "question_type": "evidence_upload",
+      "framework_name": "PCI DSS 4.0",
+      "framework_key": "framework_pci_dss_4_0",
+      "domain_id": "REQ-4",
+      "domain_name": "Cryptography in Transit",
+      "control_id": "4.2",
+      "cross_references": [],
+      "expected_evidence": "transmission_policies, encryption_key_management_policies"
+    },
+    {
+      "question_id": "709c6a99-f56b-508e-b051-fb8ac0043f81",
+      "question_text": "Is the organization implementing and operating the control: All security policies and operational procedures that are identified in Requirement 2 are: Documented, Kept up to date, In use, Known to all affected parties?",
+      "question_type": "yes_no",
+      "framework_name": "PCI DSS 4.0",
+      "framework_key": "framework_pci_dss_4_0",
+      "domain_id": "REQ-2",
+      "domain_name": "Secure Configurations",
+      "control_id": "2.1.1",
+      "cross_references": [],
+      "expected_evidence": "security_policies, operational_procedures"
+    },
+    {
+      "question_id": "ff900bfa-5e1b-5718-a3f5-99463943fa1c",
+      "question_text": "Upload evidence such as security_policies, operational_procedures that demonstrates: All security policies and operational procedures that are identified in Requirement 2 are: Documented, Kept up to date, In use, Known to all affected parties.",
+      "question_type": "evidence_upload",
+      "framework_name": "PCI DSS 4.0",
+      "framework_key": "framework_pci_dss_4_0",
+      "domain_id": "REQ-2",
+      "domain_name": "Secure Configurations",
+      "control_id": "2.1.1",
+      "cross_references": [],
+      "expected_evidence": "security_policies, operational_procedures"
+    },
+    {
+      "question_id": "f95f0242-7d41-5680-ac6c-e08c6e24fb55",
+      "question_text": "Is the organization implementing and operating the control: Roles and responsibilities for performing activities in Requirement 2 are documented, assigned, and understood?",
+      "question_type": "yes_no",
+      "framework_name": "PCI DSS 4.0",
+      "framework_key": "framework_pci_dss_4_0",
+      "domain_id": "REQ-2",
+      "domain_name": "Secure Configurations",
+      "control_id": "2.1.2",
+      "cross_references": [],
+      "expected_evidence": "role_definitions, responsibility_assignments"
+    },
+    {
+      "question_id": "4e76a35c-9c76-5268-acd8-f99c2705d658",
+      "question_text": "Upload evidence such as role_definitions, responsibility_assignments that demonstrates: Roles and responsibilities for performing activities in Requirement 2 are documented, assigned, and understood.",
+      "question_type": "evidence_upload",
+      "framework_name": "PCI DSS 4.0",
+      "framework_key": "framework_pci_dss_4_0",
+      "domain_id": "REQ-2",
+      "domain_name": "Secure Configurations",
+      "control_id": "2.1.2",
+      "cross_references": [],
+      "expected_evidence": "role_definitions, responsibility_assignments"
+    },
+    {
+      "question_id": "4ba10bc9-8ecf-584f-9077-27eacfcf6660",
+      "question_text": "Is the organization implementing and operating the control: Configuration standards are developed, implemented, and maintained to: Cover all system components, Address all known security vulnerabilities, Be consistent with industry-accepted system hardening standards or vendor hardening recommendations?",
+      "question_type": "yes_no",
+      "framework_name": "PCI DSS 4.0",
+      "framework_key": "framework_pci_dss_4_0",
+      "domain_id": "REQ-2",
+      "domain_name": "Secure Configurations",
+      "control_id": "2.2.1",
+      "cross_references": [],
+      "expected_evidence": "configuration_standards, system_component_configurations"
+    },
+    {
+      "question_id": "f7add040-b108-58c3-adc8-3c5cbfb6a5fa",
+      "question_text": "Upload evidence such as configuration_standards, system_component_configurations that demonstrates: Configuration standards are developed, implemented, and maintained to: Cover all system components, Address all known security vulnerabilities, Be consistent with industry-accepted system hardening standards or vendor hardening recommendations.",
+      "question_type": "evidence_upload",
+      "framework_name": "PCI DSS 4.0",
+      "framework_key": "framework_pci_dss_4_0",
+      "domain_id": "REQ-2",
+      "domain_name": "Secure Configurations",
+      "control_id": "2.2.1",
+      "cross_references": [],
+      "expected_evidence": "configuration_standards, system_component_configurations"
+    },
+    {
+      "question_id": "4a704f3a-d185-50fd-994b-8b4a1d44032a",
+      "question_text": "Is the organization implementing and operating the control: For wireless environments connected to the CDE or transmitting account data, all wireless vendor defaults are changed at installation or are confirmed to be secure?",
+      "question_type": "yes_no",
+      "framework_name": "PCI DSS 4.0",
+      "framework_key": "framework_pci_dss_4_0",
+      "domain_id": "REQ-2",
+      "domain_name": "Secure Configurations",
+      "control_id": "2.3.1",
+      "cross_references": [],
+      "expected_evidence": "wireless_vendor_defaults, security_configurations"
+    },
+    {
+      "question_id": "3ccb71e3-f04b-58a3-935d-5d4466cd95ee",
+      "question_text": "Upload evidence such as wireless_vendor_defaults, security_configurations that demonstrates: For wireless environments connected to the CDE or transmitting account data, all wireless vendor defaults are changed at installation or are confirmed to be secure.",
+      "question_type": "evidence_upload",
+      "framework_name": "PCI DSS 4.0",
+      "framework_key": "framework_pci_dss_4_0",
+      "domain_id": "REQ-2",
+      "domain_name": "Secure Configurations",
+      "control_id": "2.3.1",
+      "cross_references": [],
+      "expected_evidence": "wireless_vendor_defaults, security_configurations"
+    }
+  ],
+  "part3_tracker": [
+    {
+      "framework": "PCI DSS 4.0",
+      "domain": "Cryptography in Transit",
+      "sub_topic": "Cryptography in Transit",
+      "control_id": "4.1, 4.2",
+      "evidence_request": "transmission_policies",
+      "answer_format": "status_text",
+      "status": ""
+    },
+    {
+      "framework": "PCI DSS 4.0",
+      "domain": "Cryptography in Transit",
+      "sub_topic": "Cryptography in Transit",
+      "control_id": "4.1, 4.2",
+      "evidence_request": "encryption_key_management_policies",
+      "answer_format": "status_text",
+      "status": ""
+    },
+    {
+      "framework": "PCI DSS 4.0",
+      "domain": "Cryptography in Transit",
+      "sub_topic": "Cryptography in Transit",
+      "control_id": "4.1, 4.2",
+      "evidence_request": "tls_config",
+      "answer_format": "status_text",
+      "status": ""
+    },
+    {
+      "framework": "PCI DSS 4.0",
+      "domain": "Cryptography in Transit",
+      "sub_topic": "Cryptography in Transit",
+      "control_id": "4.1, 4.2",
+      "evidence_request": "cipher_suite_list",
+      "answer_format": "status_text",
+      "status": ""
+    },
+    {
+      "framework": "PCI DSS 4.0",
+      "domain": "Cryptography in Transit",
+      "sub_topic": "Cryptography in Transit",
+      "control_id": "4.1, 4.2",
+      "evidence_request": "key_rotation_logs",
+      "answer_format": "status_text",
+      "status": ""
+    },
+    {
+      "framework": "PCI DSS 4.0",
+      "domain": "Secure Configurations",
+      "sub_topic": "Secure Configurations",
+      "control_id": "2.1.1, 2.1.2, 2.2.1, 2.3.1",
+      "evidence_request": "security_policies",
+      "answer_format": "status_text",
+      "status": ""
+    },
+    {
+      "framework": "PCI DSS 4.0",
+      "domain": "Secure Configurations",
+      "sub_topic": "Secure Configurations",
+      "control_id": "2.1.1, 2.1.2, 2.2.1, 2.3.1",
+      "evidence_request": "operational_procedures",
+      "answer_format": "status_text",
+      "status": ""
+    },
+    {
+      "framework": "PCI DSS 4.0",
+      "domain": "Secure Configurations",
+      "sub_topic": "Secure Configurations",
+      "control_id": "2.1.1, 2.1.2, 2.2.1, 2.3.1",
+      "evidence_request": "role_definitions",
+      "answer_format": "status_text",
+      "status": ""
+    },
+    {
+      "framework": "PCI DSS 4.0",
+      "domain": "Secure Configurations",
+      "sub_topic": "Secure Configurations",
+      "control_id": "2.1.1, 2.1.2, 2.2.1, 2.3.1",
+      "evidence_request": "responsibility_assignments",
+      "answer_format": "status_text",
+      "status": ""
+    },
+    {
+      "framework": "PCI DSS 4.0",
+      "domain": "Secure Configurations",
+      "sub_topic": "Secure Configurations",
+      "control_id": "2.1.1, 2.1.2, 2.2.1, 2.3.1",
+      "evidence_request": "configuration_standards",
+      "answer_format": "status_text",
+      "status": ""
+    }
+  ],
+  "red_flags_by_domain": [
+    {
+      "domain_name": "Cryptography in Transit",
+      "framework_name": "PCI DSS 4.0",
+      "red_flags": [
+        {
+          "critical_gap": "Cardholder data is transmitted in plaintext over open, public networks.",
+          "recommended_action": "Implement strong cryptography, such as TLS, to protect cardholder data during transmission."
+        },
+        {
+          "critical_gap": "Encryption keys are not properly managed, leaving them vulnerable to unauthorized access.",
+          "recommended_action": "Implement a robust key management process, including secure key generation, distribution, and rotation."
+        },
+        {
+          "critical_gap": "TLS configurations are not regularly updated or patched, leaving them vulnerable to known vulnerabilities.",
+          "recommended_action": "Regularly review and update TLS configurations to ensure they are up-to-date and secure."
+        }
+      ]
+    },
+    {
+      "domain_name": "Secure Configurations",
+      "framework_name": "PCI DSS 4.0",
+      "red_flags": [
+        {
+          "critical_gap": "Inadequate security policies and configurations pose a significant risk to the organization's systems and data.",
+          "recommended_action": "Develop and implement comprehensive security policies and configurations, and assign clear roles and responsibilities."
+        },
+        {
+          "critical_gap": "Lack of enforcement of security policies and configurations poses a significant risk to the organization's systems and data.",
+          "recommended_action": "Establish a process for monitoring and enforcing security policies and configurations, and provide training to personnel on their roles and responsibilities."
+        }
+      ]
+    }
+  ],
+  "selected_domain_keys": [
+    "framework_pci_dss_4_0:REQ-4",
+    "framework_pci_dss_4_0:REQ-2"
+  ],
+  "ingested_at": "2026-06-17T09:40:56.712647+00:00",
+  "maturity_levels": [
+    {
+      "level": 1,
+      "code": "INITIAL",
+      "name": "Initial",
+      "description": "Ad hoc and undocumented."
+    },
+    {
+      "level": 2,
+      "code": "REPEATABLE",
+      "name": "Repeatable",
+      "description": "Basic processes established and repeated."
+    },
+    {
+      "level": 3,
+      "code": "DEFINED",
+      "name": "Defined",
+      "description": "Processes documented, standardised, and communicated."
+    },
+    {
+      "level": 4,
+      "code": "MANAGED",
+      "name": "Managed",
+      "description": "Processes measured and controlled with quantitative data."
+    },
+    {
+      "level": 5,
+      "code": "OPTIMIZING",
+      "name": "Optimizing",
+      "description": "Continuous improvement driven by metrics and feedback."
+    }
+  ],
+  "domains": [
+    {
+      "code": "REQ-4",
+      "name": "Cryptography in Transit",
+      "categories": [
+        {
+          "code": "4.1",
+          "name": "4.1",
+          "controls": [
+            {
+              "code": "4.1",
+              "statement": "Processes and mechanisms for protecting cardholder data with strong cryptography during transmission are defined and understood.",
+              "cross_refs": [],
+              "questions": [
+                {
+                  "question_id": "4c5a5c7d-5f4e-4678-9f5e-4a5e6f7g8h9",
+                  "text": "How are encryption keys managed?",
+                  "question_type": "FREE_TEXT",
+                  "weight": 4,
+                  "maturity_level": 4,
+                  "help_text": "Key lifecycle",
+                  "choices": []
+                },
+                {
+                  "question_id": "1a2b3c4d-5d6e-7f8g-9h0i-1j2k3l4m5",
+                  "text": "What cipher suites are used for TLS?",
+                  "question_type": "FREE_TEXT",
+                  "weight": 3,
+                  "maturity_level": 3,
+                  "help_text": "Check protocol versions",
+                  "choices": []
+                },
+                {
+                  "question_id": "6g7h8i9j-0k1l2m3-4n5o6p7",
+                  "text": "Are transmission policies reviewed annually?",
+                  "question_type": "YES_NO",
+                  "weight": 2,
+                  "maturity_level": 2,
+                  "help_text": "Check review frequency",
+                  "choices": []
+                },
+                {
+                  "question_id": "2c3d4e5f-6g7h8i9-0j1k2l3",
+                  "text": "How are exceptions to encryption handled?",
+                  "question_type": "FREE_TEXT",
+                  "weight": 4,
+                  "maturity_level": 4,
+                  "help_text": "Check exception process",
+                  "choices": []
+                },
+                {
+                  "question_id": "8i9j0k1-2l3m4n5-6o7p8q9",
+                  "text": "What is the process for updating TLS configurations?",
+                  "question_type": "FREE_TEXT",
+                  "weight": 3,
+                  "maturity_level": 3,
+                  "help_text": "Check update procedure",
+                  "choices": []
+                },
+                {
+                  "question_id": "5n6m7l8-9k0j1i2-3h4g5f6",
+                  "text": "Are encryption protocols regularly assessed?",
+                  "question_type": "SCALE_1_5",
+                  "weight": 4,
+                  "maturity_level": 4,
+                  "help_text": "Check assessment frequency",
+                  "choices": []
+                },
+                {
+                  "question_id": "9p0o8i7-6n5m4l3-2k1j0h9",
+                  "text": "How are cryptographic vulnerabilities addressed?",
+                  "question_type": "FREE_TEXT",
+                  "weight": 5,
+                  "maturity_level": 5,
+                  "help_text": "Check vulnerability management",
+                  "choices": []
+                },
+                {
+                  "question_id": "1k2l3m4-5n6o7p8-9q0r1s2",
+                  "text": "What training is provided for cryptographic key management?",
+                  "question_type": "FREE_TEXT",
+                  "weight": 2,
+                  "maturity_level": 2,
+                  "help_text": "Check training program",
+                  "choices": []
+                },
+                {
+                  "question_id": "7d6c5b4-3a2s1d0-9f8g7h6",
+                  "text": "Which of the following best describes your TLS configuration?",
+                  "question_type": "MULTI_CHOICE",
+                  "weight": 3,
+                  "maturity_level": 3,
+                  "help_text": "Check protocol versions",
+                  "choices": [
+                    "TLS 1.2",
+                    "TLS 1.3",
+                    "Both"
+                  ]
+                },
+                {
+                  "question_id": "4e5r6t7-8y9u0i1-2o3p4q5",
+                  "text": "How are cryptographic controls monitored for compliance?",
+                  "question_type": "FREE_TEXT",
+                  "weight": 4,
+                  "maturity_level": 4,
+                  "help_text": "Check monitoring process",
+                  "choices": []
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "code": "4.2",
+          "name": "4.2",
+          "controls": [
+            {
+              "code": "4.2",
+              "statement": "PAN is protected with strong cryptography during transmission over open, public networks.",
+              "cross_refs": [],
+              "questions": [
+                {
+                  "question_id": "4c5a5c7d-5f4e-4678-9f5e-4a5e6f7g8h9",
+                  "text": "How are encryption keys managed?",
+                  "question_type": "FREE_TEXT",
+                  "weight": 4,
+                  "maturity_level": 4,
+                  "help_text": "Key lifecycle",
+                  "choices": []
+                },
+                {
+                  "question_id": "1a2b3c4d-5d6e-7f8g-9h0i-1j2k3l4m5",
+                  "text": "What cipher suites are used for TLS?",
+                  "question_type": "FREE_TEXT",
+                  "weight": 3,
+                  "maturity_level": 3,
+                  "help_text": "Check protocol versions",
+                  "choices": []
+                },
+                {
+                  "question_id": "6g7h8i9j-0k1l2m3-4n5o6p7",
+                  "text": "Are transmission policies reviewed annually?",
+                  "question_type": "YES_NO",
+                  "weight": 2,
+                  "maturity_level": 2,
+                  "help_text": "Check review frequency",
+                  "choices": []
+                },
+                {
+                  "question_id": "2c3d4e5f-6g7h8i9-0j1k2l3",
+                  "text": "How are exceptions to encryption handled?",
+                  "question_type": "FREE_TEXT",
+                  "weight": 4,
+                  "maturity_level": 4,
+                  "help_text": "Check exception process",
+                  "choices": []
+                },
+                {
+                  "question_id": "8i9j0k1-2l3m4n5-6o7p8q9",
+                  "text": "What is the process for updating TLS configurations?",
+                  "question_type": "FREE_TEXT",
+                  "weight": 3,
+                  "maturity_level": 3,
+                  "help_text": "Check update procedure",
+                  "choices": []
+                },
+                {
+                  "question_id": "5n6m7l8-9k0j1i2-3h4g5f6",
+                  "text": "Are encryption protocols regularly assessed?",
+                  "question_type": "SCALE_1_5",
+                  "weight": 4,
+                  "maturity_level": 4,
+                  "help_text": "Check assessment frequency",
+                  "choices": []
+                },
+                {
+                  "question_id": "9p0o8i7-6n5m4l3-2k1j0h9",
+                  "text": "How are cryptographic vulnerabilities addressed?",
+                  "question_type": "FREE_TEXT",
+                  "weight": 5,
+                  "maturity_level": 5,
+                  "help_text": "Check vulnerability management",
+                  "choices": []
+                },
+                {
+                  "question_id": "1k2l3m4-5n6o7p8-9q0r1s2",
+                  "text": "What training is provided for cryptographic key management?",
+                  "question_type": "FREE_TEXT",
+                  "weight": 2,
+                  "maturity_level": 2,
+                  "help_text": "Check training program",
+                  "choices": []
+                },
+                {
+                  "question_id": "7d6c5b4-3a2s1d0-9f8g7h6",
+                  "text": "Which of the following best describes your TLS configuration?",
+                  "question_type": "MULTI_CHOICE",
+                  "weight": 3,
+                  "maturity_level": 3,
+                  "help_text": "Check protocol versions",
+                  "choices": [
+                    "TLS 1.2",
+                    "TLS 1.3",
+                    "Both"
+                  ]
+                },
+                {
+                  "question_id": "4e5r6t7-8y9u0i1-2o3p4q5",
+                  "text": "How are cryptographic controls monitored for compliance?",
+                  "question_type": "FREE_TEXT",
+                  "weight": 4,
+                  "maturity_level": 4,
+                  "help_text": "Check monitoring process",
+                  "choices": []
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "code": "REQ-2",
+      "name": "Secure Configurations",
+      "categories": [
+        {
+          "code": "2.1.1",
+          "name": "2.1.1",
+          "controls": [
+            {
+              "code": "2.1.1",
+              "statement": "All security policies and operational procedures that are identified in Requirement 2 are: Documented, Kept up to date, In use, Known to all affected parties.",
+              "cross_refs": [],
+              "questions": [
+                {
+                  "question_id": "4c85b6a5-2a4b-4d8f-8f4e-5c4e5f6g7h8",
+                  "text": "How are security policies reviewed and updated?",
+                  "question_type": "FREE_TEXT",
+                  "weight": 4,
+                  "maturity_level": 4,
+                  "help_text": "Provide review process details",
+                  "choices": []
+                },
+                {
+                  "question_id": "1a2b3c4d-5e6f-7g8h-9i0j-1k2l3m4n5o",
+                  "text": "What roles are responsible for maintaining configuration standards?",
+                  "question_type": "FREE_TEXT",
+                  "weight": 3,
+                  "maturity_level": 3,
+                  "help_text": "List specific roles",
+                  "choices": []
+                },
+                {
+                  "question_id": "6f5g4h3j2k1l0i9u8y7t6r5e4",
+                  "text": "How are system components configured to address security vulnerabilities?",
+                  "question_type": "FREE_TEXT",
+                  "weight": 5,
+                  "maturity_level": 5,
+                  "help_text": "Describe configuration process",
+                  "choices": []
+                },
+                {
+                  "question_id": "8i9j0k1l2m3n4o5p6q7r8s9",
+                  "text": "Are wireless vendor defaults changed or confirmed secure?",
+                  "question_type": "YES_NO",
+                  "weight": 2,
+                  "maturity_level": 2,
+                  "help_text": "Provide wireless security details",
+                  "choices": []
+                },
+                {
+                  "question_id": "5t4r3e2w1q0p9o8i7u6y5t",
+                  "text": "How often are security configurations reviewed and updated?",
+                  "question_type": "SCALE_1_5",
+                  "weight": 4,
+                  "maturity_level": 4,
+                  "help_text": "Provide review frequency",
+                  "choices": []
+                },
+                {
+                  "question_id": "9i8u7y6t5r4e3w2q1p0o",
+                  "text": "What industry-accepted system hardening standards are used?",
+                  "question_type": "FREE_TEXT",
+                  "weight": 3,
+                  "maturity_level": 3,
+                  "help_text": "List specific standards",
+                  "choices": []
+                },
+                {
+                  "question_id": "1p0o9i8u7y6t5r4e3w2q",
+                  "text": "How are changes to security policies and procedures communicated?",
+                  "question_type": "FREE_TEXT",
+                  "weight": 4,
+                  "maturity_level": 4,
+                  "help_text": "Describe communication process",
+                  "choices": []
+                },
+                {
+                  "question_id": "2q1w3e4r5t6y7u8i9o0p",
+                  "text": "What is the process for assigning roles and responsibilities?",
+                  "question_type": "FREE_TEXT",
+                  "weight": 3,
+                  "maturity_level": 3,
+                  "help_text": "Describe role assignment process",
+                  "choices": []
+                },
+                {
+                  "question_id": "3e4r5t6y7u8i9o0p1q2w",
+                  "text": "How are security configurations monitored and enforced?",
+                  "question_type": "FREE_TEXT",
+                  "weight": 5,
+                  "maturity_level": 5,
+                  "help_text": "Describe monitoring and enforcement process",
+                  "choices": []
+                },
+                {
+                  "question_id": "4t5r6y7u8i9o0p1q2w3e",
+                  "text": "What are the consequences of not following security policies and procedures?",
+                  "question_type": "MULTI_CHOICE",
+                  "weight": 4,
+                  "maturity_level": 4,
+                  "help_text": "Describe consequences",
+                  "choices": [
+                    "Financial loss",
+                    "Reputation damage",
+                    "Regulatory non-compliance"
+                  ]
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "code": "2.1.2",
+          "name": "2.1.2",
+          "controls": [
+            {
+              "code": "2.1.2",
+              "statement": "Roles and responsibilities for performing activities in Requirement 2 are documented, assigned, and understood.",
+              "cross_refs": [],
+              "questions": [
+                {
+                  "question_id": "4c85b6a5-2a4b-4d8f-8f4e-5c4e5f6g7h8",
+                  "text": "How are security policies reviewed and updated?",
+                  "question_type": "FREE_TEXT",
+                  "weight": 4,
+                  "maturity_level": 4,
+                  "help_text": "Provide review process details",
+                  "choices": []
+                },
+                {
+                  "question_id": "1a2b3c4d-5e6f-7g8h-9i0j-1k2l3m4n5o",
+                  "text": "What roles are responsible for maintaining configuration standards?",
+                  "question_type": "FREE_TEXT",
+                  "weight": 3,
+                  "maturity_level": 3,
+                  "help_text": "List specific roles",
+                  "choices": []
+                },
+                {
+                  "question_id": "6f5g4h3j2k1l0i9u8y7t6r5e4",
+                  "text": "How are system components configured to address security vulnerabilities?",
+                  "question_type": "FREE_TEXT",
+                  "weight": 5,
+                  "maturity_level": 5,
+                  "help_text": "Describe configuration process",
+                  "choices": []
+                },
+                {
+                  "question_id": "8i9j0k1l2m3n4o5p6q7r8s9",
+                  "text": "Are wireless vendor defaults changed or confirmed secure?",
+                  "question_type": "YES_NO",
+                  "weight": 2,
+                  "maturity_level": 2,
+                  "help_text": "Provide wireless security details",
+                  "choices": []
+                },
+                {
+                  "question_id": "5t4r3e2w1q0p9o8i7u6y5t",
+                  "text": "How often are security configurations reviewed and updated?",
+                  "question_type": "SCALE_1_5",
+                  "weight": 4,
+                  "maturity_level": 4,
+                  "help_text": "Provide review frequency",
+                  "choices": []
+                },
+                {
+                  "question_id": "9i8u7y6t5r4e3w2q1p0o",
+                  "text": "What industry-accepted system hardening standards are used?",
+                  "question_type": "FREE_TEXT",
+                  "weight": 3,
+                  "maturity_level": 3,
+                  "help_text": "List specific standards",
+                  "choices": []
+                },
+                {
+                  "question_id": "1p0o9i8u7y6t5r4e3w2q",
+                  "text": "How are changes to security policies and procedures communicated?",
+                  "question_type": "FREE_TEXT",
+                  "weight": 4,
+                  "maturity_level": 4,
+                  "help_text": "Describe communication process",
+                  "choices": []
+                },
+                {
+                  "question_id": "2q1w3e4r5t6y7u8i9o0p",
+                  "text": "What is the process for assigning roles and responsibilities?",
+                  "question_type": "FREE_TEXT",
+                  "weight": 3,
+                  "maturity_level": 3,
+                  "help_text": "Describe role assignment process",
+                  "choices": []
+                },
+                {
+                  "question_id": "3e4r5t6y7u8i9o0p1q2w",
+                  "text": "How are security configurations monitored and enforced?",
+                  "question_type": "FREE_TEXT",
+                  "weight": 5,
+                  "maturity_level": 5,
+                  "help_text": "Describe monitoring and enforcement process",
+                  "choices": []
+                },
+                {
+                  "question_id": "4t5r6y7u8i9o0p1q2w3e",
+                  "text": "What are the consequences of not following security policies and procedures?",
+                  "question_type": "MULTI_CHOICE",
+                  "weight": 4,
+                  "maturity_level": 4,
+                  "help_text": "Describe consequences",
+                  "choices": [
+                    "Financial loss",
+                    "Reputation damage",
+                    "Regulatory non-compliance"
+                  ]
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "code": "2.2.1",
+          "name": "2.2.1",
+          "controls": [
+            {
+              "code": "2.2.1",
+              "statement": "Configuration standards are developed, implemented, and maintained to: Cover all system components, Address all known security vulnerabilities, Be consistent with industry-accepted system hardening standards or vendor hardening recommendations.",
+              "cross_refs": [],
+              "questions": [
+                {
+                  "question_id": "4c85b6a5-2a4b-4d8f-8f4e-5c4e5f6g7h8",
+                  "text": "How are security policies reviewed and updated?",
+                  "question_type": "FREE_TEXT",
+                  "weight": 4,
+                  "maturity_level": 4,
+                  "help_text": "Provide review process details",
+                  "choices": []
+                },
+                {
+                  "question_id": "1a2b3c4d-5e6f-7g8h-9i0j-1k2l3m4n5o",
+                  "text": "What roles are responsible for maintaining configuration standards?",
+                  "question_type": "FREE_TEXT",
+                  "weight": 3,
+                  "maturity_level": 3,
+                  "help_text": "List specific roles",
+                  "choices": []
+                },
+                {
+                  "question_id": "6f5g4h3j2k1l0i9u8y7t6r5e4",
+                  "text": "How are system components configured to address security vulnerabilities?",
+                  "question_type": "FREE_TEXT",
+                  "weight": 5,
+                  "maturity_level": 5,
+                  "help_text": "Describe configuration process",
+                  "choices": []
+                },
+                {
+                  "question_id": "8i9j0k1l2m3n4o5p6q7r8s9",
+                  "text": "Are wireless vendor defaults changed or confirmed secure?",
+                  "question_type": "YES_NO",
+                  "weight": 2,
+                  "maturity_level": 2,
+                  "help_text": "Provide wireless security details",
+                  "choices": []
+                },
+                {
+                  "question_id": "5t4r3e2w1q0p9o8i7u6y5t",
+                  "text": "How often are security configurations reviewed and updated?",
+                  "question_type": "SCALE_1_5",
+                  "weight": 4,
+                  "maturity_level": 4,
+                  "help_text": "Provide review frequency",
+                  "choices": []
+                },
+                {
+                  "question_id": "9i8u7y6t5r4e3w2q1p0o",
+                  "text": "What industry-accepted system hardening standards are used?",
+                  "question_type": "FREE_TEXT",
+                  "weight": 3,
+                  "maturity_level": 3,
+                  "help_text": "List specific standards",
+                  "choices": []
+                },
+                {
+                  "question_id": "1p0o9i8u7y6t5r4e3w2q",
+                  "text": "How are changes to security policies and procedures communicated?",
+                  "question_type": "FREE_TEXT",
+                  "weight": 4,
+                  "maturity_level": 4,
+                  "help_text": "Describe communication process",
+                  "choices": []
+                },
+                {
+                  "question_id": "2q1w3e4r5t6y7u8i9o0p",
+                  "text": "What is the process for assigning roles and responsibilities?",
+                  "question_type": "FREE_TEXT",
+                  "weight": 3,
+                  "maturity_level": 3,
+                  "help_text": "Describe role assignment process",
+                  "choices": []
+                },
+                {
+                  "question_id": "3e4r5t6y7u8i9o0p1q2w",
+                  "text": "How are security configurations monitored and enforced?",
+                  "question_type": "FREE_TEXT",
+                  "weight": 5,
+                  "maturity_level": 5,
+                  "help_text": "Describe monitoring and enforcement process",
+                  "choices": []
+                },
+                {
+                  "question_id": "4t5r6y7u8i9o0p1q2w3e",
+                  "text": "What are the consequences of not following security policies and procedures?",
+                  "question_type": "MULTI_CHOICE",
+                  "weight": 4,
+                  "maturity_level": 4,
+                  "help_text": "Describe consequences",
+                  "choices": [
+                    "Financial loss",
+                    "Reputation damage",
+                    "Regulatory non-compliance"
+                  ]
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "code": "2.3.1",
+          "name": "2.3.1",
+          "controls": [
+            {
+              "code": "2.3.1",
+              "statement": "For wireless environments connected to the CDE or transmitting account data, all wireless vendor defaults are changed at installation or are confirmed to be secure.",
+              "cross_refs": [],
+              "questions": [
+                {
+                  "question_id": "4c85b6a5-2a4b-4d8f-8f4e-5c4e5f6g7h8",
+                  "text": "How are security policies reviewed and updated?",
+                  "question_type": "FREE_TEXT",
+                  "weight": 4,
+                  "maturity_level": 4,
+                  "help_text": "Provide review process details",
+                  "choices": []
+                },
+                {
+                  "question_id": "1a2b3c4d-5e6f-7g8h-9i0j-1k2l3m4n5o",
+                  "text": "What roles are responsible for maintaining configuration standards?",
+                  "question_type": "FREE_TEXT",
+                  "weight": 3,
+                  "maturity_level": 3,
+                  "help_text": "List specific roles",
+                  "choices": []
+                },
+                {
+                  "question_id": "6f5g4h3j2k1l0i9u8y7t6r5e4",
+                  "text": "How are system components configured to address security vulnerabilities?",
+                  "question_type": "FREE_TEXT",
+                  "weight": 5,
+                  "maturity_level": 5,
+                  "help_text": "Describe configuration process",
+                  "choices": []
+                },
+                {
+                  "question_id": "8i9j0k1l2m3n4o5p6q7r8s9",
+                  "text": "Are wireless vendor defaults changed or confirmed secure?",
+                  "question_type": "YES_NO",
+                  "weight": 2,
+                  "maturity_level": 2,
+                  "help_text": "Provide wireless security details",
+                  "choices": []
+                },
+                {
+                  "question_id": "5t4r3e2w1q0p9o8i7u6y5t",
+                  "text": "How often are security configurations reviewed and updated?",
+                  "question_type": "SCALE_1_5",
+                  "weight": 4,
+                  "maturity_level": 4,
+                  "help_text": "Provide review frequency",
+                  "choices": []
+                },
+                {
+                  "question_id": "9i8u7y6t5r4e3w2q1p0o",
+                  "text": "What industry-accepted system hardening standards are used?",
+                  "question_type": "FREE_TEXT",
+                  "weight": 3,
+                  "maturity_level": 3,
+                  "help_text": "List specific standards",
+                  "choices": []
+                },
+                {
+                  "question_id": "1p0o9i8u7y6t5r4e3w2q",
+                  "text": "How are changes to security policies and procedures communicated?",
+                  "question_type": "FREE_TEXT",
+                  "weight": 4,
+                  "maturity_level": 4,
+                  "help_text": "Describe communication process",
+                  "choices": []
+                },
+                {
+                  "question_id": "2q1w3e4r5t6y7u8i9o0p",
+                  "text": "What is the process for assigning roles and responsibilities?",
+                  "question_type": "FREE_TEXT",
+                  "weight": 3,
+                  "maturity_level": 3,
+                  "help_text": "Describe role assignment process",
+                  "choices": []
+                },
+                {
+                  "question_id": "3e4r5t6y7u8i9o0p1q2w",
+                  "text": "How are security configurations monitored and enforced?",
+                  "question_type": "FREE_TEXT",
+                  "weight": 5,
+                  "maturity_level": 5,
+                  "help_text": "Describe monitoring and enforcement process",
+                  "choices": []
+                },
+                {
+                  "question_id": "4t5r6y7u8i9o0p1q2w3e",
+                  "text": "What are the consequences of not following security policies and procedures?",
+                  "question_type": "MULTI_CHOICE",
+                  "weight": 4,
+                  "maturity_level": 4,
+                  "help_text": "Describe consequences",
+                  "choices": [
+                    "Financial loss",
+                    "Reputation damage",
+                    "Regulatory non-compliance"
+                  ]
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    }
+  ],
+  "mappings": []
+}
